@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-09T16:52:36+00:00",
+  "generated_at": "2026-07-09T16:56:52+00:00",
   "date": "2026-07-09",
   "model_version": "0.1.0",
   "league_hr_pa": 0.0305,
@@ -20,13 +20,13 @@
       "pitcher_hand": "R",
       "lineup_slot": 2,
       "lineup_confirmed": false,
-      "prob": 0.2329,
-      "per_pa_prob_vs_starter": 0.0592,
+      "prob": 0.2623,
+      "per_pa_prob_vs_starter": 0.0676,
       "expected_pa": 4.54,
       "factors": {
         "league_hr_pa": 0.0305,
         "batter": {
-          "value": 1.457,
+          "value": 1.665,
           "components": {
             "brl_pa": {
               "raw": 0.1085040650406504,
@@ -36,8 +36,8 @@
             },
             "hr_fb": {
               "raw": 0.367816091954023,
-              "regressed": 0.1329,
-              "ratio": 1.0,
+              "regressed": 0.2125,
+              "ratio": 1.598,
               "weight": 0.3
             },
             "xiso": {
@@ -95,13 +95,13 @@
       "pitcher_hand": "R",
       "lineup_slot": 2,
       "lineup_confirmed": true,
-      "prob": 0.2207,
-      "per_pa_prob_vs_starter": 0.053,
+      "prob": 0.2321,
+      "per_pa_prob_vs_starter": 0.056,
       "expected_pa": 4.54,
       "factors": {
         "league_hr_pa": 0.0305,
         "batter": {
-          "value": 1.464,
+          "value": 1.548,
           "components": {
             "brl_pa": {
               "raw": 0.10889416058394161,
@@ -111,8 +111,8 @@
             },
             "hr_fb": {
               "raw": 0.21505376344086022,
-              "regressed": 0.1329,
-              "ratio": 1.0,
+              "regressed": 0.162,
+              "ratio": 1.218,
               "weight": 0.3
             },
             "xiso": {
@@ -158,81 +158,6 @@
       "odds": null
     },
     {
-      "player_id": 677951,
-      "name": "Bobby Witt Jr.",
-      "team": "Kansas City Royals",
-      "opponent": "New York Mets",
-      "venue": "Citi Field",
-      "game_time_utc": "2026-07-09T17:10:00Z",
-      "batter_hand": "R",
-      "pitcher_id": 640455,
-      "pitcher_name": "Sean Manaea",
-      "pitcher_hand": "L",
-      "lineup_slot": 2,
-      "lineup_confirmed": true,
-      "prob": 0.204,
-      "per_pa_prob_vs_starter": 0.0491,
-      "expected_pa": 4.54,
-      "factors": {
-        "league_hr_pa": 0.0305,
-        "batter": {
-          "value": 1.268,
-          "components": {
-            "brl_pa": {
-              "raw": 0.09007534246575342,
-              "regressed": 0.0842,
-              "ratio": 1.519,
-              "weight": 0.45
-            },
-            "hr_fb": {
-              "raw": 0.12244897959183673,
-              "regressed": 0.1329,
-              "ratio": 1.0,
-              "weight": 0.3
-            },
-            "xiso": {
-              "raw": 0.21622976697569532,
-              "regressed": 0.2071,
-              "ratio": 1.281,
-              "weight": 0.25
-            }
-          }
-        },
-        "pitcher": {
-          "value": 0.999,
-          "components": {
-            "hr_fb": {
-              "regressed": 0.1253,
-              "ratio": 0.942
-            },
-            "fb_rate": {
-              "regressed": 0.3642,
-              "ratio": 1.073
-            }
-          }
-        },
-        "park": {
-          "value": 1.025,
-          "park_factor": 103,
-          "hand": "R",
-          "park": "Citi Field"
-        },
-        "weather": {
-          "value": 1.239,
-          "temp_f": 83.6,
-          "wind_mph": 12.0,
-          "wind_out_mph": 11.7,
-          "roof": "open"
-        },
-        "expected_pa": {
-          "value": 4.54,
-          "lineup_slot": 2,
-          "starter_share": 0.62
-        }
-      },
-      "odds": null
-    },
-    {
       "player_id": 547180,
       "name": "Bryce Harper",
       "team": "Philadelphia Phillies",
@@ -245,13 +170,13 @@
       "pitcher_hand": "R",
       "lineup_slot": 1,
       "lineup_confirmed": false,
-      "prob": 0.2031,
-      "per_pa_prob_vs_starter": 0.0497,
+      "prob": 0.2176,
+      "per_pa_prob_vs_starter": 0.0536,
       "expected_pa": 4.65,
       "factors": {
         "league_hr_pa": 0.0305,
         "batter": {
-          "value": 1.223,
+          "value": 1.319,
           "components": {
             "brl_pa": {
               "raw": 0.07890389395194697,
@@ -261,8 +186,8 @@
             },
             "hr_fb": {
               "raw": 0.2631578947368421,
-              "regressed": 0.1329,
-              "ratio": 1.0,
+              "regressed": 0.1732,
+              "ratio": 1.303,
               "weight": 0.3
             },
             "xiso": {
@@ -320,13 +245,13 @@
       "pitcher_hand": "R",
       "lineup_slot": 2,
       "lineup_confirmed": false,
-      "prob": 0.2015,
-      "per_pa_prob_vs_starter": 0.0491,
+      "prob": 0.2124,
+      "per_pa_prob_vs_starter": 0.0521,
       "expected_pa": 4.54,
       "factors": {
         "league_hr_pa": 0.0305,
         "batter": {
-          "value": 1.353,
+          "value": 1.434,
           "components": {
             "brl_pa": {
               "raw": 0.09869836803601578,
@@ -336,8 +261,8 @@
             },
             "hr_fb": {
               "raw": 0.22784810126582278,
-              "regressed": 0.1329,
-              "ratio": 1.0,
+              "regressed": 0.1631,
+              "ratio": 1.226,
               "weight": 0.3
             },
             "xiso": {
@@ -395,13 +320,13 @@
       "pitcher_hand": "L",
       "lineup_slot": 2,
       "lineup_confirmed": true,
-      "prob": 0.1996,
-      "per_pa_prob_vs_starter": 0.0479,
+      "prob": 0.2064,
+      "per_pa_prob_vs_starter": 0.0497,
       "expected_pa": 4.54,
       "factors": {
         "league_hr_pa": 0.0305,
         "batter": {
-          "value": 1.226,
+          "value": 1.272,
           "components": {
             "brl_pa": {
               "raw": 0.09204446381865737,
@@ -411,8 +336,8 @@
             },
             "hr_fb": {
               "raw": 0.23076923076923078,
-              "regressed": 0.1329,
-              "ratio": 1.0,
+              "regressed": 0.1512,
+              "ratio": 1.137,
               "weight": 0.3
             },
             "xiso": {
@@ -450,148 +375,6 @@
       "odds": null
     },
     {
-      "player_id": 521692,
-      "name": "Salvador Perez",
-      "team": "Kansas City Royals",
-      "opponent": "New York Mets",
-      "venue": "Citi Field",
-      "game_time_utc": "2026-07-09T17:10:00Z",
-      "batter_hand": "R",
-      "pitcher_id": 640455,
-      "pitcher_name": "Sean Manaea",
-      "pitcher_hand": "L",
-      "lineup_slot": 3,
-      "lineup_confirmed": true,
-      "prob": 0.1991,
-      "per_pa_prob_vs_starter": 0.049,
-      "expected_pa": 4.42,
-      "factors": {
-        "league_hr_pa": 0.0305,
-        "batter": {
-          "value": 1.266,
-          "components": {
-            "brl_pa": {
-              "raw": 0.09009477124183007,
-              "regressed": 0.0839,
-              "ratio": 1.514,
-              "weight": 0.45
-            },
-            "hr_fb": {
-              "raw": 0.1111111111111111,
-              "regressed": 0.1329,
-              "ratio": 1.0,
-              "weight": 0.3
-            },
-            "xiso": {
-              "raw": 0.21623856912318457,
-              "regressed": 0.2066,
-              "ratio": 1.277,
-              "weight": 0.25
-            }
-          }
-        },
-        "pitcher": {
-          "value": 0.999,
-          "components": {
-            "hr_fb": {
-              "regressed": 0.1253,
-              "ratio": 0.942
-            },
-            "fb_rate": {
-              "regressed": 0.3642,
-              "ratio": 1.073
-            }
-          }
-        },
-        "park": {
-          "value": 1.025,
-          "park_factor": 103,
-          "hand": "R",
-          "park": "Citi Field"
-        },
-        "weather": {
-          "value": 1.239,
-          "temp_f": 83.6,
-          "wind_mph": 12.0,
-          "wind_out_mph": 11.7,
-          "roof": "open"
-        },
-        "expected_pa": {
-          "value": 4.42,
-          "lineup_slot": 3,
-          "starter_share": 0.62
-        }
-      },
-      "odds": null
-    },
-    {
-      "player_id": 678246,
-      "name": "Miguel Vargas",
-      "team": "Chicago White Sox",
-      "opponent": "Boston Red Sox",
-      "venue": "Rate Field",
-      "game_time_utc": "2026-07-09T18:10:00Z",
-      "batter_hand": "R",
-      "pitcher_id": 663776,
-      "pitcher_name": "Patrick Sandoval",
-      "pitcher_hand": "L",
-      "lineup_slot": 3,
-      "lineup_confirmed": true,
-      "prob": 0.1968,
-      "per_pa_prob_vs_starter": 0.0484,
-      "expected_pa": 4.42,
-      "factors": {
-        "league_hr_pa": 0.0305,
-        "batter": {
-          "value": 1.238,
-          "components": {
-            "brl_pa": {
-              "raw": 0.0836535742340927,
-              "regressed": 0.0783,
-              "ratio": 1.413,
-              "weight": 0.45
-            },
-            "hr_fb": {
-              "raw": 0.16393442622950818,
-              "regressed": 0.1329,
-              "ratio": 1.0,
-              "weight": 0.3
-            },
-            "xiso": {
-              "raw": 0.2245186801199891,
-              "regressed": 0.2133,
-              "ratio": 1.319,
-              "weight": 0.25
-            }
-          }
-        },
-        "pitcher": {
-          "value": 1.0,
-          "components": {},
-          "note": "no starter data; neutral"
-        },
-        "park": {
-          "value": 1.084,
-          "park_factor": 110,
-          "hand": "R",
-          "park": "Rate Field"
-        },
-        "weather": {
-          "value": 1.182,
-          "temp_f": 83.6,
-          "wind_mph": 7.5,
-          "wind_out_mph": 6.6,
-          "roof": "open"
-        },
-        "expected_pa": {
-          "value": 4.42,
-          "lineup_slot": 3,
-          "starter_share": 0.62
-        }
-      },
-      "odds": null
-    },
-    {
       "player_id": 701398,
       "name": "Sal Stewart",
       "team": "Cincinnati Reds",
@@ -604,13 +387,13 @@
       "pitcher_hand": "L",
       "lineup_slot": 2,
       "lineup_confirmed": false,
-      "prob": 0.1946,
-      "per_pa_prob_vs_starter": 0.0461,
+      "prob": 0.2043,
+      "per_pa_prob_vs_starter": 0.0486,
       "expected_pa": 4.54,
       "factors": {
         "league_hr_pa": 0.0305,
         "batter": {
-          "value": 1.286,
+          "value": 1.356,
           "components": {
             "brl_pa": {
               "raw": 0.09807612456747405,
@@ -620,8 +403,8 @@
             },
             "hr_fb": {
               "raw": 0.2111111111111111,
-              "regressed": 0.1329,
-              "ratio": 1.0,
+              "regressed": 0.16,
+              "ratio": 1.204,
               "weight": 0.3
             },
             "xiso": {
@@ -667,6 +450,148 @@
       "odds": null
     },
     {
+      "player_id": 677951,
+      "name": "Bobby Witt Jr.",
+      "team": "Kansas City Royals",
+      "opponent": "New York Mets",
+      "venue": "Citi Field",
+      "game_time_utc": "2026-07-09T17:10:00Z",
+      "batter_hand": "R",
+      "pitcher_id": 640455,
+      "pitcher_name": "Sean Manaea",
+      "pitcher_hand": "L",
+      "lineup_slot": 2,
+      "lineup_confirmed": true,
+      "prob": 0.2026,
+      "per_pa_prob_vs_starter": 0.0487,
+      "expected_pa": 4.54,
+      "factors": {
+        "league_hr_pa": 0.0305,
+        "batter": {
+          "value": 1.258,
+          "components": {
+            "brl_pa": {
+              "raw": 0.09007534246575342,
+              "regressed": 0.0842,
+              "ratio": 1.519,
+              "weight": 0.45
+            },
+            "hr_fb": {
+              "raw": 0.12244897959183673,
+              "regressed": 0.1291,
+              "ratio": 0.971,
+              "weight": 0.3
+            },
+            "xiso": {
+              "raw": 0.21622976697569532,
+              "regressed": 0.2071,
+              "ratio": 1.281,
+              "weight": 0.25
+            }
+          }
+        },
+        "pitcher": {
+          "value": 0.999,
+          "components": {
+            "hr_fb": {
+              "regressed": 0.1253,
+              "ratio": 0.942
+            },
+            "fb_rate": {
+              "regressed": 0.3642,
+              "ratio": 1.073
+            }
+          }
+        },
+        "park": {
+          "value": 1.025,
+          "park_factor": 103,
+          "hand": "R",
+          "park": "Citi Field"
+        },
+        "weather": {
+          "value": 1.239,
+          "temp_f": 83.6,
+          "wind_mph": 12.0,
+          "wind_out_mph": 11.7,
+          "roof": "open"
+        },
+        "expected_pa": {
+          "value": 4.54,
+          "lineup_slot": 2,
+          "starter_share": 0.62
+        }
+      },
+      "odds": null
+    },
+    {
+      "player_id": 678246,
+      "name": "Miguel Vargas",
+      "team": "Chicago White Sox",
+      "opponent": "Boston Red Sox",
+      "venue": "Rate Field",
+      "game_time_utc": "2026-07-09T18:10:00Z",
+      "batter_hand": "R",
+      "pitcher_id": 663776,
+      "pitcher_name": "Patrick Sandoval",
+      "pitcher_hand": "L",
+      "lineup_slot": 3,
+      "lineup_confirmed": true,
+      "prob": 0.2016,
+      "per_pa_prob_vs_starter": 0.0497,
+      "expected_pa": 4.42,
+      "factors": {
+        "league_hr_pa": 0.0305,
+        "batter": {
+          "value": 1.271,
+          "components": {
+            "brl_pa": {
+              "raw": 0.0836535742340927,
+              "regressed": 0.0783,
+              "ratio": 1.413,
+              "weight": 0.45
+            },
+            "hr_fb": {
+              "raw": 0.16393442622950818,
+              "regressed": 0.1459,
+              "ratio": 1.097,
+              "weight": 0.3
+            },
+            "xiso": {
+              "raw": 0.2245186801199891,
+              "regressed": 0.2133,
+              "ratio": 1.319,
+              "weight": 0.25
+            }
+          }
+        },
+        "pitcher": {
+          "value": 1.0,
+          "components": {},
+          "note": "no starter data; neutral"
+        },
+        "park": {
+          "value": 1.084,
+          "park_factor": 110,
+          "hand": "R",
+          "park": "Rate Field"
+        },
+        "weather": {
+          "value": 1.182,
+          "temp_f": 83.6,
+          "wind_mph": 7.5,
+          "wind_out_mph": 6.6,
+          "roof": "open"
+        },
+        "expected_pa": {
+          "value": 4.42,
+          "lineup_slot": 3,
+          "starter_share": 0.62
+        }
+      },
+      "odds": null
+    },
+    {
       "player_id": 695657,
       "name": "Colson Montgomery",
       "team": "Chicago White Sox",
@@ -679,13 +604,13 @@
       "pitcher_hand": "L",
       "lineup_slot": 4,
       "lineup_confirmed": true,
-      "prob": 0.1899,
-      "per_pa_prob_vs_starter": 0.0477,
+      "prob": 0.2014,
+      "per_pa_prob_vs_starter": 0.0509,
       "expected_pa": 4.31,
       "factors": {
         "league_hr_pa": 0.0305,
         "batter": {
-          "value": 1.24,
+          "value": 1.322,
           "components": {
             "brl_pa": {
               "raw": 0.08398470363288718,
@@ -695,8 +620,8 @@
             },
             "hr_fb": {
               "raw": 0.22115384615384615,
-              "regressed": 0.1329,
-              "ratio": 1.0,
+              "regressed": 0.1664,
+              "ratio": 1.252,
               "weight": 0.3
             },
             "xiso": {
@@ -746,13 +671,13 @@
       "pitcher_hand": "R",
       "lineup_slot": 3,
       "lineup_confirmed": true,
-      "prob": 0.188,
-      "per_pa_prob_vs_starter": 0.0462,
+      "prob": 0.1989,
+      "per_pa_prob_vs_starter": 0.0492,
       "expected_pa": 4.42,
       "factors": {
         "league_hr_pa": 0.0305,
         "batter": {
-          "value": 1.315,
+          "value": 1.398,
           "components": {
             "brl_pa": {
               "raw": 0.09148099850968704,
@@ -762,8 +687,8 @@
             },
             "hr_fb": {
               "raw": 0.21238938053097345,
-              "regressed": 0.1329,
-              "ratio": 1.0,
+              "regressed": 0.1647,
+              "ratio": 1.239,
               "weight": 0.3
             },
             "xiso": {
@@ -809,75 +734,75 @@
       "odds": null
     },
     {
-      "player_id": 687263,
-      "name": "Zach Neto",
-      "team": "Los Angeles Angels",
-      "opponent": "Texas Rangers",
-      "venue": "Globe Life Field",
-      "game_time_utc": "2026-07-10T00:05:00Z",
+      "player_id": 521692,
+      "name": "Salvador Perez",
+      "team": "Kansas City Royals",
+      "opponent": "New York Mets",
+      "venue": "Citi Field",
+      "game_time_utc": "2026-07-09T17:10:00Z",
       "batter_hand": "R",
-      "pitcher_id": 543135,
-      "pitcher_name": "Nathan Eovaldi",
-      "pitcher_hand": "R",
-      "lineup_slot": 1,
-      "lineup_confirmed": false,
-      "prob": 0.1879,
-      "per_pa_prob_vs_starter": 0.0445,
-      "expected_pa": 4.65,
+      "pitcher_id": 640455,
+      "pitcher_name": "Sean Manaea",
+      "pitcher_hand": "L",
+      "lineup_slot": 3,
+      "lineup_confirmed": true,
+      "prob": 0.1958,
+      "per_pa_prob_vs_starter": 0.0481,
+      "expected_pa": 4.42,
       "factors": {
         "league_hr_pa": 0.0305,
         "batter": {
-          "value": 1.224,
+          "value": 1.243,
           "components": {
             "brl_pa": {
-              "raw": 0.0817967332123412,
-              "regressed": 0.0761,
-              "ratio": 1.375,
+              "raw": 0.09009477124183007,
+              "regressed": 0.0839,
+              "ratio": 1.514,
               "weight": 0.45
             },
             "hr_fb": {
-              "raw": 0.17757009345794392,
-              "regressed": 0.1329,
-              "ratio": 1.0,
+              "raw": 0.1111111111111111,
+              "regressed": 0.1249,
+              "ratio": 0.94,
               "weight": 0.3
             },
             "xiso": {
-              "raw": 0.22477705451586652,
-              "regressed": 0.2135,
-              "ratio": 1.32,
+              "raw": 0.21623856912318457,
+              "regressed": 0.2066,
+              "ratio": 1.277,
               "weight": 0.25
             }
           }
         },
         "pitcher": {
-          "value": 1.042,
+          "value": 0.999,
           "components": {
             "hr_fb": {
-              "regressed": 0.1601,
-              "ratio": 1.204
+              "regressed": 0.1253,
+              "ratio": 0.942
             },
             "fb_rate": {
-              "regressed": 0.3084,
-              "ratio": 0.909
+              "regressed": 0.3642,
+              "ratio": 1.073
             }
           }
         },
         "park": {
-          "value": 0.983,
-          "park_factor": 98,
+          "value": 1.025,
+          "park_factor": 103,
           "hand": "R",
-          "park": "Globe Life Field"
+          "park": "Citi Field"
         },
         "weather": {
-          "value": 1.163,
-          "temp_f": 97.7,
-          "wind_mph": 14.1,
-          "wind_out_mph": 9.4,
-          "roof": "retractable"
+          "value": 1.239,
+          "temp_f": 83.6,
+          "wind_mph": 12.0,
+          "wind_out_mph": 11.7,
+          "roof": "open"
         },
         "expected_pa": {
-          "value": 4.65,
-          "lineup_slot": 1,
+          "value": 4.42,
+          "lineup_slot": 3,
           "starter_share": 0.62
         }
       },
@@ -896,13 +821,13 @@
       "pitcher_hand": "L",
       "lineup_slot": 4,
       "lineup_confirmed": true,
-      "prob": 0.1839,
-      "per_pa_prob_vs_starter": 0.0444,
+      "prob": 0.1941,
+      "per_pa_prob_vs_starter": 0.0471,
       "expected_pa": 4.31,
       "factors": {
         "league_hr_pa": 0.0305,
         "batter": {
-          "value": 1.404,
+          "value": 1.488,
           "components": {
             "brl_pa": {
               "raw": 0.10418080357142859,
@@ -912,8 +837,8 @@
             },
             "hr_fb": {
               "raw": 0.21978021978021978,
-              "regressed": 0.1329,
-              "ratio": 1.0,
+              "regressed": 0.1632,
+              "ratio": 1.228,
               "weight": 0.3
             },
             "xiso": {
@@ -959,150 +884,75 @@
       "odds": null
     },
     {
-      "player_id": 682626,
-      "name": "Francisco Alvarez",
-      "team": "New York Mets",
-      "opponent": "Kansas City Royals",
-      "venue": "Citi Field",
-      "game_time_utc": "2026-07-09T17:10:00Z",
+      "player_id": 687263,
+      "name": "Zach Neto",
+      "team": "Los Angeles Angels",
+      "opponent": "Texas Rangers",
+      "venue": "Globe Life Field",
+      "game_time_utc": "2026-07-10T00:05:00Z",
       "batter_hand": "R",
-      "pitcher_id": 608379,
-      "pitcher_name": "Michael Wacha",
+      "pitcher_id": 543135,
+      "pitcher_name": "Nathan Eovaldi",
       "pitcher_hand": "R",
-      "lineup_slot": 5,
-      "lineup_confirmed": true,
-      "prob": 0.1838,
-      "per_pa_prob_vs_starter": 0.047,
-      "expected_pa": 4.19,
+      "lineup_slot": 1,
+      "lineup_confirmed": false,
+      "prob": 0.194,
+      "per_pa_prob_vs_starter": 0.046,
+      "expected_pa": 4.65,
       "factors": {
         "league_hr_pa": 0.0305,
         "batter": {
-          "value": 1.234,
+          "value": 1.267,
           "components": {
             "brl_pa": {
-              "raw": 0.09275345809601301,
-              "regressed": 0.0805,
-              "ratio": 1.453,
+              "raw": 0.0817967332123412,
+              "regressed": 0.0761,
+              "ratio": 1.375,
               "weight": 0.45
             },
             "hr_fb": {
-              "raw": 0.19148936170212766,
-              "regressed": 0.1329,
-              "ratio": 1.0,
+              "raw": 0.17757009345794392,
+              "regressed": 0.1502,
+              "ratio": 1.13,
               "weight": 0.3
             },
             "xiso": {
-              "raw": 0.21540548938373896,
-              "regressed": 0.1997,
-              "ratio": 1.235,
+              "raw": 0.22477705451586652,
+              "regressed": 0.2135,
+              "ratio": 1.32,
               "weight": 0.25
             }
           }
         },
         "pitcher": {
-          "value": 0.984,
+          "value": 1.042,
           "components": {
             "hr_fb": {
-              "regressed": 0.1349,
-              "ratio": 1.015
+              "regressed": 0.1601,
+              "ratio": 1.204
             },
             "fb_rate": {
-              "regressed": 0.3161,
-              "ratio": 0.932
+              "regressed": 0.3084,
+              "ratio": 0.909
             }
           }
         },
         "park": {
-          "value": 1.025,
-          "park_factor": 103,
+          "value": 0.983,
+          "park_factor": 98,
           "hand": "R",
-          "park": "Citi Field"
+          "park": "Globe Life Field"
         },
         "weather": {
-          "value": 1.239,
-          "temp_f": 83.6,
-          "wind_mph": 12.0,
-          "wind_out_mph": 11.7,
-          "roof": "open"
+          "value": 1.163,
+          "temp_f": 97.7,
+          "wind_mph": 14.1,
+          "wind_out_mph": 9.4,
+          "roof": "retractable"
         },
         "expected_pa": {
-          "value": 4.19,
-          "lineup_slot": 5,
-          "starter_share": 0.62
-        }
-      },
-      "odds": null
-    },
-    {
-      "player_id": 677800,
-      "name": "Wilyer Abreu",
-      "team": "Boston Red Sox",
-      "opponent": "Chicago White Sox",
-      "venue": "Rate Field",
-      "game_time_utc": "2026-07-09T18:10:00Z",
-      "batter_hand": "L",
-      "pitcher_id": 641743,
-      "pitcher_name": "Anthony Kay",
-      "pitcher_hand": "L",
-      "lineup_slot": 3,
-      "lineup_confirmed": true,
-      "prob": 0.1834,
-      "per_pa_prob_vs_starter": 0.0444,
-      "expected_pa": 4.42,
-      "factors": {
-        "league_hr_pa": 0.0305,
-        "batter": {
-          "value": 1.181,
-          "components": {
-            "brl_pa": {
-              "raw": 0.07831284916201117,
-              "regressed": 0.0733,
-              "ratio": 1.323,
-              "weight": 0.45
-            },
-            "hr_fb": {
-              "raw": 0.08849557522123894,
-              "regressed": 0.1329,
-              "ratio": 1.0,
-              "weight": 0.3
-            },
-            "xiso": {
-              "raw": 0.20599084017687933,
-              "regressed": 0.1971,
-              "ratio": 1.219,
-              "weight": 0.25
-            }
-          }
-        },
-        "pitcher": {
-          "value": 0.977,
-          "components": {
-            "hr_fb": {
-              "regressed": 0.1296,
-              "ratio": 0.975
-            },
-            "fb_rate": {
-              "regressed": 0.325,
-              "ratio": 0.958
-            }
-          }
-        },
-        "park": {
-          "value": 1.068,
-          "park_factor": 108,
-          "hand": "L",
-          "park": "Rate Field"
-        },
-        "weather": {
-          "value": 1.182,
-          "temp_f": 83.6,
-          "wind_mph": 7.5,
-          "wind_out_mph": 6.6,
-          "roof": "open"
-        },
-        "expected_pa": {
-          "value": 4.42,
-          "lineup_slot": 3,
+          "value": 4.65,
+          "lineup_slot": 1,
           "starter_share": 0.62
         }
       },
@@ -1121,13 +971,13 @@
       "pitcher_hand": "L",
       "lineup_slot": 1,
       "lineup_confirmed": true,
-      "prob": 0.1813,
-      "per_pa_prob_vs_starter": 0.0414,
+      "prob": 0.1893,
+      "per_pa_prob_vs_starter": 0.0434,
       "expected_pa": 4.65,
       "factors": {
         "league_hr_pa": 0.0305,
         "batter": {
-          "value": 1.222,
+          "value": 1.281,
           "components": {
             "brl_pa": {
               "raw": 0.08008564814814814,
@@ -1137,8 +987,8 @@
             },
             "hr_fb": {
               "raw": 0.19444444444444445,
-              "regressed": 0.1329,
-              "ratio": 1.0,
+              "regressed": 0.1568,
+              "ratio": 1.18,
               "weight": 0.3
             },
             "xiso": {
@@ -1184,156 +1034,6 @@
       "odds": null
     },
     {
-      "player_id": 671739,
-      "name": "Michael Harris II",
-      "team": "Atlanta Braves",
-      "opponent": "Pittsburgh Pirates",
-      "venue": "PNC Park",
-      "game_time_utc": "2026-07-09T16:35:00Z",
-      "batter_hand": "L",
-      "pitcher_id": 656605,
-      "pitcher_name": "Mitch Keller",
-      "pitcher_hand": "R",
-      "lineup_slot": 1,
-      "lineup_confirmed": true,
-      "prob": 0.1806,
-      "per_pa_prob_vs_starter": 0.0421,
-      "expected_pa": 4.65,
-      "factors": {
-        "league_hr_pa": 0.0305,
-        "batter": {
-          "value": 1.198,
-          "components": {
-            "brl_pa": {
-              "raw": 0.08323982398239825,
-              "regressed": 0.0782,
-              "ratio": 1.412,
-              "weight": 0.45
-            },
-            "hr_fb": {
-              "raw": 0.21052631578947367,
-              "regressed": 0.1329,
-              "ratio": 1.0,
-              "weight": 0.3
-            },
-            "xiso": {
-              "raw": 0.19138046200946288,
-              "regressed": 0.186,
-              "ratio": 1.15,
-              "weight": 0.25
-            }
-          }
-        },
-        "pitcher": {
-          "value": 1.012,
-          "components": {
-            "hr_fb": {
-              "regressed": 0.1438,
-              "ratio": 1.082
-            },
-            "fb_rate": {
-              "regressed": 0.3198,
-              "ratio": 0.943
-            }
-          }
-        },
-        "park": {
-          "value": 0.983,
-          "park_factor": 98,
-          "hand": "L",
-          "park": "PNC Park"
-        },
-        "weather": {
-          "value": 1.159,
-          "temp_f": 84.5,
-          "wind_mph": 4.7,
-          "wind_out_mph": 3.9,
-          "roof": "open"
-        },
-        "expected_pa": {
-          "value": 4.65,
-          "lineup_slot": 1,
-          "starter_share": 0.62
-        }
-      },
-      "odds": null
-    },
-    {
-      "player_id": 663853,
-      "name": "Romy Gonzalez",
-      "team": "Boston Red Sox",
-      "opponent": "Chicago White Sox",
-      "venue": "Rate Field",
-      "game_time_utc": "2026-07-09T18:10:00Z",
-      "batter_hand": "R",
-      "pitcher_id": 641743,
-      "pitcher_name": "Anthony Kay",
-      "pitcher_hand": "L",
-      "lineup_slot": 4,
-      "lineup_confirmed": true,
-      "prob": 0.1803,
-      "per_pa_prob_vs_starter": 0.045,
-      "expected_pa": 4.31,
-      "factors": {
-        "league_hr_pa": 0.0305,
-        "batter": {
-          "value": 1.16,
-          "components": {
-            "brl_pa": {
-              "raw": 0.08800000000000001,
-              "regressed": 0.0731,
-              "ratio": 1.32,
-              "weight": 0.45
-            },
-            "hr_fb": {
-              "raw": 0.3333333333333333,
-              "regressed": 0.1329,
-              "ratio": 1.0,
-              "weight": 0.3
-            },
-            "xiso": {
-              "raw": 0.1973791917454858,
-              "regressed": 0.1828,
-              "ratio": 1.131,
-              "weight": 0.25
-            }
-          }
-        },
-        "pitcher": {
-          "value": 0.993,
-          "components": {
-            "hr_fb": {
-              "regressed": 0.1385,
-              "ratio": 1.042
-            },
-            "fb_rate": {
-              "regressed": 0.3161,
-              "ratio": 0.932
-            }
-          }
-        },
-        "park": {
-          "value": 1.084,
-          "park_factor": 110,
-          "hand": "R",
-          "park": "Rate Field"
-        },
-        "weather": {
-          "value": 1.182,
-          "temp_f": 83.6,
-          "wind_mph": 7.5,
-          "wind_out_mph": 6.6,
-          "roof": "open"
-        },
-        "expected_pa": {
-          "value": 4.31,
-          "lineup_slot": 4,
-          "starter_share": 0.62
-        }
-      },
-      "odds": null
-    },
-    {
       "player_id": 682829,
       "name": "Elly De La Cruz",
       "team": "Cincinnati Reds",
@@ -1346,13 +1046,13 @@
       "pitcher_hand": "L",
       "lineup_slot": 1,
       "lineup_confirmed": false,
-      "prob": 0.1803,
-      "per_pa_prob_vs_starter": 0.0414,
+      "prob": 0.1892,
+      "per_pa_prob_vs_starter": 0.0437,
       "expected_pa": 4.65,
       "factors": {
         "league_hr_pa": 0.0305,
         "batter": {
-          "value": 1.155,
+          "value": 1.217,
           "components": {
             "brl_pa": {
               "raw": 0.07607751937984496,
@@ -1362,8 +1062,8 @@
             },
             "hr_fb": {
               "raw": 0.23728813559322035,
-              "regressed": 0.1329,
-              "ratio": 1.0,
+              "regressed": 0.1598,
+              "ratio": 1.202,
               "weight": 0.3
             },
             "xiso": {
@@ -1409,6 +1109,228 @@
       "odds": null
     },
     {
+      "player_id": 700250,
+      "name": "Ben Rice",
+      "team": "New York Yankees",
+      "opponent": "Tampa Bay Rays",
+      "venue": "Tropicana Field",
+      "game_time_utc": "2026-07-09T17:10:00Z",
+      "batter_hand": "L",
+      "pitcher_id": 656876,
+      "pitcher_name": "Drew Rasmussen",
+      "pitcher_hand": "R",
+      "lineup_slot": 2,
+      "lineup_confirmed": true,
+      "prob": 0.189,
+      "per_pa_prob_vs_starter": 0.0454,
+      "expected_pa": 4.54,
+      "factors": {
+        "league_hr_pa": 0.0305,
+        "batter": {
+          "value": 1.509,
+          "components": {
+            "brl_pa": {
+              "raw": 0.10074706138441447,
+              "regressed": 0.0914,
+              "ratio": 1.649,
+              "weight": 0.45
+            },
+            "hr_fb": {
+              "raw": 0.32098765432098764,
+              "regressed": 0.1936,
+              "ratio": 1.456,
+              "weight": 0.3
+            },
+            "xiso": {
+              "raw": 0.2541304347826087,
+              "regressed": 0.2367,
+              "ratio": 1.464,
+              "weight": 0.25
+            }
+          }
+        },
+        "pitcher": {
+          "value": 1.012,
+          "components": {
+            "hr_fb": {
+              "regressed": 0.1469,
+              "ratio": 1.105
+            },
+            "fb_rate": {
+              "regressed": 0.3124,
+              "ratio": 0.921
+            }
+          }
+        },
+        "park": {
+          "value": 0.974,
+          "park_factor": 97,
+          "hand": "L",
+          "park": "Tropicana Field"
+        },
+        "weather": {
+          "value": 1.0,
+          "note": "dome or no forecast"
+        },
+        "expected_pa": {
+          "value": 4.54,
+          "lineup_slot": 2,
+          "starter_share": 0.62
+        }
+      },
+      "odds": null
+    },
+    {
+      "player_id": 671739,
+      "name": "Michael Harris II",
+      "team": "Atlanta Braves",
+      "opponent": "Pittsburgh Pirates",
+      "venue": "PNC Park",
+      "game_time_utc": "2026-07-09T16:35:00Z",
+      "batter_hand": "L",
+      "pitcher_id": 656605,
+      "pitcher_name": "Mitch Keller",
+      "pitcher_hand": "R",
+      "lineup_slot": 1,
+      "lineup_confirmed": true,
+      "prob": 0.1886,
+      "per_pa_prob_vs_starter": 0.0442,
+      "expected_pa": 4.65,
+      "factors": {
+        "league_hr_pa": 0.0305,
+        "batter": {
+          "value": 1.256,
+          "components": {
+            "brl_pa": {
+              "raw": 0.08323982398239825,
+              "regressed": 0.0782,
+              "ratio": 1.412,
+              "weight": 0.45
+            },
+            "hr_fb": {
+              "raw": 0.21052631578947367,
+              "regressed": 0.1569,
+              "ratio": 1.18,
+              "weight": 0.3
+            },
+            "xiso": {
+              "raw": 0.19138046200946288,
+              "regressed": 0.186,
+              "ratio": 1.15,
+              "weight": 0.25
+            }
+          }
+        },
+        "pitcher": {
+          "value": 1.012,
+          "components": {
+            "hr_fb": {
+              "regressed": 0.1438,
+              "ratio": 1.082
+            },
+            "fb_rate": {
+              "regressed": 0.3198,
+              "ratio": 0.943
+            }
+          }
+        },
+        "park": {
+          "value": 0.983,
+          "park_factor": 98,
+          "hand": "L",
+          "park": "PNC Park"
+        },
+        "weather": {
+          "value": 1.159,
+          "temp_f": 84.5,
+          "wind_mph": 4.7,
+          "wind_out_mph": 3.9,
+          "roof": "open"
+        },
+        "expected_pa": {
+          "value": 4.65,
+          "lineup_slot": 1,
+          "starter_share": 0.62
+        }
+      },
+      "odds": null
+    },
+    {
+      "player_id": 682626,
+      "name": "Francisco Alvarez",
+      "team": "New York Mets",
+      "opponent": "Kansas City Royals",
+      "venue": "Citi Field",
+      "game_time_utc": "2026-07-09T17:10:00Z",
+      "batter_hand": "R",
+      "pitcher_id": 608379,
+      "pitcher_name": "Michael Wacha",
+      "pitcher_hand": "R",
+      "lineup_slot": 5,
+      "lineup_confirmed": true,
+      "prob": 0.1882,
+      "per_pa_prob_vs_starter": 0.0482,
+      "expected_pa": 4.19,
+      "factors": {
+        "league_hr_pa": 0.0305,
+        "batter": {
+          "value": 1.266,
+          "components": {
+            "brl_pa": {
+              "raw": 0.09275345809601301,
+              "regressed": 0.0805,
+              "ratio": 1.453,
+              "weight": 0.45
+            },
+            "hr_fb": {
+              "raw": 0.19148936170212766,
+              "regressed": 0.1456,
+              "ratio": 1.095,
+              "weight": 0.3
+            },
+            "xiso": {
+              "raw": 0.21540548938373896,
+              "regressed": 0.1997,
+              "ratio": 1.235,
+              "weight": 0.25
+            }
+          }
+        },
+        "pitcher": {
+          "value": 0.984,
+          "components": {
+            "hr_fb": {
+              "regressed": 0.1349,
+              "ratio": 1.015
+            },
+            "fb_rate": {
+              "regressed": 0.3161,
+              "ratio": 0.932
+            }
+          }
+        },
+        "park": {
+          "value": 1.025,
+          "park_factor": 103,
+          "hand": "R",
+          "park": "Citi Field"
+        },
+        "weather": {
+          "value": 1.239,
+          "temp_f": 83.6,
+          "wind_mph": 12.0,
+          "wind_out_mph": 11.7,
+          "roof": "open"
+        },
+        "expected_pa": {
+          "value": 4.19,
+          "lineup_slot": 5,
+          "starter_share": 0.62
+        }
+      },
+      "odds": null
+    },
+    {
       "player_id": 686948,
       "name": "Drake Baldwin",
       "team": "Atlanta Braves",
@@ -1421,13 +1343,13 @@
       "pitcher_hand": "R",
       "lineup_slot": 4,
       "lineup_confirmed": true,
-      "prob": 0.1771,
-      "per_pa_prob_vs_starter": 0.0445,
+      "prob": 0.1875,
+      "per_pa_prob_vs_starter": 0.0473,
       "expected_pa": 4.31,
       "factors": {
         "league_hr_pa": 0.0305,
         "batter": {
-          "value": 1.265,
+          "value": 1.345,
           "components": {
             "brl_pa": {
               "raw": 0.09134592145015107,
@@ -1437,8 +1359,8 @@
             },
             "hr_fb": {
               "raw": 0.25862068965517243,
-              "regressed": 0.1329,
-              "ratio": 1.0,
+              "regressed": 0.1649,
+              "ratio": 1.24,
               "weight": 0.3
             },
             "xiso": {
@@ -1478,6 +1400,81 @@
         "expected_pa": {
           "value": 4.31,
           "lineup_slot": 4,
+          "starter_share": 0.62
+        }
+      },
+      "odds": null
+    },
+    {
+      "player_id": 664040,
+      "name": "Brandon Lowe",
+      "team": "Pittsburgh Pirates",
+      "opponent": "Atlanta Braves",
+      "venue": "PNC Park",
+      "game_time_utc": "2026-07-09T16:35:00Z",
+      "batter_hand": "L",
+      "pitcher_id": 693821,
+      "pitcher_name": "Bryce Elder",
+      "pitcher_hand": "R",
+      "lineup_slot": 2,
+      "lineup_confirmed": true,
+      "prob": 0.1853,
+      "per_pa_prob_vs_starter": 0.0438,
+      "expected_pa": 4.54,
+      "factors": {
+        "league_hr_pa": 0.0305,
+        "batter": {
+          "value": 1.293,
+          "components": {
+            "brl_pa": {
+              "raw": 0.0828811369509044,
+              "regressed": 0.0772,
+              "ratio": 1.394,
+              "weight": 0.45
+            },
+            "hr_fb": {
+              "raw": 0.20388349514563106,
+              "regressed": 0.1597,
+              "ratio": 1.201,
+              "weight": 0.3
+            },
+            "xiso": {
+              "raw": 0.22124023437500004,
+              "regressed": 0.2104,
+              "ratio": 1.301,
+              "weight": 0.25
+            }
+          }
+        },
+        "pitcher": {
+          "value": 0.974,
+          "components": {
+            "hr_fb": {
+              "regressed": 0.1187,
+              "ratio": 0.893
+            },
+            "fb_rate": {
+              "regressed": 0.3585,
+              "ratio": 1.057
+            }
+          }
+        },
+        "park": {
+          "value": 0.983,
+          "park_factor": 98,
+          "hand": "L",
+          "park": "PNC Park"
+        },
+        "weather": {
+          "value": 1.159,
+          "temp_f": 84.5,
+          "wind_mph": 4.7,
+          "wind_out_mph": 3.9,
+          "roof": "open"
+        },
+        "expected_pa": {
+          "value": 4.54,
+          "lineup_slot": 2,
           "starter_share": 0.62
         }
       },
