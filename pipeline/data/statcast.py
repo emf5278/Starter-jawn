@@ -1,0 +1,191 @@
+"""Batter power stats, pitcher HR-vulnerability splits, and league baselines.
+
+Sources (all via pybaseball, no API key):
+  * Baseball Savant leaderboards: barrels/PA, xBA/xSLG (-> xISO)
+  * FanGraphs season stats: HR/FB, FB%, PA
+  * Raw Statcast events: pitcher handedness splits (HR/FB, GB/FB vs LHB/RHB)
+
+Everything returns plain pandas DataFrames keyed by MLBAM player id, with
+per-metric sample sizes so the model can regress each rate to the mean.
+"""
+
+from __future__ import annotations
+
+import datetime as dt
+import logging
+
+import numpy as np
+import pandas as pd
+
+log = logging.getLogger(__name__)
+
+# Weight applied to last season's sample when blending with season-to-date.
+PREV_SEASON_WEIGHT = 0.6
+
+
+def _as_fraction(s: pd.Series) -> pd.Series:
+    """FanGraphs/Savant rate columns are sometimes 0-1, sometimes 0-100."""
+    s = pd.to_numeric(s, errors="coerce")
+    if s.dropna().median() > 1.0:
+        s = s / 100.0
+    return s
+
+
+# --------------------------------------------------------------------- batters
+
+def _batter_season_stats(season: int) -> pd.DataFrame:
+    """One season of power inputs per batter: brl_pa, xiso, hr_fb + samples."""
+    from pybaseball import (
+        batting_stats,
+        playerid_reverse_lookup,
+        statcast_batter_exitvelo_barrels,
+        statcast_batter_expected_stats,
+    )
+
+    barrels = statcast_batter_exitvelo_barrels(season, minBBE=20)
+    barrels = barrels.rename(columns={"attempts": "bbe"})
+    barrels["brl_pa"] = _as_fraction(barrels["brl_pa"])
+    barrels = barrels[["player_id", "brl_pa", "bbe"]]
+
+    xstats = statcast_batter_expected_stats(season, minPA=25)
+    xstats["xiso"] = pd.to_numeric(xstats["est_slg"], errors="coerce") - pd.to_numeric(
+        xstats["est_ba"], errors="coerce"
+    )
+    xstats = xstats.rename(columns={"pa": "xiso_pa"})[["player_id", "xiso", "xiso_pa"]]
+
+    fg = batting_stats(season, qual=30)[["IDfg", "Name", "PA", "HR", "HR/FB", "FB%"]]
+    fg["hr_fb"] = _as_fraction(fg["HR/FB"])
+    fg["fb_pct"] = _as_fraction(fg["FB%"])
+    # approximate fly-ball count for the regression ballast:
+    # PA * (balls in play share ~0.67) * FB%
+    fg["fb_n"] = fg["PA"] * 0.67 * fg["fb_pct"]
+    ids = playerid_reverse_lookup(fg["IDfg"].tolist(), key_type="fangraphs")
+    fg = fg.merge(
+        ids[["key_fangraphs", "key_mlbam"]],
+        left_on="IDfg",
+        right_on="key_fangraphs",
+        how="inner",
+    ).rename(columns={"key_mlbam": "player_id"})
+    fg = fg[["player_id", "PA", "hr_fb", "fb_n"]].rename(columns={"PA": "pa"})
+
+    out = barrels.merge(xstats, on="player_id", how="outer").merge(
+        fg, on="player_id", how="outer"
+    )
+    out["player_id"] = out["player_id"].astype("Int64")
+    return out
+
+
+def batter_power_stats(season: int) -> pd.DataFrame:
+    """Blend season-to-date with last season (downweighted) so April isn't chaos.
+
+    Rates are combined as sample-weighted means with the previous season's
+    sample multiplied by PREV_SEASON_WEIGHT.
+    """
+    cur = _batter_season_stats(season)
+    try:
+        prev = _batter_season_stats(season - 1)
+    except Exception:
+        log.warning("no previous-season batter stats; using current only", exc_info=True)
+        prev = pd.DataFrame(columns=cur.columns)
+
+    merged = cur.merge(prev, on="player_id", how="outer", suffixes=("", "_prev"))
+
+    def blend(rate: str, n: str) -> tuple[pd.Series, pd.Series]:
+        r0 = merged.get(rate)
+        n0 = merged.get(n).fillna(0)
+        r1 = merged.get(f"{rate}_prev")
+        n1 = merged.get(f"{n}_prev", pd.Series(0, index=merged.index)).fillna(0) * PREV_SEASON_WEIGHT
+        num = (r0.fillna(0) * n0) + (r1.fillna(0) * n1)
+        den = n0.where(r0.notna(), 0) + n1.where(r1.notna(), 0)
+        return num / den.replace(0, np.nan), den
+
+    out = pd.DataFrame({"player_id": merged["player_id"]})
+    out["brl_pa"], out["brl_n"] = blend("brl_pa", "bbe")
+    out["xiso"], out["xiso_n"] = blend("xiso", "xiso_pa")
+    out["hr_fb"], out["hr_fb_n"] = blend("hr_fb", "fb_n")
+    return out.set_index("player_id")
+
+
+# --------------------------------------------------------------------- pitchers
+
+def pitcher_hand_splits(season: int, end_date: dt.date) -> pd.DataFrame | None:
+    """Per-pitcher, per-batter-hand HR/FB and FB rate from raw Statcast events.
+
+    Returns a frame indexed by (pitcher_id, stand) with columns
+    pa, fb, gb, bip, hr — or None if the download fails.  pybaseball caches
+    the underlying daily chunks, so repeat runs are incremental.
+    """
+    from pybaseball import statcast
+
+    start = f"{season}-03-15"
+    end = end_date.strftime("%Y-%m-%d")
+    try:
+        ev = statcast(start_dt=start, end_dt=end, verbose=False)
+    except Exception:
+        log.warning("raw statcast pull failed; pitcher splits unavailable", exc_info=True)
+        return None
+    if ev is None or ev.empty:
+        return None
+
+    ev = ev[ev["game_type"] == "R"] if "game_type" in ev.columns else ev
+    pa_end = ev["events"].notna() & (ev["events"] != "")
+    df = ev.loc[pa_end, ["pitcher", "stand", "events", "bb_type"]].copy()
+    df["hr"] = (df["events"] == "home_run").astype(int)
+    df["fb"] = df["bb_type"].isin(["fly_ball", "popup"]).astype(int)
+    df["gb"] = (df["bb_type"] == "ground_ball").astype(int)
+    df["bip"] = df["bb_type"].notna().astype(int)
+    g = df.groupby(["pitcher", "stand"]).agg(
+        pa=("events", "size"), hr=("hr", "sum"), fb=("fb", "sum"),
+        gb=("gb", "sum"), bip=("bip", "sum"),
+    )
+    return g
+
+
+def pitcher_overall_stats(season: int) -> pd.DataFrame:
+    """FanGraphs fallback (no handedness split): HR/FB and FB% per pitcher."""
+    from pybaseball import pitching_stats, playerid_reverse_lookup
+
+    fg = pitching_stats(season, qual=10)[["IDfg", "Name", "TBF", "HR/FB", "FB%"]]
+    fg["hr_fb"] = _as_fraction(fg["HR/FB"])
+    fg["fb_pct"] = _as_fraction(fg["FB%"])
+    ids = playerid_reverse_lookup(fg["IDfg"].tolist(), key_type="fangraphs")
+    fg = fg.merge(
+        ids[["key_fangraphs", "key_mlbam"]],
+        left_on="IDfg", right_on="key_fangraphs", how="inner",
+    ).rename(columns={"key_mlbam": "player_id"})
+    return fg[["player_id", "TBF", "hr_fb", "fb_pct"]].set_index("player_id")
+
+
+# --------------------------------------------------------------------- league
+
+def league_baselines(batters: pd.DataFrame, season: int) -> dict:
+    """League-average rates the factor ratios are measured against.
+
+    brl/xiso/hr_fb baselines are sample-weighted means of the batter table
+    itself (self-consistent with the ratios we compute from it); HR/PA comes
+    from FanGraphs team totals with a config fallback.
+    """
+    from .. import config
+
+    def wmean(rate: str, n: str, fallback: float) -> float:
+        d = batters[[rate, n]].dropna()
+        if d.empty or d[n].sum() <= 0:
+            return fallback
+        return float(np.average(d[rate], weights=d[n]))
+
+    base = {
+        "brl_pa": wmean("brl_pa", "brl_n", config.LEAGUE_BRL_PA_FALLBACK),
+        "xiso": wmean("xiso", "xiso_n", config.LEAGUE_XISO_FALLBACK),
+        "hr_fb": wmean("hr_fb", "hr_fb_n", config.LEAGUE_HR_FB_FALLBACK),
+        "fb_rate": config.LEAGUE_FB_RATE_FALLBACK,
+        "hr_pa": config.LEAGUE_HR_PA_FALLBACK,
+    }
+    try:
+        from pybaseball import team_batting
+
+        tb = team_batting(season)
+        if tb["PA"].sum() > 0:
+            base["hr_pa"] = float(tb["HR"].sum() / tb["PA"].sum())
+    except Exception:
+        log.warning("team_batting failed; using fallback league HR/PA", exc_info=True)
+    return base
