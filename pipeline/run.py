@@ -77,7 +77,11 @@ def run(date: dt.date, output: str, lite: bool, use_odds: bool, top_n: int) -> d
             batters = batters.join(
                 hrfb.rename(columns={"hr_fb": "hr_fb_ev", "fb": "fb_ev"}), how="left")
             batters["hr_fb"] = batters["hr_fb"].fillna(batters["hr_fb_ev"])
-            batters["hr_fb_n"] = batters["hr_fb_n"].fillna(batters["fb_ev"])
+            # a 0 sample (FanGraphs absent) must also count as missing, or the
+            # regression treats every hitter as league-average on HR/FB
+            batters["hr_fb_n"] = (
+                batters["hr_fb_n"].mask(batters["hr_fb_n"] <= 0).fillna(batters["fb_ev"])
+            )
     log.info("league baselines: %s", {k: round(v, 4) for k, v in league.items()})
     overall = None
     try:
