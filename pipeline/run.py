@@ -16,6 +16,7 @@ import argparse
 import datetime as dt
 import json
 import logging
+import math
 import os
 from zoneinfo import ZoneInfo
 
@@ -29,6 +30,17 @@ from .stadiums import stadium_for_home_team
 log = logging.getLogger("pipeline")
 
 MODEL_VERSION = "0.1.0"
+
+
+def _json_safe(o):
+    """Replace non-finite floats (NaN/inf) with None, recursively."""
+    if isinstance(o, dict):
+        return {k: _json_safe(v) for k, v in o.items()}
+    if isinstance(o, (list, tuple)):
+        return [_json_safe(v) for v in o]
+    if isinstance(o, float) and not math.isfinite(o):
+        return None
+    return o
 
 
 def _batter_hand(bat_side: str, pitcher_hand: str | None) -> str:
@@ -179,7 +191,9 @@ def run(date: dt.date, output: str, lite: bool, use_odds: bool, top_n: int) -> d
     }
     os.makedirs(os.path.dirname(output) or ".", exist_ok=True)
     with open(output, "w") as f:
-        json.dump(doc, f, indent=2)
+        # NaN (players missing from a stats table) is not valid JSON and
+        # breaks the browser's fetch().json(); serialize it as null.
+        json.dump(_json_safe(doc), f, indent=2, allow_nan=False)
     log.info("wrote %s (%d players scored, top %d kept)", output, len(rows), len(top))
     return doc
 
