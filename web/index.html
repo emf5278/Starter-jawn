@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MLB Home Run Predictions</title>
+<script src="vendor/chart.umd.js"></script>
+<style>
+  :root {
+    --page:      #f9f9f7; --surface: #fcfcfb;
+    --ink:       #0b0b0b; --ink-2:   #52514e; --ink-muted: #898781;
+    --grid:      #e1e0d9; --axisln:  #c3c2b7;
+    --border:    rgba(11,11,11,0.10);
+    --series-1:  #2a78d6;  /* model probability */
+    --series-2:  #1baf7a;  /* market fair probability */
+    --ev-good:   #006300; --ev-bad: #d03b3b;
+    --div-pos:   #2a78d6; --div-neg: #e34948;  /* factor boost / drag */
+    --wash:      rgba(11,11,11,0.04);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --page:      #0d0d0d; --surface: #1a1a19;
+      --ink:       #ffffff; --ink-2:   #c3c2b7; --ink-muted: #898781;
+      --grid:      #2c2c2a; --axisln:  #383835;
+      --border:    rgba(255,255,255,0.10);
+      --series-1:  #3987e5; --series-2: #199e70;
+      --ev-good:   #0ca30c; --ev-bad: #d03b3b;
+      --div-pos:   #3987e5; --div-neg: #e66767;
+      --wash:      rgba(255,255,255,0.05);
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--page); color: var(--ink);
+    font: 15px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 24px 16px 64px; }
+  header h1 { font-size: 22px; margin: 0 0 4px; }
+  header .sub { color: var(--ink-2); font-size: 13px; }
+  .badge {
+    display: inline-block; font-size: 11px; font-weight: 600; letter-spacing: .03em;
+    padding: 1px 8px; border: 1px solid var(--border); border-radius: 999px;
+    color: var(--ink-2); vertical-align: 2px; margin-left: 8px;
+  }
+  .card {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 10px; padding: 16px; margin-top: 20px;
+  }
+  .card h2 { font-size: 14px; margin: 0 0 12px; color: var(--ink-2); font-weight: 600; }
+  #chartwrap { position: relative; height: 340px; }
+  .tablewrap { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; min-width: 720px; }
+  th, td { text-align: left; padding: 9px 10px; border-bottom: 1px solid var(--grid); }
+  th { font-size: 12px; color: var(--ink-muted); font-weight: 600; white-space: nowrap; }
+  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+  tr.playerrow { cursor: pointer; }
+  tr.playerrow:hover { background: var(--wash); }
+  .pname { font-weight: 600; }
+  .pmeta { font-size: 12px; color: var(--ink-2); }
+  .dot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; margin-right: 5px; }
+  .dot.ok  { background: var(--series-2); }
+  .dot.tbd { background: var(--ink-muted); }
+  .prob { font-weight: 600; }
+  .ev-pos { color: var(--ev-good); font-weight: 600; }
+  .ev-neg { color: var(--ev-bad);  font-weight: 600; }
+  .ev-na  { color: var(--ink-muted); }
+  .chev { color: var(--ink-muted); font-size: 11px; transition: transform .15s; display: inline-block; }
+  tr.open .chev { transform: rotate(90deg); }
+  tr.detail > td { background: var(--wash); padding: 14px 16px 18px; }
+  .why { display: grid; grid-template-columns: minmax(260px, 1.2fr) minmax(240px, 1fr); gap: 20px; }
+  @media (max-width: 700px) { .why { grid-template-columns: 1fr; } }
+  .fbar { display: grid; grid-template-columns: 92px 1fr 52px; align-items: center; gap: 8px; margin: 6px 0; }
+  .fbar .lab { font-size: 12px; color: var(--ink-2); }
+  .fbar .val { font-size: 12px; text-align: right; font-variant-numeric: tabular-nums; }
+  .track { position: relative; height: 14px; }
+  .track .mid { position: absolute; left: 50%; top: -2px; bottom: -2px; width: 1px; background: var(--axisln); }
+  .track .bar { position: absolute; top: 2px; height: 10px; border-radius: 4px; }
+  .bar.pos { background: var(--div-pos); left: 50%; }
+  .bar.neg { background: var(--div-neg); right: 50%; }
+  .kv { font-size: 12.5px; color: var(--ink-2); }
+  .kv dt { float: left; clear: left; width: 140px; color: var(--ink-muted); }
+  .kv dd { margin: 0 0 3px 150px; font-variant-numeric: tabular-nums; }
+  .note { font-size: 12px; color: var(--ink-muted); margin-top: 16px; }
+  #status { color: var(--ink-2); padding: 24px 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>MLB Home Run Predictions <span class="badge" id="demoBadge" hidden>DEMO DATA</span></h1>
+    <div class="sub" id="meta">Loading…</div>
+  </header>
+
+  <div class="card" id="chartCard" hidden>
+    <h2>Model probability vs. market (top 10)</h2>
+    <div id="chartwrap"><canvas id="chart" role="img"
+      aria-label="Horizontal bar chart of model home run probability per player, with the de-vigged market probability shown as a dot"></canvas></div>
+  </div>
+
+  <div class="card">
+    <h2>Ranked picks — click a row for the “why”</h2>
+    <div id="status">Loading predictions.json…</div>
+    <div class="tablewrap" hidden id="tablewrap">
+      <table id="tbl">
+        <thead><tr>
+          <th></th><th>Player</th><th>Matchup</th>
+          <th class="num">P(HR)</th><th class="num">Best odds</th>
+          <th class="num">Market fair</th><th class="num">EV / $1</th><th></th>
+        </tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <div class="note">
+      Lineup status: <span class="dot ok"></span>confirmed&ensp;<span class="dot tbd"></span>projected from last game.
+      EV assumes a flat $1 stake at the best listed price. Model probabilities are estimates — not betting advice.
+    </div>
+  </div>
+</div>
+
+<script>
+"use strict";
+const css = name => getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+const pct = (x, d = 1) => (100 * x).toFixed(d) + "%";
+const american = a => (a > 0 ? "+" + a : String(a));
+
+async function load() {
+  let doc;
+  try {
+    const r = await fetch("predictions.json", { cache: "no-store" });
+    if (!r.ok) throw new Error(r.status);
+    doc = await r.json();
+  } catch (e) {
+    document.getElementById("status").textContent =
+      "Could not load predictions.json (" + e + "). Run the pipeline first.";
+    return;
+  }
+  render(doc);
+}
+
+function render(doc) {
+  document.getElementById("demoBadge").hidden = !doc.demo;
+  const when = new Date(doc.generated_at);
+  document.getElementById("meta").textContent =
+    `Slate for ${doc.date} · generated ${when.toLocaleString()} · model v${doc.model_version}` +
+    ` · league HR/PA ${doc.league_hr_pa}` + (doc.odds_available ? "" : " · odds unavailable this run");
+
+  renderTable(doc.players);
+  renderChart(doc.players);
+  document.getElementById("status").hidden = true;
+  document.getElementById("tablewrap").hidden = false;
+  if (location.hash === "#expand") document.querySelector("#tbl tbody tr")?.click();
+}
+
+/* ---------------------------------------------------------------- table */
+function renderTable(players) {
+  const tb = document.querySelector("#tbl tbody");
+  tb.innerHTML = "";
+  players.forEach((p, i) => {
+    const tr = document.createElement("tr");
+    tr.className = "playerrow";
+    const o = p.odds;
+    const evCell = o
+      ? `<span class="${o.ev_per_dollar >= 0 ? "ev-pos" : "ev-neg"}">${o.ev_per_dollar >= 0 ? "+" : "−"}${Math.abs(100 * o.ev_per_dollar).toFixed(1)}%</span>`
+      : `<span class="ev-na">—</span>`;
+    tr.innerHTML =
+      `<td class="num">${i + 1}</td>
+       <td><span class="pname">${esc(p.name)}</span><br>
+           <span class="pmeta"><span class="dot ${p.lineup_confirmed ? "ok" : "tbd"}"></span>` +
+           `${esc(p.team)} · bats ${p.batter_hand} · #${p.lineup_slot}</span></td>
+       <td><span class="pmeta">vs ${esc(p.pitcher_name || "TBD")}${p.pitcher_hand ? " (" + p.pitcher_hand + "HP)" : ""}<br>${esc(p.venue)}</span></td>
+       <td class="num prob">${pct(p.prob)}</td>
+       <td class="num">${o ? american(o.best_price_american) + `<br><span class="pmeta">${esc(o.best_book)}</span>` : "—"}</td>
+       <td class="num">${o ? pct(o.fair_prob) : "—"}</td>
+       <td class="num">${evCell}</td>
+       <td><span class="chev">▶</span></td>`;
+    const detail = document.createElement("tr");
+    detail.className = "detail";
+    detail.hidden = true;
+    detail.innerHTML = `<td colspan="8">${whyHtml(p)}</td>`;
+    tr.addEventListener("click", () => {
+      detail.hidden = !detail.hidden;
+      tr.classList.toggle("open", !detail.hidden);
+    });
+    tb.append(tr, detail);
+  });
+}
+
+/* the "why": each multiplicative factor as a diverging bar around x1.0.
+   Bar length is |log(factor)| so x1.25 and x0.8 render the same distance. */
+function whyHtml(p) {
+  const f = p.factors;
+  const rows = [
+    ["Batter power", f.batter.value],
+    ["Pitcher", f.pitcher.value],
+    ["Park", f.park.value],
+    ["Weather", f.weather.value],
+  ].map(([label, v]) => {
+    const w = Math.min(1, Math.abs(Math.log(v)) / Math.log(2.6)) * 50; // 50% track = x2.6
+    const cls = v >= 1 ? "pos" : "neg";
+    return `<div class="fbar"><span class="lab">${label}</span>
+      <span class="track"><span class="mid"></span><span class="bar ${cls}" style="width:${w.toFixed(1)}%"></span></span>
+      <span class="val">×${v.toFixed(2)}</span></div>`;
+  }).join("");
+
+  const b = f.batter.components || {}, w = f.weather, k = f.park, o = p.odds;
+  const fmt = (c, d = 3) => c && c.regressed != null ? `${c.regressed} (×${c.ratio})` : "league avg";
+  return `<div class="why">
+    <div>
+      <div class="fbar"><span class="lab" style="font-weight:600">Factor</span>
+        <span class="lab" style="text-align:center">drags ← ×1.0 → boosts</span><span class="val"></span></div>
+      ${rows}
+      <div class="kv" style="margin-top:10px">
+        Per-PA HR prob vs starter: <b>${pct(p.per_pa_prob_vs_starter, 2)}</b> ·
+        expected PA: <b>${p.expected_pa}</b> (slot ${p.lineup_slot})
+      </div>
+    </div>
+    <dl class="kv">
+      <dt>Barrels / PA</dt><dd>${fmt(b.brl_pa)}</dd>
+      <dt>HR / FB</dt><dd>${fmt(b.hr_fb)}</dd>
+      <dt>xISO</dt><dd>${fmt(b.xiso)}</dd>
+      <dt>Park (${k.hand}HB)</dt><dd>${k.park_factor} → ×${k.value}</dd>
+      <dt>Weather</dt><dd>${w.temp_f != null
+        ? `${w.temp_f}°F, wind ${w.wind_mph} mph (${w.wind_out_mph >= 0 ? "out" : "in"} ${Math.abs(w.wind_out_mph)} mph), ${w.roof}`
+        : (w.note || "n/a")}</dd>
+      ${o ? `<dt>Books quoted</dt><dd>${o.n_books}</dd>
+             <dt>Model − market</dt><dd>${(100 * o.edge_vs_fair).toFixed(1)} pts</dd>` : ""}
+    </dl>
+  </div>`;
+}
+
+/* ---------------------------------------------------------------- chart */
+function renderChart(players) {
+  if (typeof Chart === "undefined") return; // CDN blocked: table still works
+  document.getElementById("chartCard").hidden = false;
+  const labels = players.map(p => p.name);
+  const model = players.map(p => +(100 * p.prob).toFixed(1));
+  const market = players.map(p => p.odds ? +(100 * p.odds.fair_prob).toFixed(1) : null);
+  const ink2 = css("--ink-2"), muted = css("--ink-muted"), grid = css("--grid");
+
+  new Chart(document.getElementById("chart"), {
+    data: {
+      labels,
+      datasets: [
+        { type: "bar", label: "Model P(≥1 HR)", data: model,
+          backgroundColor: css("--series-1"), barThickness: 13,
+          borderRadius: 4, borderSkipped: "start" },
+        { type: "line", label: "Market fair prob (de-vigged)", data: market,
+          showLine: false, pointRadius: 5, pointHoverRadius: 7,
+          pointBackgroundColor: css("--series-2"),
+          pointBorderColor: css("--surface"), pointBorderWidth: 2 },
+      ],
+    },
+    options: {
+      indexAxis: "y", maintainAspectRatio: false, responsive: true,
+      scales: {
+        x: { beginAtZero: true, title: { display: true, text: "probability (%)", color: muted },
+             grid: { color: grid }, ticks: { color: muted, callback: v => v + "%" } },
+        y: { grid: { display: false }, ticks: { color: ink2 } },
+      },
+      plugins: {
+        legend: { labels: { color: ink2, usePointStyle: true, boxWidth: 9, boxHeight: 9 } },
+        tooltip: { callbacks: { label: c => ` ${c.dataset.label}: ${c.parsed.x}%` } },
+      },
+    },
+  });
+}
+
+function esc(s) {
+  return String(s ?? "").replace(/[&<>"']/g, c =>
+    ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+}
+
+load();
+</script>
+</body>
+</html>
