@@ -53,20 +53,29 @@ def _batter_season_stats(season: int) -> pd.DataFrame:
     )
     xstats = xstats.rename(columns={"pa": "xiso_pa"})[["player_id", "xiso", "xiso_pa"]]
 
-    fg = batting_stats(season, qual=30)[["IDfg", "Name", "PA", "HR", "HR/FB", "FB%"]]
-    fg["hr_fb"] = _as_fraction(fg["HR/FB"])
-    fg["fb_pct"] = _as_fraction(fg["FB%"])
-    # approximate fly-ball count for the regression ballast:
-    # PA * (balls in play share ~0.67) * FB%
-    fg["fb_n"] = fg["PA"] * 0.67 * fg["fb_pct"]
-    ids = playerid_reverse_lookup(fg["IDfg"].tolist(), key_type="fangraphs")
-    fg = fg.merge(
-        ids[["key_fangraphs", "key_mlbam"]],
-        left_on="IDfg",
-        right_on="key_fangraphs",
-        how="inner",
-    ).rename(columns={"key_mlbam": "player_id"})
-    fg = fg[["player_id", "PA", "hr_fb", "fb_n"]].rename(columns={"PA": "pa"})
+    # FanGraphs blocks requests from cloud/CI IPs (403). HR/FB from here is a
+    # bonus; when unavailable it gets filled from raw Statcast events instead
+    # (see batter_hrfb_from_events) or regresses to the league mean.
+    try:
+        fg = batting_stats(season, qual=30)[["IDfg", "Name", "PA", "HR", "HR/FB", "FB%"]]
+        fg["hr_fb"] = _as_fraction(fg["HR/FB"])
+        fg["fb_pct"] = _as_fraction(fg["FB%"])
+        # approximate fly-ball count for the regression ballast:
+        # PA * (balls in play share ~0.67) * FB%
+        fg["fb_n"] = fg["PA"] * 0.67 * fg["fb_pct"]
+        ids = playerid_reverse_lookup(fg["IDfg"].tolist(), key_type="fangraphs")
+        fg = fg.merge(
+            ids[["key_fangraphs", "key_mlbam"]],
+            left_on="IDfg",
+            right_on="key_fangraphs",
+            how="inner",
+        ).rename(columns={"key_mlbam": "player_id"})
+        fg = fg[["player_id", "PA", "hr_fb", "fb_n"]].rename(columns={"PA": "pa"})
+    except Exception:
+        log.warning("FanGraphs batting stats unavailable for %s (blocked/down); "
+                    "HR/FB will come from raw Statcast or regress to league",
+                    season, exc_info=True)
+        fg = pd.DataFrame(columns=["player_id", "pa", "hr_fb", "fb_n"])
 
     out = barrels.merge(xstats, on="player_id", how="outer").merge(
         fg, on="player_id", how="outer"
@@ -106,39 +115,64 @@ def batter_power_stats(season: int) -> pd.DataFrame:
     return out.set_index("player_id")
 
 
-# --------------------------------------------------------------------- pitchers
+# ---------------------------------------------------------------- raw events
 
-def pitcher_hand_splits(season: int, end_date: dt.date) -> pd.DataFrame | None:
-    """Per-pitcher, per-batter-hand HR/FB and FB rate from raw Statcast events.
+def season_events(season: int, end_date: dt.date) -> pd.DataFrame | None:
+    """Season-to-date raw Statcast events (regular season only), or None.
 
-    Returns a frame indexed by (pitcher_id, stand) with columns
-    pa, fb, gb, bip, hr — or None if the download fails.  pybaseball caches
-    the underlying daily chunks, so repeat runs are incremental.
+    pybaseball caches the underlying daily chunks, so repeat runs are
+    incremental. One download feeds pitcher splits, batter HR/FB, and
+    league rates.
     """
     from pybaseball import statcast
 
-    start = f"{season}-03-15"
-    end = end_date.strftime("%Y-%m-%d")
     try:
-        ev = statcast(start_dt=start, end_dt=end, verbose=False)
+        ev = statcast(start_dt=f"{season}-03-15",
+                      end_dt=end_date.strftime("%Y-%m-%d"), verbose=False)
     except Exception:
-        log.warning("raw statcast pull failed; pitcher splits unavailable", exc_info=True)
+        log.warning("raw statcast pull failed", exc_info=True)
         return None
     if ev is None or ev.empty:
         return None
+    return ev[ev["game_type"] == "R"] if "game_type" in ev.columns else ev
 
-    ev = ev[ev["game_type"] == "R"] if "game_type" in ev.columns else ev
+
+def _pa_flags(ev: pd.DataFrame, cols: list[str]) -> pd.DataFrame:
+    """One row per plate appearance with hr/fb/gb/bip flags."""
     pa_end = ev["events"].notna() & (ev["events"] != "")
-    df = ev.loc[pa_end, ["pitcher", "stand", "events", "bb_type"]].copy()
+    df = ev.loc[pa_end, cols + ["events", "bb_type"]].copy()
     df["hr"] = (df["events"] == "home_run").astype(int)
     df["fb"] = df["bb_type"].isin(["fly_ball", "popup"]).astype(int)
     df["gb"] = (df["bb_type"] == "ground_ball").astype(int)
     df["bip"] = df["bb_type"].notna().astype(int)
-    g = df.groupby(["pitcher", "stand"]).agg(
+    return df
+
+
+def pitcher_splits_from_events(ev: pd.DataFrame) -> pd.DataFrame:
+    """(pitcher_id, stand) -> pa, hr, fb, gb, bip."""
+    df = _pa_flags(ev, ["pitcher", "stand"])
+    return df.groupby(["pitcher", "stand"]).agg(
         pa=("events", "size"), hr=("hr", "sum"), fb=("fb", "sum"),
         gb=("gb", "sum"), bip=("bip", "sum"),
     )
+
+
+def batter_hrfb_from_events(ev: pd.DataFrame) -> pd.DataFrame:
+    """Per-batter HR/FB (+ fly-ball sample) — the FanGraphs-free fallback."""
+    df = _pa_flags(ev, ["batter"])
+    g = df.groupby("batter").agg(hr=("hr", "sum"), fb=("fb", "sum"))
+    g["hr_fb"] = g["hr"] / g["fb"].replace(0, np.nan)
     return g
+
+
+def league_rates_from_events(ev: pd.DataFrame) -> dict:
+    """League HR/PA, HR/FB, FB rate straight from the season's events."""
+    df = _pa_flags(ev, [])
+    return {
+        "hr_pa": float(df["hr"].sum() / len(df)),
+        "hr_fb": float(df["hr"].sum() / max(1, df["fb"].sum())),
+        "fb_rate": float(df["fb"].sum() / max(1, df["bip"].sum())),
+    }
 
 
 def pitcher_overall_stats(season: int) -> pd.DataFrame:

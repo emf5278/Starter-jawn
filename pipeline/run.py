@@ -62,12 +62,23 @@ def run(date: dt.date, output: str, lite: bool, use_odds: bool, top_n: int) -> d
     log.info("fetching batter power stats (%s + %s blend)", season, season - 1)
     batters = statcast.batter_power_stats(season)
     league = statcast.league_baselines(batters, season)
-    log.info("league baselines: %s", {k: round(v, 4) for k, v in league.items()})
 
     splits = None
     if not lite:
-        log.info("fetching raw statcast for pitcher handedness splits (cached)")
-        splits = statcast.pitcher_hand_splits(season, date)
+        log.info("fetching raw statcast events (cached, incremental)")
+        events = statcast.season_events(season, date)
+        if events is not None:
+            splits = statcast.pitcher_splits_from_events(events)
+            # league rates straight from events beat the FanGraphs-dependent
+            # estimates (FanGraphs 403s from cloud IPs)
+            league.update(statcast.league_rates_from_events(events))
+            # fill HR/FB for batters FanGraphs couldn't provide
+            hrfb = statcast.batter_hrfb_from_events(events)
+            batters = batters.join(
+                hrfb.rename(columns={"hr_fb": "hr_fb_ev", "fb": "fb_ev"}), how="left")
+            batters["hr_fb"] = batters["hr_fb"].fillna(batters["hr_fb_ev"])
+            batters["hr_fb_n"] = batters["hr_fb_n"].fillna(batters["fb_ev"])
+    log.info("league baselines: %s", {k: round(v, 4) for k, v in league.items()})
     overall = None
     try:
         overall = statcast.pitcher_overall_stats(season)
