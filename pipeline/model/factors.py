@@ -124,10 +124,19 @@ def weather_factor(weather: dict | None, roof: str) -> dict:
     Temperature: warmer air is less dense; ~+0.8% HR per degF above 70.
     Wind: the component blowing out to CF adds ~1% per mph (blowing in
     subtracts).  Domes are neutral; retractable roofs get half effect since
-    they're usually closed in exactly the weather that would matter.
+    they're usually closed in exactly the weather that would matter, and are
+    treated as fully closed (neutral) in extreme heat/cold — a 100°F Texas
+    afternoon means AC and a shut roof, not extra carry.
     """
     if roof == "dome" or weather is None:
         return {"value": 1.0, "note": "dome or no forecast"}
+
+    if roof == "retractable" and (
+        weather["temp_f"] >= config.RETRACTABLE_CLOSED_ABOVE_F
+        or weather["temp_f"] <= config.RETRACTABLE_CLOSED_BELOW_F
+    ):
+        return {"value": 1.0, "roof": roof,
+                "note": f"retractable roof assumed closed ({weather['temp_f']:.0f}°F outside)"}
 
     temp_term = config.WEATHER_TEMP_COEF * (weather["temp_f"] - config.WEATHER_TEMP_REF_F)
     wind_out = _clamp(weather["wind_out_mph"],

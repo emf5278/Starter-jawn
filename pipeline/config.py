@@ -67,6 +67,10 @@ WEATHER_WIND_COEF = 0.010
 WEATHER_WIND_CAP_MPH = 18.0        # clamp the |outward component|
 # Retractable roofs are usually closed in bad weather; damp the effect.
 RETRACTABLE_DAMP = 0.5
+# In extreme heat/cold the roof is almost certainly shut (AC/heating), so
+# treat the game as indoors: weather factor = 1.0 exactly.
+RETRACTABLE_CLOSED_ABOVE_F = 88.0
+RETRACTABLE_CLOSED_BELOW_F = 45.0
 WEATHER_FACTOR_CAP = (0.70, 1.45)
 
 # ---------------------------------------------------------------- playing time
