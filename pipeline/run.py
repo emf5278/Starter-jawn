@@ -121,9 +121,10 @@ def run(date: dt.date, output: str, lite: bool, use_odds: bool, top_n: int) -> d
                 })
 
     rows.sort(key=lambda r: r["prob"], reverse=True)
-    top = rows[:top_n]
 
-    for r in top:
+    # attach odds to every scored player, not just the probability leaders —
+    # the EV ranking can surface longshots priced too generously
+    for r in rows:
         q = prop_odds.get(odds_mod.normalize_name(r["name"]))
         if q:
             r["odds"] = {
@@ -136,6 +137,21 @@ def run(date: dt.date, output: str, lite: bool, use_odds: bool, top_n: int) -> d
         else:
             r["odds"] = None
 
+    # ship the union of both top-N lists; the frontend re-sorts per view
+    top_prob = rows[:top_n]
+    top_ev = sorted(
+        (r for r in rows if r["odds"]),
+        key=lambda r: r["odds"]["ev_per_dollar"], reverse=True,
+    )[:top_n]
+    seen: set = set()
+    top = []
+    for r in top_prob + top_ev:
+        k = (r["player_id"], r["game_time_utc"])
+        if k not in seen:
+            seen.add(k)
+            top.append(r)
+    top.sort(key=lambda r: r["prob"], reverse=True)
+
     doc = {
         "generated_at": dt.datetime.now(tz=dt.timezone.utc).isoformat(timespec="seconds"),
         "date": date.isoformat(),
@@ -143,6 +159,7 @@ def run(date: dt.date, output: str, lite: bool, use_odds: bool, top_n: int) -> d
         "league_hr_pa": round(league["hr_pa"], 4),
         "n_players_scored": len(rows),
         "odds_available": bool(prop_odds),
+        "top_n": top_n,
         "players": top,
     }
     os.makedirs(os.path.dirname(output) or ".", exist_ok=True)

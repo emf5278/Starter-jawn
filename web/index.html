@@ -47,6 +47,19 @@
     border-radius: 10px; padding: 16px; margin-top: 20px;
   }
   .card h2 { font-size: 14px; margin: 0 0 12px; color: var(--ink-2); font-weight: 600; }
+  .seg {
+    display: inline-flex; margin-top: 20px; border: 1px solid var(--border);
+    border-radius: 8px; overflow: hidden; background: var(--surface);
+  }
+  .seg button {
+    appearance: none; border: 0; background: none; cursor: pointer;
+    font: 600 13px/1 system-ui, -apple-system, "Segoe UI", sans-serif;
+    color: var(--ink-2); padding: 8px 14px;
+  }
+  .seg button + button { border-left: 1px solid var(--border); }
+  .seg button[aria-pressed="true"] { background: var(--series-1); color: #fff; }
+  .seg button:disabled { color: var(--ink-muted); cursor: not-allowed; }
+  .seg button:not([aria-pressed="true"]):not(:disabled):hover { background: var(--wash); }
   #chartwrap { position: relative; height: 340px; }
   .tablewrap { overflow-x: auto; }
   table { border-collapse: collapse; width: 100%; min-width: 720px; }
@@ -91,14 +104,19 @@
     <div class="sub" id="meta">Loading…</div>
   </header>
 
+  <div class="seg" id="viewSeg" hidden>
+    <button id="btnProb" aria-pressed="true">Top 20 · Probability</button>
+    <button id="btnEv" aria-pressed="false">Top 20 · EV</button>
+  </div>
+
   <div class="card" id="chartCard" hidden>
-    <h2>Model probability vs. market (top 10)</h2>
+    <h2 id="chartTitle">Model probability vs. market</h2>
     <div id="chartwrap"><canvas id="chart" role="img"
       aria-label="Horizontal bar chart of model home run probability per player, with the de-vigged market probability shown as a dot"></canvas></div>
   </div>
 
   <div class="card">
-    <h2>Ranked picks — click a row for the “why”</h2>
+    <h2 id="tableTitle">Ranked picks — click a row for the “why”</h2>
     <div id="status">Loading predictions.json…</div>
     <div class="tablewrap" hidden id="tablewrap">
       <table id="tbl">
@@ -137,18 +155,56 @@ async function load() {
   render(doc);
 }
 
+let DOC = null;
+let VIEW = "prob"; // 'prob' | 'ev'
+
 function render(doc) {
+  DOC = doc;
   document.getElementById("demoBadge").hidden = !doc.demo;
   const when = new Date(doc.generated_at);
   document.getElementById("meta").textContent =
     `Slate for ${doc.date} · generated ${when.toLocaleString()} · model v${doc.model_version}` +
     ` · league HR/PA ${doc.league_hr_pa}` + (doc.odds_available ? "" : " · odds unavailable this run");
 
-  renderTable(doc.players);
-  renderChart(doc.players);
+  const seg = document.getElementById("viewSeg");
+  seg.hidden = false;
+  const hasOdds = doc.players.some(p => p.odds);
+  const btnEv = document.getElementById("btnEv");
+  btnEv.disabled = !hasOdds;
+  if (!hasOdds) btnEv.title = "No prop odds in this run";
+  document.getElementById("btnProb").onclick = () => setView("prob");
+  btnEv.onclick = () => setView("ev");
+
   document.getElementById("status").hidden = true;
   document.getElementById("tablewrap").hidden = false;
+  if (location.hash === "#ev" && hasOdds) VIEW = "ev"; // deep link
+  setView(VIEW);
   if (location.hash === "#expand") document.querySelector("#tbl tbody tr")?.click();
+}
+
+function setView(view) {
+  VIEW = view;
+  const n = DOC.top_n || 20;
+  document.getElementById("btnProb").setAttribute("aria-pressed", view === "prob");
+  document.getElementById("btnEv").setAttribute("aria-pressed", view === "ev");
+
+  let list;
+  if (view === "ev") {
+    list = DOC.players.filter(p => p.odds)
+      .sort((a, b) => b.odds.ev_per_dollar - a.odds.ev_per_dollar).slice(0, n);
+    document.getElementById("chartTitle").textContent =
+      `Model probability vs. market — top ${list.length} by EV`;
+    document.getElementById("tableTitle").textContent =
+      "Ranked by EV at best price (players without listed props excluded) — click a row for the “why”";
+  } else {
+    list = [...DOC.players].sort((a, b) => b.prob - a.prob).slice(0, n);
+    document.getElementById("chartTitle").textContent =
+      `Model probability vs. market — top ${list.length} by model probability`;
+    document.getElementById("tableTitle").textContent =
+      "Ranked by model P(≥1 HR) — click a row for the “why”";
+  }
+  renderTable(list);
+  renderChart(list);
 }
 
 /* ---------------------------------------------------------------- table */
@@ -229,23 +285,28 @@ function whyHtml(p) {
 }
 
 /* ---------------------------------------------------------------- chart */
+let CHART = null;
+
 function renderChart(players) {
-  if (typeof Chart === "undefined") return; // CDN blocked: table still works
+  if (typeof Chart === "undefined") return; // no chart lib: table still works
   document.getElementById("chartCard").hidden = false;
+  document.getElementById("chartwrap").style.height =
+    (players.length * 26 + 110) + "px";
+  if (CHART) { CHART.destroy(); CHART = null; }
   const labels = players.map(p => p.name);
   const model = players.map(p => +(100 * p.prob).toFixed(1));
   const market = players.map(p => p.odds ? +(100 * p.odds.fair_prob).toFixed(1) : null);
   const ink2 = css("--ink-2"), muted = css("--ink-muted"), grid = css("--grid");
 
-  new Chart(document.getElementById("chart"), {
+  CHART = new Chart(document.getElementById("chart"), {
     data: {
       labels,
       datasets: [
-        { type: "bar", label: "Model P(≥1 HR)", data: model,
+        { type: "bar", label: "Model P(≥1 HR)", data: model, order: 2,
           backgroundColor: css("--series-1"), barThickness: 13,
           borderRadius: 4, borderSkipped: "start" },
         { type: "line", label: "Market fair prob (de-vigged)", data: market,
-          showLine: false, pointRadius: 5, pointHoverRadius: 7,
+          order: 1, showLine: false, pointRadius: 5, pointHoverRadius: 7,
           pointBackgroundColor: css("--series-2"),
           pointBorderColor: css("--surface"), pointBorderWidth: 2 },
       ],
@@ -258,7 +319,8 @@ function renderChart(players) {
         y: { grid: { display: false }, ticks: { color: ink2 } },
       },
       plugins: {
-        legend: { labels: { color: ink2, usePointStyle: true, boxWidth: 9, boxHeight: 9 } },
+        legend: { labels: { color: ink2, usePointStyle: true, boxWidth: 9, boxHeight: 9,
+                            sort: (a, b) => a.datasetIndex - b.datasetIndex } },
         tooltip: { callbacks: { label: c => ` ${c.dataset.label}: ${c.parsed.x}%` } },
       },
     },

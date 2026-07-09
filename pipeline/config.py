@@ -77,7 +77,9 @@ def expected_pa_for_slot(slot: int) -> float:
 
 # ---------------------------------------------------------------- output
 PER_PA_PROB_CAP = 0.20     # sanity cap on p_PA
-TOP_N = 10
+# The JSON carries the union of (top N by probability) and (top N by EV) so
+# the dashboard can toggle between the two rankings.
+TOP_N = 20
 
 # ---------------------------------------------------------------- odds
 ODDS_SPORT_KEY = "baseball_mlb"

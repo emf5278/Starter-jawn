@@ -2,8 +2,10 @@
 
 A daily pipeline that estimates **P(player hits ≥1 HR today)** for every hitter
 in a confirmed/projected lineup, compares those probabilities to de-vigged
-sportsbook HR prop odds, and publishes the top 10 to a static dashboard on
-GitHub Pages — refreshed every morning by GitHub Actions.
+sportsbook HR prop odds, and publishes the results to a static dashboard on
+GitHub Pages — refreshed every morning by GitHub Actions. The dashboard
+toggles between the **top 20 by model probability** and the **top 20 by EV**
+at the best available price.
 
 > Not betting advice. The model is deliberately simple and transparent so you
 > can see exactly why it likes a player — and tune every weight yourself.
@@ -86,7 +88,8 @@ python -m pipeline.run --lite --no-odds
 python -m http.server -d web 8000    # → http://localhost:8000
 ```
 
-Output goes to `web/predictions.json`: top 10 players with probability, best
+Output goes to `web/predictions.json`: the union of the top 20 by probability
+and the top 20 by EV, each with probability, best
 odds, de-vigged implied probability, EV, and the full factor breakdown the
 dashboard renders in each row's expandable "why" section. The checked-in file
 is demo data (marked `"demo": true`) so the page renders before your first run.
