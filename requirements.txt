@@ -1,0 +1,6 @@
+pybaseball>=2.2.7
+pandas>=2.0
+numpy>=1.24
+requests>=2.31
+python-dotenv>=1.0
+matplotlib>=3.7   # backtest calibration plot
