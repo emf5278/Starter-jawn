@@ -73,13 +73,14 @@ jobs:
   deploy:
     needs: predict
     runs-on: ubuntu-latest
+    # Pages must be enabled once by a human (Settings -> Pages -> Source:
+    # GitHub Actions). Until then this job fails; don't let that mark the
+    # daily prediction run red.
+    continue-on-error: true
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      # creates the Pages site on first run so no manual Settings step is needed
       - uses: actions/configure-pages@v5
-        with:
-          enablement: true
       - id: deployment
         uses: actions/deploy-pages@v4
