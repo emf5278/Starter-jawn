@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-09T17:12:30+00:00",
+  "generated_at": "2026-07-09T17:16:08+00:00",
   "date": "2026-07-09",
   "model_version": "0.1.0",
   "league_hr_pa": 0.0305,
@@ -165,14 +165,14 @@
         }
       },
       "odds": {
-        "best_price_decimal": 3.25,
-        "best_price_american": 225,
+        "best_price_decimal": 3.3,
+        "best_price_american": 230,
         "best_book": "BetRivers",
-        "implied_prob": 0.3077,
-        "fair_prob": 0.2903,
+        "implied_prob": 0.303,
+        "fair_prob": 0.2859,
         "n_books": 1,
-        "ev_per_dollar": -0.2457,
-        "edge_vs_fair": -0.0582
+        "ev_per_dollar": -0.2341,
+        "edge_vs_fair": -0.0538
       }
     },
     {
@@ -577,14 +577,14 @@
         }
       },
       "odds": {
-        "best_price_decimal": 3.5,
-        "best_price_american": 250,
+        "best_price_decimal": 4.3,
+        "best_price_american": 330,
         "best_book": "BetRivers",
-        "implied_prob": 0.2857,
-        "fair_prob": 0.2695,
+        "implied_prob": 0.2326,
+        "fair_prob": 0.2194,
         "n_books": 1,
-        "ev_per_dollar": -0.2909,
-        "edge_vs_fair": -0.0669
+        "ev_per_dollar": -0.1288,
+        "edge_vs_fair": -0.0168
       }
     },
     {
@@ -888,14 +888,14 @@
         }
       },
       "odds": {
-        "best_price_decimal": 3.75,
-        "best_price_american": 275,
+        "best_price_decimal": 4.6,
+        "best_price_american": 360,
         "best_book": "BetRivers",
-        "implied_prob": 0.2667,
-        "fair_prob": 0.2516,
+        "implied_prob": 0.2174,
+        "fair_prob": 0.2051,
         "n_books": 1,
-        "ev_per_dollar": -0.2658,
-        "edge_vs_fair": -0.0558
+        "ev_per_dollar": -0.0993,
+        "edge_vs_fair": -0.0093
       }
     },
     {
@@ -1305,14 +1305,14 @@
         }
       },
       "odds": {
-        "best_price_decimal": 4.8,
-        "best_price_american": 380,
+        "best_price_decimal": 6.1,
+        "best_price_american": 510,
         "best_book": "BetRivers",
-        "implied_prob": 0.2083,
-        "fair_prob": 0.1965,
+        "implied_prob": 0.1639,
+        "fair_prob": 0.1547,
         "n_books": 1,
-        "ev_per_dollar": -0.0928,
-        "edge_vs_fair": -0.0075
+        "ev_per_dollar": 0.1529,
+        "edge_vs_fair": 0.0343
       }
     },
     {
@@ -1389,14 +1389,14 @@
         }
       },
       "odds": {
-        "best_price_decimal": 5.8,
-        "best_price_american": 480,
+        "best_price_decimal": 5.75,
+        "best_price_american": 475,
         "best_book": "BetRivers",
-        "implied_prob": 0.1724,
-        "fair_prob": 0.1627,
+        "implied_prob": 0.1739,
+        "fair_prob": 0.1641,
         "n_books": 1,
-        "ev_per_dollar": 0.0939,
-        "edge_vs_fair": 0.0259
+        "ev_per_dollar": 0.0844,
+        "edge_vs_fair": 0.0245
       }
     },
     {
@@ -1841,7 +1841,7 @@
           "value": 1.033,
           "components": {
             "brl_pa": {
-              "raw": NaN,
+              "raw": null,
               "regressed": 0.0554,
               "ratio": 1.0,
               "weight": 0.45
@@ -1969,14 +1969,14 @@
         }
       },
       "odds": {
-        "best_price_decimal": 7.0,
-        "best_price_american": 600,
+        "best_price_decimal": 9.0,
+        "best_price_american": 800,
         "best_book": "BetRivers",
-        "implied_prob": 0.1429,
-        "fair_prob": 0.1348,
+        "implied_prob": 0.1111,
+        "fair_prob": 0.1048,
         "n_books": 1,
-        "ev_per_dollar": 0.0948,
-        "edge_vs_fair": 0.0216
+        "ev_per_dollar": 0.4076,
+        "edge_vs_fair": 0.0516
       }
     },
     {
@@ -2549,14 +2549,14 @@
         }
       },
       "odds": {
-        "best_price_decimal": 8.0,
-        "best_price_american": 700,
+        "best_price_decimal": 9.0,
+        "best_price_american": 800,
         "best_book": "BetRivers",
-        "implied_prob": 0.125,
-        "fair_prob": 0.1179,
+        "implied_prob": 0.1111,
+        "fair_prob": 0.1048,
         "n_books": 1,
-        "ev_per_dollar": 0.0496,
-        "edge_vs_fair": 0.0133
+        "ev_per_dollar": 0.1808,
+        "edge_vs_fair": 0.0264
       }
     },
     {
@@ -2812,79 +2812,84 @@
       }
     },
     {
-      "player_id": 682668,
-      "name": "Luisangel Acu\u00f1a",
-      "team": "Chicago White Sox",
-      "opponent": "Boston Red Sox",
-      "venue": "Rate Field",
-      "game_time_utc": "2026-07-09T18:10:00Z",
-      "batter_hand": "R",
-      "pitcher_id": 663776,
-      "pitcher_name": "Patrick Sandoval",
-      "pitcher_hand": "L",
-      "lineup_slot": 8,
+      "player_id": 691176,
+      "name": "Jasson Dom\u00ednguez",
+      "team": "New York Yankees",
+      "opponent": "Tampa Bay Rays",
+      "venue": "Tropicana Field",
+      "game_time_utc": "2026-07-09T17:10:00Z",
+      "batter_hand": "L",
+      "pitcher_id": 656876,
+      "pitcher_name": "Drew Rasmussen",
+      "pitcher_hand": "R",
+      "lineup_slot": 3,
       "lineup_confirmed": true,
-      "prob": 0.1042,
-      "per_pa_prob_vs_starter": 0.0282,
-      "expected_pa": 3.85,
+      "prob": 0.111,
+      "per_pa_prob_vs_starter": 0.0264,
+      "expected_pa": 4.42,
       "factors": {
         "league_hr_pa": 0.0305,
         "batter": {
-          "value": 0.722,
+          "value": 0.878,
           "components": {
             "brl_pa": {
-              "raw": 0.022903225806451613,
-              "regressed": 0.0349,
-              "ratio": 0.63,
+              "raw": 0.04007142857142858,
+              "regressed": 0.045,
+              "ratio": 0.813,
               "weight": 0.45
             },
             "hr_fb": {
-              "raw": 0.038461538461538464,
-              "regressed": 0.1204,
-              "ratio": 0.906,
+              "raw": 0.14814814814814814,
+              "regressed": 0.135,
+              "ratio": 1.016,
               "weight": 0.3
             },
             "xiso": {
-              "raw": 0.0731832229580574,
-              "regressed": 0.106,
-              "ratio": 0.655,
+              "raw": 0.12168296529968455,
+              "regressed": 0.1335,
+              "ratio": 0.826,
               "weight": 0.25
             }
           }
         },
         "pitcher": {
-          "value": 1.0,
-          "components": {},
-          "note": "no starter data; neutral"
+          "value": 1.012,
+          "components": {
+            "hr_fb": {
+              "regressed": 0.1469,
+              "ratio": 1.105
+            },
+            "fb_rate": {
+              "regressed": 0.3124,
+              "ratio": 0.921
+            }
+          }
         },
         "park": {
-          "value": 1.084,
-          "park_factor": 110,
-          "hand": "R",
-          "park": "Rate Field"
+          "value": 0.974,
+          "park_factor": 97,
+          "hand": "L",
+          "park": "Tropicana Field"
         },
         "weather": {
-          "value": 1.182,
-          "temp_f": 83.6,
-          "wind_mph": 7.5,
-          "wind_out_mph": 6.6,
-          "roof": "open"
+          "value": 1.0,
+          "note": "dome or no forecast"
         },
         "expected_pa": {
-          "value": 3.85,
-          "lineup_slot": 8,
+          "value": 4.42,
+          "lineup_slot": 3,
           "starter_share": 0.62
         }
       },
       "odds": {
-        "best_price_decimal": 10.0,
-        "best_price_american": 900,
+        "best_price_decimal": 11.0,
+        "best_price_american": 1000,
         "best_book": "BetRivers",
-        "implied_prob": 0.1,
-        "fair_prob": 0.0943,
+        "implied_prob": 0.0909,
+        "fair_prob": 0.0858,
         "n_books": 1,
-        "ev_per_dollar": 0.042,
-        "edge_vs_fair": 0.0099
+        "ev_per_dollar": 0.221,
+        "edge_vs_fair": 0.0252
       }
     },
     {
@@ -2961,98 +2966,14 @@
         }
       },
       "odds": {
-        "best_price_decimal": 18.0,
-        "best_price_american": 1700,
+        "best_price_decimal": 23.0,
+        "best_price_american": 2200,
         "best_book": "BetRivers",
-        "implied_prob": 0.0556,
-        "fair_prob": 0.0524,
+        "implied_prob": 0.0435,
+        "fair_prob": 0.041,
         "n_books": 1,
-        "ev_per_dollar": 0.6542,
-        "edge_vs_fair": 0.0395
-      }
-    },
-    {
-      "player_id": 643289,
-      "name": "Mauricio Dub\u00f3n",
-      "team": "Atlanta Braves",
-      "opponent": "Pittsburgh Pirates",
-      "venue": "PNC Park",
-      "game_time_utc": "2026-07-09T16:35:00Z",
-      "batter_hand": "R",
-      "pitcher_id": 656605,
-      "pitcher_name": "Mitch Keller",
-      "pitcher_hand": "R",
-      "lineup_slot": 5,
-      "lineup_confirmed": true,
-      "prob": 0.0877,
-      "per_pa_prob_vs_starter": 0.0211,
-      "expected_pa": 4.19,
-      "factors": {
-        "league_hr_pa": 0.0305,
-        "batter": {
-          "value": 0.714,
-          "components": {
-            "brl_pa": {
-              "raw": 0.025701643489254113,
-              "regressed": 0.0317,
-              "ratio": 0.572,
-              "weight": 0.45
-            },
-            "hr_fb": {
-              "raw": 0.10112359550561797,
-              "regressed": 0.122,
-              "ratio": 0.918,
-              "weight": 0.3
-            },
-            "xiso": {
-              "raw": 0.10669230769230771,
-              "regressed": 0.1184,
-              "ratio": 0.732,
-              "weight": 0.25
-            }
-          }
-        },
-        "pitcher": {
-          "value": 0.931,
-          "components": {
-            "hr_fb": {
-              "regressed": 0.1141,
-              "ratio": 0.859
-            },
-            "fb_rate": {
-              "regressed": 0.3253,
-              "ratio": 0.959
-            }
-          }
-        },
-        "park": {
-          "value": 0.897,
-          "park_factor": 88,
-          "hand": "R",
-          "park": "PNC Park"
-        },
-        "weather": {
-          "value": 1.159,
-          "temp_f": 84.5,
-          "wind_mph": 4.7,
-          "wind_out_mph": 3.9,
-          "roof": "open"
-        },
-        "expected_pa": {
-          "value": 4.19,
-          "lineup_slot": 5,
-          "starter_share": 0.62
-        }
-      },
-      "odds": {
-        "best_price_decimal": 12.0,
-        "best_price_american": 1100,
-        "best_book": "BetRivers",
-        "implied_prob": 0.0833,
-        "fair_prob": 0.0786,
-        "n_books": 1,
-        "ev_per_dollar": 0.0524,
-        "edge_vs_fair": 0.0091
+        "ev_per_dollar": 1.1137,
+        "edge_vs_fair": 0.0509
       }
     }
   ]
