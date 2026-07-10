@@ -133,6 +133,7 @@ def run(date: dt.date, output: str, lite: bool, use_odds: bool, top_n: int) -> d
                 pred = predict_player(stats, split, stadium, wx, hand, slot, league)
                 rows.append({
                     "player_id": pid,
+                    "game_pk": game["game_pk"],
                     "name": info.get("name", str(pid)),
                     "team": team["team_name"],
                     "opponent": opp_team["team_name"],
@@ -190,10 +191,16 @@ def run(date: dt.date, output: str, lite: bool, use_odds: bool, top_n: int) -> d
         "players": top,
     }
     os.makedirs(os.path.dirname(output) or ".", exist_ok=True)
+    safe_doc = _json_safe(doc)
     with open(output, "w") as f:
         # NaN (players missing from a stats table) is not valid JSON and
         # breaks the browser's fetch().json(); serialize it as null.
-        json.dump(_json_safe(doc), f, indent=2, allow_nan=False)
+        json.dump(safe_doc, f, indent=2, allow_nan=False)
+    # daily archive so pipeline/grade.py can score these picks tomorrow
+    hist_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "history")
+    os.makedirs(hist_dir, exist_ok=True)
+    with open(os.path.join(hist_dir, f"{date.isoformat()}.json"), "w") as f:
+        json.dump(safe_doc, f, indent=2, allow_nan=False)
     log.info("wrote %s (%d players scored, top %d kept)", output, len(rows), len(top))
     return doc
 

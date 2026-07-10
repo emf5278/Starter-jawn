@@ -45,13 +45,20 @@ jobs:
           key: pybaseball-${{ github.run_id }}
           restore-keys: pybaseball-
 
+      - name: Install dependencies
+        if: github.event_name != 'push'
+        run: python -m pip install -q -r requirements.txt
+
+      - name: Grade yesterday's picks
+        if: github.event_name != 'push'
+        run: python -m pipeline.grade || echo "grading failed; continuing"
+
       - name: Run pipeline
         if: github.event_name != 'push'
         env:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
           ODDS_REGIONS: us
         run: |
-          python -m pip install -q -r requirements.txt
           python -m pipeline.run --output web/predictions.json \
             ${{ inputs.lite && '--lite' || '' }}
 
@@ -60,7 +67,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add web/predictions.json
+          git add web/predictions.json history results
           git diff --cached --quiet || git commit -m "predictions: $(date -u +%F)"
           git pull --rebase origin "${GITHUB_REF_NAME}" || true
           git push origin "HEAD:${GITHUB_REF_NAME}"

@@ -106,6 +106,22 @@ One-time repo setup:
    "lite" for a quick first run). The pybaseball cache persists between runs
    via `actions/cache`, so the daily Statcast pull is incremental.
 
+## Daily results log
+
+Every morning, before generating the new slate, the workflow grades
+*yesterday's* picks against actual box scores (`pipeline/grade.py`):
+
+* `results/log.csv` — one row per day: hits out of the top-20 by
+  probability and top-20 by EV, the model's *expected* hit counts (if the
+  model is calibrated, hits ≈ expected over time), and flat-$1 P&L on the
+  EV list at the archived best prices.
+* `results/<date>.json` — pick-level detail (who homered, who didn't).
+* `history/<date>.json` — the archived slate each grade is based on.
+
+Rows flagged `late_snapshot=true` came from a slate generated after ~2pm ET
+(a manual re-run) — odds and lineups may have been mid-game, so read those
+rows skeptically. Picks whose game was postponed are excluded from grading.
+
 ## Backtest
 
 ```bash
