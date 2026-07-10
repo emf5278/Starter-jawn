@@ -86,6 +86,12 @@
   .chev { color: var(--ink-muted); font-size: 11px; transition: transform .15s; display: inline-block; }
   tr.open .chev { transform: rotate(90deg); }
   tr.detail > td { background: var(--wash); padding: 14px 16px 18px; }
+  .plain {
+    font-size: 13.5px; line-height: 1.55; color: var(--ink-2);
+    max-width: 78ch; margin: 0 0 16px;
+    padding-bottom: 12px; border-bottom: 1px solid var(--grid);
+  }
+  .plain b { color: var(--ink); }
   .why { display: grid; grid-template-columns: minmax(260px, 1.2fr) minmax(240px, 1fr); gap: 20px; }
   @media (max-width: 700px) { .why { grid-template-columns: 1fr; } }
   .fbar { display: grid; grid-template-columns: 92px 1fr 52px; align-items: center; gap: 8px; margin: 6px 0; }
@@ -183,9 +189,9 @@ function render(doc) {
 
   document.getElementById("status").hidden = true;
   document.getElementById("tablewrap").hidden = false;
-  if (location.hash === "#ev" && hasOdds) VIEW = "ev"; // deep link
+  if (location.hash.includes("ev") && hasOdds) VIEW = "ev"; // deep link
   setView(VIEW);
-  if (location.hash === "#expand") document.querySelector("#tbl tbody tr")?.click();
+  if (location.hash.includes("expand")) document.querySelector("#tbl tbody tr")?.click();
 }
 
 function setView(view) {
@@ -257,6 +263,68 @@ function renderTable(players) {
   });
 }
 
+/* Plain-English summary of why a player ranks where he does, built from the
+   same factors the bars show. */
+function plainEnglish(p) {
+  const f = p.factors, s = [];
+
+  // batter power
+  const b = f.batter.value;
+  const brl = (f.batter.components?.brl_pa?.ratio) || 1;
+  if (b >= 1.6) s.push(`<b>${esc(p.name)}</b> has elite power — among the most dangerous home-run hitters in the league right now${brl >= 1.3 ? ", crushing the ball (barrels) far more often than the average hitter" : ""}.`);
+  else if (b >= 1.25) s.push(`<b>${esc(p.name)}</b> has well above-average power this season${brl >= 1.3 ? " and makes loud contact much more often than most" : ""}.`);
+  else if (b >= 1.05) s.push(`<b>${esc(p.name)}</b> has solidly above-average power.`);
+  else if (b >= 0.95) s.push(`<b>${esc(p.name)}</b> has roughly average power — this pick is more about the matchup than the hitter.`);
+  else s.push(`<b>${esc(p.name)}</b> has below-average power numbers, so this pick is mostly about the matchup or the price.`);
+
+  // pitcher
+  const pv = f.pitcher.value, pn = p.pitcher_name ? esc(p.pitcher_name) : "the starter";
+  if (!p.pitcher_name) s.push(`No starting pitcher is announced yet, so the matchup is treated as neutral.`);
+  else if (pv >= 1.12) s.push(`He faces ${pn}, who has been prone to giving up home runs${p.pitcher_hand ? ` to ${p.batter_hand === "L" ? "lefties" : "righties"}` : ""} — a favorable matchup.`);
+  else if (pv >= 1.04) s.push(`Tonight's starter, ${pn}, gives up a few more home runs than average.`);
+  else if (pv > 0.96) s.push(`${pn} is about average at preventing home runs, so the matchup neither helps nor hurts.`);
+  else s.push(`${pn} is tough on home runs — the hitter is ranked this high despite the matchup, not because of it.`);
+
+  // park + weather
+  const k = f.park.value, park = esc(f.park.park), hand = f.park.hand === "L" ? "left-handed" : "right-handed";
+  const w = f.weather;
+  const parkBit = k >= 1.08 ? `${park} is one of the friendlier parks for ${hand} power`
+    : k >= 1.02 ? `${park} leans slightly hitter-friendly for ${hand} batters`
+    : k > 0.98 ? `` : `${park} tends to suppress ${hand} home runs`;
+  let wxBit = "";
+  if (w.note) wxBit = w.note.includes("closed") ? `the roof will likely be closed, taking weather out of play` : ``;
+  else if (w.value >= 1.05) {
+    const parts = [];
+    if (w.temp_f >= 82) parts.push(`warm air (${Math.round(w.temp_f)}°F)`);
+    if (w.wind_out_mph >= 4) parts.push(`wind blowing out (${Math.round(w.wind_out_mph)} mph)`);
+    wxBit = (parts.join(" and ") || "conditions") + " should help the ball carry";
+  }
+  else if (w.value <= 0.93) wxBit = `${w.wind_out_mph <= -5 ? "wind blowing in" : "cool air"} will knock some fly balls down`;
+  const env = [parkBit, wxBit].filter(Boolean).join(", and ");
+  if (env) s.push(env[0].toUpperCase() + env.slice(1) + ".");
+
+  // playing time
+  s.push(`Batting ${ordinal(p.lineup_slot)}${p.lineup_confirmed ? "" : " (projected — lineup not posted yet)"}, he should get about ${Math.round(p.expected_pa)} trips to the plate.`);
+
+  // odds / EV
+  const o = p.odds;
+  if (o) {
+    const mkt = (100 * o.fair_prob).toFixed(0), mdl = (100 * p.prob).toFixed(0);
+    if (o.ev_per_dollar > 0) {
+      s.push(`The betting market puts his chances near ${mkt}%; the model says ${mdl}%. At the best price (${american(o.best_price_american)} at ${esc(o.best_book)}) the payout is bigger than the risk — <b>a value bet if the model is right</b>.`);
+    } else {
+      s.push(`The betting market puts his chances near ${mkt}% vs. the model's ${mdl}%, and at ${american(o.best_price_american)} the payout doesn't quite cover the risk — likely to homer, but not a value price.`);
+    }
+    if (o.n_books === 1) s.push(`Only one sportsbook is quoting him, so treat the value read with extra skepticism.`);
+  }
+  if ((p._sameGame || 0) > 1) s.push(`Heads up: ${p._sameGame} picks on this list come from the same game and will tend to win or lose together.`);
+  return `<p class="plain">${s.join(" ")}</p>`;
+}
+
+function ordinal(n) {
+  return n + ({1: "st", 2: "nd", 3: "rd"}[n] || "th"); // lineup slots are 1-9
+}
+
 /* the "why": each multiplicative factor as a diverging bar around x1.0.
    Bar length is |log(factor)| so x1.25 and x0.8 render the same distance. */
 function whyHtml(p) {
@@ -276,7 +344,7 @@ function whyHtml(p) {
 
   const b = f.batter.components || {}, w = f.weather, k = f.park, o = p.odds;
   const fmt = (c, d = 3) => c && c.regressed != null ? `${c.regressed} (×${c.ratio})` : "league avg";
-  return `<div class="why">
+  return plainEnglish(p) + `<div class="why">
     <div>
       <div class="fbar"><span class="lab" style="font-weight:600">Factor</span>
         <span class="lab" style="text-align:center">drags ← ×1.0 → boosts</span><span class="val"></span></div>
