@@ -342,7 +342,7 @@ function plainEnglish(p) {
     } else {
       s.push(`The betting market puts his chances near ${mkt}% vs. the model's ${mdl}%, and at ${american(o.best_price_american)} the payout doesn't quite cover the risk — likely to homer, but not a value price.`);
     }
-    if (o.n_books === 1) s.push(`Only one sportsbook is quoting him, so treat the value read with extra skepticism.`);
+    // (single-book caveat intentionally omitted while on the free 1-book odds feed)
   }
   if ((p._sameGame || 0) > 1) s.push(`Heads up: ${p._sameGame} picks on this list come from the same game and will tend to win or lose together.`);
   return `<p class="plain">${s.join(" ")}</p>`;
