@@ -4,10 +4,13 @@
                            [--lite] [--no-odds] [--top 10]
 
 Steps: slate + lineups (StatsAPI) -> batter/pitcher stats (pybaseball) ->
-weather (Open-Meteo) -> model -> HR prop odds (The Odds API) -> JSON.
+weather (Open-Meteo) -> batter-vs-starter history + opposing bullpen (StatsAPI)
+-> model -> HR prop odds + game totals/spreads (The Odds API) -> JSON.
 
---lite skips the raw-Statcast pitcher handedness splits (slow on a cold
-cache) and uses FanGraphs overall pitcher rates instead.
+--lite skips the raw-Statcast pitcher handedness splits (slow on a cold cache;
+uses FanGraphs overall pitcher rates instead) and the batter-vs-starter
+history lookups (~250 StatsAPI calls). Bullpen season HR-vulnerability also
+needs the raw events, so it falls back to usage-only under --lite.
 """
 
 from __future__ import annotations
@@ -23,13 +26,20 @@ from zoneinfo import ZoneInfo
 from dotenv import load_dotenv
 
 from . import config
-from .data import lineups, odds as odds_mod, statcast, weather as weather_mod
+from .data import (
+    bullpen as bullpen_mod,
+    bvp as bvp_mod,
+    lineups,
+    odds as odds_mod,
+    statcast,
+    weather as weather_mod,
+)
 from .model.predict import ev_per_dollar, predict_player
 from .stadiums import stadium_for_home_team
 
 log = logging.getLogger("pipeline")
 
-MODEL_VERSION = "0.1.0"
+MODEL_VERSION = "0.2.0"  # + batter-vs-pitcher, bullpen, game-total factors
 
 
 def _json_safe(o):
@@ -76,6 +86,7 @@ def run(date: dt.date, output: str, lite: bool, use_odds: bool, top_n: int) -> d
     league = statcast.league_baselines(batters, season)
 
     splits = None
+    events = None
     if not lite:
         log.info("fetching raw statcast events (cached, incremental)")
         events = statcast.season_events(season, date)
@@ -102,14 +113,37 @@ def run(date: dt.date, output: str, lite: bool, use_odds: bool, top_n: int) -> d
         log.warning("FanGraphs pitcher stats unavailable", exc_info=True)
 
     prop_odds = {}
+    game_lines = {}
     if use_odds:
         key = os.environ.get("ODDS_API_KEY")
         if key:
+            regions = os.environ.get("ODDS_REGIONS", "us")
             log.info("fetching HR prop odds")
-            prop_odds = odds_mod.fetch_hr_props(key, os.environ.get("ODDS_REGIONS", "us"))
+            prop_odds = odds_mod.fetch_hr_props(key, regions)
             log.info("odds found for %d players", len(prop_odds))
+            log.info("fetching game totals/spreads")
+            game_lines = odds_mod.fetch_game_lines(key, regions)
         else:
-            log.warning("ODDS_API_KEY not set; skipping odds/EV")
+            log.warning("ODDS_API_KEY not set; skipping odds/EV and game lines")
+
+    # opposing bullpens: season HR-vuln from events + 3-game usage from StatsAPI
+    team_ids = {
+        game["teams"][s]["team_id"] for game in slate["games"] for s in ("home", "away")
+    }
+    bullpens = bullpen_mod.opposing_bullpens(events, team_ids, date)
+
+    # batter-vs-starter history (skipped under --lite; ~250 StatsAPI calls)
+    bvp = {}
+    if not lite:
+        pairs = [
+            (b, game["teams"][opp]["probable_pitcher_id"])
+            for game in slate["games"]
+            for side, opp in (("home", "away"), ("away", "home"))
+            if game["teams"][opp]["probable_pitcher_id"]
+            for b in game["teams"][side]["lineup"]
+        ]
+        log.info("fetching batter-vs-starter history for %d matchups", len(pairs))
+        bvp = bvp_mod.fetch_bvp(pairs)
 
     rows = []
     for game in slate["games"]:
@@ -130,7 +164,12 @@ def run(date: dt.date, output: str, lite: bool, use_odds: bool, top_n: int) -> d
                 hand = _batter_hand(info.get("bat_side", "R"), pitcher_hand)
                 stats = batters.loc[pid].to_dict() if pid in batters.index else {}
                 split = _pitcher_split(splits, overall, pitcher_id, hand)
-                pred = predict_player(stats, split, stadium, wx, hand, slot, league)
+                pred = predict_player(
+                    stats, split, stadium, wx, hand, slot, league,
+                    bvp=bvp.get((pid, pitcher_id)),
+                    bullpen=bullpens.get(opp_team["team_id"]),
+                    game_line=game_lines.get(odds_mod.normalize_name(team["team_name"])),
+                )
                 rows.append({
                     "player_id": pid,
                     "game_pk": game["game_pk"],

@@ -149,3 +149,84 @@ def weather_factor(weather: dict | None, roof: str) -> dict:
     return {"value": round(value, 3), "temp_f": weather["temp_f"],
             "wind_mph": weather["wind_mph"],
             "wind_out_mph": round(weather["wind_out_mph"], 1), "roof": roof}
+
+
+# --------------------------------------------------------- batter vs pitcher
+
+def bvp_factor(bvp: dict | None, league: dict) -> dict:
+    """Career batter-vs-this-starter HR rate, regressed hard toward neutral.
+
+    `bvp` is {"pa": int, "hr": int} from MLB StatsAPI vsPlayer totals, or None
+    when there's no history / the lookup failed.  Matchups below BVP_MIN_PA are
+    treated as neutral.
+
+    BvP is famously noisy — 9 PA is a coin flip, not a trend — so BVP_BALLAST_PA
+    is large and the result is capped tight.  Worked example (league HR/PA
+    0.032, ballast 100): a hot 3-for-9 -> regressed (0.333*9 + 0.032*100)/109 =
+    0.056, ratio 1.75, ^0.5 = 1.32 -> capped to 1.25.  An 0-for-9 -> ratio
+    0.917, ^0.5 = 0.958.  Only the *starter* portion of PA is affected.
+    """
+    if not bvp or bvp.get("pa", 0) < config.BVP_MIN_PA:
+        return {"value": 1.0, "pa": (bvp or {}).get("pa", 0),
+                "note": "insufficient matchup history"}
+    pa, hr = bvp["pa"], bvp["hr"]
+    obs = hr / pa
+    reg = regress(obs, pa, league["hr_pa"], config.BVP_BALLAST_PA)
+    ratio = reg / league["hr_pa"] if league["hr_pa"] > 0 else 1.0
+    value = _clamp(ratio ** config.BVP_ELASTICITY, config.BVP_FACTOR_CAP)
+    return {"value": round(value, 3), "pa": pa, "hr": hr,
+            "hr_per_pa": round(obs, 3), "ratio": round(ratio, 3)}
+
+
+# ---------------------------------------------------------------- bullpen
+
+def bullpen_factor(pen: dict | None, league: dict) -> dict:
+    """Opposing bullpen HR-vulnerability x recent-usage fatigue.
+
+    `pen` carries the season line and 3-game usage, or None (-> neutral):
+      hr, fb, bip  : season-to-date relief totals for the opposing team
+      bf_last3     : relief batters faced over the team's last 3 games (or None)
+
+    HR/FB is regressed (relievers pitch fewer innings, so smaller samples) and
+    shrunk by BULLPEN_HRFB_ELASTICITY.  The fatigue term scales up when a pen
+    has been worked hard lately.  Replaces the old neutral 1.0 on the bullpen
+    portion of PA.
+    """
+    if not pen or pen.get("fb", 0) <= 0:
+        return {"value": 1.0, "note": "no bullpen data"}
+
+    hr_fb = regress(pen["hr"] / pen["fb"], pen["fb"], league["hr_fb"],
+                    config.BULLPEN_BALLAST_FB)
+    r_hrfb = (hr_fb / league["hr_fb"]) ** config.BULLPEN_HRFB_ELASTICITY
+
+    bf3 = pen.get("bf_last3")
+    if bf3 is None:
+        fatigue = 1.0
+    else:
+        fatigue = _clamp(
+            1.0 + config.BULLPEN_FATIGUE_COEF * (bf3 - config.BULLPEN_BF_BASELINE_3G),
+            config.BULLPEN_FATIGUE_CAP)
+
+    value = _clamp(r_hrfb * fatigue, config.BULLPEN_FACTOR_CAP)
+    return {"value": round(value, 3),
+            "hr_fb": round(hr_fb, 4), "hrfb_ratio": round(hr_fb / league["hr_fb"], 3),
+            "fatigue": round(fatigue, 3), "bf_last3": bf3}
+
+
+# ---------------------------------------------------------------- game lines
+
+def game_total_factor(line: dict | None) -> dict:
+    """Nudge from the sportsbook total + spread -> implied team runs.
+
+    `line` is {"total", "spread", "implied_team_runs"} for the batter's team,
+    or None (-> neutral).  Deliberately small coefficient because the total
+    overlaps park/weather/pitching, which the model already scores.
+    """
+    if not line or line.get("implied_team_runs") is None:
+        return {"value": 1.0, "note": "no line"}
+    itr = line["implied_team_runs"]
+    value = _clamp(
+        1.0 + config.TOTAL_RUNS_COEF * (itr - config.LEAGUE_AVG_TEAM_RUNS),
+        config.TOTAL_FACTOR_CAP)
+    return {"value": round(value, 3), "implied_team_runs": round(itr, 2),
+            "total": line.get("total"), "spread": line.get("spread")}

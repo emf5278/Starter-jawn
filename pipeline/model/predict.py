@@ -1,12 +1,22 @@
 """Combine the factors into P(player hits >=1 HR today).
 
-    p_starter = cap(league_HR/PA * B * P_starter * K * W)
-    p_bullpen = cap(league_HR/PA * B * 1.0       * K * W)
+    common    = league_HR/PA * B * K * W * T          (whole-game context)
+    p_starter = cap(common * P_starter * BvP)          (faces the starter)
+    p_bullpen = cap(common * Pen)                       (faces the bullpen)
 
     n_starter = E[PA | slot] * STARTER_PA_SHARE
     n_bullpen = E[PA | slot] * (1 - STARTER_PA_SHARE)
 
     P(>=1 HR) = 1 - (1 - p_starter)^n_starter * (1 - p_bullpen)^n_bullpen
+
+where each factor slots in at its natural scope:
+    B   batter power          — every PA
+    K   park (handedness)      — every PA
+    W   weather / roof         — every PA
+    T   game total/spread      — every PA (market's scoring-environment view)
+    P   starter HR-vuln        — starter PA only
+    BvP career vs this starter — starter PA only (heavily regressed)
+    Pen opposing-bullpen HR-vuln x fatigue — bullpen PA only
 
 The exponent form treats each PA as an independent Bernoulli trial with the
 same per-PA probability — a simplification, but a good one at these scales.
@@ -26,16 +36,23 @@ def predict_player(
     batter_hand: str,
     lineup_slot: int,
     league: dict,
+    *,
+    bvp: dict | None = None,
+    bullpen: dict | None = None,
+    game_line: dict | None = None,
 ) -> dict:
     b = F.batter_power_factor(batter_stats, league)
     p = F.pitcher_hr_factor(pitcher_split, league)
     k = F.park_factor(stadium, batter_hand)
     w = F.weather_factor(weather, stadium["roof"])
+    v = F.bvp_factor(bvp, league)
+    pen = F.bullpen_factor(bullpen, league)
+    t = F.game_total_factor(game_line)
 
     base = league["hr_pa"]
-    common = base * b["value"] * k["value"] * w["value"]
-    p_starter = min(config.PER_PA_PROB_CAP, common * p["value"])
-    p_bullpen = min(config.PER_PA_PROB_CAP, common)
+    common = base * b["value"] * k["value"] * w["value"] * t["value"]
+    p_starter = min(config.PER_PA_PROB_CAP, common * p["value"] * v["value"])
+    p_bullpen = min(config.PER_PA_PROB_CAP, common * pen["value"])
 
     epa = config.expected_pa_for_slot(lineup_slot)
     n_starter = epa * config.STARTER_PA_SHARE
@@ -52,6 +69,9 @@ def predict_player(
             "pitcher": p,
             "park": k,
             "weather": w,
+            "bvp": v,
+            "bullpen": pen,
+            "game_total": t,
             "expected_pa": {"value": round(epa, 2), "lineup_slot": lineup_slot,
                             "starter_share": config.STARTER_PA_SHARE},
         },

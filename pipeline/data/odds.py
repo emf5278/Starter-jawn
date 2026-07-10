@@ -107,3 +107,57 @@ def fetch_hr_props(api_key: str, regions: str = "us") -> dict[str, dict]:
             "n_books": len(qs),
         }
     return out
+
+
+def fetch_game_lines(api_key: str, regions: str = "us") -> dict[str, dict]:
+    """Map normalized team name -> {total, spread, implied_team_runs}.
+
+    One call to the main-markets endpoint (totals + spreads) — far cheaper and
+    better-covered than player props.  Per game we take the median total and
+    each team's median spread across books, then
+
+        implied_team_runs = total/2 - team_spread/2
+
+    (a favored team's run-line spread is negative, so it implies more runs).
+    """
+    try:
+        r = requests.get(
+            f"{BASE}/sports/{config.ODDS_SPORT_KEY}/odds",
+            params={"apiKey": api_key, "regions": regions,
+                    "markets": config.ODDS_GAME_MARKETS, "oddsFormat": "decimal"},
+            timeout=30,
+        )
+        r.raise_for_status()
+        games = r.json()
+    except Exception:
+        log.warning("game-line fetch failed", exc_info=True)
+        return {}
+
+    out: dict[str, dict] = {}
+    for g in games:
+        totals: list[float] = []
+        spreads: dict[str, list[float]] = {}
+        for book in g.get("bookmakers", []):
+            for market in book.get("markets", []):
+                if market["key"] == "totals":
+                    pts = [o.get("point") for o in market.get("outcomes", [])
+                           if o.get("point") is not None]
+                    if pts:
+                        totals.append(float(pts[0]))
+                elif market["key"] == "spreads":
+                    for o in market.get("outcomes", []):
+                        if o.get("point") is not None:
+                            spreads.setdefault(o["name"], []).append(float(o["point"]))
+        if not totals:
+            continue
+        total = statistics.median(totals)
+        for team in (g.get("home_team"), g.get("away_team")):
+            sp = statistics.median(spreads[team]) if spreads.get(team) else None
+            itr = (total / 2 - sp / 2) if sp is not None else None
+            out[normalize_name(team)] = {
+                "total": round(total, 1),
+                "spread": round(sp, 1) if sp is not None else None,
+                "implied_team_runs": round(itr, 2) if itr is not None else None,
+            }
+    log.info("game lines fetched for %d teams", len(out))
+    return out

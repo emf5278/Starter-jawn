@@ -303,6 +303,33 @@ function plainEnglish(p) {
   const env = [parkBit, wxBit].filter(Boolean).join(", and ");
   if (env) s.push(env[0].toUpperCase() + env.slice(1) + ".");
 
+  // batter vs starter (only mention when there's real history)
+  const bvp = f.bvp || {};
+  if (bvp.pa >= 4) {
+    const line = `${bvp.hr}-for-${bvp.pa} in ${bvp.pa} career plate appearances`;
+    if (bvp.value >= 1.05) s.push(`He has homered off ${pn} before (${line}) — a small bump, though such short histories are mostly noise.`);
+    else if (bvp.value <= 0.96) s.push(`He hasn't done much against ${pn} historically (${line}), which nudges him down slightly — but ${bvp.pa} at-bats is too few to read much into.`);
+    else s.push(`His track record vs ${pn} (${line}) is unremarkable and barely moves the number.`);
+  }
+
+  // opposing bullpen
+  const pen = f.bullpen || {};
+  if (pen.value >= 1.06) {
+    const why = [];
+    if (pen.hrfb_ratio >= 1.05) why.push("gives up home runs at an above-average clip");
+    if (pen.fatigue >= 1.03) why.push(`has been worked hard lately${pen.bf_last3 != null ? ` (${pen.bf_last3} batters faced over its last 3 games)` : ""}`);
+    s.push(`Late in the game he'd face a bullpen that ${why.join(" and ") || "profiles as vulnerable"} — a plus once the starter exits.`);
+  } else if (pen.value <= 0.94) {
+    s.push(`The opposing bullpen has been stingy with home runs, which trims his odds in the later innings.`);
+  }
+
+  // vegas total / implied runs
+  const gt = f.game_total || {};
+  if (gt.implied_team_runs != null) {
+    if (gt.value >= 1.04) s.push(`Sportsbooks expect a high-scoring game and favor his team to put up runs (about ${gt.implied_team_runs} implied) — a good offensive environment.`);
+    else if (gt.value <= 0.96) s.push(`Sportsbooks expect a low-scoring game for his team (about ${gt.implied_team_runs} implied runs), a headwind for any bat.`);
+  }
+
   // playing time
   s.push(`Batting ${ordinal(p.lineup_slot)}${p.lineup_confirmed ? "" : " (projected — lineup not posted yet)"}, he should get about ${Math.round(p.expected_pa)} trips to the plate.`);
 
@@ -331,9 +358,12 @@ function whyHtml(p) {
   const f = p.factors;
   const rows = [
     ["Batter power", f.batter.value],
-    ["Pitcher", f.pitcher.value],
+    ["Starter", f.pitcher.value],
+    ["Batter vs starter", (f.bvp || {}).value ?? 1],
+    ["Opp. bullpen", (f.bullpen || {}).value ?? 1],
     ["Park", f.park.value],
     ["Weather", f.weather.value],
+    ["Vegas total", (f.game_total || {}).value ?? 1],
   ].map(([label, v]) => {
     const w = Math.min(1, Math.abs(Math.log(v)) / Math.log(2.6)) * 50; // 50% track = x2.6
     const cls = v >= 1 ? "pos" : "neg";
@@ -343,6 +373,7 @@ function whyHtml(p) {
   }).join("");
 
   const b = f.batter.components || {}, w = f.weather, k = f.park, o = p.odds;
+  const bvp = f.bvp || {}, pen = f.bullpen || {}, gt = f.game_total || {};
   const fmt = (c, d = 3) => c && c.regressed != null ? `${c.regressed} (×${c.ratio})` : "league avg";
   return plainEnglish(p) + `<div class="why">
     <div>
@@ -362,6 +393,15 @@ function whyHtml(p) {
       <dt>Weather</dt><dd>${w.temp_f != null
         ? `${w.temp_f}°F, wind ${w.wind_mph} mph (${w.wind_out_mph >= 0 ? "out" : "in"} ${Math.abs(w.wind_out_mph)} mph), ${w.roof}`
         : (w.note || "n/a")}</dd>
+      <dt>Vs this starter</dt><dd>${bvp.pa
+        ? `${bvp.hr}-for-${bvp.pa} PA career → ×${bvp.value}`
+        : "no prior history → neutral"}</dd>
+      <dt>Opp. bullpen</dt><dd>${pen.hrfb_ratio != null
+        ? `HR/FB ×${pen.hrfb_ratio} vs lg · fatigue ×${pen.fatigue}${pen.bf_last3 != null ? ` (${pen.bf_last3} relief BF last 3g)` : ""} → ×${pen.value}`
+        : "no data → neutral"}</dd>
+      <dt>Vegas total</dt><dd>${gt.implied_team_runs != null
+        ? `O/U ${gt.total}, spread ${gt.spread > 0 ? "+" : ""}${gt.spread} → ${gt.implied_team_runs} implied runs → ×${gt.value}`
+        : "no line → neutral"}</dd>
       ${o ? `<dt>Books quoted</dt><dd>${o.n_books}</dd>
              <dt>Model − market</dt><dd>${(100 * o.edge_vs_fair).toFixed(1)} pts</dd>` : ""}
     </dl>

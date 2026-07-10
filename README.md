@@ -19,24 +19,42 @@ appearance:
 p_PA = league_HR/PA × B × P × K × W
 ```
 
-| Factor | What it is | Code |
-|---|---|---|
-| `league_HR/PA` | League base rate (~0.032), computed live from FanGraphs team totals | `pipeline/data/statcast.py` |
-| **B** — batter | Regressed barrels/PA, HR/FB, xISO vs league, combined as a weighted geometric mean `brl^0.45 · hrfb^0.30 · xiso^0.25` | `factors.batter_power_factor` |
-| **P** — pitcher | Starter's handedness-split HR/FB and FB-rate ratios (from raw Statcast), shrunk hard (`^0.70`) because pitchers control HR less than batters | `factors.pitcher_hr_factor` |
-| **K** — park | Handedness-specific HR park factor, `(PF/100)^0.85` | `factors.park_factor` |
-| **W** — weather | `(1 + 0.008·(°F−70)) · (1 + 0.010·wind_out_mph)`; wind is projected onto the home-plate→CF bearing; domes neutral, retractable roofs half effect | `factors.weather_factor` |
+Each factor slots in at its natural scope — some apply to every PA, some only
+to the portion faced by the starter, some only to the bullpen portion:
+
+| Factor | Scope | What it is | Code |
+|---|---|---|---|
+| `league_HR/PA` | — | League base rate (~0.032), computed live from the season's Statcast events | `data/statcast.py` |
+| **B** — batter | every PA | Regressed barrels/PA, HR/FB, xISO vs league, weighted geometric mean `brl^0.45 · hrfb^0.30 · xiso^0.25` | `factors.batter_power_factor` |
+| **K** — park | every PA | Handedness-specific HR park factor, `(PF/100)^0.85` | `factors.park_factor` |
+| **W** — weather | every PA | `(1 + 0.008·(°F−70)) · (1 + 0.010·wind_out)`; wind projected onto the home-plate→CF bearing; domes neutral, retractable roofs half effect (or fully closed in extreme heat/cold) | `factors.weather_factor` |
+| **T** — game total | every PA | Sportsbook total + run-line → implied team runs; `1 + 0.045·(runs − 4.5)`. Small on purpose (overlaps park/weather/pitching) | `factors.game_total_factor` |
+| **P** — starter | starter PA | Starter's handedness-split HR/FB and FB-rate, shrunk hard (`^0.70`) | `factors.pitcher_hr_factor` |
+| **BvP** — matchup | starter PA | This batter's career HR rate vs this starter, regressed **very** hard (ballast 100 PA) — see caveat below | `factors.bvp_factor` |
+| **Pen** — bullpen | bullpen PA | Opposing bullpen's season HR/FB × a fatigue bump from its batters-faced over the last 3 games | `factors.bullpen_factor` |
 
 Every raw rate is first **regressed to the mean** with a sample-size ballast —
 `(obs·n + league·ballast)/(n + ballast)` — so a 40-PA hot streak can't print a
 3× factor. Season-to-date is blended with last season (weighted 0.6) so April
 isn't chaos.
 
-From per-PA to per-game, with the starter/bullpen split (the pitcher factor
-only applies to the ~62% of PAs expected against the starter):
+> **A caveat on batter-vs-pitcher.** It's the most-requested and least-predictive
+> input in this whole model. The sabermetric consensus (Tango/Lichtman/Dolphin's
+> *The Book*, and every streakiness study since) is that BvP history carries
+> almost no signal beyond the platoon split and overall quality already captured
+> elsewhere — a 9-PA sample is a coin flip, not a trend. So it's deliberately
+> throttled: a huge regression ballast, extra shrink (`^0.5`), and a tight
+> `(0.85, 1.25)` cap. An 0-for-9 dings a hitter ~4%; it can never dominate a pick.
+> It's in the model because it's real information and you asked for it — just
+> weighted like the noisy signal it is.
+
+Combining per-PA → per-game across the starter/bullpen split:
 
 ```
-P(≥1 HR) = 1 − (1−p_starter)^(E[PA]·0.62) · (1−p_bullpen)^(E[PA]·0.38)
+common    = league_HR/PA · B · K · W · T
+p_starter = cap(common · P · BvP)      # ~62% of PA
+p_bullpen = cap(common · Pen)          # ~38% of PA
+P(≥1 HR)  = 1 − (1−p_starter)^(E[PA]·0.62) · (1−p_bullpen)^(E[PA]·0.38)
 E[PA | lineup slot] = 4.65 − 0.115·(slot−1)
 ```
 
@@ -60,10 +78,10 @@ EV per $1 = p_model·(d−1) − (1−p_model)
 
 | Source | Used for | Key needed |
 |---|---|---|
-| pybaseball (Baseball Savant + FanGraphs) | barrels/PA, xISO, HR/FB, pitcher splits, league rates | no |
-| MLB StatsAPI | schedule, probable pitchers, confirmed lineups & batting order, handedness | no |
+| pybaseball (Baseball Savant + FanGraphs) | barrels/PA, xISO, HR/FB, pitcher splits, bullpen HR-vuln, league rates | no |
+| MLB StatsAPI | schedule, probable pitchers, confirmed lineups & batting order, handedness, batter-vs-pitcher history, bullpen usage | no |
 | Open-Meteo | game-time temperature + wind at each stadium (lat/lon + field orientation in `pipeline/stadiums.py`) | no |
-| The Odds API | HR prop odds | **yes** |
+| The Odds API | HR prop odds **and** game totals/spreads | **yes** (props); totals/spreads also need it |
 
 Stadium latitude/longitude, center-field compass bearing, roof type, and
 handedness park factors are a hand-maintained table in
@@ -141,8 +159,10 @@ data) and reports:
 * **ROI & CLV** (with `--odds`) — flat-stake ROI of +EV picks at the 13:00 UTC
   snapshot, and closing-line value vs the pre-game snapshot
 
-Known simplifications: weather is not reconstructed historically, and league
-baselines use the full season. Both are documented in the script header.
+Known simplifications: weather, game lines, batter-vs-pitcher, and bullpen
+context are **not** reconstructed historically, so the backtest scores the core
+park + batter + starter model (the newer factors default to neutral there).
+League baselines use the full season. All documented in the script header.
 
 ## Repo layout
 
