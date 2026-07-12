@@ -2,9 +2,13 @@ name: Daily HR predictions
 
 on:
   schedule:
-    # 13:00 UTC = 9am EDT (8am EST — GitHub cron has no timezone support;
-    # bump to 14:00 in winter if the extra hour matters to you).
-    - cron: "0 13 * * *"
+    # GitHub delays scheduled runs the most at the top of the hour, so we
+    # avoid ":00". Times are UTC (no DST): 12:41 UTC = 8:41am ET (EDT),
+    # 7:41am EST — early enough to clear GitHub's queue lag before 9am ET.
+    # (Single cron on purpose: a backup cron would double the daily Odds API
+    # usage, which is tight on the free tier. Manual "Run workflow" is the
+    # fallback on the rare morning GitHub drops the schedule entirely.)
+    - cron: "41 12 * * *"
   workflow_dispatch:
     inputs:
       lite:
