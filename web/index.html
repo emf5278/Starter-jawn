@@ -178,6 +178,19 @@ function render(doc) {
     `Slate for ${doc.date} · generated ${when.toLocaleString()} · model v${doc.model_version}` +
     ` · league HR/PA ${doc.league_hr_pa}` + (doc.odds_available ? "" : " · odds unavailable this run");
 
+  // no games today (e.g. All-Star break / off day): show a friendly notice
+  // instead of an empty chart and a bare table
+  if (!doc.players || doc.players.length === 0) {
+    document.getElementById("viewSeg").hidden = true;
+    document.getElementById("chartCard").hidden = true;
+    document.getElementById("tablewrap").hidden = true;
+    const s = document.getElementById("status");
+    s.hidden = false;
+    s.innerHTML = `No MLB games scheduled for ${doc.date}. ` +
+      `The board will fill back in on the next day with a slate.`;
+    return;
+  }
+
   const seg = document.getElementById("viewSeg");
   seg.hidden = false;
   const hasOdds = doc.players.some(p => p.odds);
