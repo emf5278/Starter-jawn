@@ -1,0 +1,16 @@
+{
+  "row": {
+    "date": "2026-07-14",
+    "snapshot_utc": "2026-07-14T14:27:20+00:00",
+    "late_snapshot": false,
+    "prob_hits": 0,
+    "prob_graded": 0,
+    "prob_expected": 0,
+    "ev_hits": 0,
+    "ev_graded": 0,
+    "ev_expected": 0,
+    "ev_flat_pnl": 0
+  },
+  "top_prob": [],
+  "top_ev": []
+}
