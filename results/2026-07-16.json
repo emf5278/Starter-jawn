@@ -1,0 +1,282 @@
+{
+  "row": {
+    "date": "2026-07-16",
+    "snapshot_utc": "2026-07-16T14:36:35+00:00",
+    "late_snapshot": false,
+    "prob_hits": 2,
+    "prob_graded": 18,
+    "prob_expected": 3.26,
+    "ev_hits": 2,
+    "ev_graded": 15,
+    "ev_expected": 2.8,
+    "ev_flat_pnl": -3.9
+  },
+  "top_prob": [
+    {
+      "name": "Juan Soto",
+      "team": "New York Mets",
+      "prob": 0.3031,
+      "played": true,
+      "hr": 0,
+      "odds": 3.65
+    },
+    {
+      "name": "Kyle Schwarber",
+      "team": "Philadelphia Phillies",
+      "prob": 0.2849,
+      "played": true,
+      "hr": 0,
+      "odds": 2.95
+    },
+    {
+      "name": "Bryce Harper",
+      "team": "Philadelphia Phillies",
+      "prob": 0.2264,
+      "played": true,
+      "hr": 0,
+      "odds": 4.2
+    },
+    {
+      "name": "Jared Young",
+      "team": "New York Mets",
+      "prob": 0.2022,
+      "played": true,
+      "hr": 0,
+      "odds": 5.5
+    },
+    {
+      "name": "A.J. Ewing",
+      "team": "New York Mets",
+      "prob": 0.1863,
+      "played": true,
+      "hr": 0,
+      "odds": 6.0
+    },
+    {
+      "name": "Francisco Lindor",
+      "team": "New York Mets",
+      "prob": 0.1835,
+      "played": true,
+      "hr": 0,
+      "odds": 4.8
+    },
+    {
+      "name": "Brandon Marsh",
+      "team": "Philadelphia Phillies",
+      "prob": 0.1771,
+      "played": true,
+      "hr": 0,
+      "odds": 5.2
+    },
+    {
+      "name": "Carson Benge",
+      "team": "New York Mets",
+      "prob": 0.1697,
+      "played": true,
+      "hr": 0,
+      "odds": 5.6
+    },
+    {
+      "name": "Jorge Polanco",
+      "team": "New York Mets",
+      "prob": 0.1693,
+      "played": true,
+      "hr": 0,
+      "odds": 4.9
+    },
+    {
+      "name": "Derek Hill",
+      "team": "Philadelphia Phillies",
+      "prob": 0.1651,
+      "played": true,
+      "hr": 0,
+      "odds": null
+    },
+    {
+      "name": "Edmundo Sosa",
+      "team": "Philadelphia Phillies",
+      "prob": 0.1621,
+      "played": true,
+      "hr": 0,
+      "odds": null
+    },
+    {
+      "name": "Trea Turner",
+      "team": "Philadelphia Phillies",
+      "prob": 0.1579,
+      "played": true,
+      "hr": 1,
+      "odds": 5.5
+    },
+    {
+      "name": "Bo Bichette",
+      "team": "New York Mets",
+      "prob": 0.157,
+      "played": true,
+      "hr": 0,
+      "odds": 6.75
+    },
+    {
+      "name": "Brett Baty",
+      "team": "New York Mets",
+      "prob": 0.1526,
+      "played": true,
+      "hr": 1,
+      "odds": 5.6
+    },
+    {
+      "name": "Alec Bohm",
+      "team": "Philadelphia Phillies",
+      "prob": 0.15,
+      "played": true,
+      "hr": 0,
+      "odds": 6.5
+    },
+    {
+      "name": "J.T. Realmuto",
+      "team": "Philadelphia Phillies",
+      "prob": 0.1437,
+      "played": true,
+      "hr": 0,
+      "odds": 6.1
+    },
+    {
+      "name": "Tyrone Taylor",
+      "team": "New York Mets",
+      "prob": 0.1381,
+      "played": true,
+      "hr": 0,
+      "odds": null
+    },
+    {
+      "name": "Bryson Stott",
+      "team": "Philadelphia Phillies",
+      "prob": 0.1327,
+      "played": true,
+      "hr": 0,
+      "odds": 6.4
+    }
+  ],
+  "top_ev": [
+    {
+      "name": "A.J. Ewing",
+      "team": "New York Mets",
+      "prob": 0.1863,
+      "played": true,
+      "hr": 0,
+      "odds": 6.0
+    },
+    {
+      "name": "Jared Young",
+      "team": "New York Mets",
+      "prob": 0.2022,
+      "played": true,
+      "hr": 0,
+      "odds": 5.5
+    },
+    {
+      "name": "Juan Soto",
+      "team": "New York Mets",
+      "prob": 0.3031,
+      "played": true,
+      "hr": 0,
+      "odds": 3.65
+    },
+    {
+      "name": "Bo Bichette",
+      "team": "New York Mets",
+      "prob": 0.157,
+      "played": true,
+      "hr": 0,
+      "odds": 6.75
+    },
+    {
+      "name": "Alec Bohm",
+      "team": "Philadelphia Phillies",
+      "prob": 0.15,
+      "played": true,
+      "hr": 0,
+      "odds": 6.5
+    },
+    {
+      "name": "Bryce Harper",
+      "team": "Philadelphia Phillies",
+      "prob": 0.2264,
+      "played": true,
+      "hr": 0,
+      "odds": 4.2
+    },
+    {
+      "name": "Carson Benge",
+      "team": "New York Mets",
+      "prob": 0.1697,
+      "played": true,
+      "hr": 0,
+      "odds": 5.6
+    },
+    {
+      "name": "Brandon Marsh",
+      "team": "Philadelphia Phillies",
+      "prob": 0.1771,
+      "played": true,
+      "hr": 0,
+      "odds": 5.2
+    },
+    {
+      "name": "Francisco Lindor",
+      "team": "New York Mets",
+      "prob": 0.1835,
+      "played": true,
+      "hr": 0,
+      "odds": 4.8
+    },
+    {
+      "name": "J.T. Realmuto",
+      "team": "Philadelphia Phillies",
+      "prob": 0.1437,
+      "played": true,
+      "hr": 0,
+      "odds": 6.1
+    },
+    {
+      "name": "Trea Turner",
+      "team": "Philadelphia Phillies",
+      "prob": 0.1579,
+      "played": true,
+      "hr": 1,
+      "odds": 5.5
+    },
+    {
+      "name": "Brett Baty",
+      "team": "New York Mets",
+      "prob": 0.1526,
+      "played": true,
+      "hr": 1,
+      "odds": 5.6
+    },
+    {
+      "name": "Bryson Stott",
+      "team": "Philadelphia Phillies",
+      "prob": 0.1327,
+      "played": true,
+      "hr": 0,
+      "odds": 6.4
+    },
+    {
+      "name": "Kyle Schwarber",
+      "team": "Philadelphia Phillies",
+      "prob": 0.2849,
+      "played": true,
+      "hr": 0,
+      "odds": 2.95
+    },
+    {
+      "name": "Jorge Polanco",
+      "team": "New York Mets",
+      "prob": 0.1693,
+      "played": true,
+      "hr": 0,
+      "odds": 4.9
+    }
+  ]
+}
