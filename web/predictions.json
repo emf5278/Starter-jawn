@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-17T13:33:46+00:00",
+  "generated_at": "2026-07-17T14:16:06+00:00",
   "date": "2026-07-17",
   "model_version": "0.2.0",
   "league_hr_pa": 0.0307,
@@ -21,8 +21,8 @@
       "pitcher_hand": "R",
       "lineup_slot": 1,
       "lineup_confirmed": false,
-      "prob": 0.2871,
-      "per_pa_prob_vs_starter": 0.0734,
+      "prob": 0.2854,
+      "per_pa_prob_vs_starter": 0.0729,
       "expected_pa": 4.65,
       "factors": {
         "league_hr_pa": 0.0307,
@@ -69,10 +69,10 @@
           "park": "Yankee Stadium"
         },
         "weather": {
-          "value": 1.078,
-          "temp_f": 82.2,
-          "wind_mph": 8.1,
-          "wind_out_mph": -1.8,
+          "value": 1.071,
+          "temp_f": 83.3,
+          "wind_mph": 7.6,
+          "wind_out_mph": -3.2,
           "roof": "open"
         },
         "bvp": {
@@ -102,220 +102,14 @@
         }
       },
       "odds": {
-        "best_price_decimal": 3.25,
-        "best_price_american": 225,
-        "best_book": "BetRivers",
-        "implied_prob": 0.3077,
-        "fair_prob": 0.2903,
-        "n_books": 1,
-        "ev_per_dollar": -0.0669,
-        "edge_vs_fair": -0.0032
-      }
-    },
-    {
-      "player_id": 666160,
-      "game_pk": 824332,
-      "name": "Mickey Moniak",
-      "team": "Colorado Rockies",
-      "opponent": "Cincinnati Reds",
-      "venue": "Coors Field",
-      "game_time_utc": "2026-07-18T00:40:00Z",
-      "batter_hand": "L",
-      "pitcher_id": 663903,
-      "pitcher_name": "Brady Singer",
-      "pitcher_hand": "R",
-      "lineup_slot": 2,
-      "lineup_confirmed": false,
-      "prob": 0.2435,
-      "per_pa_prob_vs_starter": 0.0592,
-      "expected_pa": 4.54,
-      "factors": {
-        "league_hr_pa": 0.0307,
-        "batter": {
-          "value": 1.314,
-          "components": {
-            "brl_pa": {
-              "raw": 0.0918659793814433,
-              "regressed": 0.0825,
-              "ratio": 1.492,
-              "weight": 0.45
-            },
-            "hr_fb": {
-              "raw": 0.19736842105263158,
-              "regressed": 0.1535,
-              "ratio": 1.146,
-              "weight": 0.3
-            },
-            "xiso": {
-              "raw": 0.22688641779189833,
-              "regressed": 0.2111,
-              "ratio": 1.307,
-              "weight": 0.25
-            }
-          }
-        },
-        "pitcher": {
-          "value": 1.103,
-          "components": {
-            "hr_fb": {
-              "regressed": 0.1691,
-              "ratio": 1.263
-            },
-            "fb_rate": {
-              "regressed": 0.3483,
-              "ratio": 1.027
-            }
-          }
-        },
-        "park": {
-          "value": 1.126,
-          "park_factor": 115,
-          "hand": "L",
-          "park": "Coors Field"
-        },
-        "weather": {
-          "value": 1.142,
-          "temp_f": 91.0,
-          "wind_mph": 11.5,
-          "wind_out_mph": -2.2,
-          "roof": "open"
-        },
-        "bvp": {
-          "value": 1.0,
-          "pa": 3,
-          "note": "insufficient matchup history"
-        },
-        "bullpen": {
-          "value": 1.129,
-          "hr_fb": 0.1611,
-          "hrfb_ratio": 1.203,
-          "fatigue": 1.01,
-          "bf_last3": 45
-        },
-        "game_total": {
-          "value": 1.034,
-          "implied_team_runs": 5.25,
-          "total": 12.0,
-          "spread": 1.5
-        },
-        "expected_pa": {
-          "value": 4.54,
-          "lineup_slot": 2,
-          "starter_share": 0.62
-        }
-      },
-      "odds": {
-        "best_price_decimal": 3.15,
-        "best_price_american": 215,
-        "best_book": "BetRivers",
-        "implied_prob": 0.3175,
-        "fair_prob": 0.2995,
-        "n_books": 1,
-        "ev_per_dollar": -0.233,
-        "edge_vs_fair": -0.056
-      }
-    },
-    {
-      "player_id": 696100,
-      "game_pk": 824332,
-      "name": "Hunter Goodman",
-      "team": "Colorado Rockies",
-      "opponent": "Cincinnati Reds",
-      "venue": "Coors Field",
-      "game_time_utc": "2026-07-18T00:40:00Z",
-      "batter_hand": "R",
-      "pitcher_id": 663903,
-      "pitcher_name": "Brady Singer",
-      "pitcher_hand": "R",
-      "lineup_slot": 3,
-      "lineup_confirmed": false,
-      "prob": 0.2395,
-      "per_pa_prob_vs_starter": 0.0575,
-      "expected_pa": 4.42,
-      "factors": {
-        "league_hr_pa": 0.0307,
-        "batter": {
-          "value": 1.417,
-          "components": {
-            "brl_pa": {
-              "raw": 0.0908344370860927,
-              "regressed": 0.0834,
-              "ratio": 1.508,
-              "weight": 0.45
-            },
-            "hr_fb": {
-              "raw": 0.3068181818181818,
-              "regressed": 0.1929,
-              "ratio": 1.44,
-              "weight": 0.3
-            },
-            "xiso": {
-              "raw": 0.22823721316007745,
-              "regressed": 0.2162,
-              "ratio": 1.338,
-              "weight": 0.25
-            }
-          }
-        },
-        "pitcher": {
-          "value": 1.009,
-          "components": {
-            "hr_fb": {
-              "regressed": 0.1515,
-              "ratio": 1.131
-            },
-            "fb_rate": {
-              "regressed": 0.2998,
-              "ratio": 0.884
-            }
-          }
-        },
-        "park": {
-          "value": 1.109,
-          "park_factor": 113,
-          "hand": "R",
-          "park": "Coors Field"
-        },
-        "weather": {
-          "value": 1.142,
-          "temp_f": 91.0,
-          "wind_mph": 11.5,
-          "wind_out_mph": -2.2,
-          "roof": "open"
-        },
-        "bvp": {
-          "value": 1.0,
-          "pa": 3,
-          "note": "insufficient matchup history"
-        },
-        "bullpen": {
-          "value": 1.129,
-          "hr_fb": 0.1611,
-          "hrfb_ratio": 1.203,
-          "fatigue": 1.01,
-          "bf_last3": 45
-        },
-        "game_total": {
-          "value": 1.034,
-          "implied_team_runs": 5.25,
-          "total": 12.0,
-          "spread": 1.5
-        },
-        "expected_pa": {
-          "value": 4.42,
-          "lineup_slot": 3,
-          "starter_share": 0.62
-        }
-      },
-      "odds": {
         "best_price_decimal": 3.3,
         "best_price_american": 230,
         "best_book": "BetRivers",
         "implied_prob": 0.303,
         "fair_prob": 0.2859,
         "n_books": 1,
-        "ev_per_dollar": -0.2097,
-        "edge_vs_fair": -0.0464
+        "ev_per_dollar": -0.0582,
+        "edge_vs_fair": -0.0005
       }
     },
     {
@@ -332,8 +126,8 @@
       "pitcher_hand": "L",
       "lineup_slot": 1,
       "lineup_confirmed": false,
-      "prob": 0.2364,
-      "per_pa_prob_vs_starter": 0.0526,
+      "prob": 0.2846,
+      "per_pa_prob_vs_starter": 0.0648,
       "expected_pa": 4.65,
       "factors": {
         "league_hr_pa": 0.0307,
@@ -380,8 +174,11 @@
           "park": "Sutter Health Park"
         },
         "weather": {
-          "value": 1.0,
-          "note": "dome or no forecast"
+          "value": 1.233,
+          "temp_f": 83.7,
+          "wind_mph": 11.5,
+          "wind_out_mph": 11.2,
+          "roof": "open"
         },
         "bvp": {
           "value": 1.0,
@@ -414,8 +211,214 @@
         "implied_prob": 0.2703,
         "fair_prob": 0.255,
         "n_books": 1,
-        "ev_per_dollar": -0.1253,
-        "edge_vs_fair": -0.0186
+        "ev_per_dollar": 0.053,
+        "edge_vs_fair": 0.0296
+      }
+    },
+    {
+      "player_id": 666160,
+      "game_pk": 824332,
+      "name": "Mickey Moniak",
+      "team": "Colorado Rockies",
+      "opponent": "Cincinnati Reds",
+      "venue": "Coors Field",
+      "game_time_utc": "2026-07-18T00:40:00Z",
+      "batter_hand": "L",
+      "pitcher_id": 663903,
+      "pitcher_name": "Brady Singer",
+      "pitcher_hand": "R",
+      "lineup_slot": 2,
+      "lineup_confirmed": false,
+      "prob": 0.2433,
+      "per_pa_prob_vs_starter": 0.0591,
+      "expected_pa": 4.54,
+      "factors": {
+        "league_hr_pa": 0.0307,
+        "batter": {
+          "value": 1.314,
+          "components": {
+            "brl_pa": {
+              "raw": 0.0918659793814433,
+              "regressed": 0.0825,
+              "ratio": 1.492,
+              "weight": 0.45
+            },
+            "hr_fb": {
+              "raw": 0.19736842105263158,
+              "regressed": 0.1535,
+              "ratio": 1.146,
+              "weight": 0.3
+            },
+            "xiso": {
+              "raw": 0.22688641779189833,
+              "regressed": 0.2111,
+              "ratio": 1.307,
+              "weight": 0.25
+            }
+          }
+        },
+        "pitcher": {
+          "value": 1.103,
+          "components": {
+            "hr_fb": {
+              "regressed": 0.1691,
+              "ratio": 1.263
+            },
+            "fb_rate": {
+              "regressed": 0.3483,
+              "ratio": 1.027
+            }
+          }
+        },
+        "park": {
+          "value": 1.126,
+          "park_factor": 115,
+          "hand": "L",
+          "park": "Coors Field"
+        },
+        "weather": {
+          "value": 1.141,
+          "temp_f": 90.5,
+          "wind_mph": 11.2,
+          "wind_out_mph": -1.9,
+          "roof": "open"
+        },
+        "bvp": {
+          "value": 1.0,
+          "pa": 3,
+          "note": "insufficient matchup history"
+        },
+        "bullpen": {
+          "value": 1.129,
+          "hr_fb": 0.1611,
+          "hrfb_ratio": 1.203,
+          "fatigue": 1.01,
+          "bf_last3": 45
+        },
+        "game_total": {
+          "value": 1.034,
+          "implied_team_runs": 5.25,
+          "total": 12.0,
+          "spread": 1.5
+        },
+        "expected_pa": {
+          "value": 4.54,
+          "lineup_slot": 2,
+          "starter_share": 0.62
+        }
+      },
+      "odds": {
+        "best_price_decimal": 3.15,
+        "best_price_american": 215,
+        "best_book": "BetRivers",
+        "implied_prob": 0.3175,
+        "fair_prob": 0.2995,
+        "n_books": 1,
+        "ev_per_dollar": -0.2336,
+        "edge_vs_fair": -0.0562
+      }
+    },
+    {
+      "player_id": 696100,
+      "game_pk": 824332,
+      "name": "Hunter Goodman",
+      "team": "Colorado Rockies",
+      "opponent": "Cincinnati Reds",
+      "venue": "Coors Field",
+      "game_time_utc": "2026-07-18T00:40:00Z",
+      "batter_hand": "R",
+      "pitcher_id": 663903,
+      "pitcher_name": "Brady Singer",
+      "pitcher_hand": "R",
+      "lineup_slot": 3,
+      "lineup_confirmed": false,
+      "prob": 0.2394,
+      "per_pa_prob_vs_starter": 0.0574,
+      "expected_pa": 4.42,
+      "factors": {
+        "league_hr_pa": 0.0307,
+        "batter": {
+          "value": 1.417,
+          "components": {
+            "brl_pa": {
+              "raw": 0.0908344370860927,
+              "regressed": 0.0834,
+              "ratio": 1.508,
+              "weight": 0.45
+            },
+            "hr_fb": {
+              "raw": 0.3068181818181818,
+              "regressed": 0.1929,
+              "ratio": 1.44,
+              "weight": 0.3
+            },
+            "xiso": {
+              "raw": 0.22823721316007745,
+              "regressed": 0.2162,
+              "ratio": 1.338,
+              "weight": 0.25
+            }
+          }
+        },
+        "pitcher": {
+          "value": 1.009,
+          "components": {
+            "hr_fb": {
+              "regressed": 0.1515,
+              "ratio": 1.131
+            },
+            "fb_rate": {
+              "regressed": 0.2998,
+              "ratio": 0.884
+            }
+          }
+        },
+        "park": {
+          "value": 1.109,
+          "park_factor": 113,
+          "hand": "R",
+          "park": "Coors Field"
+        },
+        "weather": {
+          "value": 1.141,
+          "temp_f": 90.5,
+          "wind_mph": 11.2,
+          "wind_out_mph": -1.9,
+          "roof": "open"
+        },
+        "bvp": {
+          "value": 1.0,
+          "pa": 3,
+          "note": "insufficient matchup history"
+        },
+        "bullpen": {
+          "value": 1.129,
+          "hr_fb": 0.1611,
+          "hrfb_ratio": 1.203,
+          "fatigue": 1.01,
+          "bf_last3": 45
+        },
+        "game_total": {
+          "value": 1.034,
+          "implied_team_runs": 5.25,
+          "total": 12.0,
+          "spread": 1.5
+        },
+        "expected_pa": {
+          "value": 4.42,
+          "lineup_slot": 3,
+          "starter_share": 0.62
+        }
+      },
+      "odds": {
+        "best_price_decimal": 3.2,
+        "best_price_american": 220,
+        "best_book": "BetRivers",
+        "implied_prob": 0.3125,
+        "fair_prob": 0.2948,
+        "n_books": 1,
+        "ev_per_dollar": -0.2339,
+        "edge_vs_fair": -0.0554
       }
     },
     {
@@ -432,7 +435,7 @@
       "pitcher_hand": "R",
       "lineup_slot": 2,
       "lineup_confirmed": false,
-      "prob": 0.2339,
+      "prob": 0.2338,
       "per_pa_prob_vs_starter": 0.0574,
       "expected_pa": 4.54,
       "factors": {
@@ -480,10 +483,10 @@
           "park": "Coors Field"
         },
         "weather": {
-          "value": 1.142,
-          "temp_f": 91.0,
-          "wind_mph": 11.5,
-          "wind_out_mph": -2.2,
+          "value": 1.141,
+          "temp_f": 90.5,
+          "wind_mph": 11.2,
+          "wind_out_mph": -1.9,
           "roof": "open"
         },
         "bvp": {
@@ -517,8 +520,8 @@
         "implied_prob": 0.2273,
         "fair_prob": 0.2144,
         "n_books": 1,
-        "ev_per_dollar": 0.0292,
-        "edge_vs_fair": 0.0195
+        "ev_per_dollar": 0.0287,
+        "edge_vs_fair": 0.0194
       }
     },
     {
@@ -535,8 +538,8 @@
       "pitcher_hand": "R",
       "lineup_slot": 4,
       "lineup_confirmed": false,
-      "prob": 0.2329,
-      "per_pa_prob_vs_starter": 0.0582,
+      "prob": 0.2301,
+      "per_pa_prob_vs_starter": 0.0574,
       "expected_pa": 4.31,
       "factors": {
         "league_hr_pa": 0.0307,
@@ -583,10 +586,10 @@
           "park": "Daikin Park"
         },
         "weather": {
-          "value": 1.12,
-          "temp_f": 87.7,
-          "wind_mph": 9.4,
-          "wind_out_mph": 9.2,
+          "value": 1.105,
+          "temp_f": 84.4,
+          "wind_mph": 8.9,
+          "wind_out_mph": 8.9,
           "roof": "retractable"
         },
         "bvp": {
@@ -622,8 +625,8 @@
         "implied_prob": 0.2353,
         "fair_prob": 0.222,
         "n_books": 1,
-        "ev_per_dollar": -0.0102,
-        "edge_vs_fair": 0.0109
+        "ev_per_dollar": -0.0221,
+        "edge_vs_fair": 0.0081
       }
     },
     {
@@ -640,8 +643,8 @@
       "pitcher_hand": "R",
       "lineup_slot": 1,
       "lineup_confirmed": false,
-      "prob": 0.2275,
-      "per_pa_prob_vs_starter": 0.0583,
+      "prob": 0.227,
+      "per_pa_prob_vs_starter": 0.0582,
       "expected_pa": 4.65,
       "factors": {
         "league_hr_pa": 0.0307,
@@ -688,10 +691,10 @@
           "park": "Wrigley Field"
         },
         "weather": {
-          "value": 1.289,
-          "temp_f": 92.8,
-          "wind_mph": 11.6,
-          "wind_out_mph": 9.0,
+          "value": 1.286,
+          "temp_f": 93.4,
+          "wind_mph": 11.2,
+          "wind_out_mph": 8.3,
           "roof": "open"
         },
         "bvp": {
@@ -725,1038 +728,8 @@
         "implied_prob": 0.2899,
         "fair_prob": 0.2734,
         "n_books": 1,
-        "ev_per_dollar": -0.2151,
-        "edge_vs_fair": -0.0459
-      }
-    },
-    {
-      "player_id": 682829,
-      "game_pk": 824332,
-      "name": "Elly De La Cruz",
-      "team": "Cincinnati Reds",
-      "opponent": "Colorado Rockies",
-      "venue": "Coors Field",
-      "game_time_utc": "2026-07-18T00:40:00Z",
-      "batter_hand": "L",
-      "pitcher_id": 687312,
-      "pitcher_name": "Gabriel Hughes",
-      "pitcher_hand": "R",
-      "lineup_slot": 1,
-      "lineup_confirmed": false,
-      "prob": 0.2196,
-      "per_pa_prob_vs_starter": 0.052,
-      "expected_pa": 4.65,
-      "factors": {
-        "league_hr_pa": 0.0307,
-        "batter": {
-          "value": 1.224,
-          "components": {
-            "brl_pa": {
-              "raw": 0.07689233347297864,
-              "regressed": 0.0726,
-              "ratio": 1.312,
-              "weight": 0.45
-            },
-            "hr_fb": {
-              "raw": 0.234375,
-              "regressed": 0.1614,
-              "ratio": 1.205,
-              "weight": 0.3
-            },
-            "xiso": {
-              "raw": 0.19090887542796942,
-              "regressed": 0.1858,
-              "ratio": 1.15,
-              "weight": 0.25
-            }
-          }
-        },
-        "pitcher": {
-          "value": 0.977,
-          "components": {
-            "hr_fb": {
-              "regressed": 0.13,
-              "ratio": 0.971
-            },
-            "fb_rate": {
-              "regressed": 0.3264,
-              "ratio": 0.963
-            }
-          }
-        },
-        "park": {
-          "value": 1.126,
-          "park_factor": 115,
-          "hand": "L",
-          "park": "Coors Field"
-        },
-        "weather": {
-          "value": 1.142,
-          "temp_f": 91.0,
-          "wind_mph": 11.5,
-          "wind_out_mph": -2.2,
-          "roof": "open"
-        },
-        "bvp": {
-          "value": 1.0,
-          "pa": 0,
-          "note": "insufficient matchup history"
-        },
-        "bullpen": {
-          "value": 0.975,
-          "hr_fb": 0.1291,
-          "hrfb_ratio": 0.964,
-          "fatigue": 0.997,
-          "bf_last3": 41
-        },
-        "game_total": {
-          "value": 1.101,
-          "implied_team_runs": 6.75,
-          "total": 12.0,
-          "spread": -1.5
-        },
-        "expected_pa": {
-          "value": 4.65,
-          "lineup_slot": 1,
-          "starter_share": 0.62
-        }
-      },
-      "odds": {
-        "best_price_decimal": 4.35,
-        "best_price_american": 335,
-        "best_book": "BetRivers",
-        "implied_prob": 0.2299,
-        "fair_prob": 0.2169,
-        "n_books": 1,
-        "ev_per_dollar": -0.0447,
-        "edge_vs_fair": 0.0027
-      }
-    },
-    {
-      "player_id": 670541,
-      "game_pk": 824170,
-      "name": "Yordan Alvarez",
-      "team": "Houston Astros",
-      "opponent": "Baltimore Orioles",
-      "venue": "Daikin Park",
-      "game_time_utc": "2026-07-18T00:10:00Z",
-      "batter_hand": "L",
-      "pitcher_id": 665152,
-      "pitcher_name": "Dean Kremer",
-      "pitcher_hand": "R",
-      "lineup_slot": 2,
-      "lineup_confirmed": false,
-      "prob": 0.2194,
-      "per_pa_prob_vs_starter": 0.0561,
-      "expected_pa": 4.54,
-      "factors": {
-        "league_hr_pa": 0.0307,
-        "batter": {
-          "value": 1.653,
-          "components": {
-            "brl_pa": {
-              "raw": 0.11738147739801542,
-              "regressed": 0.102,
-              "ratio": 1.843,
-              "weight": 0.45
-            },
-            "hr_fb": {
-              "raw": 0.24603174603174602,
-              "regressed": 0.1816,
-              "ratio": 1.356,
-              "weight": 0.3
-            },
-            "xiso": {
-              "raw": 0.35298665183537264,
-              "regressed": 0.3092,
-              "ratio": 1.914,
-              "weight": 0.25
-            }
-          }
-        },
-        "pitcher": {
-          "value": 1.123,
-          "components": {
-            "hr_fb": {
-              "regressed": 0.1728,
-              "ratio": 1.29
-            },
-            "fb_rate": {
-              "regressed": 0.3586,
-              "ratio": 1.058
-            }
-          }
-        },
-        "park": {
-          "value": 0.966,
-          "park_factor": 96,
-          "hand": "L",
-          "park": "Daikin Park"
-        },
-        "weather": {
-          "value": 1.12,
-          "temp_f": 87.7,
-          "wind_mph": 9.4,
-          "wind_out_mph": 9.2,
-          "roof": "retractable"
-        },
-        "bvp": {
-          "value": 0.953,
-          "pa": 10,
-          "hr": 0,
-          "hr_per_pa": 0.0,
-          "ratio": 0.909
-        },
-        "bullpen": {
-          "value": 0.922,
-          "hr_fb": 0.1256,
-          "hrfb_ratio": 0.938,
-          "fatigue": 0.958,
-          "bf_last3": 30
-        },
-        "game_total": {
-          "value": 0.955,
-          "implied_team_runs": 3.5,
-          "total": 8.5,
-          "spread": 1.5
-        },
-        "expected_pa": {
-          "value": 4.54,
-          "lineup_slot": 2,
-          "starter_share": 0.62
-        }
-      },
-      "odds": {
-        "best_price_decimal": 3.05,
-        "best_price_american": 205,
-        "best_book": "BetRivers",
-        "implied_prob": 0.3279,
-        "fair_prob": 0.3093,
-        "n_books": 1,
-        "ev_per_dollar": -0.3308,
-        "edge_vs_fair": -0.0899
-      }
-    },
-    {
-      "player_id": 691406,
-      "game_pk": 824766,
-      "name": "Junior Caminero",
-      "team": "Tampa Bay Rays",
-      "opponent": "Boston Red Sox",
-      "venue": "Fenway Park",
-      "game_time_utc": "2026-07-17T17:35:00Z",
-      "batter_hand": "R",
-      "pitcher_id": 687562,
-      "pitcher_name": "Jake Bennett",
-      "pitcher_hand": "L",
-      "lineup_slot": 3,
-      "lineup_confirmed": false,
-      "prob": 0.2162,
-      "per_pa_prob_vs_starter": 0.052,
-      "expected_pa": 4.42,
-      "factors": {
-        "league_hr_pa": 0.0307,
-        "batter": {
-          "value": 1.498,
-          "components": {
-            "brl_pa": {
-              "raw": 0.09812012644889358,
-              "regressed": 0.0907,
-              "ratio": 1.639,
-              "weight": 0.45
-            },
-            "hr_fb": {
-              "raw": 0.32941176470588235,
-              "regressed": 0.1991,
-              "ratio": 1.487,
-              "weight": 0.3
-            },
-            "xiso": {
-              "raw": 0.2393445440956652,
-              "regressed": 0.2264,
-              "ratio": 1.401,
-              "weight": 0.25
-            }
-          }
-        },
-        "pitcher": {
-          "value": 0.966,
-          "components": {
-            "hr_fb": {
-              "regressed": 0.1179,
-              "ratio": 0.881
-            },
-            "fb_rate": {
-              "regressed": 0.3552,
-              "ratio": 1.048
-            }
-          }
-        },
-        "park": {
-          "value": 0.966,
-          "park_factor": 96,
-          "hand": "R",
-          "park": "Fenway Park"
-        },
-        "weather": {
-          "value": 1.207,
-          "temp_f": 85.2,
-          "wind_mph": 11.6,
-          "wind_out_mph": 7.6,
-          "roof": "open"
-        },
-        "bvp": {
-          "value": 0.971,
-          "pa": 6,
-          "hr": 0,
-          "hr_per_pa": 0.0,
-          "ratio": 0.943
-        },
-        "bullpen": {
-          "value": 1.015,
-          "hr_fb": 0.1267,
-          "hrfb_ratio": 0.946,
-          "fatigue": 1.049,
-          "bf_last3": 56
-        },
-        "game_total": {
-          "value": 1.034,
-          "implied_team_runs": 5.25,
-          "total": 9.0,
-          "spread": -1.5
-        },
-        "expected_pa": {
-          "value": 4.42,
-          "lineup_slot": 3,
-          "starter_share": 0.62
-        }
-      },
-      "odds": {
-        "best_price_decimal": 3.55,
-        "best_price_american": 255,
-        "best_book": "BetRivers",
-        "implied_prob": 0.2817,
-        "fair_prob": 0.2657,
-        "n_books": 1,
-        "ev_per_dollar": -0.2325,
-        "edge_vs_fair": -0.0495
-      }
-    },
-    {
-      "player_id": 665019,
-      "game_pk": 824655,
-      "name": "Kody Clemens",
-      "team": "Minnesota Twins",
-      "opponent": "Chicago Cubs",
-      "venue": "Wrigley Field",
-      "game_time_utc": "2026-07-18T00:05:00Z",
-      "batter_hand": "L",
-      "pitcher_id": 607067,
-      "pitcher_name": "Colin Rea",
-      "pitcher_hand": "R",
-      "lineup_slot": 4,
-      "lineup_confirmed": false,
-      "prob": 0.2147,
-      "per_pa_prob_vs_starter": 0.0519,
-      "expected_pa": 4.31,
-      "factors": {
-        "league_hr_pa": 0.0307,
-        "batter": {
-          "value": 1.251,
-          "components": {
-            "brl_pa": {
-              "raw": 0.08417747794499222,
-              "regressed": 0.0773,
-              "ratio": 1.398,
-              "weight": 0.45
-            },
-            "hr_fb": {
-              "raw": 0.18181818181818182,
-              "regressed": 0.1503,
-              "ratio": 1.122,
-              "weight": 0.3
-            },
-            "xiso": {
-              "raw": 0.20786231369765792,
-              "regressed": 0.1976,
-              "ratio": 1.223,
-              "weight": 0.25
-            }
-          }
-        },
-        "pitcher": {
-          "value": 0.933,
-          "components": {
-            "hr_fb": {
-              "regressed": 0.1323,
-              "ratio": 0.988
-            },
-            "fb_rate": {
-              "regressed": 0.2765,
-              "ratio": 0.815
-            }
-          }
-        },
-        "park": {
-          "value": 1.0,
-          "park_factor": 100,
-          "hand": "L",
-          "park": "Wrigley Field"
-        },
-        "weather": {
-          "value": 1.289,
-          "temp_f": 92.8,
-          "wind_mph": 11.6,
-          "wind_out_mph": 9.0,
-          "roof": "open"
-        },
-        "bvp": {
-          "value": 1.124,
-          "pa": 5,
-          "hr": 1,
-          "hr_per_pa": 0.2,
-          "ratio": 1.263
-        },
-        "bullpen": {
-          "value": 1.191,
-          "hr_fb": 0.1783,
-          "hrfb_ratio": 1.331,
-          "fatigue": 1.004,
-          "bf_last3": 43
-        },
-        "game_total": {
-          "value": 1.0,
-          "implied_team_runs": 4.5,
-          "total": 10.5,
-          "spread": 1.5
-        },
-        "expected_pa": {
-          "value": 4.31,
-          "lineup_slot": 4,
-          "starter_share": 0.62
-        }
-      },
-      "odds": {
-        "best_price_decimal": 3.5,
-        "best_price_american": 250,
-        "best_book": "BetRivers",
-        "implied_prob": 0.2857,
-        "fair_prob": 0.2695,
-        "n_books": 1,
-        "ev_per_dollar": -0.2485,
-        "edge_vs_fair": -0.0548
-      }
-    },
-    {
-      "player_id": 691406,
-      "game_pk": 824737,
-      "name": "Junior Caminero",
-      "team": "Tampa Bay Rays",
-      "opponent": "Boston Red Sox",
-      "venue": "Fenway Park",
-      "game_time_utc": "2026-07-17T23:10:00Z",
-      "batter_hand": "R",
-      "pitcher_id": null,
-      "pitcher_name": null,
-      "pitcher_hand": null,
-      "lineup_slot": 3,
-      "lineup_confirmed": false,
-      "prob": 0.2142,
-      "per_pa_prob_vs_starter": 0.0528,
-      "expected_pa": 4.42,
-      "factors": {
-        "league_hr_pa": 0.0307,
-        "batter": {
-          "value": 1.498,
-          "components": {
-            "brl_pa": {
-              "raw": 0.09812012644889358,
-              "regressed": 0.0907,
-              "ratio": 1.639,
-              "weight": 0.45
-            },
-            "hr_fb": {
-              "raw": 0.32941176470588235,
-              "regressed": 0.1991,
-              "ratio": 1.487,
-              "weight": 0.3
-            },
-            "xiso": {
-              "raw": 0.2393445440956652,
-              "regressed": 0.2264,
-              "ratio": 1.401,
-              "weight": 0.25
-            }
-          }
-        },
-        "pitcher": {
-          "value": 1.0,
-          "components": {},
-          "note": "no starter data; neutral"
-        },
-        "park": {
-          "value": 0.966,
-          "park_factor": 96,
-          "hand": "R",
-          "park": "Fenway Park"
-        },
-        "weather": {
-          "value": 1.149,
-          "temp_f": 83.9,
-          "wind_mph": 8.0,
-          "wind_out_mph": 3.4,
-          "roof": "open"
-        },
-        "bvp": {
-          "value": 1.0,
-          "pa": 0,
-          "note": "insufficient matchup history"
-        },
-        "bullpen": {
-          "value": 1.015,
-          "hr_fb": 0.1267,
-          "hrfb_ratio": 0.946,
-          "fatigue": 1.049,
-          "bf_last3": 56
-        },
-        "game_total": {
-          "value": 1.034,
-          "implied_team_runs": 5.25,
-          "total": 9.0,
-          "spread": -1.5
-        },
-        "expected_pa": {
-          "value": 4.42,
-          "lineup_slot": 3,
-          "starter_share": 0.62
-        }
-      },
-      "odds": {
-        "best_price_decimal": 3.55,
-        "best_price_american": 255,
-        "best_book": "BetRivers",
-        "implied_prob": 0.2817,
-        "fair_prob": 0.2657,
-        "n_books": 1,
-        "ev_per_dollar": -0.2396,
-        "edge_vs_fair": -0.0515
-      }
-    },
-    {
-      "player_id": 673548,
-      "game_pk": 824655,
-      "name": "Seiya Suzuki",
-      "team": "Chicago Cubs",
-      "opponent": "Minnesota Twins",
-      "venue": "Wrigley Field",
-      "game_time_utc": "2026-07-18T00:05:00Z",
-      "batter_hand": "R",
-      "pitcher_id": 641927,
-      "pitcher_name": "Bailey Ober",
-      "pitcher_hand": "R",
-      "lineup_slot": 2,
-      "lineup_confirmed": false,
-      "prob": 0.2092,
-      "per_pa_prob_vs_starter": 0.0522,
-      "expected_pa": 4.54,
-      "factors": {
-        "league_hr_pa": 0.0307,
-        "batter": {
-          "value": 1.258,
-          "components": {
-            "brl_pa": {
-              "raw": 0.08364806866952788,
-              "regressed": 0.0778,
-              "ratio": 1.407,
-              "weight": 0.45
-            },
-            "hr_fb": {
-              "raw": 0.18072289156626506,
-              "regressed": 0.1493,
-              "ratio": 1.115,
-              "weight": 0.3
-            },
-            "xiso": {
-              "raw": 0.21046564885496183,
-              "regressed": 0.2017,
-              "ratio": 1.248,
-              "weight": 0.25
-            }
-          }
-        },
-        "pitcher": {
-          "value": 0.967,
-          "components": {
-            "hr_fb": {
-              "regressed": 0.1242,
-              "ratio": 0.927
-            },
-            "fb_rate": {
-              "regressed": 0.3341,
-              "ratio": 0.985
-            }
-          }
-        },
-        "park": {
-          "value": 1.017,
-          "park_factor": 102,
-          "hand": "R",
-          "park": "Wrigley Field"
-        },
-        "weather": {
-          "value": 1.289,
-          "temp_f": 92.8,
-          "wind_mph": 11.6,
-          "wind_out_mph": 9.0,
-          "roof": "open"
-        },
-        "bvp": {
-          "value": 1.0,
-          "pa": 0,
-          "note": "insufficient matchup history"
-        },
-        "bullpen": {
-          "value": 0.879,
-          "hr_fb": 0.1139,
-          "hrfb_ratio": 0.851,
-          "fatigue": 0.969,
-          "bf_last3": 33
-        },
-        "game_total": {
-          "value": 1.067,
-          "implied_team_runs": 6.0,
-          "total": 10.5,
-          "spread": -1.5
-        },
-        "expected_pa": {
-          "value": 4.54,
-          "lineup_slot": 2,
-          "starter_share": 0.62
-        }
-      },
-      "odds": {
-        "best_price_decimal": 3.75,
-        "best_price_american": 275,
-        "best_book": "BetRivers",
-        "implied_prob": 0.2667,
-        "fair_prob": 0.2516,
-        "n_books": 1,
-        "ev_per_dollar": -0.2155,
-        "edge_vs_fair": -0.0424
-      }
-    },
-    {
-      "player_id": 663757,
-      "game_pk": 823524,
-      "name": "Trent Grisham",
-      "team": "New York Yankees",
-      "opponent": "Los Angeles Dodgers",
-      "venue": "Yankee Stadium",
-      "game_time_utc": "2026-07-17T23:05:00Z",
-      "batter_hand": "L",
-      "pitcher_id": 808963,
-      "pitcher_name": "Roki Sasaki",
-      "pitcher_hand": "R",
-      "lineup_slot": 1,
-      "lineup_confirmed": false,
-      "prob": 0.2042,
-      "per_pa_prob_vs_starter": 0.0483,
-      "expected_pa": 4.65,
-      "factors": {
-        "league_hr_pa": 0.0307,
-        "batter": {
-          "value": 1.212,
-          "components": {
-            "brl_pa": {
-              "raw": 0.08205354626585253,
-              "regressed": 0.0762,
-              "ratio": 1.377,
-              "weight": 0.45
-            },
-            "hr_fb": {
-              "raw": 0.11904761904761904,
-              "regressed": 0.129,
-              "ratio": 0.963,
-              "weight": 0.3
-            },
-            "xiso": {
-              "raw": 0.22581952117863724,
-              "regressed": 0.2132,
-              "ratio": 1.319,
-              "weight": 0.25
-            }
-          }
-        },
-        "pitcher": {
-          "value": 1.084,
-          "components": {
-            "hr_fb": {
-              "regressed": 0.156,
-              "ratio": 1.164
-            },
-            "fb_rate": {
-              "regressed": 0.3641,
-              "ratio": 1.074
-            }
-          }
-        },
-        "park": {
-          "value": 1.151,
-          "park_factor": 118,
-          "hand": "L",
-          "park": "Yankee Stadium"
-        },
-        "weather": {
-          "value": 1.078,
-          "temp_f": 82.2,
-          "wind_mph": 8.1,
-          "wind_out_mph": -1.8,
-          "roof": "open"
-        },
-        "bvp": {
-          "value": 1.0,
-          "pa": 0,
-          "note": "insufficient matchup history"
-        },
-        "bullpen": {
-          "value": 1.06,
-          "hr_fb": 0.1297,
-          "hrfb_ratio": 0.969,
-          "fatigue": 1.081,
-          "bf_last3": 65
-        },
-        "game_total": {
-          "value": 0.966,
-          "implied_team_runs": 3.75,
-          "total": 9.0,
-          "spread": 1.5
-        },
-        "expected_pa": {
-          "value": 4.65,
-          "lineup_slot": 1,
-          "starter_share": 0.62
-        }
-      },
-      "odds": {
-        "best_price_decimal": 4.5,
-        "best_price_american": 350,
-        "best_book": "BetRivers",
-        "implied_prob": 0.2222,
-        "fair_prob": 0.2096,
-        "n_books": 1,
-        "ev_per_dollar": -0.0811,
-        "edge_vs_fair": -0.0054
-      }
-    },
-    {
-      "player_id": 518692,
-      "game_pk": 823524,
-      "name": "Freddie Freeman",
-      "team": "Los Angeles Dodgers",
-      "opponent": "New York Yankees",
-      "venue": "Yankee Stadium",
-      "game_time_utc": "2026-07-17T23:05:00Z",
-      "batter_hand": "L",
-      "pitcher_id": 543037,
-      "pitcher_name": "Gerrit Cole",
-      "pitcher_hand": "R",
-      "lineup_slot": 3,
-      "lineup_confirmed": false,
-      "prob": 0.2015,
-      "per_pa_prob_vs_starter": 0.0518,
-      "expected_pa": 4.42,
-      "factors": {
-        "league_hr_pa": 0.0307,
-        "batter": {
-          "value": 1.184,
-          "components": {
-            "brl_pa": {
-              "raw": 0.07412011577424024,
-              "regressed": 0.0708,
-              "ratio": 1.279,
-              "weight": 0.45
-            },
-            "hr_fb": {
-              "raw": 0.15463917525773196,
-              "regressed": 0.1415,
-              "ratio": 1.056,
-              "weight": 0.3
-            },
-            "xiso": {
-              "raw": 0.20524330527926546,
-              "regressed": 0.1978,
-              "ratio": 1.224,
-              "weight": 0.25
-            }
-          }
-        },
-        "pitcher": {
-          "value": 1.067,
-          "components": {
-            "hr_fb": {
-              "regressed": 0.1457,
-              "ratio": 1.088
-            },
-            "fb_rate": {
-              "regressed": 0.3754,
-              "ratio": 1.107
-            }
-          }
-        },
-        "park": {
-          "value": 1.151,
-          "park_factor": 118,
-          "hand": "L",
-          "park": "Yankee Stadium"
-        },
-        "weather": {
-          "value": 1.078,
-          "temp_f": 82.2,
-          "wind_mph": 8.1,
-          "wind_out_mph": -1.8,
-          "roof": "open"
-        },
-        "bvp": {
-          "value": 1.042,
-          "pa": 22,
-          "hr": 1,
-          "hr_per_pa": 0.045,
-          "ratio": 1.087
-        },
-        "bullpen": {
-          "value": 0.987,
-          "hr_fb": 0.1318,
-          "hrfb_ratio": 0.984,
-          "fatigue": 0.997,
-          "bf_last3": 41
-        },
-        "game_total": {
-          "value": 1.034,
-          "implied_team_runs": 5.25,
-          "total": 9.0,
-          "spread": -1.5
-        },
-        "expected_pa": {
-          "value": 4.42,
-          "lineup_slot": 3,
-          "starter_share": 0.62
-        }
-      },
-      "odds": {
-        "best_price_decimal": 4.6,
-        "best_price_american": 360,
-        "best_book": "BetRivers",
-        "implied_prob": 0.2174,
-        "fair_prob": 0.2051,
-        "n_books": 1,
-        "ev_per_dollar": -0.0731,
-        "edge_vs_fair": -0.0036
-      }
-    },
-    {
-      "player_id": 683737,
-      "game_pk": 824655,
-      "name": "Michael Busch",
-      "team": "Chicago Cubs",
-      "opponent": "Minnesota Twins",
-      "venue": "Wrigley Field",
-      "game_time_utc": "2026-07-18T00:05:00Z",
-      "batter_hand": "L",
-      "pitcher_id": 641927,
-      "pitcher_name": "Bailey Ober",
-      "pitcher_hand": "R",
-      "lineup_slot": 5,
-      "lineup_confirmed": false,
-      "prob": 0.2015,
-      "per_pa_prob_vs_starter": 0.0565,
-      "expected_pa": 4.19,
-      "factors": {
-        "league_hr_pa": 0.0307,
-        "batter": {
-          "value": 1.224,
-          "components": {
-            "brl_pa": {
-              "raw": 0.08473262469337695,
-              "regressed": 0.0789,
-              "ratio": 1.427,
-              "weight": 0.45
-            },
-            "hr_fb": {
-              "raw": 0.10891089108910891,
-              "regressed": 0.1246,
-              "ratio": 0.93,
-              "weight": 0.3
-            },
-            "xiso": {
-              "raw": 0.22886447638603694,
-              "regressed": 0.2174,
-              "ratio": 1.345,
-              "weight": 0.25
-            }
-          }
-        },
-        "pitcher": {
-          "value": 1.093,
-          "components": {
-            "hr_fb": {
-              "regressed": 0.1337,
-              "ratio": 0.998
-            },
-            "fb_rate": {
-              "regressed": 0.4511,
-              "ratio": 1.331
-            }
-          }
-        },
-        "park": {
-          "value": 1.0,
-          "park_factor": 100,
-          "hand": "L",
-          "park": "Wrigley Field"
-        },
-        "weather": {
-          "value": 1.289,
-          "temp_f": 92.8,
-          "wind_mph": 11.6,
-          "wind_out_mph": 9.0,
-          "roof": "open"
-        },
-        "bvp": {
-          "value": 1.0,
-          "pa": 0,
-          "note": "insufficient matchup history"
-        },
-        "bullpen": {
-          "value": 0.879,
-          "hr_fb": 0.1139,
-          "hrfb_ratio": 0.851,
-          "fatigue": 0.969,
-          "bf_last3": 33
-        },
-        "game_total": {
-          "value": 1.067,
-          "implied_team_runs": 6.0,
-          "total": 10.5,
-          "spread": -1.5
-        },
-        "expected_pa": {
-          "value": 4.19,
-          "lineup_slot": 5,
-          "starter_share": 0.62
-        }
-      },
-      "odds": {
-        "best_price_decimal": 3.6,
-        "best_price_american": 260,
-        "best_book": "BetRivers",
-        "implied_prob": 0.2778,
-        "fair_prob": 0.2621,
-        "n_books": 1,
-        "ev_per_dollar": -0.2746,
-        "edge_vs_fair": -0.0606
-      }
-    },
-    {
-      "player_id": 680777,
-      "game_pk": 824655,
-      "name": "Ryan Jeffers",
-      "team": "Minnesota Twins",
-      "opponent": "Chicago Cubs",
-      "venue": "Wrigley Field",
-      "game_time_utc": "2026-07-18T00:05:00Z",
-      "batter_hand": "R",
-      "pitcher_id": 607067,
-      "pitcher_name": "Colin Rea",
-      "pitcher_hand": "R",
-      "lineup_slot": 2,
-      "lineup_confirmed": false,
-      "prob": 0.2015,
-      "per_pa_prob_vs_starter": 0.0464,
-      "expected_pa": 4.54,
-      "factors": {
-        "league_hr_pa": 0.0307,
-        "batter": {
-          "value": 1.079,
-          "components": {
-            "brl_pa": {
-              "raw": 0.06441129032258062,
-              "regressed": 0.0618,
-              "ratio": 1.117,
-              "weight": 0.45
-            },
-            "hr_fb": {
-              "raw": 0.14583333333333334,
-              "regressed": 0.1365,
-              "ratio": 1.02,
-              "weight": 0.3
-            },
-            "xiso": {
-              "raw": 0.18440468534680754,
-              "regressed": 0.1783,
-              "ratio": 1.103,
-              "weight": 0.25
-            }
-          }
-        },
-        "pitcher": {
-          "value": 1.068,
-          "components": {
-            "hr_fb": {
-              "regressed": 0.1426,
-              "ratio": 1.065
-            },
-            "fb_rate": {
-              "regressed": 0.3866,
-              "ratio": 1.14
-            }
-          }
-        },
-        "park": {
-          "value": 1.017,
-          "park_factor": 102,
-          "hand": "R",
-          "park": "Wrigley Field"
-        },
-        "weather": {
-          "value": 1.289,
-          "temp_f": 92.8,
-          "wind_mph": 11.6,
-          "wind_out_mph": 9.0,
-          "roof": "open"
-        },
-        "bvp": {
-          "value": 1.0,
-          "pa": 3,
-          "note": "insufficient matchup history"
-        },
-        "bullpen": {
-          "value": 1.191,
-          "hr_fb": 0.1783,
-          "hrfb_ratio": 1.331,
-          "fatigue": 1.004,
-          "bf_last3": 43
-        },
-        "game_total": {
-          "value": 1.0,
-          "implied_team_runs": 4.5,
-          "total": 10.5,
-          "spread": 1.5
-        },
-        "expected_pa": {
-          "value": 4.54,
-          "lineup_slot": 2,
-          "starter_share": 0.62
-        }
-      },
-      "odds": {
-        "best_price_decimal": 4.4,
-        "best_price_american": 340,
-        "best_book": "BetRivers",
-        "implied_prob": 0.2273,
-        "fair_prob": 0.2144,
-        "n_books": 1,
-        "ev_per_dollar": -0.1134,
-        "edge_vs_fair": -0.0129
+        "ev_per_dollar": -0.2168,
+        "edge_vs_fair": -0.0464
       }
     },
     {
@@ -1773,8 +746,8 @@
       "pitcher_hand": "R",
       "lineup_slot": 3,
       "lineup_confirmed": false,
-      "prob": 0.2006,
-      "per_pa_prob_vs_starter": 0.0513,
+      "prob": 0.2258,
+      "per_pa_prob_vs_starter": 0.0585,
       "expected_pa": 4.42,
       "factors": {
         "league_hr_pa": 0.0307,
@@ -1821,10 +794,10 @@
           "park": "Truist Park"
         },
         "weather": {
-          "value": 1.028,
-          "temp_f": 77.6,
+          "value": 1.171,
+          "temp_f": 87.2,
           "wind_mph": 3.4,
-          "wind_out_mph": -3.1,
+          "wind_out_mph": 2.9,
           "roof": "open"
         },
         "bvp": {
@@ -1854,14 +827,1147 @@
         }
       },
       "odds": {
+        "best_price_decimal": 3.65,
+        "best_price_american": 265,
+        "best_book": "BetRivers",
+        "implied_prob": 0.274,
+        "fair_prob": 0.2585,
+        "n_books": 1,
+        "ev_per_dollar": -0.1758,
+        "edge_vs_fair": -0.0327
+      }
+    },
+    {
+      "player_id": 682829,
+      "game_pk": 824332,
+      "name": "Elly De La Cruz",
+      "team": "Cincinnati Reds",
+      "opponent": "Colorado Rockies",
+      "venue": "Coors Field",
+      "game_time_utc": "2026-07-18T00:40:00Z",
+      "batter_hand": "L",
+      "pitcher_id": 687312,
+      "pitcher_name": "Gabriel Hughes",
+      "pitcher_hand": "R",
+      "lineup_slot": 1,
+      "lineup_confirmed": false,
+      "prob": 0.2194,
+      "per_pa_prob_vs_starter": 0.0519,
+      "expected_pa": 4.65,
+      "factors": {
+        "league_hr_pa": 0.0307,
+        "batter": {
+          "value": 1.224,
+          "components": {
+            "brl_pa": {
+              "raw": 0.07689233347297864,
+              "regressed": 0.0726,
+              "ratio": 1.312,
+              "weight": 0.45
+            },
+            "hr_fb": {
+              "raw": 0.234375,
+              "regressed": 0.1614,
+              "ratio": 1.205,
+              "weight": 0.3
+            },
+            "xiso": {
+              "raw": 0.19090887542796942,
+              "regressed": 0.1858,
+              "ratio": 1.15,
+              "weight": 0.25
+            }
+          }
+        },
+        "pitcher": {
+          "value": 0.977,
+          "components": {
+            "hr_fb": {
+              "regressed": 0.13,
+              "ratio": 0.971
+            },
+            "fb_rate": {
+              "regressed": 0.3264,
+              "ratio": 0.963
+            }
+          }
+        },
+        "park": {
+          "value": 1.126,
+          "park_factor": 115,
+          "hand": "L",
+          "park": "Coors Field"
+        },
+        "weather": {
+          "value": 1.141,
+          "temp_f": 90.5,
+          "wind_mph": 11.2,
+          "wind_out_mph": -1.9,
+          "roof": "open"
+        },
+        "bvp": {
+          "value": 1.0,
+          "pa": 0,
+          "note": "insufficient matchup history"
+        },
+        "bullpen": {
+          "value": 0.975,
+          "hr_fb": 0.1291,
+          "hrfb_ratio": 0.964,
+          "fatigue": 0.997,
+          "bf_last3": 41
+        },
+        "game_total": {
+          "value": 1.101,
+          "implied_team_runs": 6.75,
+          "total": 12.0,
+          "spread": -1.5
+        },
+        "expected_pa": {
+          "value": 4.65,
+          "lineup_slot": 1,
+          "starter_share": 0.62
+        }
+      },
+      "odds": {
+        "best_price_decimal": 4.4,
+        "best_price_american": 340,
+        "best_book": "BetRivers",
+        "implied_prob": 0.2273,
+        "fair_prob": 0.2144,
+        "n_books": 1,
+        "ev_per_dollar": -0.0346,
+        "edge_vs_fair": 0.005
+      }
+    },
+    {
+      "player_id": 686948,
+      "game_pk": 824901,
+      "name": "Drake Baldwin",
+      "team": "Atlanta Braves",
+      "opponent": "Texas Rangers",
+      "venue": "Truist Park",
+      "game_time_utc": "2026-07-17T23:15:00Z",
+      "batter_hand": "L",
+      "pitcher_id": 615698,
+      "pitcher_name": "Cal Quantrill",
+      "pitcher_hand": "R",
+      "lineup_slot": 1,
+      "lineup_confirmed": false,
+      "prob": 0.2173,
+      "per_pa_prob_vs_starter": 0.0518,
+      "expected_pa": 4.65,
+      "factors": {
+        "league_hr_pa": 0.0307,
+        "batter": {
+          "value": 1.34,
+          "components": {
+            "brl_pa": {
+              "raw": 0.09164056420233463,
+              "regressed": 0.0834,
+              "ratio": 1.508,
+              "weight": 0.45
+            },
+            "hr_fb": {
+              "raw": 0.23809523809523808,
+              "regressed": 0.1621,
+              "ratio": 1.21,
+              "weight": 0.3
+            },
+            "xiso": {
+              "raw": 0.2237705421070576,
+              "regressed": 0.2104,
+              "ratio": 1.302,
+              "weight": 0.25
+            }
+          }
+        },
+        "pitcher": {
+          "value": 1.005,
+          "components": {
+            "hr_fb": {
+              "regressed": 0.1242,
+              "ratio": 0.927
+            },
+            "fb_rate": {
+              "regressed": 0.3783,
+              "ratio": 1.116
+            }
+          }
+        },
+        "park": {
+          "value": 1.059,
+          "park_factor": 107,
+          "hand": "L",
+          "park": "Truist Park"
+        },
+        "weather": {
+          "value": 1.171,
+          "temp_f": 87.2,
+          "wind_mph": 3.4,
+          "wind_out_mph": 2.9,
+          "roof": "open"
+        },
+        "bvp": {
+          "value": 1.0,
+          "pa": 2,
+          "note": "insufficient matchup history"
+        },
+        "bullpen": {
+          "value": 0.98,
+          "hr_fb": 0.1244,
+          "hrfb_ratio": 0.929,
+          "fatigue": 1.024,
+          "bf_last3": 49
+        },
+        "game_total": {
+          "value": 1.011,
+          "implied_team_runs": 4.75,
+          "total": 8.0,
+          "spread": -1.5
+        },
+        "expected_pa": {
+          "value": 4.65,
+          "lineup_slot": 1,
+          "starter_share": 0.62
+        }
+      },
+      "odds": {
+        "best_price_decimal": 4.5,
+        "best_price_american": 350,
+        "best_book": "BetRivers",
+        "implied_prob": 0.2222,
+        "fair_prob": 0.2096,
+        "n_books": 1,
+        "ev_per_dollar": -0.0222,
+        "edge_vs_fair": 0.0077
+      }
+    },
+    {
+      "player_id": 670541,
+      "game_pk": 824170,
+      "name": "Yordan Alvarez",
+      "team": "Houston Astros",
+      "opponent": "Baltimore Orioles",
+      "venue": "Daikin Park",
+      "game_time_utc": "2026-07-18T00:10:00Z",
+      "batter_hand": "L",
+      "pitcher_id": 665152,
+      "pitcher_name": "Dean Kremer",
+      "pitcher_hand": "R",
+      "lineup_slot": 2,
+      "lineup_confirmed": false,
+      "prob": 0.2168,
+      "per_pa_prob_vs_starter": 0.0554,
+      "expected_pa": 4.54,
+      "factors": {
+        "league_hr_pa": 0.0307,
+        "batter": {
+          "value": 1.653,
+          "components": {
+            "brl_pa": {
+              "raw": 0.11738147739801542,
+              "regressed": 0.102,
+              "ratio": 1.843,
+              "weight": 0.45
+            },
+            "hr_fb": {
+              "raw": 0.24603174603174602,
+              "regressed": 0.1816,
+              "ratio": 1.356,
+              "weight": 0.3
+            },
+            "xiso": {
+              "raw": 0.35298665183537264,
+              "regressed": 0.3092,
+              "ratio": 1.914,
+              "weight": 0.25
+            }
+          }
+        },
+        "pitcher": {
+          "value": 1.123,
+          "components": {
+            "hr_fb": {
+              "regressed": 0.1728,
+              "ratio": 1.29
+            },
+            "fb_rate": {
+              "regressed": 0.3586,
+              "ratio": 1.058
+            }
+          }
+        },
+        "park": {
+          "value": 0.966,
+          "park_factor": 96,
+          "hand": "L",
+          "park": "Daikin Park"
+        },
+        "weather": {
+          "value": 1.105,
+          "temp_f": 84.4,
+          "wind_mph": 8.9,
+          "wind_out_mph": 8.9,
+          "roof": "retractable"
+        },
+        "bvp": {
+          "value": 0.953,
+          "pa": 10,
+          "hr": 0,
+          "hr_per_pa": 0.0,
+          "ratio": 0.909
+        },
+        "bullpen": {
+          "value": 0.922,
+          "hr_fb": 0.1256,
+          "hrfb_ratio": 0.938,
+          "fatigue": 0.958,
+          "bf_last3": 30
+        },
+        "game_total": {
+          "value": 0.955,
+          "implied_team_runs": 3.5,
+          "total": 8.5,
+          "spread": 1.5
+        },
+        "expected_pa": {
+          "value": 4.54,
+          "lineup_slot": 2,
+          "starter_share": 0.62
+        }
+      },
+      "odds": {
+        "best_price_decimal": 3.0,
+        "best_price_american": 200,
+        "best_book": "BetRivers",
+        "implied_prob": 0.3333,
+        "fair_prob": 0.3145,
+        "n_books": 1,
+        "ev_per_dollar": -0.3496,
+        "edge_vs_fair": -0.0977
+      }
+    },
+    {
+      "player_id": 691406,
+      "game_pk": 824737,
+      "name": "Junior Caminero",
+      "team": "Tampa Bay Rays",
+      "opponent": "Boston Red Sox",
+      "venue": "Fenway Park",
+      "game_time_utc": "2026-07-17T23:10:00Z",
+      "batter_hand": "R",
+      "pitcher_id": null,
+      "pitcher_name": null,
+      "pitcher_hand": null,
+      "lineup_slot": 3,
+      "lineup_confirmed": false,
+      "prob": 0.2164,
+      "per_pa_prob_vs_starter": 0.0534,
+      "expected_pa": 4.42,
+      "factors": {
+        "league_hr_pa": 0.0307,
+        "batter": {
+          "value": 1.498,
+          "components": {
+            "brl_pa": {
+              "raw": 0.09812012644889358,
+              "regressed": 0.0907,
+              "ratio": 1.639,
+              "weight": 0.45
+            },
+            "hr_fb": {
+              "raw": 0.32941176470588235,
+              "regressed": 0.1991,
+              "ratio": 1.487,
+              "weight": 0.3
+            },
+            "xiso": {
+              "raw": 0.2393445440956652,
+              "regressed": 0.2264,
+              "ratio": 1.401,
+              "weight": 0.25
+            }
+          }
+        },
+        "pitcher": {
+          "value": 1.0,
+          "components": {},
+          "note": "no starter data; neutral"
+        },
+        "park": {
+          "value": 0.966,
+          "park_factor": 96,
+          "hand": "R",
+          "park": "Fenway Park"
+        },
+        "weather": {
+          "value": 1.162,
+          "temp_f": 84.2,
+          "wind_mph": 7.8,
+          "wind_out_mph": 4.4,
+          "roof": "open"
+        },
+        "bvp": {
+          "value": 1.0,
+          "pa": 0,
+          "note": "insufficient matchup history"
+        },
+        "bullpen": {
+          "value": 1.015,
+          "hr_fb": 0.1267,
+          "hrfb_ratio": 0.946,
+          "fatigue": 1.049,
+          "bf_last3": 56
+        },
+        "game_total": {
+          "value": 1.034,
+          "implied_team_runs": 5.25,
+          "total": 9.0,
+          "spread": -1.5
+        },
+        "expected_pa": {
+          "value": 4.42,
+          "lineup_slot": 3,
+          "starter_share": 0.62
+        }
+      },
+      "odds": {
         "best_price_decimal": 3.6,
         "best_price_american": 260,
         "best_book": "BetRivers",
         "implied_prob": 0.2778,
         "fair_prob": 0.2621,
         "n_books": 1,
-        "ev_per_dollar": -0.2778,
-        "edge_vs_fair": -0.0615
+        "ev_per_dollar": -0.221,
+        "edge_vs_fair": -0.0457
+      }
+    },
+    {
+      "player_id": 691406,
+      "game_pk": 824766,
+      "name": "Junior Caminero",
+      "team": "Tampa Bay Rays",
+      "opponent": "Boston Red Sox",
+      "venue": "Fenway Park",
+      "game_time_utc": "2026-07-17T17:35:00Z",
+      "batter_hand": "R",
+      "pitcher_id": 687562,
+      "pitcher_name": "Jake Bennett",
+      "pitcher_hand": "L",
+      "lineup_slot": 3,
+      "lineup_confirmed": false,
+      "prob": 0.2149,
+      "per_pa_prob_vs_starter": 0.0517,
+      "expected_pa": 4.42,
+      "factors": {
+        "league_hr_pa": 0.0307,
+        "batter": {
+          "value": 1.498,
+          "components": {
+            "brl_pa": {
+              "raw": 0.09812012644889358,
+              "regressed": 0.0907,
+              "ratio": 1.639,
+              "weight": 0.45
+            },
+            "hr_fb": {
+              "raw": 0.32941176470588235,
+              "regressed": 0.1991,
+              "ratio": 1.487,
+              "weight": 0.3
+            },
+            "xiso": {
+              "raw": 0.2393445440956652,
+              "regressed": 0.2264,
+              "ratio": 1.401,
+              "weight": 0.25
+            }
+          }
+        },
+        "pitcher": {
+          "value": 0.966,
+          "components": {
+            "hr_fb": {
+              "regressed": 0.1179,
+              "ratio": 0.881
+            },
+            "fb_rate": {
+              "regressed": 0.3552,
+              "ratio": 1.048
+            }
+          }
+        },
+        "park": {
+          "value": 0.966,
+          "park_factor": 96,
+          "hand": "R",
+          "park": "Fenway Park"
+        },
+        "weather": {
+          "value": 1.199,
+          "temp_f": 84.8,
+          "wind_mph": 12.3,
+          "wind_out_mph": 7.2,
+          "roof": "open"
+        },
+        "bvp": {
+          "value": 0.971,
+          "pa": 6,
+          "hr": 0,
+          "hr_per_pa": 0.0,
+          "ratio": 0.943
+        },
+        "bullpen": {
+          "value": 1.015,
+          "hr_fb": 0.1267,
+          "hrfb_ratio": 0.946,
+          "fatigue": 1.049,
+          "bf_last3": 56
+        },
+        "game_total": {
+          "value": 1.034,
+          "implied_team_runs": 5.25,
+          "total": 9.0,
+          "spread": -1.5
+        },
+        "expected_pa": {
+          "value": 4.42,
+          "lineup_slot": 3,
+          "starter_share": 0.62
+        }
+      },
+      "odds": {
+        "best_price_decimal": 3.6,
+        "best_price_american": 260,
+        "best_book": "BetRivers",
+        "implied_prob": 0.2778,
+        "fair_prob": 0.2621,
+        "n_books": 1,
+        "ev_per_dollar": -0.2264,
+        "edge_vs_fair": -0.0472
+      }
+    },
+    {
+      "player_id": 665019,
+      "game_pk": 824655,
+      "name": "Kody Clemens",
+      "team": "Minnesota Twins",
+      "opponent": "Chicago Cubs",
+      "venue": "Wrigley Field",
+      "game_time_utc": "2026-07-18T00:05:00Z",
+      "batter_hand": "L",
+      "pitcher_id": 607067,
+      "pitcher_name": "Colin Rea",
+      "pitcher_hand": "R",
+      "lineup_slot": 4,
+      "lineup_confirmed": false,
+      "prob": 0.2142,
+      "per_pa_prob_vs_starter": 0.0518,
+      "expected_pa": 4.31,
+      "factors": {
+        "league_hr_pa": 0.0307,
+        "batter": {
+          "value": 1.251,
+          "components": {
+            "brl_pa": {
+              "raw": 0.08417747794499222,
+              "regressed": 0.0773,
+              "ratio": 1.398,
+              "weight": 0.45
+            },
+            "hr_fb": {
+              "raw": 0.18181818181818182,
+              "regressed": 0.1503,
+              "ratio": 1.122,
+              "weight": 0.3
+            },
+            "xiso": {
+              "raw": 0.20786231369765792,
+              "regressed": 0.1976,
+              "ratio": 1.223,
+              "weight": 0.25
+            }
+          }
+        },
+        "pitcher": {
+          "value": 0.933,
+          "components": {
+            "hr_fb": {
+              "regressed": 0.1323,
+              "ratio": 0.988
+            },
+            "fb_rate": {
+              "regressed": 0.2765,
+              "ratio": 0.815
+            }
+          }
+        },
+        "park": {
+          "value": 1.0,
+          "park_factor": 100,
+          "hand": "L",
+          "park": "Wrigley Field"
+        },
+        "weather": {
+          "value": 1.286,
+          "temp_f": 93.4,
+          "wind_mph": 11.2,
+          "wind_out_mph": 8.3,
+          "roof": "open"
+        },
+        "bvp": {
+          "value": 1.124,
+          "pa": 5,
+          "hr": 1,
+          "hr_per_pa": 0.2,
+          "ratio": 1.263
+        },
+        "bullpen": {
+          "value": 1.191,
+          "hr_fb": 0.1783,
+          "hrfb_ratio": 1.331,
+          "fatigue": 1.004,
+          "bf_last3": 43
+        },
+        "game_total": {
+          "value": 1.0,
+          "implied_team_runs": 4.5,
+          "total": 10.5,
+          "spread": 1.5
+        },
+        "expected_pa": {
+          "value": 4.31,
+          "lineup_slot": 4,
+          "starter_share": 0.62
+        }
+      },
+      "odds": {
+        "best_price_decimal": 3.5,
+        "best_price_american": 250,
+        "best_book": "BetRivers",
+        "implied_prob": 0.2857,
+        "fair_prob": 0.2695,
+        "n_books": 1,
+        "ev_per_dollar": -0.2503,
+        "edge_vs_fair": -0.0553
+      }
+    },
+    {
+      "player_id": 673548,
+      "game_pk": 824655,
+      "name": "Seiya Suzuki",
+      "team": "Chicago Cubs",
+      "opponent": "Minnesota Twins",
+      "venue": "Wrigley Field",
+      "game_time_utc": "2026-07-18T00:05:00Z",
+      "batter_hand": "R",
+      "pitcher_id": 641927,
+      "pitcher_name": "Bailey Ober",
+      "pitcher_hand": "R",
+      "lineup_slot": 2,
+      "lineup_confirmed": false,
+      "prob": 0.2087,
+      "per_pa_prob_vs_starter": 0.0521,
+      "expected_pa": 4.54,
+      "factors": {
+        "league_hr_pa": 0.0307,
+        "batter": {
+          "value": 1.258,
+          "components": {
+            "brl_pa": {
+              "raw": 0.08364806866952788,
+              "regressed": 0.0778,
+              "ratio": 1.407,
+              "weight": 0.45
+            },
+            "hr_fb": {
+              "raw": 0.18072289156626506,
+              "regressed": 0.1493,
+              "ratio": 1.115,
+              "weight": 0.3
+            },
+            "xiso": {
+              "raw": 0.21046564885496183,
+              "regressed": 0.2017,
+              "ratio": 1.248,
+              "weight": 0.25
+            }
+          }
+        },
+        "pitcher": {
+          "value": 0.967,
+          "components": {
+            "hr_fb": {
+              "regressed": 0.1242,
+              "ratio": 0.927
+            },
+            "fb_rate": {
+              "regressed": 0.3341,
+              "ratio": 0.985
+            }
+          }
+        },
+        "park": {
+          "value": 1.017,
+          "park_factor": 102,
+          "hand": "R",
+          "park": "Wrigley Field"
+        },
+        "weather": {
+          "value": 1.286,
+          "temp_f": 93.4,
+          "wind_mph": 11.2,
+          "wind_out_mph": 8.3,
+          "roof": "open"
+        },
+        "bvp": {
+          "value": 1.0,
+          "pa": 0,
+          "note": "insufficient matchup history"
+        },
+        "bullpen": {
+          "value": 0.879,
+          "hr_fb": 0.1139,
+          "hrfb_ratio": 0.851,
+          "fatigue": 0.969,
+          "bf_last3": 33
+        },
+        "game_total": {
+          "value": 1.067,
+          "implied_team_runs": 6.0,
+          "total": 10.5,
+          "spread": -1.5
+        },
+        "expected_pa": {
+          "value": 4.54,
+          "lineup_slot": 2,
+          "starter_share": 0.62
+        }
+      },
+      "odds": {
+        "best_price_decimal": 3.75,
+        "best_price_american": 275,
+        "best_book": "BetRivers",
+        "implied_prob": 0.2667,
+        "fair_prob": 0.2516,
+        "n_books": 1,
+        "ev_per_dollar": -0.2174,
+        "edge_vs_fair": -0.0429
+      }
+    },
+    {
+      "player_id": 663757,
+      "game_pk": 823524,
+      "name": "Trent Grisham",
+      "team": "New York Yankees",
+      "opponent": "Los Angeles Dodgers",
+      "venue": "Yankee Stadium",
+      "game_time_utc": "2026-07-17T23:05:00Z",
+      "batter_hand": "L",
+      "pitcher_id": 808963,
+      "pitcher_name": "Roki Sasaki",
+      "pitcher_hand": "R",
+      "lineup_slot": 1,
+      "lineup_confirmed": false,
+      "prob": 0.203,
+      "per_pa_prob_vs_starter": 0.048,
+      "expected_pa": 4.65,
+      "factors": {
+        "league_hr_pa": 0.0307,
+        "batter": {
+          "value": 1.212,
+          "components": {
+            "brl_pa": {
+              "raw": 0.08205354626585253,
+              "regressed": 0.0762,
+              "ratio": 1.377,
+              "weight": 0.45
+            },
+            "hr_fb": {
+              "raw": 0.11904761904761904,
+              "regressed": 0.129,
+              "ratio": 0.963,
+              "weight": 0.3
+            },
+            "xiso": {
+              "raw": 0.22581952117863724,
+              "regressed": 0.2132,
+              "ratio": 1.319,
+              "weight": 0.25
+            }
+          }
+        },
+        "pitcher": {
+          "value": 1.084,
+          "components": {
+            "hr_fb": {
+              "regressed": 0.156,
+              "ratio": 1.164
+            },
+            "fb_rate": {
+              "regressed": 0.3641,
+              "ratio": 1.074
+            }
+          }
+        },
+        "park": {
+          "value": 1.151,
+          "park_factor": 118,
+          "hand": "L",
+          "park": "Yankee Stadium"
+        },
+        "weather": {
+          "value": 1.071,
+          "temp_f": 83.3,
+          "wind_mph": 7.6,
+          "wind_out_mph": -3.2,
+          "roof": "open"
+        },
+        "bvp": {
+          "value": 1.0,
+          "pa": 0,
+          "note": "insufficient matchup history"
+        },
+        "bullpen": {
+          "value": 1.06,
+          "hr_fb": 0.1297,
+          "hrfb_ratio": 0.969,
+          "fatigue": 1.081,
+          "bf_last3": 65
+        },
+        "game_total": {
+          "value": 0.966,
+          "implied_team_runs": 3.75,
+          "total": 9.0,
+          "spread": 1.5
+        },
+        "expected_pa": {
+          "value": 4.65,
+          "lineup_slot": 1,
+          "starter_share": 0.62
+        }
+      },
+      "odds": {
+        "best_price_decimal": 4.5,
+        "best_price_american": 350,
+        "best_book": "BetRivers",
+        "implied_prob": 0.2222,
+        "fair_prob": 0.2096,
+        "n_books": 1,
+        "ev_per_dollar": -0.0865,
+        "edge_vs_fair": -0.0066
+      }
+    },
+    {
+      "player_id": 683737,
+      "game_pk": 824655,
+      "name": "Michael Busch",
+      "team": "Chicago Cubs",
+      "opponent": "Minnesota Twins",
+      "venue": "Wrigley Field",
+      "game_time_utc": "2026-07-18T00:05:00Z",
+      "batter_hand": "L",
+      "pitcher_id": 641927,
+      "pitcher_name": "Bailey Ober",
+      "pitcher_hand": "R",
+      "lineup_slot": 5,
+      "lineup_confirmed": false,
+      "prob": 0.2011,
+      "per_pa_prob_vs_starter": 0.0563,
+      "expected_pa": 4.19,
+      "factors": {
+        "league_hr_pa": 0.0307,
+        "batter": {
+          "value": 1.224,
+          "components": {
+            "brl_pa": {
+              "raw": 0.08473262469337695,
+              "regressed": 0.0789,
+              "ratio": 1.427,
+              "weight": 0.45
+            },
+            "hr_fb": {
+              "raw": 0.10891089108910891,
+              "regressed": 0.1246,
+              "ratio": 0.93,
+              "weight": 0.3
+            },
+            "xiso": {
+              "raw": 0.22886447638603694,
+              "regressed": 0.2174,
+              "ratio": 1.345,
+              "weight": 0.25
+            }
+          }
+        },
+        "pitcher": {
+          "value": 1.093,
+          "components": {
+            "hr_fb": {
+              "regressed": 0.1337,
+              "ratio": 0.998
+            },
+            "fb_rate": {
+              "regressed": 0.4511,
+              "ratio": 1.331
+            }
+          }
+        },
+        "park": {
+          "value": 1.0,
+          "park_factor": 100,
+          "hand": "L",
+          "park": "Wrigley Field"
+        },
+        "weather": {
+          "value": 1.286,
+          "temp_f": 93.4,
+          "wind_mph": 11.2,
+          "wind_out_mph": 8.3,
+          "roof": "open"
+        },
+        "bvp": {
+          "value": 1.0,
+          "pa": 0,
+          "note": "insufficient matchup history"
+        },
+        "bullpen": {
+          "value": 0.879,
+          "hr_fb": 0.1139,
+          "hrfb_ratio": 0.851,
+          "fatigue": 0.969,
+          "bf_last3": 33
+        },
+        "game_total": {
+          "value": 1.067,
+          "implied_team_runs": 6.0,
+          "total": 10.5,
+          "spread": -1.5
+        },
+        "expected_pa": {
+          "value": 4.19,
+          "lineup_slot": 5,
+          "starter_share": 0.62
+        }
+      },
+      "odds": {
+        "best_price_decimal": 3.6,
+        "best_price_american": 260,
+        "best_book": "BetRivers",
+        "implied_prob": 0.2778,
+        "fair_prob": 0.2621,
+        "n_books": 1,
+        "ev_per_dollar": -0.276,
+        "edge_vs_fair": -0.061
+      }
+    },
+    {
+      "player_id": 680777,
+      "game_pk": 824655,
+      "name": "Ryan Jeffers",
+      "team": "Minnesota Twins",
+      "opponent": "Chicago Cubs",
+      "venue": "Wrigley Field",
+      "game_time_utc": "2026-07-18T00:05:00Z",
+      "batter_hand": "R",
+      "pitcher_id": 607067,
+      "pitcher_name": "Colin Rea",
+      "pitcher_hand": "R",
+      "lineup_slot": 2,
+      "lineup_confirmed": false,
+      "prob": 0.2011,
+      "per_pa_prob_vs_starter": 0.0463,
+      "expected_pa": 4.54,
+      "factors": {
+        "league_hr_pa": 0.0307,
+        "batter": {
+          "value": 1.079,
+          "components": {
+            "brl_pa": {
+              "raw": 0.06441129032258062,
+              "regressed": 0.0618,
+              "ratio": 1.117,
+              "weight": 0.45
+            },
+            "hr_fb": {
+              "raw": 0.14583333333333334,
+              "regressed": 0.1365,
+              "ratio": 1.02,
+              "weight": 0.3
+            },
+            "xiso": {
+              "raw": 0.18440468534680754,
+              "regressed": 0.1783,
+              "ratio": 1.103,
+              "weight": 0.25
+            }
+          }
+        },
+        "pitcher": {
+          "value": 1.068,
+          "components": {
+            "hr_fb": {
+              "regressed": 0.1426,
+              "ratio": 1.065
+            },
+            "fb_rate": {
+              "regressed": 0.3866,
+              "ratio": 1.14
+            }
+          }
+        },
+        "park": {
+          "value": 1.017,
+          "park_factor": 102,
+          "hand": "R",
+          "park": "Wrigley Field"
+        },
+        "weather": {
+          "value": 1.286,
+          "temp_f": 93.4,
+          "wind_mph": 11.2,
+          "wind_out_mph": 8.3,
+          "roof": "open"
+        },
+        "bvp": {
+          "value": 1.0,
+          "pa": 3,
+          "note": "insufficient matchup history"
+        },
+        "bullpen": {
+          "value": 1.191,
+          "hr_fb": 0.1783,
+          "hrfb_ratio": 1.331,
+          "fatigue": 1.004,
+          "bf_last3": 43
+        },
+        "game_total": {
+          "value": 1.0,
+          "implied_team_runs": 4.5,
+          "total": 10.5,
+          "spread": 1.5
+        },
+        "expected_pa": {
+          "value": 4.54,
+          "lineup_slot": 2,
+          "starter_share": 0.62
+        }
+      },
+      "odds": {
+        "best_price_decimal": 4.4,
+        "best_price_american": 340,
+        "best_book": "BetRivers",
+        "implied_prob": 0.2273,
+        "fair_prob": 0.2144,
+        "n_books": 1,
+        "ev_per_dollar": -0.1152,
+        "edge_vs_fair": -0.0133
+      }
+    },
+    {
+      "player_id": 518692,
+      "game_pk": 823524,
+      "name": "Freddie Freeman",
+      "team": "Los Angeles Dodgers",
+      "opponent": "New York Yankees",
+      "venue": "Yankee Stadium",
+      "game_time_utc": "2026-07-17T23:05:00Z",
+      "batter_hand": "L",
+      "pitcher_id": 543037,
+      "pitcher_name": "Gerrit Cole",
+      "pitcher_hand": "R",
+      "lineup_slot": 3,
+      "lineup_confirmed": false,
+      "prob": 0.2003,
+      "per_pa_prob_vs_starter": 0.0515,
+      "expected_pa": 4.42,
+      "factors": {
+        "league_hr_pa": 0.0307,
+        "batter": {
+          "value": 1.184,
+          "components": {
+            "brl_pa": {
+              "raw": 0.07412011577424024,
+              "regressed": 0.0708,
+              "ratio": 1.279,
+              "weight": 0.45
+            },
+            "hr_fb": {
+              "raw": 0.15463917525773196,
+              "regressed": 0.1415,
+              "ratio": 1.056,
+              "weight": 0.3
+            },
+            "xiso": {
+              "raw": 0.20524330527926546,
+              "regressed": 0.1978,
+              "ratio": 1.224,
+              "weight": 0.25
+            }
+          }
+        },
+        "pitcher": {
+          "value": 1.067,
+          "components": {
+            "hr_fb": {
+              "regressed": 0.1457,
+              "ratio": 1.088
+            },
+            "fb_rate": {
+              "regressed": 0.3754,
+              "ratio": 1.107
+            }
+          }
+        },
+        "park": {
+          "value": 1.151,
+          "park_factor": 118,
+          "hand": "L",
+          "park": "Yankee Stadium"
+        },
+        "weather": {
+          "value": 1.071,
+          "temp_f": 83.3,
+          "wind_mph": 7.6,
+          "wind_out_mph": -3.2,
+          "roof": "open"
+        },
+        "bvp": {
+          "value": 1.042,
+          "pa": 22,
+          "hr": 1,
+          "hr_per_pa": 0.045,
+          "ratio": 1.087
+        },
+        "bullpen": {
+          "value": 0.987,
+          "hr_fb": 0.1318,
+          "hrfb_ratio": 0.984,
+          "fatigue": 0.997,
+          "bf_last3": 41
+        },
+        "game_total": {
+          "value": 1.034,
+          "implied_team_runs": 5.25,
+          "total": 9.0,
+          "spread": -1.5
+        },
+        "expected_pa": {
+          "value": 4.42,
+          "lineup_slot": 3,
+          "starter_share": 0.62
+        }
+      },
+      "odds": {
+        "best_price_decimal": 4.6,
+        "best_price_american": 360,
+        "best_book": "BetRivers",
+        "implied_prob": 0.2174,
+        "fair_prob": 0.2051,
+        "n_books": 1,
+        "ev_per_dollar": -0.0786,
+        "edge_vs_fair": -0.0048
       }
     },
     {
@@ -1878,8 +1984,8 @@
       "pitcher_hand": "R",
       "lineup_slot": 3,
       "lineup_confirmed": false,
-      "prob": 0.1985,
-      "per_pa_prob_vs_starter": 0.0437,
+      "prob": 0.1981,
+      "per_pa_prob_vs_starter": 0.0436,
       "expected_pa": 4.42,
       "factors": {
         "league_hr_pa": 0.0307,
@@ -1926,10 +2032,10 @@
           "park": "Wrigley Field"
         },
         "weather": {
-          "value": 1.289,
-          "temp_f": 92.8,
-          "wind_mph": 11.6,
-          "wind_out_mph": 9.0,
+          "value": 1.286,
+          "temp_f": 93.4,
+          "wind_mph": 11.2,
+          "wind_out_mph": 8.3,
           "roof": "open"
         },
         "bvp": {
@@ -1965,111 +2071,8 @@
         "implied_prob": 0.2273,
         "fair_prob": 0.2144,
         "n_books": 1,
-        "ev_per_dollar": -0.1266,
-        "edge_vs_fair": -0.0159
-      }
-    },
-    {
-      "player_id": 553993,
-      "game_pk": 824332,
-      "name": "Eugenio Su\u00e1rez",
-      "team": "Cincinnati Reds",
-      "opponent": "Colorado Rockies",
-      "venue": "Coors Field",
-      "game_time_utc": "2026-07-18T00:40:00Z",
-      "batter_hand": "R",
-      "pitcher_id": 687312,
-      "pitcher_name": "Gabriel Hughes",
-      "pitcher_hand": "R",
-      "lineup_slot": 5,
-      "lineup_confirmed": false,
-      "prob": 0.1932,
-      "per_pa_prob_vs_starter": 0.0503,
-      "expected_pa": 4.19,
-      "factors": {
-        "league_hr_pa": 0.0307,
-        "batter": {
-          "value": 1.184,
-          "components": {
-            "brl_pa": {
-              "raw": 0.07266597294484911,
-              "regressed": 0.0685,
-              "ratio": 1.239,
-              "weight": 0.45
-            },
-            "hr_fb": {
-              "raw": 0.2,
-              "regressed": 0.1501,
-              "ratio": 1.121,
-              "weight": 0.3
-            },
-            "xiso": {
-              "raw": 0.2035426497277677,
-              "regressed": 0.1954,
-              "ratio": 1.209,
-              "weight": 0.25
-            }
-          }
-        },
-        "pitcher": {
-          "value": 0.992,
-          "components": {
-            "hr_fb": {
-              "regressed": 0.1275,
-              "ratio": 0.952
-            },
-            "fb_rate": {
-              "regressed": 0.3513,
-              "ratio": 1.036
-            }
-          }
-        },
-        "park": {
-          "value": 1.109,
-          "park_factor": 113,
-          "hand": "R",
-          "park": "Coors Field"
-        },
-        "weather": {
-          "value": 1.142,
-          "temp_f": 91.0,
-          "wind_mph": 11.5,
-          "wind_out_mph": -2.2,
-          "roof": "open"
-        },
-        "bvp": {
-          "value": 1.0,
-          "pa": 0,
-          "note": "insufficient matchup history"
-        },
-        "bullpen": {
-          "value": 0.975,
-          "hr_fb": 0.1291,
-          "hrfb_ratio": 0.964,
-          "fatigue": 0.997,
-          "bf_last3": 41
-        },
-        "game_total": {
-          "value": 1.101,
-          "implied_team_runs": 6.75,
-          "total": 12.0,
-          "spread": -1.5
-        },
-        "expected_pa": {
-          "value": 4.19,
-          "lineup_slot": 5,
-          "starter_share": 0.62
-        }
-      },
-      "odds": {
-        "best_price_decimal": 3.6,
-        "best_price_american": 260,
-        "best_book": "BetRivers",
-        "implied_prob": 0.2778,
-        "fair_prob": 0.2621,
-        "n_books": 1,
-        "ev_per_dollar": -0.3045,
-        "edge_vs_fair": -0.0689
+        "ev_per_dollar": -0.1284,
+        "edge_vs_fair": -0.0163
       }
     },
     {
@@ -2086,8 +2089,8 @@
       "pitcher_hand": "R",
       "lineup_slot": 3,
       "lineup_confirmed": false,
-      "prob": 0.1889,
-      "per_pa_prob_vs_starter": 0.0443,
+      "prob": 0.1876,
+      "per_pa_prob_vs_starter": 0.0439,
       "expected_pa": 4.42,
       "factors": {
         "league_hr_pa": 0.0307,
@@ -2134,10 +2137,10 @@
           "park": "Kauffman Stadium"
         },
         "weather": {
-          "value": 1.271,
-          "temp_f": 88.0,
-          "wind_mph": 11.4,
-          "wind_out_mph": 11.1,
+          "value": 1.261,
+          "temp_f": 87.1,
+          "wind_mph": 11.2,
+          "wind_out_mph": 11.0,
           "roof": "open"
         },
         "bvp": {
@@ -2171,8 +2174,101 @@
         "implied_prob": 0.1667,
         "fair_prob": 0.1572,
         "n_books": 1,
-        "ev_per_dollar": 0.1334,
-        "edge_vs_fair": 0.0317
+        "ev_per_dollar": 0.1256,
+        "edge_vs_fair": 0.0304
+      }
+    },
+    {
+      "player_id": 606466,
+      "game_pk": 825060,
+      "name": "Ketel Marte",
+      "team": "Arizona Diamondbacks",
+      "opponent": "St. Louis Cardinals",
+      "venue": "Chase Field",
+      "game_time_utc": "2026-07-18T01:40:00Z",
+      "batter_hand": "L",
+      "pitcher_id": null,
+      "pitcher_name": null,
+      "pitcher_hand": null,
+      "lineup_slot": 1,
+      "lineup_confirmed": false,
+      "prob": 0.1775,
+      "per_pa_prob_vs_starter": 0.0406,
+      "expected_pa": 4.65,
+      "factors": {
+        "league_hr_pa": 0.0307,
+        "batter": {
+          "value": 1.303,
+          "components": {
+            "brl_pa": {
+              "raw": 0.08961151079136691,
+              "regressed": 0.0835,
+              "ratio": 1.51,
+              "weight": 0.45
+            },
+            "hr_fb": {
+              "raw": 0.16346153846153846,
+              "regressed": 0.1451,
+              "ratio": 1.084,
+              "weight": 0.3
+            },
+            "xiso": {
+              "raw": 0.22377660438667754,
+              "regressed": 0.2127,
+              "ratio": 1.316,
+              "weight": 0.25
+            }
+          }
+        },
+        "pitcher": {
+          "value": 1.0,
+          "components": {},
+          "note": "no starter data; neutral"
+        },
+        "park": {
+          "value": 1.051,
+          "park_factor": 106,
+          "hand": "L",
+          "park": "Chase Field"
+        },
+        "weather": {
+          "value": 1.0,
+          "roof": "retractable",
+          "note": "retractable roof assumed closed (96\u00b0F outside)"
+        },
+        "bvp": {
+          "value": 1.0,
+          "pa": 0,
+          "note": "insufficient matchup history"
+        },
+        "bullpen": {
+          "value": 1.035,
+          "hr_fb": 0.1294,
+          "hrfb_ratio": 0.967,
+          "fatigue": 1.056,
+          "bf_last3": 58
+        },
+        "game_total": {
+          "value": 0.966,
+          "implied_team_runs": 3.75,
+          "total": 9.0,
+          "spread": 1.5
+        },
+        "expected_pa": {
+          "value": 4.65,
+          "lineup_slot": 1,
+          "starter_share": 0.62
+        }
+      },
+      "odds": {
+        "best_price_decimal": 6.25,
+        "best_price_american": 525,
+        "best_book": "BetRivers",
+        "implied_prob": 0.16,
+        "fair_prob": 0.1509,
+        "n_books": 1,
+        "ev_per_dollar": 0.1094,
+        "edge_vs_fair": 0.0266
       }
     },
     {
@@ -2189,7 +2285,7 @@
       "pitcher_hand": "R",
       "lineup_slot": 1,
       "lineup_confirmed": false,
-      "prob": 0.1771,
+      "prob": 0.1769,
       "per_pa_prob_vs_starter": 0.0402,
       "expected_pa": 4.65,
       "factors": {
@@ -2237,10 +2333,10 @@
           "park": "Coors Field"
         },
         "weather": {
-          "value": 1.142,
-          "temp_f": 91.0,
-          "wind_mph": 11.5,
-          "wind_out_mph": -2.2,
+          "value": 1.141,
+          "temp_f": 90.5,
+          "wind_mph": 11.2,
+          "wind_out_mph": -1.9,
           "roof": "open"
         },
         "bvp": {
@@ -2270,117 +2366,14 @@
         }
       },
       "odds": {
-        "best_price_decimal": 8.5,
-        "best_price_american": 750,
+        "best_price_decimal": 7.5,
+        "best_price_american": 650,
         "best_book": "BetRivers",
-        "implied_prob": 0.1176,
-        "fair_prob": 0.111,
+        "implied_prob": 0.1333,
+        "fair_prob": 0.1258,
         "n_books": 1,
-        "ev_per_dollar": 0.5054,
-        "edge_vs_fair": 0.0661
-      }
-    },
-    {
-      "player_id": 699013,
-      "game_pk": 824414,
-      "name": "Esmerlyn Valdez",
-      "team": "Pittsburgh Pirates",
-      "opponent": "Cleveland Guardians",
-      "venue": "Progressive Field",
-      "game_time_utc": "2026-07-17T23:10:00Z",
-      "batter_hand": "R",
-      "pitcher_id": 668909,
-      "pitcher_name": "Gavin Williams",
-      "pitcher_hand": "R",
-      "lineup_slot": 4,
-      "lineup_confirmed": false,
-      "prob": 0.171,
-      "per_pa_prob_vs_starter": 0.0444,
-      "expected_pa": 4.31,
-      "factors": {
-        "league_hr_pa": 0.0307,
-        "batter": {
-          "value": 1.424,
-          "components": {
-            "brl_pa": {
-              "raw": 0.162,
-              "regressed": 0.0897,
-              "ratio": 1.621,
-              "weight": 0.45
-            },
-            "hr_fb": {
-              "raw": 0.35714285714285715,
-              "regressed": 0.1655,
-              "ratio": 1.236,
-              "weight": 0.3
-            },
-            "xiso": {
-              "raw": 0.34099999999999997,
-              "regressed": 0.2327,
-              "ratio": 1.44,
-              "weight": 0.25
-            }
-          }
-        },
-        "pitcher": {
-          "value": 1.035,
-          "components": {
-            "hr_fb": {
-              "regressed": 0.1618,
-              "ratio": 1.208
-            },
-            "fb_rate": {
-              "regressed": 0.3002,
-              "ratio": 0.886
-            }
-          }
-        },
-        "park": {
-          "value": 0.983,
-          "park_factor": 98,
-          "hand": "R",
-          "park": "Progressive Field"
-        },
-        "weather": {
-          "value": 1.072,
-          "temp_f": 85.9,
-          "wind_mph": 5.0,
-          "wind_out_mph": -4.9,
-          "roof": "open"
-        },
-        "bvp": {
-          "value": 1.0,
-          "pa": 0,
-          "note": "insufficient matchup history"
-        },
-        "bullpen": {
-          "value": 0.925,
-          "hr_fb": 0.1212,
-          "hrfb_ratio": 0.905,
-          "fatigue": 0.983,
-          "bf_last3": 37
-        },
-        "game_total": {
-          "value": 0.932,
-          "implied_team_runs": 3.0,
-          "total": 7.5,
-          "spread": 1.5
-        },
-        "expected_pa": {
-          "value": 4.31,
-          "lineup_slot": 4,
-          "starter_share": 0.62
-        }
-      },
-      "odds": {
-        "best_price_decimal": 6.25,
-        "best_price_american": 525,
-        "best_book": "BetRivers",
-        "implied_prob": 0.16,
-        "fair_prob": 0.1509,
-        "n_books": 1,
-        "ev_per_dollar": 0.0688,
-        "edge_vs_fair": 0.0201
+        "ev_per_dollar": 0.3268,
+        "edge_vs_fair": 0.0511
       }
     },
     {
@@ -2397,7 +2390,7 @@
       "pitcher_hand": "R",
       "lineup_slot": 6,
       "lineup_confirmed": false,
-      "prob": 0.1705,
+      "prob": 0.1703,
       "per_pa_prob_vs_starter": 0.0444,
       "expected_pa": 4.08,
       "factors": {
@@ -2445,10 +2438,10 @@
           "park": "Coors Field"
         },
         "weather": {
-          "value": 1.142,
-          "temp_f": 91.0,
-          "wind_mph": 11.5,
-          "wind_out_mph": -2.2,
+          "value": 1.141,
+          "temp_f": 90.5,
+          "wind_mph": 11.2,
+          "wind_out_mph": -1.9,
           "roof": "open"
         },
         "bvp": {
@@ -2476,14 +2469,14 @@
         }
       },
       "odds": {
-        "best_price_decimal": 7.0,
-        "best_price_american": 600,
+        "best_price_decimal": 6.75,
+        "best_price_american": 575,
         "best_book": "BetRivers",
-        "implied_prob": 0.1429,
-        "fair_prob": 0.1348,
+        "implied_prob": 0.1481,
+        "fair_prob": 0.1398,
         "n_books": 1,
-        "ev_per_dollar": 0.1935,
-        "edge_vs_fair": 0.0357
+        "ev_per_dollar": 0.1495,
+        "edge_vs_fair": 0.0305
       }
     },
     {
@@ -2500,8 +2493,8 @@
       "pitcher_hand": null,
       "lineup_slot": 2,
       "lineup_confirmed": false,
-      "prob": 0.1629,
-      "per_pa_prob_vs_starter": 0.0382,
+      "prob": 0.1646,
+      "per_pa_prob_vs_starter": 0.0387,
       "expected_pa": 4.54,
       "factors": {
         "league_hr_pa": 0.0307,
@@ -2540,10 +2533,10 @@
           "park": "Fenway Park"
         },
         "weather": {
-          "value": 1.149,
-          "temp_f": 83.9,
-          "wind_mph": 8.0,
-          "wind_out_mph": 3.4,
+          "value": 1.162,
+          "temp_f": 84.2,
+          "wind_mph": 7.8,
+          "wind_out_mph": 4.4,
           "roof": "open"
         },
         "bvp": {
@@ -2577,8 +2570,8 @@
         "implied_prob": 0.1429,
         "fair_prob": 0.1348,
         "n_books": 1,
-        "ev_per_dollar": 0.1403,
-        "edge_vs_fair": 0.0281
+        "ev_per_dollar": 0.1522,
+        "edge_vs_fair": 0.0298
       }
     },
     {
@@ -2595,8 +2588,8 @@
       "pitcher_hand": "L",
       "lineup_slot": 2,
       "lineup_confirmed": false,
-      "prob": 0.1626,
-      "per_pa_prob_vs_starter": 0.0369,
+      "prob": 0.1616,
+      "per_pa_prob_vs_starter": 0.0367,
       "expected_pa": 4.54,
       "factors": {
         "league_hr_pa": 0.0307,
@@ -2643,10 +2636,10 @@
           "park": "Fenway Park"
         },
         "weather": {
-          "value": 1.207,
-          "temp_f": 85.2,
-          "wind_mph": 11.6,
-          "wind_out_mph": 7.6,
+          "value": 1.199,
+          "temp_f": 84.8,
+          "wind_mph": 12.3,
+          "wind_out_mph": 7.2,
           "roof": "open"
         },
         "bvp": {
@@ -2682,8 +2675,8 @@
         "implied_prob": 0.1429,
         "fair_prob": 0.1348,
         "n_books": 1,
-        "ev_per_dollar": 0.1382,
-        "edge_vs_fair": 0.0278
+        "ev_per_dollar": 0.1312,
+        "edge_vs_fair": 0.0268
       }
     },
     {
@@ -2700,8 +2693,8 @@
       "pitcher_hand": "R",
       "lineup_slot": 7,
       "lineup_confirmed": false,
-      "prob": 0.1614,
-      "per_pa_prob_vs_starter": 0.0438,
+      "prob": 0.1613,
+      "per_pa_prob_vs_starter": 0.0437,
       "expected_pa": 3.96,
       "factors": {
         "league_hr_pa": 0.0307,
@@ -2748,10 +2741,10 @@
           "park": "Coors Field"
         },
         "weather": {
-          "value": 1.142,
-          "temp_f": 91.0,
-          "wind_mph": 11.5,
-          "wind_out_mph": -2.2,
+          "value": 1.141,
+          "temp_f": 90.5,
+          "wind_mph": 11.2,
+          "wind_out_mph": -1.9,
           "roof": "open"
         },
         "bvp": {
@@ -2785,8 +2778,216 @@
         "implied_prob": 0.1429,
         "fair_prob": 0.1348,
         "n_books": 1,
-        "ev_per_dollar": 0.1298,
-        "edge_vs_fair": 0.0266
+        "ev_per_dollar": 0.1291,
+        "edge_vs_fair": 0.0265
+      }
+    },
+    {
+      "player_id": 607043,
+      "game_pk": 824901,
+      "name": "Brandon Nimmo",
+      "team": "Texas Rangers",
+      "opponent": "Atlanta Braves",
+      "venue": "Truist Park",
+      "game_time_utc": "2026-07-17T23:15:00Z",
+      "batter_hand": "L",
+      "pitcher_id": 519242,
+      "pitcher_name": "Chris Sale",
+      "pitcher_hand": "L",
+      "lineup_slot": 4,
+      "lineup_confirmed": false,
+      "prob": 0.157,
+      "per_pa_prob_vs_starter": 0.0373,
+      "expected_pa": 4.31,
+      "factors": {
+        "league_hr_pa": 0.0307,
+        "batter": {
+          "value": 1.148,
+          "components": {
+            "brl_pa": {
+              "raw": 0.07584983314794215,
+              "regressed": 0.0721,
+              "ratio": 1.304,
+              "weight": 0.45
+            },
+            "hr_fb": {
+              "raw": 0.1111111111111111,
+              "regressed": 0.1266,
+              "ratio": 0.945,
+              "weight": 0.3
+            },
+            "xiso": {
+              "raw": 0.19771207430340557,
+              "regressed": 0.1915,
+              "ratio": 1.185,
+              "weight": 0.25
+            }
+          }
+        },
+        "pitcher": {
+          "value": 0.94,
+          "components": {
+            "hr_fb": {
+              "regressed": 0.132,
+              "ratio": 0.986
+            },
+            "fb_rate": {
+              "regressed": 0.2837,
+              "ratio": 0.837
+            }
+          }
+        },
+        "park": {
+          "value": 1.059,
+          "park_factor": 107,
+          "hand": "L",
+          "park": "Truist Park"
+        },
+        "weather": {
+          "value": 1.171,
+          "temp_f": 87.2,
+          "wind_mph": 3.4,
+          "wind_out_mph": 2.9,
+          "roof": "open"
+        },
+        "bvp": {
+          "value": 0.962,
+          "pa": 8,
+          "hr": 0,
+          "hr_per_pa": 0.0,
+          "ratio": 0.926
+        },
+        "bullpen": {
+          "value": 1.005,
+          "hr_fb": 0.1227,
+          "hrfb_ratio": 0.916,
+          "fatigue": 1.06,
+          "bf_last3": 59
+        },
+        "game_total": {
+          "value": 0.944,
+          "implied_team_runs": 3.25,
+          "total": 8.0,
+          "spread": 1.5
+        },
+        "expected_pa": {
+          "value": 4.31,
+          "lineup_slot": 4,
+          "starter_share": 0.62
+        }
+      },
+      "odds": {
+        "best_price_decimal": 7.0,
+        "best_price_american": 600,
+        "best_book": "BetRivers",
+        "implied_prob": 0.1429,
+        "fair_prob": 0.1348,
+        "n_books": 1,
+        "ev_per_dollar": 0.099,
+        "edge_vs_fair": 0.0222
+      }
+    },
+    {
+      "player_id": 663853,
+      "game_pk": 824766,
+      "name": "Romy Gonzalez",
+      "team": "Boston Red Sox",
+      "opponent": "Tampa Bay Rays",
+      "venue": "Fenway Park",
+      "game_time_utc": "2026-07-17T17:35:00Z",
+      "batter_hand": "R",
+      "pitcher_id": 643377,
+      "pitcher_name": "Griffin Jax",
+      "pitcher_hand": "R",
+      "lineup_slot": 6,
+      "lineup_confirmed": true,
+      "prob": 0.1545,
+      "per_pa_prob_vs_starter": 0.0401,
+      "expected_pa": 4.08,
+      "factors": {
+        "league_hr_pa": 0.0307,
+        "batter": {
+          "value": 1.129,
+          "components": {
+            "brl_pa": {
+              "raw": 0.07835035629453682,
+              "regressed": 0.0688,
+              "ratio": 1.243,
+              "weight": 0.45
+            },
+            "hr_fb": {
+              "raw": 0.25,
+              "regressed": 0.1366,
+              "ratio": 1.02,
+              "weight": 0.3
+            },
+            "xiso": {
+              "raw": 0.18784894991922454,
+              "regressed": 0.1775,
+              "ratio": 1.099,
+              "weight": 0.25
+            }
+          }
+        },
+        "pitcher": {
+          "value": 1.035,
+          "components": {
+            "hr_fb": {
+              "regressed": 0.1483,
+              "ratio": 1.108
+            },
+            "fb_rate": {
+              "regressed": 0.3342,
+              "ratio": 0.986
+            }
+          }
+        },
+        "park": {
+          "value": 0.966,
+          "park_factor": 96,
+          "hand": "R",
+          "park": "Fenway Park"
+        },
+        "weather": {
+          "value": 1.199,
+          "temp_f": 84.8,
+          "wind_mph": 12.3,
+          "wind_out_mph": 7.2,
+          "roof": "open"
+        },
+        "bvp": {
+          "value": 1.0,
+          "pa": 3,
+          "note": "insufficient matchup history"
+        },
+        "bullpen": {
+          "value": 1.05,
+          "hr_fb": 0.1396,
+          "hrfb_ratio": 1.043,
+          "fatigue": 1.024,
+          "bf_last3": 49
+        },
+        "game_total": {
+          "value": 0.966,
+          "implied_team_runs": 3.75,
+          "total": 9.0,
+          "spread": 1.5
+        },
+        "expected_pa": {
+          "value": 4.08,
+          "lineup_slot": 6,
+          "starter_share": 0.62
+        }
+      },
+      "odds": {
+        "best_price_decimal": 8.5,
+        "best_price_american": 750,
+        "best_book": "BetRivers",
+        "implied_prob": 0.1176,
+        "fair_prob": 0.111,
+        "n_books": 1,
+        "ev_per_dollar": 0.3132,
+        "edge_vs_fair": 0.0435
       }
     },
     {
@@ -2803,8 +3004,8 @@
       "pitcher_hand": "R",
       "lineup_slot": 3,
       "lineup_confirmed": false,
-      "prob": 0.1548,
-      "per_pa_prob_vs_starter": 0.0361,
+      "prob": 0.1537,
+      "per_pa_prob_vs_starter": 0.0358,
       "expected_pa": 4.42,
       "factors": {
         "league_hr_pa": 0.0307,
@@ -2851,10 +3052,10 @@
           "park": "Kauffman Stadium"
         },
         "weather": {
-          "value": 1.271,
-          "temp_f": 88.0,
-          "wind_mph": 11.4,
-          "wind_out_mph": 11.1,
+          "value": 1.261,
+          "temp_f": 87.1,
+          "wind_mph": 11.2,
+          "wind_out_mph": 11.0,
           "roof": "open"
         },
         "bvp": {
@@ -2888,8 +3089,8 @@
         "implied_prob": 0.1333,
         "fair_prob": 0.1258,
         "n_books": 1,
-        "ev_per_dollar": 0.161,
-        "edge_vs_fair": 0.029
+        "ev_per_dollar": 0.1527,
+        "edge_vs_fair": 0.0279
       }
     },
     {
@@ -2905,9 +3106,9 @@
       "pitcher_name": "Griffin Jax",
       "pitcher_hand": "R",
       "lineup_slot": 2,
-      "lineup_confirmed": false,
-      "prob": 0.1427,
-      "per_pa_prob_vs_starter": 0.0332,
+      "lineup_confirmed": true,
+      "prob": 0.1418,
+      "per_pa_prob_vs_starter": 0.033,
       "expected_pa": 4.54,
       "factors": {
         "league_hr_pa": 0.0307,
@@ -2954,10 +3155,10 @@
           "park": "Fenway Park"
         },
         "weather": {
-          "value": 1.207,
-          "temp_f": 85.2,
-          "wind_mph": 11.6,
-          "wind_out_mph": 7.6,
+          "value": 1.199,
+          "temp_f": 84.8,
+          "wind_mph": 12.3,
+          "wind_out_mph": 7.2,
           "roof": "open"
         },
         "bvp": {
@@ -2991,8 +3192,8 @@
         "implied_prob": 0.1,
         "fair_prob": 0.0943,
         "n_books": 1,
-        "ev_per_dollar": 0.427,
-        "edge_vs_fair": 0.0484
+        "ev_per_dollar": 0.418,
+        "edge_vs_fair": 0.0475
       }
     },
     {
@@ -3009,8 +3210,8 @@
       "pitcher_hand": "R",
       "lineup_slot": 1,
       "lineup_confirmed": false,
-      "prob": 0.1377,
-      "per_pa_prob_vs_starter": 0.0319,
+      "prob": 0.1359,
+      "per_pa_prob_vs_starter": 0.0315,
       "expected_pa": 4.65,
       "factors": {
         "league_hr_pa": 0.0307,
@@ -3057,10 +3258,10 @@
           "park": "Daikin Park"
         },
         "weather": {
-          "value": 1.12,
-          "temp_f": 87.7,
-          "wind_mph": 9.4,
-          "wind_out_mph": 9.2,
+          "value": 1.105,
+          "temp_f": 84.4,
+          "wind_mph": 8.9,
+          "wind_out_mph": 8.9,
           "roof": "retractable"
         },
         "bvp": {
@@ -3096,8 +3297,103 @@
         "implied_prob": 0.125,
         "fair_prob": 0.1179,
         "n_books": 1,
-        "ev_per_dollar": 0.1016,
-        "edge_vs_fair": 0.0198
+        "ev_per_dollar": 0.0872,
+        "edge_vs_fair": 0.018
+      }
+    },
+    {
+      "player_id": 678882,
+      "game_pk": 824737,
+      "name": "Ceddanne Rafaela",
+      "team": "Boston Red Sox",
+      "opponent": "Tampa Bay Rays",
+      "venue": "Fenway Park",
+      "game_time_utc": "2026-07-17T23:10:00Z",
+      "batter_hand": "R",
+      "pitcher_id": null,
+      "pitcher_name": null,
+      "pitcher_hand": null,
+      "lineup_slot": 2,
+      "lineup_confirmed": false,
+      "prob": 0.135,
+      "per_pa_prob_vs_starter": 0.0309,
+      "expected_pa": 4.54,
+      "factors": {
+        "league_hr_pa": 0.0307,
+        "batter": {
+          "value": 0.928,
+          "components": {
+            "brl_pa": {
+              "raw": 0.051170869401580735,
+              "regressed": 0.0519,
+              "ratio": 0.939,
+              "weight": 0.45
+            },
+            "hr_fb": {
+              "raw": 0.1038961038961039,
+              "regressed": 0.1246,
+              "ratio": 0.93,
+              "weight": 0.3
+            },
+            "xiso": {
+              "raw": 0.14027603443487915,
+              "regressed": 0.1441,
+              "ratio": 0.892,
+              "weight": 0.25
+            }
+          }
+        },
+        "pitcher": {
+          "value": 1.0,
+          "components": {},
+          "note": "no starter data; neutral"
+        },
+        "park": {
+          "value": 0.966,
+          "park_factor": 96,
+          "hand": "R",
+          "park": "Fenway Park"
+        },
+        "weather": {
+          "value": 1.162,
+          "temp_f": 84.2,
+          "wind_mph": 7.8,
+          "wind_out_mph": 4.4,
+          "roof": "open"
+        },
+        "bvp": {
+          "value": 1.0,
+          "pa": 0,
+          "note": "insufficient matchup history"
+        },
+        "bullpen": {
+          "value": 1.05,
+          "hr_fb": 0.1396,
+          "hrfb_ratio": 1.043,
+          "fatigue": 1.024,
+          "bf_last3": 49
+        },
+        "game_total": {
+          "value": 0.966,
+          "implied_team_runs": 3.75,
+          "total": 9.0,
+          "spread": 1.5
+        },
+        "expected_pa": {
+          "value": 4.54,
+          "lineup_slot": 2,
+          "starter_share": 0.62
+        }
+      },
+      "odds": {
+        "best_price_decimal": 10.0,
+        "best_price_american": 900,
+        "best_book": "BetRivers",
+        "implied_prob": 0.1,
+        "fair_prob": 0.0943,
+        "n_books": 1,
+        "ev_per_dollar": 0.35,
+        "edge_vs_fair": 0.0407
       }
     },
     {
@@ -3114,8 +3410,8 @@
       "pitcher_hand": "R",
       "lineup_slot": 1,
       "lineup_confirmed": false,
-      "prob": 0.1341,
-      "per_pa_prob_vs_starter": 0.0293,
+      "prob": 0.1345,
+      "per_pa_prob_vs_starter": 0.0294,
       "expected_pa": 4.65,
       "factors": {
         "league_hr_pa": 0.0307,
@@ -3162,10 +3458,10 @@
           "park": "Rogers Centre"
         },
         "weather": {
-          "value": 1.006,
+          "value": 1.009,
           "temp_f": 75.2,
-          "wind_mph": 4.8,
-          "wind_out_mph": -2.9,
+          "wind_mph": 5.0,
+          "wind_out_mph": -2.3,
           "roof": "retractable"
         },
         "bvp": {
@@ -3193,14 +3489,14 @@
         }
       },
       "odds": {
-        "best_price_decimal": 10.0,
-        "best_price_american": 900,
+        "best_price_decimal": 9.0,
+        "best_price_american": 800,
         "best_book": "BetRivers",
-        "implied_prob": 0.1,
-        "fair_prob": 0.0943,
+        "implied_prob": 0.1111,
+        "fair_prob": 0.1048,
         "n_books": 1,
-        "ev_per_dollar": 0.341,
-        "edge_vs_fair": 0.0398
+        "ev_per_dollar": 0.2105,
+        "edge_vs_fair": 0.0297
       }
     },
     {
@@ -3217,8 +3513,8 @@
       "pitcher_hand": "L",
       "lineup_slot": 5,
       "lineup_confirmed": false,
-      "prob": 0.1337,
-      "per_pa_prob_vs_starter": 0.0333,
+      "prob": 0.1341,
+      "per_pa_prob_vs_starter": 0.0334,
       "expected_pa": 4.19,
       "factors": {
         "league_hr_pa": 0.0307,
@@ -3265,10 +3561,10 @@
           "park": "Rogers Centre"
         },
         "weather": {
-          "value": 1.006,
+          "value": 1.009,
           "temp_f": 75.2,
-          "wind_mph": 4.8,
-          "wind_out_mph": -2.9,
+          "wind_mph": 5.0,
+          "wind_out_mph": -2.3,
           "roof": "retractable"
         },
         "bvp": {
@@ -3296,109 +3592,14 @@
         }
       },
       "odds": {
-        "best_price_decimal": 8.5,
-        "best_price_american": 750,
+        "best_price_decimal": 9.0,
+        "best_price_american": 800,
         "best_book": "BetRivers",
-        "implied_prob": 0.1176,
-        "fair_prob": 0.111,
+        "implied_prob": 0.1111,
+        "fair_prob": 0.1048,
         "n_books": 1,
-        "ev_per_dollar": 0.1365,
-        "edge_vs_fair": 0.0227
-      }
-    },
-    {
-      "player_id": 678882,
-      "game_pk": 824737,
-      "name": "Ceddanne Rafaela",
-      "team": "Boston Red Sox",
-      "opponent": "Tampa Bay Rays",
-      "venue": "Fenway Park",
-      "game_time_utc": "2026-07-17T23:10:00Z",
-      "batter_hand": "R",
-      "pitcher_id": null,
-      "pitcher_name": null,
-      "pitcher_hand": null,
-      "lineup_slot": 2,
-      "lineup_confirmed": false,
-      "prob": 0.1336,
-      "per_pa_prob_vs_starter": 0.0305,
-      "expected_pa": 4.54,
-      "factors": {
-        "league_hr_pa": 0.0307,
-        "batter": {
-          "value": 0.928,
-          "components": {
-            "brl_pa": {
-              "raw": 0.051170869401580735,
-              "regressed": 0.0519,
-              "ratio": 0.939,
-              "weight": 0.45
-            },
-            "hr_fb": {
-              "raw": 0.1038961038961039,
-              "regressed": 0.1246,
-              "ratio": 0.93,
-              "weight": 0.3
-            },
-            "xiso": {
-              "raw": 0.14027603443487915,
-              "regressed": 0.1441,
-              "ratio": 0.892,
-              "weight": 0.25
-            }
-          }
-        },
-        "pitcher": {
-          "value": 1.0,
-          "components": {},
-          "note": "no starter data; neutral"
-        },
-        "park": {
-          "value": 0.966,
-          "park_factor": 96,
-          "hand": "R",
-          "park": "Fenway Park"
-        },
-        "weather": {
-          "value": 1.149,
-          "temp_f": 83.9,
-          "wind_mph": 8.0,
-          "wind_out_mph": 3.4,
-          "roof": "open"
-        },
-        "bvp": {
-          "value": 1.0,
-          "pa": 0,
-          "note": "insufficient matchup history"
-        },
-        "bullpen": {
-          "value": 1.05,
-          "hr_fb": 0.1396,
-          "hrfb_ratio": 1.043,
-          "fatigue": 1.024,
-          "bf_last3": 49
-        },
-        "game_total": {
-          "value": 0.966,
-          "implied_team_runs": 3.75,
-          "total": 9.0,
-          "spread": 1.5
-        },
-        "expected_pa": {
-          "value": 4.54,
-          "lineup_slot": 2,
-          "starter_share": 0.62
-        }
-      },
-      "odds": {
-        "best_price_decimal": 10.0,
-        "best_price_american": 900,
-        "best_book": "BetRivers",
-        "implied_prob": 0.1,
-        "fair_prob": 0.0943,
-        "n_books": 1,
-        "ev_per_dollar": 0.336,
-        "edge_vs_fair": 0.0393
+        "ev_per_dollar": 0.2069,
+        "edge_vs_fair": 0.0293
       }
     },
     {
@@ -3414,9 +3615,9 @@
       "pitcher_name": "Griffin Jax",
       "pitcher_hand": "R",
       "lineup_slot": 1,
-      "lineup_confirmed": false,
-      "prob": 0.1282,
-      "per_pa_prob_vs_starter": 0.0288,
+      "lineup_confirmed": true,
+      "prob": 0.1274,
+      "per_pa_prob_vs_starter": 0.0286,
       "expected_pa": 4.65,
       "factors": {
         "league_hr_pa": 0.0307,
@@ -3463,10 +3664,10 @@
           "park": "Fenway Park"
         },
         "weather": {
-          "value": 1.207,
-          "temp_f": 85.2,
-          "wind_mph": 11.6,
-          "wind_out_mph": 7.6,
+          "value": 1.199,
+          "temp_f": 84.8,
+          "wind_mph": 12.3,
+          "wind_out_mph": 7.2,
           "roof": "open"
         },
         "bvp": {
@@ -3500,76 +3701,179 @@
         "implied_prob": 0.1176,
         "fair_prob": 0.111,
         "n_books": 1,
-        "ev_per_dollar": 0.0897,
-        "edge_vs_fair": 0.0172
+        "ev_per_dollar": 0.0829,
+        "edge_vs_fair": 0.0164
       }
     },
     {
-      "player_id": 696135,
-      "game_pk": 824414,
-      "name": "Kahlil Watson",
-      "team": "Cleveland Guardians",
-      "opponent": "Pittsburgh Pirates",
-      "venue": "Progressive Field",
-      "game_time_utc": "2026-07-17T23:10:00Z",
-      "batter_hand": "L",
-      "pitcher_id": 683003,
-      "pitcher_name": "Jared Jones",
-      "pitcher_hand": "R",
-      "lineup_slot": 5,
+      "player_id": 677649,
+      "game_pk": 824901,
+      "name": "Ezequiel Duran",
+      "team": "Texas Rangers",
+      "opponent": "Atlanta Braves",
+      "venue": "Truist Park",
+      "game_time_utc": "2026-07-17T23:15:00Z",
+      "batter_hand": "R",
+      "pitcher_id": 519242,
+      "pitcher_name": "Chris Sale",
+      "pitcher_hand": "L",
+      "lineup_slot": 6,
       "lineup_confirmed": false,
-      "prob": 0.1282,
-      "per_pa_prob_vs_starter": 0.0331,
-      "expected_pa": 4.19,
+      "prob": 0.1133,
+      "per_pa_prob_vs_starter": 0.0287,
+      "expected_pa": 4.08,
       "factors": {
         "league_hr_pa": 0.0307,
         "batter": {
-          "value": 0.962,
+          "value": 0.836,
           "components": {
             "brl_pa": {
-              "raw": 0.05,
-              "regressed": 0.0538,
-              "ratio": 0.972,
+              "raw": 0.03581210592686003,
+              "regressed": 0.0412,
+              "ratio": 0.744,
               "weight": 0.45
             },
             "hr_fb": {
-              "raw": 0.06666666666666667,
-              "regressed": 0.1285,
-              "ratio": 0.959,
+              "raw": 0.15384615384615385,
+              "regressed": 0.1394,
+              "ratio": 1.041,
               "weight": 0.3
             },
             "xiso": {
-              "raw": 0.132,
-              "regressed": 0.1517,
-              "ratio": 0.939,
+              "raw": 0.11019588080631025,
+              "regressed": 0.1235,
+              "ratio": 0.765,
               "weight": 0.25
             }
           }
         },
         "pitcher": {
-          "value": 1.029,
+          "value": 0.97,
           "components": {
             "hr_fb": {
-              "regressed": 0.1553,
-              "ratio": 1.16
+              "regressed": 0.1243,
+              "ratio": 0.928
             },
             "fb_rate": {
-              "regressed": 0.3096,
-              "ratio": 0.913
+              "regressed": 0.3368,
+              "ratio": 0.993
             }
           }
         },
         "park": {
-          "value": 1.017,
-          "park_factor": 102,
-          "hand": "L",
-          "park": "Progressive Field"
+          "value": 1.042,
+          "park_factor": 105,
+          "hand": "R",
+          "park": "Truist Park"
         },
         "weather": {
-          "value": 1.072,
-          "temp_f": 85.9,
-          "wind_mph": 5.0,
-          "wind_out_mph": -4.9,
+          "value": 1.171,
+          "temp_f": 87.2,
+          "wind_mph": 3.4,
+          "wind_out_mph": 2.9,
+          "roof": "open"
+        },
+        "bvp": {
+          "value": 1.0,
+          "pa": 3,
+          "note": "insufficient matchup history"
+        },
+        "bullpen": {
+          "value": 1.005,
+          "hr_fb": 0.1227,
+          "hrfb_ratio": 0.916,
+          "fatigue": 1.06,
+          "bf_last3": 59
+        },
+        "game_total": {
+          "value": 0.944,
+          "implied_team_runs": 3.25,
+          "total": 8.0,
+          "spread": 1.5
+        },
+        "expected_pa": {
+          "value": 4.08,
+          "lineup_slot": 6,
+          "starter_share": 0.62
+        }
+      },
+      "odds": {
+        "best_price_decimal": 10.0,
+        "best_price_american": 900,
+        "best_book": "BetRivers",
+        "implied_prob": 0.1,
+        "fair_prob": 0.0943,
+        "n_books": 1,
+        "ev_per_dollar": 0.133,
+        "edge_vs_fair": 0.019
+      }
+    },
+    {
+      "player_id": 805779,
+      "game_pk": 824981,
+      "name": "Jacob Wilson",
+      "team": "Athletics",
+      "opponent": "Washington Nationals",
+      "venue": "Sutter Health Park",
+      "game_time_utc": "2026-07-18T01:40:00Z",
+      "batter_hand": "R",
+      "pitcher_id": 676917,
+      "pitcher_name": "Cade Cavalli",
+      "pitcher_hand": "R",
+      "lineup_slot": 1,
+      "lineup_confirmed": false,
+      "prob": 0.1093,
+      "per_pa_prob_vs_starter": 0.0217,
+      "expected_pa": 4.65,
+      "factors": {
+        "league_hr_pa": 0.0307,
+        "batter": {
+          "value": 0.612,
+          "components": {
+            "brl_pa": {
+              "raw": 0.016454157782515993,
+              "regressed": 0.0244,
+              "ratio": 0.441,
+              "weight": 0.45
+            },
+            "hr_fb": {
+              "raw": 0.08333333333333333,
+              "regressed": 0.1228,
+              "ratio": 0.917,
+              "weight": 0.3
+            },
+            "xiso": {
+              "raw": 0.0809760348583878,
+              "regressed": 0.0991,
+              "ratio": 0.613,
+              "weight": 0.25
+            }
+          }
+        },
+        "pitcher": {
+          "value": 0.924,
+          "components": {
+            "hr_fb": {
+              "regressed": 0.1175,
+              "ratio": 0.877
+            },
+            "fb_rate": {
+              "regressed": 0.3101,
+              "ratio": 0.915
+            }
+          }
+        },
+        "park": {
+          "value": 1.025,
+          "park_factor": 103,
+          "hand": "R",
+          "park": "Sutter Health Park"
+        },
+        "weather": {
+          "value": 1.233,
+          "temp_f": 83.7,
+          "wind_mph": 11.5,
+          "wind_out_mph": 11.2,
           "roof": "open"
         },
         "bvp": {
@@ -3578,103 +3882,114 @@
           "note": "insufficient matchup history"
         },
         "bullpen": {
-          "value": 0.954,
-          "hr_fb": 0.1144,
-          "hrfb_ratio": 0.854,
-          "fatigue": 1.049,
-          "bf_last3": 56
+          "value": 1.246,
+          "hr_fb": 0.162,
+          "hrfb_ratio": 1.21,
+          "fatigue": 1.112,
+          "bf_last3": 74
         },
         "game_total": {
-          "value": 1.0,
-          "implied_team_runs": 4.5,
-          "total": 7.5,
-          "spread": -1.5
+          "value": 0.989,
+          "implied_team_runs": 4.25,
+          "total": 10.0,
+          "spread": 1.5
         },
         "expected_pa": {
-          "value": 4.19,
-          "lineup_slot": 5,
+          "value": 4.65,
+          "lineup_slot": 1,
           "starter_share": 0.62
         }
       },
       "odds": {
-        "best_price_decimal": 8.5,
-        "best_price_american": 750,
+        "best_price_decimal": 10.5,
+        "best_price_american": 950,
         "best_book": "BetRivers",
-        "implied_prob": 0.1176,
-        "fair_prob": 0.111,
+        "implied_prob": 0.0952,
+        "fair_prob": 0.0898,
         "n_books": 1,
-        "ev_per_dollar": 0.0897,
-        "edge_vs_fair": 0.0172
+        "ev_per_dollar": 0.1476,
+        "edge_vs_fair": 0.0195
       }
     },
     {
-      "player_id": 672515,
-      "game_pk": 825060,
-      "name": "Gabriel Moreno",
-      "team": "Arizona Diamondbacks",
-      "opponent": "St. Louis Cardinals",
-      "venue": "Chase Field",
-      "game_time_utc": "2026-07-18T01:40:00Z",
+      "player_id": 702332,
+      "game_pk": 824766,
+      "name": "Caleb Durbin",
+      "team": "Boston Red Sox",
+      "opponent": "Tampa Bay Rays",
+      "venue": "Fenway Park",
+      "game_time_utc": "2026-07-17T17:35:00Z",
       "batter_hand": "R",
-      "pitcher_id": null,
-      "pitcher_name": null,
-      "pitcher_hand": null,
+      "pitcher_id": 643377,
+      "pitcher_name": "Griffin Jax",
+      "pitcher_hand": "R",
       "lineup_slot": 4,
-      "lineup_confirmed": false,
-      "prob": 0.1212,
-      "per_pa_prob_vs_starter": 0.0292,
+      "lineup_confirmed": true,
+      "prob": 0.1083,
+      "per_pa_prob_vs_starter": 0.0261,
       "expected_pa": 4.31,
       "factors": {
         "league_hr_pa": 0.0307,
         "batter": {
-          "value": 0.96,
+          "value": 0.735,
           "components": {
             "brl_pa": {
-              "raw": 0.05140769693325315,
-              "regressed": 0.0524,
-              "ratio": 0.948,
+              "raw": 0.026950738916256163,
+              "regressed": 0.0326,
+              "ratio": 0.589,
               "weight": 0.45
             },
             "hr_fb": {
-              "raw": 0.10344827586206896,
-              "regressed": 0.1262,
-              "ratio": 0.942,
+              "raw": 0.13636363636363635,
+              "regressed": 0.1346,
+              "ratio": 1.005,
               "weight": 0.3
             },
             "xiso": {
-              "raw": 0.16085925282363164,
-              "regressed": 0.161,
-              "ratio": 0.997,
+              "raw": 0.10189203996132777,
+              "regressed": 0.1141,
+              "ratio": 0.706,
               "weight": 0.25
             }
           }
         },
         "pitcher": {
-          "value": 1.0,
-          "components": {},
-          "note": "no starter data; neutral"
+          "value": 1.035,
+          "components": {
+            "hr_fb": {
+              "regressed": 0.1483,
+              "ratio": 1.108
+            },
+            "fb_rate": {
+              "regressed": 0.3342,
+              "ratio": 0.986
+            }
+          }
         },
         "park": {
-          "value": 1.025,
-          "park_factor": 103,
+          "value": 0.966,
+          "park_factor": 96,
           "hand": "R",
-          "park": "Chase Field"
+          "park": "Fenway Park"
         },
         "weather": {
-          "value": 1.0,
-          "note": "dome or no forecast"
+          "value": 1.199,
+          "temp_f": 84.8,
+          "wind_mph": 12.3,
+          "wind_out_mph": 7.2,
+          "roof": "open"
         },
         "bvp": {
           "value": 1.0,
-          "pa": 0,
+          "pa": 1,
           "note": "insufficient matchup history"
         },
         "bullpen": {
-          "value": 1.035,
-          "hr_fb": 0.1294,
-          "hrfb_ratio": 0.967,
-          "fatigue": 1.056,
-          "bf_last3": 58
+          "value": 1.05,
+          "hr_fb": 0.1396,
+          "hrfb_ratio": 1.043,
+          "fatigue": 1.024,
+          "bf_last3": 49
         },
         "game_total": {
           "value": 0.966,
@@ -3689,400 +4004,100 @@
         }
       },
       "odds": {
-        "best_price_decimal": 9.0,
-        "best_price_american": 800,
+        "best_price_decimal": 10.0,
+        "best_price_american": 900,
         "best_book": "BetRivers",
-        "implied_prob": 0.1111,
-        "fair_prob": 0.1048,
+        "implied_prob": 0.1,
+        "fair_prob": 0.0943,
         "n_books": 1,
-        "ev_per_dollar": 0.0908,
-        "edge_vs_fair": 0.0164
+        "ev_per_dollar": 0.083,
+        "edge_vs_fair": 0.014
       }
     },
     {
-      "player_id": 682729,
-      "game_pk": 822789,
-      "name": "Jonatan Clase",
-      "team": "Toronto Blue Jays",
-      "opponent": "Chicago White Sox",
-      "venue": "Rogers Centre",
-      "game_time_utc": "2026-07-17T23:15:00Z",
-      "batter_hand": "R",
-      "pitcher_id": 641743,
-      "pitcher_name": "Anthony Kay",
-      "pitcher_hand": "L",
-      "lineup_slot": 8,
-      "lineup_confirmed": false,
-      "prob": 0.118,
-      "per_pa_prob_vs_starter": 0.0321,
-      "expected_pa": 3.85,
-      "factors": {
-        "league_hr_pa": 0.0307,
-        "batter": {
-          "value": 0.975,
-          "components": {
-            "brl_pa": {
-              "raw": 0.045,
-              "regressed": 0.0526,
-              "ratio": 0.95,
-              "weight": 0.45
-            },
-            "hr_fb": {
-              "raw": 0.5,
-              "regressed": 0.1423,
-              "ratio": 1.063,
-              "weight": 0.3
-            },
-            "xiso": {
-              "raw": 0.123338747099768,
-              "regressed": 0.1482,
-              "ratio": 0.917,
-              "weight": 0.25
-            }
-          }
-        },
-        "pitcher": {
-          "value": 1.0,
-          "components": {
-            "hr_fb": {
-              "regressed": 0.1435,
-              "ratio": 1.072
-            },
-            "fb_rate": {
-              "regressed": 0.3111,
-              "ratio": 0.918
-            }
-          }
-        },
-        "park": {
-          "value": 1.042,
-          "park_factor": 105,
-          "hand": "R",
-          "park": "Rogers Centre"
-        },
-        "weather": {
-          "value": 1.006,
-          "temp_f": 75.2,
-          "wind_mph": 4.8,
-          "wind_out_mph": -2.9,
-          "roof": "retractable"
-        },
-        "bvp": {
-          "value": 1.0,
-          "pa": 0,
-          "note": "insufficient matchup history"
-        },
-        "bullpen": {
-          "value": 1.005,
-          "hr_fb": 0.1275,
-          "hrfb_ratio": 0.952,
-          "fatigue": 1.035,
-          "bf_last3": 52
-        },
-        "game_total": {
-          "value": 1.022,
-          "implied_team_runs": 5.0,
-          "total": 8.5,
-          "spread": -1.5
-        },
-        "expected_pa": {
-          "value": 3.85,
-          "lineup_slot": 8,
-          "starter_share": 0.62
-        }
-      },
-      "odds": {
-        "best_price_decimal": 9.0,
-        "best_price_american": 800,
-        "best_book": "BetRivers",
-        "implied_prob": 0.1111,
-        "fair_prob": 0.1048,
-        "n_books": 1,
-        "ev_per_dollar": 0.062,
-        "edge_vs_fair": 0.0132
-      }
-    },
-    {
-      "player_id": 695731,
-      "game_pk": 822789,
-      "name": "Braden Montgomery",
-      "team": "Chicago White Sox",
-      "opponent": "Toronto Blue Jays",
-      "venue": "Rogers Centre",
-      "game_time_utc": "2026-07-17T23:15:00Z",
-      "batter_hand": "L",
-      "pitcher_id": 693686,
-      "pitcher_name": "Spencer Miles",
-      "pitcher_hand": "R",
-      "lineup_slot": 7,
-      "lineup_confirmed": false,
-      "prob": 0.1094,
-      "per_pa_prob_vs_starter": 0.0277,
-      "expected_pa": 3.96,
-      "factors": {
-        "league_hr_pa": 0.0307,
-        "batter": {
-          "value": 0.884,
-          "components": {
-            "brl_pa": {
-              "raw": 0.026000000000000002,
-              "regressed": 0.0435,
-              "ratio": 0.786,
-              "weight": 0.45
-            },
-            "hr_fb": {
-              "raw": 0.15789473684210525,
-              "regressed": 0.1363,
-              "ratio": 1.018,
-              "weight": 0.3
-            },
-            "xiso": {
-              "raw": 0.122,
-              "regressed": 0.1449,
-              "ratio": 0.897,
-              "weight": 0.25
-            }
-          }
-        },
-        "pitcher": {
-          "value": 0.996,
-          "components": {
-            "hr_fb": {
-              "regressed": 0.138,
-              "ratio": 1.031
-            },
-            "fb_rate": {
-              "regressed": 0.3229,
-              "ratio": 0.952
-            }
-          }
-        },
-        "park": {
-          "value": 1.068,
-          "park_factor": 108,
-          "hand": "L",
-          "park": "Rogers Centre"
-        },
-        "weather": {
-          "value": 1.006,
-          "temp_f": 75.2,
-          "wind_mph": 4.8,
-          "wind_out_mph": -2.9,
-          "roof": "retractable"
-        },
-        "bvp": {
-          "value": 1.0,
-          "pa": 0,
-          "note": "insufficient matchup history"
-        },
-        "bullpen": {
-          "value": 1.1,
-          "hr_fb": 0.145,
-          "hrfb_ratio": 1.083,
-          "fatigue": 1.049,
-          "bf_last3": 56
-        },
-        "game_total": {
-          "value": 0.955,
-          "implied_team_runs": 3.5,
-          "total": 8.5,
-          "spread": 1.5
-        },
-        "expected_pa": {
-          "value": 3.96,
-          "lineup_slot": 7,
-          "starter_share": 0.62
-        }
-      },
-      "odds": {
-        "best_price_decimal": 9.5,
-        "best_price_american": 850,
-        "best_book": "BetRivers",
-        "implied_prob": 0.1053,
-        "fair_prob": 0.0993,
-        "n_books": 1,
-        "ev_per_dollar": 0.0393,
-        "edge_vs_fair": 0.0101
-      }
-    },
-    {
-      "player_id": 672695,
-      "game_pk": 825060,
-      "name": "Geraldo Perdomo",
-      "team": "Arizona Diamondbacks",
-      "opponent": "St. Louis Cardinals",
-      "venue": "Chase Field",
+      "player_id": 683083,
+      "game_pk": 824981,
+      "name": "Nasim Nu\u00f1ez",
+      "team": "Washington Nationals",
+      "opponent": "Athletics",
+      "venue": "Sutter Health Park",
       "game_time_utc": "2026-07-18T01:40:00Z",
-      "batter_hand": "L",
-      "pitcher_id": null,
-      "pitcher_name": null,
-      "pitcher_hand": null,
-      "lineup_slot": 2,
-      "lineup_confirmed": false,
-      "prob": 0.1055,
-      "per_pa_prob_vs_starter": 0.024,
-      "expected_pa": 4.54,
-      "factors": {
-        "league_hr_pa": 0.0307,
-        "batter": {
-          "value": 0.769,
-          "components": {
-            "brl_pa": {
-              "raw": 0.03516170634920635,
-              "regressed": 0.0385,
-              "ratio": 0.696,
-              "weight": 0.45
-            },
-            "hr_fb": {
-              "raw": 0.07142857142857142,
-              "regressed": 0.1133,
-              "ratio": 0.846,
-              "weight": 0.3
-            },
-            "xiso": {
-              "raw": 0.11844471445929525,
-              "regressed": 0.1255,
-              "ratio": 0.776,
-              "weight": 0.25
-            }
-          }
-        },
-        "pitcher": {
-          "value": 1.0,
-          "components": {},
-          "note": "no starter data; neutral"
-        },
-        "park": {
-          "value": 1.051,
-          "park_factor": 106,
-          "hand": "L",
-          "park": "Chase Field"
-        },
-        "weather": {
-          "value": 1.0,
-          "note": "dome or no forecast"
-        },
-        "bvp": {
-          "value": 1.0,
-          "pa": 0,
-          "note": "insufficient matchup history"
-        },
-        "bullpen": {
-          "value": 1.035,
-          "hr_fb": 0.1294,
-          "hrfb_ratio": 0.967,
-          "fatigue": 1.056,
-          "bf_last3": 58
-        },
-        "game_total": {
-          "value": 0.966,
-          "implied_team_runs": 3.75,
-          "total": 9.0,
-          "spread": 1.5
-        },
-        "expected_pa": {
-          "value": 4.54,
-          "lineup_slot": 2,
-          "starter_share": 0.62
-        }
-      },
-      "odds": {
-        "best_price_decimal": 11.0,
-        "best_price_american": 1000,
-        "best_book": "BetRivers",
-        "implied_prob": 0.0909,
-        "fair_prob": 0.0858,
-        "n_books": 1,
-        "ev_per_dollar": 0.1605,
-        "edge_vs_fair": 0.0197
-      }
-    },
-    {
-      "player_id": 670764,
-      "game_pk": 824766,
-      "name": "Taylor Walls",
-      "team": "Tampa Bay Rays",
-      "opponent": "Boston Red Sox",
-      "venue": "Fenway Park",
-      "game_time_utc": "2026-07-17T17:35:00Z",
       "batter_hand": "R",
-      "pitcher_id": 687562,
-      "pitcher_name": "Jake Bennett",
+      "pitcher_id": 695611,
+      "pitcher_name": "Gage Jump",
       "pitcher_hand": "L",
       "lineup_slot": 7,
       "lineup_confirmed": false,
-      "prob": 0.0873,
-      "per_pa_prob_vs_starter": 0.0222,
+      "prob": 0.0942,
+      "per_pa_prob_vs_starter": 0.0229,
       "expected_pa": 3.96,
       "factors": {
         "league_hr_pa": 0.0307,
         "batter": {
-          "value": 0.633,
+          "value": 0.579,
           "components": {
             "brl_pa": {
-              "raw": 0.02032777036048064,
-              "regressed": 0.0303,
-              "ratio": 0.548,
+              "raw": 0.00783221476510067,
+              "regressed": 0.0237,
+              "ratio": 0.429,
               "weight": 0.45
             },
             "hr_fb": {
-              "raw": 0.0,
-              "regressed": 0.0965,
-              "ratio": 0.72,
+              "raw": 0.023255813953488372,
+              "regressed": 0.1116,
+              "ratio": 0.833,
               "weight": 0.3
             },
             "xiso": {
-              "raw": 0.0826482939632546,
-              "regressed": 0.1031,
-              "ratio": 0.638,
+              "raw": 0.06192026578073091,
+              "regressed": 0.0925,
+              "ratio": 0.573,
               "weight": 0.25
             }
           }
         },
         "pitcher": {
-          "value": 0.966,
+          "value": 0.965,
           "components": {
             "hr_fb": {
-              "regressed": 0.1179,
-              "ratio": 0.881
+              "regressed": 0.1233,
+              "ratio": 0.92
             },
             "fb_rate": {
-              "regressed": 0.3552,
-              "ratio": 1.048
+              "regressed": 0.3354,
+              "ratio": 0.989
             }
           }
         },
         "park": {
-          "value": 0.966,
-          "park_factor": 96,
+          "value": 1.025,
+          "park_factor": 103,
           "hand": "R",
-          "park": "Fenway Park"
+          "park": "Sutter Health Park"
         },
         "weather": {
-          "value": 1.207,
-          "temp_f": 85.2,
-          "wind_mph": 11.6,
-          "wind_out_mph": 7.6,
+          "value": 1.233,
+          "temp_f": 83.7,
+          "wind_mph": 11.5,
+          "wind_out_mph": 11.2,
           "roof": "open"
         },
         "bvp": {
-          "value": 0.981,
-          "pa": 4,
-          "hr": 0,
-          "hr_per_pa": 0.0,
-          "ratio": 0.962
+          "value": 1.0,
+          "pa": 0,
+          "note": "insufficient matchup history"
         },
         "bullpen": {
-          "value": 1.015,
-          "hr_fb": 0.1267,
-          "hrfb_ratio": 0.946,
-          "fatigue": 1.049,
-          "bf_last3": 56
+          "value": 1.162,
+          "hr_fb": 0.1554,
+          "hrfb_ratio": 1.161,
+          "fatigue": 1.063,
+          "bf_last3": 60
         },
         "game_total": {
-          "value": 1.034,
-          "implied_team_runs": 5.25,
-          "total": 9.0,
+          "value": 1.056,
+          "implied_team_runs": 5.75,
+          "total": 10.0,
           "spread": -1.5
         },
         "expected_pa": {
@@ -4098,8 +4113,8 @@
         "implied_prob": 0.08,
         "fair_prob": 0.0755,
         "n_books": 1,
-        "ev_per_dollar": 0.0913,
-        "edge_vs_fair": 0.0118
+        "ev_per_dollar": 0.1775,
+        "edge_vs_fair": 0.0187
       }
     }
   ]
