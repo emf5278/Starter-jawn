@@ -31,11 +31,14 @@
   }
   * { box-sizing: border-box; }
   [hidden] { display: none !important; }
+  html, body { overflow-x: hidden; }
   body {
     margin: 0; background: var(--page); color: var(--ink);
     font: 15px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif;
   }
   .wrap { max-width: 980px; margin: 0 auto; padding: 24px 16px 64px; }
+  #chartwrap { max-width: 100%; }
+  #chart { max-width: 100%; }
   header h1 { font-size: 22px; margin: 0 0 4px; }
   header .sub { color: var(--ink-2); font-size: 13px; }
   .badge {
@@ -48,14 +51,16 @@
     border-radius: 10px; padding: 16px; margin-top: 20px;
   }
   .card h2 { font-size: 14px; margin: 0 0 12px; color: var(--ink-2); font-weight: 600; }
+  .controls { display: flex; flex-wrap: wrap; gap: 10px 12px; margin-top: 20px; align-items: center; }
+  .controls .seglabel { font-size: 12px; color: var(--ink-muted); font-weight: 600; }
   .seg {
-    display: inline-flex; margin-top: 20px; border: 1px solid var(--border);
+    display: inline-flex; border: 1px solid var(--border);
     border-radius: 8px; overflow: hidden; background: var(--surface);
   }
   .seg button {
     appearance: none; border: 0; background: none; cursor: pointer;
     font: 600 13px/1 system-ui, -apple-system, "Segoe UI", sans-serif;
-    color: var(--ink-2); padding: 8px 14px;
+    color: var(--ink-2); padding: 8px 14px; white-space: nowrap;
   }
   .seg button + button { border-left: 1px solid var(--border); }
   .seg button[aria-pressed="true"] { background: var(--series-1); color: #fff; }
@@ -86,6 +91,38 @@
   .chev { color: var(--ink-muted); font-size: 11px; transition: transform .15s; display: inline-block; }
   tr.open .chev { transform: rotate(90deg); }
   tr.detail > td { background: var(--wash); padding: 14px 16px 18px; }
+  .gtime { font-weight: 600; color: var(--ink-2); font-variant-numeric: tabular-nums; }
+
+  /* ---- mobile: reflow the wide table into stacked cards ---- */
+  @media (max-width: 620px) {
+    .tablewrap { overflow-x: visible; }
+    #tbl, #tbl tbody, #tbl tr, #tbl td { display: block; }
+    #tbl { min-width: 0; }
+    #tbl thead { display: none; }
+    tr.playerrow {
+      position: relative; border: 1px solid var(--border); border-radius: 10px;
+      margin: 0 0 10px; padding: 12px 34px 8px 34px;
+    }
+    tr.playerrow > td { border: 0; padding: 2px 0; text-align: left; }
+    td.c-rank {
+      position: absolute; top: 12px; left: 12px; width: auto;
+      font-size: 12px; font-weight: 700; color: var(--ink-muted);
+    }
+    td.c-chev { position: absolute; top: 11px; right: 12px; padding: 0; }
+    /* each numeric cell becomes a label-left / value-right row (#tbl id
+       prefix needed to beat the `#tbl td { display:block }` specificity) */
+    #tbl td.c-prob, #tbl td.c-odds, #tbl td.c-fair, #tbl td.c-ev {
+      display: flex; justify-content: space-between; align-items: baseline;
+      gap: 12px; padding: 6px 0; text-align: right; border-top: 1px solid var(--grid);
+    }
+    td.c-prob::before, td.c-odds::before, td.c-fair::before, td.c-ev::before {
+      content: attr(data-label); text-align: left; white-space: nowrap;
+      font-size: 12px; font-weight: 600; color: var(--ink-muted);
+    }
+    td.c-match { padding-bottom: 4px; }
+    tr.detail > td { padding: 12px 2px 14px; }
+    .plain { max-width: none; }
+  }
   .plain {
     font-size: 13.5px; line-height: 1.55; color: var(--ink-2);
     max-width: 78ch; margin: 0 0 16px;
@@ -116,9 +153,16 @@
     <div class="sub" id="meta">Loading…</div>
   </header>
 
-  <div class="seg" id="viewSeg" hidden>
-    <button id="btnProb" aria-pressed="true">Top 20 · Probability</button>
-    <button id="btnEv" aria-pressed="false">Top 20 · EV</button>
+  <div class="controls" id="controls" hidden>
+    <div class="seg" id="viewSeg">
+      <button id="btnProb" aria-pressed="true">Top 20 · Probability</button>
+      <button id="btnEv" aria-pressed="false">Top 20 · EV</button>
+    </div>
+    <span class="seglabel">Sort:</span>
+    <div class="seg" id="sortSeg">
+      <button id="sortRank" aria-pressed="true">Ranking</button>
+      <button id="sortTime" aria-pressed="false">🕒 Game time</button>
+    </div>
   </div>
 
   <div class="card" id="chartCard" hidden>
@@ -133,7 +177,7 @@
     <div class="tablewrap" hidden id="tablewrap">
       <table id="tbl">
         <thead><tr>
-          <th></th><th>Player</th><th>Matchup</th>
+          <th></th><th>Player</th><th>Matchup &amp; first pitch</th>
           <th class="num">P(HR)</th><th class="num">Best odds</th>
           <th class="num">Market fair</th><th class="num">EV / $1</th><th></th>
         </tr></thead>
@@ -169,6 +213,21 @@ async function load() {
 
 let DOC = null;
 let VIEW = "prob"; // 'prob' | 'ev'
+let SORT = "rank"; // 'rank' | 'time'
+
+function setSort(sort) {
+  SORT = sort;
+  document.getElementById("sortRank").setAttribute("aria-pressed", sort === "rank");
+  document.getElementById("sortTime").setAttribute("aria-pressed", sort === "time");
+  setView(VIEW);
+}
+
+// "7:05 PM" in the viewer's local timezone; "" if unknown
+function localTime(iso) {
+  if (!iso) return "";
+  const d = new Date(iso);
+  return isNaN(d) ? "" : d.toLocaleTimeString([], { hour: "numeric", minute: "2-digit" });
+}
 
 function render(doc) {
   DOC = doc;
@@ -181,7 +240,7 @@ function render(doc) {
   // no games today (e.g. All-Star break / off day): show a friendly notice
   // instead of an empty chart and a bare table
   if (!doc.players || doc.players.length === 0) {
-    document.getElementById("viewSeg").hidden = true;
+    document.getElementById("controls").hidden = true;
     document.getElementById("chartCard").hidden = true;
     document.getElementById("tablewrap").hidden = true;
     const s = document.getElementById("status");
@@ -191,14 +250,15 @@ function render(doc) {
     return;
   }
 
-  const seg = document.getElementById("viewSeg");
-  seg.hidden = false;
+  document.getElementById("controls").hidden = false;
   const hasOdds = doc.players.some(p => p.odds);
   const btnEv = document.getElementById("btnEv");
   btnEv.disabled = !hasOdds;
   if (!hasOdds) btnEv.title = "No prop odds in this run";
   document.getElementById("btnProb").onclick = () => setView("prob");
   btnEv.onclick = () => setView("ev");
+  document.getElementById("sortRank").onclick = () => setSort("rank");
+  document.getElementById("sortTime").onclick = () => setSort("time");
 
   document.getElementById("status").hidden = true;
   document.getElementById("tablewrap").hidden = false;
@@ -235,8 +295,12 @@ function setView(view) {
     document.getElementById("tableTitle").textContent =
       "Ranked by model P(≥1 HR) — click a row for the “why”";
   }
-  renderTable(list);
-  renderChart(list);
+  list.forEach((p, i) => { p._rank = i + 1; }); // rank in the selected metric
+  renderChart(list);                            // chart always in ranking order
+  const tableList = SORT === "time"
+    ? [...list].sort((a, b) => (a.game_time_utc || "").localeCompare(b.game_time_utc || ""))
+    : list;
+  renderTable(tableList);
 }
 
 /* ---------------------------------------------------------------- table */
@@ -253,17 +317,20 @@ function renderTable(players) {
     const corr = (p._sameGame || 0) > 1
       ? ` <span class="corrbadge" title="${p._sameGame} picks in this list come from the same game. Their edges share the same pitcher, park, and weather assumptions — they win or lose together far more often than independent bets, so treat them as one position, not ${p._sameGame}.">⛓ ${p._sameGame} same game</span>`
       : "";
+    const gt = localTime(p.game_time_utc);
+    const matchLine = `vs ${esc(p.pitcher_name || "TBD")}${p.pitcher_hand ? " (" + p.pitcher_hand + "HP)" : ""}` +
+      `<br>${gt ? `🕒 <span class="gtime">${gt}</span> · ` : ""}${esc(p.venue)}`;
     tr.innerHTML =
-      `<td class="num">${i + 1}</td>
-       <td><span class="pname">${esc(p.name)}</span>${corr}<br>
+      `<td class="num c-rank">${p._rank ?? i + 1}</td>
+       <td class="c-player"><span class="pname">${esc(p.name)}</span>${corr}<br>
            <span class="pmeta"><span class="dot ${p.lineup_confirmed ? "ok" : "tbd"}"></span>` +
            `${esc(p.team)} · bats ${p.batter_hand} · #${p.lineup_slot}</span></td>
-       <td><span class="pmeta">vs ${esc(p.pitcher_name || "TBD")}${p.pitcher_hand ? " (" + p.pitcher_hand + "HP)" : ""}<br>${esc(p.venue)}</span></td>
-       <td class="num prob">${pct(p.prob)}</td>
-       <td class="num">${o ? american(o.best_price_american) + `<br><span class="pmeta">${esc(o.best_book)}</span>` : "—"}</td>
-       <td class="num">${o ? pct(o.fair_prob) : "—"}</td>
-       <td class="num">${evCell}</td>
-       <td><span class="chev">▶</span></td>`;
+       <td class="c-match"><span class="pmeta">${matchLine}</span></td>
+       <td class="num prob c-prob" data-label="P(HR)">${pct(p.prob)}</td>
+       <td class="num c-odds" data-label="Best odds">${o ? american(o.best_price_american) + `<br><span class="pmeta">${esc(o.best_book)}</span>` : "—"}</td>
+       <td class="num c-fair" data-label="Market fair">${o ? pct(o.fair_prob) : "—"}</td>
+       <td class="num c-ev" data-label="EV / $1">${evCell}</td>
+       <td class="c-chev"><span class="chev">▶</span></td>`;
     const detail = document.createElement("tr");
     detail.className = "detail";
     detail.hidden = true;
