@@ -133,3 +133,42 @@ ODDS_MARKET = "batter_home_runs"   # Over/Under 0.5 HR props
 # When a book lists only the Over side, we can't de-vig the pair; assume this
 # overround on the missing side instead.
 ASSUMED_SINGLE_SIDE_OVERROUND = 1.06
+
+
+# ================================================================
+# PITCHER STRIKEOUT MODEL  (separate board; independent of the HR model)
+# ================================================================
+# We project a starter's strikeout total for tonight as
+#
+#     k_rate  = log5(pitcher_K%, opponent_lineup_K%, league_K%)
+#     lambda  = k_rate * expected_batters_faced
+#     P(Over line) = NegBinomial_survival(ceil(line); mean=lambda, var=phi*lambda)
+#
+# log5 is the standard sabermetric way to combine a pitcher rate and a batter
+# rate against the league baseline; the negative-binomial (rather than plain
+# Poisson) captures the extra game-to-game variance in K totals, which comes
+# largely from how deep the starter goes.
+
+LEAGUE_K_PA_FALLBACK = 0.222       # league strikeouts per plate appearance
+
+# Regression ballasts (sample of batters-faced / PA to trust a rate 50/50).
+K_PITCHER_BALLAST_PA = 350         # a starter's own K%
+K_BATTER_BALLAST_PA = 200          # an opposing hitter's K%
+K_PITCHER_FACTOR_CAP = (0.55, 1.9)
+K_OPP_FACTOR_CAP = (0.78, 1.28)
+
+# Expected batters faced = regressed (season TBF / start), toward a league
+# starter baseline, with a ballast in *starts*.
+K_TBF_LEAGUE_START = 23.0
+K_TBF_BALLAST = 4.0
+K_TBF_CAP = (14.0, 28.0)
+
+# Negative-binomial overdispersion: var = phi * mean (phi > 1 widens the tails
+# vs Poisson). ~1.2 matches observed start-level K variance.
+K_VARIANCE_INFLATION = 1.20
+K_LAMBDA_CAP = (2.0, 14.0)
+
+# Only project starters whose game's first pitch is at/after this ET hour.
+K_MIN_START_ET_HOUR = 17           # 5pm ET
+K_TOP_N = 20
+ODDS_K_MARKET = "pitcher_strikeouts"   # Over/Under total strikeouts

@@ -1,0 +1,92 @@
+{
+  "generated_at": "2026-07-18T20:53:37+00:00",
+  "date": "2026-07-18",
+  "model_version": "k-0.1.0",
+  "league_k_pa": 0.222,
+  "filter": "first pitch \u2265 5pm ET",
+  "n_starters_scored": 2,
+  "odds_available": true,
+  "top_n": 20,
+  "pitchers": [
+    {
+      "pitcher_id": 100,
+      "name": "Gerrit Cole",
+      "team": "New York Yankees",
+      "opponent": "Boston Red Sox",
+      "opponent_lineup_confirmed": false,
+      "game_pk": 900,
+      "game_time_utc": "2026-07-18T23:05:00Z",
+      "pitcher_hand": "R",
+      "expected_ks": 6.5,
+      "k_rate": 0.2637,
+      "factors": {
+        "league_k_pa": 0.222,
+        "pitcher": {
+          "regressed": 0.3007,
+          "ratio": 1.354,
+          "raw": 0.34,
+          "n": 700.0
+        },
+        "opponent": {
+          "opp_k_rate": 0.192,
+          "ratio": 0.865,
+          "n_batters": 2
+        },
+        "expected_tbf": {
+          "value": 24.67,
+          "raw": 25.0,
+          "starts": 20.0
+        }
+      },
+      "line": 7.5,
+      "prob_over": 0.3332,
+      "prob_under": 0.6668,
+      "odds": {
+        "line": 7.5,
+        "over_price_decimal": 1.95,
+        "over_price_american": -105,
+        "under_price_decimal": 1.87,
+        "under_price_american": -115,
+        "fair_over": 0.52,
+        "n_books": 5,
+        "ev_over": -0.3503,
+        "ev_under": 0.2469,
+        "best_side": "Under",
+        "best_ev": 0.2469,
+        "edge_over": -0.1868
+      }
+    },
+    {
+      "pitcher_id": 101,
+      "name": "Contact Guy",
+      "team": "Boston Red Sox",
+      "opponent": "New York Yankees",
+      "opponent_lineup_confirmed": true,
+      "game_pk": 900,
+      "game_time_utc": "2026-07-18T23:05:00Z",
+      "pitcher_hand": "L",
+      "expected_ks": 4.52,
+      "k_rate": 0.2117,
+      "factors": {
+        "league_k_pa": 0.222,
+        "pitcher": {
+          "regressed": 0.1765,
+          "ratio": 0.795,
+          "raw": 0.15,
+          "n": 600.0
+        },
+        "opponent": {
+          "opp_k_rate": 0.2634,
+          "ratio": 1.187,
+          "n_batters": 2
+        },
+        "expected_tbf": {
+          "value": 21.33,
+          "raw": 21.0,
+          "starts": 20.0
+        }
+      },
+      "odds": null
+    }
+  ]
+}

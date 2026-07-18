@@ -161,3 +161,83 @@ def fetch_game_lines(api_key: str, regions: str = "us") -> dict[str, dict]:
             }
     log.info("game lines fetched for %d teams", len(out))
     return out
+
+
+def fetch_strikeout_props(api_key: str, regions: str = "us") -> dict[str, dict]:
+    """Map normalized pitcher name -> strikeout Over/Under summary.
+
+    Unlike HR props (a fixed 0.5 line), strikeout props carry a real total
+    (e.g. 6.5) that can differ by book.  Per pitcher we pick the **modal line**
+    (the total the most books agree on), then within that line take the best
+    Over price and best Under price available, and the median de-vigged
+    P(Over) across books:
+
+        fair_over = (1/d_over) / (1/d_over + 1/d_under)
+    """
+    try:
+        events = requests.get(
+            f"{BASE}/sports/{config.ODDS_SPORT_KEY}/events",
+            params={"apiKey": api_key}, timeout=30,
+        )
+        events.raise_for_status()
+        events = events.json()
+    except Exception:
+        log.warning("odds API events fetch failed (strikeouts)", exc_info=True)
+        return {}
+
+    # per pitcher -> per line -> list of (over_price, under_price)
+    quotes: dict[str, dict[float, list[tuple[float, float | None]]]] = {}
+    for ev in events:
+        try:
+            r = requests.get(
+                f"{BASE}/sports/{config.ODDS_SPORT_KEY}/events/{ev['id']}/odds",
+                params={"apiKey": api_key, "regions": regions,
+                        "markets": config.ODDS_K_MARKET, "oddsFormat": "decimal"},
+                timeout=30,
+            )
+            r.raise_for_status()
+            data = r.json()
+        except Exception:
+            log.warning("strikeout odds fetch failed for event %s", ev.get("id"), exc_info=True)
+            continue
+        for book in data.get("bookmakers", []):
+            for market in book.get("markets", []):
+                if market.get("key") != config.ODDS_K_MARKET:
+                    continue
+                sides: dict[tuple[str, float], dict[str, float]] = {}
+                for o in market.get("outcomes", []):
+                    pt = o.get("point")
+                    if pt is None:
+                        continue
+                    key = (normalize_name(o.get("description", "")), float(pt))
+                    sides.setdefault(key, {})[o.get("name", "")] = o.get("price")
+                for (player, pt), s in sides.items():
+                    over, under = s.get("Over"), s.get("Under")
+                    if not over:
+                        continue
+                    quotes.setdefault(player, {}).setdefault(pt, []).append(
+                        (float(over), float(under) if under else None))
+
+    out: dict[str, dict] = {}
+    for player, by_line in quotes.items():
+        # modal line = the total quoted by the most books
+        line = max(by_line, key=lambda k: len(by_line[k]))
+        rows = by_line[line]
+        best_over = max(o for o, _ in rows)
+        unders = [u for _, u in rows if u]
+        best_under = max(unders) if unders else None
+        fair = []
+        for over, under in rows:
+            io = 1.0 / over
+            fair.append(io / (io + 1.0 / under) if under
+                        else io / config.ASSUMED_SINGLE_SIDE_OVERROUND)
+        out[player] = {
+            "line": line,
+            "over_price_decimal": best_over,
+            "over_price_american": decimal_to_american(best_over),
+            "under_price_decimal": best_under,
+            "under_price_american": decimal_to_american(best_under) if best_under else None,
+            "fair_over": statistics.median(fair),
+            "n_books": len(rows),
+        }
+    return out

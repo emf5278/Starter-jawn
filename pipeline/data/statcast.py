@@ -175,6 +175,56 @@ def league_rates_from_events(ev: pd.DataFrame) -> dict:
     }
 
 
+# ---------------------------------------------------------- strikeouts
+
+_K_EVENTS = ("strikeout", "strikeout_double_play")
+
+
+def _k_pa(ev: pd.DataFrame) -> pd.DataFrame:
+    """One row per PA with a strikeout flag."""
+    pa_end = ev["events"].notna() & (ev["events"] != "")
+    df = ev.loc[pa_end].copy()
+    df["k"] = df["events"].isin(_K_EVENTS).astype(int)
+    return df
+
+
+def league_k_rate_from_events(ev: pd.DataFrame) -> float:
+    df = _k_pa(ev)
+    return float(df["k"].sum() / max(1, len(df)))
+
+
+def batter_k_from_events(ev: pd.DataFrame) -> pd.DataFrame:
+    """Per-batter strikeout rate (K per PA) + sample."""
+    df = _k_pa(ev)
+    g = df.groupby("batter").agg(pa=("k", "size"), k=("k", "sum"))
+    g["k_pa"] = g["k"] / g["pa"]
+    return g
+
+
+def pitcher_k_stats_from_events(ev: pd.DataFrame) -> pd.DataFrame:
+    """Per-pitcher K%, plus batters-faced-per-start for starters.
+
+    A game's starter is the pitcher of that half-inning's first PA (same
+    detection used for bullpen splits); TBF/start uses only the games a pitcher
+    started, so relief cameos don't drag the workload estimate down.
+    """
+    df = _k_pa(ev)
+    g = df.groupby("pitcher").agg(pa=("k", "size"), k=("k", "sum"))
+    g["k_pa"] = g["k"] / g["pa"]
+
+    starters = df.loc[
+        df.groupby(["game_pk", "inning_topbot"])["at_bat_number"].idxmin(),
+        ["game_pk", "inning_topbot", "pitcher"],
+    ].rename(columns={"pitcher": "starter"})
+    df = df.merge(starters, on=["game_pk", "inning_topbot"], how="left")
+    started = df[df["pitcher"] == df["starter"]]
+    st = started.groupby("pitcher").agg(
+        starter_pa=("k", "size"), starts=("game_pk", "nunique"))
+    g = g.join(st)
+    g["tbf_per_start"] = g["starter_pa"] / g["starts"]
+    return g
+
+
 def pitcher_overall_stats(season: int) -> pd.DataFrame:
     """FanGraphs fallback (no handedness split): HR/FB and FB% per pitcher."""
     from pybaseball import pitching_stats, playerid_reverse_lookup
