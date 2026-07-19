@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MLB Moneyline Model</title>
+<script src="vendor/chart.umd.js"></script>
+<style>
+  :root {
+    --page:#f9f9f7; --surface:#fcfcfb; --ink:#0b0b0b; --ink-2:#52514e; --ink-muted:#898781;
+    --grid:#e1e0d9; --axisln:#c3c2b7; --border:rgba(11,11,11,0.10);
+    --series-1:#1baf7a;  /* model win prob (aqua) */
+    --series-2:#2a78d6;  /* market fair marker */
+    --ev-good:#006300; --ev-bad:#d03b3b; --wash:rgba(11,11,11,0.04); --warn:#8a5a00;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --page:#0d0d0d; --surface:#1a1a19; --ink:#fff; --ink-2:#c3c2b7; --ink-muted:#898781;
+      --grid:#2c2c2a; --axisln:#383835; --border:rgba(255,255,255,0.10);
+      --series-1:#199e70; --series-2:#3987e5; --ev-good:#0ca30c; --ev-bad:#d03b3b;
+      --wash:rgba(255,255,255,0.05); --warn:#eda100; }
+  }
+  * { box-sizing:border-box; } [hidden]{display:none!important;}
+  html,body{overflow-x:hidden;}
+  body{margin:0;background:var(--page);color:var(--ink);font:15px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;}
+  .wrap{max-width:980px;margin:0 auto;padding:20px 16px 64px;}
+  #chartwrap{max-width:100%;} #chart{max-width:100%;}
+  nav.tabs{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap;}
+  nav.tabs a{text-decoration:none;font-size:13px;font-weight:600;color:var(--ink-2);padding:7px 14px;border:1px solid var(--border);border-radius:999px;background:var(--surface);}
+  nav.tabs a[aria-current="page"]{background:var(--series-1);color:#fff;border-color:transparent;}
+  header h1{font-size:22px;margin:0 0 4px;} header .sub{color:var(--ink-2);font-size:13px;}
+  .caution{font-size:12.5px;color:var(--warn);margin-top:6px;}
+  .controls{display:flex;flex-wrap:wrap;gap:10px 12px;margin-top:20px;align-items:center;}
+  .controls .seglabel{font-size:12px;color:var(--ink-muted);font-weight:600;}
+  .seg{display:inline-flex;border:1px solid var(--border);border-radius:8px;overflow:hidden;background:var(--surface);}
+  .seg button{appearance:none;border:0;background:none;cursor:pointer;font:600 13px/1 system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink-2);padding:8px 14px;white-space:nowrap;}
+  .seg button + button{border-left:1px solid var(--border);}
+  .seg button[aria-pressed="true"]{background:var(--series-1);color:#fff;}
+  .seg button:not([aria-pressed="true"]):hover{background:var(--wash);}
+  .card{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:16px;margin-top:20px;}
+  .card h2{font-size:14px;margin:0 0 12px;color:var(--ink-2);font-weight:600;}
+  #chartwrap{position:relative;height:340px;}
+  .tablewrap{overflow-x:auto;}
+  table{border-collapse:collapse;width:100%;min-width:720px;}
+  th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--grid);}
+  th{font-size:12px;color:var(--ink-muted);font-weight:600;white-space:nowrap;}
+  td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;}
+  tr.prow{cursor:pointer;} tr.prow:hover{background:var(--wash);}
+  .pname{font-weight:600;} .pmeta{font-size:12px;color:var(--ink-2);}
+  .gtime{font-weight:600;color:var(--ink-2);font-variant-numeric:tabular-nums;}
+  .big{font-weight:600;}
+  .ev-pos{color:var(--ev-good);font-weight:600;} .ev-neg{color:var(--ev-bad);font-weight:600;} .ev-na{color:var(--ink-muted);}
+  .sidechip{display:inline-block;font-size:11px;font-weight:700;padding:0 6px;border-radius:4px;margin-right:4px;background:rgba(27,175,122,.15);color:var(--series-1);}
+  .chev{color:var(--ink-muted);font-size:11px;transition:transform .15s;display:inline-block;}
+  tr.open .chev{transform:rotate(90deg);}
+  tr.detail > td{background:var(--wash);padding:14px 16px 18px;}
+  .plain{font-size:13.5px;line-height:1.55;color:var(--ink-2);max-width:78ch;margin:0 0 16px;padding-bottom:12px;border-bottom:1px solid var(--grid);}
+  .plain b{color:var(--ink);} .plain .flag{color:var(--warn);}
+  .kv{font-size:12.5px;color:var(--ink-2);} .kv dt{float:left;clear:left;width:170px;color:var(--ink-muted);} .kv dd{margin:0 0 3px 180px;font-variant-numeric:tabular-nums;}
+  .note{font-size:12px;color:var(--ink-muted);margin-top:16px;}
+  #status{color:var(--ink-2);padding:24px 0;}
+  @media (max-width:620px){
+    .tablewrap{overflow-x:visible;}
+    #tbl,#tbl tbody,#tbl tr,#tbl td{display:block;} #tbl{min-width:0;} #tbl thead{display:none;}
+    tr.prow{position:relative;border:1px solid var(--border);border-radius:10px;margin:0 0 10px;padding:12px 34px 8px 12px;}
+    tr.prow > td{border:0;padding:2px 0;text-align:left;}
+    td.c-chev{position:absolute;top:11px;right:12px;padding:0;}
+    #tbl td.c-model,#tbl td.c-market,#tbl td.c-prices,#tbl td.c-bet{
+      display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:6px 0;text-align:right;border-top:1px solid var(--grid);}
+    td.c-model::before,td.c-market::before,td.c-prices::before,td.c-bet::before{
+      content:attr(data-label);text-align:left;white-space:nowrap;font-size:12px;font-weight:600;color:var(--ink-muted);}
+    .plain{max-width:none;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav class="tabs">
+    <a href="index.html">Home Runs</a>
+    <a href="strikeouts.html">Pitcher Strikeouts</a>
+    <a href="moneylines.html" aria-current="page">Moneylines</a>
+    <a href="totals.html">Totals</a>
+  </nav>
+  <header>
+    <h1>MLB Moneyline Model</h1>
+    <div class="sub" id="meta">Loading…</div>
+    <div class="caution">⚠ Moneylines are the sharpest MLB market. This board shows where the model and Vegas
+      disagree — large edges usually mean the model is missing news (injuries, lineups, bullpen state), not free money.</div>
+  </header>
+
+  <div class="controls" id="controls" hidden>
+    <span class="seglabel">Sort:</span>
+    <div class="seg" id="sortSeg">
+      <button id="sortTime" aria-pressed="true">🕒 Game time</button>
+      <button id="sortEdge" aria-pressed="false">Model−market gap</button>
+    </div>
+  </div>
+
+  <div class="card" id="chartCard" hidden>
+    <h2 id="chartTitle">Model home win probability vs. market</h2>
+    <div id="chartwrap"><canvas id="chart" role="img"
+      aria-label="Model home team win probability per game with the de-vigged market probability shown as a dot"></canvas></div>
+  </div>
+
+  <div class="card">
+    <h2>Games — click a row for the “why”</h2>
+    <div id="status">Loading gamelines.json…</div>
+    <div class="tablewrap" hidden id="tablewrap">
+      <table id="tbl">
+        <thead><tr>
+          <th>Game &amp; first pitch</th>
+          <th class="num">Model</th><th class="num">Market fair</th>
+          <th class="num">Best prices</th><th class="num">Lean</th><th></th>
+        </tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <div class="note">Model/market columns show the HOME team's win probability. "Lean" is the higher-EV side at the
+      best listed price. Estimates only — not betting advice.</div>
+  </div>
+</div>
+
+<script>
+"use strict";
+const css=n=>getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const pct=(x,d=1)=>(100*x).toFixed(d)+"%";
+const american=a=>a>0?"+"+a:String(a);
+let DOC=null, SORT="time";
+const localTime=iso=>{if(!iso)return"";const d=new Date(iso);return isNaN(d)?"":d.toLocaleTimeString([],{hour:"numeric",minute:"2-digit"});};
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const short=t=>({"Arizona Diamondbacks":"ARI","Atlanta Braves":"ATL","Baltimore Orioles":"BAL","Boston Red Sox":"BOS","Chicago Cubs":"CHC","Chicago White Sox":"CWS","Cincinnati Reds":"CIN","Cleveland Guardians":"CLE","Colorado Rockies":"COL","Detroit Tigers":"DET","Houston Astros":"HOU","Kansas City Royals":"KC","Los Angeles Angels":"LAA","Los Angeles Dodgers":"LAD","Miami Marlins":"MIA","Milwaukee Brewers":"MIL","Minnesota Twins":"MIN","New York Mets":"NYM","New York Yankees":"NYY","Athletics":"ATH","Philadelphia Phillies":"PHI","Pittsburgh Pirates":"PIT","San Diego Padres":"SD","San Francisco Giants":"SF","Seattle Mariners":"SEA","St. Louis Cardinals":"STL","Tampa Bay Rays":"TB","Texas Rangers":"TEX","Toronto Blue Jays":"TOR","Washington Nationals":"WSH"}[t]||t);
+
+async function load(){
+  let doc;
+  try{const r=await fetch("gamelines.json",{cache:"no-store"});if(!r.ok)throw new Error(r.status);doc=await r.json();}
+  catch(e){document.getElementById("status").textContent="Could not load gamelines.json ("+e+"). Run the game-lines pipeline first.";return;}
+  DOC=doc;
+  const when=new Date(doc.generated_at);
+  document.getElementById("meta").textContent=
+    `${doc.date} · generated ${when.toLocaleString()} · model ${doc.model_version} · league RPG ${doc.league_rpg}`+
+    (doc.odds_available?"":" · odds unavailable this run");
+  if(!doc.games||doc.games.length===0){
+    document.getElementById("status").hidden=false;
+    document.getElementById("status").textContent=`No MLB games for ${doc.date}.`;return;}
+  document.getElementById("controls").hidden=false;
+  document.getElementById("sortTime").onclick=()=>setSort("time");
+  document.getElementById("sortEdge").onclick=()=>setSort("edge");
+  document.getElementById("status").hidden=true;
+  document.getElementById("tablewrap").hidden=false;
+  setSort(SORT);
+  if(location.hash.includes("expand"))document.querySelector("#tbl tbody tr")?.click();
+}
+function setSort(s){SORT=s;
+  document.getElementById("sortTime").setAttribute("aria-pressed",s==="time");
+  document.getElementById("sortEdge").setAttribute("aria-pressed",s==="edge");
+  let list=[...DOC.games];
+  if(s==="edge")list.sort((a,b)=>Math.abs((b.moneyline?.edge_home)??0)-Math.abs((a.moneyline?.edge_home)??0));
+  else list.sort((a,b)=>(a.game_time_utc||"").localeCompare(b.game_time_utc||""));
+  renderChart(list); renderTable(list);
+}
+function leanCell(g){
+  const ml=g.moneyline; if(!ml)return`<span class="ev-na">—</span>`;
+  const team=ml.best_side==="home"?short(g.home.team):short(g.away.team);
+  const price=ml.best_side==="home"?ml.home_price_american:ml.away_price_american;
+  const cls=ml.best_ev>=0?"ev-pos":"ev-neg";
+  return`<span class="sidechip">${esc(team)}</span>${american(price)} <span class="${cls}">${ml.best_ev>=0?"+":"−"}${Math.abs(100*ml.best_ev).toFixed(1)}%</span>`;
+}
+function renderTable(list){
+  const tb=document.querySelector("#tbl tbody");tb.innerHTML="";
+  list.forEach(g=>{
+    const ml=g.moneyline, gt=localTime(g.game_time_utc);
+    const tr=document.createElement("tr");tr.className="prow";
+    tr.innerHTML=
+      `<td class="c-game"><span class="pname">${esc(short(g.away.team))} @ ${esc(short(g.home.team))}</span><br>
+        <span class="pmeta">${esc(g.away.pitcher||"TBD")} vs ${esc(g.home.pitcher||"TBD")}<br>
+        ${gt?`🕒 <span class="gtime">${gt}</span> · `:""}${esc(g.venue||"")}</span></td>
+       <td class="num big c-model" data-label="Model (home)">${pct(g.home.p_win)}</td>
+       <td class="num c-market" data-label="Market fair (home)">${ml?pct(ml.fair_home):"—"}</td>
+       <td class="num c-prices" data-label="Best prices">${ml?`${esc(short(g.home.team))} ${american(ml.home_price_american)}<br><span class="pmeta">${esc(short(g.away.team))} ${american(ml.away_price_american)}</span>`:"—"}</td>
+       <td class="num c-bet" data-label="Lean">${leanCell(g)}</td>
+       <td class="c-chev"><span class="chev">▶</span></td>`;
+    const det=document.createElement("tr");det.className="detail";det.hidden=true;
+    det.innerHTML=`<td colspan="6">${whyHtml(g)}</td>`;
+    tr.addEventListener("click",()=>{det.hidden=!det.hidden;tr.classList.toggle("open",!det.hidden);});
+    tb.append(tr,det);
+  });
+}
+function plainEnglish(g){
+  const s=[], f=g.factors, ml=g.moneyline;
+  const fav=g.home.p_win>=0.5?g.home:g.away, dog=g.home.p_win>=0.5?g.away:g.home;
+  s.push(`The model makes <b>${esc(fav.team)}</b> a ${pct(fav.p_win,0)} favorite over ${esc(dog.team)}, projecting the score around ${fav.lambda.toFixed(1)}–${dog.lambda.toFixed(1)}.`);
+  const bits=[];
+  const offH=f.offense_home.ratio,offA=f.offense_away.ratio;
+  if(Math.abs(offH-offA)>=0.07)bits.push(`${offH>offA?esc(g.home.team):esc(g.away.team)} has been the clearly better offense`);
+  const stH=f.starter_vs_away.ratio,stA=f.starter_vs_home.ratio; // starter_vs_away = HOME's starter
+  if(Math.abs(stH-stA)>=0.12)bits.push(`${stH<stA?esc(g.home.pitcher||"the home starter"):esc(g.away.pitcher||"the away starter")} is the stronger starting pitcher`);
+  if(bits.length)s.push(bits.join(", and ")+".");
+  s.push(`Home field is worth roughly 3% in win probability.`);
+  if(ml){
+    const gap=100*(g.home.p_win-ml.fair_home);
+    s.push(`The de-vigged market puts the home side at ${pct(ml.fair_home,0)} — the model is ${Math.abs(gap).toFixed(1)} points ${gap>=0?"higher":"lower"}.`);
+    if(Math.abs(gap)>=5)s.push(`<span class="flag">A gap this large in the sharpest MLB market usually means the model is missing something (injury, lineup, bullpen availability) — verify the news before treating it as value.</span>`);
+    else if(ml.best_ev>0)s.push(`At best price that's a small positive-EV lean on the ${ml.best_side==="home"?esc(g.home.team):esc(g.away.team)} — inside the noise band for this market, so treat it as a lean, not a lock.`);
+    else s.push(`Neither side is priced attractively — the model and market basically agree.`);
+  }
+  return`<p class="plain">${s.join(" ")}</p>`;
+}
+function whyHtml(g){
+  const f=g.factors, ml=g.moneyline;
+  return plainEnglish(g)+`<dl class="kv">
+    <dt>Offense (${esc(short(g.home.team))} / ${esc(short(g.away.team))})</dt><dd>×${f.offense_home.ratio} / ×${f.offense_away.ratio}</dd>
+    <dt>Starters (home / away)</dt><dd>×${f.starter_vs_away.ratio} / ×${f.starter_vs_home.ratio} (runs-allowed vs lg)</dd>
+    <dt>Bullpens (home / away)</dt><dd>×${f.bullpen_vs_away.ratio} / ×${f.bullpen_vs_home.ratio}</dd>
+    <dt>Park (${esc(f.park.name||"")})</dt><dd>×${f.park.ratio} runs environment</dd>
+    <dt>Expected runs</dt><dd>${g.home.lambda} — ${g.away.lambda} (total ${g.expected_total})</dd>
+    ${ml?`<dt>Model vs market (home)</dt><dd>${pct(g.home.p_win)} vs ${pct(ml.fair_home)} · books: ${ml.n_books}</dd>
+    <dt>EV at best price</dt><dd>home ${(100*ml.ev_home).toFixed(1)}% · away ${(100*ml.ev_away).toFixed(1)}%</dd>`:""}
+  </dl>`;
+}
+let CHART=null;
+function renderChart(list){
+  if(typeof Chart==="undefined")return;
+  document.getElementById("chartCard").hidden=false;
+  document.getElementById("chartwrap").style.height=(list.length*26+110)+"px";
+  if(CHART){CHART.destroy();CHART=null;}
+  const labels=list.map(g=>`${short(g.away.team)} @ ${short(g.home.team)}`);
+  const model=list.map(g=>+(100*g.home.p_win).toFixed(1));
+  const market=list.map(g=>g.moneyline?+(100*g.moneyline.fair_home).toFixed(1):null);
+  const ink2=css("--ink-2"),muted=css("--ink-muted"),grid=css("--grid");
+  CHART=new Chart(document.getElementById("chart"),{
+    data:{labels,datasets:[
+      {type:"bar",label:"Model P(home wins)",data:model,order:2,backgroundColor:css("--series-1"),barThickness:13,borderRadius:4,borderSkipped:"start"},
+      {type:"line",label:"Market fair (de-vigged)",data:market,order:1,showLine:false,pointRadius:5,pointHoverRadius:7,
+       pointBackgroundColor:css("--series-2"),pointBorderColor:css("--surface"),pointBorderWidth:2}]},
+    options:{indexAxis:"y",maintainAspectRatio:false,responsive:true,
+      scales:{x:{min:0,max:100,title:{display:true,text:"home win probability (%)",color:muted},grid:{color:grid},ticks:{color:muted,callback:v=>v+"%"}},
+              y:{grid:{display:false},ticks:{color:ink2}}},
+      plugins:{legend:{labels:{color:ink2,usePointStyle:true,boxWidth:9,boxHeight:9,sort:(a,b)=>a.datasetIndex-b.datasetIndex}},
+        tooltip:{callbacks:{label:c=>` ${c.dataset.label}: ${c.parsed.x}%`}}}}
+  });
+}
+load();
+</script>
+</body>
+</html>

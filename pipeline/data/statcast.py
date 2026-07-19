@@ -273,3 +273,69 @@ def league_baselines(batters: pd.DataFrame, season: int) -> dict:
     except Exception:
         log.warning("team_batting failed; using fallback league HR/PA", exc_info=True)
     return base
+
+
+# ---------------------------------------------------------- game lines
+
+def game_scores_from_events(ev: pd.DataFrame) -> pd.DataFrame:
+    """One row per game: home/away team and final(-ish) runs, from the max
+    post-score columns.  Basis for team offense, park runs factors, and the
+    league runs-per-game baseline."""
+    return ev.groupby("game_pk").agg(
+        home_team=("home_team", "first"), away_team=("away_team", "first"),
+        home_runs=("post_home_score", "max"), away_runs=("post_away_score", "max"),
+    )
+
+
+def team_offense_from_events(ev: pd.DataFrame) -> pd.DataFrame:
+    """Per team (Savant abbrev): games played and runs scored per game."""
+    g = game_scores_from_events(ev)
+    home = g[["home_team", "home_runs"]].rename(columns={"home_team": "team", "home_runs": "runs"})
+    away = g[["away_team", "away_runs"]].rename(columns={"away_team": "team", "away_runs": "runs"})
+    both = pd.concat([home, away])
+    out = both.groupby("team").agg(games=("runs", "size"), rpg=("runs", "mean"))
+    return out
+
+
+def park_runs_from_events(ev: pd.DataFrame) -> pd.DataFrame:
+    """Per home park (Savant abbrev): games and average TOTAL runs per game."""
+    g = game_scores_from_events(ev)
+    g["total"] = g["home_runs"] + g["away_runs"]
+    return g.groupby("home_team").agg(games=("total", "size"), total_rpg=("total", "mean"))
+
+
+def league_rpg_from_events(ev: pd.DataFrame) -> float:
+    """League runs per TEAM per game."""
+    g = game_scores_from_events(ev)
+    return float((g["home_runs"].sum() + g["away_runs"].sum()) / (2 * len(g)))
+
+
+def pitcher_fip_inputs_from_events(ev: pd.DataFrame) -> pd.DataFrame:
+    """Per pitcher: PA, K, BB(+HBP), HR — the FIP-style skill inputs."""
+    pa_end = ev["events"].notna() & (ev["events"] != "")
+    df = ev.loc[pa_end, ["pitcher", "events"]].copy()
+    df["k"] = df["events"].isin(_K_EVENTS).astype(int)
+    df["bb"] = df["events"].isin(["walk", "hit_by_pitch"]).astype(int)
+    df["hr"] = (df["events"] == "home_run").astype(int)
+    return df.groupby("pitcher").agg(pa=("k", "size"), k=("k", "sum"),
+                                     bb=("bb", "sum"), hr=("hr", "sum"))
+
+
+def bullpen_fip_by_team_from_events(ev: pd.DataFrame) -> pd.DataFrame:
+    """Per pitching team (Savant abbrev): relief-only PA, K, BB(+HBP), HR.
+    Starter = pitcher of each half-inning's first PA, as elsewhere."""
+    pa_end = ev["events"].notna() & (ev["events"] != "")
+    df = ev.loc[pa_end].copy()
+    df["pitch_abbrev"] = np.where(df["inning_topbot"] == "Top",
+                                  df["home_team"], df["away_team"])
+    starters = df.loc[
+        df.groupby(["game_pk", "inning_topbot"])["at_bat_number"].idxmin(),
+        ["game_pk", "inning_topbot", "pitcher"],
+    ].rename(columns={"pitcher": "starter"})
+    df = df.merge(starters, on=["game_pk", "inning_topbot"], how="left")
+    pen = df[df["pitcher"] != df["starter"]].copy()
+    pen["k"] = pen["events"].isin(_K_EVENTS).astype(int)
+    pen["bb"] = pen["events"].isin(["walk", "hit_by_pitch"]).astype(int)
+    pen["hr"] = (pen["events"] == "home_run").astype(int)
+    return pen.groupby("pitch_abbrev").agg(pa=("k", "size"), k=("k", "sum"),
+                                           bb=("bb", "sum"), hr=("hr", "sum"))

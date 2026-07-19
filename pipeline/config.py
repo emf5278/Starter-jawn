@@ -172,3 +172,58 @@ K_LAMBDA_CAP = (2.0, 14.0)
 K_MIN_START_ET_HOUR = 17           # 5pm ET
 K_TOP_N = 20
 ODDS_K_MARKET = "pitcher_strikeouts"   # Over/Under total strikeouts
+
+
+# ================================================================
+# GAME LINES MODEL (moneylines + totals)  — separate board
+# ================================================================
+# Expected runs per team:
+#
+#   lambda = league_RPG * offense * opp_pitching * park * home_boost
+#
+#   offense       = team runs/game vs league, regressed by games played
+#   opp_pitching  = starter_share * starter_factor + (1-share) * bullpen_factor
+#                   where each factor is a FIP-style index (K%, BB%+HBP%, HR%)
+#                   mapped linearly to a runs-allowed ratio
+#   park          = runs park factor computed from this season's games at the
+#                   venue, regressed (NOT the HR park factor)
+#   home_boost    = small home-field runs bump
+#
+# Each team's runs are modeled as a negative binomial (overdispersed Poisson);
+# the two distributions give P(win) by direct summation (ties -> extra
+# innings, allocated by relative strength) and P(total > line) by convolution.
+#
+# HONESTY NOTE: moneylines/totals are the most efficient MLB markets. This
+# model exists to show *where* it disagrees with Vegas and by how much — a
+# large edge here is more likely missing information (injury, lineup,
+# bullpen availability) than free money, and the UI says so.
+
+GL_LEAGUE_RPG_FALLBACK = 4.5       # runs per team per game
+GL_OFFENSE_BALLAST_G = 45          # games for 50/50 trust in team runs/game
+GL_OFFENSE_CAP = (0.75, 1.30)
+
+# FIP-style pitching index, per PA: fip_pa = (13*HR + 3*(BB+HBP) - 2*K) / PA.
+# Regressed toward league by PA, then mapped to a runs-allowed ratio:
+#   ratio = 1 + GL_FIP_SLOPE * (fip_pa - league_fip_pa)
+# Calibration: an ace (K34%, BB6%, HR2.2%) -> ~0.6; a replacement arm
+# (K15%, BB11%, HR4%) -> ~1.27.
+GL_FIP_SLOPE = 0.9
+GL_STARTER_BALLAST_PA = 400
+GL_BULLPEN_BALLAST_PA = 700
+GL_STARTER_FACTOR_CAP = (0.55, 1.55)
+GL_BULLPEN_FACTOR_CAP = (0.75, 1.30)
+GL_STARTER_SHARE = 0.58            # starters throw ~58% of a game
+
+GL_PARK_BALLAST_G = 30             # games at the venue for 50/50 trust
+GL_PARK_CAP = (0.80, 1.30)
+# Home-field advantage, split across both lambdas and calibrated so two equal
+# teams give the home side ~53% (the long-run MLB HFA).
+GL_HOME_BOOST = 1.033
+GL_AWAY_MALUS = 0.968
+
+# Runs are overdispersed: var(team runs) ~ 1.9 * mean at the game level.
+GL_VARIANCE_INFLATION = 1.9
+GL_LAMBDA_CAP = (2.2, 8.5)
+GL_MAX_RUNS = 30                   # pmf truncation per team
+
+ODDS_GL_MARKETS = "h2h,totals"     # one cheap request covers every game

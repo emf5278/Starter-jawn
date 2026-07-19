@@ -1,0 +1,114 @@
+{
+  "generated_at": "2026-07-18T21:55:29+00:00",
+  "date": "2026-07-18",
+  "model_version": "gl-0.1.0",
+  "league_rpg": 4.55,
+  "n_games": 1,
+  "odds_available": true,
+  "games": [
+    {
+      "game_pk": 111,
+      "game_time_utc": "2026-07-18T23:05:00Z",
+      "venue": "Yankee Stadium",
+      "home": {
+        "team": "New York Yankees",
+        "pitcher": "Ace Arm",
+        "lambda": 6.35,
+        "p_win": 0.7299
+      },
+      "away": {
+        "team": "Boston Red Sox",
+        "pitcher": "Scrub Arm",
+        "lambda": 3.86,
+        "p_win": 0.2701
+      },
+      "expected_total": 10.22,
+      "factors": {
+        "league_rpg": 4.55,
+        "offense_home": {
+          "ratio": 1.112,
+          "rpg": 5.3,
+          "games": 95.0
+        },
+        "offense_away": {
+          "ratio": 0.933,
+          "rpg": 4.1,
+          "games": 95.0
+        },
+        "starter_vs_home": {
+          "ratio": 1.225,
+          "fip_pa": 0.55,
+          "regressed": 0.35,
+          "pa": 500.0,
+          "k_pct": 0.15,
+          "bb_pct": 0.11,
+          "hr_pct": 0.04
+        },
+        "starter_vs_away": {
+          "ratio": 0.816,
+          "fip_pa": -0.2214,
+          "regressed": -0.1045,
+          "pa": 700.0,
+          "k_pct": 0.34,
+          "bb_pct": 0.06,
+          "hr_pct": 0.021
+        },
+        "bullpen_vs_home": {
+          "ratio": 1.108,
+          "fip_pa": 0.276,
+          "regressed": 0.22,
+          "pa": 1500.0,
+          "k_pct": 0.22,
+          "bb_pct": 0.1,
+          "hr_pct": 0.032
+        },
+        "bullpen_vs_away": {
+          "ratio": 1.037,
+          "fip_pa": 0.16,
+          "regressed": 0.1409,
+          "pa": 1500.0,
+          "k_pct": 0.233,
+          "bb_pct": 0.093,
+          "hr_pct": 0.027
+        },
+        "park": {
+          "ratio": 1.034,
+          "total_rpg": 9.6,
+          "games": 48.0,
+          "name": "Yankee Stadium"
+        },
+        "home_boost": 1.033
+      },
+      "moneyline": {
+        "home_price_decimal": 1.55,
+        "home_price_american": -182,
+        "away_price_decimal": 2.55,
+        "away_price_american": 155,
+        "fair_home": 0.62,
+        "n_books": 3,
+        "ev_home": 0.1313,
+        "ev_away": -0.3112,
+        "best_side": "home",
+        "best_ev": 0.1313,
+        "edge_home": 0.1099
+      },
+      "total": {
+        "line": 9.0,
+        "over_price_decimal": 1.91,
+        "over_price_american": -110,
+        "under_price_decimal": 1.91,
+        "under_price_american": -110,
+        "fair_over": 0.5,
+        "n_books": 3,
+        "p_over": 0.5231,
+        "p_under": 0.3827,
+        "p_push": 0.0942,
+        "ev_over": 0.0933,
+        "ev_under": -0.1748,
+        "best_side": "Over",
+        "best_ev": 0.0933,
+        "edge_over": 0.0775
+      }
+    }
+  ]
+}

@@ -241,3 +241,76 @@ def fetch_strikeout_props(api_key: str, regions: str = "us") -> dict[str, dict]:
             "n_books": len(rows),
         }
     return out
+
+
+def fetch_main_market_odds(api_key: str, regions: str = "us") -> list[dict]:
+    """Moneyline (h2h) + totals with PRICES for every game — one request.
+
+    Per game:
+      moneyline: best home/away decimal prices anywhere, and the median
+                 de-vigged P(home) across books (two-way multiplicative devig).
+      total:     modal line across books; best Over/Under prices at that line;
+                 median de-vigged P(Over).
+    """
+    try:
+        r = requests.get(
+            f"{BASE}/sports/{config.ODDS_SPORT_KEY}/odds",
+            params={"apiKey": api_key, "regions": regions,
+                    "markets": config.ODDS_GL_MARKETS, "oddsFormat": "decimal"},
+            timeout=30,
+        )
+        r.raise_for_status()
+        games = r.json()
+    except Exception:
+        log.warning("main-market odds fetch failed", exc_info=True)
+        return []
+
+    out: list[dict] = []
+    for g in games:
+        home, away = g.get("home_team"), g.get("away_team")
+        ml_home, ml_away, fair_home = [], [], []
+        tot: dict[float, list[tuple[float, float]]] = {}
+        for book in g.get("bookmakers", []):
+            for market in book.get("markets", []):
+                if market["key"] == "h2h":
+                    px = {o["name"]: o.get("price") for o in market.get("outcomes", [])}
+                    h, a = px.get(home), px.get(away)
+                    if h and a:
+                        ml_home.append(float(h)); ml_away.append(float(a))
+                        ih, ia = 1 / float(h), 1 / float(a)
+                        fair_home.append(ih / (ih + ia))
+                elif market["key"] == "totals":
+                    sides = {}
+                    for o in market.get("outcomes", []):
+                        if o.get("point") is not None and o.get("price"):
+                            sides.setdefault(float(o["point"]), {})[o["name"]] = float(o["price"])
+                    for pt, s in sides.items():
+                        if "Over" in s and "Under" in s:
+                            tot.setdefault(pt, []).append((s["Over"], s["Under"]))
+        entry = {
+            "home_team": home, "away_team": away,
+            "home_norm": normalize_name(home), "away_norm": normalize_name(away),
+            "commence_time": g.get("commence_time"),
+            "moneyline": None, "total": None,
+        }
+        if ml_home:
+            bh, ba = max(ml_home), max(ml_away)
+            entry["moneyline"] = {
+                "home_price_decimal": bh, "home_price_american": decimal_to_american(bh),
+                "away_price_decimal": ba, "away_price_american": decimal_to_american(ba),
+                "fair_home": statistics.median(fair_home), "n_books": len(ml_home),
+            }
+        if tot:
+            line = max(tot, key=lambda k: len(tot[k]))
+            rows = tot[line]
+            bo, bu = max(o for o, _ in rows), max(u for _, u in rows)
+            fair = [ (1/o) / ((1/o) + (1/u)) for o, u in rows ]
+            entry["total"] = {
+                "line": line,
+                "over_price_decimal": bo, "over_price_american": decimal_to_american(bo),
+                "under_price_decimal": bu, "under_price_american": decimal_to_american(bu),
+                "fair_over": statistics.median(fair), "n_books": len(rows),
+            }
+        out.append(entry)
+    log.info("main-market odds for %d games", len(out))
+    return out
