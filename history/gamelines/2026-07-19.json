@@ -1,0 +1,1664 @@
+{
+  "generated_at": "2026-07-19T14:04:41+00:00",
+  "date": "2026-07-19",
+  "model_version": "gl-0.1.0",
+  "league_rpg": 4.52,
+  "n_games": 16,
+  "odds_available": true,
+  "games": [
+    {
+      "game_pk": 822786,
+      "game_time_utc": "2026-07-19T16:15:00Z",
+      "venue": "Rogers Centre",
+      "home": {
+        "team": "Toronto Blue Jays",
+        "pitcher": "Trey Yesavage",
+        "lambda": 4.22,
+        "p_win": 0.4779
+      },
+      "away": {
+        "team": "Chicago White Sox",
+        "pitcher": "Sean Burke",
+        "lambda": 4.43,
+        "p_win": 0.5221
+      },
+      "expected_total": 8.65,
+      "factors": {
+        "league_rpg": 4.52,
+        "offense_home": {
+          "ratio": 0.929,
+          "rpg": 4.05,
+          "games": 98.0
+        },
+        "offense_away": {
+          "ratio": 1.043,
+          "rpg": 4.8,
+          "games": 97.0
+        },
+        "starter_vs_home": {
+          "ratio": 0.944,
+          "fip_pa": 0.1344,
+          "regressed": 0.1906,
+          "pa": 439.0,
+          "k_pct": 0.262,
+          "bb_pct": 0.091,
+          "hr_pct": 0.03
+        },
+        "starter_vs_away": {
+          "ratio": 0.997,
+          "fip_pa": 0.2444,
+          "regressed": 0.2489,
+          "pa": 311.0,
+          "k_pct": 0.222,
+          "bb_pct": 0.132,
+          "hr_pct": 0.023
+        },
+        "bullpen_vs_home": {
+          "ratio": 1.058,
+          "fip_pa": 0.3179,
+          "regressed": 0.3171,
+          "pa": 55308.0,
+          "k_pct": 0.209,
+          "bb_pct": 0.121,
+          "hr_pct": 0.029
+        },
+        "bullpen_vs_away": {
+          "ratio": 0.978,
+          "fip_pa": 0.228,
+          "regressed": 0.2283,
+          "pa": 57115.0,
+          "k_pct": 0.233,
+          "bb_pct": 0.102,
+          "hr_pct": 0.03
+        },
+        "park": {
+          "ratio": 0.981,
+          "total_rpg": 8.76,
+          "games": 51.0,
+          "name": "Rogers Centre"
+        },
+        "home_boost": 1.033
+      },
+      "moneyline": {
+        "home_price_decimal": 2.02,
+        "home_price_american": 102,
+        "away_price_decimal": 1.9,
+        "away_price_american": -111,
+        "fair_home": 0.4857,
+        "n_books": 9,
+        "ev_home": -0.0346,
+        "ev_away": -0.008,
+        "best_side": "away",
+        "best_ev": -0.008,
+        "edge_home": -0.0078
+      },
+      "total": {
+        "line": 8.0,
+        "over_price_decimal": 1.89,
+        "over_price_american": -112,
+        "under_price_decimal": 1.97,
+        "under_price_american": -103,
+        "fair_over": 0.5104,
+        "n_books": 7,
+        "p_over": 0.4679,
+        "p_under": 0.4307,
+        "p_push": 0.1014,
+        "ev_over": -0.0143,
+        "ev_under": -0.0501,
+        "best_side": "Over",
+        "best_ev": -0.0143,
+        "edge_over": 0.0103
+      }
+    },
+    {
+      "game_pk": 823523,
+      "game_time_utc": "2026-07-19T16:35:00Z",
+      "venue": "Yankee Stadium",
+      "home": {
+        "team": "New York Yankees",
+        "pitcher": "Cam Schlittler",
+        "lambda": 4.51,
+        "p_win": 0.5183
+      },
+      "away": {
+        "team": "Los Angeles Dodgers",
+        "pitcher": "Yoshinobu Yamamoto",
+        "lambda": 4.34,
+        "p_win": 0.4817
+      },
+      "expected_total": 8.85,
+      "factors": {
+        "league_rpg": 4.52,
+        "offense_home": {
+          "ratio": 1.039,
+          "rpg": 4.77,
+          "games": 97.0
+        },
+        "offense_away": {
+          "ratio": 1.101,
+          "rpg": 5.18,
+          "games": 98.0
+        },
+        "starter_vs_home": {
+          "ratio": 0.91,
+          "fip_pa": 0.0588,
+          "regressed": 0.1527,
+          "pa": 425.0,
+          "k_pct": 0.249,
+          "bb_pct": 0.064,
+          "hr_pct": 0.028
+        },
+        "starter_vs_away": {
+          "ratio": 0.842,
+          "fip_pa": -0.0725,
+          "regressed": 0.077,
+          "pa": 469.0,
+          "k_pct": 0.292,
+          "bb_pct": 0.06,
+          "hr_pct": 0.026
+        },
+        "bullpen_vs_home": {
+          "ratio": 0.924,
+          "fip_pa": 0.167,
+          "regressed": 0.1683,
+          "pa": 45171.0,
+          "k_pct": 0.247,
+          "bb_pct": 0.098,
+          "hr_pct": 0.028
+        },
+        "bullpen_vs_away": {
+          "ratio": 0.949,
+          "fip_pa": 0.1953,
+          "regressed": 0.1961,
+          "pa": 46723.0,
+          "k_pct": 0.227,
+          "bb_pct": 0.092,
+          "hr_pct": 0.029
+        },
+        "park": {
+          "ratio": 1.016,
+          "total_rpg": 9.27,
+          "games": 44.0,
+          "name": "Yankee Stadium"
+        },
+        "home_boost": 1.033
+      },
+      "moneyline": {
+        "home_price_decimal": 2.03,
+        "home_price_american": 103,
+        "away_price_decimal": 1.89,
+        "away_price_american": -112,
+        "fair_home": 0.4778,
+        "n_books": 5,
+        "ev_home": 0.0521,
+        "ev_away": -0.0896,
+        "best_side": "home",
+        "best_ev": 0.0521,
+        "edge_home": 0.0405
+      },
+      "total": {
+        "line": 8.5,
+        "over_price_decimal": 1.87,
+        "over_price_american": -115,
+        "under_price_decimal": 2.0,
+        "under_price_american": 100,
+        "fair_over": 0.517,
+        "n_books": 5,
+        "p_over": 0.4886,
+        "p_under": 0.5114,
+        "p_push": 0.0,
+        "ev_over": -0.0863,
+        "ev_under": 0.0228,
+        "best_side": "Under",
+        "best_ev": 0.0228,
+        "edge_over": -0.0284
+      }
+    },
+    {
+      "game_pk": 824739,
+      "game_time_utc": "2026-07-19T17:35:00Z",
+      "venue": "Fenway Park",
+      "home": {
+        "team": "Boston Red Sox",
+        "pitcher": "Sonny Gray",
+        "lambda": 3.89,
+        "p_win": 0.5204
+      },
+      "away": {
+        "team": "Tampa Bay Rays",
+        "pitcher": "Shane McClanahan",
+        "lambda": 3.71,
+        "p_win": 0.4796
+      },
+      "expected_total": 7.6,
+      "factors": {
+        "league_rpg": 4.52,
+        "offense_home": {
+          "ratio": 0.951,
+          "rpg": 4.2,
+          "games": 97.0
+        },
+        "offense_away": {
+          "ratio": 0.993,
+          "rpg": 4.47,
+          "games": 97.0
+        },
+        "starter_vs_home": {
+          "ratio": 0.898,
+          "fip_pa": 0.0113,
+          "regressed": 0.1392,
+          "pa": 354.0,
+          "k_pct": 0.232,
+          "bb_pct": 0.085,
+          "hr_pct": 0.017
+        },
+        "starter_vs_away": {
+          "ratio": 0.936,
+          "fip_pa": 0.107,
+          "regressed": 0.1813,
+          "pa": 383.0,
+          "k_pct": 0.222,
+          "bb_pct": 0.07,
+          "hr_pct": 0.026
+        },
+        "bullpen_vs_home": {
+          "ratio": 1.034,
+          "fip_pa": 0.2905,
+          "regressed": 0.29,
+          "pa": 52413.0,
+          "k_pct": 0.217,
+          "bb_pct": 0.09,
+          "hr_pct": 0.035
+        },
+        "bullpen_vs_away": {
+          "ratio": 0.926,
+          "fip_pa": 0.1694,
+          "regressed": 0.1706,
+          "pa": 47330.0,
+          "k_pct": 0.229,
+          "bb_pct": 0.09,
+          "hr_pct": 0.028
+        },
+        "park": {
+          "ratio": 0.917,
+          "total_rpg": 7.81,
+          "games": 47.0,
+          "name": "Fenway Park"
+        },
+        "home_boost": 1.033
+      },
+      "moneyline": {
+        "home_price_decimal": 1.83,
+        "home_price_american": -120,
+        "away_price_decimal": 2.09,
+        "away_price_american": 109,
+        "fair_home": 0.5299,
+        "n_books": 9,
+        "ev_home": -0.0477,
+        "ev_away": 0.0024,
+        "best_side": "away",
+        "best_ev": 0.0024,
+        "edge_home": -0.0095
+      },
+      "total": {
+        "line": 8.0,
+        "over_price_decimal": 1.91,
+        "over_price_american": -110,
+        "under_price_decimal": 1.98,
+        "under_price_american": -102,
+        "fair_over": 0.5098,
+        "n_books": 8,
+        "p_over": 0.3619,
+        "p_under": 0.5391,
+        "p_push": 0.099,
+        "ev_over": -0.2098,
+        "ev_under": 0.1664,
+        "best_side": "Under",
+        "best_ev": 0.1664,
+        "edge_over": -0.1081
+      }
+    },
+    {
+      "game_pk": 823439,
+      "game_time_utc": "2026-07-19T17:35:00Z",
+      "venue": "Citizens Bank Park",
+      "home": {
+        "team": "Philadelphia Phillies",
+        "pitcher": "Alan Rangel",
+        "lambda": 4.41,
+        "p_win": 0.5265
+      },
+      "away": {
+        "team": "New York Mets",
+        "pitcher": "Nolan McLean",
+        "lambda": 4.16,
+        "p_win": 0.4735
+      },
+      "expected_total": 8.57,
+      "factors": {
+        "league_rpg": 4.52,
+        "offense_home": {
+          "ratio": 0.975,
+          "rpg": 4.35,
+          "games": 99.0
+        },
+        "offense_away": {
+          "ratio": 0.932,
+          "rpg": 4.07,
+          "games": 99.0
+        },
+        "starter_vs_home": {
+          "ratio": 0.918,
+          "fip_pa": 0.0802,
+          "regressed": 0.1613,
+          "pa": 449.0,
+          "k_pct": 0.278,
+          "bb_pct": 0.116,
+          "hr_pct": 0.022
+        },
+        "starter_vs_away": {
+          "ratio": 1.007,
+          "fip_pa": 0.2941,
+          "regressed": 0.2597,
+          "pa": 85.0,
+          "k_pct": 0.259,
+          "bb_pct": 0.118,
+          "hr_pct": 0.035
+        },
+        "bullpen_vs_home": {
+          "ratio": 0.958,
+          "fip_pa": 0.2051,
+          "regressed": 0.2057,
+          "pa": 53537.0,
+          "k_pct": 0.233,
+          "bb_pct": 0.107,
+          "hr_pct": 0.027
+        },
+        "bullpen_vs_away": {
+          "ratio": 0.955,
+          "fip_pa": 0.2012,
+          "regressed": 0.2019,
+          "pa": 49927.0,
+          "k_pct": 0.248,
+          "bb_pct": 0.092,
+          "hr_pct": 0.032
+        },
+        "park": {
+          "ratio": 1.036,
+          "total_rpg": 9.56,
+          "games": 48.0,
+          "name": "Citizens Bank Park"
+        },
+        "home_boost": 1.033
+      },
+      "moneyline": {
+        "home_price_decimal": 2.15,
+        "home_price_american": 115,
+        "away_price_decimal": 1.8,
+        "away_price_american": -125,
+        "fair_home": 0.4543,
+        "n_books": 9,
+        "ev_home": 0.132,
+        "ev_away": -0.1477,
+        "best_side": "home",
+        "best_ev": 0.132,
+        "edge_home": 0.0722
+      },
+      "total": {
+        "line": 8.5,
+        "over_price_decimal": 1.87,
+        "over_price_american": -115,
+        "under_price_decimal": 2.05,
+        "under_price_american": 105,
+        "fair_over": 0.5222,
+        "n_books": 8,
+        "p_over": 0.4601,
+        "p_under": 0.5399,
+        "p_push": 0.0,
+        "ev_over": -0.1396,
+        "ev_under": 0.1068,
+        "best_side": "Under",
+        "best_ev": 0.1068,
+        "edge_over": -0.0621
+      }
+    },
+    {
+      "game_pk": 824897,
+      "game_time_utc": "2026-07-19T17:35:00Z",
+      "venue": "Truist Park",
+      "home": {
+        "team": "Atlanta Braves",
+        "pitcher": "Grant Holmes",
+        "lambda": 4.83,
+        "p_win": 0.5588
+      },
+      "away": {
+        "team": "Texas Rangers",
+        "pitcher": "Nathan Eovaldi",
+        "lambda": 4.26,
+        "p_win": 0.4412
+      },
+      "expected_total": 9.09,
+      "factors": {
+        "league_rpg": 4.52,
+        "offense_home": {
+          "ratio": 1.067,
+          "rpg": 4.96,
+          "games": 97.0
+        },
+        "offense_away": {
+          "ratio": 0.945,
+          "rpg": 4.15,
+          "games": 98.0
+        },
+        "starter_vs_home": {
+          "ratio": 0.985,
+          "fip_pa": 0.222,
+          "regressed": 0.236,
+          "pa": 464.0,
+          "k_pct": 0.259,
+          "bb_pct": 0.069,
+          "hr_pct": 0.041
+        },
+        "starter_vs_away": {
+          "ratio": 1.086,
+          "fip_pa": 0.4495,
+          "regressed": 0.3479,
+          "pa": 376.0,
+          "k_pct": 0.202,
+          "bb_pct": 0.112,
+          "hr_pct": 0.04
+        },
+        "bullpen_vs_home": {
+          "ratio": 0.983,
+          "fip_pa": 0.2332,
+          "regressed": 0.2335,
+          "pa": 51680.0,
+          "k_pct": 0.219,
+          "bb_pct": 0.09,
+          "hr_pct": 0.031
+        },
+        "bullpen_vs_away": {
+          "ratio": 0.992,
+          "fip_pa": 0.243,
+          "regressed": 0.2432,
+          "pa": 48034.0,
+          "k_pct": 0.222,
+          "bb_pct": 0.105,
+          "hr_pct": 0.029
+        },
+        "park": {
+          "ratio": 0.985,
+          "total_rpg": 8.81,
+          "games": 47.0,
+          "name": "Truist Park"
+        },
+        "home_boost": 1.033
+      },
+      "moneyline": {
+        "home_price_decimal": 2.08,
+        "home_price_american": 108,
+        "away_price_decimal": 1.86,
+        "away_price_american": -116,
+        "fair_home": 0.4741,
+        "n_books": 9,
+        "ev_home": 0.1623,
+        "ev_away": -0.1794,
+        "best_side": "home",
+        "best_ev": 0.1623,
+        "edge_home": 0.0847
+      },
+      "total": {
+        "line": 8.5,
+        "over_price_decimal": 1.85,
+        "over_price_american": -118,
+        "under_price_decimal": 2.06,
+        "under_price_american": 106,
+        "fair_over": 0.5209,
+        "n_books": 8,
+        "p_over": 0.5119,
+        "p_under": 0.4881,
+        "p_push": 0.0,
+        "ev_over": -0.053,
+        "ev_under": 0.0055,
+        "best_side": "Under",
+        "best_ev": 0.0055,
+        "edge_over": -0.009
+      }
+    },
+    {
+      "game_pk": 824411,
+      "game_time_utc": "2026-07-19T17:40:00Z",
+      "venue": "Progressive Field",
+      "home": {
+        "team": "Cleveland Guardians",
+        "pitcher": "Joey Cantillo",
+        "lambda": 3.49,
+        "p_win": 0.395
+      },
+      "away": {
+        "team": "Pittsburgh Pirates",
+        "pitcher": "Paul Skenes",
+        "lambda": 4.43,
+        "p_win": 0.605
+      },
+      "expected_total": 7.92,
+      "factors": {
+        "league_rpg": 4.52,
+        "offense_home": {
+          "ratio": 0.913,
+          "rpg": 3.95,
+          "games": 99.0
+        },
+        "offense_away": {
+          "ratio": 1.121,
+          "rpg": 5.31,
+          "games": 99.0
+        },
+        "starter_vs_home": {
+          "ratio": 0.855,
+          "fip_pa": -0.0544,
+          "regressed": 0.0915,
+          "pa": 441.0,
+          "k_pct": 0.295,
+          "bb_pct": 0.07,
+          "hr_pct": 0.025
+        },
+        "starter_vs_away": {
+          "ratio": 0.989,
+          "fip_pa": 0.2292,
+          "regressed": 0.2403,
+          "pa": 432.0,
+          "k_pct": 0.243,
+          "bb_pct": 0.118,
+          "hr_pct": 0.028
+        },
+        "bullpen_vs_home": {
+          "ratio": 0.923,
+          "fip_pa": 0.1657,
+          "regressed": 0.1669,
+          "pa": 51050.0,
+          "k_pct": 0.24,
+          "bb_pct": 0.108,
+          "hr_pct": 0.025
+        },
+        "bullpen_vs_away": {
+          "ratio": 0.956,
+          "fip_pa": 0.2031,
+          "regressed": 0.2038,
+          "pa": 49871.0,
+          "k_pct": 0.234,
+          "bb_pct": 0.104,
+          "hr_pct": 0.028
+        },
+        "park": {
+          "ratio": 0.927,
+          "total_rpg": 7.96,
+          "games": 48.0,
+          "name": "Progressive Field"
+        },
+        "home_boost": 1.033
+      },
+      "moneyline": {
+        "home_price_decimal": 2.02,
+        "home_price_american": 102,
+        "away_price_decimal": 1.89,
+        "away_price_american": -112,
+        "fair_home": 0.483,
+        "n_books": 9,
+        "ev_home": -0.2021,
+        "ev_away": 0.1434,
+        "best_side": "away",
+        "best_ev": 0.1434,
+        "edge_home": -0.088
+      },
+      "total": {
+        "line": 7.0,
+        "over_price_decimal": 1.93,
+        "over_price_american": -108,
+        "under_price_decimal": 2.0,
+        "under_price_american": 100,
+        "fair_over": 0.5105,
+        "n_books": 9,
+        "p_over": 0.4953,
+        "p_under": 0.3972,
+        "p_push": 0.1075,
+        "ev_over": 0.0634,
+        "ev_under": -0.0981,
+        "best_side": "Over",
+        "best_ev": 0.0634,
+        "edge_over": 0.0445
+      }
+    },
+    {
+      "game_pk": 824168,
+      "game_time_utc": "2026-07-19T18:10:00Z",
+      "venue": "Daikin Park",
+      "home": {
+        "team": "Houston Astros",
+        "pitcher": "Hunter Brown",
+        "lambda": 4.69,
+        "p_win": 0.484
+      },
+      "away": {
+        "team": "Baltimore Orioles",
+        "pitcher": "Brandon Young",
+        "lambda": 4.85,
+        "p_win": 0.516
+      },
+      "expected_total": 9.53,
+      "factors": {
+        "league_rpg": 4.52,
+        "offense_home": {
+          "ratio": 1.002,
+          "rpg": 4.53,
+          "games": 100.0
+        },
+        "offense_away": {
+          "ratio": 1.01,
+          "rpg": 4.59,
+          "games": 99.0
+        },
+        "starter_vs_home": {
+          "ratio": 0.985,
+          "fip_pa": 0.217,
+          "regressed": 0.2355,
+          "pa": 364.0,
+          "k_pct": 0.184,
+          "bb_pct": 0.088,
+          "hr_pct": 0.025
+        },
+        "starter_vs_away": {
+          "ratio": 1.032,
+          "fip_pa": 0.3806,
+          "regressed": 0.2882,
+          "pa": 155.0,
+          "k_pct": 0.252,
+          "bb_pct": 0.155,
+          "hr_pct": 0.032
+        },
+        "bullpen_vs_home": {
+          "ratio": 0.989,
+          "fip_pa": 0.2397,
+          "regressed": 0.2399,
+          "pa": 54646.0,
+          "k_pct": 0.21,
+          "bb_pct": 0.098,
+          "hr_pct": 0.028
+        },
+        "bullpen_vs_away": {
+          "ratio": 1.146,
+          "fip_pa": 0.4166,
+          "regressed": 0.4143,
+          "pa": 50083.0,
+          "k_pct": 0.223,
+          "bb_pct": 0.134,
+          "hr_pct": 0.035
+        },
+        "park": {
+          "ratio": 1.016,
+          "total_rpg": 9.27,
+          "games": 49.0,
+          "name": "Daikin Park"
+        },
+        "home_boost": 1.033
+      },
+      "moneyline": {
+        "home_price_decimal": 1.87,
+        "home_price_american": -115,
+        "away_price_decimal": 2.05,
+        "away_price_american": 105,
+        "fair_home": 0.517,
+        "n_books": 9,
+        "ev_home": -0.0949,
+        "ev_away": 0.0578,
+        "best_side": "away",
+        "best_ev": 0.0578,
+        "edge_home": -0.033
+      },
+      "total": {
+        "line": 8.5,
+        "over_price_decimal": 1.98,
+        "over_price_american": -102,
+        "under_price_decimal": 1.88,
+        "under_price_american": -114,
+        "fair_over": 0.4895,
+        "n_books": 8,
+        "p_over": 0.555,
+        "p_under": 0.445,
+        "p_push": 0.0,
+        "ev_over": 0.0989,
+        "ev_under": -0.1634,
+        "best_side": "Over",
+        "best_ev": 0.0989,
+        "edge_over": 0.0655
+      }
+    },
+    {
+      "game_pk": 824086,
+      "game_time_utc": "2026-07-19T18:10:00Z",
+      "venue": "Kauffman Stadium",
+      "home": {
+        "team": "Kansas City Royals",
+        "pitcher": "Noah Cameron",
+        "lambda": 5.06,
+        "p_win": 0.5626
+      },
+      "away": {
+        "team": "San Diego Padres",
+        "pitcher": "Germ\u00e1n M\u00e1rquez",
+        "lambda": 4.44,
+        "p_win": 0.4374
+      },
+      "expected_total": 9.49,
+      "factors": {
+        "league_rpg": 4.52,
+        "offense_home": {
+          "ratio": 0.964,
+          "rpg": 4.28,
+          "games": 99.0
+        },
+        "offense_away": {
+          "ratio": 0.912,
+          "rpg": 3.94,
+          "games": 98.0
+        },
+        "starter_vs_home": {
+          "ratio": 1.141,
+          "fip_pa": 0.7527,
+          "regressed": 0.4088,
+          "pa": 182.0,
+          "k_pct": 0.154,
+          "bb_pct": 0.115,
+          "hr_pct": 0.055
+        },
+        "starter_vs_away": {
+          "ratio": 0.977,
+          "fip_pa": 0.2033,
+          "regressed": 0.2272,
+          "pa": 423.0,
+          "k_pct": 0.215,
+          "bb_pct": 0.078,
+          "hr_pct": 0.031
+        },
+        "bullpen_vs_home": {
+          "ratio": 0.994,
+          "fip_pa": 0.2454,
+          "regressed": 0.2455,
+          "pa": 51676.0,
+          "k_pct": 0.224,
+          "bb_pct": 0.103,
+          "hr_pct": 0.03
+        },
+        "bullpen_vs_away": {
+          "ratio": 1.194,
+          "fip_pa": 0.4705,
+          "regressed": 0.4677,
+          "pa": 53861.0,
+          "k_pct": 0.196,
+          "bb_pct": 0.119,
+          "hr_pct": 0.039
+        },
+        "park": {
+          "ratio": 1.041,
+          "total_rpg": 9.63,
+          "games": 49.0,
+          "name": "Kauffman Stadium"
+        },
+        "home_boost": 1.033
+      },
+      "moneyline": {
+        "home_price_decimal": 1.8,
+        "home_price_american": -125,
+        "away_price_decimal": 2.15,
+        "away_price_american": 115,
+        "fair_home": 0.5426,
+        "n_books": 9,
+        "ev_home": 0.0127,
+        "ev_away": -0.0596,
+        "best_side": "home",
+        "best_ev": 0.0127,
+        "edge_home": 0.02
+      },
+      "total": {
+        "line": 10.0,
+        "over_price_decimal": 1.97,
+        "over_price_american": -103,
+        "under_price_decimal": 1.98,
+        "under_price_american": -102,
+        "fair_over": 0.5,
+        "n_books": 8,
+        "p_over": 0.3663,
+        "p_under": 0.545,
+        "p_push": 0.0887,
+        "ev_over": -0.1897,
+        "ev_under": 0.1678,
+        "best_side": "Under",
+        "best_ev": 0.1678,
+        "edge_over": -0.098
+      }
+    },
+    {
+      "game_pk": 823764,
+      "game_time_utc": "2026-07-19T18:10:00Z",
+      "venue": "American Family Field",
+      "home": {
+        "team": "Milwaukee Brewers",
+        "pitcher": "Robert Gasser",
+        "lambda": 4.95,
+        "p_win": 0.5767
+      },
+      "away": {
+        "team": "Miami Marlins",
+        "pitcher": "Eury P\u00e9rez",
+        "lambda": 4.2,
+        "p_win": 0.4233
+      },
+      "expected_total": 9.15,
+      "factors": {
+        "league_rpg": 4.52,
+        "offense_home": {
+          "ratio": 1.087,
+          "rpg": 5.09,
+          "games": 98.0
+        },
+        "offense_away": {
+          "ratio": 0.998,
+          "rpg": 4.51,
+          "games": 99.0
+        },
+        "starter_vs_home": {
+          "ratio": 1.012,
+          "fip_pa": 0.2821,
+          "regressed": 0.2662,
+          "pa": 351.0,
+          "k_pct": 0.271,
+          "bb_pct": 0.114,
+          "hr_pct": 0.037
+        },
+        "starter_vs_away": {
+          "ratio": 1.075,
+          "fip_pa": 0.5025,
+          "regressed": 0.336,
+          "pa": 201.0,
+          "k_pct": 0.214,
+          "bb_pct": 0.095,
+          "hr_pct": 0.05
+        },
+        "bullpen_vs_home": {
+          "ratio": 0.981,
+          "fip_pa": 0.2315,
+          "regressed": 0.2317,
+          "pa": 50031.0,
+          "k_pct": 0.23,
+          "bb_pct": 0.114,
+          "hr_pct": 0.027
+        },
+        "bullpen_vs_away": {
+          "ratio": 0.864,
+          "fip_pa": 0.0991,
+          "regressed": 0.1014,
+          "pa": 46755.0,
+          "k_pct": 0.254,
+          "bb_pct": 0.098,
+          "hr_pct": 0.024
+        },
+        "park": {
+          "ratio": 0.976,
+          "total_rpg": 8.69,
+          "games": 49.0,
+          "name": "American Family Field"
+        },
+        "home_boost": 1.033
+      },
+      "moneyline": {
+        "home_price_decimal": 1.81,
+        "home_price_american": -123,
+        "away_price_decimal": 2.12,
+        "away_price_american": 112,
+        "fair_home": 0.5394,
+        "n_books": 9,
+        "ev_home": 0.0438,
+        "ev_away": -0.1026,
+        "best_side": "home",
+        "best_ev": 0.0438,
+        "edge_home": 0.0373
+      },
+      "total": {
+        "line": 8.0,
+        "over_price_decimal": 1.95,
+        "over_price_american": -105,
+        "under_price_decimal": 1.95,
+        "under_price_american": -105,
+        "fair_over": 0.5,
+        "n_books": 9,
+        "p_over": 0.5178,
+        "p_under": 0.3822,
+        "p_push": 0.0999,
+        "ev_over": 0.1096,
+        "ev_under": -0.1548,
+        "best_side": "Over",
+        "best_ev": 0.1096,
+        "edge_over": 0.0753
+      }
+    },
+    {
+      "game_pk": 824653,
+      "game_time_utc": "2026-07-19T18:20:00Z",
+      "venue": "Wrigley Field",
+      "home": {
+        "team": "Chicago Cubs",
+        "pitcher": "Shota Imanaga",
+        "lambda": 5.49,
+        "p_win": 0.5282
+      },
+      "away": {
+        "team": "Minnesota Twins",
+        "pitcher": "Zebby Matthews",
+        "lambda": 5.19,
+        "p_win": 0.4718
+      },
+      "expected_total": 10.67,
+      "factors": {
+        "league_rpg": 4.52,
+        "offense_home": {
+          "ratio": 1.076,
+          "rpg": 5.02,
+          "games": 98.0
+        },
+        "offense_away": {
+          "ratio": 1.047,
+          "rpg": 4.83,
+          "games": 99.0
+        },
+        "starter_vs_home": {
+          "ratio": 1.086,
+          "fip_pa": 0.4873,
+          "regressed": 0.3481,
+          "pa": 275.0,
+          "k_pct": 0.196,
+          "bb_pct": 0.073,
+          "hr_pct": 0.051
+        },
+        "starter_vs_away": {
+          "ratio": 1.06,
+          "fip_pa": 0.379,
+          "regressed": 0.3186,
+          "pa": 438.0,
+          "k_pct": 0.24,
+          "bb_pct": 0.068,
+          "hr_pct": 0.05
+        },
+        "bullpen_vs_home": {
+          "ratio": 1.008,
+          "fip_pa": 0.2618,
+          "regressed": 0.2617,
+          "pa": 52882.0,
+          "k_pct": 0.216,
+          "bb_pct": 0.115,
+          "hr_pct": 0.027
+        },
+        "bullpen_vs_away": {
+          "ratio": 1.137,
+          "fip_pa": 0.4062,
+          "regressed": 0.4041,
+          "pa": 51078.0,
+          "k_pct": 0.21,
+          "bb_pct": 0.089,
+          "hr_pct": 0.043
+        },
+        "park": {
+          "ratio": 1.037,
+          "total_rpg": 9.58,
+          "games": 48.0,
+          "name": "Wrigley Field"
+        },
+        "home_boost": 1.033
+      },
+      "moneyline": {
+        "home_price_decimal": 1.62,
+        "home_price_american": -161,
+        "away_price_decimal": 2.49,
+        "away_price_american": 149,
+        "fair_home": 0.601,
+        "n_books": 9,
+        "ev_home": -0.1443,
+        "ev_away": 0.1748,
+        "best_side": "away",
+        "best_ev": 0.1748,
+        "edge_home": -0.0728
+      },
+      "total": {
+        "line": 7.5,
+        "over_price_decimal": 1.98,
+        "over_price_american": -102,
+        "under_price_decimal": 1.95,
+        "under_price_american": -105,
+        "fair_over": 0.4974,
+        "n_books": 9,
+        "p_over": 0.7443,
+        "p_under": 0.2557,
+        "p_push": 0.0,
+        "ev_over": 0.4737,
+        "ev_under": -0.5014,
+        "best_side": "Over",
+        "best_ev": 0.4737,
+        "edge_over": 0.2469
+      }
+    },
+    {
+      "game_pk": 824330,
+      "game_time_utc": "2026-07-19T19:10:00Z",
+      "venue": "Coors Field",
+      "home": {
+        "team": "Colorado Rockies",
+        "pitcher": "Ryan Feltner",
+        "lambda": 5.86,
+        "p_win": 0.567
+      },
+      "away": {
+        "team": "Cincinnati Reds",
+        "pitcher": "Hunter Greene",
+        "lambda": 5.14,
+        "p_win": 0.433
+      },
+      "expected_total": 11.01,
+      "factors": {
+        "league_rpg": 4.52,
+        "offense_home": {
+          "ratio": 1.04,
+          "rpg": 4.78,
+          "games": 100.0
+        },
+        "offense_away": {
+          "ratio": 0.948,
+          "rpg": 4.18,
+          "games": 97.0
+        },
+        "starter_vs_home": {
+          "ratio": 0.957,
+          "fip_pa": -0.2222,
+          "regressed": 0.2044,
+          "pa": 45.0,
+          "k_pct": 0.422,
+          "bb_pct": 0.111,
+          "hr_pct": 0.022
+        },
+        "starter_vs_away": {
+          "ratio": 1.076,
+          "fip_pa": 0.4627,
+          "regressed": 0.3367,
+          "pa": 268.0,
+          "k_pct": 0.175,
+          "bb_pct": 0.093,
+          "hr_pct": 0.041
+        },
+        "bullpen_vs_home": {
+          "ratio": 1.182,
+          "fip_pa": 0.4566,
+          "regressed": 0.4543,
+          "pa": 61549.0,
+          "k_pct": 0.208,
+          "bb_pct": 0.13,
+          "hr_pct": 0.037
+        },
+        "bullpen_vs_away": {
+          "ratio": 1.084,
+          "fip_pa": 0.3475,
+          "regressed": 0.3462,
+          "pa": 51098.0,
+          "k_pct": 0.183,
+          "bb_pct": 0.094,
+          "hr_pct": 0.033
+        },
+        "park": {
+          "ratio": 1.149,
+          "total_rpg": 11.2,
+          "games": 49.0,
+          "name": "Coors Field"
+        },
+        "home_boost": 1.033
+      },
+      "moneyline": {
+        "home_price_decimal": 2.45,
+        "home_price_american": 145,
+        "away_price_decimal": 1.62,
+        "away_price_american": -161,
+        "fair_home": 0.401,
+        "n_books": 9,
+        "ev_home": 0.3891,
+        "ev_away": -0.2985,
+        "best_side": "home",
+        "best_ev": 0.3891,
+        "edge_home": 0.166
+      },
+      "total": {
+        "line": 11.0,
+        "over_price_decimal": 1.93,
+        "over_price_american": -108,
+        "under_price_decimal": 1.93,
+        "under_price_american": -108,
+        "fair_over": 0.5,
+        "n_books": 9,
+        "p_over": 0.4172,
+        "p_under": 0.4965,
+        "p_push": 0.0863,
+        "ev_over": -0.1085,
+        "ev_under": 0.0445,
+        "best_side": "Under",
+        "best_ev": 0.0445,
+        "edge_over": -0.0434
+      }
+    },
+    {
+      "game_pk": 824978,
+      "game_time_utc": "2026-07-19T20:05:00Z",
+      "venue": "Sutter Health Park",
+      "home": {
+        "team": "Athletics",
+        "pitcher": "Jacob Lopez",
+        "lambda": 6.11,
+        "p_win": 0.4151
+      },
+      "away": {
+        "team": "Washington Nationals",
+        "pitcher": "Foster Griffin",
+        "lambda": 7.12,
+        "p_win": 0.5849
+      },
+      "expected_total": 13.23,
+      "factors": {
+        "league_rpg": 4.52,
+        "offense_home": {
+          "ratio": 0.997,
+          "rpg": 4.5,
+          "games": 98.0
+        },
+        "offense_away": {
+          "ratio": 1.142,
+          "rpg": 5.45,
+          "games": 99.0
+        },
+        "starter_vs_home": {
+          "ratio": 0.989,
+          "fip_pa": 0.2292,
+          "regressed": 0.2402,
+          "pa": 445.0,
+          "k_pct": 0.245,
+          "bb_pct": 0.074,
+          "hr_pct": 0.038
+        },
+        "starter_vs_away": {
+          "ratio": 1.126,
+          "fip_pa": 0.6069,
+          "regressed": 0.3927,
+          "pa": 262.0,
+          "k_pct": 0.164,
+          "bb_pct": 0.13,
+          "hr_pct": 0.042
+        },
+        "bullpen_vs_home": {
+          "ratio": 1.146,
+          "fip_pa": 0.4163,
+          "regressed": 0.4143,
+          "pa": 55811.0,
+          "k_pct": 0.197,
+          "bb_pct": 0.103,
+          "hr_pct": 0.039
+        },
+        "bullpen_vs_away": {
+          "ratio": 1.175,
+          "fip_pa": 0.4488,
+          "regressed": 0.4465,
+          "pa": 58742.0,
+          "k_pct": 0.211,
+          "bb_pct": 0.114,
+          "hr_pct": 0.041
+        },
+        "park": {
+          "ratio": 1.244,
+          "total_rpg": 12.59,
+          "games": 49.0,
+          "name": "Sutter Health Park"
+        },
+        "home_boost": 1.033
+      },
+      "moneyline": {
+        "home_price_decimal": 2.26,
+        "home_price_american": 126,
+        "away_price_decimal": 1.72,
+        "away_price_american": -139,
+        "fair_home": 0.4332,
+        "n_books": 9,
+        "ev_home": -0.0619,
+        "ev_away": 0.006,
+        "best_side": "away",
+        "best_ev": 0.006,
+        "edge_home": -0.0181
+      },
+      "total": {
+        "line": 10.5,
+        "over_price_decimal": 1.91,
+        "over_price_american": -110,
+        "under_price_decimal": 1.98,
+        "under_price_american": -102,
+        "fair_over": 0.5105,
+        "n_books": 9,
+        "p_over": 0.6843,
+        "p_under": 0.3157,
+        "p_push": 0.0,
+        "ev_over": 0.307,
+        "ev_under": -0.3749,
+        "best_side": "Over",
+        "best_ev": 0.307,
+        "edge_over": 0.1738
+      }
+    },
+    {
+      "game_pk": 824007,
+      "game_time_utc": "2026-07-19T20:07:00Z",
+      "venue": "Angel Stadium",
+      "home": {
+        "team": "Los Angeles Angels",
+        "pitcher": "Ryan Johnson",
+        "lambda": 3.9,
+        "p_win": 0.4467
+      },
+      "away": {
+        "team": "Detroit Tigers",
+        "pitcher": "Casey Mize",
+        "lambda": 4.39,
+        "p_win": 0.5533
+      },
+      "expected_total": 8.29,
+      "factors": {
+        "league_rpg": 4.52,
+        "offense_home": {
+          "ratio": 0.975,
+          "rpg": 4.35,
+          "games": 99.0
+        },
+        "offense_away": {
+          "ratio": 0.959,
+          "rpg": 4.24,
+          "games": 98.0
+        },
+        "starter_vs_home": {
+          "ratio": 0.861,
+          "fip_pa": -0.1049,
+          "regressed": 0.0978,
+          "pa": 305.0,
+          "k_pct": 0.252,
+          "bb_pct": 0.062,
+          "hr_pct": 0.016
+        },
+        "starter_vs_away": {
+          "ratio": 1.116,
+          "fip_pa": 0.7267,
+          "regressed": 0.3817,
+          "pa": 150.0,
+          "k_pct": 0.167,
+          "bb_pct": 0.093,
+          "hr_pct": 0.06
+        },
+        "bullpen_vs_home": {
+          "ratio": 0.93,
+          "fip_pa": 0.1733,
+          "regressed": 0.1744,
+          "pa": 48498.0,
+          "k_pct": 0.226,
+          "bb_pct": 0.098,
+          "hr_pct": 0.026
+        },
+        "bullpen_vs_away": {
+          "ratio": 1.045,
+          "fip_pa": 0.3031,
+          "regressed": 0.3023,
+          "pa": 49473.0,
+          "k_pct": 0.226,
+          "bb_pct": 0.124,
+          "hr_pct": 0.029
+        },
+        "park": {
+          "ratio": 0.963,
+          "total_rpg": 8.5,
+          "games": 48.0,
+          "name": "Angel Stadium"
+        },
+        "home_boost": 1.033
+      },
+      "moneyline": {
+        "home_price_decimal": 2.36,
+        "home_price_american": 136,
+        "away_price_decimal": 1.67,
+        "away_price_american": -149,
+        "fair_home": 0.4131,
+        "n_books": 9,
+        "ev_home": 0.0542,
+        "ev_away": -0.076,
+        "best_side": "home",
+        "best_ev": 0.0542,
+        "edge_home": 0.0336
+      },
+      "total": {
+        "line": 9.5,
+        "over_price_decimal": 2.03,
+        "over_price_american": 103,
+        "under_price_decimal": 1.85,
+        "under_price_american": -118,
+        "fair_over": 0.4778,
+        "n_books": 6,
+        "p_over": 0.34,
+        "p_under": 0.66,
+        "p_push": 0.0,
+        "ev_over": -0.3098,
+        "ev_under": 0.221,
+        "best_side": "Under",
+        "best_ev": 0.221,
+        "edge_over": -0.1378
+      }
+    },
+    {
+      "game_pk": 823113,
+      "game_time_utc": "2026-07-19T20:10:00Z",
+      "venue": "T-Mobile Park",
+      "home": {
+        "team": "Seattle Mariners",
+        "pitcher": "Logan Gilbert",
+        "lambda": 3.99,
+        "p_win": 0.5842
+      },
+      "away": {
+        "team": "San Francisco Giants",
+        "pitcher": "Robbie Ray",
+        "lambda": 3.28,
+        "p_win": 0.4158
+      },
+      "expected_total": 7.27,
+      "factors": {
+        "league_rpg": 4.52,
+        "offense_home": {
+          "ratio": 0.921,
+          "rpg": 4.0,
+          "games": 99.0
+        },
+        "offense_away": {
+          "ratio": 0.942,
+          "rpg": 4.13,
+          "games": 98.0
+        },
+        "starter_vs_home": {
+          "ratio": 1.063,
+          "fip_pa": 0.3843,
+          "regressed": 0.3218,
+          "pa": 445.0,
+          "k_pct": 0.202,
+          "bb_pct": 0.117,
+          "hr_pct": 0.034
+        },
+        "starter_vs_away": {
+          "ratio": 0.909,
+          "fip_pa": 0.0621,
+          "regressed": 0.1515,
+          "pa": 451.0,
+          "k_pct": 0.264,
+          "bb_pct": 0.062,
+          "hr_pct": 0.031
+        },
+        "bullpen_vs_home": {
+          "ratio": 1.034,
+          "fip_pa": 0.2904,
+          "regressed": 0.2898,
+          "pa": 46656.0,
+          "k_pct": 0.204,
+          "bb_pct": 0.115,
+          "hr_pct": 0.027
+        },
+        "bullpen_vs_away": {
+          "ratio": 0.888,
+          "fip_pa": 0.1264,
+          "regressed": 0.1283,
+          "pa": 46859.0,
+          "k_pct": 0.222,
+          "bb_pct": 0.084,
+          "hr_pct": 0.025
+        },
+        "park": {
+          "ratio": 0.884,
+          "total_rpg": 7.35,
+          "games": 49.0,
+          "name": "T-Mobile Park"
+        },
+        "home_boost": 1.033
+      },
+      "moneyline": {
+        "home_price_decimal": 1.55,
+        "home_price_american": -182,
+        "away_price_decimal": 2.73,
+        "away_price_american": 173,
+        "fair_home": 0.6381,
+        "n_books": 9,
+        "ev_home": -0.0945,
+        "ev_away": 0.1351,
+        "best_side": "away",
+        "best_ev": 0.1351,
+        "edge_home": -0.0539
+      },
+      "total": {
+        "line": 7.0,
+        "over_price_decimal": 1.83,
+        "over_price_american": -120,
+        "under_price_decimal": 2.07,
+        "under_price_american": 107,
+        "fair_over": 0.5325,
+        "n_books": 6,
+        "p_over": 0.4256,
+        "p_under": 0.4661,
+        "p_push": 0.1083,
+        "ev_over": -0.1129,
+        "ev_under": 0.0731,
+        "best_side": "Under",
+        "best_ev": 0.0731,
+        "edge_over": -0.0552
+      }
+    },
+    {
+      "game_pk": 825057,
+      "game_time_utc": "2026-07-19T20:10:00Z",
+      "venue": "Chase Field",
+      "home": {
+        "team": "Arizona Diamondbacks",
+        "pitcher": "Eduardo Rodriguez",
+        "lambda": 4.53,
+        "p_win": 0.5067
+      },
+      "away": {
+        "team": "St. Louis Cardinals",
+        "pitcher": "Andre Pallante",
+        "lambda": 4.46,
+        "p_win": 0.4933
+      },
+      "expected_total": 8.99,
+      "factors": {
+        "league_rpg": 4.52,
+        "offense_home": {
+          "ratio": 0.972,
+          "rpg": 4.34,
+          "games": 98.0
+        },
+        "offense_away": {
+          "ratio": 0.998,
+          "rpg": 4.51,
+          "games": 97.0
+        },
+        "starter_vs_home": {
+          "ratio": 0.983,
+          "fip_pa": 0.2151,
+          "regressed": 0.2332,
+          "pa": 423.0,
+          "k_pct": 0.17,
+          "bb_pct": 0.083,
+          "hr_pct": 0.024
+        },
+        "starter_vs_away": {
+          "ratio": 0.998,
+          "fip_pa": 0.2484,
+          "regressed": 0.2502,
+          "pa": 463.0,
+          "k_pct": 0.171,
+          "bb_pct": 0.084,
+          "hr_pct": 0.026
+        },
+        "bullpen_vs_home": {
+          "ratio": 1.025,
+          "fip_pa": 0.2802,
+          "regressed": 0.2798,
+          "pa": 51968.0,
+          "k_pct": 0.196,
+          "bb_pct": 0.107,
+          "hr_pct": 0.027
+        },
+        "bullpen_vs_away": {
+          "ratio": 1.063,
+          "fip_pa": 0.3231,
+          "regressed": 0.3222,
+          "pa": 52789.0,
+          "k_pct": 0.183,
+          "bb_pct": 0.088,
+          "hr_pct": 0.033
+        },
+        "park": {
+          "ratio": 0.997,
+          "total_rpg": 9.0,
+          "games": 49.0,
+          "name": "Chase Field"
+        },
+        "home_boost": 1.033
+      },
+      "moneyline": {
+        "home_price_decimal": 1.85,
+        "home_price_american": -118,
+        "away_price_decimal": 2.09,
+        "away_price_american": 109,
+        "fair_home": 0.5312,
+        "n_books": 9,
+        "ev_home": -0.0626,
+        "ev_away": 0.031,
+        "best_side": "away",
+        "best_ev": 0.031,
+        "edge_home": -0.0245
+      },
+      "total": {
+        "line": 9.0,
+        "over_price_decimal": 2.03,
+        "over_price_american": 103,
+        "under_price_decimal": 1.89,
+        "under_price_american": -112,
+        "fair_over": 0.4791,
+        "n_books": 9,
+        "p_over": 0.4069,
+        "p_under": 0.4979,
+        "p_push": 0.0952,
+        "ev_over": -0.0788,
+        "ev_under": 0.0362,
+        "best_side": "Under",
+        "best_ev": 0.0362,
+        "edge_over": -0.0293
+      }
+    },
+    {
+      "game_pk": 823521,
+      "game_time_utc": "2026-07-19T23:20:00Z",
+      "venue": "Yankee Stadium",
+      "home": {
+        "team": "New York Yankees",
+        "pitcher": null,
+        "lambda": 4.77,
+        "p_win": 0.4982
+      },
+      "away": {
+        "team": "Los Angeles Dodgers",
+        "pitcher": null,
+        "lambda": 4.79,
+        "p_win": 0.5018
+      },
+      "expected_total": 9.56,
+      "factors": {
+        "league_rpg": 4.52,
+        "offense_home": {
+          "ratio": 1.039,
+          "rpg": 4.77,
+          "games": 97.0
+        },
+        "offense_away": {
+          "ratio": 1.101,
+          "rpg": 5.18,
+          "games": 98.0
+        },
+        "starter_vs_home": {
+          "ratio": 1.0,
+          "note": "no data; league-average assumed"
+        },
+        "starter_vs_away": {
+          "ratio": 1.0,
+          "note": "no data; league-average assumed"
+        },
+        "bullpen_vs_home": {
+          "ratio": 0.924,
+          "fip_pa": 0.167,
+          "regressed": 0.1683,
+          "pa": 45171.0,
+          "k_pct": 0.247,
+          "bb_pct": 0.098,
+          "hr_pct": 0.028
+        },
+        "bullpen_vs_away": {
+          "ratio": 0.949,
+          "fip_pa": 0.1953,
+          "regressed": 0.1961,
+          "pa": 46723.0,
+          "k_pct": 0.227,
+          "bb_pct": 0.092,
+          "hr_pct": 0.029
+        },
+        "park": {
+          "ratio": 1.016,
+          "total_rpg": 9.27,
+          "games": 44.0,
+          "name": "Yankee Stadium"
+        },
+        "home_boost": 1.033
+      },
+      "moneyline": {
+        "home_price_decimal": 2.03,
+        "home_price_american": 103,
+        "away_price_decimal": 1.89,
+        "away_price_american": -112,
+        "fair_home": 0.4778,
+        "n_books": 5,
+        "ev_home": 0.0113,
+        "ev_away": -0.0516,
+        "best_side": "home",
+        "best_ev": 0.0113,
+        "edge_home": 0.0204
+      },
+      "total": {
+        "line": 8.5,
+        "over_price_decimal": 1.87,
+        "over_price_american": -115,
+        "under_price_decimal": 2.0,
+        "under_price_american": 100,
+        "fair_over": 0.517,
+        "n_books": 5,
+        "p_over": 0.5571,
+        "p_under": 0.4429,
+        "p_push": 0.0,
+        "ev_over": 0.0418,
+        "ev_under": -0.1142,
+        "best_side": "Over",
+        "best_ev": 0.0418,
+        "edge_over": 0.0401
+      }
+    }
+  ]
+}
