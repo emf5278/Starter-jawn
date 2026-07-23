@@ -124,11 +124,21 @@ One-time repo setup:
    "lite" for a quick first run). The pybaseball cache persists between runs
    via `actions/cache`, so the daily Statcast pull is incremental.
 
-## Daily results log
+`.github/workflows/strikeouts.yml` (pitcher strikeout board) runs on its own
+cron at **12:47 UTC (~8:47am ET)** — a few minutes offset from the HR
+board's 8:41 run so the two don't queue at the same moment. Each pipeline
+makes its own single Odds API call, so running both daily doesn't double up
+on either board's usage. It projects games with first pitch at/after 5pm ET
+and never touches `web/predictions.json`.
 
-Every morning, before generating the new slate, the workflow grades
-*yesterday's* picks against actual box scores (`pipeline/grade.py`):
+## Daily results logs
 
+Every morning, before generating the new slate, each workflow grades
+*yesterday's* picks against actual box scores. The two boards are graded
+**completely separately** — different scripts, different CSVs — so a
+strikeout losing streak never gets averaged into the HR numbers or vice versa.
+
+**Home runs** (`pipeline/grade.py`):
 * `results/log.csv` — one row per day: hits out of the top-20 by
   probability and top-20 by EV, the model's *expected* hit counts (if the
   model is calibrated, hits ≈ expected over time), and flat-$1 P&L on the
@@ -136,9 +146,19 @@ Every morning, before generating the new slate, the workflow grades
 * `results/<date>.json` — pick-level detail (who homered, who didn't).
 * `history/<date>.json` — the archived slate each grade is based on.
 
+**Pitcher strikeouts** (`pipeline/grade_strikeouts.py`):
+* `results/strikeout_log.csv` — one row per day: hits out of the top-N by
+  projected Ks and top-N by EV (graded on whichever side, Over or Under, the
+  model favored), the model's expected hit counts, and flat-$1 P&L on the EV
+  list at the archived best prices.
+* `results/strikeouts/<date>.json` — pick-level detail (line, actual Ks,
+  which side hit).
+* `history/strikeouts/<date>.json` — the archived slate each grade is based on.
+
 Rows flagged `late_snapshot=true` came from a slate generated after ~2pm ET
 (a manual re-run) — odds and lineups may have been mid-game, so read those
-rows skeptically. Picks whose game was postponed are excluded from grading.
+rows skeptically. Picks whose game was postponed (HR) or pushed exactly on
+the line (strikeouts) are excluded from grading.
 
 ## Backtest
 

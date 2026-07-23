@@ -1,9 +1,15 @@
 name: Pitcher strikeout board
 
-# Manual for now (keeps daily Odds API usage low). Trigger from the Actions tab
-# when you want tonight's strikeout board; it projects games with first pitch
-# at/after 5pm ET and does NOT touch the home-run predictions.
+# Refreshes every morning on its own cron (separate from the HR board's --
+# each pipeline makes its own single Odds API call, so this doesn't double
+# up on the HR board's usage). Projects games with first pitch at/after 5pm
+# ET and does NOT touch the home-run predictions.
 on:
+  schedule:
+    # Same top-of-hour-avoidance reasoning as the HR board's cron: 12:47 UTC
+    # = 8:47am ET (EDT), offset a few minutes from the HR board's 8:41 run
+    # so the two don't queue at the exact same moment.
+    - cron: "47 12 * * *"
   workflow_dispatch:
     inputs:
       all_day:
@@ -37,12 +43,17 @@ jobs:
           key: pybaseball-${{ github.run_id }}
           restore-keys: pybaseball-
 
+      - name: Install dependencies
+        run: python -m pip install -q -r requirements.txt
+
+      - name: Grade yesterday's strikeout picks
+        run: python -m pipeline.grade_strikeouts || echo "grading failed; continuing"
+
       - name: Project strikeouts
         env:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
           ODDS_REGIONS: us
         run: |
-          python -m pip install -q -r requirements.txt
           python -m pipeline.run_strikeouts --output web/strikeouts.json \
             ${{ inputs.all_day && '--all-day' || '' }}
 
@@ -50,7 +61,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add web/strikeouts.json history/strikeouts
+          git add web/strikeouts.json history/strikeouts results/strikeout_log.csv results/strikeouts
           git diff --cached --quiet || git commit -m "strikeouts: $(date -u +%F)"
           git pull --rebase origin "${GITHUB_REF_NAME}" || true
           git push origin "HEAD:${GITHUB_REF_NAME}"
