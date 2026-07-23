@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-23T14:48:14+00:00",
+  "generated_at": "2026-07-23T14:53:28+00:00",
   "date": "2026-07-23",
   "model_version": "0.2.0",
   "league_hr_pa": 0.0309,
@@ -21,8 +21,8 @@
       "pitcher_hand": "L",
       "lineup_slot": 1,
       "lineup_confirmed": true,
-      "prob": 0.229,
-      "per_pa_prob_vs_starter": 0.0558,
+      "prob": 0.2265,
+      "per_pa_prob_vs_starter": 0.0551,
       "expected_pa": 4.65,
       "factors": {
         "league_hr_pa": 0.0309,
@@ -69,10 +69,10 @@
           "park": "Truist Park"
         },
         "weather": {
-          "value": 1.192,
-          "temp_f": 84.5,
-          "wind_mph": 7.8,
-          "wind_out_mph": 6.8,
+          "value": 1.178,
+          "temp_f": 83.7,
+          "wind_mph": 6.7,
+          "wind_out_mph": 6.2,
           "roof": "open"
         },
         "bvp": {
@@ -106,8 +106,8 @@
         "implied_prob": 0.2174,
         "fair_prob": 0.2051,
         "n_books": 1,
-        "ev_per_dollar": 0.0534,
-        "edge_vs_fair": 0.0239
+        "ev_per_dollar": 0.0419,
+        "edge_vs_fair": 0.0214
       }
     },
     {
@@ -124,7 +124,7 @@
       "pitcher_hand": "R",
       "lineup_slot": 3,
       "lineup_confirmed": false,
-      "prob": 0.2262,
+      "prob": 0.2264,
       "per_pa_prob_vs_starter": 0.0544,
       "expected_pa": 4.42,
       "factors": {
@@ -172,8 +172,8 @@
           "park": "Rogers Centre"
         },
         "weather": {
-          "value": 1.048,
-          "temp_f": 68.6,
+          "value": 1.049,
+          "temp_f": 68.7,
           "wind_mph": 11.0,
           "wind_out_mph": 10.8,
           "roof": "retractable"
@@ -209,8 +209,8 @@
         "implied_prob": 0.2817,
         "fair_prob": 0.2657,
         "n_books": 1,
-        "ev_per_dollar": -0.197,
-        "edge_vs_fair": -0.0395
+        "ev_per_dollar": -0.1963,
+        "edge_vs_fair": -0.0393
       }
     },
     {
@@ -227,8 +227,8 @@
       "pitcher_hand": "L",
       "lineup_slot": 3,
       "lineup_confirmed": true,
-      "prob": 0.2239,
-      "per_pa_prob_vs_starter": 0.0572,
+      "prob": 0.2216,
+      "per_pa_prob_vs_starter": 0.0565,
       "expected_pa": 4.42,
       "factors": {
         "league_hr_pa": 0.0309,
@@ -275,10 +275,10 @@
           "park": "Truist Park"
         },
         "weather": {
-          "value": 1.192,
-          "temp_f": 84.5,
-          "wind_mph": 7.8,
-          "wind_out_mph": 6.8,
+          "value": 1.178,
+          "temp_f": 83.7,
+          "wind_mph": 6.7,
+          "wind_out_mph": 6.2,
           "roof": "open"
         },
         "bvp": {
@@ -312,8 +312,8 @@
         "implied_prob": 0.2778,
         "fair_prob": 0.2621,
         "n_books": 1,
-        "ev_per_dollar": -0.194,
-        "edge_vs_fair": -0.0382
+        "ev_per_dollar": -0.2022,
+        "edge_vs_fair": -0.0405
       }
     },
     {
@@ -330,8 +330,8 @@
       "pitcher_hand": "L",
       "lineup_slot": 4,
       "lineup_confirmed": true,
-      "prob": 0.1982,
-      "per_pa_prob_vs_starter": 0.0513,
+      "prob": 0.1961,
+      "per_pa_prob_vs_starter": 0.0507,
       "expected_pa": 4.31,
       "factors": {
         "league_hr_pa": 0.0309,
@@ -378,10 +378,10 @@
           "park": "Truist Park"
         },
         "weather": {
-          "value": 1.192,
-          "temp_f": 84.5,
-          "wind_mph": 7.8,
-          "wind_out_mph": 6.8,
+          "value": 1.178,
+          "temp_f": 83.7,
+          "wind_mph": 6.7,
+          "wind_out_mph": 6.2,
           "roof": "open"
         },
         "bvp": {
@@ -415,8 +415,8 @@
         "implied_prob": 0.2381,
         "fair_prob": 0.2246,
         "n_books": 1,
-        "ev_per_dollar": -0.1676,
-        "edge_vs_fair": -0.0264
+        "ev_per_dollar": -0.1764,
+        "edge_vs_fair": -0.0285
       }
     },
     {
@@ -433,7 +433,7 @@
       "pitcher_hand": "R",
       "lineup_slot": 2,
       "lineup_confirmed": false,
-      "prob": 0.1855,
+      "prob": 0.1857,
       "per_pa_prob_vs_starter": 0.0424,
       "expected_pa": 4.54,
       "factors": {
@@ -481,8 +481,8 @@
           "park": "Rogers Centre"
         },
         "weather": {
-          "value": 1.048,
-          "temp_f": 68.6,
+          "value": 1.049,
+          "temp_f": 68.7,
           "wind_mph": 11.0,
           "wind_out_mph": 10.8,
           "roof": "retractable"
@@ -518,8 +518,8 @@
         "implied_prob": 0.1538,
         "fair_prob": 0.1451,
         "n_books": 1,
-        "ev_per_dollar": 0.2057,
-        "edge_vs_fair": 0.0404
+        "ev_per_dollar": 0.207,
+        "edge_vs_fair": 0.0406
       }
     },
     {
@@ -536,8 +536,8 @@
       "pitcher_hand": "L",
       "lineup_slot": 3,
       "lineup_confirmed": true,
-      "prob": 0.1853,
-      "per_pa_prob_vs_starter": 0.0446,
+      "prob": 0.1833,
+      "per_pa_prob_vs_starter": 0.0441,
       "expected_pa": 4.42,
       "factors": {
         "league_hr_pa": 0.0309,
@@ -584,10 +584,10 @@
           "park": "Truist Park"
         },
         "weather": {
-          "value": 1.192,
-          "temp_f": 84.5,
-          "wind_mph": 7.8,
-          "wind_out_mph": 6.8,
+          "value": 1.178,
+          "temp_f": 83.7,
+          "wind_mph": 6.7,
+          "wind_out_mph": 6.2,
           "roof": "open"
         },
         "bvp": {
@@ -623,8 +623,8 @@
         "implied_prob": 0.1961,
         "fair_prob": 0.185,
         "n_books": 1,
-        "ev_per_dollar": -0.055,
-        "edge_vs_fair": 0.0003
+        "ev_per_dollar": -0.0652,
+        "edge_vs_fair": -0.0017
       }
     },
     {
@@ -641,8 +641,8 @@
       "pitcher_hand": "L",
       "lineup_slot": 1,
       "lineup_confirmed": true,
-      "prob": 0.1794,
-      "per_pa_prob_vs_starter": 0.0423,
+      "prob": 0.1775,
+      "per_pa_prob_vs_starter": 0.0418,
       "expected_pa": 4.65,
       "factors": {
         "league_hr_pa": 0.0309,
@@ -689,10 +689,10 @@
           "park": "Truist Park"
         },
         "weather": {
-          "value": 1.192,
-          "temp_f": 84.5,
-          "wind_mph": 7.8,
-          "wind_out_mph": 6.8,
+          "value": 1.178,
+          "temp_f": 83.7,
+          "wind_mph": 6.7,
+          "wind_out_mph": 6.2,
           "roof": "open"
         },
         "bvp": {
@@ -728,8 +728,8 @@
         "implied_prob": 0.1905,
         "fair_prob": 0.1797,
         "n_books": 1,
-        "ev_per_dollar": -0.0581,
-        "edge_vs_fair": -0.0003
+        "ev_per_dollar": -0.0681,
+        "edge_vs_fair": -0.0022
       }
     },
     {
@@ -746,7 +746,7 @@
       "pitcher_hand": "R",
       "lineup_slot": 1,
       "lineup_confirmed": false,
-      "prob": 0.1675,
+      "prob": 0.1677,
       "per_pa_prob_vs_starter": 0.0368,
       "expected_pa": 4.65,
       "factors": {
@@ -794,8 +794,8 @@
           "park": "Rogers Centre"
         },
         "weather": {
-          "value": 1.048,
-          "temp_f": 68.6,
+          "value": 1.049,
+          "temp_f": 68.7,
           "wind_mph": 11.0,
           "wind_out_mph": 10.8,
           "roof": "retractable"
@@ -833,8 +833,8 @@
         "implied_prob": 0.1639,
         "fair_prob": 0.1547,
         "n_books": 1,
-        "ev_per_dollar": 0.0217,
-        "edge_vs_fair": 0.0128
+        "ev_per_dollar": 0.023,
+        "edge_vs_fair": 0.013
       }
     },
     {
@@ -851,8 +851,8 @@
       "pitcher_hand": "R",
       "lineup_slot": 4,
       "lineup_confirmed": false,
-      "prob": 0.1598,
-      "per_pa_prob_vs_starter": 0.0375,
+      "prob": 0.1603,
+      "per_pa_prob_vs_starter": 0.0376,
       "expected_pa": 4.31,
       "factors": {
         "league_hr_pa": 0.0309,
@@ -899,10 +899,10 @@
           "park": "Comerica Park"
         },
         "weather": {
-          "value": 0.954,
-          "temp_f": 77.1,
-          "wind_mph": 9.9,
-          "wind_out_mph": -9.7,
+          "value": 0.957,
+          "temp_f": 77.8,
+          "wind_mph": 10.0,
+          "wind_out_mph": -9.9,
           "roof": "open"
         },
         "bvp": {
@@ -936,8 +936,8 @@
         "implied_prob": 0.2174,
         "fair_prob": 0.2051,
         "n_books": 1,
-        "ev_per_dollar": -0.2649,
-        "edge_vs_fair": -0.0453
+        "ev_per_dollar": -0.2626,
+        "edge_vs_fair": -0.0448
       }
     },
     {
@@ -954,8 +954,8 @@
       "pitcher_hand": "L",
       "lineup_slot": 4,
       "lineup_confirmed": true,
-      "prob": 0.1593,
-      "per_pa_prob_vs_starter": 0.0384,
+      "prob": 0.1576,
+      "per_pa_prob_vs_starter": 0.0379,
       "expected_pa": 4.31,
       "factors": {
         "league_hr_pa": 0.0309,
@@ -1002,10 +1002,10 @@
           "park": "Truist Park"
         },
         "weather": {
-          "value": 1.192,
-          "temp_f": 84.5,
-          "wind_mph": 7.8,
-          "wind_out_mph": 6.8,
+          "value": 1.178,
+          "temp_f": 83.7,
+          "wind_mph": 6.7,
+          "wind_out_mph": 6.2,
           "roof": "open"
         },
         "bvp": {
@@ -1041,8 +1041,8 @@
         "implied_prob": 0.1786,
         "fair_prob": 0.1685,
         "n_books": 1,
-        "ev_per_dollar": -0.1079,
-        "edge_vs_fair": -0.0092
+        "ev_per_dollar": -0.1174,
+        "edge_vs_fair": -0.0109
       }
     },
     {
@@ -1059,8 +1059,8 @@
       "pitcher_hand": "L",
       "lineup_slot": 6,
       "lineup_confirmed": true,
-      "prob": 0.1591,
-      "per_pa_prob_vs_starter": 0.041,
+      "prob": 0.1573,
+      "per_pa_prob_vs_starter": 0.0405,
       "expected_pa": 4.08,
       "factors": {
         "league_hr_pa": 0.0309,
@@ -1107,10 +1107,10 @@
           "park": "Truist Park"
         },
         "weather": {
-          "value": 1.192,
-          "temp_f": 84.5,
-          "wind_mph": 7.8,
-          "wind_out_mph": 6.8,
+          "value": 1.178,
+          "temp_f": 83.7,
+          "wind_mph": 6.7,
+          "wind_out_mph": 6.2,
           "roof": "open"
         },
         "bvp": {
@@ -1144,113 +1144,8 @@
         "implied_prob": 0.2128,
         "fair_prob": 0.2007,
         "n_books": 1,
-        "ev_per_dollar": -0.2522,
-        "edge_vs_fair": -0.0416
-      }
-    },
-    {
-      "player_id": 543807,
-      "game_pk": 822785,
-      "name": "George Springer",
-      "team": "Toronto Blue Jays",
-      "opponent": "Tampa Bay Rays",
-      "venue": "Rogers Centre",
-      "game_time_utc": "2026-07-23T19:07:00Z",
-      "batter_hand": "R",
-      "pitcher_id": 693855,
-      "pitcher_name": "Ian Seymour",
-      "pitcher_hand": "L",
-      "lineup_slot": 4,
-      "lineup_confirmed": false,
-      "prob": 0.1553,
-      "per_pa_prob_vs_starter": 0.0378,
-      "expected_pa": 4.31,
-      "factors": {
-        "league_hr_pa": 0.0309,
-        "batter": {
-          "value": 1.228,
-          "components": {
-            "brl_pa": {
-              "raw": 0.08367573800738008,
-              "regressed": 0.0775,
-              "ratio": 1.401,
-              "weight": 0.45
-            },
-            "hr_fb": {
-              "raw": 0.136986301369863,
-              "regressed": 0.1354,
-              "ratio": 1.005,
-              "weight": 0.3
-            },
-            "xiso": {
-              "raw": 0.2190909090909091,
-              "regressed": 0.2077,
-              "ratio": 1.285,
-              "weight": 0.25
-            }
-          }
-        },
-        "pitcher": {
-          "value": 0.989,
-          "components": {
-            "hr_fb": {
-              "regressed": 0.1213,
-              "ratio": 0.901
-            },
-            "fb_rate": {
-              "regressed": 0.3721,
-              "ratio": 1.097
-            }
-          }
-        },
-        "park": {
-          "value": 1.042,
-          "park_factor": 105,
-          "hand": "R",
-          "park": "Rogers Centre"
-        },
-        "weather": {
-          "value": 1.048,
-          "temp_f": 68.6,
-          "wind_mph": 11.0,
-          "wind_out_mph": 10.8,
-          "roof": "retractable"
-        },
-        "bvp": {
-          "value": 0.967,
-          "pa": 7,
-          "hr": 0,
-          "hr_per_pa": 0.0,
-          "ratio": 0.935
-        },
-        "bullpen": {
-          "value": 0.996,
-          "hr_fb": 0.1421,
-          "hrfb_ratio": 1.055,
-          "fatigue": 0.965,
-          "bf_last3": 32
-        },
-        "game_total": {
-          "value": 0.955,
-          "implied_team_runs": 3.5,
-          "total": 8.5,
-          "spread": 1.5
-        },
-        "expected_pa": {
-          "value": 4.31,
-          "lineup_slot": 4,
-          "starter_share": 0.62
-        }
-      },
-      "odds": {
-        "best_price_decimal": 6.4,
-        "best_price_american": 540,
-        "best_book": "BetRivers",
-        "implied_prob": 0.1562,
-        "fair_prob": 0.1474,
-        "n_books": 1,
-        "ev_per_dollar": -0.0061,
-        "edge_vs_fair": 0.0079
+        "ev_per_dollar": -0.2607,
+        "edge_vs_fair": -0.0434
       }
     },
     {
@@ -1267,8 +1162,8 @@
       "pitcher_hand": "R",
       "lineup_slot": 3,
       "lineup_confirmed": false,
-      "prob": 0.1552,
-      "per_pa_prob_vs_starter": 0.0347,
+      "prob": 0.1567,
+      "per_pa_prob_vs_starter": 0.0351,
       "expected_pa": 4.42,
       "factors": {
         "league_hr_pa": 0.0309,
@@ -1315,10 +1210,10 @@
           "park": "Busch Stadium"
         },
         "weather": {
-          "value": 1.049,
-          "temp_f": 82.3,
-          "wind_mph": 5.6,
-          "wind_out_mph": -4.5,
+          "value": 1.06,
+          "temp_f": 82.6,
+          "wind_mph": 5.2,
+          "wind_out_mph": -3.7,
           "roof": "open"
         },
         "bvp": {
@@ -1354,8 +1249,8 @@
         "implied_prob": 0.1786,
         "fair_prob": 0.1685,
         "n_books": 1,
-        "ev_per_dollar": -0.1309,
-        "edge_vs_fair": -0.0133
+        "ev_per_dollar": -0.1225,
+        "edge_vs_fair": -0.0118
       }
     },
     {
@@ -1372,8 +1267,8 @@
       "pitcher_hand": "R",
       "lineup_slot": 2,
       "lineup_confirmed": false,
-      "prob": 0.1552,
-      "per_pa_prob_vs_starter": 0.0349,
+      "prob": 0.1556,
+      "per_pa_prob_vs_starter": 0.035,
       "expected_pa": 4.54,
       "factors": {
         "league_hr_pa": 0.0309,
@@ -1420,10 +1315,10 @@
           "park": "Comerica Park"
         },
         "weather": {
-          "value": 0.954,
-          "temp_f": 77.1,
-          "wind_mph": 9.9,
-          "wind_out_mph": -9.7,
+          "value": 0.957,
+          "temp_f": 77.8,
+          "wind_mph": 10.0,
+          "wind_out_mph": -9.9,
           "roof": "open"
         },
         "bvp": {
@@ -1457,8 +1352,218 @@
         "implied_prob": 0.1562,
         "fair_prob": 0.1474,
         "n_books": 1,
-        "ev_per_dollar": -0.0067,
-        "edge_vs_fair": 0.0078
+        "ev_per_dollar": -0.0042,
+        "edge_vs_fair": 0.0082
+      }
+    },
+    {
+      "player_id": 543807,
+      "game_pk": 822785,
+      "name": "George Springer",
+      "team": "Toronto Blue Jays",
+      "opponent": "Tampa Bay Rays",
+      "venue": "Rogers Centre",
+      "game_time_utc": "2026-07-23T19:07:00Z",
+      "batter_hand": "R",
+      "pitcher_id": 693855,
+      "pitcher_name": "Ian Seymour",
+      "pitcher_hand": "L",
+      "lineup_slot": 4,
+      "lineup_confirmed": false,
+      "prob": 0.1554,
+      "per_pa_prob_vs_starter": 0.0379,
+      "expected_pa": 4.31,
+      "factors": {
+        "league_hr_pa": 0.0309,
+        "batter": {
+          "value": 1.228,
+          "components": {
+            "brl_pa": {
+              "raw": 0.08367573800738008,
+              "regressed": 0.0775,
+              "ratio": 1.401,
+              "weight": 0.45
+            },
+            "hr_fb": {
+              "raw": 0.136986301369863,
+              "regressed": 0.1354,
+              "ratio": 1.005,
+              "weight": 0.3
+            },
+            "xiso": {
+              "raw": 0.2190909090909091,
+              "regressed": 0.2077,
+              "ratio": 1.285,
+              "weight": 0.25
+            }
+          }
+        },
+        "pitcher": {
+          "value": 0.989,
+          "components": {
+            "hr_fb": {
+              "regressed": 0.1213,
+              "ratio": 0.901
+            },
+            "fb_rate": {
+              "regressed": 0.3721,
+              "ratio": 1.097
+            }
+          }
+        },
+        "park": {
+          "value": 1.042,
+          "park_factor": 105,
+          "hand": "R",
+          "park": "Rogers Centre"
+        },
+        "weather": {
+          "value": 1.049,
+          "temp_f": 68.7,
+          "wind_mph": 11.0,
+          "wind_out_mph": 10.8,
+          "roof": "retractable"
+        },
+        "bvp": {
+          "value": 0.967,
+          "pa": 7,
+          "hr": 0,
+          "hr_per_pa": 0.0,
+          "ratio": 0.935
+        },
+        "bullpen": {
+          "value": 0.996,
+          "hr_fb": 0.1421,
+          "hrfb_ratio": 1.055,
+          "fatigue": 0.965,
+          "bf_last3": 32
+        },
+        "game_total": {
+          "value": 0.955,
+          "implied_team_runs": 3.5,
+          "total": 8.5,
+          "spread": 1.5
+        },
+        "expected_pa": {
+          "value": 4.31,
+          "lineup_slot": 4,
+          "starter_share": 0.62
+        }
+      },
+      "odds": {
+        "best_price_decimal": 6.4,
+        "best_price_american": 540,
+        "best_book": "BetRivers",
+        "implied_prob": 0.1562,
+        "fair_prob": 0.1474,
+        "n_books": 1,
+        "ev_per_dollar": -0.0054,
+        "edge_vs_fair": 0.008
+      }
+    },
+    {
+      "player_id": 676475,
+      "game_pk": 823042,
+      "name": "Alec Burleson",
+      "team": "St. Louis Cardinals",
+      "opponent": "Arizona Diamondbacks",
+      "venue": "Busch Stadium",
+      "game_time_utc": "2026-07-23T21:15:00Z",
+      "batter_hand": "L",
+      "pitcher_id": 694297,
+      "pitcher_name": "Brandon Pfaadt",
+      "pitcher_hand": "R",
+      "lineup_slot": 4,
+      "lineup_confirmed": false,
+      "prob": 0.1518,
+      "per_pa_prob_vs_starter": 0.0365,
+      "expected_pa": 4.31,
+      "factors": {
+        "league_hr_pa": 0.0309,
+        "batter": {
+          "value": 1.234,
+          "components": {
+            "brl_pa": {
+              "raw": 0.08115041381792013,
+              "regressed": 0.0766,
+              "ratio": 1.384,
+              "weight": 0.45
+            },
+            "hr_fb": {
+              "raw": 0.14150943396226415,
+              "regressed": 0.1373,
+              "ratio": 1.019,
+              "weight": 0.3
+            },
+            "xiso": {
+              "raw": 0.2247800441014333,
+              "regressed": 0.2134,
+              "ratio": 1.32,
+              "weight": 0.25
+            }
+          }
+        },
+        "pitcher": {
+          "value": 1.04,
+          "components": {
+            "hr_fb": {
+              "regressed": 0.1575,
+              "ratio": 1.169
+            },
+            "fb_rate": {
+              "regressed": 0.3172,
+              "ratio": 0.935
+            }
+          }
+        },
+        "park": {
+          "value": 0.914,
+          "park_factor": 90,
+          "hand": "L",
+          "park": "Busch Stadium"
+        },
+        "weather": {
+          "value": 1.06,
+          "temp_f": 82.6,
+          "wind_mph": 5.2,
+          "wind_out_mph": -3.7,
+          "roof": "open"
+        },
+        "bvp": {
+          "value": 0.949,
+          "pa": 11,
+          "hr": 0,
+          "hr_per_pa": 0.0,
+          "ratio": 0.901
+        },
+        "bullpen": {
+          "value": 1.063,
+          "hr_fb": 0.1354,
+          "hrfb_ratio": 1.005,
+          "fatigue": 1.06,
+          "bf_last3": 59
+        },
+        "game_total": {
+          "value": 1.0,
+          "implied_team_runs": 4.5,
+          "total": 7.5,
+          "spread": -1.5
+        },
+        "expected_pa": {
+          "value": 4.31,
+          "lineup_slot": 4,
+          "starter_share": 0.62
+        }
+      },
+      "odds": {
+        "best_price_decimal": 6.0,
+        "best_price_american": 500,
+        "best_book": "BetRivers",
+        "implied_prob": 0.1667,
+        "fair_prob": 0.1572,
+        "n_books": 1,
+        "ev_per_dollar": -0.0892,
+        "edge_vs_fair": -0.0054
       }
     },
     {
@@ -1475,7 +1580,7 @@
       "pitcher_hand": "R",
       "lineup_slot": 6,
       "lineup_confirmed": false,
-      "prob": 0.1511,
+      "prob": 0.1512,
       "per_pa_prob_vs_starter": 0.0378,
       "expected_pa": 4.08,
       "factors": {
@@ -1523,8 +1628,8 @@
           "park": "Rogers Centre"
         },
         "weather": {
-          "value": 1.048,
-          "temp_f": 68.6,
+          "value": 1.049,
+          "temp_f": 68.7,
           "wind_mph": 11.0,
           "wind_out_mph": 10.8,
           "roof": "retractable"
@@ -1560,113 +1665,8 @@
         "implied_prob": 0.1724,
         "fair_prob": 0.1627,
         "n_books": 1,
-        "ev_per_dollar": -0.1236,
-        "edge_vs_fair": -0.0116
-      }
-    },
-    {
-      "player_id": 676475,
-      "game_pk": 823042,
-      "name": "Alec Burleson",
-      "team": "St. Louis Cardinals",
-      "opponent": "Arizona Diamondbacks",
-      "venue": "Busch Stadium",
-      "game_time_utc": "2026-07-23T21:15:00Z",
-      "batter_hand": "L",
-      "pitcher_id": 694297,
-      "pitcher_name": "Brandon Pfaadt",
-      "pitcher_hand": "R",
-      "lineup_slot": 4,
-      "lineup_confirmed": false,
-      "prob": 0.1503,
-      "per_pa_prob_vs_starter": 0.0361,
-      "expected_pa": 4.31,
-      "factors": {
-        "league_hr_pa": 0.0309,
-        "batter": {
-          "value": 1.234,
-          "components": {
-            "brl_pa": {
-              "raw": 0.08115041381792013,
-              "regressed": 0.0766,
-              "ratio": 1.384,
-              "weight": 0.45
-            },
-            "hr_fb": {
-              "raw": 0.14150943396226415,
-              "regressed": 0.1373,
-              "ratio": 1.019,
-              "weight": 0.3
-            },
-            "xiso": {
-              "raw": 0.2247800441014333,
-              "regressed": 0.2134,
-              "ratio": 1.32,
-              "weight": 0.25
-            }
-          }
-        },
-        "pitcher": {
-          "value": 1.04,
-          "components": {
-            "hr_fb": {
-              "regressed": 0.1575,
-              "ratio": 1.169
-            },
-            "fb_rate": {
-              "regressed": 0.3172,
-              "ratio": 0.935
-            }
-          }
-        },
-        "park": {
-          "value": 0.914,
-          "park_factor": 90,
-          "hand": "L",
-          "park": "Busch Stadium"
-        },
-        "weather": {
-          "value": 1.049,
-          "temp_f": 82.3,
-          "wind_mph": 5.6,
-          "wind_out_mph": -4.5,
-          "roof": "open"
-        },
-        "bvp": {
-          "value": 0.949,
-          "pa": 11,
-          "hr": 0,
-          "hr_per_pa": 0.0,
-          "ratio": 0.901
-        },
-        "bullpen": {
-          "value": 1.063,
-          "hr_fb": 0.1354,
-          "hrfb_ratio": 1.005,
-          "fatigue": 1.06,
-          "bf_last3": 59
-        },
-        "game_total": {
-          "value": 1.0,
-          "implied_team_runs": 4.5,
-          "total": 7.5,
-          "spread": -1.5
-        },
-        "expected_pa": {
-          "value": 4.31,
-          "lineup_slot": 4,
-          "starter_share": 0.62
-        }
-      },
-      "odds": {
-        "best_price_decimal": 6.0,
-        "best_price_american": 500,
-        "best_book": "BetRivers",
-        "implied_prob": 0.1667,
-        "fair_prob": 0.1572,
-        "n_books": 1,
-        "ev_per_dollar": -0.0982,
-        "edge_vs_fair": -0.0069
+        "ev_per_dollar": -0.123,
+        "edge_vs_fair": -0.0115
       }
     },
     {
@@ -1683,8 +1683,8 @@
       "pitcher_hand": "L",
       "lineup_slot": 8,
       "lineup_confirmed": false,
-      "prob": 0.1495,
-      "per_pa_prob_vs_starter": 0.0411,
+      "prob": 0.1497,
+      "per_pa_prob_vs_starter": 0.0412,
       "expected_pa": 3.85,
       "factors": {
         "league_hr_pa": 0.0309,
@@ -1731,8 +1731,8 @@
           "park": "Rogers Centre"
         },
         "weather": {
-          "value": 1.048,
-          "temp_f": 68.6,
+          "value": 1.049,
+          "temp_f": 68.7,
           "wind_mph": 11.0,
           "wind_out_mph": 10.8,
           "roof": "retractable"
@@ -1768,8 +1768,8 @@
         "implied_prob": 0.2564,
         "fair_prob": 0.2419,
         "n_books": 1,
-        "ev_per_dollar": -0.417,
-        "edge_vs_fair": -0.0924
+        "ev_per_dollar": -0.4162,
+        "edge_vs_fair": -0.0922
       }
     },
     {
@@ -1786,8 +1786,8 @@
       "pitcher_hand": "R",
       "lineup_slot": 5,
       "lineup_confirmed": false,
-      "prob": 0.1479,
-      "per_pa_prob_vs_starter": 0.0358,
+      "prob": 0.1483,
+      "per_pa_prob_vs_starter": 0.0359,
       "expected_pa": 4.19,
       "factors": {
         "league_hr_pa": 0.0309,
@@ -1834,10 +1834,10 @@
           "park": "Comerica Park"
         },
         "weather": {
-          "value": 0.954,
-          "temp_f": 77.1,
-          "wind_mph": 9.9,
-          "wind_out_mph": -9.7,
+          "value": 0.957,
+          "temp_f": 77.8,
+          "wind_mph": 10.0,
+          "wind_out_mph": -9.9,
           "roof": "open"
         },
         "bvp": {
@@ -1871,111 +1871,8 @@
         "implied_prob": 0.1818,
         "fair_prob": 0.1715,
         "n_books": 1,
-        "ev_per_dollar": -0.1865,
-        "edge_vs_fair": -0.0236
-      }
-    },
-    {
-      "player_id": 657757,
-      "game_pk": 824893,
-      "name": "Gavin Sheets",
-      "team": "San Diego Padres",
-      "opponent": "Atlanta Braves",
-      "venue": "Truist Park",
-      "game_time_utc": "2026-07-23T16:15:00Z",
-      "batter_hand": "L",
-      "pitcher_id": 519242,
-      "pitcher_name": "Chris Sale",
-      "pitcher_hand": "L",
-      "lineup_slot": 6,
-      "lineup_confirmed": true,
-      "prob": 0.1464,
-      "per_pa_prob_vs_starter": 0.0371,
-      "expected_pa": 4.08,
-      "factors": {
-        "league_hr_pa": 0.0309,
-        "batter": {
-          "value": 1.078,
-          "components": {
-            "brl_pa": {
-              "raw": 0.05947496617050068,
-              "regressed": 0.0586,
-              "ratio": 1.059,
-              "weight": 0.45
-            },
-            "hr_fb": {
-              "raw": 0.1917808219178082,
-              "regressed": 0.1519,
-              "ratio": 1.127,
-              "weight": 0.3
-            },
-            "xiso": {
-              "raw": 0.17561171032357475,
-              "regressed": 0.1728,
-              "ratio": 1.07,
-              "weight": 0.25
-            }
-          }
-        },
-        "pitcher": {
-          "value": 0.935,
-          "components": {
-            "hr_fb": {
-              "regressed": 0.1316,
-              "ratio": 0.977
-            },
-            "fb_rate": {
-              "regressed": 0.2819,
-              "ratio": 0.831
-            }
-          }
-        },
-        "park": {
-          "value": 1.059,
-          "park_factor": 107,
-          "hand": "L",
-          "park": "Truist Park"
-        },
-        "weather": {
-          "value": 1.192,
-          "temp_f": 84.5,
-          "wind_mph": 7.8,
-          "wind_out_mph": 6.8,
-          "roof": "open"
-        },
-        "bvp": {
-          "value": 1.0,
-          "pa": 3,
-          "note": "insufficient matchup history"
-        },
-        "bullpen": {
-          "value": 1.001,
-          "hr_fb": 0.1253,
-          "hrfb_ratio": 0.93,
-          "fatigue": 1.046,
-          "bf_last3": 55
-        },
-        "game_total": {
-          "value": 0.944,
-          "implied_team_runs": 3.25,
-          "total": 8.0,
-          "spread": 1.5
-        },
-        "expected_pa": {
-          "value": 4.08,
-          "lineup_slot": 6,
-          "starter_share": 0.62
-        }
-      },
-      "odds": {
-        "best_price_decimal": 8.5,
-        "best_price_american": 750,
-        "best_book": "BetRivers",
-        "implied_prob": 0.1176,
-        "fair_prob": 0.111,
-        "n_books": 1,
-        "ev_per_dollar": 0.2444,
-        "edge_vs_fair": 0.0354
+        "ev_per_dollar": -0.1844,
+        "edge_vs_fair": -0.0232
       }
     },
     {
@@ -1992,8 +1889,8 @@
       "pitcher_hand": "R",
       "lineup_slot": 3,
       "lineup_confirmed": false,
-      "prob": 0.1457,
-      "per_pa_prob_vs_starter": 0.0353,
+      "prob": 0.1454,
+      "per_pa_prob_vs_starter": 0.0352,
       "expected_pa": 4.42,
       "factors": {
         "league_hr_pa": 0.0309,
@@ -2040,10 +1937,10 @@
           "park": "Progressive Field"
         },
         "weather": {
-          "value": 0.978,
-          "temp_f": 73.9,
-          "wind_mph": 6.0,
-          "wind_out_mph": -5.1,
+          "value": 0.976,
+          "temp_f": 73.6,
+          "wind_mph": 5.6,
+          "wind_out_mph": -5.2,
           "roof": "open"
         },
         "bvp": {
@@ -2079,8 +1976,111 @@
         "implied_prob": 0.1923,
         "fair_prob": 0.1814,
         "n_books": 1,
-        "ev_per_dollar": -0.2424,
-        "edge_vs_fair": -0.0357
+        "ev_per_dollar": -0.2439,
+        "edge_vs_fair": -0.036
+      }
+    },
+    {
+      "player_id": 657757,
+      "game_pk": 824893,
+      "name": "Gavin Sheets",
+      "team": "San Diego Padres",
+      "opponent": "Atlanta Braves",
+      "venue": "Truist Park",
+      "game_time_utc": "2026-07-23T16:15:00Z",
+      "batter_hand": "L",
+      "pitcher_id": 519242,
+      "pitcher_name": "Chris Sale",
+      "pitcher_hand": "L",
+      "lineup_slot": 6,
+      "lineup_confirmed": true,
+      "prob": 0.1448,
+      "per_pa_prob_vs_starter": 0.0367,
+      "expected_pa": 4.08,
+      "factors": {
+        "league_hr_pa": 0.0309,
+        "batter": {
+          "value": 1.078,
+          "components": {
+            "brl_pa": {
+              "raw": 0.05947496617050068,
+              "regressed": 0.0586,
+              "ratio": 1.059,
+              "weight": 0.45
+            },
+            "hr_fb": {
+              "raw": 0.1917808219178082,
+              "regressed": 0.1519,
+              "ratio": 1.127,
+              "weight": 0.3
+            },
+            "xiso": {
+              "raw": 0.17561171032357475,
+              "regressed": 0.1728,
+              "ratio": 1.07,
+              "weight": 0.25
+            }
+          }
+        },
+        "pitcher": {
+          "value": 0.935,
+          "components": {
+            "hr_fb": {
+              "regressed": 0.1316,
+              "ratio": 0.977
+            },
+            "fb_rate": {
+              "regressed": 0.2819,
+              "ratio": 0.831
+            }
+          }
+        },
+        "park": {
+          "value": 1.059,
+          "park_factor": 107,
+          "hand": "L",
+          "park": "Truist Park"
+        },
+        "weather": {
+          "value": 1.178,
+          "temp_f": 83.7,
+          "wind_mph": 6.7,
+          "wind_out_mph": 6.2,
+          "roof": "open"
+        },
+        "bvp": {
+          "value": 1.0,
+          "pa": 3,
+          "note": "insufficient matchup history"
+        },
+        "bullpen": {
+          "value": 1.001,
+          "hr_fb": 0.1253,
+          "hrfb_ratio": 0.93,
+          "fatigue": 1.046,
+          "bf_last3": 55
+        },
+        "game_total": {
+          "value": 0.944,
+          "implied_team_runs": 3.25,
+          "total": 8.0,
+          "spread": 1.5
+        },
+        "expected_pa": {
+          "value": 4.08,
+          "lineup_slot": 6,
+          "starter_share": 0.62
+        }
+      },
+      "odds": {
+        "best_price_decimal": 8.5,
+        "best_price_american": 750,
+        "best_book": "BetRivers",
+        "implied_prob": 0.1176,
+        "fair_prob": 0.111,
+        "n_books": 1,
+        "ev_per_dollar": 0.2308,
+        "edge_vs_fair": 0.0338
       }
     },
     {
@@ -2097,8 +2097,8 @@
       "pitcher_hand": "L",
       "lineup_slot": 6,
       "lineup_confirmed": false,
-      "prob": 0.1397,
-      "per_pa_prob_vs_starter": 0.0377,
+      "prob": 0.1398,
+      "per_pa_prob_vs_starter": 0.0378,
       "expected_pa": 4.08,
       "factors": {
         "league_hr_pa": 0.0309,
@@ -2145,8 +2145,8 @@
           "park": "Rogers Centre"
         },
         "weather": {
-          "value": 1.048,
-          "temp_f": 68.6,
+          "value": 1.049,
+          "temp_f": 68.7,
           "wind_mph": 11.0,
           "wind_out_mph": 10.8,
           "roof": "retractable"
@@ -2184,8 +2184,8 @@
         "implied_prob": 0.1429,
         "fair_prob": 0.1348,
         "n_books": 1,
-        "ev_per_dollar": -0.0221,
-        "edge_vs_fair": 0.0049
+        "ev_per_dollar": -0.0214,
+        "edge_vs_fair": 0.005
       }
     },
     {
@@ -2202,8 +2202,8 @@
       "pitcher_hand": "R",
       "lineup_slot": 1,
       "lineup_confirmed": false,
-      "prob": 0.1364,
-      "per_pa_prob_vs_starter": 0.0308,
+      "prob": 0.1377,
+      "per_pa_prob_vs_starter": 0.0311,
       "expected_pa": 4.65,
       "factors": {
         "league_hr_pa": 0.0309,
@@ -2250,10 +2250,10 @@
           "park": "Busch Stadium"
         },
         "weather": {
-          "value": 1.049,
-          "temp_f": 82.3,
-          "wind_mph": 5.6,
-          "wind_out_mph": -4.5,
+          "value": 1.06,
+          "temp_f": 82.6,
+          "wind_mph": 5.2,
+          "wind_out_mph": -3.7,
           "roof": "open"
         },
         "bvp": {
@@ -2287,8 +2287,8 @@
         "implied_prob": 0.125,
         "fair_prob": 0.1179,
         "n_books": 1,
-        "ev_per_dollar": 0.0912,
-        "edge_vs_fair": 0.0185
+        "ev_per_dollar": 0.1016,
+        "edge_vs_fair": 0.0198
       }
     },
     {
@@ -2305,8 +2305,8 @@
       "pitcher_hand": "L",
       "lineup_slot": 7,
       "lineup_confirmed": true,
-      "prob": 0.1322,
-      "per_pa_prob_vs_starter": 0.0361,
+      "prob": 0.1307,
+      "per_pa_prob_vs_starter": 0.0357,
       "expected_pa": 3.96,
       "factors": {
         "league_hr_pa": 0.0309,
@@ -2353,10 +2353,10 @@
           "park": "Truist Park"
         },
         "weather": {
-          "value": 1.192,
-          "temp_f": 84.5,
-          "wind_mph": 7.8,
-          "wind_out_mph": 6.8,
+          "value": 1.178,
+          "temp_f": 83.7,
+          "wind_mph": 6.7,
+          "wind_out_mph": 6.2,
           "roof": "open"
         },
         "bvp": {
@@ -2390,8 +2390,8 @@
         "implied_prob": 0.1176,
         "fair_prob": 0.111,
         "n_books": 1,
-        "ev_per_dollar": 0.1237,
-        "edge_vs_fair": 0.0212
+        "ev_per_dollar": 0.111,
+        "edge_vs_fair": 0.0197
       }
     },
     {
@@ -2408,8 +2408,8 @@
       "pitcher_hand": "L",
       "lineup_slot": 5,
       "lineup_confirmed": true,
-      "prob": 0.1303,
-      "per_pa_prob_vs_starter": 0.0326,
+      "prob": 0.1289,
+      "per_pa_prob_vs_starter": 0.0322,
       "expected_pa": 4.19,
       "factors": {
         "league_hr_pa": 0.0309,
@@ -2456,10 +2456,10 @@
           "park": "Truist Park"
         },
         "weather": {
-          "value": 1.192,
-          "temp_f": 84.5,
-          "wind_mph": 7.8,
-          "wind_out_mph": 6.8,
+          "value": 1.178,
+          "temp_f": 83.7,
+          "wind_mph": 6.7,
+          "wind_out_mph": 6.2,
           "roof": "open"
         },
         "bvp": {
@@ -2495,8 +2495,8 @@
         "implied_prob": 0.1176,
         "fair_prob": 0.111,
         "n_books": 1,
-        "ev_per_dollar": 0.1075,
-        "edge_vs_fair": 0.0193
+        "ev_per_dollar": 0.0956,
+        "edge_vs_fair": 0.0179
       }
     },
     {
@@ -2513,8 +2513,8 @@
       "pitcher_hand": "L",
       "lineup_slot": 8,
       "lineup_confirmed": true,
-      "prob": 0.1268,
-      "per_pa_prob_vs_starter": 0.0341,
+      "prob": 0.1254,
+      "per_pa_prob_vs_starter": 0.0337,
       "expected_pa": 3.85,
       "factors": {
         "league_hr_pa": 0.0309,
@@ -2561,10 +2561,10 @@
           "park": "Truist Park"
         },
         "weather": {
-          "value": 1.192,
-          "temp_f": 84.5,
-          "wind_mph": 7.8,
-          "wind_out_mph": 6.8,
+          "value": 1.178,
+          "temp_f": 83.7,
+          "wind_mph": 6.7,
+          "wind_out_mph": 6.2,
           "roof": "open"
         },
         "bvp": {
@@ -2598,8 +2598,8 @@
         "implied_prob": 0.125,
         "fair_prob": 0.1179,
         "n_books": 1,
-        "ev_per_dollar": 0.0144,
-        "edge_vs_fair": 0.0089
+        "ev_per_dollar": 0.0032,
+        "edge_vs_fair": 0.0075
       }
     },
     {
@@ -2616,8 +2616,8 @@
       "pitcher_hand": "R",
       "lineup_slot": 2,
       "lineup_confirmed": false,
-      "prob": 0.1218,
-      "per_pa_prob_vs_starter": 0.0262,
+      "prob": 0.123,
+      "per_pa_prob_vs_starter": 0.0265,
       "expected_pa": 4.54,
       "factors": {
         "league_hr_pa": 0.0309,
@@ -2664,10 +2664,10 @@
           "park": "Busch Stadium"
         },
         "weather": {
-          "value": 1.049,
-          "temp_f": 82.3,
-          "wind_mph": 5.6,
-          "wind_out_mph": -4.5,
+          "value": 1.06,
+          "temp_f": 82.6,
+          "wind_mph": 5.2,
+          "wind_out_mph": -3.7,
           "roof": "open"
         },
         "bvp": {
@@ -2703,8 +2703,8 @@
         "implied_prob": 0.1176,
         "fair_prob": 0.111,
         "n_books": 1,
-        "ev_per_dollar": 0.0353,
-        "edge_vs_fair": 0.0108
+        "ev_per_dollar": 0.0455,
+        "edge_vs_fair": 0.012
       }
     },
     {
@@ -2721,8 +2721,8 @@
       "pitcher_hand": "R",
       "lineup_slot": 5,
       "lineup_confirmed": false,
-      "prob": 0.119,
-      "per_pa_prob_vs_starter": 0.0295,
+      "prob": 0.1202,
+      "per_pa_prob_vs_starter": 0.0299,
       "expected_pa": 4.19,
       "factors": {
         "league_hr_pa": 0.0309,
@@ -2769,10 +2769,10 @@
           "park": "Busch Stadium"
         },
         "weather": {
-          "value": 1.049,
-          "temp_f": 82.3,
-          "wind_mph": 5.6,
-          "wind_out_mph": -4.5,
+          "value": 1.06,
+          "temp_f": 82.6,
+          "wind_mph": 5.2,
+          "wind_out_mph": -3.7,
           "roof": "open"
         },
         "bvp": {
@@ -2806,8 +2806,8 @@
         "implied_prob": 0.0952,
         "fair_prob": 0.0898,
         "n_books": 1,
-        "ev_per_dollar": 0.2495,
-        "edge_vs_fair": 0.0292
+        "ev_per_dollar": 0.2621,
+        "edge_vs_fair": 0.0304
       }
     },
     {
@@ -2824,8 +2824,8 @@
       "pitcher_hand": "R",
       "lineup_slot": 4,
       "lineup_confirmed": false,
-      "prob": 0.109,
-      "per_pa_prob_vs_starter": 0.0268,
+      "prob": 0.1101,
+      "per_pa_prob_vs_starter": 0.0271,
       "expected_pa": 4.31,
       "factors": {
         "league_hr_pa": 0.0309,
@@ -2872,10 +2872,10 @@
           "park": "Busch Stadium"
         },
         "weather": {
-          "value": 1.049,
-          "temp_f": 82.3,
-          "wind_mph": 5.6,
-          "wind_out_mph": -4.5,
+          "value": 1.06,
+          "temp_f": 82.6,
+          "wind_mph": 5.2,
+          "wind_out_mph": -3.7,
           "roof": "open"
         },
         "bvp": {
@@ -2909,8 +2909,8 @@
         "implied_prob": 0.0909,
         "fair_prob": 0.0858,
         "n_books": 1,
-        "ev_per_dollar": 0.199,
-        "edge_vs_fair": 0.0232
+        "ev_per_dollar": 0.2111,
+        "edge_vs_fair": 0.0243
       }
     },
     {
@@ -2927,7 +2927,7 @@
       "pitcher_hand": "R",
       "lineup_slot": 6,
       "lineup_confirmed": false,
-      "prob": 0.1085,
+      "prob": 0.1083,
       "per_pa_prob_vs_starter": 0.0289,
       "expected_pa": 4.08,
       "factors": {
@@ -2975,10 +2975,10 @@
           "park": "Progressive Field"
         },
         "weather": {
-          "value": 0.978,
-          "temp_f": 73.9,
-          "wind_mph": 6.0,
-          "wind_out_mph": -5.1,
+          "value": 0.976,
+          "temp_f": 73.6,
+          "wind_mph": 5.6,
+          "wind_out_mph": -5.2,
           "roof": "open"
         },
         "bvp": {
@@ -3012,113 +3012,8 @@
         "implied_prob": 0.1111,
         "fair_prob": 0.1048,
         "n_books": 1,
-        "ev_per_dollar": -0.0235,
-        "edge_vs_fair": 0.0037
-      }
-    },
-    {
-      "player_id": 630105,
-      "game_pk": 824893,
-      "name": "Jake Cronenworth",
-      "team": "San Diego Padres",
-      "opponent": "Atlanta Braves",
-      "venue": "Truist Park",
-      "game_time_utc": "2026-07-23T16:15:00Z",
-      "batter_hand": "L",
-      "pitcher_id": 519242,
-      "pitcher_name": "Chris Sale",
-      "pitcher_hand": "L",
-      "lineup_slot": 9,
-      "lineup_confirmed": true,
-      "prob": 0.1065,
-      "per_pa_prob_vs_starter": 0.0284,
-      "expected_pa": 3.73,
-      "factors": {
-        "league_hr_pa": 0.0309,
-        "batter": {
-          "value": 0.866,
-          "components": {
-            "brl_pa": {
-              "raw": 0.04043141153081511,
-              "regressed": 0.0447,
-              "ratio": 0.807,
-              "weight": 0.45
-            },
-            "hr_fb": {
-              "raw": 0.10344827586206896,
-              "regressed": 0.1302,
-              "ratio": 0.966,
-              "weight": 0.3
-            },
-            "xiso": {
-              "raw": 0.12593630573248404,
-              "regressed": 0.135,
-              "ratio": 0.835,
-              "weight": 0.25
-            }
-          }
-        },
-        "pitcher": {
-          "value": 0.935,
-          "components": {
-            "hr_fb": {
-              "regressed": 0.1316,
-              "ratio": 0.977
-            },
-            "fb_rate": {
-              "regressed": 0.2819,
-              "ratio": 0.831
-            }
-          }
-        },
-        "park": {
-          "value": 1.059,
-          "park_factor": 107,
-          "hand": "L",
-          "park": "Truist Park"
-        },
-        "weather": {
-          "value": 1.192,
-          "temp_f": 84.5,
-          "wind_mph": 7.8,
-          "wind_out_mph": 6.8,
-          "roof": "open"
-        },
-        "bvp": {
-          "value": 0.953,
-          "pa": 10,
-          "hr": 0,
-          "hr_per_pa": 0.0,
-          "ratio": 0.909
-        },
-        "bullpen": {
-          "value": 1.001,
-          "hr_fb": 0.1253,
-          "hrfb_ratio": 0.93,
-          "fatigue": 1.046,
-          "bf_last3": 55
-        },
-        "game_total": {
-          "value": 0.944,
-          "implied_team_runs": 3.25,
-          "total": 8.0,
-          "spread": 1.5
-        },
-        "expected_pa": {
-          "value": 3.73,
-          "lineup_slot": 9,
-          "starter_share": 0.62
-        }
-      },
-      "odds": {
-        "best_price_decimal": 12.5,
-        "best_price_american": 1150,
-        "best_book": "BetRivers",
-        "implied_prob": 0.08,
-        "fair_prob": 0.0755,
-        "n_books": 1,
-        "ev_per_dollar": 0.3313,
-        "edge_vs_fair": 0.031
+        "ev_per_dollar": -0.0253,
+        "edge_vs_fair": 0.0035
       }
     },
     {
@@ -3135,7 +3030,7 @@
       "pitcher_hand": "L",
       "lineup_slot": 5,
       "lineup_confirmed": false,
-      "prob": 0.1064,
+      "prob": 0.1065,
       "per_pa_prob_vs_starter": 0.0264,
       "expected_pa": 4.19,
       "factors": {
@@ -3183,8 +3078,8 @@
           "park": "Rogers Centre"
         },
         "weather": {
-          "value": 1.048,
-          "temp_f": 68.6,
+          "value": 1.049,
+          "temp_f": 68.7,
           "wind_mph": 11.0,
           "wind_out_mph": 10.8,
           "roof": "retractable"
@@ -3220,8 +3115,113 @@
         "implied_prob": 0.1111,
         "fair_prob": 0.1048,
         "n_books": 1,
-        "ev_per_dollar": -0.0424,
-        "edge_vs_fair": 0.0016
+        "ev_per_dollar": -0.0415,
+        "edge_vs_fair": 0.0017
+      }
+    },
+    {
+      "player_id": 630105,
+      "game_pk": 824893,
+      "name": "Jake Cronenworth",
+      "team": "San Diego Padres",
+      "opponent": "Atlanta Braves",
+      "venue": "Truist Park",
+      "game_time_utc": "2026-07-23T16:15:00Z",
+      "batter_hand": "L",
+      "pitcher_id": 519242,
+      "pitcher_name": "Chris Sale",
+      "pitcher_hand": "L",
+      "lineup_slot": 9,
+      "lineup_confirmed": true,
+      "prob": 0.1053,
+      "per_pa_prob_vs_starter": 0.0281,
+      "expected_pa": 3.73,
+      "factors": {
+        "league_hr_pa": 0.0309,
+        "batter": {
+          "value": 0.866,
+          "components": {
+            "brl_pa": {
+              "raw": 0.04043141153081511,
+              "regressed": 0.0447,
+              "ratio": 0.807,
+              "weight": 0.45
+            },
+            "hr_fb": {
+              "raw": 0.10344827586206896,
+              "regressed": 0.1302,
+              "ratio": 0.966,
+              "weight": 0.3
+            },
+            "xiso": {
+              "raw": 0.12593630573248404,
+              "regressed": 0.135,
+              "ratio": 0.835,
+              "weight": 0.25
+            }
+          }
+        },
+        "pitcher": {
+          "value": 0.935,
+          "components": {
+            "hr_fb": {
+              "regressed": 0.1316,
+              "ratio": 0.977
+            },
+            "fb_rate": {
+              "regressed": 0.2819,
+              "ratio": 0.831
+            }
+          }
+        },
+        "park": {
+          "value": 1.059,
+          "park_factor": 107,
+          "hand": "L",
+          "park": "Truist Park"
+        },
+        "weather": {
+          "value": 1.178,
+          "temp_f": 83.7,
+          "wind_mph": 6.7,
+          "wind_out_mph": 6.2,
+          "roof": "open"
+        },
+        "bvp": {
+          "value": 0.953,
+          "pa": 10,
+          "hr": 0,
+          "hr_per_pa": 0.0,
+          "ratio": 0.909
+        },
+        "bullpen": {
+          "value": 1.001,
+          "hr_fb": 0.1253,
+          "hrfb_ratio": 0.93,
+          "fatigue": 1.046,
+          "bf_last3": 55
+        },
+        "game_total": {
+          "value": 0.944,
+          "implied_team_runs": 3.25,
+          "total": 8.0,
+          "spread": 1.5
+        },
+        "expected_pa": {
+          "value": 3.73,
+          "lineup_slot": 9,
+          "starter_share": 0.62
+        }
+      },
+      "odds": {
+        "best_price_decimal": 12.5,
+        "best_price_american": 1150,
+        "best_book": "BetRivers",
+        "implied_prob": 0.08,
+        "fair_prob": 0.0755,
+        "n_books": 1,
+        "ev_per_dollar": 0.3162,
+        "edge_vs_fair": 0.0298
       }
     },
     {
@@ -3286,8 +3286,8 @@
           "park": "Rogers Centre"
         },
         "weather": {
-          "value": 1.048,
-          "temp_f": 68.6,
+          "value": 1.049,
+          "temp_f": 68.7,
           "wind_mph": 11.0,
           "wind_out_mph": 10.8,
           "roof": "retractable"
@@ -3341,8 +3341,8 @@
       "pitcher_hand": "R",
       "lineup_slot": 7,
       "lineup_confirmed": false,
-      "prob": 0.088,
-      "per_pa_prob_vs_starter": 0.0218,
+      "prob": 0.0883,
+      "per_pa_prob_vs_starter": 0.0219,
       "expected_pa": 3.96,
       "factors": {
         "league_hr_pa": 0.0309,
@@ -3389,10 +3389,10 @@
           "park": "Comerica Park"
         },
         "weather": {
-          "value": 0.954,
-          "temp_f": 77.1,
-          "wind_mph": 9.9,
-          "wind_out_mph": -9.7,
+          "value": 0.957,
+          "temp_f": 77.8,
+          "wind_mph": 10.0,
+          "wind_out_mph": -9.9,
           "roof": "open"
         },
         "bvp": {
@@ -3426,8 +3426,8 @@
         "implied_prob": 0.087,
         "fair_prob": 0.082,
         "n_books": 1,
-        "ev_per_dollar": 0.012,
-        "edge_vs_fair": 0.006
+        "ev_per_dollar": 0.0155,
+        "edge_vs_fair": 0.0063
       }
     },
     {
@@ -3444,8 +3444,8 @@
       "pitcher_hand": "R",
       "lineup_slot": 6,
       "lineup_confirmed": false,
-      "prob": 0.0865,
-      "per_pa_prob_vs_starter": 0.0217,
+      "prob": 0.0867,
+      "per_pa_prob_vs_starter": 0.0218,
       "expected_pa": 4.08,
       "factors": {
         "league_hr_pa": 0.0309,
@@ -3492,10 +3492,10 @@
           "park": "Comerica Park"
         },
         "weather": {
-          "value": 0.954,
-          "temp_f": 77.1,
-          "wind_mph": 9.9,
-          "wind_out_mph": -9.7,
+          "value": 0.957,
+          "temp_f": 77.8,
+          "wind_mph": 10.0,
+          "wind_out_mph": -9.9,
           "roof": "open"
         },
         "bvp": {
@@ -3529,8 +3529,8 @@
         "implied_prob": 0.0714,
         "fair_prob": 0.0674,
         "n_books": 1,
-        "ev_per_dollar": 0.211,
-        "edge_vs_fair": 0.0191
+        "ev_per_dollar": 0.2138,
+        "edge_vs_fair": 0.0193
       }
     }
   ]
