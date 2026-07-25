@@ -6,10 +6,19 @@ name: Pitcher strikeout board
 # ET and does NOT touch the home-run predictions.
 on:
   schedule:
-    # Same top-of-hour-avoidance reasoning as the HR board's cron: 12:47 UTC
-    # = 8:47am ET (EDT), offset a few minutes from the HR board's 8:41 run
-    # so the two don't queue at the exact same moment.
+    # GitHub's `schedule` trigger is unreliable for this repo (late by
+    # hours, or dropped outright some mornings), so this gets five attempts
+    # spread across the morning instead of one, each offset a few minutes
+    # from the HR board's crons so the two don't queue at the same moment.
+    # The "Decide whether to run" gate step skips all the expensive work
+    # (Statcast pull, Odds API call, commit) the instant web/strikeouts.json
+    # already shows today's date, so extra attempts that land after the
+    # first success cost nothing.
     - cron: "47 12 * * *"
+    - cron: "17 13 * * *"
+    - cron: "47 13 * * *"
+    - cron: "17 14 * * *"
+    - cron: "47 14 * * *"
   workflow_dispatch:
     inputs:
       all_day:
@@ -30,13 +39,34 @@ jobs:
   project:
     runs-on: ubuntu-latest
     timeout-minutes: 60
+    outputs:
+      run: ${{ steps.gate.outputs.run }}
     steps:
       - uses: actions/checkout@v4
+
+      - name: Decide whether to run
+        id: gate
+        run: |
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            TODAY=$(TZ=America/New_York date +%F)
+            CURRENT=$(python3 -c "import json; print(json.load(open('web/strikeouts.json')).get('date',''))" 2>/dev/null || echo "")
+            if [ "$CURRENT" = "$TODAY" ]; then
+              echo "Already have $TODAY committed (an earlier scheduled attempt today succeeded) -- skipping this retry."
+              echo "run=false" >> "$GITHUB_OUTPUT"
+            else
+              echo "run=true" >> "$GITHUB_OUTPUT"
+            fi
+          else
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          fi
+
       - uses: actions/setup-python@v5
+        if: steps.gate.outputs.run == 'true'
         with:
           python-version: "3.11"
           cache: pip
       - name: Restore pybaseball cache
+        if: steps.gate.outputs.run == 'true'
         uses: actions/cache@v4
         with:
           path: ~/.pybaseball
@@ -44,12 +74,15 @@ jobs:
           restore-keys: pybaseball-
 
       - name: Install dependencies
+        if: steps.gate.outputs.run == 'true'
         run: python -m pip install -q -r requirements.txt
 
       - name: Grade yesterday's strikeout picks
+        if: steps.gate.outputs.run == 'true'
         run: python -m pipeline.grade_strikeouts || echo "grading failed; continuing"
 
       - name: Project strikeouts
+        if: steps.gate.outputs.run == 'true'
         env:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
           ODDS_REGIONS: us
@@ -58,6 +91,7 @@ jobs:
             ${{ inputs.all_day && '--all-day' || '' }}
 
       - name: Commit strikeout board
+        if: steps.gate.outputs.run == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -67,12 +101,14 @@ jobs:
           git push origin "HEAD:${GITHUB_REF_NAME}"
 
       - name: Upload Pages artifact
+        if: steps.gate.outputs.run == 'true'
         uses: actions/upload-pages-artifact@v3
         with:
           path: web
 
   deploy:
     needs: project
+    if: needs.project.outputs.run == 'true'
     runs-on: ubuntu-latest
     continue-on-error: true
     environment:

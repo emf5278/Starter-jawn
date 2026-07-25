@@ -114,8 +114,29 @@ is demo data (marked `"demo": true`) so the page renders before your first run.
 
 ## Automation (GitHub Actions + Pages)
 
-`.github/workflows/daily.yml` runs at **13:00 UTC (~9am ET)** every day:
-pipeline → commit `web/predictions.json` → deploy `web/` to GitHub Pages.
+`.github/workflows/daily.yml` runs the HR pipeline → commits
+`web/predictions.json` → deploys `web/` to GitHub Pages.
+`.github/workflows/strikeouts.yml` does the same for the pitcher-strikeout
+board (`web/strikeouts.json`), on its own cron and its own single Odds API
+call — running both daily doesn't double up on either board's usage. It
+projects games with first pitch at/after 5pm ET and never touches
+`web/predictions.json`.
+
+**Self-healing schedule.** GitHub's `schedule` trigger for this repo has
+proven unreliable on its own — some mornings it fires hours late, some
+mornings it silently never fires. Rather than one cron per board and a
+human noticing when it fails, each workflow now lists **five cron entries**
+spread across the morning (roughly every 30 minutes, offset a few minutes
+from each other so the two boards don't queue at the same moment). A
+"Decide whether to run" gate step at the top of each job checks whether
+`web/predictions.json` / `web/strikeouts.json` already shows today's date
+(US/Eastern); if so, it skips the entire rest of the job — no Statcast
+pull, no Odds API call, no commit — and exits in a few seconds. Only the
+first attempt that actually fires that day does real work, so having
+multiple scheduled entries costs nothing on a normal day and guarantees
+the board still refreshes on a day GitHub drops most of them. Manual
+`workflow_dispatch` always runs regardless of what's already committed
+(so a late-day lineup/weather re-check still works as before).
 
 One-time repo setup:
 1. **Settings → Pages → Source: GitHub Actions.**
@@ -123,13 +144,6 @@ One-time repo setup:
 3. Trigger the first run from the Actions tab (`workflow_dispatch`; check
    "lite" for a quick first run). The pybaseball cache persists between runs
    via `actions/cache`, so the daily Statcast pull is incremental.
-
-`.github/workflows/strikeouts.yml` (pitcher strikeout board) runs on its own
-cron at **12:47 UTC (~8:47am ET)** — a few minutes offset from the HR
-board's 8:41 run so the two don't queue at the same moment. Each pipeline
-makes its own single Odds API call, so running both daily doesn't double up
-on either board's usage. It projects games with first pitch at/after 5pm ET
-and never touches `web/predictions.json`.
 
 ## Daily results logs
 
