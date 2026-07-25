@@ -85,9 +85,9 @@
     tr.prow > td { border:0; padding:2px 0; text-align:left; }
     td.c-rank { position:absolute; top:12px; left:12px; width:auto; font-size:12px; font-weight:700; color:var(--ink-muted); }
     td.c-chev { position:absolute; top:11px; right:12px; padding:0; }
-    #tbl td.c-projk,#tbl td.c-line,#tbl td.c-pover,#tbl td.c-bet {
+    #tbl td.c-projk,#tbl td.c-line,#tbl td.c-pover,#tbl td.c-be,#tbl td.c-bet {
       display:flex; justify-content:space-between; align-items:baseline; gap:12px; padding:6px 0; text-align:right; border-top:1px solid var(--grid); }
-    td.c-projk::before,td.c-line::before,td.c-pover::before,td.c-bet::before {
+    td.c-projk::before,td.c-line::before,td.c-pover::before,td.c-be::before,td.c-bet::before {
       content:attr(data-label); text-align:left; white-space:nowrap; font-size:12px; font-weight:600; color:var(--ink-muted); }
     td.c-match { padding-bottom:4px; } .plain { max-width:none; }
   }
@@ -132,14 +132,17 @@
         <thead><tr>
           <th></th><th>Pitcher</th><th>Matchup &amp; first pitch</th>
           <th class="num">Proj K</th><th class="num">Line</th>
-          <th class="num">P(Over)</th><th class="num">Best bet</th><th></th>
+          <th class="num">P(Over)</th><th class="num">Need</th><th class="num">Best bet</th><th></th>
         </tr></thead>
         <tbody></tbody>
       </table>
     </div>
     <div class="note">
       Lineup status: <span class="dot ok"></span>opponent lineup confirmed&ensp;<span class="dot tbd"></span>projected.
-      "Best bet" is the higher-EV side (Over/Under) at the best listed price. Projections are estimates — not betting advice.
+      <b>Need</b> is the shortest price at which the side the model leans is still break-even —
+      compare it to whatever your own sportsbook is showing. <b>Best bet</b> is the higher-EV side at the
+      best price in our odds feed, which covers only some books (no FanDuel player props), so treat it as a
+      reference rather than the price you'll get. Projections are estimates — not betting advice.
     </div>
   </div>
 </div>
@@ -225,6 +228,17 @@ function betCell(p){
     `<span class="${cls}">${ev>=0?"+":"−"}${Math.abs(100*ev).toFixed(1)}%</span>`;
 }
 
+// Break-even price for the side the model leans, independent of any book —
+// so it's usable at a sportsbook the odds feed doesn't carry.
+function beCell(p){
+  if(p.prob_over==null) return `<span class="ev-na">—</span>`;
+  const over = p.prob_over>=0.5;
+  const be = over ? p.break_even_over_american : p.break_even_under_american;
+  if(be==null) return `<span class="ev-na">—</span>`;
+  return `<span class="sidechip ${over?"side-over":"side-under"}">${over?"OVER":"UNDER"}</span>` +
+    `${american(be)}`;
+}
+
 function renderTable(list){
   const tb=document.querySelector("#tbl tbody"); tb.innerHTML="";
   list.forEach((p,i)=>{
@@ -239,10 +253,11 @@ function renderTable(list){
        <td class="num big c-projk" data-label="Proj K">${p.expected_ks.toFixed(1)}</td>
        <td class="num c-line" data-label="Line">${p.line!=null?p.line:"—"}</td>
        <td class="num c-pover" data-label="P(Over)">${p.prob_over!=null?pct(p.prob_over):"—"}</td>
+       <td class="num c-be" data-label="Need">${beCell(p)}</td>
        <td class="num c-bet" data-label="Best bet">${betCell(p)}</td>
        <td class="c-chev"><span class="chev">▶</span></td>`;
     const detail=document.createElement("tr"); detail.className="detail"; detail.hidden=true;
-    detail.innerHTML=`<td colspan="8">${whyHtml(p)}</td>`;
+    detail.innerHTML=`<td colspan="9">${whyHtml(p)}</td>`;
     tr.addEventListener("click",()=>{ detail.hidden=!detail.hidden; tr.classList.toggle("open",!detail.hidden); });
     tb.append(tr,detail);
   });

@@ -123,6 +123,16 @@ def run(date: dt.date, output: str, use_odds: bool, all_day: bool) -> dict:
                 "pitcher_hand": players.get(pid, {}).get("pitch_hand"),
                 **pred,
             }
+            # Break-even price per side: the shortest odds at which that side
+            # is still +EV on the model's numbers. Book-independent, so it's
+            # usable at a sportsbook the odds feed doesn't carry.
+            for side in ("over", "under"):
+                p = pred.get(f"prob_{side}")
+                if p:
+                    row[f"break_even_{side}_american"] = \
+                        odds_mod.decimal_to_american(1.0 / p)
+                else:
+                    row[f"break_even_{side}_american"] = None
             if q:
                 p_over, p_under = pred["prob_over"], pred["prob_under"]
                 ev_over = ev_per_dollar(p_over, q["over_price_decimal"])

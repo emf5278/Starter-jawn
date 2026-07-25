@@ -189,6 +189,19 @@ def run(date: dt.date, output: str, lite: bool, use_odds: bool, top_n: int) -> d
 
     rows.sort(key=lambda r: r["prob"], reverse=True)
 
+    # Break-even price: the shortest odds at which this bet is still +EV given
+    # the model probability. Deliberately independent of any book, so it works
+    # at whatever sportsbook you actually have an account with -- including
+    # ones the odds feed doesn't cover (it carries no FanDuel player props).
+    # Shown for every scored player, even those no book in the feed quotes.
+    for r in rows:
+        if r["prob"] > 0:
+            be = 1.0 / r["prob"]
+            r["break_even_decimal"] = round(be, 3)
+            r["break_even_american"] = odds_mod.decimal_to_american(be)
+        else:
+            r["break_even_decimal"] = r["break_even_american"] = None
+
     # attach odds to every scored player, not just the probability leaders —
     # the EV ranking can surface longshots priced too generously
     for r in rows:

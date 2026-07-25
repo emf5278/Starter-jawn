@@ -117,11 +117,11 @@
     td.c-chev { position: absolute; top: 11px; right: 12px; padding: 0; }
     /* each numeric cell becomes a label-left / value-right row (#tbl id
        prefix needed to beat the `#tbl td { display:block }` specificity) */
-    #tbl td.c-prob, #tbl td.c-odds, #tbl td.c-fair, #tbl td.c-ev {
+    #tbl td.c-prob, #tbl td.c-be, #tbl td.c-odds, #tbl td.c-fair, #tbl td.c-ev {
       display: flex; justify-content: space-between; align-items: baseline;
       gap: 12px; padding: 6px 0; text-align: right; border-top: 1px solid var(--grid);
     }
-    td.c-prob::before, td.c-odds::before, td.c-fair::before, td.c-ev::before {
+    td.c-prob::before, td.c-be::before, td.c-odds::before, td.c-fair::before, td.c-ev::before {
       content: attr(data-label); text-align: left; white-space: nowrap;
       font-size: 12px; font-weight: 600; color: var(--ink-muted);
     }
@@ -190,7 +190,7 @@
       <table id="tbl">
         <thead><tr>
           <th></th><th>Player</th><th>Matchup &amp; first pitch</th>
-          <th class="num">P(HR)</th><th class="num">Best odds</th>
+          <th class="num">P(HR)</th><th class="num">Need</th><th class="num">Best odds</th>
           <th class="num">Market fair</th><th class="num">EV / $1</th><th></th>
         </tr></thead>
         <tbody></tbody>
@@ -198,7 +198,10 @@
     </div>
     <div class="note">
       Lineup status: <span class="dot ok"></span>confirmed&ensp;<span class="dot tbd"></span>projected from last game.
-      EV assumes a flat $1 stake at the best listed price. Model probabilities are estimates — not betting advice.
+      <b>Need</b> is the shortest price at which the bet is still break-even on the model's number —
+      compare it to whatever your own sportsbook is showing. <b>Best odds</b> and <b>EV</b> use the best
+      price in our odds feed, which covers only some books (no FanDuel player props), so treat them as a
+      reference rather than the price you'll get. Model probabilities are estimates — not betting advice.
     </div>
   </div>
 </div>
@@ -339,6 +342,7 @@ function renderTable(players) {
            `${esc(p.team)} · bats ${p.batter_hand} · #${p.lineup_slot}</span></td>
        <td class="c-match"><span class="pmeta">${matchLine}</span></td>
        <td class="num prob c-prob" data-label="P(HR)">${pct(p.prob)}</td>
+       <td class="num c-be" data-label="Need">${p.break_even_american != null ? american(p.break_even_american) : "—"}</td>
        <td class="num c-odds" data-label="Best odds">${o ? american(o.best_price_american) + `<br><span class="pmeta">${esc(o.best_book)}</span>` : "—"}</td>
        <td class="num c-fair" data-label="Market fair">${o ? pct(o.fair_prob) : "—"}</td>
        <td class="num c-ev" data-label="EV / $1">${evCell}</td>
@@ -346,7 +350,7 @@ function renderTable(players) {
     const detail = document.createElement("tr");
     detail.className = "detail";
     detail.hidden = true;
-    detail.innerHTML = `<td colspan="8">${whyHtml(p)}</td>`;
+    detail.innerHTML = `<td colspan="9">${whyHtml(p)}</td>`;
     tr.addEventListener("click", () => {
       detail.hidden = !detail.hidden;
       tr.classList.toggle("open", !detail.hidden);

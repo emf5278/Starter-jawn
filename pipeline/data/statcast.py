@@ -134,7 +134,12 @@ def season_events(season: int, end_date: dt.date) -> pd.DataFrame | None:
         return None
     if ev is None or ev.empty:
         return None
-    return ev[ev["game_type"] == "R"] if "game_type" in ev.columns else ev
+    out = ev[ev["game_type"] == "R"] if "game_type" in ev.columns else ev
+    # pybaseball concatenates the daily chunks without reindexing, so the
+    # frame carries duplicate index labels. Anything downstream that does
+    # `df.loc[df.groupby(...).idxmin()]` would then get back every row
+    # sharing a label instead of one, so reset once here at the source.
+    return out.reset_index(drop=True)
 
 
 def _pa_flags(ev: pd.DataFrame, cols: list[str]) -> pd.DataFrame:
@@ -181,9 +186,16 @@ _K_EVENTS = ("strikeout", "strikeout_double_play")
 
 
 def _k_pa(ev: pd.DataFrame) -> pd.DataFrame:
-    """One row per PA with a strikeout flag."""
+    """One row per PA with a strikeout flag.
+
+    The index is reset because callers use `groupby(...).idxmin()` + `.loc[]`
+    to pick each half-inning's starting pitcher. `idxmin` returns index
+    *labels*, so a duplicated label makes `.loc[]` return every row sharing
+    it -- silently multiplying rows on the subsequent merge. See the note in
+    `season_events`.
+    """
     pa_end = ev["events"].notna() & (ev["events"] != "")
-    df = ev.loc[pa_end].copy()
+    df = ev.loc[pa_end].copy().reset_index(drop=True)
     df["k"] = df["events"].isin(_K_EVENTS).astype(int)
     return df
 
@@ -325,7 +337,7 @@ def bullpen_fip_by_team_from_events(ev: pd.DataFrame) -> pd.DataFrame:
     """Per pitching team (Savant abbrev): relief-only PA, K, BB(+HBP), HR.
     Starter = pitcher of each half-inning's first PA, as elsewhere."""
     pa_end = ev["events"].notna() & (ev["events"] != "")
-    df = ev.loc[pa_end].copy()
+    df = ev.loc[pa_end].copy().reset_index(drop=True)  # see _k_pa on why
     df["pitch_abbrev"] = np.where(df["inning_topbot"] == "Top",
                                   df["home_team"], df["away_team"])
     starters = df.loc[
