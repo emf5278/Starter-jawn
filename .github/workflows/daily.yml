@@ -122,6 +122,15 @@ jobs:
     # GitHub Actions). Until then this job fails; don't let that mark the
     # daily prediction run red.
     continue-on-error: true
+    # GitHub Pages allows exactly one deployment in flight repo-wide; without
+    # this, a deploy here landing at the same time as the strikeout or
+    # gamelines board's deploy gets a 400 ("in progress deployment") that
+    # continue-on-error then silently swallows, leaving the live site stuck
+    # on stale content. This group name is shared verbatim across all three
+    # boards' deploy jobs so GitHub queues them instead of racing them.
+    concurrency:
+      group: pages-deployment
+      cancel-in-progress: false
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

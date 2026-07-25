@@ -57,6 +57,12 @@ jobs:
     needs: project
     runs-on: ubuntu-latest
     continue-on-error: true
+    # Shared with the HR and strikeout boards' deploy jobs (same group name)
+    # so GitHub Pages' single-deployment-at-a-time limit queues concurrent
+    # deploys instead of racing them into a silently-swallowed 400.
+    concurrency:
+      group: pages-deployment
+      cancel-in-progress: false
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
