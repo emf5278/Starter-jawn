@@ -1,0 +1,338 @@
+{
+  "row": {
+    "date": "2026-07-31",
+    "snapshot_utc": "2026-07-31T15:07:45+00:00",
+    "late_snapshot": false,
+    "prob_hits": 6,
+    "prob_graded": 20,
+    "prob_expected": 4.39,
+    "ev_hits": 4,
+    "ev_graded": 20,
+    "ev_expected": 2.84,
+    "ev_flat_pnl": 10.35
+  },
+  "top_prob": [
+    {
+      "name": "James Wood",
+      "team": "Washington Nationals",
+      "prob": 0.271,
+      "played": true,
+      "hr": 0,
+      "odds": 3.4
+    },
+    {
+      "name": "Spencer Torkelson",
+      "team": "Detroit Tigers",
+      "prob": 0.2539,
+      "played": true,
+      "hr": 0,
+      "odds": 3.7
+    },
+    {
+      "name": "Nick Kurtz",
+      "team": "Athletics",
+      "prob": 0.237,
+      "played": true,
+      "hr": 0,
+      "odds": 2.8
+    },
+    {
+      "name": "Drake Baldwin",
+      "team": "Atlanta Braves",
+      "prob": 0.2328,
+      "played": true,
+      "hr": 0,
+      "odds": 4.9
+    },
+    {
+      "name": "Dillon Dingler",
+      "team": "Detroit Tigers",
+      "prob": 0.2322,
+      "played": true,
+      "hr": 1,
+      "odds": 3.6
+    },
+    {
+      "name": "Jac Caglianone",
+      "team": "Kansas City Royals",
+      "prob": 0.2301,
+      "played": true,
+      "hr": 0,
+      "odds": 4.1
+    },
+    {
+      "name": "Riley Greene",
+      "team": "Detroit Tigers",
+      "prob": 0.2255,
+      "played": true,
+      "hr": 0,
+      "odds": 4.2
+    },
+    {
+      "name": "Hunter Goodman",
+      "team": "Colorado Rockies",
+      "prob": 0.2247,
+      "played": true,
+      "hr": 0,
+      "odds": 3.45
+    },
+    {
+      "name": "Matt Olson",
+      "team": "Atlanta Braves",
+      "prob": 0.2212,
+      "played": true,
+      "hr": 1,
+      "odds": 4.7
+    },
+    {
+      "name": "Yordan Alvarez",
+      "team": "Houston Astros",
+      "prob": 0.2151,
+      "played": true,
+      "hr": 0,
+      "odds": 3.0
+    },
+    {
+      "name": "Ben Rice",
+      "team": "New York Yankees",
+      "prob": 0.2145,
+      "played": true,
+      "hr": 0,
+      "odds": 3.9
+    },
+    {
+      "name": "Sal Stewart",
+      "team": "Cincinnati Reds",
+      "prob": 0.2121,
+      "played": true,
+      "hr": 1,
+      "odds": 5.1
+    },
+    {
+      "name": "Brandon Lowe",
+      "team": "Pittsburgh Pirates",
+      "prob": 0.2114,
+      "played": true,
+      "hr": 0,
+      "odds": 4.7
+    },
+    {
+      "name": "Max Muncy",
+      "team": "Los Angeles Dodgers",
+      "prob": 0.2041,
+      "played": true,
+      "hr": 0,
+      "odds": null
+    },
+    {
+      "name": "Jake Bauers",
+      "team": "Milwaukee Brewers",
+      "prob": 0.2031,
+      "played": true,
+      "hr": 1,
+      "odds": 5.0
+    },
+    {
+      "name": "Ronald Acu\u00f1a Jr.",
+      "team": "Atlanta Braves",
+      "prob": 0.2014,
+      "played": true,
+      "hr": 0,
+      "odds": 5.1
+    },
+    {
+      "name": "Jackson Chourio",
+      "team": "Milwaukee Brewers",
+      "prob": 0.201,
+      "played": true,
+      "hr": 0,
+      "odds": 4.5
+    },
+    {
+      "name": "Mike Trout",
+      "team": "Los Angeles Angels",
+      "prob": 0.1998,
+      "played": true,
+      "hr": 0,
+      "odds": 4.9
+    },
+    {
+      "name": "Carter Jensen",
+      "team": "Kansas City Royals",
+      "prob": 0.1991,
+      "played": true,
+      "hr": 1,
+      "odds": 4.35
+    },
+    {
+      "name": "Pete Alonso",
+      "team": "Baltimore Orioles",
+      "prob": 0.1986,
+      "played": true,
+      "hr": 1,
+      "odds": 4.4
+    }
+  ],
+  "top_ev": [
+    {
+      "name": "Tommy White",
+      "team": "Athletics",
+      "prob": 0.1632,
+      "played": true,
+      "hr": 0,
+      "odds": 9.0
+    },
+    {
+      "name": "Yainer Diaz",
+      "team": "Houston Astros",
+      "prob": 0.1335,
+      "played": true,
+      "hr": 1,
+      "odds": 10.0
+    },
+    {
+      "name": "Bo Bichette",
+      "team": "New York Mets",
+      "prob": 0.1387,
+      "played": true,
+      "hr": 0,
+      "odds": 9.0
+    },
+    {
+      "name": "Michael Harris II",
+      "team": "Atlanta Braves",
+      "prob": 0.1962,
+      "played": true,
+      "hr": 1,
+      "odds": 6.25
+    },
+    {
+      "name": "Dane Myers",
+      "team": "Cincinnati Reds",
+      "prob": 0.1338,
+      "played": true,
+      "hr": 0,
+      "odds": 9.0
+    },
+    {
+      "name": "Drake Baldwin",
+      "team": "Atlanta Braves",
+      "prob": 0.2328,
+      "played": true,
+      "hr": 0,
+      "odds": 4.9
+    },
+    {
+      "name": "Sam Antonacci",
+      "team": "Chicago White Sox",
+      "prob": 0.1125,
+      "played": true,
+      "hr": 0,
+      "odds": 10.0
+    },
+    {
+      "name": "Cooper Pratt",
+      "team": "Milwaukee Brewers",
+      "prob": 0.1244,
+      "played": true,
+      "hr": 0,
+      "odds": 9.0
+    },
+    {
+      "name": "Jeremy Pe\u00f1a",
+      "team": "Houston Astros",
+      "prob": 0.1651,
+      "played": true,
+      "hr": 0,
+      "odds": 6.75
+    },
+    {
+      "name": "Eli White",
+      "team": "Atlanta Braves",
+      "prob": 0.1528,
+      "played": true,
+      "hr": 0,
+      "odds": 7.25
+    },
+    {
+      "name": "Joe Mack",
+      "team": "Miami Marlins",
+      "prob": 0.1294,
+      "played": true,
+      "hr": 0,
+      "odds": 8.5
+    },
+    {
+      "name": "J.T. Realmuto",
+      "team": "Philadelphia Phillies",
+      "prob": 0.1206,
+      "played": true,
+      "hr": 1,
+      "odds": 9.0
+    },
+    {
+      "name": "Sal Stewart",
+      "team": "Cincinnati Reds",
+      "prob": 0.2121,
+      "played": true,
+      "hr": 1,
+      "odds": 5.1
+    },
+    {
+      "name": "Jimmy Crooks",
+      "team": "St. Louis Cardinals",
+      "prob": 0.1352,
+      "played": true,
+      "hr": 0,
+      "odds": 8.0
+    },
+    {
+      "name": "Nicky Lopez",
+      "team": "Texas Rangers",
+      "prob": 0.0675,
+      "played": true,
+      "hr": 0,
+      "odds": 16.0
+    },
+    {
+      "name": "Chase Meidroth",
+      "team": "Chicago White Sox",
+      "prob": 0.0826,
+      "played": true,
+      "hr": 0,
+      "odds": 13.0
+    },
+    {
+      "name": "Otto Lopez",
+      "team": "Miami Marlins",
+      "prob": 0.1256,
+      "played": true,
+      "hr": 0,
+      "odds": 8.5
+    },
+    {
+      "name": "Cole Carrigg",
+      "team": "Colorado Rockies",
+      "prob": 0.1513,
+      "played": true,
+      "hr": 0,
+      "odds": 7.0
+    },
+    {
+      "name": "Braden Montgomery",
+      "team": "Chicago White Sox",
+      "prob": 0.0952,
+      "played": true,
+      "hr": 0,
+      "odds": 11.0
+    },
+    {
+      "name": "Garrett Mitchell",
+      "team": "Milwaukee Brewers",
+      "prob": 0.1716,
+      "played": true,
+      "hr": 0,
+      "odds": 6.1
+    }
+  ]
+}
