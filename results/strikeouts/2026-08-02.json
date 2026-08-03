@@ -1,0 +1,66 @@
+{
+  "row": {
+    "date": "2026-08-02",
+    "snapshot_utc": "2026-08-02T14:17:51+00:00",
+    "late_snapshot": false,
+    "proj_hits": 2,
+    "proj_graded": 2,
+    "proj_expected": 1.27,
+    "ev_hits": 2,
+    "ev_graded": 2,
+    "ev_expected": 1.27,
+    "ev_flat_pnl": 2.01
+  },
+  "top_proj": [
+    {
+      "name": "Emmet Sheehan",
+      "team": "Los Angeles Dodgers",
+      "line": 5.5,
+      "side": "Under",
+      "played": true,
+      "actual_ks": 4,
+      "result": "Under",
+      "hit": true,
+      "price": 2.14,
+      "model_prob": 0.6437
+    },
+    {
+      "name": "Jake Bennett",
+      "team": "Boston Red Sox",
+      "line": 3.5,
+      "side": "Over",
+      "played": true,
+      "actual_ks": 4,
+      "result": "Over",
+      "hit": true,
+      "price": 1.87,
+      "model_prob": 0.6266
+    }
+  ],
+  "top_ev": [
+    {
+      "name": "Emmet Sheehan",
+      "team": "Los Angeles Dodgers",
+      "line": 5.5,
+      "side": "Under",
+      "played": true,
+      "actual_ks": 4,
+      "result": "Under",
+      "hit": true,
+      "price": 2.14,
+      "model_prob": 0.6437
+    },
+    {
+      "name": "Jake Bennett",
+      "team": "Boston Red Sox",
+      "line": 3.5,
+      "side": "Over",
+      "played": true,
+      "actual_ks": 4,
+      "result": "Over",
+      "hit": true,
+      "price": 1.87,
+      "model_prob": 0.6266
+    }
+  ]
+}
