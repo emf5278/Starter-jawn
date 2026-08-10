@@ -1,0 +1,42 @@
+{
+  "row": {
+    "date": "2026-08-09",
+    "snapshot_utc": "2026-08-09T13:38:32+00:00",
+    "late_snapshot": false,
+    "proj_hits": 0,
+    "proj_graded": 1,
+    "proj_expected": 0.59,
+    "ev_hits": 0,
+    "ev_graded": 1,
+    "ev_expected": 0.59,
+    "ev_flat_pnl": -1.0
+  },
+  "top_proj": [
+    {
+      "name": "Cristian Javier",
+      "team": "Houston Astros",
+      "line": 3.5,
+      "side": "Over",
+      "played": true,
+      "actual_ks": 2,
+      "result": "Under",
+      "hit": false,
+      "price": 2.16,
+      "model_prob": 0.588
+    }
+  ],
+  "top_ev": [
+    {
+      "name": "Cristian Javier",
+      "team": "Houston Astros",
+      "line": 3.5,
+      "side": "Over",
+      "played": true,
+      "actual_ks": 2,
+      "result": "Under",
+      "hit": false,
+      "price": 2.16,
+      "model_prob": 0.588
+    }
+  ]
+}
