@@ -1,0 +1,162 @@
+{
+  "row": {
+    "date": "2026-08-13",
+    "snapshot_utc": "2026-08-13T14:11:13+00:00",
+    "late_snapshot": false,
+    "proj_hits": 5,
+    "proj_graded": 6,
+    "proj_expected": 3.45,
+    "ev_hits": 5,
+    "ev_graded": 6,
+    "ev_expected": 3.45,
+    "ev_flat_pnl": 4.1
+  },
+  "top_proj": [
+    {
+      "name": "Jacob deGrom",
+      "team": "Texas Rangers",
+      "line": 6.5,
+      "side": "Under",
+      "played": true,
+      "actual_ks": 3,
+      "result": "Under",
+      "hit": true,
+      "price": 2.11,
+      "model_prob": 0.595
+    },
+    {
+      "name": "Taj Bradley",
+      "team": "Minnesota Twins",
+      "line": 5.5,
+      "side": "Under",
+      "played": true,
+      "actual_ks": 3,
+      "result": "Under",
+      "hit": true,
+      "price": 2.17,
+      "model_prob": 0.5337
+    },
+    {
+      "name": "Roki Sasaki",
+      "team": "Los Angeles Dodgers",
+      "line": 5.5,
+      "side": "Under",
+      "played": true,
+      "actual_ks": 2,
+      "result": "Under",
+      "hit": true,
+      "price": 2.07,
+      "model_prob": 0.5574
+    },
+    {
+      "name": "Walbert Ure\u00f1a",
+      "team": "Los Angeles Angels",
+      "line": 4.5,
+      "side": "Over",
+      "played": true,
+      "actual_ks": 5,
+      "result": "Over",
+      "hit": true,
+      "price": 1.73,
+      "model_prob": 0.5772
+    },
+    {
+      "name": "Shane Drohan",
+      "team": "Milwaukee Brewers",
+      "line": 4.5,
+      "side": "Over",
+      "played": true,
+      "actual_ks": 5,
+      "result": "Over",
+      "hit": true,
+      "price": 2.02,
+      "model_prob": 0.5534
+    },
+    {
+      "name": "Aaron Nola",
+      "team": "Philadelphia Phillies",
+      "line": 5.5,
+      "side": "Under",
+      "played": true,
+      "actual_ks": 9,
+      "result": "Over",
+      "hit": false,
+      "price": 1.66,
+      "model_prob": 0.6341
+    }
+  ],
+  "top_ev": [
+    {
+      "name": "Jacob deGrom",
+      "team": "Texas Rangers",
+      "line": 6.5,
+      "side": "Under",
+      "played": true,
+      "actual_ks": 3,
+      "result": "Under",
+      "hit": true,
+      "price": 2.11,
+      "model_prob": 0.595
+    },
+    {
+      "name": "Taj Bradley",
+      "team": "Minnesota Twins",
+      "line": 5.5,
+      "side": "Under",
+      "played": true,
+      "actual_ks": 3,
+      "result": "Under",
+      "hit": true,
+      "price": 2.17,
+      "model_prob": 0.5337
+    },
+    {
+      "name": "Roki Sasaki",
+      "team": "Los Angeles Dodgers",
+      "line": 5.5,
+      "side": "Under",
+      "played": true,
+      "actual_ks": 2,
+      "result": "Under",
+      "hit": true,
+      "price": 2.07,
+      "model_prob": 0.5574
+    },
+    {
+      "name": "Shane Drohan",
+      "team": "Milwaukee Brewers",
+      "line": 4.5,
+      "side": "Over",
+      "played": true,
+      "actual_ks": 5,
+      "result": "Over",
+      "hit": true,
+      "price": 2.02,
+      "model_prob": 0.5534
+    },
+    {
+      "name": "Aaron Nola",
+      "team": "Philadelphia Phillies",
+      "line": 5.5,
+      "side": "Under",
+      "played": true,
+      "actual_ks": 9,
+      "result": "Over",
+      "hit": false,
+      "price": 1.66,
+      "model_prob": 0.6341
+    },
+    {
+      "name": "Walbert Ure\u00f1a",
+      "team": "Los Angeles Angels",
+      "line": 4.5,
+      "side": "Over",
+      "played": true,
+      "actual_ks": 5,
+      "result": "Over",
+      "hit": true,
+      "price": 1.73,
+      "model_prob": 0.5772
+    }
+  ]
+}
