@@ -1,0 +1,66 @@
+{
+  "row": {
+    "date": "2026-08-16",
+    "snapshot_utc": "2026-08-16T13:21:49+00:00",
+    "late_snapshot": false,
+    "proj_hits": 2,
+    "proj_graded": 2,
+    "proj_expected": 1.21,
+    "ev_hits": 2,
+    "ev_graded": 2,
+    "ev_expected": 1.21,
+    "ev_flat_pnl": 1.96
+  },
+  "top_proj": [
+    {
+      "name": "Bryan Woo",
+      "team": "Seattle Mariners",
+      "line": 5.5,
+      "side": "Under",
+      "played": true,
+      "actual_ks": 5,
+      "result": "Under",
+      "hit": true,
+      "price": 1.99,
+      "model_prob": 0.586
+    },
+    {
+      "name": "Hunter Brown",
+      "team": "Houston Astros",
+      "line": 5.5,
+      "side": "Under",
+      "played": true,
+      "actual_ks": 5,
+      "result": "Under",
+      "hit": true,
+      "price": 1.97,
+      "model_prob": 0.6229
+    }
+  ],
+  "top_ev": [
+    {
+      "name": "Hunter Brown",
+      "team": "Houston Astros",
+      "line": 5.5,
+      "side": "Under",
+      "played": true,
+      "actual_ks": 5,
+      "result": "Under",
+      "hit": true,
+      "price": 1.97,
+      "model_prob": 0.6229
+    },
+    {
+      "name": "Bryan Woo",
+      "team": "Seattle Mariners",
+      "line": 5.5,
+      "side": "Under",
+      "played": true,
+      "actual_ks": 5,
+      "result": "Under",
+      "hit": true,
+      "price": 1.99,
+      "model_prob": 0.586
+    }
+  ]
+}
