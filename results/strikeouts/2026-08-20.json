@@ -1,0 +1,162 @@
+{
+  "row": {
+    "date": "2026-08-20",
+    "snapshot_utc": "2026-08-20T13:35:50+00:00",
+    "late_snapshot": false,
+    "proj_hits": 3,
+    "proj_graded": 6,
+    "proj_expected": 3.36,
+    "ev_hits": 3,
+    "ev_graded": 6,
+    "ev_expected": 3.36,
+    "ev_flat_pnl": 0.08
+  },
+  "top_proj": [
+    {
+      "name": "Gerrit Cole",
+      "team": "New York Yankees",
+      "line": 6.5,
+      "side": "Under",
+      "played": true,
+      "actual_ks": 8,
+      "result": "Over",
+      "hit": false,
+      "price": 1.94,
+      "model_prob": 0.576
+    },
+    {
+      "name": "Peter Lambert",
+      "team": "Houston Astros",
+      "line": 5.5,
+      "side": "Under",
+      "played": true,
+      "actual_ks": 3,
+      "result": "Under",
+      "hit": true,
+      "price": 1.85,
+      "model_prob": 0.5011
+    },
+    {
+      "name": "Jacob deGrom",
+      "team": "Texas Rangers",
+      "line": 6.5,
+      "side": "Under",
+      "played": true,
+      "actual_ks": 10,
+      "result": "Over",
+      "hit": false,
+      "price": 1.74,
+      "model_prob": 0.6652
+    },
+    {
+      "name": "Kyle Bradish",
+      "team": "Baltimore Orioles",
+      "line": 5.5,
+      "side": "Under",
+      "played": true,
+      "actual_ks": 5,
+      "result": "Under",
+      "hit": true,
+      "price": 2.15,
+      "model_prob": 0.5353
+    },
+    {
+      "name": "Andrew Alvarez",
+      "team": "Washington Nationals",
+      "line": 4.5,
+      "side": "Over",
+      "played": true,
+      "actual_ks": 5,
+      "result": "Over",
+      "hit": true,
+      "price": 2.08,
+      "model_prob": 0.5156
+    },
+    {
+      "name": "Grayson Rodriguez",
+      "team": "Los Angeles Angels",
+      "line": 4.5,
+      "side": "Under",
+      "played": true,
+      "actual_ks": 6,
+      "result": "Over",
+      "hit": false,
+      "price": 2.0,
+      "model_prob": 0.5636
+    }
+  ],
+  "top_ev": [
+    {
+      "name": "Jacob deGrom",
+      "team": "Texas Rangers",
+      "line": 6.5,
+      "side": "Under",
+      "played": true,
+      "actual_ks": 10,
+      "result": "Over",
+      "hit": false,
+      "price": 1.74,
+      "model_prob": 0.6652
+    },
+    {
+      "name": "Kyle Bradish",
+      "team": "Baltimore Orioles",
+      "line": 5.5,
+      "side": "Under",
+      "played": true,
+      "actual_ks": 5,
+      "result": "Under",
+      "hit": true,
+      "price": 2.15,
+      "model_prob": 0.5353
+    },
+    {
+      "name": "Grayson Rodriguez",
+      "team": "Los Angeles Angels",
+      "line": 4.5,
+      "side": "Under",
+      "played": true,
+      "actual_ks": 6,
+      "result": "Over",
+      "hit": false,
+      "price": 2.0,
+      "model_prob": 0.5636
+    },
+    {
+      "name": "Gerrit Cole",
+      "team": "New York Yankees",
+      "line": 6.5,
+      "side": "Under",
+      "played": true,
+      "actual_ks": 8,
+      "result": "Over",
+      "hit": false,
+      "price": 1.94,
+      "model_prob": 0.576
+    },
+    {
+      "name": "Andrew Alvarez",
+      "team": "Washington Nationals",
+      "line": 4.5,
+      "side": "Over",
+      "played": true,
+      "actual_ks": 5,
+      "result": "Over",
+      "hit": true,
+      "price": 2.08,
+      "model_prob": 0.5156
+    },
+    {
+      "name": "Peter Lambert",
+      "team": "Houston Astros",
+      "line": 5.5,
+      "side": "Under",
+      "played": true,
+      "actual_ks": 3,
+      "result": "Under",
+      "hit": true,
+      "price": 1.85,
+      "model_prob": 0.5011
+    }
+  ]
+}
