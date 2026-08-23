@@ -1,0 +1,338 @@
+{
+  "row": {
+    "date": "2026-08-22",
+    "snapshot_utc": "2026-08-22T13:20:47+00:00",
+    "late_snapshot": false,
+    "prob_hits": 4,
+    "prob_graded": 20,
+    "prob_expected": 3.97,
+    "ev_hits": 0,
+    "ev_graded": 20,
+    "ev_expected": 2.5,
+    "ev_flat_pnl": -20.0
+  },
+  "top_prob": [
+    {
+      "name": "Shohei Ohtani",
+      "team": "Los Angeles Dodgers",
+      "prob": 0.2869,
+      "played": true,
+      "hr": 0,
+      "odds": 3.5
+    },
+    {
+      "name": "Kyle Schwarber",
+      "team": "Philadelphia Phillies",
+      "prob": 0.2432,
+      "played": true,
+      "hr": 1,
+      "odds": 3.45
+    },
+    {
+      "name": "Matt Olson",
+      "team": "Atlanta Braves",
+      "prob": 0.2071,
+      "played": true,
+      "hr": 0,
+      "odds": 3.95
+    },
+    {
+      "name": "Oneil Cruz",
+      "team": "Pittsburgh Pirates",
+      "prob": 0.2053,
+      "played": true,
+      "hr": 0,
+      "odds": 6.0
+    },
+    {
+      "name": "Brandon Lowe",
+      "team": "Pittsburgh Pirates",
+      "prob": 0.2019,
+      "played": true,
+      "hr": 0,
+      "odds": 5.6
+    },
+    {
+      "name": "Ben Rice",
+      "team": "New York Yankees",
+      "prob": 0.1987,
+      "played": true,
+      "hr": 0,
+      "odds": 5.3
+    },
+    {
+      "name": "Drake Baldwin",
+      "team": "Atlanta Braves",
+      "prob": 0.1922,
+      "played": true,
+      "hr": 0,
+      "odds": 4.8
+    },
+    {
+      "name": "Freddie Freeman",
+      "team": "Los Angeles Dodgers",
+      "prob": 0.1906,
+      "played": true,
+      "hr": 0,
+      "odds": 5.6
+    },
+    {
+      "name": "Jackson Chourio",
+      "team": "Milwaukee Brewers",
+      "prob": 0.1904,
+      "played": true,
+      "hr": 0,
+      "odds": 5.4
+    },
+    {
+      "name": "Ronald Acu\u00f1a Jr.",
+      "team": "Atlanta Braves",
+      "prob": 0.1899,
+      "played": true,
+      "hr": 0,
+      "odds": 4.8
+    },
+    {
+      "name": "Corey Seager",
+      "team": "Texas Rangers",
+      "prob": 0.1899,
+      "played": true,
+      "hr": 0,
+      "odds": 4.1
+    },
+    {
+      "name": "Bryce Harper",
+      "team": "Philadelphia Phillies",
+      "prob": 0.1898,
+      "played": true,
+      "hr": 1,
+      "odds": 6.1
+    },
+    {
+      "name": "Pete Alonso",
+      "team": "Baltimore Orioles",
+      "prob": 0.1898,
+      "played": true,
+      "hr": 0,
+      "odds": 5.1
+    },
+    {
+      "name": "Munetaka Murakami",
+      "team": "Chicago White Sox",
+      "prob": 0.1889,
+      "played": true,
+      "hr": 0,
+      "odds": 3.8
+    },
+    {
+      "name": "Byron Buxton",
+      "team": "Minnesota Twins",
+      "prob": 0.1885,
+      "played": true,
+      "hr": 0,
+      "odds": 3.95
+    },
+    {
+      "name": "Jo Adell",
+      "team": "Cleveland Guardians",
+      "prob": 0.1865,
+      "played": true,
+      "hr": 1,
+      "odds": 4.4
+    },
+    {
+      "name": "Jordan Walker",
+      "team": "St. Louis Cardinals",
+      "prob": 0.1845,
+      "played": true,
+      "hr": 0,
+      "odds": 4.4
+    },
+    {
+      "name": "Mickey Moniak",
+      "team": "Colorado Rockies",
+      "prob": 0.1843,
+      "played": true,
+      "hr": 1,
+      "odds": 3.55
+    },
+    {
+      "name": "Junior Caminero",
+      "team": "Tampa Bay Rays",
+      "prob": 0.1807,
+      "played": true,
+      "hr": 0,
+      "odds": 4.4
+    },
+    {
+      "name": "Enrique Hern\u00e1ndez",
+      "team": "Los Angeles Dodgers",
+      "prob": 0.1783,
+      "played": true,
+      "hr": 0,
+      "odds": null
+    }
+  ],
+  "top_ev": [
+    {
+      "name": "Nicky Lopez",
+      "team": "Texas Rangers",
+      "prob": 0.072,
+      "played": true,
+      "hr": 0,
+      "odds": 27.0
+    },
+    {
+      "name": "Brett Bateman",
+      "team": "Toronto Blue Jays",
+      "prob": 0.1208,
+      "played": true,
+      "hr": 0,
+      "odds": 14.0
+    },
+    {
+      "name": "Bryson Stott",
+      "team": "Philadelphia Phillies",
+      "prob": 0.1172,
+      "played": true,
+      "hr": 0,
+      "odds": 12.5
+    },
+    {
+      "name": "Brendan Donovan",
+      "team": "Seattle Mariners",
+      "prob": 0.1338,
+      "played": true,
+      "hr": 0,
+      "odds": 10.5
+    },
+    {
+      "name": "Ildemaro Vargas",
+      "team": "Arizona Diamondbacks",
+      "prob": 0.1153,
+      "played": true,
+      "hr": 0,
+      "odds": 12.0
+    },
+    {
+      "name": "Zack Gelof",
+      "team": "Athletics",
+      "prob": 0.1368,
+      "played": true,
+      "hr": 0,
+      "odds": 10.0
+    },
+    {
+      "name": "Jackson Holliday",
+      "team": "Baltimore Orioles",
+      "prob": 0.1213,
+      "played": true,
+      "hr": 0,
+      "odds": 11.0
+    },
+    {
+      "name": "Hunter Feduccia",
+      "team": "Los Angeles Dodgers",
+      "prob": 0.14,
+      "played": true,
+      "hr": 0,
+      "odds": 9.5
+    },
+    {
+      "name": "Ryan Vilade",
+      "team": "Tampa Bay Rays",
+      "prob": 0.1309,
+      "played": true,
+      "hr": 0,
+      "odds": 10.0
+    },
+    {
+      "name": "Henry Bolte",
+      "team": "Athletics",
+      "prob": 0.1296,
+      "played": true,
+      "hr": 0,
+      "odds": 10.0
+    },
+    {
+      "name": "Brice Turang",
+      "team": "Milwaukee Brewers",
+      "prob": 0.1489,
+      "played": true,
+      "hr": 0,
+      "odds": 8.5
+    },
+    {
+      "name": "Jake Mangum",
+      "team": "Pittsburgh Pirates",
+      "prob": 0.088,
+      "played": true,
+      "hr": 0,
+      "odds": 14.0
+    },
+    {
+      "name": "Oneil Cruz",
+      "team": "Pittsburgh Pirates",
+      "prob": 0.2053,
+      "played": true,
+      "hr": 0,
+      "odds": 6.0
+    },
+    {
+      "name": "Osleivis Basabe",
+      "team": "San Francisco Giants",
+      "prob": 0.1026,
+      "played": true,
+      "hr": 0,
+      "odds": 12.0
+    },
+    {
+      "name": "Cooper Pratt",
+      "team": "Milwaukee Brewers",
+      "prob": 0.1021,
+      "played": true,
+      "hr": 0,
+      "odds": 12.0
+    },
+    {
+      "name": "Tommy White",
+      "team": "Athletics",
+      "prob": 0.1156,
+      "played": true,
+      "hr": 0,
+      "odds": 10.5
+    },
+    {
+      "name": "Edmundo Sosa",
+      "team": "Philadelphia Phillies",
+      "prob": 0.1417,
+      "played": true,
+      "hr": 0,
+      "odds": 8.5
+    },
+    {
+      "name": "Blaze Jordan",
+      "team": "St. Louis Cardinals",
+      "prob": 0.1413,
+      "played": true,
+      "hr": 0,
+      "odds": 8.5
+    },
+    {
+      "name": "Trea Turner",
+      "team": "Philadelphia Phillies",
+      "prob": 0.1401,
+      "played": true,
+      "hr": 0,
+      "odds": 8.5
+    },
+    {
+      "name": "Nick Sogard",
+      "team": "Boston Red Sox",
+      "prob": 0.0989,
+      "played": true,
+      "hr": 0,
+      "odds": 12.0
+    }
+  ]
+}
