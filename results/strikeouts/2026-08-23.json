@@ -1,0 +1,66 @@
+{
+  "row": {
+    "date": "2026-08-23",
+    "snapshot_utc": "2026-08-23T13:22:41+00:00",
+    "late_snapshot": false,
+    "proj_hits": 2,
+    "proj_graded": 2,
+    "proj_expected": 1.13,
+    "ev_hits": 2,
+    "ev_graded": 2,
+    "ev_expected": 1.13,
+    "ev_flat_pnl": 1.75
+  },
+  "top_proj": [
+    {
+      "name": "Tyler Mahle",
+      "team": "Atlanta Braves",
+      "line": 5.5,
+      "side": "Under",
+      "played": true,
+      "actual_ks": 4,
+      "result": "Under",
+      "hit": true,
+      "price": 1.69,
+      "model_prob": 0.578
+    },
+    {
+      "name": "Shane Drohan",
+      "team": "Milwaukee Brewers",
+      "line": 4.5,
+      "side": "Over",
+      "played": true,
+      "actual_ks": 5,
+      "result": "Over",
+      "hit": true,
+      "price": 2.06,
+      "model_prob": 0.5485
+    }
+  ],
+  "top_ev": [
+    {
+      "name": "Shane Drohan",
+      "team": "Milwaukee Brewers",
+      "line": 4.5,
+      "side": "Over",
+      "played": true,
+      "actual_ks": 5,
+      "result": "Over",
+      "hit": true,
+      "price": 2.06,
+      "model_prob": 0.5485
+    },
+    {
+      "name": "Tyler Mahle",
+      "team": "Atlanta Braves",
+      "line": 5.5,
+      "side": "Under",
+      "played": true,
+      "actual_ks": 4,
+      "result": "Under",
+      "hit": true,
+      "price": 1.69,
+      "model_prob": 0.578
+    }
+  ]
+}
