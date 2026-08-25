@@ -1,0 +1,338 @@
+{
+  "row": {
+    "date": "2026-08-24",
+    "snapshot_utc": "2026-08-24T13:35:30+00:00",
+    "late_snapshot": false,
+    "prob_hits": 2,
+    "prob_graded": 20,
+    "prob_expected": 3.61,
+    "ev_hits": 2,
+    "ev_graded": 20,
+    "ev_expected": 2.54,
+    "ev_flat_pnl": -2.0
+  },
+  "top_prob": [
+    {
+      "name": "Josh Bell",
+      "team": "Minnesota Twins",
+      "prob": 0.2167,
+      "played": true,
+      "hr": 0,
+      "odds": 4.5
+    },
+    {
+      "name": "Kody Clemens",
+      "team": "Minnesota Twins",
+      "prob": 0.2136,
+      "played": true,
+      "hr": 0,
+      "odds": 4.9
+    },
+    {
+      "name": "Kyle Schwarber",
+      "team": "Philadelphia Phillies",
+      "prob": 0.2121,
+      "played": true,
+      "hr": 0,
+      "odds": 3.6
+    },
+    {
+      "name": "Munetaka Murakami",
+      "team": "Chicago White Sox",
+      "prob": 0.1981,
+      "played": true,
+      "hr": 0,
+      "odds": 3.65
+    },
+    {
+      "name": "Junior Caminero",
+      "team": "Tampa Bay Rays",
+      "prob": 0.1968,
+      "played": true,
+      "hr": 0,
+      "odds": 3.55
+    },
+    {
+      "name": "Royce Lewis",
+      "team": "Minnesota Twins",
+      "prob": 0.1921,
+      "played": true,
+      "hr": 0,
+      "odds": 3.7
+    },
+    {
+      "name": "Ryan Kreidler",
+      "team": "Minnesota Twins",
+      "prob": 0.1851,
+      "played": true,
+      "hr": 1,
+      "odds": null
+    },
+    {
+      "name": "Michael Busch",
+      "team": "Chicago Cubs",
+      "prob": 0.1834,
+      "played": true,
+      "hr": 0,
+      "odds": 6.4
+    },
+    {
+      "name": "Abimelec Ortiz",
+      "team": "Washington Nationals",
+      "prob": 0.1757,
+      "played": true,
+      "hr": 0,
+      "odds": 4.8
+    },
+    {
+      "name": "Mike Trout",
+      "team": "Los Angeles Angels",
+      "prob": 0.1746,
+      "played": true,
+      "hr": 0,
+      "odds": 4.25
+    },
+    {
+      "name": "Seiya Suzuki",
+      "team": "Chicago Cubs",
+      "prob": 0.1742,
+      "played": true,
+      "hr": 0,
+      "odds": 5.1
+    },
+    {
+      "name": "Corey Seager",
+      "team": "Texas Rangers",
+      "prob": 0.171,
+      "played": true,
+      "hr": 0,
+      "odds": 3.85
+    },
+    {
+      "name": "Esmerlyn Valdez",
+      "team": "Pittsburgh Pirates",
+      "prob": 0.1706,
+      "played": true,
+      "hr": 1,
+      "odds": 4.1
+    },
+    {
+      "name": "Zack Gelof",
+      "team": "Athletics",
+      "prob": 0.1692,
+      "played": true,
+      "hr": 0,
+      "odds": 5.3
+    },
+    {
+      "name": "Corbin Carroll",
+      "team": "Arizona Diamondbacks",
+      "prob": 0.1669,
+      "played": true,
+      "hr": 0,
+      "odds": 5.4
+    },
+    {
+      "name": "Zach Neto",
+      "team": "Los Angeles Angels",
+      "prob": 0.1638,
+      "played": true,
+      "hr": 0,
+      "odds": 3.8
+    },
+    {
+      "name": "Miguel Vargas",
+      "team": "Chicago White Sox",
+      "prob": 0.1635,
+      "played": true,
+      "hr": 0,
+      "odds": 5.5
+    },
+    {
+      "name": "Willson Contreras",
+      "team": "Boston Red Sox",
+      "prob": 0.1632,
+      "played": true,
+      "hr": 0,
+      "odds": 6.0
+    },
+    {
+      "name": "Mickey Moniak",
+      "team": "Colorado Rockies",
+      "prob": 0.1616,
+      "played": true,
+      "hr": 0,
+      "odds": 4.8
+    },
+    {
+      "name": "Kaelen Culpepper",
+      "team": "Minnesota Twins",
+      "prob": 0.1601,
+      "played": true,
+      "hr": 0,
+      "odds": 5.0
+    }
+  ],
+  "top_ev": [
+    {
+      "name": "Jonathan Aranda",
+      "team": "Tampa Bay Rays",
+      "prob": 0.1559,
+      "played": true,
+      "hr": 1,
+      "odds": 8.5
+    },
+    {
+      "name": "Buddy Kennedy",
+      "team": "San Francisco Giants",
+      "prob": 0.094,
+      "played": true,
+      "hr": 0,
+      "odds": 14.0
+    },
+    {
+      "name": "Angel Genao",
+      "team": "Cleveland Guardians",
+      "prob": 0.1378,
+      "played": true,
+      "hr": 0,
+      "odds": 9.5
+    },
+    {
+      "name": "Ildemaro Vargas",
+      "team": "Arizona Diamondbacks",
+      "prob": 0.1049,
+      "played": true,
+      "hr": 0,
+      "odds": 12.0
+    },
+    {
+      "name": "Vaughn Grissom",
+      "team": "Los Angeles Angels",
+      "prob": 0.1175,
+      "played": true,
+      "hr": 0,
+      "odds": 10.5
+    },
+    {
+      "name": "Tommy White",
+      "team": "Athletics",
+      "prob": 0.1427,
+      "played": true,
+      "hr": 0,
+      "odds": 8.5
+    },
+    {
+      "name": "Ceddanne Rafaela",
+      "team": "Boston Red Sox",
+      "prob": 0.1179,
+      "played": true,
+      "hr": 0,
+      "odds": 10.0
+    },
+    {
+      "name": "Osleivis Basabe",
+      "team": "San Francisco Giants",
+      "prob": 0.1119,
+      "played": true,
+      "hr": 0,
+      "odds": 10.5
+    },
+    {
+      "name": "Michael Busch",
+      "team": "Chicago Cubs",
+      "prob": 0.1834,
+      "played": true,
+      "hr": 0,
+      "odds": 6.4
+    },
+    {
+      "name": "Pedro Ram\u00edrez",
+      "team": "Chicago Cubs",
+      "prob": 0.1089,
+      "played": true,
+      "hr": 0,
+      "odds": 10.5
+    },
+    {
+      "name": "Alan Roden",
+      "team": "Minnesota Twins",
+      "prob": 0.1344,
+      "played": true,
+      "hr": 0,
+      "odds": 8.5
+    },
+    {
+      "name": "Gustavo Campero",
+      "team": "Los Angeles Angels",
+      "prob": 0.1193,
+      "played": true,
+      "hr": 0,
+      "odds": 9.5
+    },
+    {
+      "name": "Nick Sogard",
+      "team": "Boston Red Sox",
+      "prob": 0.091,
+      "played": true,
+      "hr": 0,
+      "odds": 12.0
+    },
+    {
+      "name": "Gabriel Moreno",
+      "team": "Arizona Diamondbacks",
+      "prob": 0.1279,
+      "played": true,
+      "hr": 0,
+      "odds": 8.5
+    },
+    {
+      "name": "Geraldo Perdomo",
+      "team": "Arizona Diamondbacks",
+      "prob": 0.0969,
+      "played": true,
+      "hr": 0,
+      "odds": 11.0
+    },
+    {
+      "name": "Tyler Stephenson",
+      "team": "Cincinnati Reds",
+      "prob": 0.1328,
+      "played": true,
+      "hr": 0,
+      "odds": 8.0
+    },
+    {
+      "name": "J.T. Realmuto",
+      "team": "Philadelphia Phillies",
+      "prob": 0.1112,
+      "played": true,
+      "hr": 1,
+      "odds": 9.5
+    },
+    {
+      "name": "Kody Clemens",
+      "team": "Minnesota Twins",
+      "prob": 0.2136,
+      "played": true,
+      "hr": 0,
+      "odds": 4.9
+    },
+    {
+      "name": "Gleyber Torres",
+      "team": "Detroit Tigers",
+      "prob": 0.1231,
+      "played": true,
+      "hr": 0,
+      "odds": 8.5
+    },
+    {
+      "name": "Brandon Marsh",
+      "team": "Philadelphia Phillies",
+      "prob": 0.116,
+      "played": true,
+      "hr": 0,
+      "odds": 9.0
+    }
+  ]
+}
