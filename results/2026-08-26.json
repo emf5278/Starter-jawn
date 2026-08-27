@@ -1,0 +1,177 @@
+{
+  "row": {
+    "date": "2026-08-26",
+    "snapshot_utc": "2026-08-26T13:41:29+00:00",
+    "late_snapshot": false,
+    "prob_hits": 5,
+    "prob_graded": 20,
+    "prob_expected": 4.13,
+    "ev_hits": 0,
+    "ev_graded": 0,
+    "ev_expected": 0,
+    "ev_flat_pnl": 0
+  },
+  "top_prob": [
+    {
+      "name": "Shohei Ohtani",
+      "team": "Los Angeles Dodgers",
+      "prob": 0.257,
+      "played": true,
+      "hr": 0,
+      "odds": null
+    },
+    {
+      "name": "Yordan Alvarez",
+      "team": "Houston Astros",
+      "prob": 0.2512,
+      "played": true,
+      "hr": 0,
+      "odds": null
+    },
+    {
+      "name": "Ben Rice",
+      "team": "New York Yankees",
+      "prob": 0.2292,
+      "played": true,
+      "hr": 1,
+      "odds": null
+    },
+    {
+      "name": "Mike Trout",
+      "team": "Los Angeles Angels",
+      "prob": 0.2228,
+      "played": true,
+      "hr": 0,
+      "odds": null
+    },
+    {
+      "name": "Matt Olson",
+      "team": "Atlanta Braves",
+      "prob": 0.2205,
+      "played": true,
+      "hr": 1,
+      "odds": null
+    },
+    {
+      "name": "Jo Adell",
+      "team": "Cleveland Guardians",
+      "prob": 0.2149,
+      "played": true,
+      "hr": 0,
+      "odds": null
+    },
+    {
+      "name": "Zach Neto",
+      "team": "Los Angeles Angels",
+      "prob": 0.2116,
+      "played": true,
+      "hr": 0,
+      "odds": null
+    },
+    {
+      "name": "Drake Baldwin",
+      "team": "Atlanta Braves",
+      "prob": 0.2083,
+      "played": true,
+      "hr": 0,
+      "odds": null
+    },
+    {
+      "name": "Kyle Schwarber",
+      "team": "Philadelphia Phillies",
+      "prob": 0.2076,
+      "played": true,
+      "hr": 1,
+      "odds": null
+    },
+    {
+      "name": "Hunter Goodman",
+      "team": "Colorado Rockies",
+      "prob": 0.2072,
+      "played": true,
+      "hr": 1,
+      "odds": null
+    },
+    {
+      "name": "Luis Garc\u00eda Jr.",
+      "team": "New York Yankees",
+      "prob": 0.2003,
+      "played": true,
+      "hr": 1,
+      "odds": null
+    },
+    {
+      "name": "Ronald Acu\u00f1a Jr.",
+      "team": "Atlanta Braves",
+      "prob": 0.2001,
+      "played": true,
+      "hr": 0,
+      "odds": null
+    },
+    {
+      "name": "Max Muncy",
+      "team": "Los Angeles Dodgers",
+      "prob": 0.1959,
+      "played": true,
+      "hr": 0,
+      "odds": null
+    },
+    {
+      "name": "Corey Seager",
+      "team": "Texas Rangers",
+      "prob": 0.1915,
+      "played": true,
+      "hr": 0,
+      "odds": null
+    },
+    {
+      "name": "Munetaka Murakami",
+      "team": "Chicago White Sox",
+      "prob": 0.1913,
+      "played": true,
+      "hr": 0,
+      "odds": null
+    },
+    {
+      "name": "Trent Grisham",
+      "team": "New York Yankees",
+      "prob": 0.1896,
+      "played": true,
+      "hr": 0,
+      "odds": null
+    },
+    {
+      "name": "Mickey Moniak",
+      "team": "Colorado Rockies",
+      "prob": 0.1839,
+      "played": true,
+      "hr": 0,
+      "odds": null
+    },
+    {
+      "name": "CJ Abrams",
+      "team": "Washington Nationals",
+      "prob": 0.1837,
+      "played": true,
+      "hr": 0,
+      "odds": null
+    },
+    {
+      "name": "Jackson Chourio",
+      "team": "Milwaukee Brewers",
+      "prob": 0.1815,
+      "played": true,
+      "hr": 0,
+      "odds": null
+    },
+    {
+      "name": "Miguel Vargas",
+      "team": "Chicago White Sox",
+      "prob": 0.1806,
+      "played": true,
+      "hr": 0,
+      "odds": null
+    }
+  ],
+  "top_ev": []
+}
