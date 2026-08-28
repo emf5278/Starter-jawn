@@ -1,0 +1,177 @@
+{
+  "row": {
+    "date": "2026-08-27",
+    "snapshot_utc": "2026-08-27T22:34:45+00:00",
+    "late_snapshot": true,
+    "prob_hits": 5,
+    "prob_graded": 20,
+    "prob_expected": 3.57,
+    "ev_hits": 0,
+    "ev_graded": 0,
+    "ev_expected": 0,
+    "ev_flat_pnl": 0
+  },
+  "top_prob": [
+    {
+      "name": "Yordan Alvarez",
+      "team": "Houston Astros",
+      "prob": 0.2707,
+      "played": true,
+      "hr": 0,
+      "odds": null
+    },
+    {
+      "name": "Ben Rice",
+      "team": "New York Yankees",
+      "prob": 0.2245,
+      "played": true,
+      "hr": 0,
+      "odds": null
+    },
+    {
+      "name": "Shohei Ohtani",
+      "team": "Los Angeles Dodgers",
+      "prob": 0.2176,
+      "played": true,
+      "hr": 0,
+      "odds": null
+    },
+    {
+      "name": "Luis Garc\u00eda Jr.",
+      "team": "New York Yankees",
+      "prob": 0.1967,
+      "played": true,
+      "hr": 0,
+      "odds": null
+    },
+    {
+      "name": "Jac Caglianone",
+      "team": "Kansas City Royals",
+      "prob": 0.1961,
+      "played": true,
+      "hr": 1,
+      "odds": null
+    },
+    {
+      "name": "Matt Olson",
+      "team": "Atlanta Braves",
+      "prob": 0.1935,
+      "played": true,
+      "hr": 0,
+      "odds": null
+    },
+    {
+      "name": "Trent Grisham",
+      "team": "New York Yankees",
+      "prob": 0.1868,
+      "played": true,
+      "hr": 0,
+      "odds": null
+    },
+    {
+      "name": "Drake Baldwin",
+      "team": "Atlanta Braves",
+      "prob": 0.1841,
+      "played": true,
+      "hr": 1,
+      "odds": null
+    },
+    {
+      "name": "Jackson Chourio",
+      "team": "Milwaukee Brewers",
+      "prob": 0.174,
+      "played": true,
+      "hr": 2,
+      "odds": null
+    },
+    {
+      "name": "Bobby Witt Jr.",
+      "team": "Kansas City Royals",
+      "prob": 0.1677,
+      "played": true,
+      "hr": 0,
+      "odds": null
+    },
+    {
+      "name": "Carter Jensen",
+      "team": "Kansas City Royals",
+      "prob": 0.1626,
+      "played": true,
+      "hr": 1,
+      "odds": null
+    },
+    {
+      "name": "Spencer Jones",
+      "team": "New York Yankees",
+      "prob": 0.1608,
+      "played": true,
+      "hr": 0,
+      "odds": null
+    },
+    {
+      "name": "Salvador Perez",
+      "team": "Kansas City Royals",
+      "prob": 0.158,
+      "played": true,
+      "hr": 0,
+      "odds": null
+    },
+    {
+      "name": "Freddie Freeman",
+      "team": "Los Angeles Dodgers",
+      "prob": 0.1579,
+      "played": true,
+      "hr": 0,
+      "odds": null
+    },
+    {
+      "name": "Kazuma Okamoto",
+      "team": "Toronto Blue Jays",
+      "prob": 0.1566,
+      "played": true,
+      "hr": 0,
+      "odds": null
+    },
+    {
+      "name": "Francisco Lindor",
+      "team": "New York Mets",
+      "prob": 0.1564,
+      "played": true,
+      "hr": 0,
+      "odds": null
+    },
+    {
+      "name": "Michael Harris II",
+      "team": "Atlanta Braves",
+      "prob": 0.1529,
+      "played": true,
+      "hr": 0,
+      "odds": null
+    },
+    {
+      "name": "Jazz Chisholm Jr.",
+      "team": "New York Yankees",
+      "prob": 0.1522,
+      "played": true,
+      "hr": 0,
+      "odds": null
+    },
+    {
+      "name": "Rafael Devers",
+      "team": "San Francisco Giants",
+      "prob": 0.1511,
+      "played": true,
+      "hr": 0,
+      "odds": null
+    },
+    {
+      "name": "George Springer",
+      "team": "Toronto Blue Jays",
+      "prob": 0.1509,
+      "played": true,
+      "hr": 1,
+      "odds": null
+    }
+  ],
+  "top_ev": []
+}
