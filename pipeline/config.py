@@ -227,3 +227,160 @@ GL_LAMBDA_CAP = (2.2, 8.5)
 GL_MAX_RUNS = 30                   # pmf truncation per team
 
 ODDS_GL_MARKETS = "h2h,totals"     # one cheap request covers every game
+
+
+# ================================================================
+# NFL ANYTIME-TD MODEL  — separate board (web/touchdowns.json)
+# ================================================================
+# P(player scores >=1 TD) for every skill player on the day's slate.
+# Structure mirrors the HR board: a team-level expectation from the
+# sportsbook line, split into rushing/receiving, then divided among the
+# players by *usage share*, and finally P = 1 - exp(-lambda).
+#
+#   implied_points = total/2 - spread/2          (same math as MLB game lines)
+#   team_off_TD    = TD_PTS_SLOPE*implied_points + TD_PTS_INTERCEPT
+#   team_rush_TD   = team_off_TD * team_rush_share
+#   lambda_player  = team_rush_TD * rush_share * opp_rush_factor
+#                  + team_rec_TD  * rec_share  * opp_rec_factor
+#   P(anytime TD)  = 1 - exp(-lambda_player)
+#
+# Passing TDs never count toward an anytime-TD prop, so QBs are carried on
+# their rushing usage only.
+#
+# CALIBRATION. Every constant below was fit on nflverse play-by-play rather
+# than guessed; the fits are reproducible with pipeline/calibrate_td.py.
+
+# --- league baselines (2025 regular season, 544 team-games) -------------
+TD_LEAGUE_RUSH_TD_PER_TEAM_GAME = 0.938
+TD_LEAGUE_REC_TD_PER_TEAM_GAME = 1.491
+TD_LEAGUE_OFF_TD_PER_TEAM_GAME = 2.428
+TD_LEAGUE_RUSH_SHARE = 0.386       # rushing share of offensive TDs
+TD_LEAGUE_POINTS_PER_TEAM_GAME = 23.01
+
+# --- implied points -> expected offensive TDs ---------------------------
+# OLS on 2025 team-games: off_TD = 0.12479*points - 0.4434 (r = 0.879).
+# Affine, not proportional: field goals are a larger share of the scoring
+# in low-total games, so a straight ratio overstates TDs for bad offenses.
+TD_PTS_SLOPE = 0.12479
+TD_PTS_INTERCEPT = -0.4434
+TD_TEAM_OFF_TD_CAP = (1.0, 4.5)
+
+# --- team rushing/receiving split ---------------------------------------
+# A team's own rush share of its TDs, regressed toward the league 0.386.
+TD_TEAM_SPLIT_BALLAST_TD = 25.0    # team offensive TDs for 50/50 trust
+TD_TEAM_RUSH_SHARE_CAP = (0.25, 0.55)
+
+# --- player usage shares -------------------------------------------------
+# Walk-forward tested on 2024 + 2025 (weeks 8-18, predicting next week's
+# scorer from prior-weeks shares only). Single-signal AUCs:
+#
+#   rushing: inside-5 carry share .706 | carry share .711 | TD share .686
+#   receiving: RZ target share .666 | target share .672 | rec TD share .661
+#
+# Volume beats history. Prior *rushing TD* share adds nothing once carries
+# and goal-line carries are in (grid search put its weight at 0), which is
+# the standard TD-regression result — last year's touchdowns are mostly
+# noise, this year's carries are not. Receiving keeps a little TD-share
+# weight because target quality (air yards, alignment) is not otherwise
+# captured. Grid-searched on a 0.1 grid over both seasons; the surface is
+# flat near the optimum, so these are round numbers, not fitted decimals.
+#
+# Rushing weights are POSITION-SPECIFIC, because quarterbacks and running
+# backs score rushing TDs for completely different reasons. Re-running the
+# same walk-forward split by position (2024 + 2025):
+#
+#              inside-5 share | carry share | TD share |  best blend
+#   RB/FB           .681      |    .685     |   .666   |  .40/.60/.00
+#   QB              .638      |    .630     |   .630   |  .50/.00/.50
+#
+# For a back, carries are the signal and last year's TDs add nothing. For a
+# quarterback it inverts: carry share is worthless (it is full of scrambles
+# and kneel-downs that have nothing to do with the goal line), while TD
+# share carries real information about whether this is a team that hands
+# him the ball on the one. Pooling the two positions — which is what a
+# single weight vector does — systematically underrates goal-line QBs: the
+# eight QBs with the highest goal-line carry share scored in 37.5% of their
+# weeks against an 18.0% base rate, which is the ~+150/+170 the books
+# actually post on them.
+TD_RUSH_SHARE_WEIGHTS = {
+    "QB": {"goal_line": 0.50, "carries": 0.00, "tds": 0.50},
+    "DEFAULT": {"goal_line": 0.40, "carries": 0.60, "tds": 0.00},
+}
+TD_REC_SHARE_WEIGHTS = {"red_zone": 0.10, "targets": 0.60, "tds": 0.30}
+
+# "Goal line" = carries from inside the 5 (5.6% of carries, 59% of rushing
+# TDs). "Red zone" = targets from inside the 20 (14% of targets, 71% of
+# receiving TDs).
+TD_GOAL_LINE_YARDLINE = 5
+TD_RED_ZONE_YARDLINE = 20
+
+# Shrink a player's usage share toward a replacement-level share using his
+# opportunity count, then renormalise within the team so the shares of the
+# players actually on the roster sum to 1. Ballasts are in opportunities
+# (carries / targets) for 50/50 trust.
+TD_RUSH_SHARE_BALLAST = 40.0
+TD_REC_SHARE_BALLAST = 35.0
+# Replacement-level share for a body with no history. Calibrated, not
+# guessed: at 0.04 the ~15 zero-usage players on every active roster
+# collectively held ~60% of the team's shares, which bled probability off
+# the real contributors and onto the bench (the 0.05-0.10 bin predicted
+# 0.085 against an observed 0.047). Swept jointly with the concentration
+# exponent below on 2025 weeks 8-18; 0.012 is the best setting on both log
+# loss and Brier. Getting this bin right matters more than it looks: an
+# overpredicted longshot is exactly what turns into a phantom +EV pick.
+TD_REPLACEMENT_RUSH_SHARE = 0.012
+TD_REPLACEMENT_REC_SHARE = 0.009
+
+# Share concentration. Raw usage shares are *too* concentrated at the top:
+# a back with 45% of the goal-line carries does not score 45% of his team's
+# rushing TDs, because game script, mid-game injuries and vulture scores all
+# spread the work out on the day. Raising every share to this power before
+# renormalising compresses the distribution (a < 1 pulls the leaders down
+# and the rotation up). Swept on 2025 weeks 8-18: 0.80 is the joint best on
+# Brier and log loss, and lands the top bin almost exactly (predicted 0.535
+# vs observed 0.528, against 0.556 vs 0.410 with no compression at all).
+TD_SHARE_CONCENTRATION = 0.80
+
+# Rookies have no NFL usage at all. Draft capital is the only prior worth
+# having: a first-round back is not a replacement-level body. Maps draft
+# slot -> a starting usage share, interpolated and flat outside the range.
+TD_ROOKIE_DRAFT_PRIOR = {
+    "RB": [(1, 0.42), (40, 0.28), (100, 0.14), (200, 0.06)],
+    "WR": [(1, 0.20), (40, 0.14), (100, 0.08), (200, 0.04)],
+    "TE": [(1, 0.15), (40, 0.10), (100, 0.06), (200, 0.03)],
+}
+TD_UNDRAFTED_SHARE = 0.02
+
+# --- opponent defence ----------------------------------------------------
+# TDs allowed vs league, regressed by games. Deliberately small and hard
+# capped: defensive TD-prevention is noisy year to year and mostly already
+# priced into the game total this model is anchored on, so letting it swing
+# a pick would be double-counting.
+TD_DEF_BALLAST_G = 10.0
+TD_DEF_FACTOR_CAP = (0.80, 1.25)
+
+# --- prior-season blend / cold start ------------------------------------
+# Weight on last season when blending usage with the current season, same
+# idea as the HR model. In Week 1 there is no current-season data at all,
+# so the board runs entirely on last year -- see the confidence rules.
+TD_PRIOR_SEASON_WEIGHT = 0.6
+
+# Confidence. Anytime-TD numbers built from last season's usage are a
+# genuinely weaker product than mid-season ones: free agency, the draft and
+# training camp all move usage, and none of that is in the data yet. The
+# page badges every pick so nobody reads a Week 1 number as a Week 10
+# number.
+#   high   - enough current-season usage to stand on its own
+#   medium - blended, or a player who changed teams in the off-season
+#   low    - no current-season usage at all (Week 1-2), or a rookie
+TD_CONF_HIGH_MIN_GAMES = 4         # current-season team games played
+TD_CONF_MEDIUM_MIN_GAMES = 2
+
+TD_LAMBDA_CAP = (0.005, 1.60)      # P(TD) roughly 0.5% .. 80%
+TD_TOP_N = 20
+TD_MIN_LAMBDA_TO_LIST = 0.02       # don't rank deep bench bodies
+
+# --- odds ---------------------------------------------------------------
+ODDS_NFL_SPORT_KEY = "americanfootball_nfl"
+ODDS_TD_MARKET = "player_anytime_td"      # Yes/No, "anytime touchdown scorer"
+ODDS_NFL_GAME_MARKETS = "totals,spreads"  # one cheap call -> implied points

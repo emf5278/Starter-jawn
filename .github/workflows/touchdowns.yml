@@ -1,0 +1,137 @@
+name: NFL anytime-TD board
+
+# An NFL slate is a calendar day, so unlike the MLB boards this one has
+# nothing to do most days of the week. The "Decide whether to run" gate
+# checks the published schedule *before* installing anything or touching
+# The Odds API, and exits in a couple of seconds on a Tuesday.
+#
+# Odds API credits: player props cost one request per event, so the run only
+# ever asks for games kicking off today -- roughly one request on Thursday,
+# ~13 on Sunday and one on Monday. Combined with the once-a-day gate below
+# that is about 16 prop requests a week plus one game-lines request per run.
+on:
+  schedule:
+    # Same self-healing pattern as the other boards: several attempts, each
+    # offset from the MLB crons so the boards don't queue together, and the
+    # gate skips everything the moment web/touchdowns.json already shows
+    # today. Late morning ET, a couple of hours before the Sunday 1pm ET
+    # kickoffs.
+    - cron: "53 14 * * *"
+    - cron: "23 15 * * *"
+    - cron: "53 15 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: touchdown-board
+  cancel-in-progress: false
+
+jobs:
+  project:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    outputs:
+      run: ${{ steps.gate.outputs.run }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Decide whether to run
+        id: gate
+        run: |
+          TODAY=$(TZ=America/New_York date +%F)
+          # Is there an NFL game today? The schedule is a single small CSV,
+          # so this costs one download and no API credits.
+          HAS_GAMES=$(python3 .github/scripts/nfl_games_today.py "$TODAY")
+          echo "games today ($TODAY): $HAS_GAMES"
+          if [ "${{ github.event_name }}" = "schedule" ] && [ "$HAS_GAMES" = "0" ]; then
+            echo "No NFL games today -- skipping (no Odds API call made)."
+            echo "run=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            # A checked-in demo board must never satisfy this check, or the
+            # first real slate of the season would be skipped as "already done".
+            CURRENT=$(python3 -c "import json; d=json.load(open('web/touchdowns.json')); print('' if d.get('demo') else d.get('date',''))" 2>/dev/null || echo "")
+            if [ "$CURRENT" = "$TODAY" ]; then
+              echo "Already have $TODAY committed -- skipping this retry."
+              echo "run=false" >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
+          fi
+          echo "run=true" >> "$GITHUB_OUTPUT"
+
+      - uses: actions/setup-python@v5
+        if: steps.gate.outputs.run == 'true'
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      # nflverse play-by-play is ~19MB gzipped per season and the model reads
+      # two seasons, so caching it keeps a normal run to a few seconds of
+      # network instead of 40MB every time.
+      - name: Restore nflverse cache
+        if: steps.gate.outputs.run == 'true'
+        uses: actions/cache@v4
+        with:
+          path: data_cache/nfl
+          key: nflverse-${{ github.run_id }}
+          restore-keys: nflverse-
+
+      - name: Install dependencies
+        if: steps.gate.outputs.run == 'true'
+        run: python -m pip install -q -r requirements.txt
+
+      # Play-by-play for a slate is published a day or two later, so this
+      # grades whatever is now available rather than strictly yesterday.
+      - name: Grade recent touchdown picks
+        if: steps.gate.outputs.run == 'true'
+        run: |
+          for d in 1 2 3; do
+            python -m pipeline.grade_touchdowns \
+              --date "$(TZ=America/New_York date -d "-$d day" +%F)" || true
+          done
+
+      - name: Project anytime touchdowns
+        if: steps.gate.outputs.run == 'true'
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+          ODDS_REGIONS: us
+        run: python -m pipeline.run_touchdowns --output web/touchdowns.json
+
+      - name: Commit touchdown board
+        if: steps.gate.outputs.run == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add web/touchdowns.json history/touchdowns results/touchdown_log.csv results/touchdowns
+          git diff --cached --quiet || git commit -m "touchdowns: $(date -u +%F)"
+          git pull --rebase origin "${GITHUB_REF_NAME}" || true
+          git push origin "HEAD:${GITHUB_REF_NAME}"
+
+      - name: Upload Pages artifact
+        if: steps.gate.outputs.run == 'true'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: web
+
+  deploy:
+    needs: project
+    if: needs.project.outputs.run == 'true'
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    # Shared with the MLB boards' deploy jobs (same group name) so Pages'
+    # single-deployment-at-a-time limit queues them instead of racing.
+    concurrency:
+      group: pages-deployment
+      cancel-in-progress: false
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/configure-pages@v5
+      - id: deployment
+        uses: actions/deploy-pages@v4

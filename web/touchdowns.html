@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NFL Anytime Touchdown Scorers</title>
+<script src="vendor/chart.umd.js"></script>
+<style>
+  :root {
+    --page:#f9f9f7; --surface:#fcfcfb; --ink:#0b0b0b; --ink-2:#52514e; --ink-muted:#898781;
+    --grid:#e1e0d9; --axisln:#c3c2b7; --border:rgba(11,11,11,0.10);
+    --series-1:#0b6b53;  /* model P(TD) — green, distinct from the MLB boards */
+    --series-2:#eda100;  /* market implied */
+    --ev-good:#006300; --ev-bad:#d03b3b; --wash:rgba(11,11,11,0.04);
+    --warn-bg:rgba(237,161,0,.12); --warn-ink:#7a5200; --warn-bd:rgba(237,161,0,.45);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --page:#0d0d0d; --surface:#1a1a19; --ink:#fff; --ink-2:#c3c2b7; --ink-muted:#898781;
+      --grid:#2c2c2a; --axisln:#383835; --border:rgba(255,255,255,0.10);
+      --series-1:#3fbf9b; --series-2:#c98500; --ev-good:#0ca30c; --ev-bad:#d03b3b;
+      --wash:rgba(255,255,255,0.05);
+      --warn-bg:rgba(237,161,0,.14); --warn-ink:#e0ad4a; --warn-bd:rgba(237,161,0,.40);
+    }
+  }
+  * { box-sizing: border-box; }
+  [hidden] { display: none !important; }
+  html, body { overflow-x: hidden; }
+  body { margin:0; background:var(--page); color:var(--ink);
+    font:15px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif; }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 20px 16px 64px; }
+  #chartwrap { max-width:100%; } #chart { max-width:100%; }
+  nav.tabs { display:flex; gap:8px; margin-bottom:14px; flex-wrap:wrap; align-items:center; }
+  nav.tabs a {
+    text-decoration:none; font-size:13px; font-weight:600; color:var(--ink-2);
+    padding:7px 14px; border:1px solid var(--border); border-radius:999px; background:var(--surface);
+  }
+  nav.tabs a[aria-current="page"] { background:var(--series-1); color:#fff; border-color:transparent; }
+  nav.tabs .navsep { font-size:11px; font-weight:700; color:var(--ink-muted); letter-spacing:.06em; padding:0 2px; }
+  header h1 { font-size: 22px; margin: 0 0 4px; }
+  .badge { font-size:10px; font-weight:700; letter-spacing:.06em; vertical-align:middle;
+    padding:2px 7px; border-radius:999px; background:var(--warn-bg); color:var(--warn-ink);
+    border:1px solid var(--warn-bd); }
+  header .sub { color: var(--ink-2); font-size: 13px; }
+  .banner { margin-top:16px; padding:12px 14px; border-radius:10px; font-size:13px; line-height:1.5;
+    background:var(--warn-bg); color:var(--warn-ink); border:1px solid var(--warn-bd); }
+  .banner b { color:inherit; }
+  .controls { display:flex; flex-wrap:wrap; gap:10px 12px; margin-top:20px; align-items:center; }
+  .controls .seglabel { font-size:12px; color:var(--ink-muted); font-weight:600; }
+  .seg { display:inline-flex; border:1px solid var(--border); border-radius:8px; overflow:hidden; background:var(--surface); }
+  .seg button { appearance:none; border:0; background:none; cursor:pointer;
+    font:600 13px/1 system-ui,-apple-system,"Segoe UI",sans-serif; color:var(--ink-2); padding:8px 14px; white-space:nowrap; }
+  .seg button + button { border-left:1px solid var(--border); }
+  .seg button[aria-pressed="true"] { background:var(--series-1); color:#fff; }
+  .seg button:disabled { color:var(--ink-muted); cursor:not-allowed; }
+  .seg button:not([aria-pressed="true"]):not(:disabled):hover { background:var(--wash); }
+  .card { background:var(--surface); border:1px solid var(--border); border-radius:10px; padding:16px; margin-top:20px; }
+  .card h2 { font-size:14px; margin:0 0 12px; color:var(--ink-2); font-weight:600; }
+  #chartwrap { position:relative; height:340px; }
+  .tablewrap { overflow-x:auto; }
+  table { border-collapse:collapse; width:100%; min-width:760px; }
+  th,td { text-align:left; padding:9px 10px; border-bottom:1px solid var(--grid); }
+  th { font-size:12px; color:var(--ink-muted); font-weight:600; white-space:nowrap; }
+  td.num,th.num { text-align:right; font-variant-numeric:tabular-nums; }
+  tr.prow { cursor:pointer; } tr.prow:hover { background:var(--wash); }
+  .pname { font-weight:600; } .pmeta { font-size:12px; color:var(--ink-2); }
+  .gtime { font-weight:600; color:var(--ink-2); font-variant-numeric:tabular-nums; }
+  .big { font-weight:600; }
+  .ev-pos { color:var(--ev-good); font-weight:600; } .ev-neg { color:var(--ev-bad); font-weight:600; } .ev-na { color:var(--ink-muted); }
+  .poschip { display:inline-block; font-size:11px; font-weight:700; padding:0 5px; border-radius:4px;
+    background:rgba(11,107,83,.13); color:var(--series-1); margin-right:5px; }
+  .conf { display:inline-block; font-size:10.5px; font-weight:700; padding:1px 6px; border-radius:999px; letter-spacing:.02em; }
+  .conf-high { background:rgba(0,99,0,.13); color:var(--ev-good); }
+  .conf-medium { background:rgba(237,161,0,.16); color:var(--warn-ink); }
+  .conf-low { background:rgba(208,59,59,.13); color:var(--ev-bad); }
+  .chev { color:var(--ink-muted); font-size:11px; transition:transform .15s; display:inline-block; }
+  tr.open .chev { transform:rotate(90deg); }
+  tr.detail > td { background:var(--wash); padding:14px 16px 18px; }
+  .plain { font-size:13.5px; line-height:1.55; color:var(--ink-2); max-width:78ch; margin:0 0 16px; padding-bottom:12px; border-bottom:1px solid var(--grid); }
+  .plain b { color:var(--ink); }
+  .why { display:grid; grid-template-columns:minmax(240px,1.1fr) minmax(220px,1fr); gap:20px; }
+  @media (max-width:700px){ .why { grid-template-columns:1fr; } }
+  .fbar { display:grid; grid-template-columns:132px 1fr 58px; align-items:center; gap:8px; margin:6px 0; }
+  .fbar .lab { font-size:12px; color:var(--ink-2); } .fbar .val { font-size:12px; text-align:right; font-variant-numeric:tabular-nums; }
+  .track { position:relative; height:14px; } .track .mid { position:absolute; left:50%; top:-2px; bottom:-2px; width:1px; background:var(--axisln); }
+  .track .bar { position:absolute; top:2px; height:10px; border-radius:4px; }
+  .bar.pos { background:var(--series-1); left:50%; } .bar.neg { background:var(--series-2); right:50%; }
+  .kv { font-size:12.5px; color:var(--ink-2); } .kv dt { float:left; clear:left; width:158px; color:var(--ink-muted); } .kv dd { margin:0 0 3px 168px; font-variant-numeric:tabular-nums; }
+  .note { font-size:12px; color:var(--ink-muted); margin-top:16px; line-height:1.55; }
+  #status { color:var(--ink-2); padding:24px 0; }
+  @media (max-width:620px){
+    .tablewrap { overflow-x:visible; }
+    #tbl,#tbl tbody,#tbl tr,#tbl td { display:block; } #tbl { min-width:0; } #tbl thead { display:none; }
+    tr.prow { position:relative; border:1px solid var(--border); border-radius:10px; margin:0 0 10px; padding:12px 34px 8px 34px; }
+    tr.prow > td { border:0; padding:2px 0; text-align:left; }
+    td.c-rank { position:absolute; top:12px; left:12px; width:auto; font-size:12px; font-weight:700; color:var(--ink-muted); }
+    td.c-chev { position:absolute; top:11px; right:12px; padding:0; }
+    #tbl td.c-prob,#tbl td.c-odds,#tbl td.c-fair,#tbl td.c-ev,#tbl td.c-be {
+      display:flex; justify-content:space-between; align-items:baseline; gap:12px; padding:6px 0; text-align:right; border-top:1px solid var(--grid); }
+    td.c-prob::before,td.c-odds::before,td.c-fair::before,td.c-ev::before,td.c-be::before {
+      content:attr(data-label); text-align:left; white-space:nowrap; font-size:12px; font-weight:600; color:var(--ink-muted); }
+    td.c-match { padding-bottom:4px; } .plain { max-width:none; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav class="tabs">
+    <span class="navsep">MLB</span>
+    <a href="index.html">Home Runs</a>
+    <a href="strikeouts.html">Pitcher Strikeouts</a>
+    <a href="moneylines.html">Moneylines</a>
+    <a href="totals.html">Totals</a>
+    <span class="navsep">NFL</span>
+    <a href="touchdowns.html" aria-current="page">Anytime TD</a>
+  </nav>
+  <header>
+    <h1>NFL Anytime Touchdown Scorers <span class="badge" id="demoBadge" hidden>DEMO DATA</span></h1>
+    <div class="sub" id="meta">Loading…</div>
+  </header>
+
+  <div class="banner" id="coldStart" hidden></div>
+
+  <div class="controls" id="controls" hidden>
+    <div class="seg" id="viewSeg">
+      <button id="btnProb" aria-pressed="true">Top 20 · Probability</button>
+      <button id="btnEv" aria-pressed="false">Top 20 · EV</button>
+    </div>
+    <span class="seglabel">Sort:</span>
+    <div class="seg" id="sortSeg">
+      <button id="sortRank" aria-pressed="true">Ranking</button>
+      <button id="sortTime" aria-pressed="false">🕒 Kickoff</button>
+    </div>
+  </div>
+
+  <div class="card" id="chartCard" hidden>
+    <h2 id="chartTitle">Model probability vs. market</h2>
+    <div id="chartwrap"><canvas id="chart" role="img"
+      aria-label="Model probability of scoring a touchdown per player, with the de-vigged market probability shown alongside"></canvas></div>
+  </div>
+
+  <div class="card">
+    <h2 id="tableTitle">Ranked players — click a row for the “why”</h2>
+    <div id="status">Loading touchdowns.json…</div>
+    <div class="tablewrap" hidden id="tablewrap">
+      <table id="tbl">
+        <thead><tr>
+          <th></th><th>Player</th><th>Matchup &amp; kickoff</th>
+          <th class="num">P(TD)</th><th class="num">Best odds</th>
+          <th class="num">Market fair</th><th class="num">EV / $1</th><th class="num">Need</th><th></th>
+        </tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <div class="note">
+      Confidence: <span class="conf conf-high">high</span> enough current-season usage to stand on its own ·
+      <span class="conf conf-medium">medium</span> blended with last season, or the player changed teams ·
+      <span class="conf conf-low">low</span> no current-season usage yet, or a rookie.
+      <b>Need</b> is the shortest price at which the model still calls this break-even — book-independent,
+      so compare it against whatever your own sportsbook shows.
+      <b>Market fair</b> de-vigs the posted price; where only the “Yes” side is quoted it assumes a
+      6% overround rather than measuring one, so treat it as an estimate, not a true no-vig line.
+      This board has no injury or inactives feed, so a player ruled out late can still appear.
+      Projections are estimates — not betting advice.
+    </div>
+  </div>
+</div>
+
+<script>
+"use strict";
+const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const pct = (x,d=1) => (100*x).toFixed(d)+"%";
+const american = a => a>0 ? "+"+a : String(a);
+let DOC=null, VIEW="prob", SORT="rank", CHART=null;
+
+function localTime(iso){ if(!iso) return ""; const d=new Date(iso); return isNaN(d)?"":d.toLocaleTimeString([],{hour:"numeric",minute:"2-digit"}); }
+function esc(s){ return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c])); }
+
+async function load(){
+  let doc;
+  try { const r = await fetch("touchdowns.json",{cache:"no-store"}); if(!r.ok) throw new Error(r.status); doc = await r.json(); }
+  catch(e){ document.getElementById("status").textContent = "Could not load touchdowns.json ("+e+"). Run the touchdown pipeline first."; return; }
+  render(doc);
+}
+
+function render(doc){
+  DOC = doc;
+  const when = new Date(doc.generated_at);
+  const wk = doc.week ? `week ${doc.week}` : "";
+  document.getElementById("meta").textContent =
+    `${doc.date} · ${doc.n_games||0} game${doc.n_games===1?"":"s"} · ${wk} · generated ${when.toLocaleString()}` +
+    ` · model ${doc.model_version}` + (doc.odds_available?"":" · odds unavailable this run");
+
+  document.getElementById("demoBadge").hidden = !doc.demo;
+
+  if(doc.cold_start){
+    const b = document.getElementById("coldStart");
+    b.hidden = false;
+    b.innerHTML = `<b>Early-season numbers.</b> There ${doc.current_season_games===1?"is":"are"} only `+
+      `${doc.current_season_games||0} game${doc.current_season_games===1?"":"s"} of ${esc(String(doc.season))} usage so far, `+
+      `so these projections lean on ${esc((doc.seasons_used||[]).filter(s=>s!==doc.season).join(", ")||"last season")}. `+
+      `Free agency, the draft and camp all move usage before any of it shows up in the data — every row is badged `+
+      `<span class="conf conf-low">low</span> until the current season has enough games to stand on.`;
+  }
+
+  const players = doc.players || [];
+  if(players.length===0){
+    document.getElementById("controls").hidden = true;
+    document.getElementById("chartCard").hidden = true;
+    document.getElementById("tablewrap").hidden = true;
+    const s=document.getElementById("status"); s.hidden=false;
+    s.innerHTML = `No NFL games on ${esc(doc.date)}. The board runs on game days only — check back Thursday, Sunday or Monday.`;
+    return;
+  }
+  document.getElementById("controls").hidden = false;
+  const hasOdds = players.some(p=>p.odds);
+  const btnEv=document.getElementById("btnEv"); btnEv.disabled=!hasOdds;
+  if(!hasOdds) btnEv.title="No anytime-TD props in this run";
+  document.getElementById("btnProb").onclick=()=>setView("prob");
+  btnEv.onclick=()=>setView("ev");
+  document.getElementById("sortRank").onclick=()=>setSort("rank");
+  document.getElementById("sortTime").onclick=()=>setSort("time");
+  document.getElementById("status").hidden=true;
+  document.getElementById("tablewrap").hidden=false;
+  if(location.hash.includes("ev")&&hasOdds) VIEW="ev";
+  setView(VIEW);
+  if(location.hash.includes("expand")) document.querySelector("#tbl tbody tr")?.click();
+}
+
+function setSort(sort){ SORT=sort;
+  document.getElementById("sortRank").setAttribute("aria-pressed",sort==="rank");
+  document.getElementById("sortTime").setAttribute("aria-pressed",sort==="time");
+  setView(VIEW); }
+
+function setView(view){
+  VIEW=view;
+  document.getElementById("btnProb").setAttribute("aria-pressed",view==="prob");
+  document.getElementById("btnEv").setAttribute("aria-pressed",view==="ev");
+  const n = DOC.top_n || 20;
+  let list = (view==="ev")
+    ? (DOC.players||[]).filter(p=>p.odds).sort((a,b)=>b.odds.ev_per_dollar-a.odds.ev_per_dollar).slice(0,n)
+    : (DOC.players||[]).slice().sort((a,b)=>b.prob-a.prob).slice(0,n);
+  document.getElementById("chartTitle").textContent = view==="ev"
+    ? `Model probability vs. market — top ${list.length} by EV`
+    : `Model probability of scoring — top ${list.length}`;
+  document.getElementById("tableTitle").textContent = view==="ev"
+    ? "Ranked by EV at best price (players without a listed prop excluded) — click a row for the “why”"
+    : "Ranked by model probability — click a row for the “why”";
+  const ranked = list.slice();
+  if(SORT==="time") list = list.slice().sort((a,b)=>String(a.kickoff_utc||"").localeCompare(String(b.kickoff_utc||"")));
+  drawChart(ranked);
+  drawTable(list, ranked);
+}
+
+function drawChart(list){
+  const card=document.getElementById("chartCard");
+  if(!list.length){ card.hidden=true; return; }
+  card.hidden=false;
+  const labels=list.map(p=>p.name);
+  const model=list.map(p=>+(100*p.prob).toFixed(1));
+  const market=list.map(p=>p.odds?+(100*p.odds.fair_prob).toFixed(1):null);
+  if(CHART) CHART.destroy();
+  CHART=new Chart(document.getElementById("chart"),{
+    type:"bar",
+    data:{labels,datasets:[
+      {label:"Model P(TD)",data:model,backgroundColor:css("--series-1"),borderRadius:3},
+      {label:"Market fair",data:market,backgroundColor:css("--series-2"),borderRadius:3},
+    ]},
+    options:{responsive:true,maintainAspectRatio:false,
+      plugins:{legend:{labels:{color:css("--ink-2"),boxWidth:12,font:{size:11}}},
+        tooltip:{callbacks:{label:c=>`${c.dataset.label}: ${c.parsed.y}%`}}},
+      scales:{
+        x:{ticks:{color:css("--ink-2"),font:{size:10},maxRotation:60,minRotation:45},grid:{display:false}},
+        y:{ticks:{color:css("--ink-2"),font:{size:10},callback:v=>v+"%"},grid:{color:css("--grid")},beginAtZero:true}}}
+  });
+}
+
+function evCell(p){
+  if(!p.odds) return `<span class="ev-na">—</span>`;
+  const e=p.odds.ev_per_dollar;
+  return `<span class="${e>=0?"ev-pos":"ev-neg"}">${e>=0?"+":"−"}${Math.abs(100*e).toFixed(1)}%</span>`;
+}
+
+function drawTable(list, ranked){
+  const rankOf=new Map(ranked.map((p,i)=>[p.player_id,i+1]));
+  const tb=document.querySelector("#tbl tbody"); tb.innerHTML="";
+  list.forEach(p=>{
+    const tr=document.createElement("tr"); tr.className="prow";
+    const conf=p.confidence||"low";
+    tr.innerHTML=
+      `<td class="c-rank">${rankOf.get(p.player_id)??""}</td>`+
+      `<td class="c-name"><span class="pname">${esc(p.name)}</span> <span class="conf conf-${conf}">${conf}</span>`+
+        `<div class="pmeta"><span class="poschip">${esc(p.position||"")}</span>${esc(p.team||"")}</div></td>`+
+      `<td class="c-match"><span class="gtime">${localTime(p.kickoff_utc)}</span>`+
+        `<div class="pmeta">${p.home?"vs":"@"} ${esc(p.opponent||"")}</div></td>`+
+      `<td class="num c-prob big" data-label="P(TD)">${pct(p.prob)}</td>`+
+      `<td class="num c-odds" data-label="Best odds">${p.odds?american(p.odds.best_price_american)+
+        `<div class="pmeta">${esc(p.odds.best_book)}</div>`:"—"}</td>`+
+      `<td class="num c-fair" data-label="Market fair">${p.odds?pct(p.odds.fair_prob):"—"}</td>`+
+      `<td class="num c-ev" data-label="EV / $1">${evCell(p)}</td>`+
+      `<td class="num c-be" data-label="Need">${p.break_even_american!=null?american(p.break_even_american):"—"}</td>`+
+      `<td class="c-chev"><span class="chev">▶</span></td>`;
+    const det=document.createElement("tr"); det.className="detail"; det.hidden=true;
+    det.innerHTML=`<td colspan="9">${detailHTML(p)}</td>`;
+    tr.onclick=()=>{ det.hidden=!det.hidden; tr.classList.toggle("open",!det.hidden); };
+    tb.appendChild(tr); tb.appendChild(det);
+  });
+}
+
+function bar(label, value, fmt){
+  // value is a multiplier around 1.0; render as deviation from centre
+  const dev=Math.max(-1,Math.min(1,(value-1)/0.6));
+  const w=Math.abs(dev)*50;
+  return `<div class="fbar"><span class="lab">${esc(label)}</span>`+
+    `<span class="track"><span class="mid"></span>`+
+    `<span class="bar ${dev>=0?"pos":"neg"}" style="width:${w}%"></span></span>`+
+    `<span class="val">${fmt||value.toFixed(2)+"×"}</span></div>`;
+}
+
+function shareBar(label, share, fmt){
+  const w=Math.max(0,Math.min(1,share/0.5))*100;
+  return `<div class="fbar"><span class="lab">${esc(label)}</span>`+
+    `<span class="track"><span class="bar pos" style="left:0;width:${w}%"></span></span>`+
+    `<span class="val">${fmt||pct(share,0)}</span></div>`;
+}
+
+function detailHTML(p){
+  const f=p.factors||{}, u=p.usage||{}, s=p.shares||{};
+  const off=f.team_off_tds||{}, split=f.team_rush_split||{}, orr=f.opp_rush||{}, ore=f.opp_rec||{};
+  const gl=f.game_line||null;
+
+  const src = off.source==="game line"
+    ? `The game line implies <b>${off.implied_points} points</b> for ${esc(p.team)}, which puts them at`
+    : `With no game line available this falls back to the league-average offence, so ${esc(p.team)} is set at`;
+  const lean = (p.lambda_rush>=p.lambda_rec)
+    ? `Most of this is on the ground: ${pct(s.rush,0)} of ${esc(p.team)}'s rushing touchdowns.`
+    : `Most of this is through the air: ${pct(s.rec,0)} of ${esc(p.team)}'s receiving touchdowns.`;
+  const defnote = (orr.value>1.05||ore.value>1.05) ? ` ${esc(p.opponent)} has been giving them up.`
+    : (orr.value<0.95||ore.value<0.95) ? ` ${esc(p.opponent)} has been stingy in the end zone.` : "";
+  const confnote = p.confidence==="low"
+    ? ` <b>Low confidence</b> — ${p.rookie?"a rookie with no NFL usage yet; this is a draft-capital prior, not a measurement":"built on last season's usage, before any of this season's role changes"}.`
+    : p.changed_teams ? ` <b>Medium confidence</b> — he changed teams in the off-season, so his usage was earned somewhere else.` : "";
+
+  const plain = `<p class="plain">${esc(p.name)} projects at <b>${pct(p.prob)}</b> to find the end zone. `+
+    `${src} <b>${off.value}</b> offensive touchdowns, `+
+    `split about ${pct(split.value,0)} run / ${pct(1-split.value,0)} pass. ${lean}${defnote}`+
+    (p.odds?` The best price on the board is <b>${american(p.odds.best_price_american)}</b> at ${esc(p.odds.best_book)}, `+
+      `which de-vigs to ${pct(p.odds.fair_prob)} — the model is ${p.odds.edge_vs_fair>=0?"higher":"lower"} by `+
+      `${pct(Math.abs(p.odds.edge_vs_fair))}, an EV of ${(p.odds.ev_per_dollar>=0?"+":"−")+pct(Math.abs(p.odds.ev_per_dollar))} per $1.`:"")+
+    confnote+`</p>`;
+
+  const bars =
+    shareBar("Rush TD share", s.rush||0)+
+    shareBar("Rec TD share", s.rec||0)+
+    bar("Opp vs the run", orr.value??1)+
+    bar("Opp vs the pass", ore.value??1);
+
+  const kv = `<dl class="kv">`+
+    `<dt>Expected TDs (λ)</dt><dd>${(+p.lambda).toFixed(3)} (${(+p.lambda_rush).toFixed(3)} rush / ${(+p.lambda_rec).toFixed(3)} rec)</dd>`+
+    `<dt>Team expected TDs</dt><dd>${(+off.value).toFixed(2)} (${(+p.team_expected_rush_tds).toFixed(2)} rush / ${(+p.team_expected_rec_tds).toFixed(2)} rec)</dd>`+
+    (gl?`<dt>Game total / spread</dt><dd>${gl.total} / ${gl.spread>0?"+":""}${gl.spread}</dd>`:"")+
+    `<dt>Carries (goal line)</dt><dd>${u.carries??0} (${u.goal_line_carries??0} inside the 5)</dd>`+
+    `<dt>Targets (red zone)</dt><dd>${u.targets??0} (${u.red_zone_targets??0} inside the 20)</dd>`+
+    `<dt>Prior TDs</dt><dd>${u.prior_rush_tds??0} rush / ${u.prior_rec_tds??0} rec</dd>`+
+    (p.odds?`<dt>Books quoting</dt><dd>${p.odds.n_books}${p.odds.two_sided?"":" (Yes side only)"}</dd>`:"")+
+    `<dt>Break-even price</dt><dd>${p.break_even_american!=null?american(p.break_even_american):"—"}</dd>`+
+    `</dl>`;
+
+  return plain+`<div class="why"><div>${bars}</div><div>${kv}</div></div>`;
+}
+
+load();
+</script>
+</body>
+</html>

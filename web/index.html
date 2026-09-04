@@ -39,11 +39,12 @@
   .wrap { max-width: 980px; margin: 0 auto; padding: 20px 16px 64px; }
   #chartwrap { max-width: 100%; }
   #chart { max-width: 100%; }
-  nav.tabs { display: flex; gap: 8px; margin-bottom: 14px; flex-wrap: wrap; }
+  nav.tabs { display: flex; gap: 8px; margin-bottom: 14px; flex-wrap: wrap; align-items: center; }
   nav.tabs a {
     text-decoration: none; font-size: 13px; font-weight: 600; color: var(--ink-2);
     padding: 7px 14px; border: 1px solid var(--border); border-radius: 999px; background: var(--surface);
   }
+  nav.tabs .navsep { font-size:11px; font-weight:700; color:var(--ink-muted); letter-spacing:.06em; padding:0 2px; }
   nav.tabs a[aria-current="page"] { background: var(--series-1); color: #fff; border-color: transparent; }
   header h1 { font-size: 22px; margin: 0 0 4px; }
   header .sub { color: var(--ink-2); font-size: 13px; }
@@ -155,10 +156,13 @@
 <body>
 <div class="wrap">
   <nav class="tabs">
+    <span class="navsep">MLB</span>
     <a href="index.html" aria-current="page">Home Runs</a>
     <a href="strikeouts.html">Pitcher Strikeouts</a>
     <a href="moneylines.html">Moneylines</a>
     <a href="totals.html">Totals</a>
+    <span class="navsep">NFL</span>
+    <a href="touchdowns.html">Anytime TD</a>
   </nav>
   <header>
     <h1>MLB Home Run Predictions <span class="badge" id="demoBadge" hidden>DEMO DATA</span></h1>

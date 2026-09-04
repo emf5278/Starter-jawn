@@ -109,7 +109,8 @@ def fetch_hr_props(api_key: str, regions: str = "us") -> dict[str, dict]:
     return out
 
 
-def fetch_game_lines(api_key: str, regions: str = "us") -> dict[str, dict]:
+def fetch_game_lines(api_key: str, regions: str = "us",
+                     sport: str | None = None, markets: str | None = None) -> dict[str, dict]:
     """Map normalized team name -> {total, spread, implied_team_runs}.
 
     One call to the main-markets endpoint (totals + spreads) — far cheaper and
@@ -119,12 +120,17 @@ def fetch_game_lines(api_key: str, regions: str = "us") -> dict[str, dict]:
         implied_team_runs = total/2 - team_spread/2
 
     (a favored team's run-line spread is negative, so it implies more runs).
+
+    Sport-agnostic: the NFL board calls this with the football sport key to
+    turn a total and a spread into implied *points*, which is the anchor for
+    the whole anytime-TD model.
     """
     try:
         r = requests.get(
-            f"{BASE}/sports/{config.ODDS_SPORT_KEY}/odds",
+            f"{BASE}/sports/{sport or config.ODDS_SPORT_KEY}/odds",
             params={"apiKey": api_key, "regions": regions,
-                    "markets": config.ODDS_GAME_MARKETS, "oddsFormat": "decimal"},
+                    "markets": markets or config.ODDS_GAME_MARKETS,
+                    "oddsFormat": "decimal"},
             timeout=30,
         )
         r.raise_for_status()
@@ -313,4 +319,121 @@ def fetch_main_market_odds(api_key: str, regions: str = "us") -> list[dict]:
             }
         out.append(entry)
     log.info("main-market odds for %d games", len(out))
+    return out
+
+
+def _log_credits(resp) -> None:
+    """The Odds API reports quota in response headers. On the free plan this
+    is the number that matters, so surface it in the run log."""
+    used = resp.headers.get("x-requests-used")
+    left = resp.headers.get("x-requests-remaining")
+    if left is not None:
+        log.info("odds API credits: %s used, %s remaining", used, left)
+
+
+def fetch_anytime_td_props(api_key: str, regions: str = "us",
+                           on_date=None) -> dict[str, dict]:
+    """Map normalized player name -> anytime-TD odds summary.
+
+    Anytime TD is a Yes/No market on a fixed 0.5 line, so the de-vig is the
+    same two-way multiplicative one the HR board uses:
+
+        fair_yes = (1/d_yes) / (1/d_yes + 1/d_no)
+
+    and where a book prices only the Yes side we fall back to the assumed
+    single-side overround, exactly as the HR board does.
+
+    CREDITS.  Player props cost one request *per event*, so we filter the
+    event list down to games kicking off on `on_date` (US/Eastern) before
+    asking for any odds.  On a normal NFL week that is one request on
+    Thursday, ~13 on Sunday and one on Monday, rather than the whole slate
+    every day.
+    """
+    from zoneinfo import ZoneInfo
+    import datetime as _dt
+    et = ZoneInfo("America/New_York")
+
+    try:
+        r = requests.get(
+            f"{BASE}/sports/{config.ODDS_NFL_SPORT_KEY}/events",
+            params={"apiKey": api_key}, timeout=30,
+        )
+        r.raise_for_status()
+        _log_credits(r)
+        events = r.json()
+    except Exception:
+        log.warning("odds API events fetch failed (NFL)", exc_info=True)
+        return {}
+
+    if on_date is not None:
+        keep = []
+        for ev in events:
+            ct = ev.get("commence_time")
+            if not ct:
+                continue
+            try:
+                when = _dt.datetime.fromisoformat(ct.replace("Z", "+00:00")).astimezone(et)
+            except Exception:
+                continue
+            if when.date() == on_date:
+                keep.append(ev)
+        log.info("NFL events today: %d of %d upcoming", len(keep), len(events))
+        events = keep
+
+    quotes: dict[str, list[tuple[str, float, float | None]]] = {}
+    for ev in events:
+        try:
+            r = requests.get(
+                f"{BASE}/sports/{config.ODDS_NFL_SPORT_KEY}/events/{ev['id']}/odds",
+                params={"apiKey": api_key, "regions": regions,
+                        "markets": config.ODDS_TD_MARKET, "oddsFormat": "decimal"},
+                timeout=30,
+            )
+            if r.status_code == 422:
+                # market not offered for this event / not on this plan
+                log.warning("anytime-TD market unavailable for %s vs %s (422)",
+                            ev.get("away_team"), ev.get("home_team"))
+                continue
+            r.raise_for_status()
+            _log_credits(r)
+            data = r.json()
+        except Exception:
+            log.warning("anytime-TD odds fetch failed for event %s", ev.get("id"),
+                        exc_info=True)
+            continue
+        for book in data.get("bookmakers", []):
+            for market in book.get("markets", []):
+                if market.get("key") != config.ODDS_TD_MARKET:
+                    continue
+                sides: dict[str, dict[str, float]] = {}
+                for o in market.get("outcomes", []):
+                    player = normalize_name(o.get("description", ""))
+                    if player:
+                        sides.setdefault(player, {})[o.get("name", "")] = o.get("price")
+                for player, s in sides.items():
+                    yes = s.get("Yes") or s.get("Over")
+                    if not yes:
+                        continue
+                    no = s.get("No") or s.get("Under")
+                    quotes.setdefault(player, []).append(
+                        (book.get("title", "?"), float(yes), float(no) if no else None))
+
+    out: dict[str, dict] = {}
+    for player, qs in quotes.items():
+        fair_probs = []
+        for _, yes, no in qs:
+            iy = 1.0 / yes
+            fair_probs.append(iy / (iy + 1.0 / no) if no
+                              else iy / config.ASSUMED_SINGLE_SIDE_OVERROUND)
+        best_book, best_price, _ = max(qs, key=lambda q: q[1])
+        out[player] = {
+            "best_price_decimal": best_price,
+            "best_price_american": decimal_to_american(best_price),
+            "best_book": best_book,
+            "implied_prob": 1.0 / best_price,
+            "fair_prob": statistics.median(fair_probs),
+            "n_books": len(qs),
+            "two_sided": any(no for _, _, no in qs),
+        }
+    log.info("anytime-TD props for %d players", len(out))
     return out
