@@ -1,0 +1,90 @@
+{
+  "row": {
+    "date": "2026-09-06",
+    "snapshot_utc": "2026-09-06T15:50:56+00:00",
+    "late_snapshot": false,
+    "proj_hits": 3,
+    "proj_graded": 3,
+    "proj_expected": 1.86,
+    "ev_hits": 3,
+    "ev_graded": 3,
+    "ev_expected": 1.86,
+    "ev_flat_pnl": 2.78
+  },
+  "top_proj": [
+    {
+      "name": "Justin Wrobleski",
+      "team": "Los Angeles Dodgers",
+      "line": 4.5,
+      "side": "Over",
+      "played": true,
+      "actual_ks": 6,
+      "result": "Over",
+      "hit": true,
+      "price": 2.15,
+      "model_prob": 0.5912
+    },
+    {
+      "name": "Bailey Ober",
+      "team": "Minnesota Twins",
+      "line": 3.5,
+      "side": "Over",
+      "played": true,
+      "actual_ks": 6,
+      "result": "Over",
+      "hit": true,
+      "price": 1.73,
+      "model_prob": 0.6395
+    },
+    {
+      "name": "Andrew Alvarez",
+      "team": "Washington Nationals",
+      "line": 3.5,
+      "side": "Over",
+      "played": true,
+      "actual_ks": 5,
+      "result": "Over",
+      "hit": true,
+      "price": 1.9,
+      "model_prob": 0.6331
+    }
+  ],
+  "top_ev": [
+    {
+      "name": "Justin Wrobleski",
+      "team": "Los Angeles Dodgers",
+      "line": 4.5,
+      "side": "Over",
+      "played": true,
+      "actual_ks": 6,
+      "result": "Over",
+      "hit": true,
+      "price": 2.15,
+      "model_prob": 0.5912
+    },
+    {
+      "name": "Andrew Alvarez",
+      "team": "Washington Nationals",
+      "line": 3.5,
+      "side": "Over",
+      "played": true,
+      "actual_ks": 5,
+      "result": "Over",
+      "hit": true,
+      "price": 1.9,
+      "model_prob": 0.6331
+    },
+    {
+      "name": "Bailey Ober",
+      "team": "Minnesota Twins",
+      "line": 3.5,
+      "side": "Over",
+      "played": true,
+      "actual_ks": 6,
+      "result": "Over",
+      "hit": true,
+      "price": 1.73,
+      "model_prob": 0.6395
+    }
+  ]
+}
