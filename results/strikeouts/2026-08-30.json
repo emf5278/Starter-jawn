@@ -1,0 +1,66 @@
+{
+  "row": {
+    "date": "2026-08-30",
+    "snapshot_utc": "2026-08-30T17:00:42+00:00",
+    "late_snapshot": false,
+    "proj_hits": 1,
+    "proj_graded": 2,
+    "proj_expected": 1.12,
+    "ev_hits": 1,
+    "ev_graded": 2,
+    "ev_expected": 1.12,
+    "ev_flat_pnl": 0.22
+  },
+  "top_proj": [
+    {
+      "name": "Chase Burns",
+      "team": "Cincinnati Reds",
+      "line": 6.5,
+      "side": "Under",
+      "played": true,
+      "actual_ks": 7,
+      "result": "Over",
+      "hit": false,
+      "price": 1.67,
+      "model_prob": 0.5716
+    },
+    {
+      "name": "Shota Imanaga",
+      "team": "Chicago Cubs",
+      "line": 5.5,
+      "side": "Under",
+      "played": true,
+      "actual_ks": 4,
+      "result": "Under",
+      "hit": true,
+      "price": 2.22,
+      "model_prob": 0.5479
+    }
+  ],
+  "top_ev": [
+    {
+      "name": "Shota Imanaga",
+      "team": "Chicago Cubs",
+      "line": 5.5,
+      "side": "Under",
+      "played": true,
+      "actual_ks": 4,
+      "result": "Under",
+      "hit": true,
+      "price": 2.22,
+      "model_prob": 0.5479
+    },
+    {
+      "name": "Chase Burns",
+      "team": "Cincinnati Reds",
+      "line": 6.5,
+      "side": "Under",
+      "played": true,
+      "actual_ks": 7,
+      "result": "Over",
+      "hit": false,
+      "price": 1.67,
+      "model_prob": 0.5716
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "generated_at": "2026-08-30T17:00:42+00:00",
+  "date": "2026-08-30",
+  "model_version": "k-0.1.0",
+  "league_k_pa": 0.2203,
+  "filter": "first pitch \u2265 5pm ET",
+  "n_starters_scored": 2,
+  "odds_available": true,
+  "top_n": 20,
+  "pitchers": [
+    {
+      "pitcher_id": 695505,
+      "name": "Chase Burns",
+      "team": "Cincinnati Reds",
+      "opponent": "Chicago Cubs",
+      "opponent_lineup_confirmed": false,
+      "game_pk": 824636,
+      "game_time_utc": "2026-08-30T23:20:00Z",
+      "pitcher_hand": "R",
+      "expected_ks": 6.24,
+      "k_rate": 0.2744,
+      "factors": {
+        "league_k_pa": 0.2203,
+        "pitcher": {
+          "regressed": 0.2629,
+          "ratio": 1.193,
+          "raw": 0.2892,
+          "n": 567.0
+        },
+        "opponent": {
+          "opp_k_rate": 0.2306,
+          "ratio": 1.046,
+          "n_batters": 9
+        },
+        "expected_tbf": {
+          "value": 22.72,
+          "raw": 22.7,
+          "starts": 25.0
+        }
+      },
+      "line": 6.5,
+      "prob_over": 0.4284,
+      "prob_under": 0.5716,
+      "break_even_over_american": 133,
+      "break_even_under_american": -133,
+      "odds": {
+        "line": 6.5,
+        "over_price_decimal": 2.28,
+        "over_price_american": 128,
+        "under_price_decimal": 1.67,
+        "under_price_american": -149,
+        "fair_over": 0.4171,
+        "n_books": 4,
+        "ev_over": -0.0232,
+        "ev_under": -0.0454,
+        "best_side": "Over",
+        "best_ev": -0.0232,
+        "edge_over": 0.0113
+      }
+    },
+    {
+      "pitcher_id": 684007,
+      "name": "Shota Imanaga",
+      "team": "Chicago Cubs",
+      "opponent": "Cincinnati Reds",
+      "opponent_lineup_confirmed": false,
+      "game_pk": 824636,
+      "game_time_utc": "2026-08-30T23:20:00Z",
+      "pitcher_hand": "L",
+      "expected_ks": 5.43,
+      "k_rate": 0.2381,
+      "factors": {
+        "league_k_pa": 0.2203,
+        "pitcher": {
+          "regressed": 0.2347,
+          "ratio": 1.065,
+          "raw": 0.2432,
+          "n": 592.0
+        },
+        "opponent": {
+          "opp_k_rate": 0.2236,
+          "ratio": 1.015,
+          "n_batters": 9
+        },
+        "expected_tbf": {
+          "value": 22.8,
+          "raw": 22.8,
+          "starts": 26.0
+        }
+      },
+      "line": 5.5,
+      "prob_over": 0.4521,
+      "prob_under": 0.5479,
+      "break_even_over_american": 121,
+      "break_even_under_american": -121,
+      "odds": {
+        "line": 5.5,
+        "over_price_decimal": 1.64,
+        "over_price_american": -156,
+        "under_price_decimal": 2.22,
+        "under_price_american": 122,
+        "fair_over": 0.5751,
+        "n_books": 3,
+        "ev_over": -0.2586,
+        "ev_under": 0.2163,
+        "best_side": "Under",
+        "best_ev": 0.2163,
+        "edge_over": -0.123
+      }
+    }
+  ]
+}

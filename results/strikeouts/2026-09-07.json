@@ -1,0 +1,186 @@
+{
+  "row": {
+    "date": "2026-09-07",
+    "snapshot_utc": "2026-09-07T17:58:55+00:00",
+    "late_snapshot": false,
+    "proj_hits": 4,
+    "proj_graded": 7,
+    "proj_expected": 4.09,
+    "ev_hits": 4,
+    "ev_graded": 7,
+    "ev_expected": 4.09,
+    "ev_flat_pnl": 0.54
+  },
+  "top_proj": [
+    {
+      "name": "Dylan Cease",
+      "team": "Toronto Blue Jays",
+      "line": 7.5,
+      "side": "Under",
+      "played": true,
+      "actual_ks": 6,
+      "result": "Under",
+      "hit": true,
+      "price": 1.81,
+      "model_prob": 0.5489
+    },
+    {
+      "name": "Chase Burns",
+      "team": "Cincinnati Reds",
+      "line": 4.5,
+      "side": "Over",
+      "played": true,
+      "actual_ks": 5,
+      "result": "Over",
+      "hit": true,
+      "price": 1.86,
+      "model_prob": 0.6459
+    },
+    {
+      "name": "Nick Pivetta",
+      "team": "San Diego Padres",
+      "line": 4.5,
+      "side": "Over",
+      "played": true,
+      "actual_ks": 2,
+      "result": "Under",
+      "hit": false,
+      "price": 1.9,
+      "model_prob": 0.5387
+    },
+    {
+      "name": "Jake Irvin",
+      "team": "Washington Nationals",
+      "line": 4.5,
+      "side": "Over",
+      "played": true,
+      "actual_ks": 3,
+      "result": "Under",
+      "hit": false,
+      "price": 2.24,
+      "model_prob": 0.5189
+    },
+    {
+      "name": "Logan Webb",
+      "team": "San Francisco Giants",
+      "line": 5.5,
+      "side": "Under",
+      "played": true,
+      "actual_ks": 8,
+      "result": "Over",
+      "hit": false,
+      "price": 1.63,
+      "model_prob": 0.6453
+    },
+    {
+      "name": "Michael McGreevy",
+      "team": "St. Louis Cardinals",
+      "line": 3.5,
+      "side": "Over",
+      "played": true,
+      "actual_ks": 4,
+      "result": "Over",
+      "hit": true,
+      "price": 2.15,
+      "model_prob": 0.6084
+    },
+    {
+      "name": "Jacob Lopez",
+      "team": "Athletics",
+      "line": 4.5,
+      "side": "Under",
+      "played": true,
+      "actual_ks": 1,
+      "result": "Under",
+      "hit": true,
+      "price": 1.72,
+      "model_prob": 0.5831
+    }
+  ],
+  "top_ev": [
+    {
+      "name": "Michael McGreevy",
+      "team": "St. Louis Cardinals",
+      "line": 3.5,
+      "side": "Over",
+      "played": true,
+      "actual_ks": 4,
+      "result": "Over",
+      "hit": true,
+      "price": 2.15,
+      "model_prob": 0.6084
+    },
+    {
+      "name": "Chase Burns",
+      "team": "Cincinnati Reds",
+      "line": 4.5,
+      "side": "Over",
+      "played": true,
+      "actual_ks": 5,
+      "result": "Over",
+      "hit": true,
+      "price": 1.86,
+      "model_prob": 0.6459
+    },
+    {
+      "name": "Jake Irvin",
+      "team": "Washington Nationals",
+      "line": 4.5,
+      "side": "Over",
+      "played": true,
+      "actual_ks": 3,
+      "result": "Under",
+      "hit": false,
+      "price": 2.24,
+      "model_prob": 0.5189
+    },
+    {
+      "name": "Logan Webb",
+      "team": "San Francisco Giants",
+      "line": 5.5,
+      "side": "Under",
+      "played": true,
+      "actual_ks": 8,
+      "result": "Over",
+      "hit": false,
+      "price": 1.63,
+      "model_prob": 0.6453
+    },
+    {
+      "name": "Nick Pivetta",
+      "team": "San Diego Padres",
+      "line": 4.5,
+      "side": "Over",
+      "played": true,
+      "actual_ks": 2,
+      "result": "Under",
+      "hit": false,
+      "price": 1.9,
+      "model_prob": 0.5387
+    },
+    {
+      "name": "Jacob Lopez",
+      "team": "Athletics",
+      "line": 4.5,
+      "side": "Under",
+      "played": true,
+      "actual_ks": 1,
+      "result": "Under",
+      "hit": true,
+      "price": 1.72,
+      "model_prob": 0.5831
+    },
+    {
+      "name": "Dylan Cease",
+      "team": "Toronto Blue Jays",
+      "line": 7.5,
+      "side": "Under",
+      "played": true,
+      "actual_ks": 6,
+      "result": "Under",
+      "hit": true,
+      "price": 1.81,
+      "model_prob": 0.5489
+    }
+  ]
+}

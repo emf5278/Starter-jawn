@@ -1,0 +1,362 @@
+{
+  "generated_at": "2026-09-07T17:58:55+00:00",
+  "date": "2026-09-07",
+  "model_version": "k-0.1.0",
+  "league_k_pa": 0.2205,
+  "filter": "first pitch \u2265 5pm ET",
+  "n_starters_scored": 7,
+  "odds_available": true,
+  "top_n": 20,
+  "pitchers": [
+    {
+      "pitcher_id": 656302,
+      "name": "Dylan Cease",
+      "team": "Toronto Blue Jays",
+      "opponent": "Athletics",
+      "opponent_lineup_confirmed": false,
+      "game_pk": 824958,
+      "game_time_utc": "2026-09-08T02:05:00Z",
+      "pitcher_hand": "R",
+      "expected_ks": 7.37,
+      "k_rate": 0.3085,
+      "factors": {
+        "league_k_pa": 0.2205,
+        "pitcher": {
+          "regressed": 0.3058,
+          "ratio": 1.387,
+          "raw": 0.3536,
+          "n": 625.0
+        },
+        "opponent": {
+          "opp_k_rate": 0.2227,
+          "ratio": 1.01,
+          "n_batters": 9
+        },
+        "expected_tbf": {
+          "value": 23.9,
+          "raw": 24.0,
+          "starts": 26.0
+        }
+      },
+      "line": 7.5,
+      "prob_over": 0.4511,
+      "prob_under": 0.5489,
+      "break_even_over_american": 122,
+      "break_even_under_american": -122,
+      "odds": {
+        "line": 7.5,
+        "over_price_decimal": 2.0,
+        "over_price_american": 100,
+        "under_price_decimal": 1.81,
+        "under_price_american": -123,
+        "fair_over": 0.4755,
+        "n_books": 4,
+        "ev_over": -0.0978,
+        "ev_under": -0.0065,
+        "best_side": "Under",
+        "best_ev": -0.0065,
+        "edge_over": -0.0244
+      }
+    },
+    {
+      "pitcher_id": 695505,
+      "name": "Chase Burns",
+      "team": "Cincinnati Reds",
+      "opponent": "Los Angeles Dodgers",
+      "opponent_lineup_confirmed": false,
+      "game_pk": 823902,
+      "game_time_utc": "2026-09-08T01:10:00Z",
+      "pitcher_hand": "R",
+      "expected_ks": 5.67,
+      "k_rate": 0.2486,
+      "factors": {
+        "league_k_pa": 0.2205,
+        "pitcher": {
+          "regressed": 0.2635,
+          "ratio": 1.195,
+          "raw": 0.2889,
+          "n": 592.0
+        },
+        "opponent": {
+          "opp_k_rate": 0.2074,
+          "ratio": 0.94,
+          "n_batters": 9
+        },
+        "expected_tbf": {
+          "value": 22.8,
+          "raw": 22.8,
+          "starts": 26.0
+        }
+      },
+      "line": 4.5,
+      "prob_over": 0.6459,
+      "prob_under": 0.3541,
+      "break_even_over_american": -182,
+      "break_even_under_american": 182,
+      "odds": {
+        "line": 4.5,
+        "over_price_decimal": 1.86,
+        "over_price_american": -116,
+        "under_price_decimal": 1.93,
+        "under_price_american": -108,
+        "fair_over": 0.5086,
+        "n_books": 4,
+        "ev_over": 0.2014,
+        "ev_under": -0.3166,
+        "best_side": "Over",
+        "best_ev": 0.2014,
+        "edge_over": 0.1373
+      }
+    },
+    {
+      "pitcher_id": 601713,
+      "name": "Nick Pivetta",
+      "team": "San Diego Padres",
+      "opponent": "Washington Nationals",
+      "opponent_lineup_confirmed": false,
+      "game_pk": 823254,
+      "game_time_utc": "2026-09-07T21:10:00Z",
+      "pitcher_hand": "R",
+      "expected_ks": 4.97,
+      "k_rate": 0.2514,
+      "factors": {
+        "league_k_pa": 0.2205,
+        "pitcher": {
+          "regressed": 0.2432,
+          "ratio": 1.103,
+          "raw": 0.3636,
+          "n": 66.0
+        },
+        "opponent": {
+          "opp_k_rate": 0.2282,
+          "ratio": 1.035,
+          "n_batters": 9
+        },
+        "expected_tbf": {
+          "value": 19.75,
+          "raw": 16.5,
+          "starts": 4.0
+        }
+      },
+      "line": 4.5,
+      "prob_over": 0.5387,
+      "prob_under": 0.4613,
+      "break_even_over_american": -117,
+      "break_even_under_american": 117,
+      "odds": {
+        "line": 4.5,
+        "over_price_decimal": 1.9,
+        "over_price_american": -111,
+        "under_price_decimal": 1.96,
+        "under_price_american": -104,
+        "fair_over": 0.504,
+        "n_books": 4,
+        "ev_over": 0.0235,
+        "ev_under": -0.0959,
+        "best_side": "Over",
+        "best_ev": 0.0235,
+        "edge_over": 0.0347
+      }
+    },
+    {
+      "pitcher_id": 663623,
+      "name": "Jake Irvin",
+      "team": "Washington Nationals",
+      "opponent": "San Diego Padres",
+      "opponent_lineup_confirmed": false,
+      "game_pk": 823254,
+      "game_time_utc": "2026-09-07T21:10:00Z",
+      "pitcher_hand": "R",
+      "expected_ks": 4.85,
+      "k_rate": 0.226,
+      "factors": {
+        "league_k_pa": 0.2205,
+        "pitcher": {
+          "regressed": 0.2249,
+          "ratio": 1.02,
+          "raw": 0.2289,
+          "n": 380.0
+        },
+        "opponent": {
+          "opp_k_rate": 0.2216,
+          "ratio": 1.005,
+          "n_batters": 9
+        },
+        "expected_tbf": {
+          "value": 21.45,
+          "raw": 21.1,
+          "starts": 18.0
+        }
+      },
+      "line": 4.5,
+      "prob_over": 0.5189,
+      "prob_under": 0.4811,
+      "break_even_over_american": -108,
+      "break_even_under_american": 108,
+      "odds": {
+        "line": 4.5,
+        "over_price_decimal": 2.24,
+        "over_price_american": 124,
+        "under_price_decimal": 1.68,
+        "under_price_american": -147,
+        "fair_over": 0.4353,
+        "n_books": 4,
+        "ev_over": 0.1623,
+        "ev_under": -0.1918,
+        "best_side": "Over",
+        "best_ev": 0.1623,
+        "edge_over": 0.0836
+      }
+    },
+    {
+      "pitcher_id": 657277,
+      "name": "Logan Webb",
+      "team": "San Francisco Giants",
+      "opponent": "St. Louis Cardinals",
+      "opponent_lineup_confirmed": false,
+      "game_pk": 823175,
+      "game_time_utc": "2026-09-08T00:10:00Z",
+      "pitcher_hand": "R",
+      "expected_ks": 4.82,
+      "k_rate": 0.1958,
+      "factors": {
+        "league_k_pa": 0.2205,
+        "pitcher": {
+          "regressed": 0.2018,
+          "ratio": 0.915,
+          "raw": 0.1913,
+          "n": 622.0
+        },
+        "opponent": {
+          "opp_k_rate": 0.2141,
+          "ratio": 0.971,
+          "n_batters": 9
+        },
+        "expected_tbf": {
+          "value": 24.62,
+          "raw": 24.9,
+          "starts": 25.0
+        }
+      },
+      "line": 5.5,
+      "prob_over": 0.3547,
+      "prob_under": 0.6453,
+      "break_even_over_american": 182,
+      "break_even_under_american": -182,
+      "odds": {
+        "line": 5.5,
+        "over_price_decimal": 2.24,
+        "over_price_american": 124,
+        "under_price_decimal": 1.63,
+        "under_price_american": -159,
+        "fair_over": 0.4226,
+        "n_books": 2,
+        "ev_over": -0.2055,
+        "ev_under": 0.0518,
+        "best_side": "Under",
+        "best_ev": 0.0518,
+        "edge_over": -0.0679
+      }
+    },
+    {
+      "pitcher_id": 700241,
+      "name": "Michael McGreevy",
+      "team": "St. Louis Cardinals",
+      "opponent": "San Francisco Giants",
+      "opponent_lineup_confirmed": false,
+      "game_pk": 823175,
+      "game_time_utc": "2026-09-08T00:10:00Z",
+      "pitcher_hand": "R",
+      "expected_ks": 4.34,
+      "k_rate": 0.1921,
+      "factors": {
+        "league_k_pa": 0.2205,
+        "pitcher": {
+          "regressed": 0.187,
+          "ratio": 0.848,
+          "raw": 0.1678,
+          "n": 608.0
+        },
+        "opponent": {
+          "opp_k_rate": 0.2263,
+          "ratio": 1.026,
+          "n_batters": 9
+        },
+        "expected_tbf": {
+          "value": 22.58,
+          "raw": 22.5,
+          "starts": 27.0
+        }
+      },
+      "line": 3.5,
+      "prob_over": 0.6084,
+      "prob_under": 0.3916,
+      "break_even_over_american": -155,
+      "break_even_under_american": 155,
+      "odds": {
+        "line": 3.5,
+        "over_price_decimal": 2.15,
+        "over_price_american": 115,
+        "under_price_decimal": 1.71,
+        "under_price_american": -141,
+        "fair_over": 0.4404,
+        "n_books": 4,
+        "ev_over": 0.3081,
+        "ev_under": -0.3304,
+        "best_side": "Over",
+        "best_ev": 0.3081,
+        "edge_over": 0.168
+      }
+    },
+    {
+      "pitcher_id": 682052,
+      "name": "Jacob Lopez",
+      "team": "Athletics",
+      "opponent": "Toronto Blue Jays",
+      "opponent_lineup_confirmed": false,
+      "game_pk": 824958,
+      "game_time_utc": "2026-09-08T02:05:00Z",
+      "pitcher_hand": "L",
+      "expected_ks": 4.26,
+      "k_rate": 0.1973,
+      "factors": {
+        "league_k_pa": 0.2205,
+        "pitcher": {
+          "regressed": 0.2208,
+          "ratio": 1.001,
+          "raw": 0.221,
+          "n": 466.0
+        },
+        "opponent": {
+          "opp_k_rate": 0.1971,
+          "ratio": 0.894,
+          "n_batters": 9
+        },
+        "expected_tbf": {
+          "value": 21.58,
+          "raw": 21.3,
+          "starts": 20.0
+        }
+      },
+      "line": 4.5,
+      "prob_over": 0.4169,
+      "prob_under": 0.5831,
+      "break_even_over_american": 140,
+      "break_even_under_american": -140,
+      "odds": {
+        "line": 4.5,
+        "over_price_decimal": 2.15,
+        "over_price_american": 115,
+        "under_price_decimal": 1.72,
+        "under_price_american": -139,
+        "fair_over": 0.4462,
+        "n_books": 4,
+        "ev_over": -0.1037,
+        "ev_under": 0.0029,
+        "best_side": "Under",
+        "best_ev": 0.0029,
+        "edge_over": -0.0293
+      }
+    }
+  ]
+}

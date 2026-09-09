@@ -1,0 +1,196 @@
+{
+  "generated_at": "2026-09-06T15:50:56+00:00",
+  "date": "2026-09-06",
+  "model_version": "k-0.1.0",
+  "league_k_pa": 0.2204,
+  "filter": "first pitch \u2265 5pm ET",
+  "n_starters_scored": 4,
+  "odds_available": true,
+  "top_n": 20,
+  "pitchers": [
+    {
+      "pitcher_id": 680736,
+      "name": "Justin Wrobleski",
+      "team": "Los Angeles Dodgers",
+      "opponent": "Washington Nationals",
+      "opponent_lineup_confirmed": false,
+      "game_pk": 823903,
+      "game_time_utc": "2026-09-07T02:10:00Z",
+      "pitcher_hand": "L",
+      "expected_ks": 5.3,
+      "k_rate": 0.215,
+      "factors": {
+        "league_k_pa": 0.2204,
+        "pitcher": {
+          "regressed": 0.2065,
+          "ratio": 0.937,
+          "raw": 0.1973,
+          "n": 527.0
+        },
+        "opponent": {
+          "opp_k_rate": 0.2293,
+          "ratio": 1.041,
+          "n_batters": 9
+        },
+        "expected_tbf": {
+          "value": 24.67,
+          "raw": 25.0,
+          "starts": 20.0
+        }
+      },
+      "line": 4.5,
+      "prob_over": 0.5912,
+      "prob_under": 0.4088,
+      "break_even_over_american": -145,
+      "break_even_under_american": 145,
+      "odds": {
+        "line": 4.5,
+        "over_price_decimal": 2.15,
+        "over_price_american": 115,
+        "under_price_decimal": 1.73,
+        "under_price_american": -137,
+        "fair_over": 0.4459,
+        "n_books": 5,
+        "ev_over": 0.2711,
+        "ev_under": -0.2928,
+        "best_side": "Over",
+        "best_ev": 0.2711,
+        "edge_over": 0.1453
+      }
+    },
+    {
+      "pitcher_id": 641927,
+      "name": "Bailey Ober",
+      "team": "Minnesota Twins",
+      "opponent": "Chicago White Sox",
+      "opponent_lineup_confirmed": false,
+      "game_pk": 824552,
+      "game_time_utc": "2026-09-06T22:20:00Z",
+      "pitcher_hand": "R",
+      "expected_ks": 4.53,
+      "k_rate": 0.1987,
+      "factors": {
+        "league_k_pa": 0.2204,
+        "pitcher": {
+          "regressed": 0.1886,
+          "ratio": 0.856,
+          "raw": 0.1653,
+          "n": 478.0
+        },
+        "opponent": {
+          "opp_k_rate": 0.2317,
+          "ratio": 1.051,
+          "n_batters": 9
+        },
+        "expected_tbf": {
+          "value": 22.8,
+          "raw": 22.8,
+          "starts": 21.0
+        }
+      },
+      "line": 3.5,
+      "prob_over": 0.6395,
+      "prob_under": 0.3605,
+      "break_even_over_american": -177,
+      "break_even_under_american": 177,
+      "odds": {
+        "line": 3.5,
+        "over_price_decimal": 1.73,
+        "over_price_american": -137,
+        "under_price_decimal": 2.15,
+        "under_price_american": 115,
+        "fair_over": 0.5435,
+        "n_books": 3,
+        "ev_over": 0.1063,
+        "ev_under": -0.2249,
+        "best_side": "Over",
+        "best_ev": 0.1063,
+        "edge_over": 0.096
+      }
+    },
+    {
+      "pitcher_id": 674841,
+      "name": "Andrew Alvarez",
+      "team": "Washington Nationals",
+      "opponent": "Los Angeles Dodgers",
+      "opponent_lineup_confirmed": false,
+      "game_pk": 823903,
+      "game_time_utc": "2026-09-07T02:10:00Z",
+      "pitcher_hand": "L",
+      "expected_ks": 4.49,
+      "k_rate": 0.2098,
+      "factors": {
+        "league_k_pa": 0.2204,
+        "pitcher": {
+          "regressed": 0.2226,
+          "ratio": 1.01,
+          "raw": 0.2245,
+          "n": 383.0
+        },
+        "opponent": {
+          "opp_k_rate": 0.2077,
+          "ratio": 0.942,
+          "n_batters": 9
+        },
+        "expected_tbf": {
+          "value": 21.41,
+          "raw": 20.9,
+          "starts": 13.0
+        }
+      },
+      "line": 3.5,
+      "prob_over": 0.6331,
+      "prob_under": 0.3669,
+      "break_even_over_american": -173,
+      "break_even_under_american": 173,
+      "odds": {
+        "line": 3.5,
+        "over_price_decimal": 1.9,
+        "over_price_american": -111,
+        "under_price_decimal": 1.97,
+        "under_price_american": -103,
+        "fair_over": 0.4987,
+        "n_books": 4,
+        "ev_over": 0.2029,
+        "ev_under": -0.2772,
+        "best_side": "Over",
+        "best_ev": 0.2029,
+        "edge_over": 0.1344
+      }
+    },
+    {
+      "pitcher_id": 663542,
+      "name": "Bryan Hudson",
+      "team": "Chicago White Sox",
+      "opponent": "Minnesota Twins",
+      "opponent_lineup_confirmed": false,
+      "game_pk": 824552,
+      "game_time_utc": "2026-09-06T22:20:00Z",
+      "pitcher_hand": "L",
+      "expected_ks": 2.86,
+      "k_rate": 0.2045,
+      "factors": {
+        "league_k_pa": 0.2204,
+        "pitcher": {
+          "regressed": 0.2206,
+          "ratio": 1.001,
+          "raw": 0.2209,
+          "n": 249.0
+        },
+        "opponent": {
+          "opp_k_rate": 0.2043,
+          "ratio": 0.927,
+          "n_batters": 9
+        },
+        "expected_tbf": {
+          "value": 14.0,
+          "raw": 4.1,
+          "starts": 7.0
+        }
+      },
+      "break_even_over_american": null,
+      "break_even_under_american": null,
+      "odds": null
+    }
+  ]
+}

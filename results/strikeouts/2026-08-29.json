@@ -1,0 +1,210 @@
+{
+  "row": {
+    "date": "2026-08-29",
+    "snapshot_utc": "2026-08-29T16:54:45+00:00",
+    "late_snapshot": false,
+    "proj_hits": 2,
+    "proj_graded": 8,
+    "proj_expected": 4.36,
+    "ev_hits": 2,
+    "ev_graded": 8,
+    "ev_expected": 4.36,
+    "ev_flat_pnl": -4.59
+  },
+  "top_proj": [
+    {
+      "name": "Cristopher S\u00e1nchez",
+      "team": "Philadelphia Phillies",
+      "line": 7.5,
+      "side": "Under",
+      "played": true,
+      "actual_ks": 8,
+      "result": "Over",
+      "hit": false,
+      "price": 1.88,
+      "model_prob": 0.5991
+    },
+    {
+      "name": "Jack Perkins",
+      "team": "Athletics",
+      "line": 5.5,
+      "side": "Over",
+      "played": true,
+      "actual_ks": 5,
+      "result": "Under",
+      "hit": false,
+      "price": 1.9,
+      "model_prob": 0.5097
+    },
+    {
+      "name": "Shane Drohan",
+      "team": "Milwaukee Brewers",
+      "line": 5.5,
+      "side": "Under",
+      "played": true,
+      "actual_ks": 6,
+      "result": "Over",
+      "hit": false,
+      "price": 1.87,
+      "model_prob": 0.5542
+    },
+    {
+      "name": "Shane Baz",
+      "team": "Baltimore Orioles",
+      "line": 5.5,
+      "side": "Under",
+      "played": true,
+      "actual_ks": 4,
+      "result": "Under",
+      "hit": true,
+      "price": 1.65,
+      "model_prob": 0.5717
+    },
+    {
+      "name": "Max Fried",
+      "team": "New York Yankees",
+      "line": 4.5,
+      "side": "Over",
+      "played": true,
+      "actual_ks": 4,
+      "result": "Under",
+      "hit": false,
+      "price": 1.77,
+      "model_prob": 0.5156
+    },
+    {
+      "name": "Mitch Bratt",
+      "team": "Arizona Diamondbacks",
+      "line": 3.5,
+      "side": "Over",
+      "played": true,
+      "actual_ks": 2,
+      "result": "Under",
+      "hit": false,
+      "price": 1.72,
+      "model_prob": 0.5597
+    },
+    {
+      "name": "Cal Quantrill",
+      "team": "Texas Rangers",
+      "line": 3.5,
+      "side": "Over",
+      "played": true,
+      "actual_ks": 8,
+      "result": "Over",
+      "hit": true,
+      "price": 1.76,
+      "model_prob": 0.547
+    },
+    {
+      "name": "Ryan Johnson",
+      "team": "Los Angeles Angels",
+      "line": 3.5,
+      "side": "Over",
+      "played": true,
+      "actual_ks": 2,
+      "result": "Under",
+      "hit": false,
+      "price": 2.0,
+      "model_prob": 0.5059
+    }
+  ],
+  "top_ev": [
+    {
+      "name": "Cristopher S\u00e1nchez",
+      "team": "Philadelphia Phillies",
+      "line": 7.5,
+      "side": "Under",
+      "played": true,
+      "actual_ks": 8,
+      "result": "Over",
+      "hit": false,
+      "price": 1.88,
+      "model_prob": 0.5991
+    },
+    {
+      "name": "Shane Drohan",
+      "team": "Milwaukee Brewers",
+      "line": 5.5,
+      "side": "Under",
+      "played": true,
+      "actual_ks": 6,
+      "result": "Over",
+      "hit": false,
+      "price": 1.87,
+      "model_prob": 0.5542
+    },
+    {
+      "name": "Ryan Johnson",
+      "team": "Los Angeles Angels",
+      "line": 3.5,
+      "side": "Over",
+      "played": true,
+      "actual_ks": 2,
+      "result": "Under",
+      "hit": false,
+      "price": 2.0,
+      "model_prob": 0.5059
+    },
+    {
+      "name": "Max Fried",
+      "team": "New York Yankees",
+      "line": 4.5,
+      "side": "Over",
+      "played": true,
+      "actual_ks": 4,
+      "result": "Under",
+      "hit": false,
+      "price": 1.77,
+      "model_prob": 0.5156
+    },
+    {
+      "name": "Jack Perkins",
+      "team": "Athletics",
+      "line": 5.5,
+      "side": "Over",
+      "played": true,
+      "actual_ks": 5,
+      "result": "Under",
+      "hit": false,
+      "price": 1.9,
+      "model_prob": 0.5097
+    },
+    {
+      "name": "Shane Baz",
+      "team": "Baltimore Orioles",
+      "line": 5.5,
+      "side": "Under",
+      "played": true,
+      "actual_ks": 4,
+      "result": "Under",
+      "hit": true,
+      "price": 1.65,
+      "model_prob": 0.5717
+    },
+    {
+      "name": "Cal Quantrill",
+      "team": "Texas Rangers",
+      "line": 3.5,
+      "side": "Over",
+      "played": true,
+      "actual_ks": 8,
+      "result": "Over",
+      "hit": true,
+      "price": 1.76,
+      "model_prob": 0.547
+    },
+    {
+      "name": "Mitch Bratt",
+      "team": "Arizona Diamondbacks",
+      "line": 3.5,
+      "side": "Over",
+      "played": true,
+      "actual_ks": 2,
+      "result": "Under",
+      "hit": false,
+      "price": 1.72,
+      "model_prob": 0.5597
+    }
+  ]
+}
