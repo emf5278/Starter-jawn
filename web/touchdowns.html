@@ -160,6 +160,11 @@
       so compare it against whatever your own sportsbook shows.
       <b>Market fair</b> de-vigs the posted price; where only the “Yes” side is quoted it assumes a
       6% overround rather than measuring one, so treat it as an estimate, not a true no-vig line.
+      The <b>EV</b> ranking only includes players at or above a model probability floor
+      (<span id="evFloorNote">10%</span>). Below that the model is measurably
+      over-confident, and against a +3500 fourth tight end a small error reads as a
+      huge phantom edge — those players stay in the probability view, they just
+      aren't ranked as bets.
       This board has no injury or inactives feed, so a player ruled out late can still appear.
       Projections are estimates — not betting advice.
     </div>
@@ -192,6 +197,10 @@ function render(doc){
     ` · model ${doc.model_version}` + (doc.odds_available?"":" · odds unavailable this run");
 
   document.getElementById("demoBadge").hidden = !doc.demo;
+  if(doc.ev_min_prob!=null){
+    const el=document.getElementById("evFloorNote");
+    if(el) el.textContent = pct(doc.ev_min_prob,0);
+  }
 
   if(doc.cold_start){
     const b = document.getElementById("coldStart");
@@ -213,9 +222,10 @@ function render(doc){
     return;
   }
   document.getElementById("controls").hidden = false;
-  const hasOdds = players.some(p=>p.odds);
+  const floor = doc.ev_min_prob ?? 0;
+  const hasOdds = players.some(p=>p.odds && p.prob>=floor);
   const btnEv=document.getElementById("btnEv"); btnEv.disabled=!hasOdds;
-  if(!hasOdds) btnEv.title="No anytime-TD props in this run";
+  if(!hasOdds) btnEv.title="No anytime-TD props above the EV eligibility floor in this run";
   document.getElementById("btnProb").onclick=()=>setView("prob");
   btnEv.onclick=()=>setView("ev");
   document.getElementById("sortRank").onclick=()=>setSort("rank");
@@ -237,14 +247,16 @@ function setView(view){
   document.getElementById("btnProb").setAttribute("aria-pressed",view==="prob");
   document.getElementById("btnEv").setAttribute("aria-pressed",view==="ev");
   const n = DOC.top_n || 20;
+  const evFloor = (DOC.ev_min_prob ?? 0);
   let list = (view==="ev")
-    ? (DOC.players||[]).filter(p=>p.odds).sort((a,b)=>b.odds.ev_per_dollar-a.odds.ev_per_dollar).slice(0,n)
+    ? (DOC.players||[]).filter(p=>p.odds && p.prob>=evFloor)
+        .sort((a,b)=>b.odds.ev_per_dollar-a.odds.ev_per_dollar).slice(0,n)
     : (DOC.players||[]).slice().sort((a,b)=>b.prob-a.prob).slice(0,n);
   document.getElementById("chartTitle").textContent = view==="ev"
     ? `Model probability vs. market — top ${list.length} by EV`
     : `Model probability of scoring — top ${list.length}`;
   document.getElementById("tableTitle").textContent = view==="ev"
-    ? "Ranked by EV at best price (players without a listed prop excluded) — click a row for the “why”"
+    ? `Ranked by EV at best price (needs a listed prop and P(TD) ≥ ${pct(evFloor,0)}) — click a row for the “why”`
     : "Ranked by model probability — click a row for the “why”";
   const ranked = list.slice();
   if(SORT==="time") list = list.slice().sort((a,b)=>String(a.kickoff_utc||"").localeCompare(String(b.kickoff_utc||"")));

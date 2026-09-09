@@ -378,6 +378,21 @@ TD_CONF_MEDIUM_MIN_GAMES = 2
 
 TD_LAMBDA_CAP = (0.005, 1.60)      # P(TD) roughly 0.5% .. 80%
 TD_TOP_N = 20
+
+# Minimum model probability to be eligible for the EV ranking.
+#
+# The EV list is the one place where a small absolute calibration error does
+# real damage. Reliability on 2025 weeks 8-18 is good from 0.10 up, but the
+# 0.05-0.10 band predicts 0.071 against an observed 0.051 -- a ~40% relative
+# overprediction. Against a +3500 third-string tight end that turns into an
+# apparent +136% edge that is pure noise, and those longshots then dominate
+# the whole EV board (the first live slate ranked four of them above every
+# real play). Long prices magnify exactly the error the model has.
+#
+# So the EV view only ranks players the model has real signal on. They stay
+# in the JSON and in the probability view -- this filters the ranking, not
+# the data.
+TD_EV_MIN_PROB = 0.10
 TD_MIN_LAMBDA_TO_LIST = 0.02       # don't rank deep bench bodies
 
 # --- odds ---------------------------------------------------------------

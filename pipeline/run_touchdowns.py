@@ -238,7 +238,9 @@ def run(date: dt.date, output: str, use_odds: bool) -> dict:
 
     rows.sort(key=lambda r: r["prob"], reverse=True)
     top_prob = rows[:config.TD_TOP_N]
-    top_ev = sorted((r for r in rows if r["odds"]),
+    # Longshots are excluded from the EV ranking: see TD_EV_MIN_PROB.
+    top_ev = sorted((r for r in rows
+                     if r["odds"] and r["prob"] >= config.TD_EV_MIN_PROB),
                     key=lambda r: r["odds"]["ev_per_dollar"], reverse=True)[:config.TD_TOP_N]
     seen, top = set(), []
     for r in top_prob + top_ev:
@@ -265,6 +267,7 @@ def run(date: dt.date, output: str, use_odds: bool) -> dict:
             "rec_td_per_team_game": league_rec_pg,
         },
         "top_n": config.TD_TOP_N,
+        "ev_min_prob": config.TD_EV_MIN_PROB,
         "games": games,
         "players": top,
     }

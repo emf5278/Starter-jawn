@@ -1,0 +1,1218 @@
+{
+  "generated_at": "2026-09-09T16:36:01+00:00",
+  "date": "2026-09-09",
+  "season": 2026,
+  "week": 1,
+  "model_version": "td-0.1.0",
+  "n_games": 1,
+  "n_players_scored": 30,
+  "odds_available": false,
+  "game_lines_available": false,
+  "seasons_used": [
+    2025
+  ],
+  "current_season_games": 0,
+  "cold_start": true,
+  "league": {
+    "rush_td_per_team_game": 0.938,
+    "rec_td_per_team_game": 1.491
+  },
+  "top_n": 20,
+  "games": [
+    {
+      "game_id": "2026_01_NE_SEA",
+      "season": 2026,
+      "week": 1,
+      "game_type": "REG",
+      "kickoff_utc": "2026-09-10T00:20:00+00:00",
+      "home_team": "SEA",
+      "away_team": "NE",
+      "roof": "outdoors",
+      "stadium": "Lumen Field",
+      "home_score": null,
+      "away_score": null
+    }
+  ],
+  "players": [
+    {
+      "player_id": "00-0038543",
+      "name": "Jaxon Smith-Njigba",
+      "position": "WR",
+      "team": "SEA",
+      "opponent": "NE",
+      "home": true,
+      "game_id": "2026_01_NE_SEA",
+      "kickoff_utc": "2026-09-10T00:20:00+00:00",
+      "week": 1,
+      "confidence": "low",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.46338,
+      "lambda_rush": 0.02204,
+      "lambda_rec": 0.44135,
+      "prob": 0.37085,
+      "expected_tds": 0.4634,
+      "team_expected_off_tds": 2.428,
+      "team_expected_rush_tds": 1.008,
+      "team_expected_rec_tds": 1.42,
+      "shares": {
+        "rush": 0.0272,
+        "rec": 0.3135
+      },
+      "usage": {
+        "carries": 7.0,
+        "goal_line_carries": 0.0,
+        "targets": 163.0,
+        "red_zone_targets": 17.0,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 10.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.428,
+          "implied_points": null,
+          "source": "league average"
+        },
+        "team_rush_split": {
+          "value": 0.4152,
+          "observed": 0.4318,
+          "n_tds": 44.0
+        },
+        "opp_rush": {
+          "value": 0.8047,
+          "per_game": 0.647,
+          "n_games": 17
+        },
+        "opp_rec": {
+          "value": 0.9914,
+          "per_game": 1.471,
+          "n_games": 17
+        },
+        "game_line": null
+      },
+      "break_even_american": 170,
+      "odds": null
+    },
+    {
+      "player_id": "00-0041512",
+      "name": "Jadarian Price",
+      "position": "RB",
+      "team": "SEA",
+      "opponent": "NE",
+      "home": true,
+      "game_id": "2026_01_NE_SEA",
+      "kickoff_utc": "2026-09-10T00:20:00+00:00",
+      "week": 1,
+      "confidence": "low",
+      "rookie": true,
+      "changed_teams": false,
+      "lambda": 0.33349,
+      "lambda_rush": 0.30665,
+      "lambda_rec": 0.02684,
+      "prob": 0.28358,
+      "expected_tds": 0.3335,
+      "team_expected_off_tds": 2.428,
+      "team_expected_rush_tds": 1.008,
+      "team_expected_rec_tds": 1.42,
+      "shares": {
+        "rush": 0.378,
+        "rec": 0.0191
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 0.0,
+        "red_zone_targets": 0.0,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 0.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.428,
+          "implied_points": null,
+          "source": "league average"
+        },
+        "team_rush_split": {
+          "value": 0.4152,
+          "observed": 0.4318,
+          "n_tds": 44.0
+        },
+        "opp_rush": {
+          "value": 0.8047,
+          "per_game": 0.647,
+          "n_games": 17
+        },
+        "opp_rec": {
+          "value": 0.9914,
+          "per_game": 1.471,
+          "n_games": 17
+        },
+        "game_line": null
+      },
+      "break_even_american": 253,
+      "odds": null
+    },
+    {
+      "player_id": "00-0040734",
+      "name": "TreVeyon Henderson",
+      "position": "RB",
+      "team": "NE",
+      "opponent": "SEA",
+      "home": false,
+      "game_id": "2026_01_NE_SEA",
+      "kickoff_utc": "2026-09-10T00:20:00+00:00",
+      "week": 1,
+      "confidence": "low",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.29416,
+      "lambda_rush": 0.22333,
+      "lambda_rec": 0.07083,
+      "prob": 0.25484,
+      "expected_tds": 0.2942,
+      "team_expected_off_tds": 2.428,
+      "team_expected_rush_tds": 0.985,
+      "team_expected_rec_tds": 1.443,
+      "shares": {
+        "rush": 0.2833,
+        "rec": 0.0566
+      },
+      "usage": {
+        "carries": 180.0,
+        "goal_line_carries": 8.0,
+        "targets": 42.0,
+        "red_zone_targets": 4.0,
+        "prior_rush_tds": 9.0,
+        "prior_rec_tds": 1.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.428,
+          "implied_points": null,
+          "source": "league average"
+        },
+        "team_rush_split": {
+          "value": 0.4058,
+          "observed": 0.4151,
+          "n_tds": 53.0
+        },
+        "opp_rush": {
+          "value": 0.8,
+          "per_game": 0.529,
+          "n_games": 17
+        },
+        "opp_rec": {
+          "value": 0.8672,
+          "per_game": 1.176,
+          "n_games": 17
+        },
+        "game_line": null
+      },
+      "break_even_american": 292,
+      "odds": null
+    },
+    {
+      "player_id": "00-0036875",
+      "name": "Rhamondre Stevenson",
+      "position": "RB",
+      "team": "NE",
+      "opponent": "SEA",
+      "home": false,
+      "game_id": "2026_01_NE_SEA",
+      "kickoff_utc": "2026-09-10T00:20:00+00:00",
+      "week": 1,
+      "confidence": "low",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.28281,
+      "lambda_rush": 0.20847,
+      "lambda_rec": 0.07433,
+      "prob": 0.24633,
+      "expected_tds": 0.2828,
+      "team_expected_off_tds": 2.428,
+      "team_expected_rush_tds": 0.985,
+      "team_expected_rec_tds": 1.443,
+      "shares": {
+        "rush": 0.2645,
+        "rec": 0.0594
+      },
+      "usage": {
+        "carries": 131.0,
+        "goal_line_carries": 12.0,
+        "targets": 38.0,
+        "red_zone_targets": 6.0,
+        "prior_rush_tds": 7.0,
+        "prior_rec_tds": 2.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.428,
+          "implied_points": null,
+          "source": "league average"
+        },
+        "team_rush_split": {
+          "value": 0.4058,
+          "observed": 0.4151,
+          "n_tds": 53.0
+        },
+        "opp_rush": {
+          "value": 0.8,
+          "per_game": 0.529,
+          "n_games": 17
+        },
+        "opp_rec": {
+          "value": 0.8672,
+          "per_game": 1.176,
+          "n_games": 17
+        },
+        "game_line": null
+      },
+      "break_even_american": 306,
+      "odds": null
+    },
+    {
+      "player_id": "00-0035676",
+      "name": "A.J. Brown",
+      "position": "WR",
+      "team": "NE",
+      "opponent": "SEA",
+      "home": false,
+      "game_id": "2026_01_NE_SEA",
+      "kickoff_utc": "2026-09-10T00:20:00+00:00",
+      "week": 1,
+      "confidence": "low",
+      "rookie": false,
+      "changed_teams": true,
+      "lambda": 0.25514,
+      "lambda_rush": 0.01786,
+      "lambda_rec": 0.23727,
+      "prob": 0.22519,
+      "expected_tds": 0.2551,
+      "team_expected_off_tds": 2.428,
+      "team_expected_rush_tds": 0.985,
+      "team_expected_rec_tds": 1.443,
+      "shares": {
+        "rush": 0.0227,
+        "rec": 0.1896
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 121.0,
+        "red_zone_targets": 13.0,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 7.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.428,
+          "implied_points": null,
+          "source": "league average"
+        },
+        "team_rush_split": {
+          "value": 0.4058,
+          "observed": 0.4151,
+          "n_tds": 53.0
+        },
+        "opp_rush": {
+          "value": 0.8,
+          "per_game": 0.529,
+          "n_games": 17
+        },
+        "opp_rec": {
+          "value": 0.8672,
+          "per_game": 1.176,
+          "n_games": 17
+        },
+        "game_line": null
+      },
+      "break_even_american": 344,
+      "odds": null
+    },
+    {
+      "player_id": "00-0039793",
+      "name": "AJ Barner",
+      "position": "TE",
+      "team": "SEA",
+      "opponent": "NE",
+      "home": true,
+      "game_id": "2026_01_NE_SEA",
+      "kickoff_utc": "2026-09-10T00:20:00+00:00",
+      "week": 1,
+      "confidence": "low",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.24415,
+      "lambda_rush": 0.02714,
+      "lambda_rec": 0.21701,
+      "prob": 0.21663,
+      "expected_tds": 0.2442,
+      "team_expected_off_tds": 2.428,
+      "team_expected_rush_tds": 1.008,
+      "team_expected_rec_tds": 1.42,
+      "shares": {
+        "rush": 0.0335,
+        "rec": 0.1542
+      },
+      "usage": {
+        "carries": 10.0,
+        "goal_line_carries": 1.0,
+        "targets": 68.0,
+        "red_zone_targets": 13.0,
+        "prior_rush_tds": 1.0,
+        "prior_rec_tds": 6.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.428,
+          "implied_points": null,
+          "source": "league average"
+        },
+        "team_rush_split": {
+          "value": 0.4152,
+          "observed": 0.4318,
+          "n_tds": 44.0
+        },
+        "opp_rush": {
+          "value": 0.8047,
+          "per_game": 0.647,
+          "n_games": 17
+        },
+        "opp_rec": {
+          "value": 0.9914,
+          "per_game": 1.471,
+          "n_games": 17
+        },
+        "game_line": null
+      },
+      "break_even_american": 362,
+      "odds": null
+    },
+    {
+      "player_id": "00-0037545",
+      "name": "Rashid Shaheed",
+      "position": "WR",
+      "team": "SEA",
+      "opponent": "NE",
+      "home": true,
+      "game_id": "2026_01_NE_SEA",
+      "kickoff_utc": "2026-09-10T00:20:00+00:00",
+      "week": 1,
+      "confidence": "low",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.23197,
+      "lambda_rush": 0.02254,
+      "lambda_rec": 0.20943,
+      "prob": 0.20703,
+      "expected_tds": 0.232,
+      "team_expected_off_tds": 2.428,
+      "team_expected_rush_tds": 1.008,
+      "team_expected_rec_tds": 1.42,
+      "shares": {
+        "rush": 0.0278,
+        "rec": 0.1488
+      },
+      "usage": {
+        "carries": 9.0,
+        "goal_line_carries": 0.0,
+        "targets": 92.0,
+        "red_zone_targets": 9.0,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 2.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.428,
+          "implied_points": null,
+          "source": "league average"
+        },
+        "team_rush_split": {
+          "value": 0.4152,
+          "observed": 0.4318,
+          "n_tds": 44.0
+        },
+        "opp_rush": {
+          "value": 0.8047,
+          "per_game": 0.647,
+          "n_games": 17
+        },
+        "opp_rec": {
+          "value": 0.9914,
+          "per_game": 1.471,
+          "n_games": 17
+        },
+        "game_line": null
+      },
+      "break_even_american": 383,
+      "odds": null
+    },
+    {
+      "player_id": "00-0038797",
+      "name": "Emanuel Wilson",
+      "position": "RB",
+      "team": "SEA",
+      "opponent": "NE",
+      "home": true,
+      "game_id": "2026_01_NE_SEA",
+      "kickoff_utc": "2026-09-10T00:20:00+00:00",
+      "week": 1,
+      "confidence": "low",
+      "rookie": false,
+      "changed_teams": true,
+      "lambda": 0.22453,
+      "lambda_rush": 0.18299,
+      "lambda_rec": 0.04153,
+      "prob": 0.20111,
+      "expected_tds": 0.2245,
+      "team_expected_off_tds": 2.428,
+      "team_expected_rush_tds": 1.008,
+      "team_expected_rec_tds": 1.42,
+      "shares": {
+        "rush": 0.2256,
+        "rec": 0.0295
+      },
+      "usage": {
+        "carries": 125.0,
+        "goal_line_carries": 4.0,
+        "targets": 18.0,
+        "red_zone_targets": 3.0,
+        "prior_rush_tds": 3.0,
+        "prior_rec_tds": 0.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.428,
+          "implied_points": null,
+          "source": "league average"
+        },
+        "team_rush_split": {
+          "value": 0.4152,
+          "observed": 0.4318,
+          "n_tds": 44.0
+        },
+        "opp_rush": {
+          "value": 0.8047,
+          "per_game": 0.647,
+          "n_games": 17
+        },
+        "opp_rec": {
+          "value": 0.9914,
+          "per_game": 1.471,
+          "n_games": 17
+        },
+        "game_line": null
+      },
+      "break_even_american": 397,
+      "odds": null
+    },
+    {
+      "player_id": "00-0033090",
+      "name": "Hunter Henry",
+      "position": "TE",
+      "team": "NE",
+      "opponent": "SEA",
+      "home": false,
+      "game_id": "2026_01_NE_SEA",
+      "kickoff_utc": "2026-09-10T00:20:00+00:00",
+      "week": 1,
+      "confidence": "low",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.21909,
+      "lambda_rush": 0.01786,
+      "lambda_rec": 0.20123,
+      "prob": 0.19675,
+      "expected_tds": 0.2191,
+      "team_expected_off_tds": 2.428,
+      "team_expected_rush_tds": 0.985,
+      "team_expected_rec_tds": 1.443,
+      "shares": {
+        "rush": 0.0227,
+        "rec": 0.1608
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 87.0,
+        "red_zone_targets": 22.0,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 7.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.428,
+          "implied_points": null,
+          "source": "league average"
+        },
+        "team_rush_split": {
+          "value": 0.4058,
+          "observed": 0.4151,
+          "n_tds": 53.0
+        },
+        "opp_rush": {
+          "value": 0.8,
+          "per_game": 0.529,
+          "n_games": 17
+        },
+        "opp_rec": {
+          "value": 0.8672,
+          "per_game": 1.176,
+          "n_games": 17
+        },
+        "game_line": null
+      },
+      "break_even_american": 408,
+      "odds": null
+    },
+    {
+      "player_id": "00-0037816",
+      "name": "Romeo Doubs",
+      "position": "WR",
+      "team": "NE",
+      "opponent": "SEA",
+      "home": false,
+      "game_id": "2026_01_NE_SEA",
+      "kickoff_utc": "2026-09-10T00:20:00+00:00",
+      "week": 1,
+      "confidence": "low",
+      "rookie": false,
+      "changed_teams": true,
+      "lambda": 0.20567,
+      "lambda_rush": 0.01786,
+      "lambda_rec": 0.18781,
+      "prob": 0.1859,
+      "expected_tds": 0.2057,
+      "team_expected_off_tds": 2.428,
+      "team_expected_rush_tds": 0.985,
+      "team_expected_rec_tds": 1.443,
+      "shares": {
+        "rush": 0.0227,
+        "rec": 0.1501
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 86.0,
+        "red_zone_targets": 18.0,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 6.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.428,
+          "implied_points": null,
+          "source": "league average"
+        },
+        "team_rush_split": {
+          "value": 0.4058,
+          "observed": 0.4151,
+          "n_tds": 53.0
+        },
+        "opp_rush": {
+          "value": 0.8,
+          "per_game": 0.529,
+          "n_games": 17
+        },
+        "opp_rec": {
+          "value": 0.8672,
+          "per_game": 1.176,
+          "n_games": 17
+        },
+        "game_line": null
+      },
+      "break_even_american": 438,
+      "odds": null
+    },
+    {
+      "player_id": "00-0033908",
+      "name": "Cooper Kupp",
+      "position": "WR",
+      "team": "SEA",
+      "opponent": "NE",
+      "home": true,
+      "game_id": "2026_01_NE_SEA",
+      "kickoff_utc": "2026-09-10T00:20:00+00:00",
+      "week": 1,
+      "confidence": "low",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.19945,
+      "lambda_rush": 0.02282,
+      "lambda_rec": 0.17662,
+      "prob": 0.18082,
+      "expected_tds": 0.1994,
+      "team_expected_off_tds": 2.428,
+      "team_expected_rush_tds": 1.008,
+      "team_expected_rec_tds": 1.42,
+      "shares": {
+        "rush": 0.0281,
+        "rec": 0.1255
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 71.0,
+        "red_zone_targets": 13.0,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 2.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.428,
+          "implied_points": null,
+          "source": "league average"
+        },
+        "team_rush_split": {
+          "value": 0.4152,
+          "observed": 0.4318,
+          "n_tds": 44.0
+        },
+        "opp_rush": {
+          "value": 0.8047,
+          "per_game": 0.647,
+          "n_games": 17
+        },
+        "opp_rec": {
+          "value": 0.9914,
+          "per_game": 1.471,
+          "n_games": 17
+        },
+        "game_line": null
+      },
+      "break_even_american": 453,
+      "odds": null
+    },
+    {
+      "player_id": "00-0033555",
+      "name": "Mack Hollins",
+      "position": "WR",
+      "team": "NE",
+      "opponent": "SEA",
+      "home": false,
+      "game_id": "2026_01_NE_SEA",
+      "kickoff_utc": "2026-09-10T00:20:00+00:00",
+      "week": 1,
+      "confidence": "low",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.1298,
+      "lambda_rush": 0.01755,
+      "lambda_rec": 0.11224,
+      "prob": 0.12172,
+      "expected_tds": 0.1298,
+      "team_expected_off_tds": 2.428,
+      "team_expected_rush_tds": 0.985,
+      "team_expected_rec_tds": 1.443,
+      "shares": {
+        "rush": 0.0223,
+        "rec": 0.0897
+      },
+      "usage": {
+        "carries": 1.0,
+        "goal_line_carries": 0.0,
+        "targets": 65.0,
+        "red_zone_targets": 5.0,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 2.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.428,
+          "implied_points": null,
+          "source": "league average"
+        },
+        "team_rush_split": {
+          "value": 0.4058,
+          "observed": 0.4151,
+          "n_tds": 53.0
+        },
+        "opp_rush": {
+          "value": 0.8,
+          "per_game": 0.529,
+          "n_games": 17
+        },
+        "opp_rec": {
+          "value": 0.8672,
+          "per_game": 1.176,
+          "n_games": 17
+        },
+        "game_line": null
+      },
+      "break_even_american": 722,
+      "odds": null
+    },
+    {
+      "player_id": "00-0041395",
+      "name": "Eli Raridon",
+      "position": "TE",
+      "team": "NE",
+      "opponent": "SEA",
+      "home": false,
+      "game_id": "2026_01_NE_SEA",
+      "kickoff_utc": "2026-09-10T00:20:00+00:00",
+      "week": 1,
+      "confidence": "low",
+      "rookie": true,
+      "changed_teams": false,
+      "lambda": 0.1179,
+      "lambda_rush": 0.01786,
+      "lambda_rec": 0.10003,
+      "prob": 0.11121,
+      "expected_tds": 0.1179,
+      "team_expected_off_tds": 2.428,
+      "team_expected_rush_tds": 0.985,
+      "team_expected_rec_tds": 1.443,
+      "shares": {
+        "rush": 0.0227,
+        "rec": 0.08
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 0.0,
+        "red_zone_targets": 0.0,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 0.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.428,
+          "implied_points": null,
+          "source": "league average"
+        },
+        "team_rush_split": {
+          "value": 0.4058,
+          "observed": 0.4151,
+          "n_tds": 53.0
+        },
+        "opp_rush": {
+          "value": 0.8,
+          "per_game": 0.529,
+          "n_games": 17
+        },
+        "opp_rec": {
+          "value": 0.8672,
+          "per_game": 1.176,
+          "n_games": 17
+        },
+        "game_line": null
+      },
+      "break_even_american": 799,
+      "odds": null
+    },
+    {
+      "player_id": "00-0040648",
+      "name": "Tory Horton",
+      "position": "WR",
+      "team": "SEA",
+      "opponent": "NE",
+      "home": true,
+      "game_id": "2026_01_NE_SEA",
+      "kickoff_utc": "2026-09-10T00:20:00+00:00",
+      "week": 1,
+      "confidence": "low",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.11521,
+      "lambda_rush": 0.02282,
+      "lambda_rec": 0.09239,
+      "prob": 0.10882,
+      "expected_tds": 0.1152,
+      "team_expected_off_tds": 2.428,
+      "team_expected_rush_tds": 1.008,
+      "team_expected_rec_tds": 1.42,
+      "shares": {
+        "rush": 0.0281,
+        "rec": 0.0656
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 22.0,
+        "red_zone_targets": 4.0,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 5.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.428,
+          "implied_points": null,
+          "source": "league average"
+        },
+        "team_rush_split": {
+          "value": 0.4152,
+          "observed": 0.4318,
+          "n_tds": 44.0
+        },
+        "opp_rush": {
+          "value": 0.8047,
+          "per_game": 0.647,
+          "n_games": 17
+        },
+        "opp_rec": {
+          "value": 0.9914,
+          "per_game": 1.471,
+          "n_games": 17
+        },
+        "game_line": null
+      },
+      "break_even_american": 819,
+      "odds": null
+    },
+    {
+      "player_id": "00-0038621",
+      "name": "DeMario Douglas",
+      "position": "WR",
+      "team": "NE",
+      "opponent": "SEA",
+      "home": false,
+      "game_id": "2026_01_NE_SEA",
+      "kickoff_utc": "2026-09-10T00:20:00+00:00",
+      "week": 1,
+      "confidence": "low",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.11166,
+      "lambda_rush": 0.01733,
+      "lambda_rec": 0.09433,
+      "prob": 0.10565,
+      "expected_tds": 0.1117,
+      "team_expected_off_tds": 2.428,
+      "team_expected_rush_tds": 0.985,
+      "team_expected_rec_tds": 1.443,
+      "shares": {
+        "rush": 0.022,
+        "rec": 0.0754
+      },
+      "usage": {
+        "carries": 7.0,
+        "goal_line_carries": 0.0,
+        "targets": 46.0,
+        "red_zone_targets": 7.0,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 3.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.428,
+          "implied_points": null,
+          "source": "league average"
+        },
+        "team_rush_split": {
+          "value": 0.4058,
+          "observed": 0.4151,
+          "n_tds": 53.0
+        },
+        "opp_rush": {
+          "value": 0.8,
+          "per_game": 0.529,
+          "n_games": 17
+        },
+        "opp_rec": {
+          "value": 0.8672,
+          "per_game": 1.176,
+          "n_games": 17
+        },
+        "game_line": null
+      },
+      "break_even_american": 847,
+      "odds": null
+    },
+    {
+      "player_id": "00-0039851",
+      "name": "Drake Maye",
+      "position": "QB",
+      "team": "NE",
+      "opponent": "SEA",
+      "home": false,
+      "game_id": "2026_01_NE_SEA",
+      "kickoff_utc": "2026-09-10T00:20:00+00:00",
+      "week": 1,
+      "confidence": "low",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.1065,
+      "lambda_rush": 0.1065,
+      "lambda_rec": 0.0,
+      "prob": 0.10103,
+      "expected_tds": 0.1065,
+      "team_expected_off_tds": 2.428,
+      "team_expected_rush_tds": 0.985,
+      "team_expected_rec_tds": 1.443,
+      "shares": {
+        "rush": 0.1351,
+        "rec": 0.0
+      },
+      "usage": {
+        "carries": 83.0,
+        "goal_line_carries": 4.0,
+        "targets": 1.0,
+        "red_zone_targets": 0.0,
+        "prior_rush_tds": 4.0,
+        "prior_rec_tds": 0.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.428,
+          "implied_points": null,
+          "source": "league average"
+        },
+        "team_rush_split": {
+          "value": 0.4058,
+          "observed": 0.4151,
+          "n_tds": 53.0
+        },
+        "opp_rush": {
+          "value": 0.8,
+          "per_game": 0.529,
+          "n_games": 17
+        },
+        "opp_rec": {
+          "value": 0.8672,
+          "per_game": 1.176,
+          "n_games": 17
+        },
+        "game_line": null
+      },
+      "break_even_american": 890,
+      "odds": null
+    },
+    {
+      "player_id": "00-0040739",
+      "name": "Elijah Arroyo",
+      "position": "TE",
+      "team": "SEA",
+      "opponent": "NE",
+      "home": true,
+      "game_id": "2026_01_NE_SEA",
+      "kickoff_utc": "2026-09-10T00:20:00+00:00",
+      "week": 1,
+      "confidence": "low",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.08956,
+      "lambda_rush": 0.02282,
+      "lambda_rec": 0.06674,
+      "prob": 0.08566,
+      "expected_tds": 0.0896,
+      "team_expected_off_tds": 2.428,
+      "team_expected_rush_tds": 1.008,
+      "team_expected_rec_tds": 1.42,
+      "shares": {
+        "rush": 0.0281,
+        "rec": 0.0474
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 26.0,
+        "red_zone_targets": 5.0,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 1.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.428,
+          "implied_points": null,
+          "source": "league average"
+        },
+        "team_rush_split": {
+          "value": 0.4152,
+          "observed": 0.4318,
+          "n_tds": 44.0
+        },
+        "opp_rush": {
+          "value": 0.8047,
+          "per_game": 0.647,
+          "n_games": 17
+        },
+        "opp_rec": {
+          "value": 0.9914,
+          "per_game": 1.471,
+          "n_games": 17
+        },
+        "game_line": null
+      },
+      "break_even_american": 1067,
+      "odds": null
+    },
+    {
+      "player_id": "00-0040131",
+      "name": "Kyle Williams",
+      "position": "WR",
+      "team": "NE",
+      "opponent": "SEA",
+      "home": false,
+      "game_id": "2026_01_NE_SEA",
+      "kickoff_utc": "2026-09-10T00:20:00+00:00",
+      "week": 1,
+      "confidence": "low",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.06684,
+      "lambda_rush": 0.01733,
+      "lambda_rec": 0.04951,
+      "prob": 0.06466,
+      "expected_tds": 0.0668,
+      "team_expected_off_tds": 2.428,
+      "team_expected_rush_tds": 0.985,
+      "team_expected_rec_tds": 1.443,
+      "shares": {
+        "rush": 0.022,
+        "rec": 0.0396
+      },
+      "usage": {
+        "carries": 2.0,
+        "goal_line_carries": 0.0,
+        "targets": 21.0,
+        "red_zone_targets": 0.0,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 3.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.428,
+          "implied_points": null,
+          "source": "league average"
+        },
+        "team_rush_split": {
+          "value": 0.4058,
+          "observed": 0.4151,
+          "n_tds": 53.0
+        },
+        "opp_rush": {
+          "value": 0.8,
+          "per_game": 0.529,
+          "n_games": 17
+        },
+        "opp_rec": {
+          "value": 0.8672,
+          "per_game": 1.176,
+          "n_games": 17
+        },
+        "game_line": null
+      },
+      "break_even_american": 1447,
+      "odds": null
+    },
+    {
+      "player_id": "00-0041314",
+      "name": "Tanner Arkin",
+      "position": "TE",
+      "team": "NE",
+      "opponent": "SEA",
+      "home": false,
+      "game_id": "2026_01_NE_SEA",
+      "kickoff_utc": "2026-09-10T00:20:00+00:00",
+      "week": 1,
+      "confidence": "low",
+      "rookie": true,
+      "changed_teams": false,
+      "lambda": 0.05764,
+      "lambda_rush": 0.01786,
+      "lambda_rec": 0.03978,
+      "prob": 0.05601,
+      "expected_tds": 0.0576,
+      "team_expected_off_tds": 2.428,
+      "team_expected_rush_tds": 0.985,
+      "team_expected_rec_tds": 1.443,
+      "shares": {
+        "rush": 0.0227,
+        "rec": 0.0318
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 0.0,
+        "red_zone_targets": 0.0,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 0.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.428,
+          "implied_points": null,
+          "source": "league average"
+        },
+        "team_rush_split": {
+          "value": 0.4058,
+          "observed": 0.4151,
+          "n_tds": 53.0
+        },
+        "opp_rush": {
+          "value": 0.8,
+          "per_game": 0.529,
+          "n_games": 17
+        },
+        "opp_rec": {
+          "value": 0.8672,
+          "per_game": 1.176,
+          "n_games": 17
+        },
+        "game_line": null
+      },
+      "break_even_american": 1685,
+      "odds": null
+    },
+    {
+      "player_id": "00-0039299",
+      "name": "George Holani",
+      "position": "RB",
+      "team": "SEA",
+      "opponent": "NE",
+      "home": true,
+      "game_id": "2026_01_NE_SEA",
+      "kickoff_utc": "2026-09-10T00:20:00+00:00",
+      "week": 1,
+      "confidence": "low",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.05656,
+      "lambda_rush": 0.03055,
+      "lambda_rec": 0.02601,
+      "prob": 0.05499,
+      "expected_tds": 0.0566,
+      "team_expected_off_tds": 2.428,
+      "team_expected_rush_tds": 1.008,
+      "team_expected_rec_tds": 1.42,
+      "shares": {
+        "rush": 0.0377,
+        "rec": 0.0185
+      },
+      "usage": {
+        "carries": 22.0,
+        "goal_line_carries": 0.0,
+        "targets": 2.0,
+        "red_zone_targets": 0.0,
+        "prior_rush_tds": 1.0,
+        "prior_rec_tds": 0.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.428,
+          "implied_points": null,
+          "source": "league average"
+        },
+        "team_rush_split": {
+          "value": 0.4152,
+          "observed": 0.4318,
+          "n_tds": 44.0
+        },
+        "opp_rush": {
+          "value": 0.8047,
+          "per_game": 0.647,
+          "n_games": 17
+        },
+        "opp_rec": {
+          "value": 0.9914,
+          "per_game": 1.471,
+          "n_games": 17
+        },
+        "game_line": null
+      },
+      "break_even_american": 1719,
+      "odds": null
+    }
+  ]
+}
