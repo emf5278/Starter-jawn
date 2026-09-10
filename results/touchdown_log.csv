@@ -1,0 +1,2 @@
+date,season,week,snapshot_utc,cold_start,prob_hits,prob_graded,prob_expected,ev_hits,ev_graded,ev_expected,ev_flat_pnl
+2026-09-09,2026,1,2026-09-09T16:46:30+00:00,True,2,20,3.47,2,19,3.18,-2.65
