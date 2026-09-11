@@ -1,0 +1,90 @@
+{
+  "row": {
+    "date": "2026-09-10",
+    "snapshot_utc": "2026-09-10T16:43:50+00:00",
+    "late_snapshot": false,
+    "proj_hits": 1,
+    "proj_graded": 3,
+    "proj_expected": 1.73,
+    "ev_hits": 1,
+    "ev_graded": 3,
+    "ev_expected": 1.73,
+    "ev_flat_pnl": -1.19
+  },
+  "top_proj": [
+    {
+      "name": "Jared Jones",
+      "team": "Pittsburgh Pirates",
+      "line": 5.5,
+      "side": "Under",
+      "played": true,
+      "actual_ks": 8,
+      "result": "Over",
+      "hit": false,
+      "price": 2.23,
+      "model_prob": 0.5892
+    },
+    {
+      "name": "Max Fried",
+      "team": "New York Yankees",
+      "line": 5.5,
+      "side": "Under",
+      "played": true,
+      "actual_ks": 7,
+      "result": "Over",
+      "hit": false,
+      "price": 1.87,
+      "model_prob": 0.5972
+    },
+    {
+      "name": "Ryan Feltner",
+      "team": "Colorado Rockies",
+      "line": 4.5,
+      "side": "Under",
+      "played": true,
+      "actual_ks": 2,
+      "result": "Under",
+      "hit": true,
+      "price": 1.81,
+      "model_prob": 0.5479
+    }
+  ],
+  "top_ev": [
+    {
+      "name": "Jared Jones",
+      "team": "Pittsburgh Pirates",
+      "line": 5.5,
+      "side": "Under",
+      "played": true,
+      "actual_ks": 8,
+      "result": "Over",
+      "hit": false,
+      "price": 2.23,
+      "model_prob": 0.5892
+    },
+    {
+      "name": "Max Fried",
+      "team": "New York Yankees",
+      "line": 5.5,
+      "side": "Under",
+      "played": true,
+      "actual_ks": 7,
+      "result": "Over",
+      "hit": false,
+      "price": 1.87,
+      "model_prob": 0.5972
+    },
+    {
+      "name": "Ryan Feltner",
+      "team": "Colorado Rockies",
+      "line": 4.5,
+      "side": "Under",
+      "played": true,
+      "actual_ks": 2,
+      "result": "Under",
+      "hit": true,
+      "price": 1.81,
+      "model_prob": 0.5479
+    }
+  ]
+}
