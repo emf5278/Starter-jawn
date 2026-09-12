@@ -1,0 +1,338 @@
+{
+  "row": {
+    "date": "2026-09-10",
+    "snapshot_utc": "2026-09-10T16:42:21+00:00",
+    "late_snapshot": false,
+    "prob_hits": 2,
+    "prob_graded": 20,
+    "prob_expected": 3.9,
+    "ev_hits": 1,
+    "ev_graded": 20,
+    "ev_expected": 2.64,
+    "ev_flat_pnl": -10.0
+  },
+  "top_prob": [
+    {
+      "name": "Kyle Schwarber",
+      "team": "Philadelphia Phillies",
+      "prob": 0.2593,
+      "played": true,
+      "hr": 0,
+      "odds": 3.2
+    },
+    {
+      "name": "Ben Rice",
+      "team": "New York Yankees",
+      "prob": 0.2589,
+      "played": true,
+      "hr": 0,
+      "odds": 3.4
+    },
+    {
+      "name": "Yordan Alvarez",
+      "team": "Houston Astros",
+      "prob": 0.241,
+      "played": true,
+      "hr": 0,
+      "odds": 3.8
+    },
+    {
+      "name": "Matt Olson",
+      "team": "Atlanta Braves",
+      "prob": 0.2398,
+      "played": true,
+      "hr": 0,
+      "odds": 5.0
+    },
+    {
+      "name": "Luis Garc\u00eda Jr.",
+      "team": "New York Yankees",
+      "prob": 0.2186,
+      "played": true,
+      "hr": 1,
+      "odds": 4.5
+    },
+    {
+      "name": "Drake Baldwin",
+      "team": "Atlanta Braves",
+      "prob": 0.2086,
+      "played": true,
+      "hr": 0,
+      "odds": 6.0
+    },
+    {
+      "name": "Bryce Harper",
+      "team": "Philadelphia Phillies",
+      "prob": 0.2018,
+      "played": true,
+      "hr": 0,
+      "odds": 4.5
+    },
+    {
+      "name": "Junior Caminero",
+      "team": "Tampa Bay Rays",
+      "prob": 0.1918,
+      "played": true,
+      "hr": 0,
+      "odds": 5.2
+    },
+    {
+      "name": "Ronald Acu\u00f1a Jr.",
+      "team": "Atlanta Braves",
+      "prob": 0.1894,
+      "played": true,
+      "hr": 0,
+      "odds": 5.4
+    },
+    {
+      "name": "Spencer Jones",
+      "team": "New York Yankees",
+      "prob": 0.1889,
+      "played": true,
+      "hr": 0,
+      "odds": 4.1
+    },
+    {
+      "name": "Hunter Goodman",
+      "team": "Colorado Rockies",
+      "prob": 0.1843,
+      "played": true,
+      "hr": 0,
+      "odds": 4.6
+    },
+    {
+      "name": "Michael Harris II",
+      "team": "Atlanta Braves",
+      "prob": 0.1826,
+      "played": true,
+      "hr": 0,
+      "odds": 6.5
+    },
+    {
+      "name": "Mickey Moniak",
+      "team": "Colorado Rockies",
+      "prob": 0.1725,
+      "played": true,
+      "hr": 0,
+      "odds": null
+    },
+    {
+      "name": "Munetaka Murakami",
+      "team": "Chicago White Sox",
+      "prob": 0.1705,
+      "played": true,
+      "hr": 0,
+      "odds": 4.3
+    },
+    {
+      "name": "Oneil Cruz",
+      "team": "Pittsburgh Pirates",
+      "prob": 0.1695,
+      "played": true,
+      "hr": 1,
+      "odds": 5.4
+    },
+    {
+      "name": "Christian Walker",
+      "team": "Houston Astros",
+      "prob": 0.1686,
+      "played": true,
+      "hr": 0,
+      "odds": 6.1
+    },
+    {
+      "name": "Cal Raleigh",
+      "team": "Seattle Mariners",
+      "prob": 0.1675,
+      "played": true,
+      "hr": 0,
+      "odds": 4.3
+    },
+    {
+      "name": "Brandon Lowe",
+      "team": "Pittsburgh Pirates",
+      "prob": 0.1654,
+      "played": true,
+      "hr": 0,
+      "odds": 5.8
+    },
+    {
+      "name": "Ryan McMahon",
+      "team": "New York Yankees",
+      "prob": 0.1645,
+      "played": true,
+      "hr": 0,
+      "odds": 5.8
+    },
+    {
+      "name": "Jeremy Pe\u00f1a",
+      "team": "Houston Astros",
+      "prob": 0.161,
+      "played": true,
+      "hr": 0,
+      "odds": 8.5
+    }
+  ],
+  "top_ev": [
+    {
+      "name": "Jose Altuve",
+      "team": "Houston Astros",
+      "prob": 0.129,
+      "played": true,
+      "hr": 0,
+      "odds": 12.5
+    },
+    {
+      "name": "Jake McCarthy",
+      "team": "Colorado Rockies",
+      "prob": 0.1336,
+      "played": true,
+      "hr": 0,
+      "odds": 12.0
+    },
+    {
+      "name": "Chandler Simpson",
+      "team": "Tampa Bay Rays",
+      "prob": 0.048,
+      "played": true,
+      "hr": 0,
+      "odds": 30.0
+    },
+    {
+      "name": "Nick Fortes",
+      "team": "Tampa Bay Rays",
+      "prob": 0.0789,
+      "played": true,
+      "hr": 0,
+      "odds": 18.0
+    },
+    {
+      "name": "Jeremy Pe\u00f1a",
+      "team": "Houston Astros",
+      "prob": 0.161,
+      "played": true,
+      "hr": 0,
+      "odds": 8.5
+    },
+    {
+      "name": "Yandy D\u00edaz",
+      "team": "Tampa Bay Rays",
+      "prob": 0.1578,
+      "played": true,
+      "hr": 0,
+      "odds": 8.5
+    },
+    {
+      "name": "Ryan Vilade",
+      "team": "Tampa Bay Rays",
+      "prob": 0.1378,
+      "played": true,
+      "hr": 0,
+      "odds": 9.5
+    },
+    {
+      "name": "Drake Baldwin",
+      "team": "Atlanta Braves",
+      "prob": 0.2086,
+      "played": true,
+      "hr": 0,
+      "odds": 6.0
+    },
+    {
+      "name": "Dominic Smith",
+      "team": "Atlanta Braves",
+      "prob": 0.1239,
+      "played": true,
+      "hr": 0,
+      "odds": 10.0
+    },
+    {
+      "name": "Jonny DeLuca",
+      "team": "Tampa Bay Rays",
+      "prob": 0.0952,
+      "played": true,
+      "hr": 0,
+      "odds": 13.0
+    },
+    {
+      "name": "Jorge Mateo",
+      "team": "Tampa Bay Rays",
+      "prob": 0.1119,
+      "played": true,
+      "hr": 0,
+      "odds": 11.0
+    },
+    {
+      "name": "Cole Carrigg",
+      "team": "Colorado Rockies",
+      "prob": 0.1203,
+      "played": true,
+      "hr": 0,
+      "odds": 10.0
+    },
+    {
+      "name": "Matt Olson",
+      "team": "Atlanta Braves",
+      "prob": 0.2398,
+      "played": true,
+      "hr": 0,
+      "odds": 5.0
+    },
+    {
+      "name": "Alec Bohm",
+      "team": "Philadelphia Phillies",
+      "prob": 0.1495,
+      "played": true,
+      "hr": 0,
+      "odds": 8.0
+    },
+    {
+      "name": "Christian V\u00e1zquez",
+      "team": "Houston Astros",
+      "prob": 0.0917,
+      "played": true,
+      "hr": 0,
+      "odds": 13.0
+    },
+    {
+      "name": "Michael Harris II",
+      "team": "Atlanta Braves",
+      "prob": 0.1826,
+      "played": true,
+      "hr": 0,
+      "odds": 6.5
+    },
+    {
+      "name": "J.P. Crawford",
+      "team": "Seattle Mariners",
+      "prob": 0.1108,
+      "played": true,
+      "hr": 0,
+      "odds": 10.5
+    },
+    {
+      "name": "Austin Riley",
+      "team": "Atlanta Braves",
+      "prob": 0.1529,
+      "played": true,
+      "hr": 0,
+      "odds": 7.5
+    },
+    {
+      "name": "Kyle Karros",
+      "team": "Colorado Rockies",
+      "prob": 0.1126,
+      "played": true,
+      "hr": 1,
+      "odds": 10.0
+    },
+    {
+      "name": "Mauricio Dub\u00f3n",
+      "team": "Atlanta Braves",
+      "prob": 0.0922,
+      "played": true,
+      "hr": 0,
+      "odds": 12.0
+    }
+  ]
+}

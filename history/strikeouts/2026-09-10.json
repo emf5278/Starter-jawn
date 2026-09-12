@@ -1,0 +1,196 @@
+{
+  "generated_at": "2026-09-10T16:43:50+00:00",
+  "date": "2026-09-10",
+  "model_version": "k-0.1.0",
+  "league_k_pa": 0.2205,
+  "filter": "first pitch \u2265 5pm ET",
+  "n_starters_scored": 4,
+  "odds_available": true,
+  "top_n": 20,
+  "pitchers": [
+    {
+      "pitcher_id": 696146,
+      "name": "Hagen Smith",
+      "team": "Chicago White Sox",
+      "opponent": "Pittsburgh Pirates",
+      "opponent_lineup_confirmed": false,
+      "game_pk": 824550,
+      "game_time_utc": "2026-09-10T23:40:00Z",
+      "pitcher_hand": "L",
+      "expected_ks": 5.92,
+      "k_rate": 0.2575,
+      "factors": {
+        "league_k_pa": 0.2205,
+        "pitcher": {
+          "regressed": 0.2432,
+          "ratio": 1.103,
+          "raw": 0.371,
+          "n": 62.0
+        },
+        "opponent": {
+          "opp_k_rate": 0.2339,
+          "ratio": 1.061,
+          "n_batters": 9
+        },
+        "expected_tbf": {
+          "value": 23.0,
+          "raw": null,
+          "starts": null
+        }
+      },
+      "break_even_over_american": null,
+      "break_even_under_american": null,
+      "odds": null
+    },
+    {
+      "pitcher_id": 683003,
+      "name": "Jared Jones",
+      "team": "Pittsburgh Pirates",
+      "opponent": "Chicago White Sox",
+      "opponent_lineup_confirmed": false,
+      "game_pk": 824550,
+      "game_time_utc": "2026-09-10T23:40:00Z",
+      "pitcher_hand": "R",
+      "expected_ks": 5.17,
+      "k_rate": 0.2548,
+      "factors": {
+        "league_k_pa": 0.2205,
+        "pitcher": {
+          "regressed": 0.2474,
+          "ratio": 1.122,
+          "raw": 0.2754,
+          "n": 334.0
+        },
+        "opponent": {
+          "opp_k_rate": 0.2274,
+          "ratio": 1.031,
+          "n_batters": 9
+        },
+        "expected_tbf": {
+          "value": 20.29,
+          "raw": 19.6,
+          "starts": 17.0
+        }
+      },
+      "line": 5.5,
+      "prob_over": 0.4108,
+      "prob_under": 0.5892,
+      "break_even_over_american": 143,
+      "break_even_under_american": -143,
+      "odds": {
+        "line": 5.5,
+        "over_price_decimal": 1.67,
+        "over_price_american": -149,
+        "under_price_decimal": 2.23,
+        "under_price_american": 123,
+        "fair_over": 0.5703,
+        "n_books": 6,
+        "ev_over": -0.314,
+        "ev_under": 0.3139,
+        "best_side": "Under",
+        "best_ev": 0.3139,
+        "edge_over": -0.1595
+      }
+    },
+    {
+      "pitcher_id": 608331,
+      "name": "Max Fried",
+      "team": "New York Yankees",
+      "opponent": "Colorado Rockies",
+      "opponent_lineup_confirmed": false,
+      "game_pk": 823499,
+      "game_time_utc": "2026-09-10T23:05:00Z",
+      "pitcher_hand": "L",
+      "expected_ks": 5.12,
+      "k_rate": 0.2336,
+      "factors": {
+        "league_k_pa": 0.2205,
+        "pitcher": {
+          "regressed": 0.2287,
+          "ratio": 1.037,
+          "raw": 0.2364,
+          "n": 368.0
+        },
+        "opponent": {
+          "opp_k_rate": 0.2253,
+          "ratio": 1.021,
+          "n_batters": 9
+        },
+        "expected_tbf": {
+          "value": 21.9,
+          "raw": 21.6,
+          "starts": 17.0
+        }
+      },
+      "line": 5.5,
+      "prob_over": 0.4028,
+      "prob_under": 0.5972,
+      "break_even_over_american": 148,
+      "break_even_under_american": -148,
+      "odds": {
+        "line": 5.5,
+        "over_price_decimal": 2.02,
+        "over_price_american": 102,
+        "under_price_decimal": 1.87,
+        "under_price_american": -115,
+        "fair_over": 0.4807,
+        "n_books": 6,
+        "ev_over": -0.1863,
+        "ev_under": 0.1168,
+        "best_side": "Under",
+        "best_ev": 0.1168,
+        "edge_over": -0.0779
+      }
+    },
+    {
+      "pitcher_id": 663372,
+      "name": "Ryan Feltner",
+      "team": "Colorado Rockies",
+      "opponent": "New York Yankees",
+      "opponent_lineup_confirmed": false,
+      "game_pk": 823499,
+      "game_time_utc": "2026-09-10T23:05:00Z",
+      "pitcher_hand": "R",
+      "expected_ks": 4.46,
+      "k_rate": 0.2018,
+      "factors": {
+        "league_k_pa": 0.2205,
+        "pitcher": {
+          "regressed": 0.1906,
+          "ratio": 0.864,
+          "raw": 0.1688,
+          "n": 480.0
+        },
+        "opponent": {
+          "opp_k_rate": 0.233,
+          "ratio": 1.057,
+          "n_batters": 9
+        },
+        "expected_tbf": {
+          "value": 22.12,
+          "raw": 22.0,
+          "starts": 21.0
+        }
+      },
+      "line": 4.5,
+      "prob_over": 0.4521,
+      "prob_under": 0.5479,
+      "break_even_over_american": 121,
+      "break_even_under_american": -121,
+      "odds": {
+        "line": 4.5,
+        "over_price_decimal": 2.1,
+        "over_price_american": 110,
+        "under_price_decimal": 1.81,
+        "under_price_american": -123,
+        "fair_over": 0.4702,
+        "n_books": 6,
+        "ev_over": -0.0506,
+        "ev_under": -0.0083,
+        "best_side": "Under",
+        "best_ev": -0.0083,
+        "edge_over": -0.0181
+      }
+    }
+  ]
+}
