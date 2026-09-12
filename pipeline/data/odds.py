@@ -332,7 +332,7 @@ def _log_credits(resp) -> None:
 
 
 def fetch_anytime_td_props(api_key: str, regions: str = "us",
-                           on_date=None) -> dict[str, dict]:
+                           on_date=None, et_hour_range=None) -> dict[str, dict]:
     """Map normalized player name -> anytime-TD odds summary.
 
     Anytime TD is a Yes/No market on a fixed 0.5 line, so the de-vig is the
@@ -344,10 +344,11 @@ def fetch_anytime_td_props(api_key: str, regions: str = "us",
     single-side overround, exactly as the HR board does.
 
     CREDITS.  Player props cost one request *per event*, so we filter the
-    event list down to games kicking off on `on_date` (US/Eastern) before
-    asking for any odds.  On a normal NFL week that is one request on
-    Thursday, ~13 on Sunday and one on Monday, rather than the whole slate
-    every day.
+    event list down to games kicking off on `on_date` (US/Eastern), and
+    optionally within `et_hour_range` (lo, hi) kickoff hours, before asking
+    for any odds.  Splitting Sunday into an early and a late run therefore
+    costs the same total as one run over the whole slate -- each game is
+    priced exactly once, in the run that still has it ahead of kickoff.
     """
     from zoneinfo import ZoneInfo
     import datetime as _dt
@@ -375,9 +376,14 @@ def fetch_anytime_td_props(api_key: str, regions: str = "us",
                 when = _dt.datetime.fromisoformat(ct.replace("Z", "+00:00")).astimezone(et)
             except Exception:
                 continue
-            if when.date() == on_date:
-                keep.append(ev)
-        log.info("NFL events today: %d of %d upcoming", len(keep), len(events))
+            if when.date() != on_date:
+                continue
+            if et_hour_range and not (et_hour_range[0] <= when.hour < et_hour_range[1]):
+                continue
+            keep.append(ev)
+        log.info("NFL events in scope: %d of %d upcoming%s", len(keep), len(events),
+                 f" (kickoff ET {et_hour_range[0]}:00-{et_hour_range[1]}:00)"
+                 if et_hour_range else "")
         events = keep
 
     quotes: dict[str, list[tuple[str, float, float | None]]] = {}

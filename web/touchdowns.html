@@ -192,8 +192,11 @@ function render(doc){
   DOC = doc;
   const when = new Date(doc.generated_at);
   const wk = doc.week ? `week ${doc.week}` : "";
+  const slate = (doc.window && doc.window!=="all")
+    ? ` · ${doc.window_label||doc.window} (${doc.n_games} of ${doc.n_games_today||doc.n_games} today)`
+    : "";
   document.getElementById("meta").textContent =
-    `${doc.date} · ${doc.n_games||0} game${doc.n_games===1?"":"s"} · ${wk} · generated ${when.toLocaleString()}` +
+    `${doc.date} · ${doc.n_games||0} game${doc.n_games===1?"":"s"}${slate} · ${wk} · generated ${when.toLocaleString()}` +
     ` · model ${doc.model_version}` + (doc.odds_available?"":" · odds unavailable this run");
 
   document.getElementById("demoBadge").hidden = !doc.demo;
@@ -218,7 +221,9 @@ function render(doc){
     document.getElementById("chartCard").hidden = true;
     document.getElementById("tablewrap").hidden = true;
     const s=document.getElementById("status"); s.hidden=false;
-    s.innerHTML = `No NFL games on ${esc(doc.date)}. The board runs on game days only — check back Thursday, Sunday or Monday.`;
+    s.innerHTML = (doc.window && doc.window!=="all")
+      ? `No games left in the ${esc(doc.window_label||doc.window)} on ${esc(doc.date)}.`
+      : `No NFL games on ${esc(doc.date)}. The board runs on game days only — check back Thursday, Sunday or Monday.`;
     return;
   }
   document.getElementById("controls").hidden = false;

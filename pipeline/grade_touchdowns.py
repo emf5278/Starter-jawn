@@ -7,7 +7,11 @@ pipeline.run_touchdowns), pulls the day's scorers from nflverse play-by-play,
 and records:
 
   * results/touchdown_log.csv     — one row per slate, the running scoreboard
-  * results/touchdowns/<date>.json — pick-level detail (scored / didn't)
+  * results/touchdowns/<date>[-<window>].json — pick-level detail
+
+Sunday publishes twice (an early board and a late one) and each is archived
+and graded separately, so the log keys on (date, window) and a Sunday
+contributes two rows rather than one overwriting the other.
 
 Completely separate from the HR and strikeout logs — different sport,
 different file, never averaged together.
@@ -47,18 +51,34 @@ RESULTS_DIR = os.path.join(ROOT, "results")
 DETAIL_DIR = os.path.join(RESULTS_DIR, "touchdowns")
 LOG_CSV = os.path.join(RESULTS_DIR, "touchdown_log.csv")
 
-FIELDS = ["date", "season", "week", "snapshot_utc", "cold_start",
+FIELDS = ["date", "window", "season", "week", "snapshot_utc", "cold_start",
           "prob_hits", "prob_graded", "prob_expected",
           "ev_hits", "ev_graded", "ev_expected", "ev_flat_pnl"]
 
 
-def _load_slate(date: dt.date) -> dict | None:
-    path = os.path.join(HIST_DIR, f"{date.isoformat()}.json")
-    if not os.path.exists(path):
+def _archives_for(date: dt.date) -> list[str]:
+    """Every archive for a date.
+
+    Sunday is published twice -- an early board and a late one -- and each is
+    archived separately, so a date can have more than one slate to grade.
+    """
+    import glob
+    stem = date.isoformat()
+    paths = sorted(set(
+        glob.glob(os.path.join(HIST_DIR, f"{stem}.json"))
+        + glob.glob(os.path.join(HIST_DIR, f"{stem}-*.json"))))
+    if not paths:
         log.info("no archived slate for %s", date)
+    return paths
+
+
+def _load(path: str) -> dict | None:
+    try:
+        with open(path) as f:
+            return json.load(f)
+    except Exception:
+        log.warning("could not read %s", path, exc_info=True)
         return None
-    with open(path) as f:
-        return json.load(f)
 
 
 def _grade_list(picks: list[dict], scorers: dict[str, set]) -> tuple[int, int, float, float]:
@@ -79,23 +99,36 @@ def _grade_list(picks: list[dict], scorers: dict[str, set]) -> tuple[int, int, f
     return hits, graded, expected, pnl
 
 
-def run(date: dt.date) -> dict | None:
-    doc = _load_slate(date)
+def run(date: dt.date) -> list[dict]:
+    paths = _archives_for(date)
+    if not paths:
+        return []
+    scorers = nfl.results_for(date)
+    if not scorers or not any(scorers.values()):
+        log.info("no play-by-play for %s yet — try again tomorrow", date)
+        return []
+    rows = []
+    for path in paths:
+        row = _grade_one(date, path, scorers)
+        if row:
+            rows.append(row)
+    return rows
+
+
+def _grade_one(date: dt.date, path: str, scorers: dict) -> dict | None:
+    doc = _load(path)
     if not doc or doc.get("skipped"):
         return None
     players = doc.get("players", [])
     if not players:
-        log.info("archived slate for %s has no players", date)
+        log.info("archived slate %s has no players", os.path.basename(path))
         return None
-
-    scorers = nfl.results_for(date)
-    if not scorers or not any(scorers.values()):
-        log.info("no play-by-play for %s yet — try again tomorrow", date)
-        return None
+    window = doc.get("window", "all")
 
     top_n = doc.get("top_n", 20)
+    floor = doc.get("ev_min_prob", 0) or 0
     by_prob = sorted(players, key=lambda p: p["prob"], reverse=True)[:top_n]
-    by_ev = sorted((p for p in players if p.get("odds")),
+    by_ev = sorted((p for p in players if p.get("odds") and p["prob"] >= floor),
                    key=lambda p: p["odds"]["ev_per_dollar"], reverse=True)[:top_n]
 
     p_hits, p_graded, p_exp, _ = _grade_list(by_prob, scorers)
@@ -103,6 +136,7 @@ def run(date: dt.date) -> dict | None:
 
     row = {
         "date": date.isoformat(),
+        "window": window,
         "season": doc.get("season"),
         "week": doc.get("week"),
         "snapshot_utc": doc.get("generated_at"),
@@ -127,25 +161,34 @@ def run(date: dt.date) -> dict | None:
             "scored": p["player_id"] in scorers[gid],
         })
     os.makedirs(DETAIL_DIR, exist_ok=True)
-    with open(os.path.join(DETAIL_DIR, f"{date.isoformat()}.json"), "w") as f:
-        json.dump({"date": date.isoformat(), "season": doc.get("season"),
+    stem = date.isoformat() if window == "all" else f"{date.isoformat()}-{window}"
+    with open(os.path.join(DETAIL_DIR, f"{stem}.json"), "w") as f:
+        json.dump({"date": date.isoformat(), "window": window,
+                   "season": doc.get("season"),
                    "week": doc.get("week"), "picks": detail}, f, indent=2)
 
-    log.info("%s: top-%d by probability %d/%d (expected %.1f) | "
+    log.info("%s [%s]: top-%d by probability %d/%d (expected %.1f) | "
              "by EV %d/%d (expected %.1f, flat P&L %+.2f)",
-             date, top_n, p_hits, p_graded, p_exp, e_hits, e_graded, e_exp, e_pnl)
+             date, window, top_n, p_hits, p_graded, p_exp,
+             e_hits, e_graded, e_exp, e_pnl)
     return row
 
 
 def _append(row: dict) -> None:
-    """Append to touchdown_log.csv, replacing any existing row for that date."""
+    """Append to touchdown_log.csv, replacing any row for the same slate.
+
+    Keyed on (date, window), not date alone: a Sunday produces an early row
+    and a late row, and neither should overwrite the other.
+    """
     os.makedirs(RESULTS_DIR, exist_ok=True)
+    key = (row["date"], row.get("window", "all"))
     rows = []
     if os.path.exists(LOG_CSV):
         with open(LOG_CSV) as f:
-            rows = [r for r in csv.DictReader(f) if r.get("date") != row["date"]]
+            rows = [r for r in csv.DictReader(f)
+                    if (r.get("date"), r.get("window", "all")) != key]
     rows.append({k: row.get(k) for k in FIELDS})
-    rows.sort(key=lambda r: r.get("date") or "")
+    rows.sort(key=lambda r: (r.get("date") or "", r.get("window") or ""))
     with open(LOG_CSV, "w", newline="") as f:
         w = csv.DictWriter(f, fieldnames=FIELDS)
         w.writeheader()

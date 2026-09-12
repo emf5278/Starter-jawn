@@ -139,6 +139,53 @@ def games_on(date: dt.date, season: int | None = None) -> list[dict]:
     return out
 
 
+def kickoff_et_hour(game: dict) -> int | None:
+    """Kickoff hour in US/Eastern, which is how slate windows are defined."""
+    ko = game.get("kickoff_utc")
+    if not ko:
+        return None
+    try:
+        return dt.datetime.fromisoformat(ko).astimezone(ET).hour
+    except Exception:
+        return None
+
+
+def resolve_window(games: list[dict], window: str, now_et: dt.datetime | None = None) -> str:
+    """Turn a requested window into one this slate can actually serve.
+
+    "auto" picks early before the switch hour and late after it.  Whatever is
+    asked for, a window with no games in it falls back to "all" -- a Thursday
+    or Monday night game must not vanish from a morning run just because it
+    kicks off after the split.
+    """
+    if window == "auto":
+        now = now_et or dt.datetime.now(ET)
+        window = ("early" if now.hour < config.TD_WINDOW_AUTO_SWITCH_ET_HOUR
+                  else "late")
+    if window == "all":
+        return "all"
+    if not filter_window(games, window):
+        log.info("no games in the %s window today — showing the full slate", window)
+        return "all"
+    return window
+
+
+def filter_window(games: list[dict], window: str) -> list[dict]:
+    if window == "all":
+        return list(games)
+    split = config.TD_WINDOW_SPLIT_ET_HOUR
+    out = []
+    for g in games:
+        h = kickoff_et_hour(g)
+        if h is None:
+            out.append(g)          # unknown kickoff: never silently drop it
+        elif window == "early" and h < split:
+            out.append(g)
+        elif window == "late" and h >= split:
+            out.append(g)
+    return out
+
+
 def _season_for(date: dt.date) -> int:
     """NFL seasons straddle the new year: January games belong to the
     previous season's schedule."""

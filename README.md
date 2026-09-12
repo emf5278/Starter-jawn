@@ -288,17 +288,47 @@ Data comes from [nflverse](https://github.com/nflverse) — schedule, weekly
 rosters and play-by-play, all free and keyless — cached under
 `data_cache/nfl`. Only the odds need `ODDS_API_KEY`.
 
+### Slate windows
+
+A Sunday is really two slates. The 1pm games and the 4:25 + Sunday-night
+games have different information behind them — inactives and lines for the
+late games are still moving while the early ones are being played — so the
+board publishes twice and each run shows only the games still ahead:
+
+| Run | Window | Games |
+|---|---|---|
+| 9:30am ET | `early` | kickoff before 4pm ET (the 1pm slate) |
+| 3:00pm ET | `late` | kickoff 4pm ET or later (4:05/4:25 + SNF) |
+
+`--window auto` (the default) picks by the clock: `early` before 1pm ET,
+`late` after. Any window with no games in it falls back to `all`, so a lone
+Thursday or Monday night game never vanishes from a morning run just because
+it kicks off after the split. Override with `--window early|late|all`, or
+the workflow's `window` dispatch input.
+
+The boundary (4pm ET) and the auto switch (1pm ET) are
+`TD_WINDOW_SPLIT_ET_HOUR` and `TD_WINDOW_AUTO_SWITCH_ET_HOUR` in
+`config.py`. Each window is archived and graded separately — the results log
+keys on `(date, window)`, so a Sunday contributes an early row and a late
+row rather than the second run erasing the first.
+
 ### Automation and API credits
 
 `.github/workflows/touchdowns.yml` runs on the same self-healing multi-cron
 pattern as the other boards, but an NFL slate is a calendar day, so most
 days there is nothing to do. A gate step checks the published schedule
 **before** setting up Python or touching The Odds API and exits in seconds
-on a Tuesday; player props are then requested only for games kicking off
-that day. That works out to roughly one prop request on Thursday, ~13 on
-Sunday and one on Monday — about 16 a week, plus one game-lines request per
-run. The run also logs the API's remaining-credit header so the burn rate is
-visible in the job output.
+on a Tuesday. It also resolves the window and passes it straight to the
+pipeline, so the gate and the board can never disagree about which slate is
+being published, and it only skips a run when *that exact* (date, window) is
+already committed.
+
+Player props are requested only for games kicking off in the window being
+published, so splitting Sunday costs nothing extra: each game is priced
+exactly once, in the run that still has it in front of kickoff. That is
+about 16 prop requests a week plus one game-lines request per run. The run
+logs the API's remaining-credit header so the burn rate is visible in the
+job output.
 
 Results are graded into `results/touchdown_log.csv` and
 `results/touchdowns/<date>.json`, kept completely separate from the HR and

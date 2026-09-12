@@ -393,6 +393,29 @@ TD_TOP_N = 20
 # in the JSON and in the probability view -- this filters the ranking, not
 # the data.
 TD_EV_MIN_PROB = 0.10
+
+# --- slate windows -------------------------------------------------------
+# A Sunday is really two slates with different information: the 1pm games,
+# and the 4:25 + Sunday-night games whose inactives and lines are still
+# moving while the early games are being played. Refreshing the whole day at
+# 9:30am prices the late games off stale information; refreshing the whole
+# day at 3pm is useless for the early ones. So the board runs twice, each
+# time showing only the games that are still ahead.
+#
+# The boundary is 4pm ET, which on a normal Sunday splits 1:00 kickoffs from
+# 4:05/4:25 + SNF exactly.
+TD_WINDOW_SPLIT_ET_HOUR = 16
+
+# For --window auto: before this ET hour resolve to the early window, after
+# it resolve to the late one. 1pm is the natural switch -- once the early
+# games have kicked off, the only board worth showing is the late one.
+TD_WINDOW_AUTO_SWITCH_ET_HOUR = 13
+
+TD_WINDOW_LABELS = {
+    "early": "early games (before 4pm ET)",
+    "late": "late games (4pm ET and later)",
+    "all": "all games",
+}
 TD_MIN_LAMBDA_TO_LIST = 0.02       # don't rank deep bench bodies
 
 # --- odds ---------------------------------------------------------------

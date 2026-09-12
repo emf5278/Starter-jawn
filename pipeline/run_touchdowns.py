@@ -1,6 +1,7 @@
 """NFL anytime-TD board entry point.
 
     python -m pipeline.run_touchdowns [--date YYYY-MM-DD]
+                                      [--window auto|early|late|all]
                                       [--output web/touchdowns.json] [--no-odds]
 
 Projects P(>=1 rushing or receiving TD) for every active skill player in the
@@ -11,6 +12,13 @@ top 20 by EV, union of the two published.
 An NFL slate is a calendar day, so most days of the week there is nothing to
 do.  On those days this exits immediately, before touching The Odds API — the
 whole point of the cheap schedule.
+
+Sunday is really two slates, so --window narrows the board to the games that
+are still ahead: "early" is the 1pm games, "late" is 4:05/4:25 plus Sunday
+night.  "auto" (the default) picks by the clock.  Because the prop fetch is
+narrowed the same way, splitting Sunday in two costs no more API credits than
+a single run would -- each game is priced once, in the run that still has it
+in front of kickoff.
 """
 
 from __future__ import annotations
@@ -67,15 +75,18 @@ def _row(df: pd.DataFrame, key: str, value) -> dict:
     return {} if hit.empty else hit.iloc[0].to_dict()
 
 
-def run(date: dt.date, output: str, use_odds: bool) -> dict:
+def run(date: dt.date, output: str, use_odds: bool, window: str = "all") -> dict:
     season = nfl._season_for(date)
-    games = nfl.games_on(date, season)
-    if not games:
+    all_games = nfl.games_on(date, season)
+    if not all_games:
         log.info("no NFL games on %s — nothing to do", date)
         return {"date": date.isoformat(), "games": 0, "skipped": True}
 
+    window = nfl.resolve_window(all_games, window)
+    games = nfl.filter_window(all_games, window)
     week = int(games[0]["week"])
-    log.info("%s: %d game(s), season %d week %d", date, len(games), season, week)
+    log.info("%s: %d of %d game(s) in the %s window, season %d week %d",
+             date, len(games), len(all_games), window, season, week)
 
     use = nfl.blended_usage(season, through_week=week - 1)
     players_u = use.get("by_player")
@@ -107,8 +118,12 @@ def run(date: dt.date, output: str, use_odds: bool) -> dict:
         game_lines = odds_mod.fetch_game_lines(
             key, regions, sport=config.ODDS_NFL_SPORT_KEY,
             markets=config.ODDS_NFL_GAME_MARKETS)
-        log.info("fetching anytime-TD props")
-        td_props = odds_mod.fetch_anytime_td_props(key, regions, on_date=date)
+        log.info("fetching anytime-TD props (%s window)", window)
+        split_hour = config.TD_WINDOW_SPLIT_ET_HOUR
+        hour_range = {"early": (0, split_hour),
+                      "late": (split_hour, 24)}.get(window)
+        td_props = odds_mod.fetch_anytime_td_props(
+            key, regions, on_date=date, et_hour_range=hour_range)
     elif use_odds:
         log.warning("ODDS_API_KEY not set; skipping odds/EV and game lines")
 
@@ -256,6 +271,9 @@ def run(date: dt.date, output: str, use_odds: bool) -> dict:
         "week": week,
         "model_version": MODEL_VERSION,
         "n_games": len(games),
+        "n_games_today": len(all_games),
+        "window": window,
+        "window_label": config.TD_WINDOW_LABELS.get(window, window),
         "n_players_scored": len(rows),
         "odds_available": bool(td_props),
         "game_lines_available": bool(game_lines),
@@ -278,10 +296,13 @@ def run(date: dt.date, output: str, use_odds: bool) -> dict:
     root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     hist = os.path.join(root, "history", "touchdowns")
     os.makedirs(hist, exist_ok=True)
-    with open(os.path.join(hist, f"{date.isoformat()}.json"), "w") as f:
+    # One archive per window, so the 3pm run cannot overwrite the record of
+    # what the 9:30am board actually said.
+    stem = date.isoformat() if window == "all" else f"{date.isoformat()}-{window}"
+    with open(os.path.join(hist, f"{stem}.json"), "w") as f:
         json.dump(safe, f, indent=2, allow_nan=False)
-    log.info("wrote %s (%d players scored, top %d kept, odds=%s)",
-             output, len(rows), len(top), bool(td_props))
+    log.info("wrote %s (window=%s, %d players scored, top %d kept, odds=%s)",
+             output, window, len(rows), len(top), bool(td_props))
     return doc
 
 
@@ -327,10 +348,14 @@ def main() -> None:
     ap.add_argument("--date", help="YYYY-MM-DD (default: today in US/Eastern)")
     ap.add_argument("--output", default="web/touchdowns.json")
     ap.add_argument("--no-odds", action="store_true")
+    ap.add_argument("--window", default="auto",
+                    choices=("auto", "early", "late", "all"),
+                    help="which part of the day's slate to project "
+                         "(default: auto, by the clock)")
     args = ap.parse_args()
     date = (dt.date.fromisoformat(args.date) if args.date
             else dt.datetime.now(ET).date())
-    run(date, args.output, not args.no_odds)
+    run(date, args.output, not args.no_odds, args.window)
 
 
 if __name__ == "__main__":
