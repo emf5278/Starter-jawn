@@ -1,0 +1,418 @@
+{
+  "date": "2026-09-10",
+  "window": "all",
+  "season": 2026,
+  "week": 1,
+  "picks": [
+    {
+      "player_id": "00-0033280",
+      "name": "Christian McCaffrey",
+      "position": "RB",
+      "team": "SF",
+      "opponent": "LA",
+      "prob": 0.52838,
+      "confidence": "low",
+      "odds": {
+        "best_price_decimal": 1.71,
+        "best_price_american": -141,
+        "best_book": "BetMGM",
+        "implied_prob": 0.5848,
+        "fair_prob": 0.5632,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.0965,
+        "edge_vs_fair": -0.0348
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0039075",
+      "name": "Puka Nacua",
+      "position": "WR",
+      "team": "LA",
+      "opponent": "SF",
+      "prob": 0.37372,
+      "confidence": "low",
+      "odds": {
+        "best_price_decimal": 2.3,
+        "best_price_american": 130,
+        "best_book": "FanDuel",
+        "implied_prob": 0.4348,
+        "fair_prob": 0.4338,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.1404,
+        "edge_vs_fair": -0.0601
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0037840",
+      "name": "Kyren Williams",
+      "position": "RB",
+      "team": "LA",
+      "opponent": "SF",
+      "prob": 0.36834,
+      "confidence": "low",
+      "odds": {
+        "best_price_decimal": 1.8,
+        "best_price_american": -125,
+        "best_book": "DraftKings",
+        "implied_prob": 0.5556,
+        "fair_prob": 0.533,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.337,
+        "edge_vs_fair": -0.1647
+      },
+      "scored": true
+    },
+    {
+      "player_id": "00-0031381",
+      "name": "Davante Adams",
+      "position": "WR",
+      "team": "LA",
+      "opponent": "SF",
+      "prob": 0.34514,
+      "confidence": "low",
+      "odds": {
+        "best_price_decimal": 2.3,
+        "best_price_american": 130,
+        "best_book": "BetMGM",
+        "implied_prob": 0.4348,
+        "fair_prob": 0.4288,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.2062,
+        "edge_vs_fair": -0.0837
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0041035",
+      "name": "De'Zhaun Stribling",
+      "position": "WR",
+      "team": "SF",
+      "opponent": "LA",
+      "prob": 0.28734,
+      "confidence": "low",
+      "odds": {
+        "best_price_decimal": 5.0,
+        "best_price_american": 400,
+        "best_book": "DraftKings",
+        "implied_prob": 0.2,
+        "fair_prob": 0.2011,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.4367,
+        "edge_vs_fair": 0.0863
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0035719",
+      "name": "Deebo Samuel Sr.",
+      "position": "WR",
+      "team": "SF",
+      "opponent": "LA",
+      "prob": 0.26266,
+      "confidence": "low",
+      "odds": null,
+      "scored": true
+    },
+    {
+      "player_id": "00-0033288",
+      "name": "George Kittle",
+      "position": "TE",
+      "team": "SF",
+      "opponent": "LA",
+      "prob": 0.22601,
+      "confidence": "low",
+      "odds": {
+        "best_price_decimal": 3.8,
+        "best_price_american": 280,
+        "best_book": "FanDuel",
+        "implied_prob": 0.2632,
+        "fair_prob": 0.2676,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.1412,
+        "edge_vs_fair": -0.0416
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0039738",
+      "name": "Blake Corum",
+      "position": "RB",
+      "team": "LA",
+      "opponent": "SF",
+      "prob": 0.2145,
+      "confidence": "low",
+      "odds": {
+        "best_price_decimal": 2.65,
+        "best_price_american": 165,
+        "best_book": "DraftKings",
+        "implied_prob": 0.3774,
+        "fair_prob": 0.3594,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.4316,
+        "edge_vs_fair": -0.1449
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0041510",
+      "name": "Max Klare",
+      "position": "TE",
+      "team": "LA",
+      "opponent": "SF",
+      "prob": 0.21108,
+      "confidence": "low",
+      "odds": {
+        "best_price_decimal": 21.0,
+        "best_price_american": 2000,
+        "best_book": "DraftKings",
+        "implied_prob": 0.0476,
+        "fair_prob": 0.0449,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": 3.4327,
+        "edge_vs_fair": 0.1662
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0036244",
+      "name": "Colby Parkinson",
+      "position": "TE",
+      "team": "LA",
+      "opponent": "SF",
+      "prob": 0.20712,
+      "confidence": "low",
+      "odds": {
+        "best_price_decimal": 5.5,
+        "best_price_american": 450,
+        "best_book": "DraftKings",
+        "implied_prob": 0.1818,
+        "fair_prob": 0.1798,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.1392,
+        "edge_vs_fair": 0.0273
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0031408",
+      "name": "Mike Evans",
+      "position": "WR",
+      "team": "SF",
+      "opponent": "LA",
+      "prob": 0.17347,
+      "confidence": "low",
+      "odds": {
+        "best_price_decimal": 3.1,
+        "best_price_american": 210,
+        "best_book": "BetMGM",
+        "implied_prob": 0.3226,
+        "fair_prob": 0.3145,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.4622,
+        "edge_vs_fair": -0.141
+      },
+      "scored": true
+    },
+    {
+      "player_id": "00-0037112",
+      "name": "Jake Tonges",
+      "position": "TE",
+      "team": "SF",
+      "opponent": "LA",
+      "prob": 0.16071,
+      "confidence": "low",
+      "odds": {
+        "best_price_decimal": 10.0,
+        "best_price_american": 900,
+        "best_book": "DraftKings",
+        "implied_prob": 0.1,
+        "fair_prob": 0.1179,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": 0.6071,
+        "edge_vs_fair": 0.0428
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0041052",
+      "name": "Kaelon Black",
+      "position": "RB",
+      "team": "SF",
+      "opponent": "LA",
+      "prob": 0.14812,
+      "confidence": "low",
+      "odds": {
+        "best_price_decimal": 11.0,
+        "best_price_american": 1000,
+        "best_book": "FanDuel",
+        "implied_prob": 0.0909,
+        "fair_prob": 0.1048,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.6293,
+        "edge_vs_fair": 0.0433
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0041399",
+      "name": "CJ Daniels",
+      "position": "WR",
+      "team": "LA",
+      "opponent": "SF",
+      "prob": 0.12944,
+      "confidence": "low",
+      "odds": {
+        "best_price_decimal": 36.0,
+        "best_price_american": 3500,
+        "best_book": "DraftKings",
+        "implied_prob": 0.0278,
+        "fair_prob": 0.0472,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": 3.6598,
+        "edge_vs_fair": 0.0823
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0033110",
+      "name": "Tyler Higbee",
+      "position": "TE",
+      "team": "LA",
+      "opponent": "SF",
+      "prob": 0.12043,
+      "confidence": "low",
+      "odds": {
+        "best_price_decimal": 6.1,
+        "best_price_american": 510,
+        "best_book": "BetRivers",
+        "implied_prob": 0.1639,
+        "fair_prob": 0.1586,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.2654,
+        "edge_vs_fair": -0.0381
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0039074",
+      "name": "Davis Allen",
+      "position": "TE",
+      "team": "LA",
+      "opponent": "SF",
+      "prob": 0.1136,
+      "confidence": "low",
+      "odds": {
+        "best_price_decimal": 17.0,
+        "best_price_american": 1600,
+        "best_book": "BetMGM",
+        "implied_prob": 0.0588,
+        "fair_prob": 0.0629,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.9312,
+        "edge_vs_fair": 0.0507
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0032775",
+      "name": "Demarcus Robinson",
+      "position": "WR",
+      "team": "SF",
+      "opponent": "LA",
+      "prob": 0.1012,
+      "confidence": "low",
+      "odds": {
+        "best_price_decimal": 10.5,
+        "best_price_american": 950,
+        "best_book": "FanDuel",
+        "implied_prob": 0.0952,
+        "fair_prob": 0.0943,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": 0.0626,
+        "edge_vs_fair": 0.0069
+      },
+      "scored": true
+    },
+    {
+      "player_id": "00-0029892",
+      "name": "Kyle Juszczyk",
+      "position": "RB",
+      "team": "SF",
+      "opponent": "LA",
+      "prob": 0.09736,
+      "confidence": "low",
+      "odds": {
+        "best_price_decimal": 12.0,
+        "best_price_american": 1100,
+        "best_book": "DraftKings",
+        "implied_prob": 0.0833,
+        "fair_prob": 0.0943,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.1683,
+        "edge_vs_fair": 0.003
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0040737",
+      "name": "Terrance Ferguson",
+      "position": "TE",
+      "team": "LA",
+      "opponent": "SF",
+      "prob": 0.09398,
+      "confidence": "low",
+      "odds": {
+        "best_price_decimal": 5.5,
+        "best_price_american": 450,
+        "best_book": "FanDuel",
+        "implied_prob": 0.1818,
+        "fair_prob": 0.1926,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.4831,
+        "edge_vs_fair": -0.0986
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0040590",
+      "name": "Konata Mumpfield",
+      "position": "WR",
+      "team": "LA",
+      "opponent": "SF",
+      "prob": 0.07838,
+      "confidence": "low",
+      "odds": {
+        "best_price_decimal": 20.0,
+        "best_price_american": 1900,
+        "best_book": "FanDuel",
+        "implied_prob": 0.05,
+        "fair_prob": 0.0629,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.5676,
+        "edge_vs_fair": 0.0155
+      },
+      "scored": false
+    }
+  ]
+}
