@@ -20,16 +20,32 @@ name: NFL anytime-TD board
 # per run.
 on:
   schedule:
-    # 9:30am ET = 13:30 UTC and 3:00pm ET = 19:00 UTC (EDT, UTC-4). Extra
-    # attempts behind each because GitHub drops or delays this repo's crons;
-    # the gate skips any attempt whose window is already published, so only
-    # the first one that lands in each window does real work.
-    - cron: "30 13 * * *"
-    - cron: "50 13 * * *"
-    - cron: "10 14 * * *"
-    - cron: "0 19 * * *"
-    - cron: "20 19 * * *"
-    - cron: "40 19 * * *"
+    # Targets are 9:30am ET (13:30 UTC) and 3:00pm ET (19:00 UTC), EDT.
+    #
+    # GitHub does not honour those times for this repo. Observed on
+    # 2026-09-12: a 14:53 cron fired at 17:27, a 19:00 cron at 21:26 --
+    # delays of ~2.5 hours, and on 2026-09-13 the 13:30 entry never fired at
+    # all. Scheduled runs are best-effort and queue behind load, and the top
+    # of the hour and the half hour are the worst slots for it (the HR board
+    # already learned this and sits on :41/:11).
+    #
+    # So: odd minutes only, never :00/:15/:30/:45, the first attempt a little
+    # BEFORE the target so a punctual fire lands near it, and several more
+    # behind it so a delayed or dropped one still gets the board up well
+    # before kickoff. The gate publishes on the first attempt that lands and
+    # skips the rest, so the extra entries cost nothing on a normal day.
+    #
+    # Early window -- 9:07 to 10:13 ET, all comfortably before the 1pm games:
+    - cron: "7 13 * * *"
+    - cron: "23 13 * * *"
+    - cron: "39 13 * * *"
+    - cron: "57 13 * * *"
+    - cron: "13 14 * * *"
+    # Late window -- 2:49 to 3:39 ET, before the 4:05/4:25 kickoffs:
+    - cron: "49 18 * * *"
+    - cron: "7 19 * * *"
+    - cron: "23 19 * * *"
+    - cron: "39 19 * * *"
   workflow_dispatch:
     inputs:
       window:

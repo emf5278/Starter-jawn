@@ -127,8 +127,19 @@ def _grade_one(date: dt.date, path: str, scorers: dict) -> dict | None:
 
     top_n = doc.get("top_n", 20)
     floor = doc.get("ev_min_prob", 0) or 0
+    max_ratio = doc.get("ev_max_ratio")
+
+    def eligible(p):
+        o = p.get("odds")
+        if not o or p["prob"] < floor:
+            return False
+        fair = o.get("fair_prob") or 0
+        if max_ratio and fair > 0 and (p["prob"] / fair) > max_ratio:
+            return False
+        return True
+
     by_prob = sorted(players, key=lambda p: p["prob"], reverse=True)[:top_n]
-    by_ev = sorted((p for p in players if p.get("odds") and p["prob"] >= floor),
+    by_ev = sorted((p for p in players if eligible(p)),
                    key=lambda p: p["odds"]["ev_per_dollar"], reverse=True)[:top_n]
 
     p_hits, p_graded, p_exp, _ = _grade_list(by_prob, scorers)

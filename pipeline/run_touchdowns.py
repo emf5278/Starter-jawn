@@ -70,6 +70,22 @@ def _json_safe(o):
     return o
 
 
+def _ev_eligible(r: dict) -> bool:
+    """Is this pick fit to be ranked as a bet?
+
+    Needs a price, a model probability the reliability table supports, and a
+    model number that is not absurdly far from the market's -- see the
+    constants in config for why each guard exists.
+    """
+    o = r.get("odds")
+    if not o or r["prob"] < config.TD_EV_MIN_PROB:
+        return False
+    fair = o.get("fair_prob") or 0
+    if fair <= 0:
+        return False
+    return (r["prob"] / fair) <= config.TD_EV_MAX_MODEL_MARKET_RATIO
+
+
 def _row(df: pd.DataFrame, key: str, value) -> dict:
     hit = df[df[key] == value]
     return {} if hit.empty else hit.iloc[0].to_dict()
@@ -253,9 +269,10 @@ def run(date: dt.date, output: str, use_odds: bool, window: str = "all") -> dict
 
     rows.sort(key=lambda r: r["prob"], reverse=True)
     top_prob = rows[:config.TD_TOP_N]
-    # Longshots are excluded from the EV ranking: see TD_EV_MIN_PROB.
-    top_ev = sorted((r for r in rows
-                     if r["odds"] and r["prob"] >= config.TD_EV_MIN_PROB),
+    # Longshots, and picks where the model wildly outruns the market, are
+    # excluded from the EV ranking: see TD_EV_MIN_PROB and
+    # TD_EV_MAX_MODEL_MARKET_RATIO.
+    top_ev = sorted((r for r in rows if _ev_eligible(r)),
                     key=lambda r: r["odds"]["ev_per_dollar"], reverse=True)[:config.TD_TOP_N]
     seen, top = set(), []
     for r in top_prob + top_ev:
@@ -286,6 +303,7 @@ def run(date: dt.date, output: str, use_odds: bool, window: str = "all") -> dict
         },
         "top_n": config.TD_TOP_N,
         "ev_min_prob": config.TD_EV_MIN_PROB,
+        "ev_max_ratio": config.TD_EV_MAX_MODEL_MARKET_RATIO,
         "games": games,
         "players": top,
     }

@@ -160,11 +160,14 @@
       so compare it against whatever your own sportsbook shows.
       <b>Market fair</b> de-vigs the posted price; where only the “Yes” side is quoted it assumes a
       6% overround rather than measuring one, so treat it as an estimate, not a true no-vig line.
-      The <b>EV</b> ranking only includes players at or above a model probability floor
-      (<span id="evFloorNote">10%</span>). Below that the model is measurably
-      over-confident, and against a +3500 fourth tight end a small error reads as a
-      huge phantom edge — those players stay in the probability view, they just
-      aren't ranked as bets.
+      The <b>EV</b> ranking only includes players above a model probability floor
+      (<span id="evFloorNote">10%</span>) whose model number is also within
+      <span id="evRatioNote">1.3</span>× the market's. This model has no depth-chart or
+      snap-share input, so it spreads a team's touchdowns across the whole active roster
+      and badly over-rates fourth tight ends — the players it knows least about are
+      exactly where it disagrees with the market most, and at +2800 that reads as a huge
+      phantom edge. Those players stay in the probability view; they just aren't ranked
+      as bets.
       This board has no injury or inactives feed, so a player ruled out late can still appear.
       Projections are estimates — not betting advice.
     </div>
@@ -204,6 +207,10 @@ function render(doc){
     const el=document.getElementById("evFloorNote");
     if(el) el.textContent = pct(doc.ev_min_prob,0);
   }
+  if(doc.ev_max_ratio!=null){
+    const el=document.getElementById("evRatioNote");
+    if(el) el.textContent = String(doc.ev_max_ratio);
+  }
 
   if(doc.cold_start){
     const b = document.getElementById("coldStart");
@@ -227,8 +234,7 @@ function render(doc){
     return;
   }
   document.getElementById("controls").hidden = false;
-  const floor = doc.ev_min_prob ?? 0;
-  const hasOdds = players.some(p=>p.odds && p.prob>=floor);
+  const hasOdds = players.some(evEligible);
   const btnEv=document.getElementById("btnEv"); btnEv.disabled=!hasOdds;
   if(!hasOdds) btnEv.title="No anytime-TD props above the EV eligibility floor in this run";
   document.getElementById("btnProb").onclick=()=>setView("prob");
@@ -254,14 +260,14 @@ function setView(view){
   const n = DOC.top_n || 20;
   const evFloor = (DOC.ev_min_prob ?? 0);
   let list = (view==="ev")
-    ? (DOC.players||[]).filter(p=>p.odds && p.prob>=evFloor)
+    ? (DOC.players||[]).filter(evEligible)
         .sort((a,b)=>b.odds.ev_per_dollar-a.odds.ev_per_dollar).slice(0,n)
     : (DOC.players||[]).slice().sort((a,b)=>b.prob-a.prob).slice(0,n);
   document.getElementById("chartTitle").textContent = view==="ev"
     ? `Model probability vs. market — top ${list.length} by EV`
     : `Model probability of scoring — top ${list.length}`;
   document.getElementById("tableTitle").textContent = view==="ev"
-    ? `Ranked by EV at best price (needs a listed prop and P(TD) ≥ ${pct(evFloor,0)}) — click a row for the “why”`
+    ? `Ranked by EV at best price (needs a listed prop, P(TD) ≥ ${pct(evFloor,0)}, and a model number within ${DOC.ev_max_ratio||"—"}× the market) — click a row for the “why”`
     : "Ranked by model probability — click a row for the “why”";
   const ranked = list.slice();
   if(SORT==="time") list = list.slice().sort((a,b)=>String(a.kickoff_utc||"").localeCompare(String(b.kickoff_utc||"")));
@@ -290,6 +296,18 @@ function drawChart(list){
         x:{ticks:{color:css("--ink-2"),font:{size:10},maxRotation:60,minRotation:45},grid:{display:false}},
         y:{ticks:{color:css("--ink-2"),font:{size:10},callback:v=>v+"%"},grid:{color:css("--grid")},beginAtZero:true}}}
   });
+}
+
+// Same eligibility the pipeline applies: a price, a probability the
+// reliability table supports, and a model number not absurdly far from the
+// market's. See TD_EV_MIN_PROB / TD_EV_MAX_MODEL_MARKET_RATIO in config.py.
+function evEligible(p){
+  if(!p || !p.odds) return false;
+  if(p.prob < (DOC?.ev_min_prob ?? 0)) return false;
+  const fair = p.odds.fair_prob || 0;
+  const maxR = DOC?.ev_max_ratio;
+  if(maxR && fair > 0 && (p.prob / fair) > maxR) return false;
+  return true;
 }
 
 function evCell(p){

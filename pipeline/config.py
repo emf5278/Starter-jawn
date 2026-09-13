@@ -394,6 +394,32 @@ TD_TOP_N = 20
 # the data.
 TD_EV_MIN_PROB = 0.10
 
+# Maximum model-to-market ratio for EV eligibility.
+#
+# The probability floor above was not enough. On the 2026-09-13 early slate
+# the EV board was still topped by fourth tight ends -- Sam Roush at +2800
+# with the model at 14.3% against a market fair of 3.3%, a ratio of 4.3 and
+# an apparent +314% edge.
+#
+# The cause is a real gap in the model: it has NO depth-chart or snap-share
+# input. Shares are normalised across the whole 53-man active roster, so a
+# TE4 who will play five snaps is handed a rotation-sized share of his
+# team's touchdowns. The market knows he is TE4. The model does not. That is
+# why the divergence is worst exactly where the model knows least:
+#
+#     ratio 1.8-4.3  ->  backup TEs and WRs priced +900 to +3500
+#     ratio 0.9-1.5  ->  actual contributors priced -125 to +260
+#
+# So where the model disagrees with the market by more than this much, treat
+# it as the model being wrong rather than as an edge. 1.3 caps the claim at
+# a 30% relative edge, which is already a lot to assert against a market as
+# liquid as NFL anytime TD.
+#
+# This is a guard over a known limitation, not a fix for it. The fix is
+# feeding depth charts / snap shares into the share model so those players
+# stop being over-weighted in the first place.
+TD_EV_MAX_MODEL_MARKET_RATIO = 1.3
+
 # --- slate windows -------------------------------------------------------
 # A Sunday is really two slates with different information: the 1pm games,
 # and the 4:25 + Sunday-night games whose inactives and lines are still
