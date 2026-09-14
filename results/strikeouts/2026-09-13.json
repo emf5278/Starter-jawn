@@ -1,0 +1,66 @@
+{
+  "row": {
+    "date": "2026-09-13",
+    "snapshot_utc": "2026-09-13T16:41:07+00:00",
+    "late_snapshot": false,
+    "proj_hits": 1,
+    "proj_graded": 2,
+    "proj_expected": 1.05,
+    "ev_hits": 1,
+    "ev_graded": 2,
+    "ev_expected": 1.05,
+    "ev_flat_pnl": -0.2
+  },
+  "top_proj": [
+    {
+      "name": "Logan Webb",
+      "team": "San Francisco Giants",
+      "line": 4.5,
+      "side": "Over",
+      "played": true,
+      "actual_ks": 7,
+      "result": "Over",
+      "hit": true,
+      "price": 1.8,
+      "model_prob": 0.5387
+    },
+    {
+      "name": "Nick Pivetta",
+      "team": "San Diego Padres",
+      "line": 4.5,
+      "side": "Under",
+      "played": true,
+      "actual_ks": 5,
+      "result": "Over",
+      "hit": false,
+      "price": 2.1,
+      "model_prob": 0.5132
+    }
+  ],
+  "top_ev": [
+    {
+      "name": "Nick Pivetta",
+      "team": "San Diego Padres",
+      "line": 4.5,
+      "side": "Under",
+      "played": true,
+      "actual_ks": 5,
+      "result": "Over",
+      "hit": false,
+      "price": 2.1,
+      "model_prob": 0.5132
+    },
+    {
+      "name": "Logan Webb",
+      "team": "San Francisco Giants",
+      "line": 4.5,
+      "side": "Over",
+      "played": true,
+      "actual_ks": 7,
+      "result": "Over",
+      "hit": true,
+      "price": 1.8,
+      "model_prob": 0.5387
+    }
+  ]
+}
