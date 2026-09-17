@@ -1,24 +1,27 @@
 name: Pitcher strikeout board
 
-# Refreshes every morning on its own cron (separate from the HR board's --
-# each pipeline makes its own single Odds API call, so this doesn't double
-# up on the HR board's usage). Projects games with first pitch at/after 5pm
-# ET and does NOT touch the home-run predictions.
+# Projects starters with first pitch at/after 5pm ET; does NOT touch the
+# home-run predictions.
+#
+# PAUSED (2026-09-17): the automatic schedule is switched off.
+#
+# The free Odds API plan allows 500 credits a month, and player props cost
+# one request per game. This board alone spent ~15 a day (one per MLB game),
+# and together with the home-run board that was ~31 a day -- the whole
+# month's quota in about 16 days. It ran out on 2026-09-17 ("500 used, 0
+# remaining") and every odds call started returning 401, which took the NFL
+# board's odds down with it.
+#
+# The NFL anytime-TD board is the one being actively used, so the MLB boards
+# no longer refresh on their own and the quota is reserved for football.
+# Nothing here is deleted: `workflow_dispatch` still works, so this board can
+# be run by hand from the Actions tab whenever you want it, and restoring the
+# schedule is a matter of putting the `schedule:` block back.
+#
+# Note that with the schedule off, web/strikeouts.json stays frozen at its
+# last run, so the Pitcher Strikeouts page will keep showing that day's slate.
+
 on:
-  schedule:
-    # GitHub's `schedule` trigger is unreliable for this repo (late by
-    # hours, or dropped outright some mornings), so this gets five attempts
-    # spread across the morning instead of one, each offset a few minutes
-    # from the HR board's crons so the two don't queue at the same moment.
-    # The "Decide whether to run" gate step skips all the expensive work
-    # (Statcast pull, Odds API call, commit) the instant web/strikeouts.json
-    # already shows today's date, so extra attempts that land after the
-    # first success cost nothing.
-    - cron: "47 12 * * *"
-    - cron: "17 13 * * *"
-    - cron: "47 13 * * *"
-    - cron: "17 14 * * *"
-    - cron: "47 14 * * *"
   workflow_dispatch:
     inputs:
       all_day:

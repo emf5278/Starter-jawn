@@ -1,21 +1,24 @@
 name: Daily HR predictions
 
+# PAUSED (2026-09-17): the automatic schedule is switched off.
+#
+# The free Odds API plan allows 500 credits a month, and player props cost
+# one request per game. This board alone spent ~15 a day (one per MLB game),
+# and together with the strikeout board that was ~31 a day -- the whole
+# month's quota in about 16 days. It ran out on 2026-09-17 ("500 used, 0
+# remaining") and every odds call started returning 401, which took the NFL
+# board's odds down with it.
+#
+# The NFL anytime-TD board is the one being actively used, so the MLB boards
+# no longer refresh on their own and the quota is reserved for football.
+# Nothing here is deleted: `workflow_dispatch` still works, so this board can
+# be run by hand from the Actions tab whenever you want it, and restoring the
+# schedule is a matter of putting the `schedule:` block back.
+#
+# Note that with the schedule off, web/predictions.json stays frozen at its
+# last run, so the Home Runs page will keep showing that day's slate.
+
 on:
-  schedule:
-    # GitHub's `schedule` trigger for this repo is unreliable: some mornings
-    # it fires 1-3 hours late, some mornings it silently never fires at all.
-    # Rather than rely on one cron + a human noticing, we give it five
-    # attempts spread across the morning (UTC, no DST: 12:41 = 8:41am ET
-    # EDT). The "Decide whether to run" gate step below skips everything
-    # expensive (Statcast pull, Odds API call, commit) the moment
-    # web/predictions.json already shows today's date, so a day where
-    # several of these attempts land costs nothing extra — only the first
-    # one to actually fire does real work.
-    - cron: "41 12 * * *"
-    - cron: "11 13 * * *"
-    - cron: "41 13 * * *"
-    - cron: "11 14 * * *"
-    - cron: "41 14 * * *"
   workflow_dispatch:
     inputs:
       lite:

@@ -13,6 +13,15 @@ Every board toggles between the **top 20 by model probability** and the
 | Moneylines & totals | P(home win), P(Over) | `moneylines.html`, `totals.html` |
 | **NFL anytime TD** | **P(player scores ≥1 TD today)** | **`touchdowns.html`** |
 
+> **Only the NFL board refreshes automatically.** The three MLB boards were
+> paused on 2026-09-17: between them the home-run and strikeout boards spent
+> about 31 Odds API credits a day (player props cost one request per game),
+> which burns the free plan's 500/month in roughly sixteen days. When it ran
+> out, every odds call started returning 401 and took the NFL board's odds
+> down with it. Their workflows still exist and still run from the Actions
+> tab via **Run workflow** — only the `schedule:` blocks are gone, so their
+> pages stay frozen at their last run until you trigger one by hand.
+
 Most of this README describes the home-run model, which came first and sets
 the pattern the others follow; the NFL touchdown board has [its own
 section](#nfl-anytime-touchdown-scorers).
