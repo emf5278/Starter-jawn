@@ -1,0 +1,996 @@
+{
+  "generated_at": "2026-09-14T18:14:22+00:00",
+  "date": "2026-09-14",
+  "model_version": "k-0.1.0",
+  "league_k_pa": 0.2203,
+  "filter": "first pitch \u2265 5pm ET",
+  "n_starters_scored": 20,
+  "odds_available": true,
+  "top_n": 20,
+  "pitchers": [
+    {
+      "pitcher_id": 668909,
+      "name": "Gavin Williams",
+      "team": "Cleveland Guardians",
+      "opponent": "Chicago White Sox",
+      "opponent_lineup_confirmed": false,
+      "game_pk": 824386,
+      "game_time_utc": "2026-09-14T22:40:00Z",
+      "pitcher_hand": "R",
+      "expected_ks": 6.95,
+      "k_rate": 0.2965,
+      "factors": {
+        "league_k_pa": 0.2203,
+        "pitcher": {
+          "regressed": 0.2957,
+          "ratio": 1.342,
+          "raw": 0.3343,
+          "n": 682.0
+        },
+        "opponent": {
+          "opp_k_rate": 0.221,
+          "ratio": 1.003,
+          "n_batters": 9
+        },
+        "expected_tbf": {
+          "value": 23.45,
+          "raw": 23.5,
+          "starts": 29.0
+        }
+      },
+      "line": 7.5,
+      "prob_over": 0.3941,
+      "prob_under": 0.6059,
+      "break_even_over_american": 154,
+      "break_even_under_american": -154,
+      "odds": {
+        "line": 7.5,
+        "over_price_decimal": 1.65,
+        "over_price_american": -154,
+        "under_price_decimal": 2.22,
+        "under_price_american": 122,
+        "fair_over": 0.5751,
+        "n_books": 3,
+        "ev_over": -0.3497,
+        "ev_under": 0.3451,
+        "best_side": "Under",
+        "best_ev": 0.3451,
+        "edge_over": -0.181
+      }
+    },
+    {
+      "pitcher_id": 669373,
+      "name": "Tarik Skubal",
+      "team": "Los Angeles Dodgers",
+      "opponent": "Cincinnati Reds",
+      "opponent_lineup_confirmed": false,
+      "game_pk": 824465,
+      "game_time_utc": "2026-09-14T22:40:00Z",
+      "pitcher_hand": "L",
+      "expected_ks": 6.63,
+      "k_rate": 0.2794,
+      "factors": {
+        "league_k_pa": 0.2203,
+        "pitcher": {
+          "regressed": 0.2682,
+          "ratio": 1.217,
+          "raw": 0.2987,
+          "n": 549.0
+        },
+        "opponent": {
+          "opp_k_rate": 0.2302,
+          "ratio": 1.045,
+          "n_batters": 9
+        },
+        "expected_tbf": {
+          "value": 23.74,
+          "raw": 23.9,
+          "starts": 23.0
+        }
+      },
+      "line": 7.5,
+      "prob_over": 0.3507,
+      "prob_under": 0.6493,
+      "break_even_over_american": 185,
+      "break_even_under_american": -185,
+      "odds": {
+        "line": 7.5,
+        "over_price_decimal": 1.88,
+        "over_price_american": -114,
+        "under_price_decimal": 1.95,
+        "under_price_american": -105,
+        "fair_over": 0.5107,
+        "n_books": 6,
+        "ev_over": -0.3407,
+        "ev_under": 0.2661,
+        "best_side": "Under",
+        "best_ev": 0.2661,
+        "edge_over": -0.16
+      }
+    },
+    {
+      "pitcher_id": 672282,
+      "name": "Reid Detmers",
+      "team": "Los Angeles Angels",
+      "opponent": "Seattle Mariners",
+      "opponent_lineup_confirmed": false,
+      "game_pk": 823981,
+      "game_time_utc": "2026-09-15T01:38:00Z",
+      "pitcher_hand": "L",
+      "expected_ks": 5.92,
+      "k_rate": 0.2557,
+      "factors": {
+        "league_k_pa": 0.2203,
+        "pitcher": {
+          "regressed": 0.2623,
+          "ratio": 1.191,
+          "raw": 0.2842,
+          "n": 672.0
+        },
+        "opponent": {
+          "opp_k_rate": 0.2145,
+          "ratio": 0.974,
+          "n_batters": 9
+        },
+        "expected_tbf": {
+          "value": 23.15,
+          "raw": 23.2,
+          "starts": 29.0
+        }
+      },
+      "line": 6.5,
+      "prob_over": 0.3815,
+      "prob_under": 0.6185,
+      "break_even_over_american": 162,
+      "break_even_under_american": -162,
+      "odds": {
+        "line": 6.5,
+        "over_price_decimal": 1.93,
+        "over_price_american": -108,
+        "under_price_decimal": 1.91,
+        "under_price_american": -110,
+        "fair_over": 0.4973,
+        "n_books": 6,
+        "ev_over": -0.2637,
+        "ev_under": 0.1813,
+        "best_side": "Under",
+        "best_ev": 0.1813,
+        "edge_over": -0.1158
+      }
+    },
+    {
+      "pitcher_id": 667755,
+      "name": "Jos\u00e9 Soriano",
+      "team": "Toronto Blue Jays",
+      "opponent": "Detroit Tigers",
+      "opponent_lineup_confirmed": false,
+      "game_pk": 822765,
+      "game_time_utc": "2026-09-14T23:07:00Z",
+      "pitcher_hand": "R",
+      "expected_ks": 5.49,
+      "k_rate": 0.2341,
+      "factors": {
+        "league_k_pa": 0.2203,
+        "pitcher": {
+          "regressed": 0.224,
+          "ratio": 1.016,
+          "raw": 0.2258,
+          "n": 682.0
+        },
+        "opponent": {
+          "opp_k_rate": 0.2303,
+          "ratio": 1.045,
+          "n_batters": 9
+        },
+        "expected_tbf": {
+          "value": 23.45,
+          "raw": 23.5,
+          "starts": 29.0
+        }
+      },
+      "line": 5.5,
+      "prob_over": 0.4616,
+      "prob_under": 0.5384,
+      "break_even_over_american": 117,
+      "break_even_under_american": -117,
+      "odds": {
+        "line": 5.5,
+        "over_price_decimal": 2.18,
+        "over_price_american": 118,
+        "under_price_decimal": 1.7,
+        "under_price_american": -143,
+        "fair_over": 0.4427,
+        "n_books": 6,
+        "ev_over": 0.0063,
+        "ev_under": -0.0847,
+        "best_side": "Over",
+        "best_ev": 0.0063,
+        "edge_over": 0.0189
+      }
+    },
+    {
+      "pitcher_id": 804636,
+      "name": "Jonah Tong",
+      "team": "New York Mets",
+      "opponent": "Baltimore Orioles",
+      "opponent_lineup_confirmed": false,
+      "game_pk": 823575,
+      "game_time_utc": "2026-09-14T23:10:00Z",
+      "pitcher_hand": "R",
+      "expected_ks": 5.29,
+      "k_rate": 0.234,
+      "factors": {
+        "league_k_pa": 0.2203,
+        "pitcher": {
+          "regressed": 0.218,
+          "ratio": 0.989,
+          "raw": 0.2059,
+          "n": 68.0
+        },
+        "opponent": {
+          "opp_k_rate": 0.2365,
+          "ratio": 1.073,
+          "n_batters": 9
+        },
+        "expected_tbf": {
+          "value": 22.6,
+          "raw": 21.0,
+          "starts": 1.0
+        }
+      },
+      "line": 5.5,
+      "prob_over": 0.4299,
+      "prob_under": 0.5701,
+      "break_even_over_american": 133,
+      "break_even_under_american": -133,
+      "odds": {
+        "line": 5.5,
+        "over_price_decimal": 1.82,
+        "over_price_american": -122,
+        "under_price_decimal": 2.09,
+        "under_price_american": 109,
+        "fair_over": 0.5228,
+        "n_books": 6,
+        "ev_over": -0.2176,
+        "ev_under": 0.1915,
+        "best_side": "Under",
+        "best_ev": 0.1915,
+        "edge_over": -0.0929
+      }
+    },
+    {
+      "pitcher_id": 665152,
+      "name": "Dean Kremer",
+      "team": "Minnesota Twins",
+      "opponent": "New York Yankees",
+      "opponent_lineup_confirmed": false,
+      "game_pk": 823656,
+      "game_time_utc": "2026-09-14T23:40:00Z",
+      "pitcher_hand": "R",
+      "expected_ks": 5.23,
+      "k_rate": 0.2394,
+      "factors": {
+        "league_k_pa": 0.2203,
+        "pitcher": {
+          "regressed": 0.2245,
+          "ratio": 1.019,
+          "raw": 0.2292,
+          "n": 301.0
+        },
+        "opponent": {
+          "opp_k_rate": 0.235,
+          "ratio": 1.066,
+          "n_batters": 9
+        },
+        "expected_tbf": {
+          "value": 21.83,
+          "raw": 21.5,
+          "starts": 14.0
+        }
+      },
+      "line": 4.5,
+      "prob_over": 0.5804,
+      "prob_under": 0.4196,
+      "break_even_over_american": -138,
+      "break_even_under_american": 138,
+      "odds": {
+        "line": 4.5,
+        "over_price_decimal": 1.74,
+        "over_price_american": -135,
+        "under_price_decimal": 2.13,
+        "under_price_american": 113,
+        "fair_over": 0.5548,
+        "n_books": 6,
+        "ev_over": 0.0099,
+        "ev_under": -0.1063,
+        "best_side": "Over",
+        "best_ev": 0.0099,
+        "edge_over": 0.0256
+      }
+    },
+    {
+      "pitcher_id": 807739,
+      "name": "Kade Anderson",
+      "team": "Seattle Mariners",
+      "opponent": "Los Angeles Angels",
+      "opponent_lineup_confirmed": false,
+      "game_pk": 823981,
+      "game_time_utc": "2026-09-15T01:38:00Z",
+      "pitcher_hand": "L",
+      "expected_ks": 5.21,
+      "k_rate": 0.2326,
+      "factors": {
+        "league_k_pa": 0.2203,
+        "pitcher": {
+          "regressed": 0.2131,
+          "ratio": 0.967,
+          "raw": 0.1839,
+          "n": 87.0
+        },
+        "opponent": {
+          "opp_k_rate": 0.2403,
+          "ratio": 1.091,
+          "n_batters": 9
+        },
+        "expected_tbf": {
+          "value": 22.38,
+          "raw": 21.8,
+          "starts": 4.0
+        }
+      },
+      "line": 5.5,
+      "prob_over": 0.4172,
+      "prob_under": 0.5828,
+      "break_even_over_american": 140,
+      "break_even_under_american": -140,
+      "odds": {
+        "line": 5.5,
+        "over_price_decimal": 1.91,
+        "over_price_american": -110,
+        "under_price_decimal": 1.95,
+        "under_price_american": -105,
+        "fair_over": 0.5,
+        "n_books": 6,
+        "ev_over": -0.2031,
+        "ev_under": 0.1365,
+        "best_side": "Under",
+        "best_ev": 0.1365,
+        "edge_over": -0.0828
+      }
+    },
+    {
+      "pitcher_id": 687273,
+      "name": "Quinn Mathews",
+      "team": "St. Louis Cardinals",
+      "opponent": "San Francisco Giants",
+      "opponent_lineup_confirmed": false,
+      "game_pk": 823006,
+      "game_time_utc": "2026-09-14T23:45:00Z",
+      "pitcher_hand": "L",
+      "expected_ks": 4.99,
+      "k_rate": 0.2179,
+      "factors": {
+        "league_k_pa": 0.2203,
+        "pitcher": {
+          "regressed": 0.2158,
+          "ratio": 0.98,
+          "raw": 0.2044,
+          "n": 137.0
+        },
+        "opponent": {
+          "opp_k_rate": 0.2225,
+          "ratio": 1.01,
+          "n_batters": 9
+        },
+        "expected_tbf": {
+          "value": 22.9,
+          "raw": 22.8,
+          "starts": 6.0
+        }
+      },
+      "line": 4.5,
+      "prob_over": 0.542,
+      "prob_under": 0.458,
+      "break_even_over_american": -118,
+      "break_even_under_american": 118,
+      "odds": {
+        "line": 4.5,
+        "over_price_decimal": 1.74,
+        "over_price_american": -135,
+        "under_price_decimal": 2.13,
+        "under_price_american": 113,
+        "fair_over": 0.5441,
+        "n_books": 6,
+        "ev_over": -0.0569,
+        "ev_under": -0.0245,
+        "best_side": "Under",
+        "best_ev": -0.0245,
+        "edge_over": -0.0021
+      }
+    },
+    {
+      "pitcher_id": 694738,
+      "name": "Landen Roupp",
+      "team": "San Francisco Giants",
+      "opponent": "St. Louis Cardinals",
+      "opponent_lineup_confirmed": false,
+      "game_pk": 823006,
+      "game_time_utc": "2026-09-14T23:45:00Z",
+      "pitcher_hand": "R",
+      "expected_ks": 4.94,
+      "k_rate": 0.2163,
+      "factors": {
+        "league_k_pa": 0.2203,
+        "pitcher": {
+          "regressed": 0.2185,
+          "ratio": 0.992,
+          "raw": 0.2175,
+          "n": 639.0
+        },
+        "opponent": {
+          "opp_k_rate": 0.2181,
+          "ratio": 0.99,
+          "n_batters": 9
+        },
+        "expected_tbf": {
+          "value": 22.84,
+          "raw": 22.8,
+          "starts": 28.0
+        }
+      },
+      "line": 4.5,
+      "prob_over": 0.5338,
+      "prob_under": 0.4662,
+      "break_even_over_american": -115,
+      "break_even_under_american": 115,
+      "odds": {
+        "line": 4.5,
+        "over_price_decimal": 2.15,
+        "over_price_american": 115,
+        "under_price_decimal": 1.78,
+        "under_price_american": -128,
+        "fair_over": 0.4496,
+        "n_books": 6,
+        "ev_over": 0.1477,
+        "ev_under": -0.1702,
+        "best_side": "Over",
+        "best_ev": 0.1477,
+        "edge_over": 0.0842
+      }
+    },
+    {
+      "pitcher_id": 663554,
+      "name": "Casey Mize",
+      "team": "San Diego Padres",
+      "opponent": "Colorado Rockies",
+      "opponent_lineup_confirmed": false,
+      "game_pk": 824308,
+      "game_time_utc": "2026-09-15T00:40:00Z",
+      "pitcher_hand": "R",
+      "expected_ks": 4.7,
+      "k_rate": 0.2186,
+      "factors": {
+        "league_k_pa": 0.2203,
+        "pitcher": {
+          "regressed": 0.2194,
+          "ratio": 0.996,
+          "raw": 0.2188,
+          "n": 489.0
+        },
+        "opponent": {
+          "opp_k_rate": 0.2195,
+          "ratio": 0.996,
+          "n_batters": 9
+        },
+        "expected_tbf": {
+          "value": 21.52,
+          "raw": 21.3,
+          "starts": 23.0
+        }
+      },
+      "line": 3.5,
+      "prob_over": 0.666,
+      "prob_under": 0.334,
+      "break_even_over_american": -199,
+      "break_even_under_american": 199,
+      "odds": {
+        "line": 3.5,
+        "over_price_decimal": 1.74,
+        "over_price_american": -135,
+        "under_price_decimal": 2.16,
+        "under_price_american": 116,
+        "fair_over": 0.5614,
+        "n_books": 5,
+        "ev_over": 0.1588,
+        "ev_under": -0.2786,
+        "best_side": "Over",
+        "best_ev": 0.1588,
+        "edge_over": 0.1046
+      }
+    },
+    {
+      "pitcher_id": 701542,
+      "name": "Will Warren",
+      "team": "New York Yankees",
+      "opponent": "Minnesota Twins",
+      "opponent_lineup_confirmed": false,
+      "game_pk": 823656,
+      "game_time_utc": "2026-09-14T23:40:00Z",
+      "pitcher_hand": "R",
+      "expected_ks": 4.67,
+      "k_rate": 0.2076,
+      "factors": {
+        "league_k_pa": 0.2203,
+        "pitcher": {
+          "regressed": 0.2256,
+          "ratio": 1.024,
+          "raw": 0.2285,
+          "n": 617.0
+        },
+        "opponent": {
+          "opp_k_rate": 0.2026,
+          "ratio": 0.919,
+          "n_batters": 9
+        },
+        "expected_tbf": {
+          "value": 22.48,
+          "raw": 22.4,
+          "starts": 27.0
+        }
+      },
+      "line": 4.5,
+      "prob_over": 0.4885,
+      "prob_under": 0.5115,
+      "break_even_over_american": 105,
+      "break_even_under_american": -105,
+      "odds": {
+        "line": 4.5,
+        "over_price_decimal": 2.18,
+        "over_price_american": 118,
+        "under_price_decimal": 1.71,
+        "under_price_american": -141,
+        "fair_over": 0.4443,
+        "n_books": 6,
+        "ev_over": 0.0649,
+        "ev_under": -0.1253,
+        "best_side": "Over",
+        "best_ev": 0.0649,
+        "edge_over": 0.0442
+      }
+    },
+    {
+      "pitcher_id": 656849,
+      "name": "David Peterson",
+      "team": "Chicago Cubs",
+      "opponent": "Atlanta Braves",
+      "opponent_lineup_confirmed": false,
+      "game_pk": 824629,
+      "game_time_utc": "2026-09-14T23:40:00Z",
+      "pitcher_hand": "L",
+      "expected_ks": 4.61,
+      "k_rate": 0.2002,
+      "factors": {
+        "league_k_pa": 0.2203,
+        "pitcher": {
+          "regressed": 0.2041,
+          "ratio": 0.926,
+          "raw": 0.1947,
+          "n": 601.0
+        },
+        "opponent": {
+          "opp_k_rate": 0.2162,
+          "ratio": 0.981,
+          "n_batters": 9
+        },
+        "expected_tbf": {
+          "value": 23.04,
+          "raw": 23.1,
+          "starts": 20.0
+        }
+      },
+      "line": 4.5,
+      "prob_over": 0.4782,
+      "prob_under": 0.5218,
+      "break_even_over_american": 109,
+      "break_even_under_american": -109,
+      "odds": {
+        "line": 4.5,
+        "over_price_decimal": 2.1,
+        "over_price_american": 110,
+        "under_price_decimal": 1.78,
+        "under_price_american": -128,
+        "fair_over": 0.4589,
+        "n_books": 6,
+        "ev_over": 0.0042,
+        "ev_under": -0.0712,
+        "best_side": "Over",
+        "best_ev": 0.0042,
+        "edge_over": 0.0193
+      }
+    },
+    {
+      "pitcher_id": 687064,
+      "name": "Brandon Young",
+      "team": "Baltimore Orioles",
+      "opponent": "New York Mets",
+      "opponent_lineup_confirmed": false,
+      "game_pk": 823575,
+      "game_time_utc": "2026-09-14T23:10:00Z",
+      "pitcher_hand": "R",
+      "expected_ks": 4.57,
+      "k_rate": 0.1898,
+      "factors": {
+        "league_k_pa": 0.2203,
+        "pitcher": {
+          "regressed": 0.1976,
+          "ratio": 0.897,
+          "raw": 0.1845,
+          "n": 607.0
+        },
+        "opponent": {
+          "opp_k_rate": 0.2119,
+          "ratio": 0.962,
+          "n_batters": 9
+        },
+        "expected_tbf": {
+          "value": 24.1,
+          "raw": 24.3,
+          "starts": 25.0
+        }
+      },
+      "line": 3.5,
+      "prob_over": 0.6459,
+      "prob_under": 0.3541,
+      "break_even_over_american": -182,
+      "break_even_under_american": 182,
+      "odds": {
+        "line": 3.5,
+        "over_price_decimal": 1.59,
+        "over_price_american": -169,
+        "under_price_decimal": 2.32,
+        "under_price_american": 132,
+        "fair_over": 0.5923,
+        "n_books": 4,
+        "ev_over": 0.027,
+        "ev_under": -0.1785,
+        "best_side": "Over",
+        "best_ev": 0.027,
+        "edge_over": 0.0536
+      }
+    },
+    {
+      "pitcher_id": 675512,
+      "name": "Troy Melton",
+      "team": "Detroit Tigers",
+      "opponent": "Toronto Blue Jays",
+      "opponent_lineup_confirmed": false,
+      "game_pk": 822765,
+      "game_time_utc": "2026-09-14T23:07:00Z",
+      "pitcher_hand": "R",
+      "expected_ks": 4.55,
+      "k_rate": 0.1904,
+      "factors": {
+        "league_k_pa": 0.2203,
+        "pitcher": {
+          "regressed": 0.2093,
+          "ratio": 0.95,
+          "raw": 0.2005,
+          "n": 434.0
+        },
+        "opponent": {
+          "opp_k_rate": 0.2007,
+          "ratio": 0.911,
+          "n_batters": 9
+        },
+        "expected_tbf": {
+          "value": 23.91,
+          "raw": 24.1,
+          "starts": 18.0
+        }
+      },
+      "line": 3.5,
+      "prob_over": 0.6427,
+      "prob_under": 0.3573,
+      "break_even_over_american": -180,
+      "break_even_under_american": 180,
+      "odds": {
+        "line": 3.5,
+        "over_price_decimal": 1.77,
+        "over_price_american": -130,
+        "under_price_decimal": 2.1,
+        "under_price_american": 110,
+        "fair_over": 0.541,
+        "n_books": 6,
+        "ev_over": 0.1376,
+        "ev_under": -0.2497,
+        "best_side": "Over",
+        "best_ev": 0.1376,
+        "edge_over": 0.1017
+      }
+    },
+    {
+      "pitcher_id": 645261,
+      "name": "Sandy Alcantara",
+      "team": "Miami Marlins",
+      "opponent": "Arizona Diamondbacks",
+      "opponent_lineup_confirmed": false,
+      "game_pk": 825034,
+      "game_time_utc": "2026-09-15T01:40:00Z",
+      "pitcher_hand": "R",
+      "expected_ks": 4.54,
+      "k_rate": 0.1715,
+      "factors": {
+        "league_k_pa": 0.2203,
+        "pitcher": {
+          "regressed": 0.1858,
+          "ratio": 0.843,
+          "raw": 0.1713,
+          "n": 835.0
+        },
+        "opponent": {
+          "opp_k_rate": 0.204,
+          "ratio": 0.926,
+          "n_batters": 9
+        },
+        "expected_tbf": {
+          "value": 26.49,
+          "raw": 26.9,
+          "starts": 31.0
+        }
+      },
+      "line": 3.5,
+      "prob_over": 0.6411,
+      "prob_under": 0.3589,
+      "break_even_over_american": -179,
+      "break_even_under_american": 179,
+      "odds": {
+        "line": 3.5,
+        "over_price_decimal": 1.82,
+        "over_price_american": -122,
+        "under_price_decimal": 2.0,
+        "under_price_american": 100,
+        "fair_over": 0.5193,
+        "n_books": 6,
+        "ev_over": 0.1668,
+        "ev_under": -0.2822,
+        "best_side": "Over",
+        "best_ev": 0.1668,
+        "edge_over": 0.1218
+      }
+    },
+    {
+      "pitcher_id": 669203,
+      "name": "Corbin Burnes",
+      "team": "Arizona Diamondbacks",
+      "opponent": "Miami Marlins",
+      "opponent_lineup_confirmed": false,
+      "game_pk": 825034,
+      "game_time_utc": "2026-09-15T01:40:00Z",
+      "pitcher_hand": "R",
+      "expected_ks": 4.52,
+      "k_rate": 0.2151,
+      "factors": {
+        "league_k_pa": 0.2203,
+        "pitcher": {
+          "regressed": 0.218,
+          "ratio": 0.989,
+          "raw": 0.1538,
+          "n": 13.0
+        },
+        "opponent": {
+          "opp_k_rate": 0.2174,
+          "ratio": 0.987,
+          "n_batters": 9
+        },
+        "expected_tbf": {
+          "value": 21.0,
+          "raw": 13.0,
+          "starts": 1.0
+        }
+      },
+      "line": 3.5,
+      "prob_over": 0.6379,
+      "prob_under": 0.3621,
+      "break_even_over_american": -176,
+      "break_even_under_american": 176,
+      "odds": {
+        "line": 3.5,
+        "over_price_decimal": 1.62,
+        "over_price_american": -161,
+        "under_price_decimal": 2.28,
+        "under_price_american": 128,
+        "fair_over": 0.5803,
+        "n_books": 5,
+        "ev_over": 0.0334,
+        "ev_under": -0.1744,
+        "best_side": "Over",
+        "best_ev": 0.0334,
+        "edge_over": 0.0576
+      }
+    },
+    {
+      "pitcher_id": 666157,
+      "name": "Nick Lodolo",
+      "team": "Cincinnati Reds",
+      "opponent": "Los Angeles Dodgers",
+      "opponent_lineup_confirmed": false,
+      "game_pk": 824465,
+      "game_time_utc": "2026-09-14T22:40:00Z",
+      "pitcher_hand": "L",
+      "expected_ks": 4.25,
+      "k_rate": 0.1869,
+      "factors": {
+        "league_k_pa": 0.2203,
+        "pitcher": {
+          "regressed": 0.2007,
+          "ratio": 0.911,
+          "raw": 0.1838,
+          "n": 408.0
+        },
+        "opponent": {
+          "opp_k_rate": 0.2055,
+          "ratio": 0.932,
+          "n_batters": 9
+        },
+        "expected_tbf": {
+          "value": 22.73,
+          "raw": 22.7,
+          "starts": 18.0
+        }
+      },
+      "line": 4.5,
+      "prob_over": 0.4151,
+      "prob_under": 0.5849,
+      "break_even_over_american": 141,
+      "break_even_under_american": -141,
+      "odds": {
+        "line": 4.5,
+        "over_price_decimal": 2.1,
+        "over_price_american": 110,
+        "under_price_decimal": 1.77,
+        "under_price_american": -130,
+        "fair_over": 0.4647,
+        "n_books": 6,
+        "ev_over": -0.1283,
+        "ev_under": 0.0353,
+        "best_side": "Under",
+        "best_ev": 0.0353,
+        "edge_over": -0.0496
+      }
+    },
+    {
+      "pitcher_id": 625643,
+      "name": "Reynaldo L\u00f3pez",
+      "team": "Atlanta Braves",
+      "opponent": "Chicago Cubs",
+      "opponent_lineup_confirmed": false,
+      "game_pk": 824629,
+      "game_time_utc": "2026-09-14T23:40:00Z",
+      "pitcher_hand": "R",
+      "expected_ks": 4.22,
+      "k_rate": 0.2063,
+      "factors": {
+        "league_k_pa": 0.2203,
+        "pitcher": {
+          "regressed": 0.2181,
+          "ratio": 0.99,
+          "raw": 0.2158,
+          "n": 329.0
+        },
+        "opponent": {
+          "opp_k_rate": 0.2084,
+          "ratio": 0.946,
+          "n_batters": 9
+        },
+        "expected_tbf": {
+          "value": 20.44,
+          "raw": 19.6,
+          "starts": 12.0
+        }
+      },
+      "line": 4.5,
+      "prob_over": 0.4098,
+      "prob_under": 0.5902,
+      "break_even_over_american": 144,
+      "break_even_under_american": -144,
+      "odds": {
+        "line": 4.5,
+        "over_price_decimal": 2.25,
+        "over_price_american": 125,
+        "under_price_decimal": 1.7,
+        "under_price_american": -143,
+        "fair_over": 0.445,
+        "n_books": 6,
+        "ev_over": -0.078,
+        "ev_under": 0.0033,
+        "best_side": "Under",
+        "best_ev": 0.0033,
+        "edge_over": -0.0352
+      }
+    },
+    {
+      "pitcher_id": 608372,
+      "name": "Tomoyuki Sugano",
+      "team": "Colorado Rockies",
+      "opponent": "San Diego Padres",
+      "opponent_lineup_confirmed": false,
+      "game_pk": 824308,
+      "game_time_utc": "2026-09-15T00:40:00Z",
+      "pitcher_hand": "R",
+      "expected_ks": 3.83,
+      "k_rate": 0.1683,
+      "factors": {
+        "league_k_pa": 0.2203,
+        "pitcher": {
+          "regressed": 0.1712,
+          "ratio": 0.777,
+          "raw": 0.1421,
+          "n": 591.0
+        },
+        "opponent": {
+          "opp_k_rate": 0.2168,
+          "ratio": 0.984,
+          "n_batters": 9
+        },
+        "expected_tbf": {
+          "value": 22.77,
+          "raw": 22.7,
+          "starts": 26.0
+        }
+      },
+      "line": 2.5,
+      "prob_over": 0.7091,
+      "prob_under": 0.2909,
+      "break_even_over_american": -244,
+      "break_even_under_american": 244,
+      "odds": {
+        "line": 2.5,
+        "over_price_decimal": 1.57,
+        "over_price_american": -175,
+        "under_price_decimal": 2.42,
+        "under_price_american": 142,
+        "fair_over": 0.6091,
+        "n_books": 3,
+        "ev_over": 0.1133,
+        "ev_under": -0.296,
+        "best_side": "Over",
+        "best_ev": 0.1133,
+        "edge_over": 0.1
+      }
+    },
+    {
+      "pitcher_id": 656794,
+      "name": "Sean Newcomb",
+      "team": "Chicago White Sox",
+      "opponent": "Cleveland Guardians",
+      "opponent_lineup_confirmed": false,
+      "game_pk": 824386,
+      "game_time_utc": "2026-09-14T22:40:00Z",
+      "pitcher_hand": "L",
+      "expected_ks": 2.9,
+      "k_rate": 0.2055,
+      "factors": {
+        "league_k_pa": 0.2203,
+        "pitcher": {
+          "regressed": 0.2232,
+          "ratio": 1.013,
+          "raw": 0.2261,
+          "n": 345.0
+        },
+        "opponent": {
+          "opp_k_rate": 0.2028,
+          "ratio": 0.92,
+          "n_batters": 9
+        },
+        "expected_tbf": {
+          "value": 14.11,
+          "raw": 7.0,
+          "starts": 5.0
+        }
+      },
+      "break_even_over_american": null,
+      "break_even_under_american": null,
+      "odds": null
+    }
+  ]
+}

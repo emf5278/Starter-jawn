@@ -1,0 +1,112 @@
+{
+  "generated_at": "2026-09-13T16:41:07+00:00",
+  "date": "2026-09-13",
+  "model_version": "k-0.1.0",
+  "league_k_pa": 0.2203,
+  "filter": "first pitch \u2265 5pm ET",
+  "n_starters_scored": 2,
+  "odds_available": true,
+  "top_n": 20,
+  "pitchers": [
+    {
+      "pitcher_id": 657277,
+      "name": "Logan Webb",
+      "team": "San Francisco Giants",
+      "opponent": "San Diego Padres",
+      "opponent_lineup_confirmed": false,
+      "game_pk": 823171,
+      "game_time_utc": "2026-09-13T23:20:00Z",
+      "pitcher_hand": "R",
+      "expected_ks": 4.97,
+      "k_rate": 0.2023,
+      "factors": {
+        "league_k_pa": 0.2203,
+        "pitcher": {
+          "regressed": 0.2051,
+          "ratio": 0.931,
+          "raw": 0.1969,
+          "n": 645.0
+        },
+        "opponent": {
+          "opp_k_rate": 0.2174,
+          "ratio": 0.987,
+          "n_batters": 9
+        },
+        "expected_tbf": {
+          "value": 24.57,
+          "raw": 24.8,
+          "starts": 26.0
+        }
+      },
+      "line": 4.5,
+      "prob_over": 0.5387,
+      "prob_under": 0.4613,
+      "break_even_over_american": -117,
+      "break_even_under_american": 117,
+      "odds": {
+        "line": 4.5,
+        "over_price_decimal": 1.8,
+        "over_price_american": -125,
+        "under_price_decimal": 2.1,
+        "under_price_american": 110,
+        "fair_over": 0.5426,
+        "n_books": 6,
+        "ev_over": -0.0303,
+        "ev_under": -0.0313,
+        "best_side": "Over",
+        "best_ev": -0.0303,
+        "edge_over": -0.0039
+      }
+    },
+    {
+      "pitcher_id": 601713,
+      "name": "Nick Pivetta",
+      "team": "San Diego Padres",
+      "opponent": "San Francisco Giants",
+      "opponent_lineup_confirmed": false,
+      "game_pk": 823171,
+      "game_time_utc": "2026-09-13T23:20:00Z",
+      "pitcher_hand": "R",
+      "expected_ks": 4.66,
+      "k_rate": 0.2398,
+      "factors": {
+        "league_k_pa": 0.2203,
+        "pitcher": {
+          "regressed": 0.2382,
+          "ratio": 1.081,
+          "raw": 0.3133,
+          "n": 83.0
+        },
+        "opponent": {
+          "opp_k_rate": 0.2219,
+          "ratio": 1.007,
+          "n_batters": 9
+        },
+        "expected_tbf": {
+          "value": 19.44,
+          "raw": 16.6,
+          "starts": 5.0
+        }
+      },
+      "line": 4.5,
+      "prob_over": 0.4868,
+      "prob_under": 0.5132,
+      "break_even_over_american": 105,
+      "break_even_under_american": -105,
+      "odds": {
+        "line": 4.5,
+        "over_price_decimal": 1.79,
+        "over_price_american": -127,
+        "under_price_decimal": 2.1,
+        "under_price_american": 110,
+        "fair_over": 0.5298,
+        "n_books": 6,
+        "ev_over": -0.1286,
+        "ev_under": 0.0777,
+        "best_side": "Under",
+        "best_ev": 0.0777,
+        "edge_over": -0.043
+      }
+    }
+  ]
+}
