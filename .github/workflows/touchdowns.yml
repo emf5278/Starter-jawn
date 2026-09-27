@@ -46,6 +46,19 @@ on:
     - cron: "7 19 * * *"
     - cron: "23 19 * * *"
     - cron: "39 19 * * *"
+  # Kick path. GitHub's `schedule` trigger does not fire reliably for this
+  # repo -- on 2026-09-27 it produced no run at all during the whole morning,
+  # and on 2026-09-26 it fired 2.5-3.5 hours late. `push` and
+  # `workflow_dispatch`, by contrast, have fired immediately every single
+  # time. So the schedule above is now only a fallback, and the real timing
+  # comes from outside: something writes a timestamp into
+  # .github/refresh/nfl-td and pushes, which starts a run within seconds.
+  #
+  # The board's own commits touch web/, history/ and results/ -- never this
+  # path -- so a published board cannot re-trigger the workflow.
+  push:
+    branches: ["claude/mlb-hr-prediction-dashboard-ywd14t"]
+    paths: [".github/refresh/nfl-td"]
   workflow_dispatch:
     inputs:
       window:

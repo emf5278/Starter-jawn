@@ -1,0 +1,4 @@
+Timestamp file. Pushing a change here starts the NFL anytime-TD board.
+See the push trigger in .github/workflows/touchdowns.yml.
+
+last-kick: (none yet)
