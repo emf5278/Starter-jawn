@@ -321,6 +321,29 @@ The boundary (4pm ET) and the auto switch (1pm ET) are
 keys on `(date, window)`, so a Sunday contributes an early row and a late
 row rather than the second run erasing the first.
 
+### What actually triggers a refresh
+
+GitHub's `schedule` trigger does not work for this repo. Measured, not
+guessed: on 2026-09-26 crons fired 2.5-3.5 hours late, and on 2026-09-27
+they produced **no run at all** across the whole morning, so the 1pm slate
+never got a board. Cron minutes were retuned twice and it made no
+difference — scheduled workflows are best-effort and queue behind load.
+
+`workflow_dispatch` and `push`, by contrast, have started a run within
+seconds every single time. So timing now comes from outside GitHub:
+
+| Layer | What it does |
+|---|---|
+| **Claude Routine** (primary) | Fires at 13:30 and 19:00 UTC and dispatches `touchdowns.yml`. Runs on Anthropic's scheduler, not GitHub's. |
+| **Push kick** | Any change pushed to `.github/refresh/nfl-td` starts a run immediately — a trigger anything with repo write access can pull. |
+| **`schedule:` crons** | Left in place purely as a free fallback for whenever GitHub does get round to firing. |
+| **Manual** | Actions tab → Run workflow, with a `window` input. |
+
+The workflow's gate makes extra triggers harmless: it skips in seconds when
+that exact (date, window) is already published, and makes no Odds API call
+on a day with no games. So all four layers can fire on the same day and only
+the first one to land does real work.
+
 ### Automation and API credits
 
 `.github/workflows/touchdowns.yml` runs on the same self-healing multi-cron
