@@ -1,0 +1,228 @@
+{
+  "date": "2026-09-20",
+  "window": "early",
+  "season": 2026,
+  "week": 2,
+  "picks": [
+    {
+      "player_id": "00-0038542",
+      "name": "Bijan Robinson",
+      "position": "RB",
+      "team": "ATL",
+      "opponent": "CAR",
+      "prob": 0.58366,
+      "confidence": "low",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0038120",
+      "name": "Breece Hall",
+      "position": "RB",
+      "team": "NYJ",
+      "opponent": "GB",
+      "prob": 0.49202,
+      "confidence": "low",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0032764",
+      "name": "Derrick Henry",
+      "position": "RB",
+      "team": "BAL",
+      "opponent": "NO",
+      "prob": 0.47896,
+      "confidence": "low",
+      "odds": null,
+      "scored": true
+    },
+    {
+      "player_id": "00-0036973",
+      "name": "Travis Etienne",
+      "position": "RB",
+      "team": "NO",
+      "opponent": "BAL",
+      "prob": 0.43075,
+      "confidence": "low",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0038597",
+      "name": "Chase Brown",
+      "position": "RB",
+      "team": "CIN",
+      "opponent": "HOU",
+      "prob": 0.42821,
+      "confidence": "low",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0034844",
+      "name": "Saquon Barkley",
+      "position": "RB",
+      "team": "PHI",
+      "opponent": "TEN",
+      "prob": 0.42626,
+      "confidence": "low",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0040784",
+      "name": "Quinshon Judkins",
+      "position": "RB",
+      "team": "CLE",
+      "opponent": "TB",
+      "prob": 0.42207,
+      "confidence": "low",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0040663",
+      "name": "Harold Fannin Jr.",
+      "position": "TE",
+      "team": "CLE",
+      "opponent": "TB",
+      "prob": 0.4034,
+      "confidence": "low",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0035261",
+      "name": "Tony Pollard",
+      "position": "RB",
+      "team": "TEN",
+      "opponent": "PHI",
+      "prob": 0.36709,
+      "confidence": "low",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0036322",
+      "name": "Justin Jefferson",
+      "position": "WR",
+      "team": "MIN",
+      "opponent": "CHI",
+      "prob": 0.36189,
+      "confidence": "low",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0038124",
+      "name": "Christian Watson",
+      "position": "WR",
+      "team": "GB",
+      "opponent": "NYJ",
+      "prob": 0.35965,
+      "confidence": "low",
+      "odds": null,
+      "scored": true
+    },
+    {
+      "player_id": "00-0036919",
+      "name": "Kenny Gainwell",
+      "position": "RB",
+      "team": "TB",
+      "opponent": "CLE",
+      "prob": 0.3514,
+      "confidence": "low",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0036554",
+      "name": "Nico Collins",
+      "position": "WR",
+      "team": "HOU",
+      "opponent": "CIN",
+      "prob": 0.35064,
+      "confidence": "low",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0035685",
+      "name": "David Montgomery",
+      "position": "RB",
+      "team": "HOU",
+      "opponent": "CIN",
+      "prob": 0.3496,
+      "confidence": "low",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0034351",
+      "name": "Dallas Goedert",
+      "position": "TE",
+      "team": "PHI",
+      "opponent": "TEN",
+      "prob": 0.33861,
+      "confidence": "low",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0036275",
+      "name": "D'Andre Swift",
+      "position": "RB",
+      "team": "CHI",
+      "opponent": "MIN",
+      "prob": 0.33847,
+      "confidence": "low",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0040124",
+      "name": "Tetairoa McMillan",
+      "position": "WR",
+      "team": "CAR",
+      "opponent": "ATL",
+      "prob": 0.33571,
+      "confidence": "low",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0033293",
+      "name": "Aaron Jones",
+      "position": "RB",
+      "team": "MIN",
+      "opponent": "CHI",
+      "prob": 0.32945,
+      "confidence": "low",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0040129",
+      "name": "Emeka Egbuka",
+      "position": "WR",
+      "team": "TB",
+      "opponent": "CLE",
+      "prob": 0.32869,
+      "confidence": "low",
+      "odds": null,
+      "scored": true
+    },
+    {
+      "player_id": "00-0036407",
+      "name": "Jerry Jeudy",
+      "position": "WR",
+      "team": "CLE",
+      "opponent": "TB",
+      "prob": 0.32714,
+      "confidence": "low",
+      "odds": null,
+      "scored": false
+    }
+  ]
+}

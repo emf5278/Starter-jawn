@@ -1,0 +1,228 @@
+{
+  "date": "2026-09-17",
+  "window": "late",
+  "season": 2026,
+  "week": 2,
+  "picks": [
+    {
+      "player_id": "00-0039139",
+      "name": "Jahmyr Gibbs",
+      "position": "RB",
+      "team": "DET",
+      "opponent": "BUF",
+      "prob": 0.59498,
+      "confidence": "low",
+      "odds": null,
+      "scored": true
+    },
+    {
+      "player_id": "00-0037248",
+      "name": "James Cook",
+      "position": "RB",
+      "team": "BUF",
+      "opponent": "DET",
+      "prob": 0.4042,
+      "confidence": "low",
+      "odds": null,
+      "scored": true
+    },
+    {
+      "player_id": "00-0036963",
+      "name": "Amon-Ra St. Brown",
+      "position": "WR",
+      "team": "DET",
+      "opponent": "BUF",
+      "prob": 0.38386,
+      "confidence": "low",
+      "odds": null,
+      "scored": true
+    },
+    {
+      "player_id": "00-0034857",
+      "name": "Josh Allen",
+      "position": "QB",
+      "team": "BUF",
+      "opponent": "DET",
+      "prob": 0.26678,
+      "confidence": "low",
+      "odds": null,
+      "scored": true
+    },
+    {
+      "player_id": "00-0034827",
+      "name": "DJ Moore",
+      "position": "WR",
+      "team": "BUF",
+      "opponent": "DET",
+      "prob": 0.24479,
+      "confidence": "low",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0037240",
+      "name": "Jameson Williams",
+      "position": "WR",
+      "team": "DET",
+      "opponent": "BUF",
+      "prob": 0.24203,
+      "confidence": "low",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0037261",
+      "name": "Khalil Shakir",
+      "position": "WR",
+      "team": "BUF",
+      "opponent": "DET",
+      "prob": 0.23694,
+      "confidence": "low",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0039901",
+      "name": "Keon Coleman",
+      "position": "WR",
+      "team": "BUF",
+      "opponent": "DET",
+      "prob": 0.16997,
+      "confidence": "low",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0041443",
+      "name": "Skyler Bell",
+      "position": "WR",
+      "team": "BUF",
+      "opponent": "DET",
+      "prob": 0.16871,
+      "confidence": "low",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0038933",
+      "name": "Dalton Kincaid",
+      "position": "TE",
+      "team": "BUF",
+      "opponent": "DET",
+      "prob": 0.16453,
+      "confidence": "low",
+      "odds": null,
+      "scored": true
+    },
+    {
+      "player_id": "00-0039065",
+      "name": "Sam LaPorta",
+      "position": "TE",
+      "team": "DET",
+      "opponent": "BUF",
+      "prob": 0.14763,
+      "confidence": "low",
+      "odds": null,
+      "scored": true
+    },
+    {
+      "player_id": "00-0035689",
+      "name": "Dawson Knox",
+      "position": "TE",
+      "team": "BUF",
+      "opponent": "DET",
+      "prob": 0.14731,
+      "confidence": "low",
+      "odds": null,
+      "scored": true
+    },
+    {
+      "player_id": "00-0035537",
+      "name": "Ty Johnson",
+      "position": "RB",
+      "team": "BUF",
+      "opponent": "DET",
+      "prob": 0.14435,
+      "confidence": "low",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0040669",
+      "name": "Isaac TeSlaa",
+      "position": "WR",
+      "team": "DET",
+      "opponent": "BUF",
+      "prob": 0.11685,
+      "confidence": "low",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0039875",
+      "name": "Ray Davis",
+      "position": "RB",
+      "team": "BUF",
+      "opponent": "DET",
+      "prob": 0.11062,
+      "confidence": "low",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0036988",
+      "name": "Josh Palmer",
+      "position": "WR",
+      "team": "BUF",
+      "opponent": "DET",
+      "prob": 0.10605,
+      "confidence": "low",
+      "odds": null,
+      "scored": true
+    },
+    {
+      "player_id": "00-0036754",
+      "name": "Brock Wright",
+      "position": "TE",
+      "team": "DET",
+      "opponent": "BUF",
+      "prob": 0.08577,
+      "confidence": "low",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0040194",
+      "name": "Jackson Hawes",
+      "position": "TE",
+      "team": "BUF",
+      "opponent": "DET",
+      "prob": 0.07923,
+      "confidence": "low",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0040390",
+      "name": "Jackson Meeks",
+      "position": "TE",
+      "team": "DET",
+      "opponent": "BUF",
+      "prob": 0.06506,
+      "confidence": "low",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0034270",
+      "name": "Tyler Conklin",
+      "position": "TE",
+      "team": "DET",
+      "opponent": "BUF",
+      "prob": 0.06496,
+      "confidence": "low",
+      "odds": null,
+      "scored": false
+    }
+  ]
+}

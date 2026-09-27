@@ -1,0 +1,228 @@
+{
+  "date": "2026-09-20",
+  "window": "late",
+  "season": 2026,
+  "week": 2,
+  "picks": [
+    {
+      "player_id": "00-0033280",
+      "name": "Christian McCaffrey",
+      "position": "RB",
+      "team": "SF",
+      "opponent": "MIA",
+      "prob": 0.584,
+      "confidence": "low",
+      "odds": null,
+      "scored": true
+    },
+    {
+      "player_id": "00-0040122",
+      "name": "Ashton Jeanty",
+      "position": "RB",
+      "team": "LV",
+      "opponent": "LAC",
+      "prob": 0.48505,
+      "confidence": "low",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0036997",
+      "name": "Javonte Williams",
+      "position": "RB",
+      "team": "DAL",
+      "opponent": "WAS",
+      "prob": 0.47993,
+      "confidence": "low",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0039040",
+      "name": "De'Von Achane",
+      "position": "RB",
+      "team": "MIA",
+      "opponent": "SF",
+      "prob": 0.47239,
+      "confidence": "low",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0036223",
+      "name": "Jonathan Taylor",
+      "position": "RB",
+      "team": "IND",
+      "opponent": "KC",
+      "prob": 0.4673,
+      "confidence": "low",
+      "odds": null,
+      "scored": true
+    },
+    {
+      "player_id": "00-0038543",
+      "name": "Jaxon Smith-Njigba",
+      "position": "WR",
+      "team": "SEA",
+      "opponent": "ARI",
+      "prob": 0.44325,
+      "confidence": "low",
+      "odds": null,
+      "scored": true
+    },
+    {
+      "player_id": "00-0038134",
+      "name": "Kenneth Walker III",
+      "position": "RB",
+      "team": "KC",
+      "opponent": "IND",
+      "prob": 0.4093,
+      "confidence": "low",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0040242",
+      "name": "Jacory Croskey-Merritt",
+      "position": "RB",
+      "team": "WAS",
+      "opponent": "DAL",
+      "prob": 0.37801,
+      "confidence": "low",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0037744",
+      "name": "Trey McBride",
+      "position": "TE",
+      "team": "ARI",
+      "opponent": "SEA",
+      "prob": 0.36809,
+      "confidence": "low",
+      "odds": null,
+      "scored": true
+    },
+    {
+      "player_id": "00-0031588",
+      "name": "Stefon Diggs",
+      "position": "WR",
+      "team": "WAS",
+      "opponent": "DAL",
+      "prob": 0.3575,
+      "confidence": "low",
+      "odds": null,
+      "scored": true
+    },
+    {
+      "player_id": "00-0037247",
+      "name": "George Pickens",
+      "position": "WR",
+      "team": "DAL",
+      "opponent": "WAS",
+      "prob": 0.34831,
+      "confidence": "low",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0037256",
+      "name": "Rachaad White",
+      "position": "RB",
+      "team": "WAS",
+      "opponent": "DAL",
+      "prob": 0.34601,
+      "confidence": "low",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0038797",
+      "name": "Emanuel Wilson",
+      "position": "RB",
+      "team": "SEA",
+      "opponent": "ARI",
+      "prob": 0.31554,
+      "confidence": "low",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0035719",
+      "name": "Deebo Samuel Sr.",
+      "position": "WR",
+      "team": "SF",
+      "opponent": "MIA",
+      "prob": 0.31418,
+      "confidence": "low",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0038041",
+      "name": "Jake Ferguson",
+      "position": "TE",
+      "team": "DAL",
+      "opponent": "WAS",
+      "prob": 0.2889,
+      "confidence": "low",
+      "odds": null,
+      "scored": true
+    },
+    {
+      "player_id": "00-0040730",
+      "name": "RJ Harvey",
+      "position": "RB",
+      "team": "DEN",
+      "opponent": "JAX",
+      "prob": 0.28773,
+      "confidence": "low",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0036358",
+      "name": "CeeDee Lamb",
+      "position": "WR",
+      "team": "DAL",
+      "opponent": "WAS",
+      "prob": 0.28759,
+      "confidence": "low",
+      "odds": null,
+      "scored": true
+    },
+    {
+      "player_id": "00-0030506",
+      "name": "Travis Kelce",
+      "position": "TE",
+      "team": "KC",
+      "opponent": "IND",
+      "prob": 0.2852,
+      "confidence": "low",
+      "odds": null,
+      "scored": true
+    },
+    {
+      "player_id": "00-0039915",
+      "name": "Ladd McConkey",
+      "position": "WR",
+      "team": "LAC",
+      "opponent": "LV",
+      "prob": 0.27933,
+      "confidence": "low",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0040666",
+      "name": "Omarion Hampton",
+      "position": "RB",
+      "team": "LAC",
+      "opponent": "LV",
+      "prob": 0.2779,
+      "confidence": "low",
+      "odds": null,
+      "scored": true
+    }
+  ]
+}
