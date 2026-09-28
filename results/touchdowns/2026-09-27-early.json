@@ -1,0 +1,228 @@
+{
+  "date": "2026-09-27",
+  "window": "early",
+  "season": 2026,
+  "week": 3,
+  "picks": [
+    {
+      "player_id": "00-0039139",
+      "name": "Jahmyr Gibbs",
+      "position": "RB",
+      "team": "DET",
+      "opponent": "NYJ",
+      "prob": 0.56935,
+      "confidence": "medium",
+      "odds": null,
+      "scored": true
+    },
+    {
+      "player_id": "00-0036223",
+      "name": "Jonathan Taylor",
+      "position": "RB",
+      "team": "IND",
+      "opponent": "HOU",
+      "prob": 0.50341,
+      "confidence": "medium",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0038543",
+      "name": "Jaxon Smith-Njigba",
+      "position": "WR",
+      "team": "SEA",
+      "opponent": "WAS",
+      "prob": 0.49987,
+      "confidence": "medium",
+      "odds": null,
+      "scored": true
+    },
+    {
+      "player_id": "00-0038120",
+      "name": "Breece Hall",
+      "position": "RB",
+      "team": "NYJ",
+      "opponent": "DET",
+      "prob": 0.49158,
+      "confidence": "medium",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0036963",
+      "name": "Amon-Ra St. Brown",
+      "position": "WR",
+      "team": "DET",
+      "opponent": "NYJ",
+      "prob": 0.47611,
+      "confidence": "medium",
+      "odds": null,
+      "scored": true
+    },
+    {
+      "player_id": "00-0040784",
+      "name": "Quinshon Judkins",
+      "position": "RB",
+      "team": "CLE",
+      "opponent": "CAR",
+      "prob": 0.46547,
+      "confidence": "medium",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0039040",
+      "name": "De'Von Achane",
+      "position": "RB",
+      "team": "MIA",
+      "opponent": "KC",
+      "prob": 0.45447,
+      "confidence": "medium",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0038134",
+      "name": "Kenneth Walker III",
+      "position": "RB",
+      "team": "KC",
+      "opponent": "MIA",
+      "prob": 0.43231,
+      "confidence": "medium",
+      "odds": null,
+      "scored": true
+    },
+    {
+      "player_id": "00-0038597",
+      "name": "Chase Brown",
+      "position": "RB",
+      "team": "CIN",
+      "opponent": "PIT",
+      "prob": 0.42716,
+      "confidence": "medium",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0036900",
+      "name": "Ja'Marr Chase",
+      "position": "WR",
+      "team": "CIN",
+      "opponent": "PIT",
+      "prob": 0.40587,
+      "confidence": "medium",
+      "odds": null,
+      "scored": true
+    },
+    {
+      "player_id": "00-0037248",
+      "name": "James Cook",
+      "position": "RB",
+      "team": "BUF",
+      "opponent": "LAC",
+      "prob": 0.37332,
+      "confidence": "medium",
+      "odds": null,
+      "scored": true
+    },
+    {
+      "player_id": "00-0035261",
+      "name": "Tony Pollard",
+      "position": "RB",
+      "team": "TEN",
+      "opponent": "NYG",
+      "prob": 0.35542,
+      "confidence": "medium",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0040715",
+      "name": "Cam Skattebo",
+      "position": "RB",
+      "team": "NYG",
+      "opponent": "TEN",
+      "prob": 0.35093,
+      "confidence": "medium",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0040124",
+      "name": "Tetairoa McMillan",
+      "position": "WR",
+      "team": "CAR",
+      "opponent": "CLE",
+      "prob": 0.34123,
+      "confidence": "medium",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0035685",
+      "name": "David Montgomery",
+      "position": "RB",
+      "team": "HOU",
+      "opponent": "IND",
+      "prob": 0.34111,
+      "confidence": "medium",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0040663",
+      "name": "Harold Fannin Jr.",
+      "position": "TE",
+      "team": "CLE",
+      "opponent": "CAR",
+      "prob": 0.34006,
+      "confidence": "medium",
+      "odds": null,
+      "scored": true
+    },
+    {
+      "player_id": "00-0037228",
+      "name": "Jaylen Warren",
+      "position": "RB",
+      "team": "PIT",
+      "opponent": "CIN",
+      "prob": 0.33979,
+      "confidence": "medium",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0030506",
+      "name": "Travis Kelce",
+      "position": "TE",
+      "team": "KC",
+      "opponent": "MIA",
+      "prob": 0.33668,
+      "confidence": "medium",
+      "odds": null,
+      "scored": true
+    },
+    {
+      "player_id": "00-0039915",
+      "name": "Ladd McConkey",
+      "position": "WR",
+      "team": "LAC",
+      "opponent": "BUF",
+      "prob": 0.31874,
+      "confidence": "medium",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0040583",
+      "name": "Woody Marks",
+      "position": "RB",
+      "team": "HOU",
+      "opponent": "IND",
+      "prob": 0.31719,
+      "confidence": "medium",
+      "odds": null,
+      "scored": true
+    }
+  ]
+}

@@ -1,0 +1,228 @@
+{
+  "date": "2026-09-27",
+  "window": "late",
+  "season": 2026,
+  "week": 3,
+  "picks": [
+    {
+      "player_id": "00-0033280",
+      "name": "Christian McCaffrey",
+      "position": "RB",
+      "team": "SF",
+      "opponent": "ARI",
+      "prob": 0.61521,
+      "confidence": "medium",
+      "odds": null,
+      "scored": true
+    },
+    {
+      "player_id": "00-0032764",
+      "name": "Derrick Henry",
+      "position": "RB",
+      "team": "BAL",
+      "opponent": "DAL",
+      "prob": 0.56743,
+      "confidence": "medium",
+      "odds": null,
+      "scored": true
+    },
+    {
+      "player_id": "00-0040122",
+      "name": "Ashton Jeanty",
+      "position": "RB",
+      "team": "LV",
+      "opponent": "NO",
+      "prob": 0.50444,
+      "confidence": "medium",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0036997",
+      "name": "Javonte Williams",
+      "position": "RB",
+      "team": "DAL",
+      "opponent": "BAL",
+      "prob": 0.46957,
+      "confidence": "medium",
+      "odds": null,
+      "scored": true
+    },
+    {
+      "player_id": "00-0036973",
+      "name": "Travis Etienne",
+      "position": "RB",
+      "team": "NO",
+      "opponent": "LV",
+      "prob": 0.42306,
+      "confidence": "medium",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0037744",
+      "name": "Trey McBride",
+      "position": "TE",
+      "team": "ARI",
+      "opponent": "SF",
+      "prob": 0.41954,
+      "confidence": "medium",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0036322",
+      "name": "Justin Jefferson",
+      "position": "WR",
+      "team": "MIN",
+      "opponent": "TB",
+      "prob": 0.35181,
+      "confidence": "medium",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0039064",
+      "name": "Zay Flowers",
+      "position": "WR",
+      "team": "BAL",
+      "opponent": "DAL",
+      "prob": 0.33922,
+      "confidence": "medium",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0033293",
+      "name": "Aaron Jones",
+      "position": "RB",
+      "team": "MIN",
+      "opponent": "TB",
+      "prob": 0.33343,
+      "confidence": "medium",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0037239",
+      "name": "Chris Olave",
+      "position": "WR",
+      "team": "NO",
+      "opponent": "LV",
+      "prob": 0.33255,
+      "confidence": "medium",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0035719",
+      "name": "Deebo Samuel Sr.",
+      "position": "WR",
+      "team": "SF",
+      "opponent": "ARI",
+      "prob": 0.32221,
+      "confidence": "medium",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0037840",
+      "name": "Kyren Williams",
+      "position": "RB",
+      "team": "LA",
+      "opponent": "DEN",
+      "prob": 0.30753,
+      "confidence": "medium",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0038563",
+      "name": "Tre Tucker",
+      "position": "WR",
+      "team": "LV",
+      "opponent": "NO",
+      "prob": 0.29624,
+      "confidence": "medium",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0036919",
+      "name": "Kenny Gainwell",
+      "position": "RB",
+      "team": "TB",
+      "opponent": "MIN",
+      "prob": 0.2931,
+      "confidence": "medium",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0038559",
+      "name": "Michael Wilson",
+      "position": "WR",
+      "team": "ARI",
+      "opponent": "SF",
+      "prob": 0.29221,
+      "confidence": "medium",
+      "odds": null,
+      "scored": true
+    },
+    {
+      "player_id": "00-0036259",
+      "name": "Jauan Jennings",
+      "position": "WR",
+      "team": "MIN",
+      "opponent": "TB",
+      "prob": 0.29079,
+      "confidence": "medium",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0037247",
+      "name": "George Pickens",
+      "position": "WR",
+      "team": "DAL",
+      "opponent": "BAL",
+      "prob": 0.28561,
+      "confidence": "medium",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0034753",
+      "name": "Mark Andrews",
+      "position": "TE",
+      "team": "BAL",
+      "opponent": "DAL",
+      "prob": 0.27884,
+      "confidence": "medium",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0033288",
+      "name": "George Kittle",
+      "position": "TE",
+      "team": "SF",
+      "opponent": "ARI",
+      "prob": 0.27667,
+      "confidence": "medium",
+      "odds": null,
+      "scored": true
+    },
+    {
+      "player_id": "00-0040730",
+      "name": "RJ Harvey",
+      "position": "RB",
+      "team": "DEN",
+      "opponent": "LA",
+      "prob": 0.27511,
+      "confidence": "medium",
+      "odds": null,
+      "scored": false
+    }
+  ]
+}
