@@ -1,0 +1,228 @@
+{
+  "date": "2026-09-28",
+  "window": "all",
+  "season": 2026,
+  "week": 3,
+  "picks": [
+    {
+      "player_id": "00-0036275",
+      "name": "D'Andre Swift",
+      "position": "RB",
+      "team": "CHI",
+      "opponent": "PHI",
+      "prob": 0.42702,
+      "confidence": "medium",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0034844",
+      "name": "Saquon Barkley",
+      "position": "RB",
+      "team": "PHI",
+      "opponent": "CHI",
+      "prob": 0.37187,
+      "confidence": "medium",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0036912",
+      "name": "DeVonta Smith",
+      "position": "WR",
+      "team": "PHI",
+      "opponent": "CHI",
+      "prob": 0.34211,
+      "confidence": "medium",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0034351",
+      "name": "Dallas Goedert",
+      "position": "TE",
+      "team": "PHI",
+      "opponent": "CHI",
+      "prob": 0.33588,
+      "confidence": "medium",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0040236",
+      "name": "Kyle Monangai",
+      "position": "RB",
+      "team": "CHI",
+      "opponent": "PHI",
+      "prob": 0.31318,
+      "confidence": "medium",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0035662",
+      "name": "Marquise Brown",
+      "position": "WR",
+      "team": "PHI",
+      "opponent": "CHI",
+      "prob": 0.21767,
+      "confidence": "medium",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0039919",
+      "name": "Rome Odunze",
+      "position": "WR",
+      "team": "CHI",
+      "opponent": "PHI",
+      "prob": 0.20049,
+      "confidence": "medium",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0040126",
+      "name": "Colston Loveland",
+      "position": "TE",
+      "team": "CHI",
+      "opponent": "PHI",
+      "prob": 0.19197,
+      "confidence": "medium",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0036389",
+      "name": "Jalen Hurts",
+      "position": "QB",
+      "team": "PHI",
+      "opponent": "CHI",
+      "prob": 0.18229,
+      "confidence": "medium",
+      "odds": null,
+      "scored": true
+    },
+    {
+      "player_id": "00-0038393",
+      "name": "Dontayvion Wicks",
+      "position": "WR",
+      "team": "PHI",
+      "opponent": "CHI",
+      "prob": 0.18153,
+      "confidence": "medium",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0041051",
+      "name": "Zavion Thomas",
+      "position": "WR",
+      "team": "CHI",
+      "opponent": "PHI",
+      "prob": 0.17643,
+      "confidence": "low",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0040735",
+      "name": "Luther Burden III",
+      "position": "WR",
+      "team": "CHI",
+      "opponent": "PHI",
+      "prob": 0.14122,
+      "confidence": "medium",
+      "odds": null,
+      "scored": true
+    },
+    {
+      "player_id": "00-0039918",
+      "name": "Caleb Williams",
+      "position": "QB",
+      "team": "CHI",
+      "opponent": "PHI",
+      "prob": 0.13984,
+      "confidence": "medium",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0038555",
+      "name": "Tank Bigsby",
+      "position": "RB",
+      "team": "PHI",
+      "opponent": "CHI",
+      "prob": 0.13369,
+      "confidence": "medium",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0036290",
+      "name": "Cole Kmet",
+      "position": "TE",
+      "team": "CHI",
+      "opponent": "PHI",
+      "prob": 0.125,
+      "confidence": "medium",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0032464",
+      "name": "Kalif Raymond",
+      "position": "WR",
+      "team": "CHI",
+      "opponent": "PHI",
+      "prob": 0.10192,
+      "confidence": "medium",
+      "odds": null,
+      "scored": true
+    },
+    {
+      "player_id": "00-0040024",
+      "name": "Darius Cooper",
+      "position": "WR",
+      "team": "PHI",
+      "opponent": "CHI",
+      "prob": 0.07262,
+      "confidence": "medium",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0033246",
+      "name": "Johnny Mundt",
+      "position": "TE",
+      "team": "PHI",
+      "opponent": "CHI",
+      "prob": 0.07231,
+      "confidence": "medium",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0039746",
+      "name": "Will Shipley",
+      "position": "RB",
+      "team": "PHI",
+      "opponent": "CHI",
+      "prob": 0.06979,
+      "confidence": "medium",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0040277",
+      "name": "Jahdae Walker",
+      "position": "WR",
+      "team": "CHI",
+      "opponent": "PHI",
+      "prob": 0.06699,
+      "confidence": "medium",
+      "odds": null,
+      "scored": false
+    }
+  ]
+}
