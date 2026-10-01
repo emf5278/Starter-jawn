@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T18:49:09+00:00",
+  "generated_at": "2026-10-01T19:11:16+00:00",
   "date": "2026-10-01",
   "season": 2026,
   "week": 4,
@@ -325,11 +325,11 @@
         "best_price_american": 240,
         "best_book": "BetMGM",
         "implied_prob": 0.2941,
-        "fair_prob": 0.2903,
+        "fair_prob": 0.2859,
         "n_books": 6,
         "two_sided": false,
         "ev_per_dollar": -0.0554,
-        "edge_vs_fair": -0.0125
+        "edge_vs_fair": -0.0081
       }
     },
     {
@@ -344,7 +344,7 @@
       "week": 4,
       "confidence": "medium",
       "rookie": false,
-      "changed_teams": true,
+      "changed_teams": false,
       "lambda": 0.30483,
       "lambda_rush": 0.01292,
       "lambda_rec": 0.2919,
@@ -814,13 +814,13 @@
       "odds": {
         "best_price_decimal": 7.0,
         "best_price_american": 600,
-        "best_book": "DraftKings",
+        "best_book": "FanDuel",
         "implied_prob": 0.1429,
-        "fair_prob": 0.1348,
+        "fair_prob": 0.1425,
         "n_books": 6,
         "two_sided": false,
         "ev_per_dollar": -0.2123,
-        "edge_vs_fair": -0.0222
+        "edge_vs_fair": -0.0299
       }
     },
     {
