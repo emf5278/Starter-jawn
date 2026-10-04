@@ -1,0 +1,408 @@
+{
+  "date": "2026-10-01",
+  "window": "late",
+  "season": 2026,
+  "week": 4,
+  "picks": [
+    {
+      "player_id": "00-0040663",
+      "name": "Harold Fannin Jr.",
+      "position": "TE",
+      "team": "CLE",
+      "opponent": "PIT",
+      "prob": 0.34231,
+      "confidence": "medium",
+      "odds": {
+        "best_price_decimal": 3.95,
+        "best_price_american": 295,
+        "best_book": "BetRivers",
+        "implied_prob": 0.2532,
+        "fair_prob": 0.2419,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.3521,
+        "edge_vs_fair": 0.1004
+      },
+      "scored": true
+    },
+    {
+      "player_id": "00-0037228",
+      "name": "Jaylen Warren",
+      "position": "RB",
+      "team": "PIT",
+      "opponent": "CLE",
+      "prob": 0.3013,
+      "confidence": "medium",
+      "odds": {
+        "best_price_decimal": 2.0,
+        "best_price_american": 100,
+        "best_book": "FanDuel",
+        "implied_prob": 0.5,
+        "fair_prob": 0.4952,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.3974,
+        "edge_vs_fair": -0.1939
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0040784",
+      "name": "Quinshon Judkins",
+      "position": "RB",
+      "team": "CLE",
+      "opponent": "PIT",
+      "prob": 0.2864,
+      "confidence": "medium",
+      "odds": {
+        "best_price_decimal": 2.35,
+        "best_price_american": 135,
+        "best_book": "BetMGM",
+        "implied_prob": 0.4255,
+        "fair_prob": 0.4147,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.327,
+        "edge_vs_fair": -0.1283
+      },
+      "scored": true
+    },
+    {
+      "player_id": "00-0035640",
+      "name": "DK Metcalf",
+      "position": "WR",
+      "team": "PIT",
+      "opponent": "CLE",
+      "prob": 0.27782,
+      "confidence": "medium",
+      "odds": {
+        "best_price_decimal": 3.4,
+        "best_price_american": 240,
+        "best_book": "BetMGM",
+        "implied_prob": 0.2941,
+        "fair_prob": 0.2859,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.0554,
+        "edge_vs_fair": -0.0081
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0036252",
+      "name": "Michael Pittman",
+      "position": "WR",
+      "team": "PIT",
+      "opponent": "CLE",
+      "prob": 0.26275,
+      "confidence": "medium",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0036139",
+      "name": "Rico Dowdle",
+      "position": "RB",
+      "team": "PIT",
+      "opponent": "CLE",
+      "prob": 0.26018,
+      "confidence": "medium",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0036407",
+      "name": "Jerry Jeudy",
+      "position": "WR",
+      "team": "CLE",
+      "opponent": "PIT",
+      "prob": 0.22343,
+      "confidence": "medium",
+      "odds": {
+        "best_price_decimal": 12.0,
+        "best_price_american": 1100,
+        "best_book": "DraftKings",
+        "implied_prob": 0.0833,
+        "fair_prob": 0.0865,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 1.6812,
+        "edge_vs_fair": 0.137
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0036894",
+      "name": "Pat Freiermuth",
+      "position": "TE",
+      "team": "PIT",
+      "opponent": "CLE",
+      "prob": 0.18326,
+      "confidence": "medium",
+      "odds": {
+        "best_price_decimal": 5.0,
+        "best_price_american": 400,
+        "best_book": "DraftKings",
+        "implied_prob": 0.2,
+        "fair_prob": 0.2018,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.0837,
+        "edge_vs_fair": -0.0186
+      },
+      "scored": true
+    },
+    {
+      "player_id": "00-0041397",
+      "name": "Kaden Wetjen",
+      "position": "WR",
+      "team": "PIT",
+      "opponent": "CLE",
+      "prob": 0.17161,
+      "confidence": "low",
+      "odds": {
+        "best_price_decimal": 29.0,
+        "best_price_american": 2800,
+        "best_book": "BetMGM",
+        "implied_prob": 0.0345,
+        "fair_prob": 0.043,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 3.9767,
+        "edge_vs_fair": 0.1286
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0039739",
+      "name": "Roman Wilson",
+      "position": "WR",
+      "team": "PIT",
+      "opponent": "CLE",
+      "prob": 0.11851,
+      "confidence": "medium",
+      "odds": {
+        "best_price_decimal": 6.1,
+        "best_price_american": 510,
+        "best_book": "BetRivers",
+        "implied_prob": 0.1639,
+        "fair_prob": 0.1641,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.2771,
+        "edge_vs_fair": -0.0456
+      },
+      "scored": true
+    },
+    {
+      "player_id": "00-0038558",
+      "name": "Darnell Washington",
+      "position": "TE",
+      "team": "PIT",
+      "opponent": "CLE",
+      "prob": 0.11253,
+      "confidence": "medium",
+      "odds": {
+        "best_price_decimal": 7.0,
+        "best_price_american": 600,
+        "best_book": "FanDuel",
+        "implied_prob": 0.1429,
+        "fair_prob": 0.1425,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.2123,
+        "edge_vs_fair": -0.0299
+      },
+      "scored": true
+    },
+    {
+      "player_id": "00-0041131",
+      "name": "Carsen Ryan",
+      "position": "TE",
+      "team": "CLE",
+      "opponent": "PIT",
+      "prob": 0.10251,
+      "confidence": "low",
+      "odds": {
+        "best_price_decimal": 56.0,
+        "best_price_american": 5500,
+        "best_book": "FanDuel",
+        "implied_prob": 0.0179,
+        "fair_prob": 0.0224,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 4.7406,
+        "edge_vs_fair": 0.0802
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0041037",
+      "name": "Denzel Boston",
+      "position": "WR",
+      "team": "CLE",
+      "opponent": "PIT",
+      "prob": 0.10135,
+      "confidence": "low",
+      "odds": {
+        "best_price_decimal": 4.3,
+        "best_price_american": 330,
+        "best_book": "FanDuel",
+        "implied_prob": 0.2326,
+        "fair_prob": 0.2246,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.5642,
+        "edge_vs_fair": -0.1233
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0040782",
+      "name": "Isaiah Bond",
+      "position": "WR",
+      "team": "CLE",
+      "opponent": "PIT",
+      "prob": 0.09199,
+      "confidence": "medium",
+      "odds": {
+        "best_price_decimal": 26.0,
+        "best_price_american": 2500,
+        "best_book": "DraftKings",
+        "implied_prob": 0.0385,
+        "fair_prob": 0.0387,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 1.3917,
+        "edge_vs_fair": 0.0533
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0041398",
+      "name": "Riley Nowakowski",
+      "position": "RB",
+      "team": "PIT",
+      "opponent": "CLE",
+      "prob": 0.09075,
+      "confidence": "low",
+      "odds": {
+        "best_price_decimal": 34.0,
+        "best_price_american": 3300,
+        "best_book": "BetMGM",
+        "implied_prob": 0.0294,
+        "fair_prob": 0.0315,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 2.0855,
+        "edge_vs_fair": 0.0593
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0041490",
+      "name": "Eli Heidenreich",
+      "position": "RB",
+      "team": "PIT",
+      "opponent": "CLE",
+      "prob": 0.07707,
+      "confidence": "low",
+      "odds": {
+        "best_price_decimal": 29.0,
+        "best_price_american": 2800,
+        "best_book": "DraftKings",
+        "implied_prob": 0.0345,
+        "fair_prob": 0.0363,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": 1.235,
+        "edge_vs_fair": 0.0408
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0040466",
+      "name": "Raheim Sanders",
+      "position": "RB",
+      "team": "CLE",
+      "opponent": "PIT",
+      "prob": 0.07581,
+      "confidence": "medium",
+      "odds": {
+        "best_price_decimal": 8.0,
+        "best_price_american": 700,
+        "best_book": "DraftKings",
+        "implied_prob": 0.125,
+        "fair_prob": 0.1219,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.3935,
+        "edge_vs_fair": -0.046
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0041547",
+      "name": "KC Concepcion",
+      "position": "WR",
+      "team": "CLE",
+      "opponent": "PIT",
+      "prob": 0.07423,
+      "confidence": "low",
+      "odds": {
+        "best_price_decimal": 4.4,
+        "best_price_american": 340,
+        "best_book": "DraftKings",
+        "implied_prob": 0.2273,
+        "fair_prob": 0.2169,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.6734,
+        "edge_vs_fair": -0.1427
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0038794",
+      "name": "Jaleel McLaughlin",
+      "position": "RB",
+      "team": "CLE",
+      "opponent": "PIT",
+      "prob": 0.06124,
+      "confidence": "medium",
+      "odds": {
+        "best_price_decimal": 21.0,
+        "best_price_american": 2000,
+        "best_book": "BetMGM",
+        "implied_prob": 0.0476,
+        "fair_prob": 0.0472,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.286,
+        "edge_vs_fair": 0.0141
+      },
+      "scored": true
+    },
+    {
+      "player_id": "00-0038710",
+      "name": "Blake Whiteheart",
+      "position": "TE",
+      "team": "CLE",
+      "opponent": "PIT",
+      "prob": 0.05964,
+      "confidence": "medium",
+      "odds": {
+        "best_price_decimal": 14.5,
+        "best_price_american": 1350,
+        "best_book": "BetMGM",
+        "implied_prob": 0.069,
+        "fair_prob": 0.0786,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.1352,
+        "edge_vs_fair": -0.019
+      },
+      "scored": false
+    }
+  ]
+}
