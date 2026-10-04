@@ -367,7 +367,8 @@ def fetch_anytime_td_props(api_key: str, regions: str = "us",
         return {}
 
     if on_date is not None:
-        keep = []
+        now = _dt.datetime.now(et)
+        keep, started = [], 0
         for ev in events:
             ct = ev.get("commence_time")
             if not ct:
@@ -380,10 +381,16 @@ def fetch_anytime_td_props(api_key: str, regions: str = "us",
                 continue
             if et_hour_range and not (et_hour_range[0] <= when.hour < et_hour_range[1]):
                 continue
+            # Already under way: nothing on the board can be bet at the price
+            # we would archive, and each event costs a credit to price.
+            if when <= now:
+                started += 1
+                continue
             keep.append(ev)
-        log.info("NFL events in scope: %d of %d upcoming%s", len(keep), len(events),
+        log.info("NFL events in scope: %d of %d upcoming%s%s", len(keep), len(events),
                  f" (kickoff ET {et_hour_range[0]}:00-{et_hour_range[1]}:00)"
-                 if et_hour_range else "")
+                 if et_hour_range else "",
+                 f", {started} already under way" if started else "")
         events = keep
 
     quotes: dict[str, list[tuple[str, float, float | None]]] = {}

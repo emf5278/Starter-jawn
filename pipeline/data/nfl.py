@@ -186,6 +186,34 @@ def filter_window(games: list[dict], window: str) -> list[dict]:
     return out
 
 
+def drop_started(games: list[dict], now_utc: dt.datetime | None = None) -> list[dict]:
+    """The games on this slate that have not kicked off yet.
+
+    Window membership is not enough on its own. A London game kicks off at
+    9:30am ET, which is inside the "early" window but *before* the 9:30am run
+    that publishes it, so without this filter the early board carries a game
+    already in progress alongside the 1pm slate it is grouped with.
+
+    An unknown kickoff is kept rather than silently dropped, the same way
+    filter_window treats it.
+    """
+    now = now_utc or dt.datetime.now(dt.timezone.utc)
+    out = []
+    for g in games:
+        ko = g.get("kickoff_utc")
+        if not ko:
+            out.append(g)
+            continue
+        try:
+            when = dt.datetime.fromisoformat(ko)
+        except Exception:
+            out.append(g)
+            continue
+        if when > now:
+            out.append(g)
+    return out
+
+
 def _season_for(date: dt.date) -> int:
     """NFL seasons straddle the new year: January games belong to the
     previous season's schedule."""

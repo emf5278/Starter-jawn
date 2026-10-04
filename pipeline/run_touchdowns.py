@@ -100,6 +100,19 @@ def run(date: dt.date, output: str, use_odds: bool, window: str = "all") -> dict
 
     window = nfl.resolve_window(all_games, window)
     games = nfl.filter_window(all_games, window)
+
+    # A board is a list of bets you can still place. Window membership does
+    # not guarantee that -- a 9:30am ET London kickoff sits in the "early"
+    # window but is already under way by the time the 9:30am run publishes.
+    live = nfl.drop_started(games)
+    if len(live) < len(games):
+        log.info("dropping %d game(s) already under way", len(games) - len(live))
+    games = live
+    if not games:
+        log.info("every game in the %s window on %s has already kicked off — "
+                 "leaving the published board alone", window, date)
+        return {"date": date.isoformat(), "games": 0, "skipped": True}
+
     week = int(games[0]["week"])
     log.info("%s: %d of %d game(s) in the %s window, season %d week %d",
              date, len(games), len(all_games), window, season, week)
