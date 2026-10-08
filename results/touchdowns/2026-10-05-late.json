@@ -1,0 +1,408 @@
+{
+  "date": "2026-10-05",
+  "window": "late",
+  "season": 2026,
+  "week": 4,
+  "picks": [
+    {
+      "player_id": "00-0038542",
+      "name": "Bijan Robinson",
+      "position": "RB",
+      "team": "ATL",
+      "opponent": "NO",
+      "prob": 0.52117,
+      "confidence": "medium",
+      "odds": {
+        "best_price_decimal": 1.48,
+        "best_price_american": -208,
+        "best_book": "DraftKings",
+        "implied_prob": 0.6757,
+        "fair_prob": 0.6418,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.2287,
+        "edge_vs_fair": -0.1206
+      },
+      "scored": true
+    },
+    {
+      "player_id": "00-0037239",
+      "name": "Chris Olave",
+      "position": "WR",
+      "team": "NO",
+      "opponent": "ATL",
+      "prob": 0.37171,
+      "confidence": "medium",
+      "odds": {
+        "best_price_decimal": 2.25,
+        "best_price_american": 125,
+        "best_book": "DraftKings",
+        "implied_prob": 0.4444,
+        "fair_prob": 0.4241,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.1637,
+        "edge_vs_fair": -0.0523
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0037238",
+      "name": "Drake London",
+      "position": "WR",
+      "team": "ATL",
+      "opponent": "NO",
+      "prob": 0.27617,
+      "confidence": "medium",
+      "odds": {
+        "best_price_decimal": 2.35,
+        "best_price_american": 135,
+        "best_book": "BetMGM",
+        "implied_prob": 0.4255,
+        "fair_prob": 0.444,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.351,
+        "edge_vs_fair": -0.1678
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0036040",
+      "name": "Juwan Johnson",
+      "position": "TE",
+      "team": "NO",
+      "opponent": "ATL",
+      "prob": 0.27288,
+      "confidence": "medium",
+      "odds": {
+        "best_price_decimal": 3.35,
+        "best_price_american": 235,
+        "best_book": "BetRivers",
+        "implied_prob": 0.2985,
+        "fair_prob": 0.2925,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.0859,
+        "edge_vs_fair": -0.0197
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0036970",
+      "name": "Kyle Pitts",
+      "position": "TE",
+      "team": "ATL",
+      "opponent": "NO",
+      "prob": 0.23916,
+      "confidence": "medium",
+      "odds": {
+        "best_price_decimal": 4.4,
+        "best_price_american": 340,
+        "best_book": "BetMGM",
+        "implied_prob": 0.2273,
+        "fair_prob": 0.2358,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.0523,
+        "edge_vs_fair": 0.0033
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0033906",
+      "name": "Alvin Kamara",
+      "position": "RB",
+      "team": "NO",
+      "opponent": "ATL",
+      "prob": 0.19061,
+      "confidence": "medium",
+      "odds": {
+        "best_price_decimal": 2.5,
+        "best_price_american": 150,
+        "best_book": "BetMGM",
+        "implied_prob": 0.4,
+        "fair_prob": 0.3891,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.5235,
+        "edge_vs_fair": -0.1985
+      },
+      "scored": true
+    },
+    {
+      "player_id": "00-0035644",
+      "name": "Noah Fant",
+      "position": "TE",
+      "team": "NO",
+      "opponent": "ATL",
+      "prob": 0.17552,
+      "confidence": "medium",
+      "odds": {
+        "best_price_decimal": 6.5,
+        "best_price_american": 550,
+        "best_book": "DraftKings",
+        "implied_prob": 0.1538,
+        "fair_prob": 0.148,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.1409,
+        "edge_vs_fair": 0.0275
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0039424",
+      "name": "Devaughn Vele",
+      "position": "WR",
+      "team": "NO",
+      "opponent": "ATL",
+      "prob": 0.1619,
+      "confidence": "medium",
+      "odds": {
+        "best_price_decimal": 3.4,
+        "best_price_american": 240,
+        "best_book": "DraftKings",
+        "implied_prob": 0.2941,
+        "fair_prob": 0.2817,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.4495,
+        "edge_vs_fair": -0.1198
+      },
+      "scored": true
+    },
+    {
+      "player_id": "00-0037746",
+      "name": "Brian Robinson",
+      "position": "RB",
+      "team": "ATL",
+      "opponent": "NO",
+      "prob": 0.1566,
+      "confidence": "medium",
+      "odds": null,
+      "scored": true
+    },
+    {
+      "player_id": "00-0035208",
+      "name": "Olamide Zaccheaus",
+      "position": "WR",
+      "team": "ATL",
+      "opponent": "NO",
+      "prob": 0.14971,
+      "confidence": "medium",
+      "odds": {
+        "best_price_decimal": 8.75,
+        "best_price_american": 775,
+        "best_book": "BetMGM",
+        "implied_prob": 0.1143,
+        "fair_prob": 0.1127,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.31,
+        "edge_vs_fair": 0.037
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0040743",
+      "name": "Tyler Shough",
+      "position": "QB",
+      "team": "NO",
+      "opponent": "ATL",
+      "prob": 0.14402,
+      "confidence": "medium",
+      "odds": {
+        "best_price_decimal": 4.1,
+        "best_price_american": 310,
+        "best_book": "BetMGM",
+        "implied_prob": 0.2439,
+        "fair_prob": 0.2419,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.4095,
+        "edge_vs_fair": -0.0979
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0041099",
+      "name": "Barion Brown",
+      "position": "WR",
+      "team": "NO",
+      "opponent": "ATL",
+      "prob": 0.1269,
+      "confidence": "low",
+      "odds": {
+        "best_price_decimal": 14.0,
+        "best_price_american": 1300,
+        "best_book": "FanDuel",
+        "implied_prob": 0.0714,
+        "fair_prob": 0.0786,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": 0.7766,
+        "edge_vs_fair": 0.0483
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0032392",
+      "name": "Austin Hooper",
+      "position": "TE",
+      "team": "ATL",
+      "opponent": "NO",
+      "prob": 0.10779,
+      "confidence": "medium",
+      "odds": {
+        "best_price_decimal": 9.5,
+        "best_price_american": 850,
+        "best_book": "DraftKings",
+        "implied_prob": 0.1053,
+        "fair_prob": 0.1048,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.024,
+        "edge_vs_fair": 0.003
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0037741",
+      "name": "Jahan Dotson",
+      "position": "WR",
+      "team": "ATL",
+      "opponent": "NO",
+      "prob": 0.10289,
+      "confidence": "medium",
+      "odds": {
+        "best_price_decimal": 6.0,
+        "best_price_american": 500,
+        "best_book": "BetMGM",
+        "implied_prob": 0.1667,
+        "fair_prob": 0.1806,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.3827,
+        "edge_vs_fair": -0.0777
+      },
+      "scored": true
+    },
+    {
+      "player_id": "00-0038551",
+      "name": "Kendre Miller",
+      "position": "RB",
+      "team": "NO",
+      "opponent": "ATL",
+      "prob": 0.0782,
+      "confidence": "medium",
+      "odds": {
+        "best_price_decimal": 4.0,
+        "best_price_american": 300,
+        "best_book": "FanDuel",
+        "implied_prob": 0.25,
+        "fair_prob": 0.2621,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.6872,
+        "edge_vs_fair": -0.1839
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0037231",
+      "name": "Kevin Austin Jr.",
+      "position": "WR",
+      "team": "NO",
+      "opponent": "ATL",
+      "prob": 0.06651,
+      "confidence": "medium",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0041067",
+      "name": "Bryce Lance",
+      "position": "WR",
+      "team": "NO",
+      "opponent": "ATL",
+      "prob": 0.05213,
+      "confidence": "low",
+      "odds": {
+        "best_price_decimal": 6.75,
+        "best_price_american": 575,
+        "best_book": "BetMGM",
+        "implied_prob": 0.1481,
+        "fair_prob": 0.1572,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.6481,
+        "edge_vs_fair": -0.1051
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0036429",
+      "name": "Charlie Woerner",
+      "position": "TE",
+      "team": "ATL",
+      "opponent": "NO",
+      "prob": 0.04977,
+      "confidence": "medium",
+      "odds": {
+        "best_price_decimal": 31.0,
+        "best_price_american": 3000,
+        "best_book": "FanDuel",
+        "implied_prob": 0.0323,
+        "fair_prob": 0.0417,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.5429,
+        "edge_vs_fair": 0.008
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0039518",
+      "name": "Treyton Welch",
+      "position": "TE",
+      "team": "NO",
+      "opponent": "ATL",
+      "prob": 0.04953,
+      "confidence": "medium",
+      "odds": {
+        "best_price_decimal": 18.0,
+        "best_price_american": 1700,
+        "best_book": "BetRivers",
+        "implied_prob": 0.0556,
+        "fair_prob": 0.0726,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": -0.1085,
+        "edge_vs_fair": -0.023
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0041041",
+      "name": "Oscar Delp",
+      "position": "TE",
+      "team": "NO",
+      "opponent": "ATL",
+      "prob": 0.04893,
+      "confidence": "low",
+      "odds": {
+        "best_price_decimal": 16.0,
+        "best_price_american": 1500,
+        "best_book": "BetRivers",
+        "implied_prob": 0.0625,
+        "fair_prob": 0.0786,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": -0.2171,
+        "edge_vs_fair": -0.0297
+      },
+      "scored": false
+    }
+  ]
+}
