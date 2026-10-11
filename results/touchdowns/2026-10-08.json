@@ -1,0 +1,418 @@
+{
+  "date": "2026-10-08",
+  "window": "all",
+  "season": 2026,
+  "week": 5,
+  "picks": [
+    {
+      "player_id": "00-0036997",
+      "name": "Javonte Williams",
+      "position": "RB",
+      "team": "DAL",
+      "opponent": "TB",
+      "prob": 0.49684,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 1.5,
+        "best_price_american": -200,
+        "best_book": "BetMGM",
+        "implied_prob": 0.6667,
+        "fair_prob": 0.6484,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.2547,
+        "edge_vs_fair": -0.1515
+      },
+      "scored": true
+    },
+    {
+      "player_id": "00-0036358",
+      "name": "CeeDee Lamb",
+      "position": "WR",
+      "team": "DAL",
+      "opponent": "TB",
+      "prob": 0.3399,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 1.95,
+        "best_price_american": -105,
+        "best_book": "BetMGM",
+        "implied_prob": 0.5128,
+        "fair_prob": 0.5127,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.3372,
+        "edge_vs_fair": -0.1728
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0036919",
+      "name": "Kenny Gainwell",
+      "position": "RB",
+      "team": "TB",
+      "opponent": "DAL",
+      "prob": 0.33552,
+      "confidence": "medium",
+      "odds": {
+        "best_price_decimal": 6.0,
+        "best_price_american": 500,
+        "best_book": "DraftKings",
+        "implied_prob": 0.1667,
+        "fair_prob": 0.1715,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 1.0131,
+        "edge_vs_fair": 0.164
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0037247",
+      "name": "George Pickens",
+      "position": "WR",
+      "team": "DAL",
+      "opponent": "TB",
+      "prob": 0.32696,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 2.3,
+        "best_price_american": 130,
+        "best_book": "BetMGM",
+        "implied_prob": 0.4348,
+        "fair_prob": 0.4492,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.248,
+        "edge_vs_fair": -0.1223
+      },
+      "scored": true
+    },
+    {
+      "player_id": "00-0040129",
+      "name": "Emeka Egbuka",
+      "position": "WR",
+      "team": "TB",
+      "opponent": "DAL",
+      "prob": 0.29999,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 4.0,
+        "best_price_american": 300,
+        "best_book": "BetMGM",
+        "implied_prob": 0.25,
+        "fair_prob": 0.2658,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.2,
+        "edge_vs_fair": 0.0342
+      },
+      "scored": true
+    },
+    {
+      "player_id": "00-0038041",
+      "name": "Jake Ferguson",
+      "position": "TE",
+      "team": "DAL",
+      "opponent": "TB",
+      "prob": 0.29837,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 3.45,
+        "best_price_american": 245,
+        "best_book": "BetRivers",
+        "implied_prob": 0.2899,
+        "fair_prob": 0.3068,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.0294,
+        "edge_vs_fair": -0.0084
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0039361",
+      "name": "Bucky Irving",
+      "position": "RB",
+      "team": "TB",
+      "opponent": "DAL",
+      "prob": 0.27708,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 3.0,
+        "best_price_american": 200,
+        "best_book": "BetRivers",
+        "implied_prob": 0.3333,
+        "fair_prob": 0.3431,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.1688,
+        "edge_vs_fair": -0.066
+      },
+      "scored": true
+    },
+    {
+      "player_id": "00-0038951",
+      "name": "Sean Tucker",
+      "position": "RB",
+      "team": "TB",
+      "opponent": "DAL",
+      "prob": 0.19496,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 4.7,
+        "best_price_american": 370,
+        "best_book": "DraftKings",
+        "implied_prob": 0.2128,
+        "fair_prob": 0.2135,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.0837,
+        "edge_vs_fair": -0.0186
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0039410",
+      "name": "Ryan Flournoy",
+      "position": "WR",
+      "team": "DAL",
+      "opponent": "TB",
+      "prob": 0.18798,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 4.2,
+        "best_price_american": 320,
+        "best_book": "BetRivers",
+        "implied_prob": 0.2381,
+        "fair_prob": 0.2483,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.2105,
+        "edge_vs_fair": -0.0603
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0038129",
+      "name": "Cade Otton",
+      "position": "TE",
+      "team": "TB",
+      "opponent": "DAL",
+      "prob": 0.18516,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 6.0,
+        "best_price_american": 500,
+        "best_book": "BetRivers",
+        "implied_prob": 0.1667,
+        "fair_prob": 0.1715,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.111,
+        "edge_vs_fair": 0.0136
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0033921",
+      "name": "Chris Godwin Jr.",
+      "position": "WR",
+      "team": "TB",
+      "opponent": "DAL",
+      "prob": 0.14848,
+      "confidence": "high",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0040237",
+      "name": "Tez Johnson",
+      "position": "WR",
+      "team": "TB",
+      "opponent": "DAL",
+      "prob": 0.14799,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 8.5,
+        "best_price_american": 750,
+        "best_book": "FanDuel",
+        "implied_prob": 0.1176,
+        "fair_prob": 0.128,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.2579,
+        "edge_vs_fair": 0.02
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0041094",
+      "name": "Bauer Sharp",
+      "position": "TE",
+      "team": "TB",
+      "opponent": "DAL",
+      "prob": 0.10717,
+      "confidence": "low",
+      "odds": {
+        "best_price_decimal": 36.0,
+        "best_price_american": 3500,
+        "best_book": "DraftKings",
+        "implied_prob": 0.0278,
+        "fair_prob": 0.0304,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": 2.8581,
+        "edge_vs_fair": 0.0767
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0037801",
+      "name": "KaVontae Turpin",
+      "position": "WR",
+      "team": "DAL",
+      "opponent": "TB",
+      "prob": 0.1064,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 10.0,
+        "best_price_american": 900,
+        "best_book": "DraftKings",
+        "implied_prob": 0.1,
+        "fair_prob": 0.1034,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.064,
+        "edge_vs_fair": 0.003
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0038705",
+      "name": "Emari Demercado",
+      "position": "RB",
+      "team": "DAL",
+      "opponent": "TB",
+      "prob": 0.0939,
+      "confidence": "medium",
+      "odds": {
+        "best_price_decimal": 13.0,
+        "best_price_american": 1200,
+        "best_book": "BetRivers",
+        "implied_prob": 0.0769,
+        "fair_prob": 0.0786,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": 0.2207,
+        "edge_vs_fair": 0.0153
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0040930",
+      "name": "Camden Brown",
+      "position": "WR",
+      "team": "DAL",
+      "opponent": "TB",
+      "prob": 0.08958,
+      "confidence": "low",
+      "odds": {
+        "best_price_decimal": 26.0,
+        "best_price_american": 2500,
+        "best_book": "DraftKings",
+        "implied_prob": 0.0385,
+        "fair_prob": 0.041,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": 1.3291,
+        "edge_vs_fair": 0.0486
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0041048",
+      "name": "Ted Hurst III",
+      "position": "WR",
+      "team": "TB",
+      "opponent": "DAL",
+      "prob": 0.07516,
+      "confidence": "low",
+      "odds": {
+        "best_price_decimal": 6.0,
+        "best_price_american": 500,
+        "best_book": "DraftKings",
+        "implied_prob": 0.1667,
+        "fair_prob": 0.1694,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.549,
+        "edge_vs_fair": -0.0942
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0033077",
+      "name": "Dak Prescott",
+      "position": "QB",
+      "team": "DAL",
+      "opponent": "TB",
+      "prob": 0.07258,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 6.5,
+        "best_price_american": 550,
+        "best_book": "DraftKings",
+        "implied_prob": 0.1538,
+        "fair_prob": 0.1509,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.5282,
+        "edge_vs_fair": -0.0784
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0038738",
+      "name": "Hunter Luepke",
+      "position": "RB",
+      "team": "DAL",
+      "opponent": "TB",
+      "prob": 0.06978,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 13.0,
+        "best_price_american": 1200,
+        "best_book": "BetRivers",
+        "implied_prob": 0.0769,
+        "fair_prob": 0.0901,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.0929,
+        "edge_vs_fair": -0.0203
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0038547",
+      "name": "Luke Schoonmaker",
+      "position": "TE",
+      "team": "DAL",
+      "opponent": "TB",
+      "prob": 0.0693,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 14.0,
+        "best_price_american": 1300,
+        "best_book": "BetRivers",
+        "implied_prob": 0.0714,
+        "fair_prob": 0.0858,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.0298,
+        "edge_vs_fair": -0.0165
+      },
+      "scored": false
+    }
+  ]
+}
