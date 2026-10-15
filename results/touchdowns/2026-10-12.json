@@ -1,0 +1,418 @@
+{
+  "date": "2026-10-12",
+  "window": "all",
+  "season": 2026,
+  "week": 5,
+  "picks": [
+    {
+      "player_id": "00-0037840",
+      "name": "Kyren Williams",
+      "position": "RB",
+      "team": "LA",
+      "opponent": "BUF",
+      "prob": 0.54421,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 1.62,
+        "best_price_american": -161,
+        "best_book": "FanDuel",
+        "implied_prob": 0.6173,
+        "fair_prob": 0.6047,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": -0.1184,
+        "edge_vs_fair": -0.0605
+      },
+      "scored": true
+    },
+    {
+      "player_id": "00-0037248",
+      "name": "James Cook",
+      "position": "RB",
+      "team": "BUF",
+      "opponent": "LA",
+      "prob": 0.43741,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 1.87,
+        "best_price_american": -115,
+        "best_book": "DraftKings",
+        "implied_prob": 0.5348,
+        "fair_prob": 0.5155,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": -0.182,
+        "edge_vs_fair": -0.0781
+      },
+      "scored": true
+    },
+    {
+      "player_id": "00-0031381",
+      "name": "Davante Adams",
+      "position": "WR",
+      "team": "LA",
+      "opponent": "BUF",
+      "prob": 0.41163,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 2.0,
+        "best_price_american": 100,
+        "best_book": "DraftKings",
+        "implied_prob": 0.5,
+        "fair_prob": 0.4717,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": -0.1767,
+        "edge_vs_fair": -0.0601
+      },
+      "scored": true
+    },
+    {
+      "player_id": "00-0039075",
+      "name": "Puka Nacua",
+      "position": "WR",
+      "team": "LA",
+      "opponent": "BUF",
+      "prob": 0.38404,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 1.83,
+        "best_price_american": -120,
+        "best_book": "BetRivers",
+        "implied_prob": 0.5464,
+        "fair_prob": 0.5241,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": -0.2972,
+        "edge_vs_fair": -0.1401
+      },
+      "scored": true
+    },
+    {
+      "player_id": "00-0039738",
+      "name": "Blake Corum",
+      "position": "RB",
+      "team": "LA",
+      "opponent": "BUF",
+      "prob": 0.32493,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 4.0,
+        "best_price_american": 300,
+        "best_book": "BetRivers",
+        "implied_prob": 0.25,
+        "fair_prob": 0.2657,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": 0.2997,
+        "edge_vs_fair": 0.0592
+      },
+      "scored": true
+    },
+    {
+      "player_id": "00-0034857",
+      "name": "Josh Allen",
+      "position": "QB",
+      "team": "BUF",
+      "opponent": "LA",
+      "prob": 0.31638,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 1.85,
+        "best_price_american": -118,
+        "best_book": "BetRivers",
+        "implied_prob": 0.5405,
+        "fair_prob": 0.5155,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": -0.4147,
+        "edge_vs_fair": -0.1991
+      },
+      "scored": true
+    },
+    {
+      "player_id": "00-0041510",
+      "name": "Max Klare",
+      "position": "TE",
+      "team": "LA",
+      "opponent": "BUF",
+      "prob": 0.25652,
+      "confidence": "low",
+      "odds": {
+        "best_price_decimal": 23.0,
+        "best_price_american": 2200,
+        "best_book": "DraftKings",
+        "implied_prob": 0.0435,
+        "fair_prob": 0.0449,
+        "n_books": 4,
+        "two_sided": false,
+        "ev_per_dollar": 4.9,
+        "edge_vs_fair": 0.2116
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0034827",
+      "name": "DJ Moore",
+      "position": "WR",
+      "team": "BUF",
+      "opponent": "LA",
+      "prob": 0.24629,
+      "confidence": "medium",
+      "odds": {
+        "best_price_decimal": 2.95,
+        "best_price_american": 195,
+        "best_book": "BetMGM",
+        "implied_prob": 0.339,
+        "fair_prob": 0.3284,
+        "n_books": 2,
+        "two_sided": false,
+        "ev_per_dollar": -0.2734,
+        "edge_vs_fair": -0.0821
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0037261",
+      "name": "Khalil Shakir",
+      "position": "WR",
+      "team": "BUF",
+      "opponent": "LA",
+      "prob": 0.24559,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 3.5,
+        "best_price_american": 250,
+        "best_book": "BetMGM",
+        "implied_prob": 0.2857,
+        "fair_prob": 0.2948,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": -0.1404,
+        "edge_vs_fair": -0.0492
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0036244",
+      "name": "Colby Parkinson",
+      "position": "TE",
+      "team": "LA",
+      "opponent": "BUF",
+      "prob": 0.20679,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 3.8,
+        "best_price_american": 280,
+        "best_book": "BetMGM",
+        "implied_prob": 0.2632,
+        "fair_prob": 0.2859,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": -0.2142,
+        "edge_vs_fair": -0.0791
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0039901",
+      "name": "Keon Coleman",
+      "position": "WR",
+      "team": "BUF",
+      "opponent": "LA",
+      "prob": 0.19924,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 3.6,
+        "best_price_american": 260,
+        "best_book": "BetMGM",
+        "implied_prob": 0.2778,
+        "fair_prob": 0.2775,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": -0.2827,
+        "edge_vs_fair": -0.0782
+      },
+      "scored": true
+    },
+    {
+      "player_id": "00-0038933",
+      "name": "Dalton Kincaid",
+      "position": "TE",
+      "team": "BUF",
+      "opponent": "LA",
+      "prob": 0.18974,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 2.8,
+        "best_price_american": 180,
+        "best_book": "BetRivers",
+        "implied_prob": 0.3571,
+        "fair_prob": 0.356,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": -0.4687,
+        "edge_vs_fair": -0.1663
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0033110",
+      "name": "Tyler Higbee",
+      "position": "TE",
+      "team": "LA",
+      "opponent": "BUF",
+      "prob": 0.17895,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 3.5,
+        "best_price_american": 250,
+        "best_book": "BetMGM",
+        "implied_prob": 0.2857,
+        "fair_prob": 0.2775,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": -0.3737,
+        "edge_vs_fair": -0.0985
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0041443",
+      "name": "Skyler Bell",
+      "position": "WR",
+      "team": "BUF",
+      "opponent": "LA",
+      "prob": 0.17232,
+      "confidence": "low",
+      "odds": {
+        "best_price_decimal": 9.0,
+        "best_price_american": 800,
+        "best_book": "BetRivers",
+        "implied_prob": 0.1111,
+        "fair_prob": 0.1258,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": 0.5509,
+        "edge_vs_fair": 0.0465
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0041399",
+      "name": "CJ Daniels",
+      "position": "WR",
+      "team": "LA",
+      "opponent": "BUF",
+      "prob": 0.16286,
+      "confidence": "low",
+      "odds": {
+        "best_price_decimal": 19.0,
+        "best_price_american": 1800,
+        "best_book": "BetRivers",
+        "implied_prob": 0.0526,
+        "fair_prob": 0.0592,
+        "n_books": 4,
+        "two_sided": false,
+        "ev_per_dollar": 2.0943,
+        "edge_vs_fair": 0.1037
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0035689",
+      "name": "Dawson Knox",
+      "position": "TE",
+      "team": "BUF",
+      "opponent": "LA",
+      "prob": 0.15796,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 7.0,
+        "best_price_american": 600,
+        "best_book": "BetMGM",
+        "implied_prob": 0.1429,
+        "fair_prob": 0.1715,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": 0.1057,
+        "edge_vs_fair": -0.0136
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0035537",
+      "name": "Ty Johnson",
+      "position": "RB",
+      "team": "BUF",
+      "opponent": "LA",
+      "prob": 0.14452,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 8.5,
+        "best_price_american": 750,
+        "best_book": "DraftKings",
+        "implied_prob": 0.1176,
+        "fair_prob": 0.1348,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": 0.2284,
+        "edge_vs_fair": 0.0097
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0039074",
+      "name": "Davis Allen",
+      "position": "TE",
+      "team": "LA",
+      "opponent": "BUF",
+      "prob": 0.12968,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 9.5,
+        "best_price_american": 850,
+        "best_book": "DraftKings",
+        "implied_prob": 0.1053,
+        "fair_prob": 0.111,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": 0.232,
+        "edge_vs_fair": 0.0187
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0040590",
+      "name": "Konata Mumpfield",
+      "position": "WR",
+      "team": "LA",
+      "opponent": "BUF",
+      "prob": 0.12886,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 10.0,
+        "best_price_american": 900,
+        "best_book": "BetRivers",
+        "implied_prob": 0.1,
+        "fair_prob": 0.1078,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": 0.2886,
+        "edge_vs_fair": 0.021
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0036988",
+      "name": "Josh Palmer",
+      "position": "WR",
+      "team": "BUF",
+      "opponent": "LA",
+      "prob": 0.12779,
+      "confidence": "high",
+      "odds": null,
+      "scored": false
+    }
+  ]
+}
