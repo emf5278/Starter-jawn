@@ -1,0 +1,428 @@
+{
+  "date": "2026-10-15",
+  "window": "late",
+  "season": 2026,
+  "week": 6,
+  "picks": [
+    {
+      "player_id": "00-0038543",
+      "name": "Jaxon Smith-Njigba",
+      "position": "WR",
+      "team": "SEA",
+      "opponent": "DEN",
+      "prob": 0.38679,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 2.1,
+        "best_price_american": 110,
+        "best_book": "BetMGM",
+        "implied_prob": 0.4762,
+        "fair_prob": 0.4602,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": -0.1877,
+        "edge_vs_fair": -0.0734
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0038797",
+      "name": "Emanuel Wilson",
+      "position": "RB",
+      "team": "SEA",
+      "opponent": "DEN",
+      "prob": 0.31069,
+      "confidence": "medium",
+      "odds": {
+        "best_price_decimal": 2.2,
+        "best_price_american": 120,
+        "best_book": "FanDuel",
+        "implied_prob": 0.4545,
+        "fair_prob": 0.4388,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": -0.3165,
+        "edge_vs_fair": -0.1281
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0040730",
+      "name": "RJ Harvey",
+      "position": "RB",
+      "team": "DEN",
+      "opponent": "SEA",
+      "prob": 0.29699,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 4.0,
+        "best_price_american": 300,
+        "best_book": "DraftKings",
+        "implied_prob": 0.25,
+        "fair_prob": 0.2419,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": 0.188,
+        "edge_vs_fair": 0.0551
+      },
+      "scored": true
+    },
+    {
+      "player_id": "00-0036158",
+      "name": "J.K. Dobbins",
+      "position": "RB",
+      "team": "DEN",
+      "opponent": "SEA",
+      "prob": 0.27401,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 2.9,
+        "best_price_american": 190,
+        "best_book": "DraftKings",
+        "implied_prob": 0.3448,
+        "fair_prob": 0.3369,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": -0.2054,
+        "edge_vs_fair": -0.0629
+      },
+      "scored": true
+    },
+    {
+      "player_id": "00-0034348",
+      "name": "Courtland Sutton",
+      "position": "WR",
+      "team": "DEN",
+      "opponent": "SEA",
+      "prob": 0.27352,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 3.8,
+        "best_price_american": 280,
+        "best_book": "BetMGM",
+        "implied_prob": 0.2632,
+        "fair_prob": 0.2621,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": 0.0394,
+        "edge_vs_fair": 0.0115
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0036613",
+      "name": "Jaylen Waddle",
+      "position": "WR",
+      "team": "DEN",
+      "opponent": "SEA",
+      "prob": 0.24702,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 3.8,
+        "best_price_american": 280,
+        "best_book": "BetMGM",
+        "implied_prob": 0.2632,
+        "fair_prob": 0.2775,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": -0.0613,
+        "edge_vs_fair": -0.0304
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0039868",
+      "name": "Troy Franklin",
+      "position": "WR",
+      "team": "DEN",
+      "opponent": "SEA",
+      "prob": 0.20532,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 8.0,
+        "best_price_american": 700,
+        "best_book": "DraftKings",
+        "implied_prob": 0.125,
+        "fair_prob": 0.1258,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": 0.6426,
+        "edge_vs_fair": 0.0795
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0039793",
+      "name": "AJ Barner",
+      "position": "TE",
+      "team": "SEA",
+      "opponent": "DEN",
+      "prob": 0.19017,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 4.2,
+        "best_price_american": 320,
+        "best_book": "FanDuel",
+        "implied_prob": 0.2381,
+        "fair_prob": 0.2301,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": -0.2013,
+        "edge_vs_fair": -0.0399
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0037545",
+      "name": "Rashid Shaheed",
+      "position": "WR",
+      "team": "SEA",
+      "opponent": "DEN",
+      "prob": 0.17832,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 5.75,
+        "best_price_american": 475,
+        "best_book": "DraftKings",
+        "implied_prob": 0.1739,
+        "fair_prob": 0.1887,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": 0.0253,
+        "edge_vs_fair": -0.0104
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0033908",
+      "name": "Cooper Kupp",
+      "position": "WR",
+      "team": "SEA",
+      "opponent": "DEN",
+      "prob": 0.16431,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 5.6,
+        "best_price_american": 460,
+        "best_book": "FanDuel",
+        "implied_prob": 0.1786,
+        "fair_prob": 0.1797,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": -0.0799,
+        "edge_vs_fair": -0.0154
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0033881",
+      "name": "Evan Engram",
+      "position": "TE",
+      "team": "DEN",
+      "opponent": "SEA",
+      "prob": 0.16318,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 7.0,
+        "best_price_american": 600,
+        "best_book": "BetRivers",
+        "implied_prob": 0.1429,
+        "fair_prob": 0.1572,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": 0.1423,
+        "edge_vs_fair": 0.0059
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0039732",
+      "name": "Bo Nix",
+      "position": "QB",
+      "team": "DEN",
+      "opponent": "SEA",
+      "prob": 0.11657,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 5.6,
+        "best_price_american": 460,
+        "best_book": "BetRivers",
+        "implied_prob": 0.1786,
+        "fair_prob": 0.1887,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": -0.3472,
+        "edge_vs_fair": -0.0721
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0039299",
+      "name": "George Holani",
+      "position": "RB",
+      "team": "SEA",
+      "opponent": "DEN",
+      "prob": 0.11554,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 6.5,
+        "best_price_american": 550,
+        "best_book": "DraftKings",
+        "implied_prob": 0.1538,
+        "fair_prob": 0.1925,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": -0.249,
+        "edge_vs_fair": -0.077
+      },
+      "scored": true
+    },
+    {
+      "player_id": "00-0038976",
+      "name": "Marvin Mims Jr.",
+      "position": "WR",
+      "team": "DEN",
+      "opponent": "SEA",
+      "prob": 0.09514,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 11.0,
+        "best_price_american": 1000,
+        "best_book": "DraftKings",
+        "implied_prob": 0.0909,
+        "fair_prob": 0.0943,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": 0.0465,
+        "edge_vs_fair": 0.0008
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0040648",
+      "name": "Tory Horton",
+      "position": "WR",
+      "team": "SEA",
+      "opponent": "DEN",
+      "prob": 0.09365,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 11.0,
+        "best_price_american": 1000,
+        "best_book": "DraftKings",
+        "implied_prob": 0.0909,
+        "fair_prob": 0.1048,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": 0.0302,
+        "edge_vs_fair": -0.0112
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0041133",
+      "name": "Dallen Bentley",
+      "position": "TE",
+      "team": "DEN",
+      "opponent": "SEA",
+      "prob": 0.09232,
+      "confidence": "low",
+      "odds": {
+        "best_price_decimal": 25.0,
+        "best_price_american": 2400,
+        "best_book": "BetRivers",
+        "implied_prob": 0.04,
+        "fair_prob": 0.052,
+        "n_books": 4,
+        "two_sided": false,
+        "ev_per_dollar": 1.308,
+        "edge_vs_fair": 0.0404
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0037085",
+      "name": "Tyler Badie",
+      "position": "RB",
+      "team": "DEN",
+      "opponent": "SEA",
+      "prob": 0.08189,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 15.0,
+        "best_price_american": 1400,
+        "best_book": "DraftKings",
+        "implied_prob": 0.0667,
+        "fair_prob": 0.0786,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": 0.2284,
+        "edge_vs_fair": 0.0033
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0038783",
+      "name": "Nate Adkins",
+      "position": "TE",
+      "team": "DEN",
+      "opponent": "SEA",
+      "prob": 0.07405,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 15.0,
+        "best_price_american": 1400,
+        "best_book": "FanDuel",
+        "implied_prob": 0.0667,
+        "fair_prob": 0.0674,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": 0.1108,
+        "edge_vs_fair": 0.0067
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0040739",
+      "name": "Elijah Arroyo",
+      "position": "TE",
+      "team": "SEA",
+      "opponent": "DEN",
+      "prob": 0.07104,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 11.0,
+        "best_price_american": 1000,
+        "best_book": "BetMGM",
+        "implied_prob": 0.0909,
+        "fair_prob": 0.0898,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": -0.2186,
+        "edge_vs_fair": -0.0188
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0035406",
+      "name": "Lil'Jordan Humphrey",
+      "position": "WR",
+      "team": "DEN",
+      "opponent": "SEA",
+      "prob": 0.0668,
+      "confidence": "medium",
+      "odds": {
+        "best_price_decimal": 16.0,
+        "best_price_american": 1500,
+        "best_book": "DraftKings",
+        "implied_prob": 0.0625,
+        "fair_prob": 0.0629,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": 0.0688,
+        "edge_vs_fair": 0.0039
+      },
+      "scored": false
+    }
+  ]
+}
