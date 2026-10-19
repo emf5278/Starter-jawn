@@ -1,0 +1,1474 @@
+{
+  "generated_at": "2026-10-19T19:15:06+00:00",
+  "date": "2026-10-19",
+  "season": 2026,
+  "week": 6,
+  "model_version": "td-0.1.0",
+  "n_games": 1,
+  "n_games_today": 1,
+  "window": "late",
+  "window_label": "late games (4pm ET and later)",
+  "n_players_scored": 30,
+  "odds_available": true,
+  "game_lines_available": true,
+  "seasons_used": [
+    2026,
+    2025
+  ],
+  "current_season_games": 5,
+  "cold_start": false,
+  "league": {
+    "rush_td_per_team_game": 0.938,
+    "rec_td_per_team_game": 1.491
+  },
+  "top_n": 20,
+  "ev_min_prob": 0.1,
+  "ev_max_ratio": 1.3,
+  "games": [
+    {
+      "game_id": "2026_06_WAS_SF",
+      "season": 2026,
+      "week": 6,
+      "game_type": "REG",
+      "kickoff_utc": "2026-10-20T00:15:00+00:00",
+      "home_team": "SF",
+      "away_team": "WAS",
+      "roof": "outdoors",
+      "stadium": "Levi's Stadium",
+      "home_score": null,
+      "away_score": null
+    }
+  ],
+  "players": [
+    {
+      "player_id": "00-0033280",
+      "name": "Christian McCaffrey",
+      "position": "RB",
+      "team": "SF",
+      "opponent": "WAS",
+      "home": true,
+      "game_id": "2026_06_WAS_SF",
+      "kickoff_utc": "2026-10-20T00:15:00+00:00",
+      "week": 6,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 1.0659,
+      "lambda_rush": 0.54117,
+      "lambda_rec": 0.52472,
+      "prob": 0.65558,
+      "expected_tds": 1.0659,
+      "team_expected_off_tds": 2.988,
+      "team_expected_rush_tds": 1.012,
+      "team_expected_rec_tds": 1.976,
+      "shares": {
+        "rush": 0.5454,
+        "rec": 0.2124
+      },
+      "usage": {
+        "carries": 247.6,
+        "goal_line_carries": 20.0,
+        "targets": 102.39999999999999,
+        "red_zone_targets": 18.0,
+        "prior_rush_tds": 11.0,
+        "prior_rec_tds": 4.2
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.9883,
+          "implied_points": 27.5,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3386,
+          "observed": 0.3138,
+          "n_tds": 47.8
+        },
+        "opp_rush": {
+          "value": 0.9806,
+          "per_game": 0.908,
+          "n_games": 15.2
+        },
+        "opp_rec": {
+          "value": 1.25,
+          "per_game": 2.224,
+          "n_games": 15.2
+        },
+        "game_line": {
+          "total": 50.5,
+          "spread": -4.5,
+          "implied_team_runs": 27.5
+        }
+      },
+      "break_even_american": -190,
+      "odds": {
+        "best_price_decimal": 1.4,
+        "best_price_american": -250,
+        "best_book": "BetMGM",
+        "implied_prob": 0.7143,
+        "fair_prob": 0.6836,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.0822,
+        "edge_vs_fair": -0.028
+      }
+    },
+    {
+      "player_id": "00-0033288",
+      "name": "George Kittle",
+      "position": "TE",
+      "team": "SF",
+      "opponent": "WAS",
+      "home": true,
+      "game_id": "2026_06_WAS_SF",
+      "kickoff_utc": "2026-10-20T00:15:00+00:00",
+      "week": 6,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.48417,
+      "lambda_rush": 0.02359,
+      "lambda_rec": 0.46058,
+      "prob": 0.38379,
+      "expected_tds": 0.4842,
+      "team_expected_off_tds": 2.988,
+      "team_expected_rush_tds": 1.012,
+      "team_expected_rec_tds": 1.976,
+      "shares": {
+        "rush": 0.0238,
+        "rec": 0.1864
+      },
+      "usage": {
+        "carries": 0.6,
+        "goal_line_carries": 0.0,
+        "targets": 69.4,
+        "red_zone_targets": 13.8,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 8.2
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.9883,
+          "implied_points": 27.5,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3386,
+          "observed": 0.3138,
+          "n_tds": 47.8
+        },
+        "opp_rush": {
+          "value": 0.9806,
+          "per_game": 0.908,
+          "n_games": 15.2
+        },
+        "opp_rec": {
+          "value": 1.25,
+          "per_game": 2.224,
+          "n_games": 15.2
+        },
+        "game_line": {
+          "total": 50.5,
+          "spread": -4.5,
+          "implied_team_runs": 27.5
+        }
+      },
+      "break_even_american": 161,
+      "odds": {
+        "best_price_decimal": 2.1,
+        "best_price_american": 110,
+        "best_book": "DraftKings",
+        "implied_prob": 0.4762,
+        "fair_prob": 0.4602,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.194,
+        "edge_vs_fair": -0.0764
+      }
+    },
+    {
+      "player_id": "00-0035719",
+      "name": "Deebo Samuel Sr.",
+      "position": "WR",
+      "team": "SF",
+      "opponent": "WAS",
+      "home": true,
+      "game_id": "2026_06_WAS_SF",
+      "kickoff_utc": "2026-10-20T00:15:00+00:00",
+      "week": 6,
+      "confidence": "medium",
+      "rookie": false,
+      "changed_teams": true,
+      "lambda": 0.47744,
+      "lambda_rush": 0.03647,
+      "lambda_rec": 0.44097,
+      "prob": 0.37963,
+      "expected_tds": 0.4774,
+      "team_expected_off_tds": 2.988,
+      "team_expected_rush_tds": 1.012,
+      "team_expected_rec_tds": 1.976,
+      "shares": {
+        "rush": 0.0368,
+        "rec": 0.1785
+      },
+      "usage": {
+        "carries": 19.2,
+        "goal_line_carries": 0.6,
+        "targets": 80.0,
+        "red_zone_targets": 12.8,
+        "prior_rush_tds": 0.6,
+        "prior_rec_tds": 5.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.9883,
+          "implied_points": 27.5,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3386,
+          "observed": 0.3138,
+          "n_tds": 47.8
+        },
+        "opp_rush": {
+          "value": 0.9806,
+          "per_game": 0.908,
+          "n_games": 15.2
+        },
+        "opp_rec": {
+          "value": 1.25,
+          "per_game": 2.224,
+          "n_games": 15.2
+        },
+        "game_line": {
+          "total": 50.5,
+          "spread": -4.5,
+          "implied_team_runs": 27.5
+        }
+      },
+      "break_even_american": 163,
+      "odds": null
+    },
+    {
+      "player_id": "00-0031408",
+      "name": "Mike Evans",
+      "position": "WR",
+      "team": "SF",
+      "opponent": "WAS",
+      "home": true,
+      "game_id": "2026_06_WAS_SF",
+      "kickoff_utc": "2026-10-20T00:15:00+00:00",
+      "week": 6,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.44801,
+      "lambda_rush": 0.02385,
+      "lambda_rec": 0.42415,
+      "prob": 0.3611,
+      "expected_tds": 0.448,
+      "team_expected_off_tds": 2.988,
+      "team_expected_rush_tds": 1.012,
+      "team_expected_rec_tds": 1.976,
+      "shares": {
+        "rush": 0.024,
+        "rec": 0.1717
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 72.19999999999999,
+        "red_zone_targets": 12.399999999999999,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 5.8
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.9883,
+          "implied_points": 27.5,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3386,
+          "observed": 0.3138,
+          "n_tds": 47.8
+        },
+        "opp_rush": {
+          "value": 0.9806,
+          "per_game": 0.908,
+          "n_games": 15.2
+        },
+        "opp_rec": {
+          "value": 1.25,
+          "per_game": 2.224,
+          "n_games": 15.2
+        },
+        "game_line": {
+          "total": 50.5,
+          "spread": -4.5,
+          "implied_team_runs": 27.5
+        }
+      },
+      "break_even_american": 177,
+      "odds": {
+        "best_price_decimal": 1.88,
+        "best_price_american": -114,
+        "best_book": "BetRivers",
+        "implied_prob": 0.5319,
+        "fair_prob": 0.5198,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.3211,
+        "edge_vs_fair": -0.1587
+      }
+    },
+    {
+      "player_id": "00-0031588",
+      "name": "Stefon Diggs",
+      "position": "WR",
+      "team": "WAS",
+      "opponent": "SF",
+      "home": false,
+      "game_id": "2026_06_WAS_SF",
+      "kickoff_utc": "2026-10-20T00:15:00+00:00",
+      "week": 6,
+      "confidence": "medium",
+      "rookie": false,
+      "changed_teams": true,
+      "lambda": 0.34633,
+      "lambda_rush": 0.02042,
+      "lambda_rec": 0.32592,
+      "prob": 0.29272,
+      "expected_tds": 0.3463,
+      "team_expected_off_tds": 2.333,
+      "team_expected_rush_tds": 0.991,
+      "team_expected_rec_tds": 1.342,
+      "shares": {
+        "rush": 0.0241,
+        "rec": 0.2445
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 92.19999999999999,
+        "red_zone_targets": 11.2,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 5.4
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.3332,
+          "implied_points": 22.25,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.4247,
+          "observed": 0.452,
+          "n_tds": 35.4
+        },
+        "opp_rush": {
+          "value": 0.8537,
+          "per_game": 0.711,
+          "n_games": 15.2
+        },
+        "opp_rec": {
+          "value": 0.993,
+          "per_game": 1.474,
+          "n_games": 15.2
+        },
+        "game_line": {
+          "total": 52.0,
+          "spread": 7.5,
+          "implied_team_runs": 22.25
+        }
+      },
+      "break_even_american": 242,
+      "odds": {
+        "best_price_decimal": 3.45,
+        "best_price_american": 245,
+        "best_book": "DraftKings",
+        "implied_prob": 0.2899,
+        "fair_prob": 0.2839,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.0099,
+        "edge_vs_fair": 0.0088
+      }
+    },
+    {
+      "player_id": "00-0040242",
+      "name": "Jacory Croskey-Merritt",
+      "position": "RB",
+      "team": "WAS",
+      "opponent": "SF",
+      "home": false,
+      "game_id": "2026_06_WAS_SF",
+      "kickoff_utc": "2026-10-20T00:15:00+00:00",
+      "week": 6,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.31821,
+      "lambda_rush": 0.27609,
+      "lambda_rec": 0.04212,
+      "prob": 0.27255,
+      "expected_tds": 0.3182,
+      "team_expected_off_tds": 2.333,
+      "team_expected_rush_tds": 0.991,
+      "team_expected_rec_tds": 1.342,
+      "shares": {
+        "rush": 0.3264,
+        "rec": 0.0316
+      },
+      "usage": {
+        "carries": 172.6,
+        "goal_line_carries": 8.8,
+        "targets": 14.8,
+        "red_zone_targets": 1.6,
+        "prior_rush_tds": 6.8,
+        "prior_rec_tds": 0.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.3332,
+          "implied_points": 22.25,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.4247,
+          "observed": 0.452,
+          "n_tds": 35.4
+        },
+        "opp_rush": {
+          "value": 0.8537,
+          "per_game": 0.711,
+          "n_games": 15.2
+        },
+        "opp_rec": {
+          "value": 0.993,
+          "per_game": 1.474,
+          "n_games": 15.2
+        },
+        "game_line": {
+          "total": 52.0,
+          "spread": 7.5,
+          "implied_team_runs": 22.25
+        }
+      },
+      "break_even_american": 267,
+      "odds": null
+    },
+    {
+      "player_id": "00-0037256",
+      "name": "Rachaad White",
+      "position": "RB",
+      "team": "WAS",
+      "opponent": "SF",
+      "home": false,
+      "game_id": "2026_06_WAS_SF",
+      "kickoff_utc": "2026-10-20T00:15:00+00:00",
+      "week": 6,
+      "confidence": "medium",
+      "rookie": false,
+      "changed_teams": true,
+      "lambda": 0.30049,
+      "lambda_rush": 0.18488,
+      "lambda_rec": 0.11561,
+      "prob": 0.25954,
+      "expected_tds": 0.3005,
+      "team_expected_off_tds": 2.333,
+      "team_expected_rush_tds": 0.991,
+      "team_expected_rec_tds": 1.342,
+      "shares": {
+        "rush": 0.2186,
+        "rec": 0.0867
+      },
+      "usage": {
+        "carries": 108.8,
+        "goal_line_carries": 6.3999999999999995,
+        "targets": 37.0,
+        "red_zone_targets": 8.0,
+        "prior_rush_tds": 2.4,
+        "prior_rec_tds": 1.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.3332,
+          "implied_points": 22.25,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.4247,
+          "observed": 0.452,
+          "n_tds": 35.4
+        },
+        "opp_rush": {
+          "value": 0.8537,
+          "per_game": 0.711,
+          "n_games": 15.2
+        },
+        "opp_rec": {
+          "value": 0.993,
+          "per_game": 1.474,
+          "n_games": 15.2
+        },
+        "game_line": {
+          "total": 52.0,
+          "spread": 7.5,
+          "implied_team_runs": 22.25
+        }
+      },
+      "break_even_american": 285,
+      "odds": {
+        "best_price_decimal": 2.12,
+        "best_price_american": 112,
+        "best_book": "BetRivers",
+        "implied_prob": 0.4717,
+        "fair_prob": 0.4492,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.4498,
+        "edge_vs_fair": -0.1897
+      }
+    },
+    {
+      "player_id": "00-0035659",
+      "name": "Terry McLaurin",
+      "position": "WR",
+      "team": "WAS",
+      "opponent": "SF",
+      "home": false,
+      "game_id": "2026_06_WAS_SF",
+      "kickoff_utc": "2026-10-20T00:15:00+00:00",
+      "week": 6,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.2295,
+      "lambda_rush": 0.02042,
+      "lambda_rec": 0.20909,
+      "prob": 0.20507,
+      "expected_tds": 0.2295,
+      "team_expected_off_tds": 2.333,
+      "team_expected_rush_tds": 0.991,
+      "team_expected_rec_tds": 1.342,
+      "shares": {
+        "rush": 0.0241,
+        "rec": 0.1569
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 63.0,
+        "red_zone_targets": 8.8,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 2.8
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.3332,
+          "implied_points": 22.25,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.4247,
+          "observed": 0.452,
+          "n_tds": 35.4
+        },
+        "opp_rush": {
+          "value": 0.8537,
+          "per_game": 0.711,
+          "n_games": 15.2
+        },
+        "opp_rec": {
+          "value": 0.993,
+          "per_game": 1.474,
+          "n_games": 15.2
+        },
+        "game_line": {
+          "total": 52.0,
+          "spread": 7.5,
+          "implied_team_runs": 22.25
+        }
+      },
+      "break_even_american": 388,
+      "odds": {
+        "best_price_decimal": 3.25,
+        "best_price_american": 225,
+        "best_book": "BetMGM",
+        "implied_prob": 0.3077,
+        "fair_prob": 0.2948,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.3335,
+        "edge_vs_fair": -0.0897
+      }
+    },
+    {
+      "player_id": "00-0037809",
+      "name": "Chig Okonkwo",
+      "position": "TE",
+      "team": "WAS",
+      "opponent": "SF",
+      "home": false,
+      "game_id": "2026_06_WAS_SF",
+      "kickoff_utc": "2026-10-20T00:15:00+00:00",
+      "week": 6,
+      "confidence": "medium",
+      "rookie": false,
+      "changed_teams": true,
+      "lambda": 0.18353,
+      "lambda_rush": 0.02042,
+      "lambda_rec": 0.16311,
+      "prob": 0.16767,
+      "expected_tds": 0.1835,
+      "team_expected_off_tds": 2.333,
+      "team_expected_rush_tds": 0.991,
+      "team_expected_rec_tds": 1.342,
+      "shares": {
+        "rush": 0.0241,
+        "rec": 0.1224
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 60.4,
+        "red_zone_targets": 3.0,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 1.2
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.3332,
+          "implied_points": 22.25,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.4247,
+          "observed": 0.452,
+          "n_tds": 35.4
+        },
+        "opp_rush": {
+          "value": 0.8537,
+          "per_game": 0.711,
+          "n_games": 15.2
+        },
+        "opp_rec": {
+          "value": 0.993,
+          "per_game": 1.474,
+          "n_games": 15.2
+        },
+        "game_line": {
+          "total": 52.0,
+          "spread": 7.5,
+          "implied_team_runs": 22.25
+        }
+      },
+      "break_even_american": 496,
+      "odds": {
+        "best_price_decimal": 4.25,
+        "best_price_american": 325,
+        "best_book": "BetMGM",
+        "implied_prob": 0.2353,
+        "fair_prob": 0.2301,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.2874,
+        "edge_vs_fair": -0.0624
+      }
+    },
+    {
+      "player_id": "00-0029892",
+      "name": "Kyle Juszczyk",
+      "position": "RB",
+      "team": "SF",
+      "opponent": "WAS",
+      "home": true,
+      "game_id": "2026_06_WAS_SF",
+      "kickoff_utc": "2026-10-20T00:15:00+00:00",
+      "week": 6,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.1619,
+      "lambda_rush": 0.02383,
+      "lambda_rec": 0.13807,
+      "prob": 0.14948,
+      "expected_tds": 0.1619,
+      "team_expected_off_tds": 2.988,
+      "team_expected_rush_tds": 1.012,
+      "team_expected_rec_tds": 1.976,
+      "shares": {
+        "rush": 0.024,
+        "rec": 0.0559
+      },
+      "usage": {
+        "carries": 1.2,
+        "goal_line_carries": 0.6,
+        "targets": 22.8,
+        "red_zone_targets": 5.0,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 2.2
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.9883,
+          "implied_points": 27.5,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3386,
+          "observed": 0.3138,
+          "n_tds": 47.8
+        },
+        "opp_rush": {
+          "value": 0.9806,
+          "per_game": 0.908,
+          "n_games": 15.2
+        },
+        "opp_rec": {
+          "value": 1.25,
+          "per_game": 2.224,
+          "n_games": 15.2
+        },
+        "game_line": {
+          "total": 50.5,
+          "spread": -4.5,
+          "implied_team_runs": 27.5
+        }
+      },
+      "break_even_american": 569,
+      "odds": {
+        "best_price_decimal": 6.75,
+        "best_price_american": 575,
+        "best_book": "BetRivers",
+        "implied_prob": 0.1481,
+        "fair_prob": 0.148,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.009,
+        "edge_vs_fair": 0.0014
+      }
+    },
+    {
+      "player_id": "00-0031236",
+      "name": "Brandin Cooks",
+      "position": "WR",
+      "team": "SF",
+      "opponent": "WAS",
+      "home": true,
+      "game_id": "2026_06_WAS_SF",
+      "kickoff_utc": "2026-10-20T00:15:00+00:00",
+      "week": 6,
+      "confidence": "medium",
+      "rookie": false,
+      "changed_teams": true,
+      "lambda": 0.14353,
+      "lambda_rush": 0.02385,
+      "lambda_rec": 0.11968,
+      "prob": 0.13371,
+      "expected_tds": 0.1435,
+      "team_expected_off_tds": 2.988,
+      "team_expected_rush_tds": 1.012,
+      "team_expected_rec_tds": 1.976,
+      "shares": {
+        "rush": 0.024,
+        "rec": 0.0484
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 24.6,
+        "red_zone_targets": 1.6,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 1.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.9883,
+          "implied_points": 27.5,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3386,
+          "observed": 0.3138,
+          "n_tds": 47.8
+        },
+        "opp_rush": {
+          "value": 0.9806,
+          "per_game": 0.908,
+          "n_games": 15.2
+        },
+        "opp_rec": {
+          "value": 1.25,
+          "per_game": 2.224,
+          "n_games": 15.2
+        },
+        "game_line": {
+          "total": 50.5,
+          "spread": -4.5,
+          "implied_team_runs": 27.5
+        }
+      },
+      "break_even_american": 648,
+      "odds": {
+        "best_price_decimal": 3.65,
+        "best_price_american": 265,
+        "best_book": "DraftKings",
+        "implied_prob": 0.274,
+        "fair_prob": 0.2698,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.512,
+        "edge_vs_fair": -0.1361
+      }
+    },
+    {
+      "player_id": "00-0036626",
+      "name": "Dyami Brown",
+      "position": "WR",
+      "team": "WAS",
+      "opponent": "SF",
+      "home": false,
+      "game_id": "2026_06_WAS_SF",
+      "kickoff_utc": "2026-10-20T00:15:00+00:00",
+      "week": 6,
+      "confidence": "medium",
+      "rookie": false,
+      "changed_teams": true,
+      "lambda": 0.12626,
+      "lambda_rush": 0.01963,
+      "lambda_rec": 0.10664,
+      "prob": 0.11862,
+      "expected_tds": 0.1263,
+      "team_expected_off_tds": 2.333,
+      "team_expected_rush_tds": 0.991,
+      "team_expected_rec_tds": 1.342,
+      "shares": {
+        "rush": 0.0232,
+        "rec": 0.08
+      },
+      "usage": {
+        "carries": 3.5999999999999996,
+        "goal_line_carries": 0.0,
+        "targets": 37.2,
+        "red_zone_targets": 6.3999999999999995,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 0.6
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.3332,
+          "implied_points": 22.25,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.4247,
+          "observed": 0.452,
+          "n_tds": 35.4
+        },
+        "opp_rush": {
+          "value": 0.8537,
+          "per_game": 0.711,
+          "n_games": 15.2
+        },
+        "opp_rec": {
+          "value": 0.993,
+          "per_game": 1.474,
+          "n_games": 15.2
+        },
+        "game_line": {
+          "total": 52.0,
+          "spread": 7.5,
+          "implied_team_runs": 22.25
+        }
+      },
+      "break_even_american": 743,
+      "odds": {
+        "best_price_decimal": 9.0,
+        "best_price_american": 800,
+        "best_book": "BetRivers",
+        "implied_prob": 0.1111,
+        "fair_prob": 0.1348,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.0676,
+        "edge_vs_fair": -0.0162
+      }
+    },
+    {
+      "player_id": "00-0037742",
+      "name": "Treylon Burks",
+      "position": "WR",
+      "team": "WAS",
+      "opponent": "SF",
+      "home": false,
+      "game_id": "2026_06_WAS_SF",
+      "kickoff_utc": "2026-10-20T00:15:00+00:00",
+      "week": 6,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.11943,
+      "lambda_rush": 0.02042,
+      "lambda_rec": 0.09901,
+      "prob": 0.11257,
+      "expected_tds": 0.1194,
+      "team_expected_off_tds": 2.333,
+      "team_expected_rush_tds": 0.991,
+      "team_expected_rec_tds": 1.342,
+      "shares": {
+        "rush": 0.0241,
+        "rec": 0.0743
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 24.2,
+        "red_zone_targets": 4.4,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 2.6
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.3332,
+          "implied_points": 22.25,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.4247,
+          "observed": 0.452,
+          "n_tds": 35.4
+        },
+        "opp_rush": {
+          "value": 0.8537,
+          "per_game": 0.711,
+          "n_games": 15.2
+        },
+        "opp_rec": {
+          "value": 0.993,
+          "per_game": 1.474,
+          "n_games": 15.2
+        },
+        "game_line": {
+          "total": 52.0,
+          "spread": 7.5,
+          "implied_team_runs": 22.25
+        }
+      },
+      "break_even_american": 788,
+      "odds": {
+        "best_price_decimal": 8.0,
+        "best_price_american": 700,
+        "best_book": "BetMGM",
+        "implied_prob": 0.125,
+        "fair_prob": 0.1303,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.0994,
+        "edge_vs_fair": -0.0177
+      }
+    },
+    {
+      "player_id": "00-0036887",
+      "name": "Luke Farrell",
+      "position": "TE",
+      "team": "SF",
+      "opponent": "WAS",
+      "home": true,
+      "game_id": "2026_06_WAS_SF",
+      "kickoff_utc": "2026-10-20T00:15:00+00:00",
+      "week": 6,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.10825,
+      "lambda_rush": 0.02385,
+      "lambda_rec": 0.0844,
+      "prob": 0.1026,
+      "expected_tds": 0.1083,
+      "team_expected_off_tds": 2.988,
+      "team_expected_rush_tds": 1.012,
+      "team_expected_rec_tds": 1.976,
+      "shares": {
+        "rush": 0.024,
+        "rec": 0.0342
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 12.4,
+        "red_zone_targets": 3.4,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 1.2
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.9883,
+          "implied_points": 27.5,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3386,
+          "observed": 0.3138,
+          "n_tds": 47.8
+        },
+        "opp_rush": {
+          "value": 0.9806,
+          "per_game": 0.908,
+          "n_games": 15.2
+        },
+        "opp_rec": {
+          "value": 1.25,
+          "per_game": 2.224,
+          "n_games": 15.2
+        },
+        "game_line": {
+          "total": 50.5,
+          "spread": -4.5,
+          "implied_team_runs": 27.5
+        }
+      },
+      "break_even_american": 875,
+      "odds": {
+        "best_price_decimal": 11.0,
+        "best_price_american": 1000,
+        "best_book": "BetRivers",
+        "implied_prob": 0.0909,
+        "fair_prob": 0.1006,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.1286,
+        "edge_vs_fair": 0.002
+      }
+    },
+    {
+      "player_id": "00-0041052",
+      "name": "Kaelon Black",
+      "position": "RB",
+      "team": "SF",
+      "opponent": "WAS",
+      "home": true,
+      "game_id": "2026_06_WAS_SF",
+      "kickoff_utc": "2026-10-20T00:15:00+00:00",
+      "week": 6,
+      "confidence": "low",
+      "rookie": true,
+      "changed_teams": false,
+      "lambda": 0.10774,
+      "lambda_rush": 0.05267,
+      "lambda_rec": 0.05507,
+      "prob": 0.10214,
+      "expected_tds": 0.1077,
+      "team_expected_off_tds": 2.988,
+      "team_expected_rush_tds": 1.012,
+      "team_expected_rec_tds": 1.976,
+      "shares": {
+        "rush": 0.0531,
+        "rec": 0.0223
+      },
+      "usage": {
+        "carries": 37.0,
+        "goal_line_carries": 0.0,
+        "targets": 2.0,
+        "red_zone_targets": 0.0,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 0.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.9883,
+          "implied_points": 27.5,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3386,
+          "observed": 0.3138,
+          "n_tds": 47.8
+        },
+        "opp_rush": {
+          "value": 0.9806,
+          "per_game": 0.908,
+          "n_games": 15.2
+        },
+        "opp_rec": {
+          "value": 1.25,
+          "per_game": 2.224,
+          "n_games": 15.2
+        },
+        "game_line": {
+          "total": 50.5,
+          "spread": -4.5,
+          "implied_team_runs": 27.5
+        }
+      },
+      "break_even_american": 879,
+      "odds": {
+        "best_price_decimal": 5.4,
+        "best_price_american": 440,
+        "best_book": "BetRivers",
+        "implied_prob": 0.1852,
+        "fair_prob": 0.1887,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.4484,
+        "edge_vs_fair": -0.0865
+      }
+    },
+    {
+      "player_id": "00-0037834",
+      "name": "Brock Purdy",
+      "position": "QB",
+      "team": "SF",
+      "opponent": "WAS",
+      "home": true,
+      "game_id": "2026_06_WAS_SF",
+      "kickoff_utc": "2026-10-20T00:15:00+00:00",
+      "week": 6,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.10102,
+      "lambda_rush": 0.10102,
+      "lambda_rec": 0.0,
+      "prob": 0.09609,
+      "expected_tds": 0.101,
+      "team_expected_off_tds": 2.988,
+      "team_expected_rush_tds": 1.012,
+      "team_expected_rec_tds": 1.976,
+      "shares": {
+        "rush": 0.1018,
+        "rec": 0.0
+      },
+      "usage": {
+        "carries": 37.4,
+        "goal_line_carries": 2.2,
+        "targets": 0.0,
+        "red_zone_targets": 0.0,
+        "prior_rush_tds": 2.8,
+        "prior_rec_tds": 0.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.9883,
+          "implied_points": 27.5,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3386,
+          "observed": 0.3138,
+          "n_tds": 47.8
+        },
+        "opp_rush": {
+          "value": 0.9806,
+          "per_game": 0.908,
+          "n_games": 15.2
+        },
+        "opp_rec": {
+          "value": 1.25,
+          "per_game": 2.224,
+          "n_games": 15.2
+        },
+        "game_line": {
+          "total": 50.5,
+          "spread": -4.5,
+          "implied_team_runs": 27.5
+        }
+      },
+      "break_even_american": 941,
+      "odds": {
+        "best_price_decimal": 4.35,
+        "best_price_american": 335,
+        "best_book": "BetRivers",
+        "implied_prob": 0.2299,
+        "fair_prob": 0.2358,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.582,
+        "edge_vs_fair": -0.1398
+      }
+    },
+    {
+      "player_id": "00-0039910",
+      "name": "Jayden Daniels",
+      "position": "QB",
+      "team": "WAS",
+      "opponent": "SF",
+      "home": false,
+      "game_id": "2026_06_WAS_SF",
+      "kickoff_utc": "2026-10-20T00:15:00+00:00",
+      "week": 6,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.09514,
+      "lambda_rush": 0.09514,
+      "lambda_rec": 0.0,
+      "prob": 0.09075,
+      "expected_tds": 0.0951,
+      "team_expected_off_tds": 2.333,
+      "team_expected_rush_tds": 0.991,
+      "team_expected_rec_tds": 1.342,
+      "shares": {
+        "rush": 0.1125,
+        "rec": 0.0
+      },
+      "usage": {
+        "carries": 52.4,
+        "goal_line_carries": 1.7999999999999998,
+        "targets": 0.0,
+        "red_zone_targets": 0.0,
+        "prior_rush_tds": 3.2,
+        "prior_rec_tds": 0.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.3332,
+          "implied_points": 22.25,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.4247,
+          "observed": 0.452,
+          "n_tds": 35.4
+        },
+        "opp_rush": {
+          "value": 0.8537,
+          "per_game": 0.711,
+          "n_games": 15.2
+        },
+        "opp_rec": {
+          "value": 0.993,
+          "per_game": 1.474,
+          "n_games": 15.2
+        },
+        "game_line": {
+          "total": 52.0,
+          "spread": 7.5,
+          "implied_team_runs": 22.25
+        }
+      },
+      "break_even_american": 1002,
+      "odds": {
+        "best_price_decimal": 3.35,
+        "best_price_american": 235,
+        "best_book": "BetRivers",
+        "implied_prob": 0.2985,
+        "fair_prob": 0.2925,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.696,
+        "edge_vs_fair": -0.2018
+      }
+    },
+    {
+      "player_id": "00-0041040",
+      "name": "Antonio Williams",
+      "position": "WR",
+      "team": "WAS",
+      "opponent": "SF",
+      "home": false,
+      "game_id": "2026_06_WAS_SF",
+      "kickoff_utc": "2026-10-20T00:15:00+00:00",
+      "week": 6,
+      "confidence": "low",
+      "rookie": true,
+      "changed_teams": false,
+      "lambda": 0.0895,
+      "lambda_rush": 0.02042,
+      "lambda_rec": 0.06909,
+      "prob": 0.08561,
+      "expected_tds": 0.0895,
+      "team_expected_off_tds": 2.333,
+      "team_expected_rush_tds": 0.991,
+      "team_expected_rec_tds": 1.342,
+      "shares": {
+        "rush": 0.0241,
+        "rec": 0.0518
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 22.0,
+        "red_zone_targets": 2.0,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 1.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.3332,
+          "implied_points": 22.25,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.4247,
+          "observed": 0.452,
+          "n_tds": 35.4
+        },
+        "opp_rush": {
+          "value": 0.8537,
+          "per_game": 0.711,
+          "n_games": 15.2
+        },
+        "opp_rec": {
+          "value": 0.993,
+          "per_game": 1.474,
+          "n_games": 15.2
+        },
+        "game_line": {
+          "total": 52.0,
+          "spread": 7.5,
+          "implied_team_runs": 22.25
+        }
+      },
+      "break_even_american": 1068,
+      "odds": {
+        "best_price_decimal": 5.5,
+        "best_price_american": 450,
+        "best_book": "DraftKings",
+        "implied_prob": 0.1818,
+        "fair_prob": 0.1731,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.5291,
+        "edge_vs_fair": -0.0875
+      }
+    },
+    {
+      "player_id": "00-0038643",
+      "name": "Brayden Willis",
+      "position": "TE",
+      "team": "SF",
+      "opponent": "WAS",
+      "home": true,
+      "game_id": "2026_06_WAS_SF",
+      "kickoff_utc": "2026-10-20T00:15:00+00:00",
+      "week": 6,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.07999,
+      "lambda_rush": 0.02385,
+      "lambda_rec": 0.05614,
+      "prob": 0.07687,
+      "expected_tds": 0.08,
+      "team_expected_off_tds": 2.988,
+      "team_expected_rush_tds": 1.012,
+      "team_expected_rec_tds": 1.976,
+      "shares": {
+        "rush": 0.024,
+        "rec": 0.0227
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 0.6,
+        "red_zone_targets": 0.0,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 0.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.9883,
+          "implied_points": 27.5,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3386,
+          "observed": 0.3138,
+          "n_tds": 47.8
+        },
+        "opp_rush": {
+          "value": 0.9806,
+          "per_game": 0.908,
+          "n_games": 15.2
+        },
+        "opp_rec": {
+          "value": 1.25,
+          "per_game": 2.224,
+          "n_games": 15.2
+        },
+        "game_line": {
+          "total": 50.5,
+          "spread": -4.5,
+          "implied_team_runs": 27.5
+        }
+      },
+      "break_even_american": 1201,
+      "odds": {
+        "best_price_decimal": 13.0,
+        "best_price_american": 1200,
+        "best_book": "BetRivers",
+        "implied_prob": 0.0769,
+        "fair_prob": 0.0993,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": -0.0007,
+        "edge_vs_fair": -0.0224
+      }
+    },
+    {
+      "player_id": "00-0040177",
+      "name": "Jordan James",
+      "position": "RB",
+      "team": "SF",
+      "opponent": "WAS",
+      "home": true,
+      "game_id": "2026_06_WAS_SF",
+      "kickoff_utc": "2026-10-20T00:15:00+00:00",
+      "week": 6,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.0798,
+      "lambda_rush": 0.02296,
+      "lambda_rec": 0.05684,
+      "prob": 0.0767,
+      "expected_tds": 0.0798,
+      "team_expected_off_tds": 2.988,
+      "team_expected_rush_tds": 1.012,
+      "team_expected_rec_tds": 1.976,
+      "shares": {
+        "rush": 0.0231,
+        "rec": 0.023
+      },
+      "usage": {
+        "carries": 4.0,
+        "goal_line_carries": 0.0,
+        "targets": 0.0,
+        "red_zone_targets": 0.0,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 0.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.9883,
+          "implied_points": 27.5,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3386,
+          "observed": 0.3138,
+          "n_tds": 47.8
+        },
+        "opp_rush": {
+          "value": 0.9806,
+          "per_game": 0.908,
+          "n_games": 15.2
+        },
+        "opp_rec": {
+          "value": 1.25,
+          "per_game": 2.224,
+          "n_games": 15.2
+        },
+        "game_line": {
+          "total": 50.5,
+          "spread": -4.5,
+          "implied_team_runs": 27.5
+        }
+      },
+      "break_even_american": 1204,
+      "odds": null
+    }
+  ]
+}
