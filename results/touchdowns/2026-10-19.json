@@ -1,0 +1,398 @@
+{
+  "date": "2026-10-19",
+  "window": "all",
+  "season": 2026,
+  "week": 6,
+  "picks": [
+    {
+      "player_id": "00-0033280",
+      "name": "Christian McCaffrey",
+      "position": "RB",
+      "team": "SF",
+      "opponent": "WAS",
+      "prob": 0.65742,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 1.38,
+        "best_price_american": -263,
+        "best_book": "DraftKings",
+        "implied_prob": 0.7246,
+        "fair_prob": 0.6962,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.0928,
+        "edge_vs_fair": -0.0388
+      },
+      "scored": true
+    },
+    {
+      "player_id": "00-0033288",
+      "name": "George Kittle",
+      "position": "TE",
+      "team": "SF",
+      "opponent": "WAS",
+      "prob": 0.38529,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 2.05,
+        "best_price_american": 105,
+        "best_book": "DraftKings",
+        "implied_prob": 0.4878,
+        "fair_prob": 0.4636,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.2102,
+        "edge_vs_fair": -0.0783
+      },
+      "scored": true
+    },
+    {
+      "player_id": "00-0035719",
+      "name": "Deebo Samuel Sr.",
+      "position": "WR",
+      "team": "SF",
+      "opponent": "WAS",
+      "prob": 0.38112,
+      "confidence": "medium",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0031408",
+      "name": "Mike Evans",
+      "position": "WR",
+      "team": "SF",
+      "opponent": "WAS",
+      "prob": 0.36253,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 1.83,
+        "best_price_american": -120,
+        "best_book": "BetMGM",
+        "implied_prob": 0.5464,
+        "fair_prob": 0.5376,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.3366,
+        "edge_vs_fair": -0.1751
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0031588",
+      "name": "Stefon Diggs",
+      "position": "WR",
+      "team": "WAS",
+      "opponent": "SF",
+      "prob": 0.29272,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 3.4,
+        "best_price_american": 240,
+        "best_book": "FanDuel",
+        "implied_prob": 0.2941,
+        "fair_prob": 0.2816,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.0048,
+        "edge_vs_fair": 0.0111
+      },
+      "scored": true
+    },
+    {
+      "player_id": "00-0040242",
+      "name": "Jacory Croskey-Merritt",
+      "position": "RB",
+      "team": "WAS",
+      "opponent": "SF",
+      "prob": 0.27255,
+      "confidence": "high",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0037256",
+      "name": "Rachaad White",
+      "position": "RB",
+      "team": "WAS",
+      "opponent": "SF",
+      "prob": 0.25954,
+      "confidence": "medium",
+      "odds": {
+        "best_price_decimal": 2.15,
+        "best_price_american": 115,
+        "best_book": "DraftKings",
+        "implied_prob": 0.4651,
+        "fair_prob": 0.445,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.442,
+        "edge_vs_fair": -0.1855
+      },
+      "scored": true
+    },
+    {
+      "player_id": "00-0035659",
+      "name": "Terry McLaurin",
+      "position": "WR",
+      "team": "WAS",
+      "opponent": "SF",
+      "prob": 0.20507,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 3.3,
+        "best_price_american": 230,
+        "best_book": "BetMGM",
+        "implied_prob": 0.303,
+        "fair_prob": 0.2972,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.3233,
+        "edge_vs_fair": -0.0921
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0037809",
+      "name": "Chig Okonkwo",
+      "position": "TE",
+      "team": "WAS",
+      "opponent": "SF",
+      "prob": 0.16767,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 4.25,
+        "best_price_american": 325,
+        "best_book": "BetMGM",
+        "implied_prob": 0.2353,
+        "fair_prob": 0.2301,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.2874,
+        "edge_vs_fair": -0.0624
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0029892",
+      "name": "Kyle Juszczyk",
+      "position": "RB",
+      "team": "SF",
+      "opponent": "WAS",
+      "prob": 0.15017,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 6.75,
+        "best_price_american": 575,
+        "best_book": "BetRivers",
+        "implied_prob": 0.1481,
+        "fair_prob": 0.1572,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": 0.0136,
+        "edge_vs_fair": -0.0071
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0031236",
+      "name": "Brandin Cooks",
+      "position": "WR",
+      "team": "SF",
+      "opponent": "WAS",
+      "prob": 0.13433,
+      "confidence": "medium",
+      "odds": {
+        "best_price_decimal": 3.6,
+        "best_price_american": 260,
+        "best_book": "BetMGM",
+        "implied_prob": 0.2778,
+        "fair_prob": 0.2797,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.5164,
+        "edge_vs_fair": -0.1453
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0036626",
+      "name": "Dyami Brown",
+      "position": "WR",
+      "team": "WAS",
+      "opponent": "SF",
+      "prob": 0.11862,
+      "confidence": "medium",
+      "odds": {
+        "best_price_decimal": 13.0,
+        "best_price_american": 1200,
+        "best_book": "BetMGM",
+        "implied_prob": 0.0769,
+        "fair_prob": 0.1303,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.5421,
+        "edge_vs_fair": -0.0117
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0037742",
+      "name": "Treylon Burks",
+      "position": "WR",
+      "team": "WAS",
+      "opponent": "SF",
+      "prob": 0.11257,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 7.0,
+        "best_price_american": 600,
+        "best_book": "FanDuel",
+        "implied_prob": 0.1429,
+        "fair_prob": 0.1425,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.212,
+        "edge_vs_fair": -0.0299
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0036887",
+      "name": "Luke Farrell",
+      "position": "TE",
+      "team": "SF",
+      "opponent": "WAS",
+      "prob": 0.10309,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 11.0,
+        "best_price_american": 1000,
+        "best_book": "BetRivers",
+        "implied_prob": 0.0909,
+        "fair_prob": 0.0993,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.134,
+        "edge_vs_fair": 0.0038
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0041052",
+      "name": "Kaelon Black",
+      "position": "RB",
+      "team": "SF",
+      "opponent": "WAS",
+      "prob": 0.10263,
+      "confidence": "low",
+      "odds": {
+        "best_price_decimal": 5.4,
+        "best_price_american": 440,
+        "best_book": "BetRivers",
+        "implied_prob": 0.1852,
+        "fair_prob": 0.1925,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.4458,
+        "edge_vs_fair": -0.0899
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0037834",
+      "name": "Brock Purdy",
+      "position": "QB",
+      "team": "SF",
+      "opponent": "WAS",
+      "prob": 0.09654,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 4.35,
+        "best_price_american": 335,
+        "best_book": "BetRivers",
+        "implied_prob": 0.2299,
+        "fair_prob": 0.2333,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.5801,
+        "edge_vs_fair": -0.1367
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0039910",
+      "name": "Jayden Daniels",
+      "position": "QB",
+      "team": "WAS",
+      "opponent": "SF",
+      "prob": 0.09075,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 3.85,
+        "best_price_american": 285,
+        "best_book": "BetRivers",
+        "implied_prob": 0.2597,
+        "fair_prob": 0.2903,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.6506,
+        "edge_vs_fair": -0.1996
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0041040",
+      "name": "Antonio Williams",
+      "position": "WR",
+      "team": "WAS",
+      "opponent": "SF",
+      "prob": 0.08561,
+      "confidence": "low",
+      "odds": {
+        "best_price_decimal": 5.75,
+        "best_price_american": 475,
+        "best_book": "DraftKings",
+        "implied_prob": 0.1739,
+        "fair_prob": 0.1747,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.5077,
+        "edge_vs_fair": -0.0891
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0038643",
+      "name": "Brayden Willis",
+      "position": "TE",
+      "team": "SF",
+      "opponent": "WAS",
+      "prob": 0.07724,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 15.0,
+        "best_price_american": 1400,
+        "best_book": "BetRivers",
+        "implied_prob": 0.0667,
+        "fair_prob": 0.0993,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": 0.1586,
+        "edge_vs_fair": -0.0221
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0040177",
+      "name": "Jordan James",
+      "position": "RB",
+      "team": "SF",
+      "opponent": "WAS",
+      "prob": 0.07707,
+      "confidence": "high",
+      "odds": null,
+      "scored": false
+    }
+  ]
+}

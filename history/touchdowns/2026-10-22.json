@@ -1,0 +1,1494 @@
+{
+  "generated_at": "2026-10-22T13:36:04+00:00",
+  "date": "2026-10-22",
+  "season": 2026,
+  "week": 7,
+  "model_version": "td-0.1.0",
+  "n_games": 1,
+  "n_games_today": 1,
+  "window": "all",
+  "window_label": "all games",
+  "n_players_scored": 27,
+  "odds_available": true,
+  "game_lines_available": true,
+  "seasons_used": [
+    2026,
+    2025
+  ],
+  "current_season_games": 6,
+  "cold_start": false,
+  "league": {
+    "rush_td_per_team_game": 0.938,
+    "rec_td_per_team_game": 1.491
+  },
+  "top_n": 20,
+  "ev_min_prob": 0.1,
+  "ev_max_ratio": 1.3,
+  "games": [
+    {
+      "game_id": "2026_07_NE_CHI",
+      "season": 2026,
+      "week": 7,
+      "game_type": "REG",
+      "kickoff_utc": "2026-10-23T00:15:00+00:00",
+      "home_team": "CHI",
+      "away_team": "NE",
+      "roof": "outdoors",
+      "stadium": "Soldier Field",
+      "home_score": null,
+      "away_score": null
+    }
+  ],
+  "players": [
+    {
+      "player_id": "00-0036875",
+      "name": "Rhamondre Stevenson",
+      "position": "RB",
+      "team": "NE",
+      "opponent": "CHI",
+      "home": false,
+      "game_id": "2026_07_NE_CHI",
+      "kickoff_utc": "2026-10-23T00:15:00+00:00",
+      "week": 7,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.48322,
+      "lambda_rush": 0.30035,
+      "lambda_rec": 0.18287,
+      "prob": 0.3832,
+      "expected_tds": 0.4832,
+      "team_expected_off_tds": 2.801,
+      "team_expected_rush_tds": 1.048,
+      "team_expected_rec_tds": 1.753,
+      "shares": {
+        "rush": 0.3013,
+        "rec": 0.0945
+      },
+      "usage": {
+        "carries": 149.6,
+        "goal_line_carries": 10.2,
+        "targets": 42.8,
+        "red_zone_targets": 5.6,
+        "prior_rush_tds": 6.2,
+        "prior_rec_tds": 1.2
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.8011,
+          "implied_points": 26.0,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.374,
+          "observed": 0.3675,
+          "n_tds": 46.8
+        },
+        "opp_rush": {
+          "value": 0.9514,
+          "per_game": 0.864,
+          "n_games": 16.2
+        },
+        "opp_rec": {
+          "value": 1.1036,
+          "per_game": 1.741,
+          "n_games": 16.2
+        },
+        "game_line": {
+          "total": 44.5,
+          "spread": -7.5,
+          "implied_team_runs": 26.0
+        }
+      },
+      "break_even_american": 161,
+      "odds": {
+        "best_price_decimal": 1.95,
+        "best_price_american": -105,
+        "best_book": "BetMGM",
+        "implied_prob": 0.5128,
+        "fair_prob": 0.4979,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.2528,
+        "edge_vs_fair": -0.1147
+      }
+    },
+    {
+      "player_id": "00-0036275",
+      "name": "D'Andre Swift",
+      "position": "RB",
+      "team": "CHI",
+      "opponent": "NE",
+      "home": true,
+      "game_id": "2026_07_NE_CHI",
+      "kickoff_utc": "2026-10-23T00:15:00+00:00",
+      "week": 7,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.45004,
+      "lambda_rush": 0.35165,
+      "lambda_rec": 0.09839,
+      "prob": 0.3624,
+      "expected_tds": 0.45,
+      "team_expected_off_tds": 2.271,
+      "team_expected_rush_tds": 1.086,
+      "team_expected_rec_tds": 1.185,
+      "shares": {
+        "rush": 0.3793,
+        "rec": 0.0879
+      },
+      "usage": {
+        "carries": 227.79999999999998,
+        "goal_line_carries": 21.4,
+        "targets": 49.8,
+        "red_zone_targets": 2.6,
+        "prior_rush_tds": 11.399999999999999,
+        "prior_rec_tds": 0.6
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.2708,
+          "implied_points": 21.75,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.4782,
+          "observed": 0.5281,
+          "n_tds": 46.2
+        },
+        "opp_rush": {
+          "value": 0.8537,
+          "per_game": 0.716,
+          "n_games": 16.2
+        },
+        "opp_rec": {
+          "value": 0.9449,
+          "per_game": 1.358,
+          "n_games": 16.2
+        },
+        "game_line": {
+          "total": 46.5,
+          "spread": 3.0,
+          "implied_team_runs": 21.75
+        }
+      },
+      "break_even_american": 176,
+      "odds": {
+        "best_price_decimal": 1.65,
+        "best_price_american": -154,
+        "best_book": "BetMGM",
+        "implied_prob": 0.6061,
+        "fair_prob": 0.5878,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.402,
+        "edge_vs_fair": -0.2254
+      }
+    },
+    {
+      "player_id": "00-0033090",
+      "name": "Hunter Henry",
+      "position": "TE",
+      "team": "NE",
+      "opponent": "CHI",
+      "home": false,
+      "game_id": "2026_07_NE_CHI",
+      "kickoff_utc": "2026-10-23T00:15:00+00:00",
+      "week": 7,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.44982,
+      "lambda_rush": 0.02321,
+      "lambda_rec": 0.42661,
+      "prob": 0.36226,
+      "expected_tds": 0.4498,
+      "team_expected_off_tds": 2.801,
+      "team_expected_rush_tds": 1.048,
+      "team_expected_rec_tds": 1.753,
+      "shares": {
+        "rush": 0.0233,
+        "rec": 0.2205
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 76.19999999999999,
+        "red_zone_targets": 18.2,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 6.2
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.8011,
+          "implied_points": 26.0,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.374,
+          "observed": 0.3675,
+          "n_tds": 46.8
+        },
+        "opp_rush": {
+          "value": 0.9514,
+          "per_game": 0.864,
+          "n_games": 16.2
+        },
+        "opp_rec": {
+          "value": 1.1036,
+          "per_game": 1.741,
+          "n_games": 16.2
+        },
+        "game_line": {
+          "total": 44.5,
+          "spread": -7.5,
+          "implied_team_runs": 26.0
+        }
+      },
+      "break_even_american": 176,
+      "odds": {
+        "best_price_decimal": 3.3,
+        "best_price_american": 230,
+        "best_book": "DraftKings",
+        "implied_prob": 0.303,
+        "fair_prob": 0.2948,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": 0.1955,
+        "edge_vs_fair": 0.0674
+      }
+    },
+    {
+      "player_id": "00-0035676",
+      "name": "A.J. Brown",
+      "position": "WR",
+      "team": "NE",
+      "opponent": "CHI",
+      "home": false,
+      "game_id": "2026_07_NE_CHI",
+      "kickoff_utc": "2026-10-23T00:15:00+00:00",
+      "week": 7,
+      "confidence": "medium",
+      "rookie": false,
+      "changed_teams": true,
+      "lambda": 0.42958,
+      "lambda_rush": 0.02321,
+      "lambda_rec": 0.40637,
+      "prob": 0.34921,
+      "expected_tds": 0.4296,
+      "team_expected_off_tds": 2.801,
+      "team_expected_rush_tds": 1.048,
+      "team_expected_rec_tds": 1.753,
+      "shares": {
+        "rush": 0.0233,
+        "rec": 0.21
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 86.6,
+        "red_zone_targets": 10.8,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 4.2
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.8011,
+          "implied_points": 26.0,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.374,
+          "observed": 0.3675,
+          "n_tds": 46.8
+        },
+        "opp_rush": {
+          "value": 0.9514,
+          "per_game": 0.864,
+          "n_games": 16.2
+        },
+        "opp_rec": {
+          "value": 1.1036,
+          "per_game": 1.741,
+          "n_games": 16.2
+        },
+        "game_line": {
+          "total": 44.5,
+          "spread": -7.5,
+          "implied_team_runs": 26.0
+        }
+      },
+      "break_even_american": 186,
+      "odds": {
+        "best_price_decimal": 2.45,
+        "best_price_american": 145,
+        "best_book": "DraftKings",
+        "implied_prob": 0.4082,
+        "fair_prob": 0.4033,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.1444,
+        "edge_vs_fair": -0.0541
+      }
+    },
+    {
+      "player_id": "00-0040734",
+      "name": "TreVeyon Henderson",
+      "position": "RB",
+      "team": "NE",
+      "opponent": "CHI",
+      "home": false,
+      "game_id": "2026_07_NE_CHI",
+      "kickoff_utc": "2026-10-23T00:15:00+00:00",
+      "week": 7,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.37155,
+      "lambda_rush": 0.24774,
+      "lambda_rec": 0.12381,
+      "prob": 0.31034,
+      "expected_tds": 0.3716,
+      "team_expected_off_tds": 2.801,
+      "team_expected_rush_tds": 1.048,
+      "team_expected_rec_tds": 1.753,
+      "shares": {
+        "rush": 0.2486,
+        "rec": 0.064
+      },
+      "usage": {
+        "carries": 157.0,
+        "goal_line_carries": 4.8,
+        "targets": 30.2,
+        "red_zone_targets": 3.4,
+        "prior_rush_tds": 6.3999999999999995,
+        "prior_rec_tds": 0.6
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.8011,
+          "implied_points": 26.0,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.374,
+          "observed": 0.3675,
+          "n_tds": 46.8
+        },
+        "opp_rush": {
+          "value": 0.9514,
+          "per_game": 0.864,
+          "n_games": 16.2
+        },
+        "opp_rec": {
+          "value": 1.1036,
+          "per_game": 1.741,
+          "n_games": 16.2
+        },
+        "game_line": {
+          "total": 44.5,
+          "spread": -7.5,
+          "implied_team_runs": 26.0
+        }
+      },
+      "break_even_american": 222,
+      "odds": {
+        "best_price_decimal": 4.4,
+        "best_price_american": 340,
+        "best_book": "FanDuel",
+        "implied_prob": 0.2273,
+        "fair_prob": 0.2207,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.3655,
+        "edge_vs_fair": 0.0897
+      }
+    },
+    {
+      "player_id": "00-0038621",
+      "name": "DeMario Douglas",
+      "position": "WR",
+      "team": "NE",
+      "opponent": "CHI",
+      "home": false,
+      "game_id": "2026_07_NE_CHI",
+      "kickoff_utc": "2026-10-23T00:15:00+00:00",
+      "week": 7,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.33015,
+      "lambda_rush": 0.02225,
+      "lambda_rec": 0.30791,
+      "prob": 0.28119,
+      "expected_tds": 0.3302,
+      "team_expected_off_tds": 2.801,
+      "team_expected_rush_tds": 1.048,
+      "team_expected_rec_tds": 1.753,
+      "shares": {
+        "rush": 0.0223,
+        "rec": 0.1591
+      },
+      "usage": {
+        "carries": 4.2,
+        "goal_line_carries": 0.0,
+        "targets": 57.599999999999994,
+        "red_zone_targets": 8.2,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 4.8
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.8011,
+          "implied_points": 26.0,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.374,
+          "observed": 0.3675,
+          "n_tds": 46.8
+        },
+        "opp_rush": {
+          "value": 0.9514,
+          "per_game": 0.864,
+          "n_games": 16.2
+        },
+        "opp_rec": {
+          "value": 1.1036,
+          "per_game": 1.741,
+          "n_games": 16.2
+        },
+        "game_line": {
+          "total": 44.5,
+          "spread": -7.5,
+          "implied_team_runs": 26.0
+        }
+      },
+      "break_even_american": 256,
+      "odds": {
+        "best_price_decimal": 4.2,
+        "best_price_american": 320,
+        "best_book": "FanDuel",
+        "implied_prob": 0.2381,
+        "fair_prob": 0.2358,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.181,
+        "edge_vs_fair": 0.0453
+      }
+    },
+    {
+      "player_id": "00-0040236",
+      "name": "Kyle Monangai",
+      "position": "RB",
+      "team": "CHI",
+      "opponent": "NE",
+      "home": true,
+      "game_id": "2026_07_NE_CHI",
+      "kickoff_utc": "2026-10-23T00:15:00+00:00",
+      "week": 7,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.29151,
+      "lambda_rush": 0.24496,
+      "lambda_rec": 0.04655,
+      "prob": 0.25286,
+      "expected_tds": 0.2915,
+      "team_expected_off_tds": 2.271,
+      "team_expected_rush_tds": 1.086,
+      "team_expected_rec_tds": 1.185,
+      "shares": {
+        "rush": 0.2642,
+        "rec": 0.0416
+      },
+      "usage": {
+        "carries": 162.6,
+        "goal_line_carries": 13.2,
+        "targets": 23.0,
+        "red_zone_targets": 2.8,
+        "prior_rush_tds": 6.0,
+        "prior_rec_tds": 0.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.2708,
+          "implied_points": 21.75,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.4782,
+          "observed": 0.5281,
+          "n_tds": 46.2
+        },
+        "opp_rush": {
+          "value": 0.8537,
+          "per_game": 0.716,
+          "n_games": 16.2
+        },
+        "opp_rec": {
+          "value": 0.9449,
+          "per_game": 1.358,
+          "n_games": 16.2
+        },
+        "game_line": {
+          "total": 46.5,
+          "spread": 3.0,
+          "implied_team_runs": 21.75
+        }
+      },
+      "break_even_american": 295,
+      "odds": null
+    },
+    {
+      "player_id": "00-0040126",
+      "name": "Colston Loveland",
+      "position": "TE",
+      "team": "CHI",
+      "opponent": "NE",
+      "home": true,
+      "game_id": "2026_07_NE_CHI",
+      "kickoff_utc": "2026-10-23T00:15:00+00:00",
+      "week": 7,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.24887,
+      "lambda_rush": 0.02065,
+      "lambda_rec": 0.22822,
+      "prob": 0.22032,
+      "expected_tds": 0.2489,
+      "team_expected_off_tds": 2.271,
+      "team_expected_rush_tds": 1.086,
+      "team_expected_rec_tds": 1.185,
+      "shares": {
+        "rush": 0.0223,
+        "rec": 0.2038
+      },
+      "usage": {
+        "carries": 0.6,
+        "goal_line_carries": 0.0,
+        "targets": 79.8,
+        "red_zone_targets": 18.0,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 4.6
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.2708,
+          "implied_points": 21.75,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.4782,
+          "observed": 0.5281,
+          "n_tds": 46.2
+        },
+        "opp_rush": {
+          "value": 0.8537,
+          "per_game": 0.716,
+          "n_games": 16.2
+        },
+        "opp_rec": {
+          "value": 0.9449,
+          "per_game": 1.358,
+          "n_games": 16.2
+        },
+        "game_line": {
+          "total": 46.5,
+          "spread": 3.0,
+          "implied_team_runs": 21.75
+        }
+      },
+      "break_even_american": 354,
+      "odds": {
+        "best_price_decimal": 2.85,
+        "best_price_american": 185,
+        "best_book": "BetMGM",
+        "implied_prob": 0.3509,
+        "fair_prob": 0.3432,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.3721,
+        "edge_vs_fair": -0.1228
+      }
+    },
+    {
+      "player_id": "00-0039919",
+      "name": "Rome Odunze",
+      "position": "WR",
+      "team": "CHI",
+      "opponent": "NE",
+      "home": true,
+      "game_id": "2026_07_NE_CHI",
+      "kickoff_utc": "2026-10-23T00:15:00+00:00",
+      "week": 7,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.24074,
+      "lambda_rush": 0.02088,
+      "lambda_rec": 0.21985,
+      "prob": 0.21395,
+      "expected_tds": 0.2407,
+      "team_expected_off_tds": 2.271,
+      "team_expected_rush_tds": 1.086,
+      "team_expected_rec_tds": 1.185,
+      "shares": {
+        "rush": 0.0225,
+        "rec": 0.1964
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 87.6,
+        "red_zone_targets": 11.8,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 3.5999999999999996
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.2708,
+          "implied_points": 21.75,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.4782,
+          "observed": 0.5281,
+          "n_tds": 46.2
+        },
+        "opp_rush": {
+          "value": 0.8537,
+          "per_game": 0.716,
+          "n_games": 16.2
+        },
+        "opp_rec": {
+          "value": 0.9449,
+          "per_game": 1.358,
+          "n_games": 16.2
+        },
+        "game_line": {
+          "total": 46.5,
+          "spread": 3.0,
+          "implied_team_runs": 21.75
+        }
+      },
+      "break_even_american": 367,
+      "odds": {
+        "best_price_decimal": 3.0,
+        "best_price_american": 200,
+        "best_book": "BetMGM",
+        "implied_prob": 0.3333,
+        "fair_prob": 0.3431,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.3582,
+        "edge_vs_fair": -0.1291
+      }
+    },
+    {
+      "player_id": "00-0040735",
+      "name": "Luther Burden III",
+      "position": "WR",
+      "team": "CHI",
+      "opponent": "NE",
+      "home": true,
+      "game_id": "2026_07_NE_CHI",
+      "kickoff_utc": "2026-10-23T00:15:00+00:00",
+      "week": 7,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.20823,
+      "lambda_rush": 0.02385,
+      "lambda_rec": 0.18438,
+      "prob": 0.18798,
+      "expected_tds": 0.2082,
+      "team_expected_off_tds": 2.271,
+      "team_expected_rush_tds": 1.086,
+      "team_expected_rec_tds": 1.185,
+      "shares": {
+        "rush": 0.0257,
+        "rec": 0.1647
+      },
+      "usage": {
+        "carries": 10.6,
+        "goal_line_carries": 1.0,
+        "targets": 79.0,
+        "red_zone_targets": 11.4,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 2.2
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.2708,
+          "implied_points": 21.75,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.4782,
+          "observed": 0.5281,
+          "n_tds": 46.2
+        },
+        "opp_rush": {
+          "value": 0.8537,
+          "per_game": 0.716,
+          "n_games": 16.2
+        },
+        "opp_rec": {
+          "value": 0.9449,
+          "per_game": 1.358,
+          "n_games": 16.2
+        },
+        "game_line": {
+          "total": 46.5,
+          "spread": 3.0,
+          "implied_team_runs": 21.75
+        }
+      },
+      "break_even_american": 432,
+      "odds": {
+        "best_price_decimal": 2.9,
+        "best_price_american": 190,
+        "best_book": "BetRivers",
+        "implied_prob": 0.3448,
+        "fair_prob": 0.331,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.4549,
+        "edge_vs_fair": -0.143
+      }
+    },
+    {
+      "player_id": "00-0039851",
+      "name": "Drake Maye",
+      "position": "QB",
+      "team": "NE",
+      "opponent": "CHI",
+      "home": false,
+      "game_id": "2026_07_NE_CHI",
+      "kickoff_utc": "2026-10-23T00:15:00+00:00",
+      "week": 7,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.16978,
+      "lambda_rush": 0.16978,
+      "lambda_rec": 0.0,
+      "prob": 0.15615,
+      "expected_tds": 0.1698,
+      "team_expected_off_tds": 2.801,
+      "team_expected_rush_tds": 1.048,
+      "team_expected_rec_tds": 1.753,
+      "shares": {
+        "rush": 0.1703,
+        "rec": 0.0
+      },
+      "usage": {
+        "carries": 75.8,
+        "goal_line_carries": 5.4,
+        "targets": 0.6,
+        "red_zone_targets": 0.0,
+        "prior_rush_tds": 3.4,
+        "prior_rec_tds": 0.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.8011,
+          "implied_points": 26.0,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.374,
+          "observed": 0.3675,
+          "n_tds": 46.8
+        },
+        "opp_rush": {
+          "value": 0.9514,
+          "per_game": 0.864,
+          "n_games": 16.2
+        },
+        "opp_rec": {
+          "value": 1.1036,
+          "per_game": 1.741,
+          "n_games": 16.2
+        },
+        "game_line": {
+          "total": 44.5,
+          "spread": -7.5,
+          "implied_team_runs": 26.0
+        }
+      },
+      "break_even_american": 540,
+      "odds": {
+        "best_price_decimal": 4.4,
+        "best_price_american": 340,
+        "best_book": "DraftKings",
+        "implied_prob": 0.2273,
+        "fair_prob": 0.2182,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.3129,
+        "edge_vs_fair": -0.062
+      }
+    },
+    {
+      "player_id": "00-0040131",
+      "name": "Kyle Williams",
+      "position": "WR",
+      "team": "NE",
+      "opponent": "CHI",
+      "home": false,
+      "game_id": "2026_07_NE_CHI",
+      "kickoff_utc": "2026-10-23T00:15:00+00:00",
+      "week": 7,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.15081,
+      "lambda_rush": 0.02274,
+      "lambda_rec": 0.12807,
+      "prob": 0.13999,
+      "expected_tds": 0.1508,
+      "team_expected_off_tds": 2.801,
+      "team_expected_rush_tds": 1.048,
+      "team_expected_rec_tds": 1.753,
+      "shares": {
+        "rush": 0.0228,
+        "rec": 0.0662
+      },
+      "usage": {
+        "carries": 1.2,
+        "goal_line_carries": 0.0,
+        "targets": 23.6,
+        "red_zone_targets": 0.0,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 2.8
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.8011,
+          "implied_points": 26.0,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.374,
+          "observed": 0.3675,
+          "n_tds": 46.8
+        },
+        "opp_rush": {
+          "value": 0.9514,
+          "per_game": 0.864,
+          "n_games": 16.2
+        },
+        "opp_rec": {
+          "value": 1.1036,
+          "per_game": 1.741,
+          "n_games": 16.2
+        },
+        "game_line": {
+          "total": 44.5,
+          "spread": -7.5,
+          "implied_team_runs": 26.0
+        }
+      },
+      "break_even_american": 614,
+      "odds": {
+        "best_price_decimal": 8.0,
+        "best_price_american": 700,
+        "best_book": "FanDuel",
+        "implied_prob": 0.125,
+        "fair_prob": 0.1348,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.1199,
+        "edge_vs_fair": 0.0052
+      }
+    },
+    {
+      "player_id": "00-0032464",
+      "name": "Kalif Raymond",
+      "position": "WR",
+      "team": "CHI",
+      "opponent": "NE",
+      "home": true,
+      "game_id": "2026_07_NE_CHI",
+      "kickoff_utc": "2026-10-23T00:15:00+00:00",
+      "week": 7,
+      "confidence": "medium",
+      "rookie": false,
+      "changed_teams": true,
+      "lambda": 0.13096,
+      "lambda_rush": 0.0202,
+      "lambda_rec": 0.11076,
+      "prob": 0.12275,
+      "expected_tds": 0.131,
+      "team_expected_off_tds": 2.271,
+      "team_expected_rush_tds": 1.086,
+      "team_expected_rec_tds": 1.185,
+      "shares": {
+        "rush": 0.0218,
+        "rec": 0.0989
+      },
+      "usage": {
+        "carries": 2.2,
+        "goal_line_carries": 0.0,
+        "targets": 47.0,
+        "red_zone_targets": 5.2,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 1.6
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.2708,
+          "implied_points": 21.75,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.4782,
+          "observed": 0.5281,
+          "n_tds": 46.2
+        },
+        "opp_rush": {
+          "value": 0.8537,
+          "per_game": 0.716,
+          "n_games": 16.2
+        },
+        "opp_rec": {
+          "value": 0.9449,
+          "per_game": 1.358,
+          "n_games": 16.2
+        },
+        "game_line": {
+          "total": 46.5,
+          "spread": 3.0,
+          "implied_team_runs": 21.75
+        }
+      },
+      "break_even_american": 715,
+      "odds": {
+        "best_price_decimal": 5.2,
+        "best_price_american": 420,
+        "best_book": "BetRivers",
+        "implied_prob": 0.1923,
+        "fair_prob": 0.1925,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.3617,
+        "edge_vs_fair": -0.0698
+      }
+    },
+    {
+      "player_id": "00-0036290",
+      "name": "Cole Kmet",
+      "position": "TE",
+      "team": "CHI",
+      "opponent": "NE",
+      "home": true,
+      "game_id": "2026_07_NE_CHI",
+      "kickoff_utc": "2026-10-23T00:15:00+00:00",
+      "week": 7,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.12738,
+      "lambda_rush": 0.02088,
+      "lambda_rec": 0.1065,
+      "prob": 0.1196,
+      "expected_tds": 0.1274,
+      "team_expected_off_tds": 2.271,
+      "team_expected_rush_tds": 1.086,
+      "team_expected_rec_tds": 1.185,
+      "shares": {
+        "rush": 0.0225,
+        "rec": 0.0951
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 40.4,
+        "red_zone_targets": 5.2,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 2.2
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.2708,
+          "implied_points": 21.75,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.4782,
+          "observed": 0.5281,
+          "n_tds": 46.2
+        },
+        "opp_rush": {
+          "value": 0.8537,
+          "per_game": 0.716,
+          "n_games": 16.2
+        },
+        "opp_rec": {
+          "value": 0.9449,
+          "per_game": 1.358,
+          "n_games": 16.2
+        },
+        "game_line": {
+          "total": 46.5,
+          "spread": 3.0,
+          "implied_team_runs": 21.75
+        }
+      },
+      "break_even_american": 736,
+      "odds": {
+        "best_price_decimal": 7.5,
+        "best_price_american": 650,
+        "best_book": "BetMGM",
+        "implied_prob": 0.1333,
+        "fair_prob": 0.1528,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.103,
+        "edge_vs_fair": -0.0332
+      }
+    },
+    {
+      "player_id": "00-0041314",
+      "name": "Tanner Arkin",
+      "position": "TE",
+      "team": "NE",
+      "opponent": "CHI",
+      "home": false,
+      "game_id": "2026_07_NE_CHI",
+      "kickoff_utc": "2026-10-23T00:15:00+00:00",
+      "week": 7,
+      "confidence": "low",
+      "rookie": true,
+      "changed_teams": false,
+      "lambda": 0.1185,
+      "lambda_rush": 0.02321,
+      "lambda_rec": 0.09529,
+      "prob": 0.11175,
+      "expected_tds": 0.1185,
+      "team_expected_off_tds": 2.801,
+      "team_expected_rush_tds": 1.048,
+      "team_expected_rec_tds": 1.753,
+      "shares": {
+        "rush": 0.0233,
+        "rec": 0.0492
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 0.0,
+        "red_zone_targets": 0.0,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 0.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.8011,
+          "implied_points": 26.0,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.374,
+          "observed": 0.3675,
+          "n_tds": 46.8
+        },
+        "opp_rush": {
+          "value": 0.9514,
+          "per_game": 0.864,
+          "n_games": 16.2
+        },
+        "opp_rec": {
+          "value": 1.1036,
+          "per_game": 1.741,
+          "n_games": 16.2
+        },
+        "game_line": {
+          "total": 44.5,
+          "spread": -7.5,
+          "implied_team_runs": 26.0
+        }
+      },
+      "break_even_american": 795,
+      "odds": {
+        "best_price_decimal": 23.0,
+        "best_price_american": 2200,
+        "best_book": "DraftKings",
+        "implied_prob": 0.0435,
+        "fair_prob": 0.0449,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": 1.5702,
+        "edge_vs_fair": 0.0668
+      }
+    },
+    {
+      "player_id": "00-0040563",
+      "name": "Efton Chism III",
+      "position": "WR",
+      "team": "NE",
+      "opponent": "CHI",
+      "home": false,
+      "game_id": "2026_07_NE_CHI",
+      "kickoff_utc": "2026-10-23T00:15:00+00:00",
+      "week": 7,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.11297,
+      "lambda_rush": 0.0228,
+      "lambda_rec": 0.09017,
+      "prob": 0.10683,
+      "expected_tds": 0.113,
+      "team_expected_off_tds": 2.801,
+      "team_expected_rush_tds": 1.048,
+      "team_expected_rec_tds": 1.753,
+      "shares": {
+        "rush": 0.0229,
+        "rec": 0.0466
+      },
+      "usage": {
+        "carries": 1.0,
+        "goal_line_carries": 0.0,
+        "targets": 15.8,
+        "red_zone_targets": 2.6,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 1.6
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.8011,
+          "implied_points": 26.0,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.374,
+          "observed": 0.3675,
+          "n_tds": 46.8
+        },
+        "opp_rush": {
+          "value": 0.9514,
+          "per_game": 0.864,
+          "n_games": 16.2
+        },
+        "opp_rec": {
+          "value": 1.1036,
+          "per_game": 1.741,
+          "n_games": 16.2
+        },
+        "game_line": {
+          "total": 44.5,
+          "spread": -7.5,
+          "implied_team_runs": 26.0
+        }
+      },
+      "break_even_american": 836,
+      "odds": {
+        "best_price_decimal": 7.0,
+        "best_price_american": 600,
+        "best_book": "BetMGM",
+        "implied_prob": 0.1429,
+        "fair_prob": 0.1628,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.2522,
+        "edge_vs_fair": -0.056
+      }
+    },
+    {
+      "player_id": "00-0040556",
+      "name": "Corey Kiner",
+      "position": "RB",
+      "team": "NE",
+      "opponent": "CHI",
+      "home": false,
+      "game_id": "2026_07_NE_CHI",
+      "kickoff_utc": "2026-10-23T00:15:00+00:00",
+      "week": 7,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.0985,
+      "lambda_rush": 0.04902,
+      "lambda_rec": 0.04948,
+      "prob": 0.0938,
+      "expected_tds": 0.0985,
+      "team_expected_off_tds": 2.801,
+      "team_expected_rush_tds": 1.048,
+      "team_expected_rec_tds": 1.753,
+      "shares": {
+        "rush": 0.0492,
+        "rec": 0.0256
+      },
+      "usage": {
+        "carries": 38.2,
+        "goal_line_carries": 0.0,
+        "targets": 3.8,
+        "red_zone_targets": 1.6,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 0.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.8011,
+          "implied_points": 26.0,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.374,
+          "observed": 0.3675,
+          "n_tds": 46.8
+        },
+        "opp_rush": {
+          "value": 0.9514,
+          "per_game": 0.864,
+          "n_games": 16.2
+        },
+        "opp_rec": {
+          "value": 1.1036,
+          "per_game": 1.741,
+          "n_games": 16.2
+        },
+        "game_line": {
+          "total": 44.5,
+          "spread": -7.5,
+          "implied_team_runs": 26.0
+        }
+      },
+      "break_even_american": 966,
+      "odds": {
+        "best_price_decimal": 8.5,
+        "best_price_american": 750,
+        "best_book": "BetRivers",
+        "implied_prob": 0.1176,
+        "fair_prob": 0.1355,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.2027,
+        "edge_vs_fair": -0.0417
+      }
+    },
+    {
+      "player_id": "00-0041395",
+      "name": "Eli Raridon",
+      "position": "TE",
+      "team": "NE",
+      "opponent": "CHI",
+      "home": false,
+      "game_id": "2026_07_NE_CHI",
+      "kickoff_utc": "2026-10-23T00:15:00+00:00",
+      "week": 7,
+      "confidence": "low",
+      "rookie": true,
+      "changed_teams": false,
+      "lambda": 0.09749,
+      "lambda_rush": 0.02321,
+      "lambda_rec": 0.07428,
+      "prob": 0.09289,
+      "expected_tds": 0.0975,
+      "team_expected_off_tds": 2.801,
+      "team_expected_rush_tds": 1.048,
+      "team_expected_rec_tds": 1.753,
+      "shares": {
+        "rush": 0.0233,
+        "rec": 0.0384
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 12.0,
+        "red_zone_targets": 4.0,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 1.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.8011,
+          "implied_points": 26.0,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.374,
+          "observed": 0.3675,
+          "n_tds": 46.8
+        },
+        "opp_rush": {
+          "value": 0.9514,
+          "per_game": 0.864,
+          "n_games": 16.2
+        },
+        "opp_rec": {
+          "value": 1.1036,
+          "per_game": 1.741,
+          "n_games": 16.2
+        },
+        "game_line": {
+          "total": 44.5,
+          "spread": -7.5,
+          "implied_team_runs": 26.0
+        }
+      },
+      "break_even_american": 977,
+      "odds": {
+        "best_price_decimal": 7.0,
+        "best_price_american": 600,
+        "best_book": "BetMGM",
+        "implied_prob": 0.1429,
+        "fair_prob": 0.1572,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.3498,
+        "edge_vs_fair": -0.0643
+      }
+    },
+    {
+      "player_id": "00-0039918",
+      "name": "Caleb Williams",
+      "position": "QB",
+      "team": "CHI",
+      "opponent": "NE",
+      "home": true,
+      "game_id": "2026_07_NE_CHI",
+      "kickoff_utc": "2026-10-23T00:15:00+00:00",
+      "week": 7,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.08245,
+      "lambda_rush": 0.08245,
+      "lambda_rec": 0.0,
+      "prob": 0.07915,
+      "expected_tds": 0.0825,
+      "team_expected_off_tds": 2.271,
+      "team_expected_rush_tds": 1.086,
+      "team_expected_rec_tds": 1.185,
+      "shares": {
+        "rush": 0.0889,
+        "rec": 0.0
+      },
+      "usage": {
+        "carries": 57.6,
+        "goal_line_carries": 2.2,
+        "targets": 1.2,
+        "red_zone_targets": 0.6,
+        "prior_rush_tds": 3.8,
+        "prior_rec_tds": 0.6
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.2708,
+          "implied_points": 21.75,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.4782,
+          "observed": 0.5281,
+          "n_tds": 46.2
+        },
+        "opp_rush": {
+          "value": 0.8537,
+          "per_game": 0.716,
+          "n_games": 16.2
+        },
+        "opp_rec": {
+          "value": 0.9449,
+          "per_game": 1.358,
+          "n_games": 16.2
+        },
+        "game_line": {
+          "total": 46.5,
+          "spread": 3.0,
+          "implied_team_runs": 21.75
+        }
+      },
+      "break_even_american": 1163,
+      "odds": {
+        "best_price_decimal": 4.7,
+        "best_price_american": 370,
+        "best_book": "DraftKings",
+        "implied_prob": 0.2128,
+        "fair_prob": 0.2096,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.628,
+        "edge_vs_fair": -0.1305
+      }
+    },
+    {
+      "player_id": "00-0038564",
+      "name": "Cameron Latu",
+      "position": "TE",
+      "team": "NE",
+      "opponent": "CHI",
+      "home": false,
+      "game_id": "2026_07_NE_CHI",
+      "kickoff_utc": "2026-10-23T00:15:00+00:00",
+      "week": 7,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.07351,
+      "lambda_rush": 0.02321,
+      "lambda_rec": 0.05031,
+      "prob": 0.07088,
+      "expected_tds": 0.0735,
+      "team_expected_off_tds": 2.801,
+      "team_expected_rush_tds": 1.048,
+      "team_expected_rec_tds": 1.753,
+      "shares": {
+        "rush": 0.0233,
+        "rec": 0.026
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 0.0,
+        "red_zone_targets": 0.0,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 0.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.8011,
+          "implied_points": 26.0,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.374,
+          "observed": 0.3675,
+          "n_tds": 46.8
+        },
+        "opp_rush": {
+          "value": 0.9514,
+          "per_game": 0.864,
+          "n_games": 16.2
+        },
+        "opp_rec": {
+          "value": 1.1036,
+          "per_game": 1.741,
+          "n_games": 16.2
+        },
+        "game_line": {
+          "total": 44.5,
+          "spread": -7.5,
+          "implied_team_runs": 26.0
+        }
+      },
+      "break_even_american": 1311,
+      "odds": {
+        "best_price_decimal": 31.0,
+        "best_price_american": 3000,
+        "best_book": "BetMGM",
+        "implied_prob": 0.0323,
+        "fair_prob": 0.0467,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 1.1973,
+        "edge_vs_fair": 0.0242
+      }
+    }
+  ]
+}
