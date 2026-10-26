@@ -1,0 +1,1484 @@
+{
+  "generated_at": "2026-10-26T19:10:37+00:00",
+  "date": "2026-10-26",
+  "season": 2026,
+  "week": 7,
+  "model_version": "td-0.1.0",
+  "n_games": 1,
+  "n_games_today": 1,
+  "window": "late",
+  "window_label": "late games (4pm ET and later)",
+  "n_players_scored": 29,
+  "odds_available": true,
+  "game_lines_available": true,
+  "seasons_used": [
+    2026,
+    2025
+  ],
+  "current_season_games": 6,
+  "cold_start": false,
+  "league": {
+    "rush_td_per_team_game": 0.938,
+    "rec_td_per_team_game": 1.491
+  },
+  "top_n": 20,
+  "ev_min_prob": 0.1,
+  "ev_max_ratio": 1.3,
+  "games": [
+    {
+      "game_id": "2026_07_DAL_PHI",
+      "season": 2026,
+      "week": 7,
+      "game_type": "REG",
+      "kickoff_utc": "2026-10-27T00:15:00+00:00",
+      "home_team": "PHI",
+      "away_team": "DAL",
+      "roof": "outdoors",
+      "stadium": "Lincoln Financial Field",
+      "home_score": null,
+      "away_score": null
+    }
+  ],
+  "players": [
+    {
+      "player_id": "00-0036997",
+      "name": "Javonte Williams",
+      "position": "RB",
+      "team": "DAL",
+      "opponent": "PHI",
+      "home": false,
+      "game_id": "2026_07_DAL_PHI",
+      "kickoff_utc": "2026-10-27T00:15:00+00:00",
+      "week": 7,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 1.01512,
+      "lambda_rush": 0.88349,
+      "lambda_rec": 0.13163,
+      "prob": 0.63764,
+      "expected_tds": 1.0151,
+      "team_expected_off_tds": 3.332,
+      "team_expected_rush_tds": 1.309,
+      "team_expected_rec_tds": 2.022,
+      "shares": {
+        "rush": 0.5644,
+        "rec": 0.0812
+      },
+      "usage": {
+        "carries": 236.2,
+        "goal_line_carries": 27.0,
+        "targets": 52.599999999999994,
+        "red_zone_targets": 10.2,
+        "prior_rush_tds": 13.6,
+        "prior_rec_tds": 2.2
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 3.3315,
+          "implied_points": 30.25,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.393,
+          "observed": 0.3966,
+          "n_tds": 47.4
+        },
+        "opp_rush": {
+          "value": 1.1955,
+          "per_game": 1.235,
+          "n_games": 16.2
+        },
+        "opp_rec": {
+          "value": 0.8015,
+          "per_game": 1.012,
+          "n_games": 16.2
+        },
+        "game_line": {
+          "total": 54.0,
+          "spread": -6.5,
+          "implied_team_runs": 30.25
+        }
+      },
+      "break_even_american": -176,
+      "odds": {
+        "best_price_decimal": 1.63,
+        "best_price_american": -159,
+        "best_book": "BetRivers",
+        "implied_prob": 0.6135,
+        "fair_prob": 0.5896,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.0394,
+        "edge_vs_fair": 0.048
+      }
+    },
+    {
+      "player_id": "00-0034844",
+      "name": "Saquon Barkley",
+      "position": "RB",
+      "team": "PHI",
+      "opponent": "DAL",
+      "home": true,
+      "game_id": "2026_07_DAL_PHI",
+      "kickoff_utc": "2026-10-27T00:15:00+00:00",
+      "week": 7,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.56669,
+      "lambda_rush": 0.45601,
+      "lambda_rec": 0.11068,
+      "prob": 0.4326,
+      "expected_tds": 0.5667,
+      "team_expected_off_tds": 1.865,
+      "team_expected_rush_tds": 0.697,
+      "team_expected_rec_tds": 1.168,
+      "shares": {
+        "rush": 0.5232,
+        "rec": 0.0789
+      },
+      "usage": {
+        "carries": 204.6,
+        "goal_line_carries": 11.0,
+        "targets": 37.599999999999994,
+        "red_zone_targets": 4.8,
+        "prior_rush_tds": 4.2,
+        "prior_rec_tds": 1.2
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 1.8652,
+          "implied_points": 18.5,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3738,
+          "observed": 0.366,
+          "n_tds": 38.8
+        },
+        "opp_rush": {
+          "value": 1.25,
+          "per_game": 1.321,
+          "n_games": 16.2
+        },
+        "opp_rec": {
+          "value": 1.2008,
+          "per_game": 1.975,
+          "n_games": 16.2
+        },
+        "game_line": {
+          "total": 40.5,
+          "spread": 3.5,
+          "implied_team_runs": 18.5
+        }
+      },
+      "break_even_american": 131,
+      "odds": {
+        "best_price_decimal": 2.14,
+        "best_price_american": 114,
+        "best_book": "BetRivers",
+        "implied_prob": 0.4673,
+        "fair_prob": 0.4717,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.0742,
+        "edge_vs_fair": -0.0391
+      }
+    },
+    {
+      "player_id": "00-0036358",
+      "name": "CeeDee Lamb",
+      "position": "WR",
+      "team": "DAL",
+      "opponent": "PHI",
+      "home": false,
+      "game_id": "2026_07_DAL_PHI",
+      "kickoff_utc": "2026-10-27T00:15:00+00:00",
+      "week": 7,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.37935,
+      "lambda_rush": 0.03824,
+      "lambda_rec": 0.34111,
+      "prob": 0.31569,
+      "expected_tds": 0.3793,
+      "team_expected_off_tds": 3.332,
+      "team_expected_rush_tds": 1.309,
+      "team_expected_rec_tds": 2.022,
+      "shares": {
+        "rush": 0.0244,
+        "rec": 0.2105
+      },
+      "usage": {
+        "carries": 2.6,
+        "goal_line_carries": 0.0,
+        "targets": 141.2,
+        "red_zone_targets": 22.2,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 5.8
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 3.3315,
+          "implied_points": 30.25,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.393,
+          "observed": 0.3966,
+          "n_tds": 47.4
+        },
+        "opp_rush": {
+          "value": 1.1955,
+          "per_game": 1.235,
+          "n_games": 16.2
+        },
+        "opp_rec": {
+          "value": 0.8015,
+          "per_game": 1.012,
+          "n_games": 16.2
+        },
+        "game_line": {
+          "total": 54.0,
+          "spread": -6.5,
+          "implied_team_runs": 30.25
+        }
+      },
+      "break_even_american": 217,
+      "odds": {
+        "best_price_decimal": 2.28,
+        "best_price_american": 128,
+        "best_book": "BetRivers",
+        "implied_prob": 0.4386,
+        "fair_prob": 0.4241,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.2802,
+        "edge_vs_fair": -0.1084
+      }
+    },
+    {
+      "player_id": "00-0037247",
+      "name": "George Pickens",
+      "position": "WR",
+      "team": "DAL",
+      "opponent": "PHI",
+      "home": false,
+      "game_id": "2026_07_DAL_PHI",
+      "kickoff_utc": "2026-10-27T00:15:00+00:00",
+      "week": 7,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.37604,
+      "lambda_rush": 0.03954,
+      "lambda_rec": 0.3365,
+      "prob": 0.31342,
+      "expected_tds": 0.376,
+      "team_expected_off_tds": 3.332,
+      "team_expected_rush_tds": 1.309,
+      "team_expected_rec_tds": 2.022,
+      "shares": {
+        "rush": 0.0253,
+        "rec": 0.2076
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 134.8,
+        "red_zone_targets": 20.4,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 6.3999999999999995
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 3.3315,
+          "implied_points": 30.25,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.393,
+          "observed": 0.3966,
+          "n_tds": 47.4
+        },
+        "opp_rush": {
+          "value": 1.1955,
+          "per_game": 1.235,
+          "n_games": 16.2
+        },
+        "opp_rec": {
+          "value": 0.8015,
+          "per_game": 1.012,
+          "n_games": 16.2
+        },
+        "game_line": {
+          "total": 54.0,
+          "spread": -6.5,
+          "implied_team_runs": 30.25
+        }
+      },
+      "break_even_american": 219,
+      "odds": {
+        "best_price_decimal": 2.75,
+        "best_price_american": 175,
+        "best_book": "BetRivers",
+        "implied_prob": 0.3636,
+        "fair_prob": 0.3494,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.1381,
+        "edge_vs_fair": -0.036
+      }
+    },
+    {
+      "player_id": "00-0036912",
+      "name": "DeVonta Smith",
+      "position": "WR",
+      "team": "PHI",
+      "opponent": "DAL",
+      "home": true,
+      "game_id": "2026_07_DAL_PHI",
+      "kickoff_utc": "2026-10-27T00:15:00+00:00",
+      "week": 7,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.35988,
+      "lambda_rush": 0.02872,
+      "lambda_rec": 0.33116,
+      "prob": 0.30224,
+      "expected_tds": 0.3599,
+      "team_expected_off_tds": 1.865,
+      "team_expected_rush_tds": 0.697,
+      "team_expected_rec_tds": 1.168,
+      "shares": {
+        "rush": 0.033,
+        "rec": 0.2361
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 109.39999999999999,
+        "red_zone_targets": 10.2,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 4.4
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 1.8652,
+          "implied_points": 18.5,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3738,
+          "observed": 0.366,
+          "n_tds": 38.8
+        },
+        "opp_rush": {
+          "value": 1.25,
+          "per_game": 1.321,
+          "n_games": 16.2
+        },
+        "opp_rec": {
+          "value": 1.2008,
+          "per_game": 1.975,
+          "n_games": 16.2
+        },
+        "game_line": {
+          "total": 40.5,
+          "spread": 3.5,
+          "implied_team_runs": 18.5
+        }
+      },
+      "break_even_american": 231,
+      "odds": null
+    },
+    {
+      "player_id": "00-0034351",
+      "name": "Dallas Goedert",
+      "position": "TE",
+      "team": "PHI",
+      "opponent": "DAL",
+      "home": true,
+      "game_id": "2026_07_DAL_PHI",
+      "kickoff_utc": "2026-10-27T00:15:00+00:00",
+      "week": 7,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.3397,
+      "lambda_rush": 0.02872,
+      "lambda_rec": 0.31098,
+      "prob": 0.28802,
+      "expected_tds": 0.3397,
+      "team_expected_off_tds": 1.865,
+      "team_expected_rush_tds": 0.697,
+      "team_expected_rec_tds": 1.168,
+      "shares": {
+        "rush": 0.033,
+        "rec": 0.2217
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 73.19999999999999,
+        "red_zone_targets": 11.0,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 8.6
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 1.8652,
+          "implied_points": 18.5,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3738,
+          "observed": 0.366,
+          "n_tds": 38.8
+        },
+        "opp_rush": {
+          "value": 1.25,
+          "per_game": 1.321,
+          "n_games": 16.2
+        },
+        "opp_rec": {
+          "value": 1.2008,
+          "per_game": 1.975,
+          "n_games": 16.2
+        },
+        "game_line": {
+          "total": 40.5,
+          "spread": 3.5,
+          "implied_team_runs": 18.5
+        }
+      },
+      "break_even_american": 247,
+      "odds": {
+        "best_price_decimal": 2.9,
+        "best_price_american": 190,
+        "best_book": "BetMGM",
+        "implied_prob": 0.3448,
+        "fair_prob": 0.34,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.1647,
+        "edge_vs_fair": -0.052
+      }
+    },
+    {
+      "player_id": "00-0038041",
+      "name": "Jake Ferguson",
+      "position": "TE",
+      "team": "DAL",
+      "opponent": "PHI",
+      "home": false,
+      "game_id": "2026_07_DAL_PHI",
+      "kickoff_utc": "2026-10-27T00:15:00+00:00",
+      "week": 7,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.30911,
+      "lambda_rush": 0.0391,
+      "lambda_rec": 0.27001,
+      "prob": 0.2659,
+      "expected_tds": 0.3091,
+      "team_expected_off_tds": 3.332,
+      "team_expected_rush_tds": 1.309,
+      "team_expected_rec_tds": 2.022,
+      "shares": {
+        "rush": 0.025,
+        "rec": 0.1666
+      },
+      "usage": {
+        "carries": 0.6,
+        "goal_line_carries": 0.0,
+        "targets": 85.8,
+        "red_zone_targets": 19.0,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 7.8
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 3.3315,
+          "implied_points": 30.25,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.393,
+          "observed": 0.3966,
+          "n_tds": 47.4
+        },
+        "opp_rush": {
+          "value": 1.1955,
+          "per_game": 1.235,
+          "n_games": 16.2
+        },
+        "opp_rec": {
+          "value": 0.8015,
+          "per_game": 1.012,
+          "n_games": 16.2
+        },
+        "game_line": {
+          "total": 54.0,
+          "spread": -6.5,
+          "implied_team_runs": 30.25
+        }
+      },
+      "break_even_american": 276,
+      "odds": {
+        "best_price_decimal": 4.2,
+        "best_price_american": 320,
+        "best_book": "BetRivers",
+        "implied_prob": 0.2381,
+        "fair_prob": 0.2678,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.1168,
+        "edge_vs_fair": -0.0019
+      }
+    },
+    {
+      "player_id": "00-0039410",
+      "name": "Ryan Flournoy",
+      "position": "WR",
+      "team": "DAL",
+      "opponent": "PHI",
+      "home": false,
+      "game_id": "2026_07_DAL_PHI",
+      "kickoff_utc": "2026-10-27T00:15:00+00:00",
+      "week": 7,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.21938,
+      "lambda_rush": 0.03829,
+      "lambda_rec": 0.18109,
+      "prob": 0.19698,
+      "expected_tds": 0.2194,
+      "team_expected_off_tds": 3.332,
+      "team_expected_rush_tds": 1.309,
+      "team_expected_rec_tds": 2.022,
+      "shares": {
+        "rush": 0.0245,
+        "rec": 0.1117
+      },
+      "usage": {
+        "carries": 2.4,
+        "goal_line_carries": 0.0,
+        "targets": 70.6,
+        "red_zone_targets": 12.2,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 3.4
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 3.3315,
+          "implied_points": 30.25,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.393,
+          "observed": 0.3966,
+          "n_tds": 47.4
+        },
+        "opp_rush": {
+          "value": 1.1955,
+          "per_game": 1.235,
+          "n_games": 16.2
+        },
+        "opp_rec": {
+          "value": 0.8015,
+          "per_game": 1.012,
+          "n_games": 16.2
+        },
+        "game_line": {
+          "total": 54.0,
+          "spread": -6.5,
+          "implied_team_runs": 30.25
+        }
+      },
+      "break_even_american": 408,
+      "odds": {
+        "best_price_decimal": 4.9,
+        "best_price_american": 390,
+        "best_book": "DraftKings",
+        "implied_prob": 0.2041,
+        "fair_prob": 0.1965,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.0348,
+        "edge_vs_fair": 0.0004
+      }
+    },
+    {
+      "player_id": "00-0038393",
+      "name": "Dontayvion Wicks",
+      "position": "WR",
+      "team": "PHI",
+      "opponent": "DAL",
+      "home": true,
+      "game_id": "2026_07_DAL_PHI",
+      "kickoff_utc": "2026-10-27T00:15:00+00:00",
+      "week": 7,
+      "confidence": "medium",
+      "rookie": false,
+      "changed_teams": true,
+      "lambda": 0.20767,
+      "lambda_rush": 0.02841,
+      "lambda_rec": 0.17927,
+      "prob": 0.18753,
+      "expected_tds": 0.2077,
+      "team_expected_off_tds": 1.865,
+      "team_expected_rush_tds": 0.697,
+      "team_expected_rec_tds": 1.168,
+      "shares": {
+        "rush": 0.0326,
+        "rec": 0.1278
+      },
+      "usage": {
+        "carries": 0.6,
+        "goal_line_carries": 0.0,
+        "targets": 59.599999999999994,
+        "red_zone_targets": 6.4,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 2.2
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 1.8652,
+          "implied_points": 18.5,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3738,
+          "observed": 0.366,
+          "n_tds": 38.8
+        },
+        "opp_rush": {
+          "value": 1.25,
+          "per_game": 1.321,
+          "n_games": 16.2
+        },
+        "opp_rec": {
+          "value": 1.2008,
+          "per_game": 1.975,
+          "n_games": 16.2
+        },
+        "game_line": {
+          "total": 40.5,
+          "spread": 3.5,
+          "implied_team_runs": 18.5
+        }
+      },
+      "break_even_american": 433,
+      "odds": {
+        "best_price_decimal": 3.5,
+        "best_price_american": 250,
+        "best_book": "BetOnline.ag",
+        "implied_prob": 0.2857,
+        "fair_prob": 0.2695,
+        "n_books": 1,
+        "two_sided": false,
+        "ev_per_dollar": -0.3436,
+        "edge_vs_fair": -0.082
+      }
+    },
+    {
+      "player_id": "00-0035662",
+      "name": "Marquise Brown",
+      "position": "WR",
+      "team": "PHI",
+      "opponent": "DAL",
+      "home": true,
+      "game_id": "2026_07_DAL_PHI",
+      "kickoff_utc": "2026-10-27T00:15:00+00:00",
+      "week": 7,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.18136,
+      "lambda_rush": 0.02789,
+      "lambda_rec": 0.15346,
+      "prob": 0.16586,
+      "expected_tds": 0.1814,
+      "team_expected_off_tds": 1.865,
+      "team_expected_rush_tds": 0.697,
+      "team_expected_rec_tds": 1.168,
+      "shares": {
+        "rush": 0.032,
+        "rec": 0.1094
+      },
+      "usage": {
+        "carries": 2.0,
+        "goal_line_carries": 0.0,
+        "targets": 44.4,
+        "red_zone_targets": 6.0,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 3.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 1.8652,
+          "implied_points": 18.5,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3738,
+          "observed": 0.366,
+          "n_tds": 38.8
+        },
+        "opp_rush": {
+          "value": 1.25,
+          "per_game": 1.321,
+          "n_games": 16.2
+        },
+        "opp_rec": {
+          "value": 1.2008,
+          "per_game": 1.975,
+          "n_games": 16.2
+        },
+        "game_line": {
+          "total": 40.5,
+          "spread": 3.5,
+          "implied_team_runs": 18.5
+        }
+      },
+      "break_even_american": 503,
+      "odds": null
+    },
+    {
+      "player_id": "00-0040024",
+      "name": "Darius Cooper",
+      "position": "WR",
+      "team": "PHI",
+      "opponent": "DAL",
+      "home": true,
+      "game_id": "2026_07_DAL_PHI",
+      "kickoff_utc": "2026-10-27T00:15:00+00:00",
+      "week": 7,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.13076,
+      "lambda_rush": 0.02872,
+      "lambda_rec": 0.10204,
+      "prob": 0.12257,
+      "expected_tds": 0.1308,
+      "team_expected_off_tds": 1.865,
+      "team_expected_rush_tds": 0.697,
+      "team_expected_rec_tds": 1.168,
+      "shares": {
+        "rush": 0.033,
+        "rec": 0.0728
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 21.6,
+        "red_zone_targets": 4.0,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 4.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 1.8652,
+          "implied_points": 18.5,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3738,
+          "observed": 0.366,
+          "n_tds": 38.8
+        },
+        "opp_rush": {
+          "value": 1.25,
+          "per_game": 1.321,
+          "n_games": 16.2
+        },
+        "opp_rec": {
+          "value": 1.2008,
+          "per_game": 1.975,
+          "n_games": 16.2
+        },
+        "game_line": {
+          "total": 40.5,
+          "spread": 3.5,
+          "implied_team_runs": 18.5
+        }
+      },
+      "break_even_american": 716,
+      "odds": {
+        "best_price_decimal": 3.6,
+        "best_price_american": 260,
+        "best_book": "BetMGM",
+        "implied_prob": 0.2778,
+        "fair_prob": 0.2816,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.5587,
+        "edge_vs_fair": -0.159
+      }
+    },
+    {
+      "player_id": "00-0038705",
+      "name": "Emari Demercado",
+      "position": "RB",
+      "team": "DAL",
+      "opponent": "PHI",
+      "home": false,
+      "game_id": "2026_07_DAL_PHI",
+      "kickoff_utc": "2026-10-27T00:15:00+00:00",
+      "week": 7,
+      "confidence": "medium",
+      "rookie": false,
+      "changed_teams": true,
+      "lambda": 0.1166,
+      "lambda_rush": 0.07763,
+      "lambda_rec": 0.03897,
+      "prob": 0.11006,
+      "expected_tds": 0.1166,
+      "team_expected_off_tds": 3.332,
+      "team_expected_rush_tds": 1.309,
+      "team_expected_rec_tds": 2.022,
+      "shares": {
+        "rush": 0.0496,
+        "rec": 0.024
+      },
+      "usage": {
+        "carries": 31.4,
+        "goal_line_carries": 0.0,
+        "targets": 12.0,
+        "red_zone_targets": 2.4,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 0.6
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 3.3315,
+          "implied_points": 30.25,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.393,
+          "observed": 0.3966,
+          "n_tds": 47.4
+        },
+        "opp_rush": {
+          "value": 1.1955,
+          "per_game": 1.235,
+          "n_games": 16.2
+        },
+        "opp_rec": {
+          "value": 0.8015,
+          "per_game": 1.012,
+          "n_games": 16.2
+        },
+        "game_line": {
+          "total": 54.0,
+          "spread": -6.5,
+          "implied_team_runs": 30.25
+        }
+      },
+      "break_even_american": 809,
+      "odds": {
+        "best_price_decimal": 18.0,
+        "best_price_american": 1700,
+        "best_book": "BetRivers",
+        "implied_prob": 0.0556,
+        "fair_prob": 0.0674,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": 0.9811,
+        "edge_vs_fair": 0.0427
+      }
+    },
+    {
+      "player_id": "00-0037801",
+      "name": "KaVontae Turpin",
+      "position": "WR",
+      "team": "DAL",
+      "opponent": "PHI",
+      "home": false,
+      "game_id": "2026_07_DAL_PHI",
+      "kickoff_utc": "2026-10-27T00:15:00+00:00",
+      "week": 7,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.11621,
+      "lambda_rush": 0.04361,
+      "lambda_rec": 0.0726,
+      "prob": 0.10971,
+      "expected_tds": 0.1162,
+      "team_expected_off_tds": 3.332,
+      "team_expected_rush_tds": 1.309,
+      "team_expected_rec_tds": 2.022,
+      "shares": {
+        "rush": 0.0279,
+        "rec": 0.0448
+      },
+      "usage": {
+        "carries": 12.2,
+        "goal_line_carries": 0.0,
+        "targets": 29.8,
+        "red_zone_targets": 4.0,
+        "prior_rush_tds": 1.0,
+        "prior_rec_tds": 1.2
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 3.3315,
+          "implied_points": 30.25,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.393,
+          "observed": 0.3966,
+          "n_tds": 47.4
+        },
+        "opp_rush": {
+          "value": 1.1955,
+          "per_game": 1.235,
+          "n_games": 16.2
+        },
+        "opp_rec": {
+          "value": 0.8015,
+          "per_game": 1.012,
+          "n_games": 16.2
+        },
+        "game_line": {
+          "total": 54.0,
+          "spread": -6.5,
+          "implied_team_runs": 30.25
+        }
+      },
+      "break_even_american": 811,
+      "odds": {
+        "best_price_decimal": 7.5,
+        "best_price_american": 650,
+        "best_book": "BetOnline.ag",
+        "implied_prob": 0.1333,
+        "fair_prob": 0.1258,
+        "n_books": 1,
+        "two_sided": false,
+        "ev_per_dollar": -0.1772,
+        "edge_vs_fair": -0.0161
+      }
+    },
+    {
+      "player_id": "00-0033077",
+      "name": "Dak Prescott",
+      "position": "QB",
+      "team": "DAL",
+      "opponent": "PHI",
+      "home": false,
+      "game_id": "2026_07_DAL_PHI",
+      "kickoff_utc": "2026-10-27T00:15:00+00:00",
+      "week": 7,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.11425,
+      "lambda_rush": 0.11425,
+      "lambda_rec": 0.0,
+      "prob": 0.10797,
+      "expected_tds": 0.1143,
+      "team_expected_off_tds": 3.332,
+      "team_expected_rush_tds": 1.309,
+      "team_expected_rec_tds": 2.022,
+      "shares": {
+        "rush": 0.073,
+        "rec": 0.0
+      },
+      "usage": {
+        "carries": 36.2,
+        "goal_line_carries": 3.4,
+        "targets": 0.0,
+        "red_zone_targets": 0.0,
+        "prior_rush_tds": 1.2,
+        "prior_rec_tds": 0.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 3.3315,
+          "implied_points": 30.25,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.393,
+          "observed": 0.3966,
+          "n_tds": 47.4
+        },
+        "opp_rush": {
+          "value": 1.1955,
+          "per_game": 1.235,
+          "n_games": 16.2
+        },
+        "opp_rec": {
+          "value": 0.8015,
+          "per_game": 1.012,
+          "n_games": 16.2
+        },
+        "game_line": {
+          "total": 54.0,
+          "spread": -6.5,
+          "implied_team_runs": 30.25
+        }
+      },
+      "break_even_american": 826,
+      "odds": {
+        "best_price_decimal": 7.5,
+        "best_price_american": 650,
+        "best_book": "BetRivers",
+        "implied_prob": 0.1333,
+        "fair_prob": 0.1348,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.1902,
+        "edge_vs_fair": -0.0268
+      }
+    },
+    {
+      "player_id": "00-0037258",
+      "name": "Dameon Pierce",
+      "position": "RB",
+      "team": "PHI",
+      "opponent": "DAL",
+      "home": true,
+      "game_id": "2026_07_DAL_PHI",
+      "kickoff_utc": "2026-10-27T00:15:00+00:00",
+      "week": 7,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.11072,
+      "lambda_rush": 0.07398,
+      "lambda_rec": 0.03674,
+      "prob": 0.10481,
+      "expected_tds": 0.1107,
+      "team_expected_off_tds": 1.865,
+      "team_expected_rush_tds": 0.697,
+      "team_expected_rec_tds": 1.168,
+      "shares": {
+        "rush": 0.0849,
+        "rec": 0.0262
+      },
+      "usage": {
+        "carries": 31.4,
+        "goal_line_carries": 2.0,
+        "targets": 10.6,
+        "red_zone_targets": 1.0,
+        "prior_rush_tds": 1.0,
+        "prior_rec_tds": 0.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 1.8652,
+          "implied_points": 18.5,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3738,
+          "observed": 0.366,
+          "n_tds": 38.8
+        },
+        "opp_rush": {
+          "value": 1.25,
+          "per_game": 1.321,
+          "n_games": 16.2
+        },
+        "opp_rec": {
+          "value": 1.2008,
+          "per_game": 1.975,
+          "n_games": 16.2
+        },
+        "game_line": {
+          "total": 40.5,
+          "spread": 3.5,
+          "implied_team_runs": 18.5
+        }
+      },
+      "break_even_american": 854,
+      "odds": {
+        "best_price_decimal": 7.5,
+        "best_price_american": 650,
+        "best_book": "FanDuel",
+        "implied_prob": 0.1333,
+        "fair_prob": 0.1451,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.2139,
+        "edge_vs_fair": -0.0403
+      }
+    },
+    {
+      "player_id": "00-0040930",
+      "name": "Camden Brown",
+      "position": "WR",
+      "team": "DAL",
+      "opponent": "PHI",
+      "home": false,
+      "game_id": "2026_07_DAL_PHI",
+      "kickoff_utc": "2026-10-27T00:15:00+00:00",
+      "week": 7,
+      "confidence": "low",
+      "rookie": true,
+      "changed_teams": false,
+      "lambda": 0.09842,
+      "lambda_rush": 0.03954,
+      "lambda_rec": 0.05888,
+      "prob": 0.09373,
+      "expected_tds": 0.0984,
+      "team_expected_off_tds": 3.332,
+      "team_expected_rush_tds": 1.309,
+      "team_expected_rec_tds": 2.022,
+      "shares": {
+        "rush": 0.0253,
+        "rec": 0.0363
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 0.0,
+        "red_zone_targets": 0.0,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 0.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 3.3315,
+          "implied_points": 30.25,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.393,
+          "observed": 0.3966,
+          "n_tds": 47.4
+        },
+        "opp_rush": {
+          "value": 1.1955,
+          "per_game": 1.235,
+          "n_games": 16.2
+        },
+        "opp_rec": {
+          "value": 0.8015,
+          "per_game": 1.012,
+          "n_games": 16.2
+        },
+        "game_line": {
+          "total": 54.0,
+          "spread": -6.5,
+          "implied_team_runs": 30.25
+        }
+      },
+      "break_even_american": 967,
+      "odds": {
+        "best_price_decimal": 16.0,
+        "best_price_american": 1500,
+        "best_book": "DraftKings",
+        "implied_prob": 0.0625,
+        "fair_prob": 0.0755,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": 0.4997,
+        "edge_vs_fair": 0.0183
+      }
+    },
+    {
+      "player_id": "00-0040867",
+      "name": "Makai Lemon",
+      "position": "WR",
+      "team": "PHI",
+      "opponent": "DAL",
+      "home": true,
+      "game_id": "2026_07_DAL_PHI",
+      "kickoff_utc": "2026-10-27T00:15:00+00:00",
+      "week": 7,
+      "confidence": "low",
+      "rookie": true,
+      "changed_teams": false,
+      "lambda": 0.09208,
+      "lambda_rush": 0.02823,
+      "lambda_rec": 0.06385,
+      "prob": 0.08796,
+      "expected_tds": 0.0921,
+      "team_expected_off_tds": 1.865,
+      "team_expected_rush_tds": 0.697,
+      "team_expected_rec_tds": 1.168,
+      "shares": {
+        "rush": 0.0324,
+        "rec": 0.0455
+      },
+      "usage": {
+        "carries": 1.0,
+        "goal_line_carries": 0.0,
+        "targets": 28.0,
+        "red_zone_targets": 0.0,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 0.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 1.8652,
+          "implied_points": 18.5,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3738,
+          "observed": 0.366,
+          "n_tds": 38.8
+        },
+        "opp_rush": {
+          "value": 1.25,
+          "per_game": 1.321,
+          "n_games": 16.2
+        },
+        "opp_rec": {
+          "value": 1.2008,
+          "per_game": 1.975,
+          "n_games": 16.2
+        },
+        "game_line": {
+          "total": 40.5,
+          "spread": 3.5,
+          "implied_team_runs": 18.5
+        }
+      },
+      "break_even_american": 1037,
+      "odds": {
+        "best_price_decimal": 4.25,
+        "best_price_american": 325,
+        "best_book": "BetRivers",
+        "implied_prob": 0.2353,
+        "fair_prob": 0.2301,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.6262,
+        "edge_vs_fair": -0.1421
+      }
+    },
+    {
+      "player_id": "00-0039530",
+      "name": "Brevyn Spann-Ford",
+      "position": "TE",
+      "team": "DAL",
+      "opponent": "PHI",
+      "home": false,
+      "game_id": "2026_07_DAL_PHI",
+      "kickoff_utc": "2026-10-27T00:15:00+00:00",
+      "week": 7,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.08704,
+      "lambda_rush": 0.03954,
+      "lambda_rec": 0.04751,
+      "prob": 0.08336,
+      "expected_tds": 0.087,
+      "team_expected_off_tds": 3.332,
+      "team_expected_rush_tds": 1.309,
+      "team_expected_rec_tds": 2.022,
+      "shares": {
+        "rush": 0.0253,
+        "rec": 0.0293
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 18.8,
+        "red_zone_targets": 2.2,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 0.6
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 3.3315,
+          "implied_points": 30.25,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.393,
+          "observed": 0.3966,
+          "n_tds": 47.4
+        },
+        "opp_rush": {
+          "value": 1.1955,
+          "per_game": 1.235,
+          "n_games": 16.2
+        },
+        "opp_rec": {
+          "value": 0.8015,
+          "per_game": 1.012,
+          "n_games": 16.2
+        },
+        "game_line": {
+          "total": 54.0,
+          "spread": -6.5,
+          "implied_team_runs": 30.25
+        }
+      },
+      "break_even_american": 1100,
+      "odds": {
+        "best_price_decimal": 8.5,
+        "best_price_american": 750,
+        "best_book": "FanDuel",
+        "implied_prob": 0.1176,
+        "fair_prob": 0.1219,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.2914,
+        "edge_vs_fair": -0.0385
+      }
+    },
+    {
+      "player_id": "00-0038738",
+      "name": "Hunter Luepke",
+      "position": "RB",
+      "team": "DAL",
+      "opponent": "PHI",
+      "home": false,
+      "game_id": "2026_07_DAL_PHI",
+      "kickoff_utc": "2026-10-27T00:15:00+00:00",
+      "week": 7,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.08492,
+      "lambda_rush": 0.04409,
+      "lambda_rec": 0.04082,
+      "prob": 0.08141,
+      "expected_tds": 0.0849,
+      "team_expected_off_tds": 3.332,
+      "team_expected_rush_tds": 1.309,
+      "team_expected_rec_tds": 2.022,
+      "shares": {
+        "rush": 0.0282,
+        "rec": 0.0252
+      },
+      "usage": {
+        "carries": 12.6,
+        "goal_line_carries": 0.0,
+        "targets": 13.0,
+        "red_zone_targets": 3.4,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 0.6
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 3.3315,
+          "implied_points": 30.25,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.393,
+          "observed": 0.3966,
+          "n_tds": 47.4
+        },
+        "opp_rush": {
+          "value": 1.1955,
+          "per_game": 1.235,
+          "n_games": 16.2
+        },
+        "opp_rec": {
+          "value": 0.8015,
+          "per_game": 1.012,
+          "n_games": 16.2
+        },
+        "game_line": {
+          "total": 54.0,
+          "spread": -6.5,
+          "implied_team_runs": 30.25
+        }
+      },
+      "break_even_american": 1128,
+      "odds": {
+        "best_price_decimal": 18.0,
+        "best_price_american": 1700,
+        "best_book": "BetRivers",
+        "implied_prob": 0.0556,
+        "fair_prob": 0.0726,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.4654,
+        "edge_vs_fair": 0.0088
+      }
+    },
+    {
+      "player_id": "00-0037120",
+      "name": "Tyler Goodson",
+      "position": "RB",
+      "team": "DAL",
+      "opponent": "PHI",
+      "home": false,
+      "game_id": "2026_07_DAL_PHI",
+      "kickoff_utc": "2026-10-27T00:15:00+00:00",
+      "week": 7,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.08009,
+      "lambda_rush": 0.04932,
+      "lambda_rec": 0.03077,
+      "prob": 0.07697,
+      "expected_tds": 0.0801,
+      "team_expected_off_tds": 3.332,
+      "team_expected_rush_tds": 1.309,
+      "team_expected_rec_tds": 2.022,
+      "shares": {
+        "rush": 0.0315,
+        "rec": 0.019
+      },
+      "usage": {
+        "carries": 16.4,
+        "goal_line_carries": 0.0,
+        "targets": 6.8,
+        "red_zone_targets": 1.6,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 0.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 3.3315,
+          "implied_points": 30.25,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.393,
+          "observed": 0.3966,
+          "n_tds": 47.4
+        },
+        "opp_rush": {
+          "value": 1.1955,
+          "per_game": 1.235,
+          "n_games": 16.2
+        },
+        "opp_rec": {
+          "value": 0.8015,
+          "per_game": 1.012,
+          "n_games": 16.2
+        },
+        "game_line": {
+          "total": 54.0,
+          "spread": -6.5,
+          "implied_team_runs": 30.25
+        }
+      },
+      "break_even_american": 1199,
+      "odds": {
+        "best_price_decimal": 11.0,
+        "best_price_american": 1000,
+        "best_book": "FanDuel",
+        "implied_prob": 0.0909,
+        "fair_prob": 0.0943,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.1533,
+        "edge_vs_fair": -0.0174
+      }
+    }
+  ]
+}
