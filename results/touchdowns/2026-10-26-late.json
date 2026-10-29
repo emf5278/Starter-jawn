@@ -1,0 +1,408 @@
+{
+  "date": "2026-10-26",
+  "window": "late",
+  "season": 2026,
+  "week": 7,
+  "picks": [
+    {
+      "player_id": "00-0036997",
+      "name": "Javonte Williams",
+      "position": "RB",
+      "team": "DAL",
+      "opponent": "PHI",
+      "prob": 0.63764,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 1.63,
+        "best_price_american": -159,
+        "best_book": "BetRivers",
+        "implied_prob": 0.6135,
+        "fair_prob": 0.5896,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.0394,
+        "edge_vs_fair": 0.048
+      },
+      "scored": true
+    },
+    {
+      "player_id": "00-0034844",
+      "name": "Saquon Barkley",
+      "position": "RB",
+      "team": "PHI",
+      "opponent": "DAL",
+      "prob": 0.4326,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 2.14,
+        "best_price_american": 114,
+        "best_book": "BetRivers",
+        "implied_prob": 0.4673,
+        "fair_prob": 0.4717,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.0742,
+        "edge_vs_fair": -0.0391
+      },
+      "scored": true
+    },
+    {
+      "player_id": "00-0036358",
+      "name": "CeeDee Lamb",
+      "position": "WR",
+      "team": "DAL",
+      "opponent": "PHI",
+      "prob": 0.31569,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 2.28,
+        "best_price_american": 128,
+        "best_book": "BetRivers",
+        "implied_prob": 0.4386,
+        "fair_prob": 0.4241,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.2802,
+        "edge_vs_fair": -0.1084
+      },
+      "scored": true
+    },
+    {
+      "player_id": "00-0037247",
+      "name": "George Pickens",
+      "position": "WR",
+      "team": "DAL",
+      "opponent": "PHI",
+      "prob": 0.31342,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 2.75,
+        "best_price_american": 175,
+        "best_book": "BetRivers",
+        "implied_prob": 0.3636,
+        "fair_prob": 0.3494,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.1381,
+        "edge_vs_fair": -0.036
+      },
+      "scored": true
+    },
+    {
+      "player_id": "00-0036912",
+      "name": "DeVonta Smith",
+      "position": "WR",
+      "team": "PHI",
+      "opponent": "DAL",
+      "prob": 0.30224,
+      "confidence": "high",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0034351",
+      "name": "Dallas Goedert",
+      "position": "TE",
+      "team": "PHI",
+      "opponent": "DAL",
+      "prob": 0.28802,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 2.9,
+        "best_price_american": 190,
+        "best_book": "BetMGM",
+        "implied_prob": 0.3448,
+        "fair_prob": 0.34,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.1647,
+        "edge_vs_fair": -0.052
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0038041",
+      "name": "Jake Ferguson",
+      "position": "TE",
+      "team": "DAL",
+      "opponent": "PHI",
+      "prob": 0.2659,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 4.2,
+        "best_price_american": 320,
+        "best_book": "BetRivers",
+        "implied_prob": 0.2381,
+        "fair_prob": 0.2678,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.1168,
+        "edge_vs_fair": -0.0019
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0039410",
+      "name": "Ryan Flournoy",
+      "position": "WR",
+      "team": "DAL",
+      "opponent": "PHI",
+      "prob": 0.19698,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 4.9,
+        "best_price_american": 390,
+        "best_book": "DraftKings",
+        "implied_prob": 0.2041,
+        "fair_prob": 0.1965,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.0348,
+        "edge_vs_fair": 0.0004
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0038393",
+      "name": "Dontayvion Wicks",
+      "position": "WR",
+      "team": "PHI",
+      "opponent": "DAL",
+      "prob": 0.18753,
+      "confidence": "medium",
+      "odds": {
+        "best_price_decimal": 3.5,
+        "best_price_american": 250,
+        "best_book": "BetOnline.ag",
+        "implied_prob": 0.2857,
+        "fair_prob": 0.2695,
+        "n_books": 1,
+        "two_sided": false,
+        "ev_per_dollar": -0.3436,
+        "edge_vs_fair": -0.082
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0035662",
+      "name": "Marquise Brown",
+      "position": "WR",
+      "team": "PHI",
+      "opponent": "DAL",
+      "prob": 0.16586,
+      "confidence": "high",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0040024",
+      "name": "Darius Cooper",
+      "position": "WR",
+      "team": "PHI",
+      "opponent": "DAL",
+      "prob": 0.12257,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 3.6,
+        "best_price_american": 260,
+        "best_book": "BetMGM",
+        "implied_prob": 0.2778,
+        "fair_prob": 0.2816,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.5587,
+        "edge_vs_fair": -0.159
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0038705",
+      "name": "Emari Demercado",
+      "position": "RB",
+      "team": "DAL",
+      "opponent": "PHI",
+      "prob": 0.11006,
+      "confidence": "medium",
+      "odds": {
+        "best_price_decimal": 18.0,
+        "best_price_american": 1700,
+        "best_book": "BetRivers",
+        "implied_prob": 0.0556,
+        "fair_prob": 0.0674,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": 0.9811,
+        "edge_vs_fair": 0.0427
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0037801",
+      "name": "KaVontae Turpin",
+      "position": "WR",
+      "team": "DAL",
+      "opponent": "PHI",
+      "prob": 0.10971,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 7.5,
+        "best_price_american": 650,
+        "best_book": "BetOnline.ag",
+        "implied_prob": 0.1333,
+        "fair_prob": 0.1258,
+        "n_books": 1,
+        "two_sided": false,
+        "ev_per_dollar": -0.1772,
+        "edge_vs_fair": -0.0161
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0033077",
+      "name": "Dak Prescott",
+      "position": "QB",
+      "team": "DAL",
+      "opponent": "PHI",
+      "prob": 0.10797,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 7.5,
+        "best_price_american": 650,
+        "best_book": "BetRivers",
+        "implied_prob": 0.1333,
+        "fair_prob": 0.1348,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.1902,
+        "edge_vs_fair": -0.0268
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0037258",
+      "name": "Dameon Pierce",
+      "position": "RB",
+      "team": "PHI",
+      "opponent": "DAL",
+      "prob": 0.10481,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 7.5,
+        "best_price_american": 650,
+        "best_book": "FanDuel",
+        "implied_prob": 0.1333,
+        "fair_prob": 0.1451,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.2139,
+        "edge_vs_fair": -0.0403
+      },
+      "scored": true
+    },
+    {
+      "player_id": "00-0040930",
+      "name": "Camden Brown",
+      "position": "WR",
+      "team": "DAL",
+      "opponent": "PHI",
+      "prob": 0.09373,
+      "confidence": "low",
+      "odds": {
+        "best_price_decimal": 16.0,
+        "best_price_american": 1500,
+        "best_book": "DraftKings",
+        "implied_prob": 0.0625,
+        "fair_prob": 0.0755,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": 0.4997,
+        "edge_vs_fair": 0.0183
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0040867",
+      "name": "Makai Lemon",
+      "position": "WR",
+      "team": "PHI",
+      "opponent": "DAL",
+      "prob": 0.08796,
+      "confidence": "low",
+      "odds": {
+        "best_price_decimal": 4.25,
+        "best_price_american": 325,
+        "best_book": "BetRivers",
+        "implied_prob": 0.2353,
+        "fair_prob": 0.2301,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.6262,
+        "edge_vs_fair": -0.1421
+      },
+      "scored": true
+    },
+    {
+      "player_id": "00-0039530",
+      "name": "Brevyn Spann-Ford",
+      "position": "TE",
+      "team": "DAL",
+      "opponent": "PHI",
+      "prob": 0.08336,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 8.5,
+        "best_price_american": 750,
+        "best_book": "FanDuel",
+        "implied_prob": 0.1176,
+        "fair_prob": 0.1219,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.2914,
+        "edge_vs_fair": -0.0385
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0038738",
+      "name": "Hunter Luepke",
+      "position": "RB",
+      "team": "DAL",
+      "opponent": "PHI",
+      "prob": 0.08141,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 18.0,
+        "best_price_american": 1700,
+        "best_book": "BetRivers",
+        "implied_prob": 0.0556,
+        "fair_prob": 0.0726,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.4654,
+        "edge_vs_fair": 0.0088
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0037120",
+      "name": "Tyler Goodson",
+      "position": "RB",
+      "team": "DAL",
+      "opponent": "PHI",
+      "prob": 0.07697,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 11.0,
+        "best_price_american": 1000,
+        "best_book": "FanDuel",
+        "implied_prob": 0.0909,
+        "fair_prob": 0.0943,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.1533,
+        "edge_vs_fair": -0.0174
+      },
+      "scored": false
+    }
+  ]
+}
