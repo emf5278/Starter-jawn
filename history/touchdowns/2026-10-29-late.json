@@ -1,0 +1,1494 @@
+{
+  "generated_at": "2026-10-29T18:55:29+00:00",
+  "date": "2026-10-29",
+  "season": 2026,
+  "week": 8,
+  "model_version": "td-0.1.0",
+  "n_games": 1,
+  "n_games_today": 1,
+  "window": "late",
+  "window_label": "late games (4pm ET and later)",
+  "n_players_scored": 33,
+  "odds_available": true,
+  "game_lines_available": true,
+  "seasons_used": [
+    2026,
+    2025
+  ],
+  "current_season_games": 7,
+  "cold_start": false,
+  "league": {
+    "rush_td_per_team_game": 0.938,
+    "rec_td_per_team_game": 1.491
+  },
+  "top_n": 20,
+  "ev_min_prob": 0.1,
+  "ev_max_ratio": 1.3,
+  "games": [
+    {
+      "game_id": "2026_08_CAR_GB",
+      "season": 2026,
+      "week": 8,
+      "game_type": "REG",
+      "kickoff_utc": "2026-10-30T00:15:00+00:00",
+      "home_team": "GB",
+      "away_team": "CAR",
+      "roof": "outdoors",
+      "stadium": "Lambeau Field",
+      "home_score": null,
+      "away_score": null
+    }
+  ],
+  "players": [
+    {
+      "player_id": "00-0035700",
+      "name": "Josh Jacobs",
+      "position": "RB",
+      "team": "GB",
+      "opponent": "CAR",
+      "home": true,
+      "game_id": "2026_08_CAR_GB",
+      "kickoff_utc": "2026-10-30T00:15:00+00:00",
+      "week": 8,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.47442,
+      "lambda_rush": 0.38301,
+      "lambda_rec": 0.09141,
+      "prob": 0.37775,
+      "expected_tds": 0.4744,
+      "team_expected_off_tds": 2.287,
+      "team_expected_rush_tds": 0.796,
+      "team_expected_rec_tds": 1.491,
+      "shares": {
+        "rush": 0.3851,
+        "rec": 0.0706
+      },
+      "usage": {
+        "carries": 151.4,
+        "goal_line_carries": 13.0,
+        "targets": 33.4,
+        "red_zone_targets": 5.6,
+        "prior_rush_tds": 7.8,
+        "prior_rec_tds": 1.6
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.287,
+          "implied_points": 21.88,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3479,
+          "observed": 0.3255,
+          "n_tds": 42.4
+        },
+        "opp_rush": {
+          "value": 1.25,
+          "per_game": 1.42,
+          "n_games": 16.2
+        },
+        "opp_rec": {
+          "value": 0.8681,
+          "per_game": 1.173,
+          "n_games": 16.2
+        },
+        "game_line": {
+          "total": 46.5,
+          "spread": 2.8,
+          "implied_team_runs": 21.88
+        }
+      },
+      "break_even_american": 165,
+      "odds": {
+        "best_price_decimal": 1.73,
+        "best_price_american": -137,
+        "best_book": "BetRivers",
+        "implied_prob": 0.578,
+        "fair_prob": 0.5582,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": -0.3465,
+        "edge_vs_fair": -0.1805
+      }
+    },
+    {
+      "player_id": "00-0036555",
+      "name": "Chuba Hubbard",
+      "position": "RB",
+      "team": "CAR",
+      "opponent": "GB",
+      "home": false,
+      "game_id": "2026_08_CAR_GB",
+      "kickoff_utc": "2026-10-30T00:15:00+00:00",
+      "week": 8,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.47213,
+      "lambda_rush": 0.34129,
+      "lambda_rec": 0.13084,
+      "prob": 0.37633,
+      "expected_tds": 0.4721,
+      "team_expected_off_tds": 2.177,
+      "team_expected_rush_tds": 0.73,
+      "team_expected_rec_tds": 1.447,
+      "shares": {
+        "rush": 0.4358,
+        "rec": 0.0957
+      },
+      "usage": {
+        "carries": 178.0,
+        "goal_line_carries": 6.2,
+        "targets": 41.4,
+        "red_zone_targets": 7.6,
+        "prior_rush_tds": 4.6,
+        "prior_rec_tds": 3.8
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.1772,
+          "implied_points": 21.0,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3352,
+          "observed": 0.3016,
+          "n_tds": 37.8
+        },
+        "opp_rush": {
+          "value": 1.0732,
+          "per_game": 1.047,
+          "n_games": 17.2
+        },
+        "opp_rec": {
+          "value": 0.9446,
+          "per_game": 1.36,
+          "n_games": 17.2
+        },
+        "game_line": {
+          "total": 44.5,
+          "spread": 2.5,
+          "implied_team_runs": 21.0
+        }
+      },
+      "break_even_american": 166,
+      "odds": {
+        "best_price_decimal": 1.87,
+        "best_price_american": -115,
+        "best_book": "DraftKings",
+        "implied_prob": 0.5348,
+        "fair_prob": 0.5099,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": -0.2963,
+        "edge_vs_fair": -0.1336
+      }
+    },
+    {
+      "player_id": "00-0040124",
+      "name": "Tetairoa McMillan",
+      "position": "WR",
+      "team": "CAR",
+      "opponent": "GB",
+      "home": false,
+      "game_id": "2026_08_CAR_GB",
+      "kickoff_utc": "2026-10-30T00:15:00+00:00",
+      "week": 8,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.35634,
+      "lambda_rush": 0.02214,
+      "lambda_rec": 0.3342,
+      "prob": 0.29976,
+      "expected_tds": 0.3563,
+      "team_expected_off_tds": 2.177,
+      "team_expected_rush_tds": 0.73,
+      "team_expected_rec_tds": 1.447,
+      "shares": {
+        "rush": 0.0283,
+        "rec": 0.2444
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 127.2,
+        "red_zone_targets": 16.0,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 6.2
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.1772,
+          "implied_points": 21.0,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3352,
+          "observed": 0.3016,
+          "n_tds": 37.8
+        },
+        "opp_rush": {
+          "value": 1.0732,
+          "per_game": 1.047,
+          "n_games": 17.2
+        },
+        "opp_rec": {
+          "value": 0.9446,
+          "per_game": 1.36,
+          "n_games": 17.2
+        },
+        "game_line": {
+          "total": 44.5,
+          "spread": 2.5,
+          "implied_team_runs": 21.0
+        }
+      },
+      "break_even_american": 234,
+      "odds": {
+        "best_price_decimal": 2.85,
+        "best_price_american": 185,
+        "best_book": "FanDuel",
+        "implied_prob": 0.3509,
+        "fair_prob": 0.3494,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": -0.1457,
+        "edge_vs_fair": -0.0496
+      }
+    },
+    {
+      "player_id": "00-0038124",
+      "name": "Christian Watson",
+      "position": "WR",
+      "team": "GB",
+      "opponent": "CAR",
+      "home": true,
+      "game_id": "2026_08_CAR_GB",
+      "kickoff_utc": "2026-10-30T00:15:00+00:00",
+      "week": 8,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.33233,
+      "lambda_rush": 0.02633,
+      "lambda_rec": 0.306,
+      "prob": 0.28275,
+      "expected_tds": 0.3323,
+      "team_expected_off_tds": 2.287,
+      "team_expected_rush_tds": 0.796,
+      "team_expected_rec_tds": 1.491,
+      "shares": {
+        "rush": 0.0265,
+        "rec": 0.2364
+      },
+      "usage": {
+        "carries": 0.6,
+        "goal_line_carries": 0.0,
+        "targets": 89.0,
+        "red_zone_targets": 10.6,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 9.6
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.287,
+          "implied_points": 21.88,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3479,
+          "observed": 0.3255,
+          "n_tds": 42.4
+        },
+        "opp_rush": {
+          "value": 1.25,
+          "per_game": 1.42,
+          "n_games": 16.2
+        },
+        "opp_rec": {
+          "value": 0.8681,
+          "per_game": 1.173,
+          "n_games": 16.2
+        },
+        "game_line": {
+          "total": 46.5,
+          "spread": 2.8,
+          "implied_team_runs": 21.88
+        }
+      },
+      "break_even_american": 254,
+      "odds": {
+        "best_price_decimal": 2.45,
+        "best_price_american": 145,
+        "best_book": "FanDuel",
+        "implied_prob": 0.4082,
+        "fair_prob": 0.3931,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": -0.3073,
+        "edge_vs_fair": -0.1103
+      }
+    },
+    {
+      "player_id": "00-0040667",
+      "name": "Matthew Golden",
+      "position": "WR",
+      "team": "GB",
+      "opponent": "CAR",
+      "home": true,
+      "game_id": "2026_08_CAR_GB",
+      "kickoff_utc": "2026-10-30T00:15:00+00:00",
+      "week": 8,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.2713,
+      "lambda_rush": 0.02608,
+      "lambda_rec": 0.24522,
+      "prob": 0.23761,
+      "expected_tds": 0.2713,
+      "team_expected_off_tds": 2.287,
+      "team_expected_rush_tds": 0.796,
+      "team_expected_rec_tds": 1.491,
+      "shares": {
+        "rush": 0.0262,
+        "rec": 0.1894
+      },
+      "usage": {
+        "carries": 7.0,
+        "goal_line_carries": 0.0,
+        "targets": 96.4,
+        "red_zone_targets": 15.2,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 3.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.287,
+          "implied_points": 21.88,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3479,
+          "observed": 0.3255,
+          "n_tds": 42.4
+        },
+        "opp_rush": {
+          "value": 1.25,
+          "per_game": 1.42,
+          "n_games": 16.2
+        },
+        "opp_rec": {
+          "value": 0.8681,
+          "per_game": 1.173,
+          "n_games": 16.2
+        },
+        "game_line": {
+          "total": 46.5,
+          "spread": 2.8,
+          "implied_team_runs": 21.88
+        }
+      },
+      "break_even_american": 321,
+      "odds": {
+        "best_price_decimal": 2.7,
+        "best_price_american": 170,
+        "best_book": "BetRivers",
+        "implied_prob": 0.3704,
+        "fair_prob": 0.356,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": -0.3585,
+        "edge_vs_fair": -0.1184
+      }
+    },
+    {
+      "player_id": "00-0038996",
+      "name": "Tucker Kraft",
+      "position": "TE",
+      "team": "GB",
+      "opponent": "CAR",
+      "home": true,
+      "game_id": "2026_08_CAR_GB",
+      "kickoff_utc": "2026-10-30T00:15:00+00:00",
+      "week": 8,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.25076,
+      "lambda_rush": 0.02572,
+      "lambda_rec": 0.22504,
+      "prob": 0.22179,
+      "expected_tds": 0.2508,
+      "team_expected_off_tds": 2.287,
+      "team_expected_rush_tds": 0.796,
+      "team_expected_rec_tds": 1.491,
+      "shares": {
+        "rush": 0.0259,
+        "rec": 0.1738
+      },
+      "usage": {
+        "carries": 2.6,
+        "goal_line_carries": 0.0,
+        "targets": 69.4,
+        "red_zone_targets": 15.2,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 5.6
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.287,
+          "implied_points": 21.88,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3479,
+          "observed": 0.3255,
+          "n_tds": 42.4
+        },
+        "opp_rush": {
+          "value": 1.25,
+          "per_game": 1.42,
+          "n_games": 16.2
+        },
+        "opp_rec": {
+          "value": 0.8681,
+          "per_game": 1.173,
+          "n_games": 16.2
+        },
+        "game_line": {
+          "total": 46.5,
+          "spread": 2.8,
+          "implied_team_runs": 21.88
+        }
+      },
+      "break_even_american": 351,
+      "odds": {
+        "best_price_decimal": 2.95,
+        "best_price_american": 195,
+        "best_book": "BetMGM",
+        "implied_prob": 0.339,
+        "fair_prob": 0.3431,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": -0.3457,
+        "edge_vs_fair": -0.1213
+      }
+    },
+    {
+      "player_id": "00-0039491",
+      "name": "Jalen Coker",
+      "position": "WR",
+      "team": "CAR",
+      "opponent": "GB",
+      "home": false,
+      "game_id": "2026_08_CAR_GB",
+      "kickoff_utc": "2026-10-30T00:15:00+00:00",
+      "week": 8,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.2033,
+      "lambda_rush": 0.02214,
+      "lambda_rec": 0.18116,
+      "prob": 0.18397,
+      "expected_tds": 0.2033,
+      "team_expected_off_tds": 2.177,
+      "team_expected_rush_tds": 0.73,
+      "team_expected_rec_tds": 1.447,
+      "shares": {
+        "rush": 0.0283,
+        "rec": 0.1325
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 66.0,
+        "red_zone_targets": 8.0,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 3.8
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.1772,
+          "implied_points": 21.0,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3352,
+          "observed": 0.3016,
+          "n_tds": 37.8
+        },
+        "opp_rush": {
+          "value": 1.0732,
+          "per_game": 1.047,
+          "n_games": 17.2
+        },
+        "opp_rec": {
+          "value": 0.9446,
+          "per_game": 1.36,
+          "n_games": 17.2
+        },
+        "game_line": {
+          "total": 44.5,
+          "spread": 2.5,
+          "implied_team_runs": 21.0
+        }
+      },
+      "break_even_american": 444,
+      "odds": {
+        "best_price_decimal": 3.15,
+        "best_price_american": 215,
+        "best_book": "BetRivers",
+        "implied_prob": 0.3175,
+        "fair_prob": 0.3093,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": -0.4205,
+        "edge_vs_fair": -0.1253
+      }
+    },
+    {
+      "player_id": "00-0031610",
+      "name": "Darren Waller",
+      "position": "TE",
+      "team": "CAR",
+      "opponent": "GB",
+      "home": false,
+      "game_id": "2026_08_CAR_GB",
+      "kickoff_utc": "2026-10-30T00:15:00+00:00",
+      "week": 8,
+      "confidence": "medium",
+      "rookie": false,
+      "changed_teams": true,
+      "lambda": 0.18955,
+      "lambda_rush": 0.0219,
+      "lambda_rec": 0.16765,
+      "prob": 0.17267,
+      "expected_tds": 0.1896,
+      "team_expected_off_tds": 2.177,
+      "team_expected_rush_tds": 0.73,
+      "team_expected_rec_tds": 1.447,
+      "shares": {
+        "rush": 0.028,
+        "rec": 0.1226
+      },
+      "usage": {
+        "carries": 0.6,
+        "goal_line_carries": 0.0,
+        "targets": 44.0,
+        "red_zone_targets": 8.8,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 6.6
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.1772,
+          "implied_points": 21.0,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3352,
+          "observed": 0.3016,
+          "n_tds": 37.8
+        },
+        "opp_rush": {
+          "value": 1.0732,
+          "per_game": 1.047,
+          "n_games": 17.2
+        },
+        "opp_rec": {
+          "value": 0.9446,
+          "per_game": 1.36,
+          "n_games": 17.2
+        },
+        "game_line": {
+          "total": 44.5,
+          "spread": 2.5,
+          "implied_team_runs": 21.0
+        }
+      },
+      "break_even_american": 479,
+      "odds": {
+        "best_price_decimal": 4.8,
+        "best_price_american": 380,
+        "best_book": "BetMGM",
+        "implied_prob": 0.2083,
+        "fair_prob": 0.2007,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": -0.1712,
+        "edge_vs_fair": -0.0281
+      }
+    },
+    {
+      "player_id": "00-0039811",
+      "name": "MarShawn Lloyd",
+      "position": "RB",
+      "team": "GB",
+      "opponent": "CAR",
+      "home": true,
+      "game_id": "2026_08_CAR_GB",
+      "kickoff_utc": "2026-10-30T00:15:00+00:00",
+      "week": 8,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.16754,
+      "lambda_rush": 0.11733,
+      "lambda_rec": 0.05021,
+      "prob": 0.15426,
+      "expected_tds": 0.1675,
+      "team_expected_off_tds": 2.287,
+      "team_expected_rush_tds": 0.796,
+      "team_expected_rec_tds": 1.491,
+      "shares": {
+        "rush": 0.118,
+        "rec": 0.0388
+      },
+      "usage": {
+        "carries": 54.0,
+        "goal_line_carries": 3.0,
+        "targets": 16.0,
+        "red_zone_targets": 3.0,
+        "prior_rush_tds": 2.0,
+        "prior_rec_tds": 1.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.287,
+          "implied_points": 21.88,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3479,
+          "observed": 0.3255,
+          "n_tds": 42.4
+        },
+        "opp_rush": {
+          "value": 1.25,
+          "per_game": 1.42,
+          "n_games": 16.2
+        },
+        "opp_rec": {
+          "value": 0.8681,
+          "per_game": 1.173,
+          "n_games": 16.2
+        },
+        "game_line": {
+          "total": 46.5,
+          "spread": 2.8,
+          "implied_team_runs": 21.88
+        }
+      },
+      "break_even_american": 548,
+      "odds": {
+        "best_price_decimal": 5.2,
+        "best_price_american": 420,
+        "best_book": "Bovada",
+        "implied_prob": 0.1923,
+        "fair_prob": 0.1965,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": -0.1978,
+        "edge_vs_fair": -0.0423
+      }
+    },
+    {
+      "player_id": "00-0037005",
+      "name": "Tommy Tremble",
+      "position": "TE",
+      "team": "CAR",
+      "opponent": "GB",
+      "home": false,
+      "game_id": "2026_08_CAR_GB",
+      "kickoff_utc": "2026-10-30T00:15:00+00:00",
+      "week": 8,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.14811,
+      "lambda_rush": 0.02214,
+      "lambda_rec": 0.12597,
+      "prob": 0.13766,
+      "expected_tds": 0.1481,
+      "team_expected_off_tds": 2.177,
+      "team_expected_rush_tds": 0.73,
+      "team_expected_rec_tds": 1.447,
+      "shares": {
+        "rush": 0.0283,
+        "rec": 0.0921
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 43.2,
+        "red_zone_targets": 6.0,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 3.2
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.1772,
+          "implied_points": 21.0,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3352,
+          "observed": 0.3016,
+          "n_tds": 37.8
+        },
+        "opp_rush": {
+          "value": 1.0732,
+          "per_game": 1.047,
+          "n_games": 17.2
+        },
+        "opp_rec": {
+          "value": 0.9446,
+          "per_game": 1.36,
+          "n_games": 17.2
+        },
+        "game_line": {
+          "total": 44.5,
+          "spread": 2.5,
+          "implied_team_runs": 21.0
+        }
+      },
+      "break_even_american": 626,
+      "odds": {
+        "best_price_decimal": 6.0,
+        "best_price_american": 500,
+        "best_book": "BetMGM",
+        "implied_prob": 0.1667,
+        "fair_prob": 0.1887,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": -0.174,
+        "edge_vs_fair": -0.051
+      }
+    },
+    {
+      "player_id": "00-0037614",
+      "name": "John Metchie III",
+      "position": "WR",
+      "team": "CAR",
+      "opponent": "GB",
+      "home": false,
+      "game_id": "2026_08_CAR_GB",
+      "kickoff_utc": "2026-10-30T00:15:00+00:00",
+      "week": 8,
+      "confidence": "medium",
+      "rookie": false,
+      "changed_teams": true,
+      "lambda": 0.14203,
+      "lambda_rush": 0.02154,
+      "lambda_rec": 0.12049,
+      "prob": 0.13241,
+      "expected_tds": 0.142,
+      "team_expected_off_tds": 2.177,
+      "team_expected_rush_tds": 0.73,
+      "team_expected_rec_tds": 1.447,
+      "shares": {
+        "rush": 0.0275,
+        "rec": 0.0881
+      },
+      "usage": {
+        "carries": 1.7999999999999998,
+        "goal_line_carries": 0.0,
+        "targets": 46.8,
+        "red_zone_targets": 5.0,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 2.2
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.1772,
+          "implied_points": 21.0,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3352,
+          "observed": 0.3016,
+          "n_tds": 37.8
+        },
+        "opp_rush": {
+          "value": 1.0732,
+          "per_game": 1.047,
+          "n_games": 17.2
+        },
+        "opp_rec": {
+          "value": 0.9446,
+          "per_game": 1.36,
+          "n_games": 17.2
+        },
+        "game_line": {
+          "total": 44.5,
+          "spread": 2.5,
+          "implied_team_runs": 21.0
+        }
+      },
+      "break_even_american": 655,
+      "odds": {
+        "best_price_decimal": 8.5,
+        "best_price_american": 750,
+        "best_book": "DraftKings",
+        "implied_prob": 0.1176,
+        "fair_prob": 0.1144,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": 0.1255,
+        "edge_vs_fair": 0.0181
+      }
+    },
+    {
+      "player_id": "00-0033858",
+      "name": "Jonnu Smith",
+      "position": "TE",
+      "team": "GB",
+      "opponent": "CAR",
+      "home": true,
+      "game_id": "2026_08_CAR_GB",
+      "kickoff_utc": "2026-10-30T00:15:00+00:00",
+      "week": 8,
+      "confidence": "medium",
+      "rookie": false,
+      "changed_teams": true,
+      "lambda": 0.12777,
+      "lambda_rush": 0.02571,
+      "lambda_rec": 0.10206,
+      "prob": 0.11994,
+      "expected_tds": 0.1278,
+      "team_expected_off_tds": 2.287,
+      "team_expected_rush_tds": 0.796,
+      "team_expected_rec_tds": 1.491,
+      "shares": {
+        "rush": 0.0258,
+        "rec": 0.0788
+      },
+      "usage": {
+        "carries": 5.3999999999999995,
+        "goal_line_carries": 0.0,
+        "targets": 41.0,
+        "red_zone_targets": 5.8,
+        "prior_rush_tds": 0.6,
+        "prior_rec_tds": 1.2
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.287,
+          "implied_points": 21.88,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3479,
+          "observed": 0.3255,
+          "n_tds": 42.4
+        },
+        "opp_rush": {
+          "value": 1.25,
+          "per_game": 1.42,
+          "n_games": 16.2
+        },
+        "opp_rec": {
+          "value": 0.8681,
+          "per_game": 1.173,
+          "n_games": 16.2
+        },
+        "game_line": {
+          "total": 46.5,
+          "spread": 2.8,
+          "implied_team_runs": 21.88
+        }
+      },
+      "break_even_american": 734,
+      "odds": {
+        "best_price_decimal": 12.0,
+        "best_price_american": 1100,
+        "best_book": "DraftKings",
+        "implied_prob": 0.0833,
+        "fair_prob": 0.0786,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": 0.4393,
+        "edge_vs_fair": 0.0413
+      }
+    },
+    {
+      "player_id": "00-0040142",
+      "name": "Kaleb Johnson",
+      "position": "RB",
+      "team": "GB",
+      "opponent": "CAR",
+      "home": true,
+      "game_id": "2026_08_CAR_GB",
+      "kickoff_utc": "2026-10-30T00:15:00+00:00",
+      "week": 8,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.12157,
+      "lambda_rush": 0.09146,
+      "lambda_rec": 0.03011,
+      "prob": 0.11447,
+      "expected_tds": 0.1216,
+      "team_expected_off_tds": 2.287,
+      "team_expected_rush_tds": 0.796,
+      "team_expected_rec_tds": 1.491,
+      "shares": {
+        "rush": 0.092,
+        "rec": 0.0233
+      },
+      "usage": {
+        "carries": 44.8,
+        "goal_line_carries": 2.0,
+        "targets": 4.2,
+        "red_zone_targets": 0.0,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 0.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.287,
+          "implied_points": 21.88,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3479,
+          "observed": 0.3255,
+          "n_tds": 42.4
+        },
+        "opp_rush": {
+          "value": 1.25,
+          "per_game": 1.42,
+          "n_games": 16.2
+        },
+        "opp_rec": {
+          "value": 0.8681,
+          "per_game": 1.173,
+          "n_games": 16.2
+        },
+        "game_line": {
+          "total": 46.5,
+          "spread": 2.8,
+          "implied_team_runs": 21.88
+        }
+      },
+      "break_even_american": 774,
+      "odds": {
+        "best_price_decimal": 19.0,
+        "best_price_american": 1800,
+        "best_book": "DraftKings",
+        "implied_prob": 0.0526,
+        "fair_prob": 0.0543,
+        "n_books": 4,
+        "two_sided": false,
+        "ev_per_dollar": 1.1749,
+        "edge_vs_fair": 0.0602
+      }
+    },
+    {
+      "player_id": "00-0040187",
+      "name": "Mitchell Evans",
+      "position": "TE",
+      "team": "CAR",
+      "opponent": "GB",
+      "home": false,
+      "game_id": "2026_08_CAR_GB",
+      "kickoff_utc": "2026-10-30T00:15:00+00:00",
+      "week": 8,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.08841,
+      "lambda_rush": 0.02159,
+      "lambda_rec": 0.06682,
+      "prob": 0.08461,
+      "expected_tds": 0.0884,
+      "team_expected_off_tds": 2.177,
+      "team_expected_rush_tds": 0.73,
+      "team_expected_rec_tds": 1.447,
+      "shares": {
+        "rush": 0.0276,
+        "rec": 0.0489
+      },
+      "usage": {
+        "carries": 1.6,
+        "goal_line_carries": 0.0,
+        "targets": 25.0,
+        "red_zone_targets": 4.4,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 1.2
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.1772,
+          "implied_points": 21.0,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3352,
+          "observed": 0.3016,
+          "n_tds": 37.8
+        },
+        "opp_rush": {
+          "value": 1.0732,
+          "per_game": 1.047,
+          "n_games": 17.2
+        },
+        "opp_rec": {
+          "value": 0.9446,
+          "per_game": 1.36,
+          "n_games": 17.2
+        },
+        "game_line": {
+          "total": 44.5,
+          "spread": 2.5,
+          "implied_team_runs": 21.0
+        }
+      },
+      "break_even_american": 1082,
+      "odds": {
+        "best_price_decimal": 10.0,
+        "best_price_american": 900,
+        "best_book": "FanDuel",
+        "implied_prob": 0.1,
+        "fair_prob": 0.102,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": -0.1539,
+        "edge_vs_fair": -0.0174
+      }
+    },
+    {
+      "player_id": "00-0039150",
+      "name": "Bryce Young",
+      "position": "QB",
+      "team": "CAR",
+      "opponent": "GB",
+      "home": false,
+      "game_id": "2026_08_CAR_GB",
+      "kickoff_utc": "2026-10-30T00:15:00+00:00",
+      "week": 8,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.08739,
+      "lambda_rush": 0.08739,
+      "lambda_rec": 0.0,
+      "prob": 0.08368,
+      "expected_tds": 0.0874,
+      "team_expected_off_tds": 2.177,
+      "team_expected_rush_tds": 0.73,
+      "team_expected_rec_tds": 1.447,
+      "shares": {
+        "rush": 0.1116,
+        "rec": 0.0
+      },
+      "usage": {
+        "carries": 29.4,
+        "goal_line_carries": 1.2,
+        "targets": 0.0,
+        "red_zone_targets": 0.0,
+        "prior_rush_tds": 2.2,
+        "prior_rec_tds": 0.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.1772,
+          "implied_points": 21.0,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3352,
+          "observed": 0.3016,
+          "n_tds": 37.8
+        },
+        "opp_rush": {
+          "value": 1.0732,
+          "per_game": 1.047,
+          "n_games": 17.2
+        },
+        "opp_rec": {
+          "value": 0.9446,
+          "per_game": 1.36,
+          "n_games": 17.2
+        },
+        "game_line": {
+          "total": 44.5,
+          "spread": 2.5,
+          "implied_team_runs": 21.0
+        }
+      },
+      "break_even_american": 1095,
+      "odds": {
+        "best_price_decimal": 8.75,
+        "best_price_american": 775,
+        "best_book": "BetMGM",
+        "implied_prob": 0.1143,
+        "fair_prob": 0.1258,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": -0.2678,
+        "edge_vs_fair": -0.0421
+      }
+    },
+    {
+      "player_id": "00-0039356",
+      "name": "Ja'Tavion Sanders",
+      "position": "TE",
+      "team": "CAR",
+      "opponent": "GB",
+      "home": false,
+      "game_id": "2026_08_CAR_GB",
+      "kickoff_utc": "2026-10-30T00:15:00+00:00",
+      "week": 8,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.07688,
+      "lambda_rush": 0.02214,
+      "lambda_rec": 0.05474,
+      "prob": 0.074,
+      "expected_tds": 0.0769,
+      "team_expected_off_tds": 2.177,
+      "team_expected_rush_tds": 0.73,
+      "team_expected_rec_tds": 1.447,
+      "shares": {
+        "rush": 0.0283,
+        "rec": 0.04
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 20.4,
+        "red_zone_targets": 6.0,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 0.6
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.1772,
+          "implied_points": 21.0,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3352,
+          "observed": 0.3016,
+          "n_tds": 37.8
+        },
+        "opp_rush": {
+          "value": 1.0732,
+          "per_game": 1.047,
+          "n_games": 17.2
+        },
+        "opp_rec": {
+          "value": 0.9446,
+          "per_game": 1.36,
+          "n_games": 17.2
+        },
+        "game_line": {
+          "total": 44.5,
+          "spread": 2.5,
+          "implied_team_runs": 21.0
+        }
+      },
+      "break_even_american": 1251,
+      "odds": {
+        "best_price_decimal": 14.0,
+        "best_price_american": 1300,
+        "best_book": "DraftKings",
+        "implied_prob": 0.0714,
+        "fair_prob": 0.0674,
+        "n_books": 3,
+        "two_sided": false,
+        "ev_per_dollar": 0.036,
+        "edge_vs_fair": 0.0066
+      }
+    },
+    {
+      "player_id": "00-0037091",
+      "name": "Bo Melton",
+      "position": "WR",
+      "team": "GB",
+      "opponent": "CAR",
+      "home": true,
+      "game_id": "2026_08_CAR_GB",
+      "kickoff_utc": "2026-10-30T00:15:00+00:00",
+      "week": 8,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.07228,
+      "lambda_rush": 0.02566,
+      "lambda_rec": 0.04662,
+      "prob": 0.06973,
+      "expected_tds": 0.0723,
+      "team_expected_off_tds": 2.287,
+      "team_expected_rush_tds": 0.796,
+      "team_expected_rec_tds": 1.491,
+      "shares": {
+        "rush": 0.0258,
+        "rec": 0.036
+      },
+      "usage": {
+        "carries": 3.0,
+        "goal_line_carries": 0.0,
+        "targets": 17.8,
+        "red_zone_targets": 0.0,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 0.6
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.287,
+          "implied_points": 21.88,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3479,
+          "observed": 0.3255,
+          "n_tds": 42.4
+        },
+        "opp_rush": {
+          "value": 1.25,
+          "per_game": 1.42,
+          "n_games": 16.2
+        },
+        "opp_rec": {
+          "value": 0.8681,
+          "per_game": 1.173,
+          "n_games": 16.2
+        },
+        "game_line": {
+          "total": 46.5,
+          "spread": 2.8,
+          "implied_team_runs": 21.88
+        }
+      },
+      "break_even_american": 1334,
+      "odds": {
+        "best_price_decimal": 11.0,
+        "best_price_american": 1000,
+        "best_book": "BetMGM",
+        "implied_prob": 0.0909,
+        "fair_prob": 0.111,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": -0.233,
+        "edge_vs_fair": -0.0413
+      }
+    },
+    {
+      "player_id": "00-0038098",
+      "name": "Pierre Strong",
+      "position": "RB",
+      "team": "GB",
+      "opponent": "CAR",
+      "home": true,
+      "game_id": "2026_08_CAR_GB",
+      "kickoff_utc": "2026-10-30T00:15:00+00:00",
+      "week": 8,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.07215,
+      "lambda_rush": 0.03944,
+      "lambda_rec": 0.0327,
+      "prob": 0.0696,
+      "expected_tds": 0.0721,
+      "team_expected_off_tds": 2.287,
+      "team_expected_rush_tds": 0.796,
+      "team_expected_rec_tds": 1.491,
+      "shares": {
+        "rush": 0.0397,
+        "rec": 0.0253
+      },
+      "usage": {
+        "carries": 16.0,
+        "goal_line_carries": 1.0,
+        "targets": 10.0,
+        "red_zone_targets": 0.0,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 0.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.287,
+          "implied_points": 21.88,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3479,
+          "observed": 0.3255,
+          "n_tds": 42.4
+        },
+        "opp_rush": {
+          "value": 1.25,
+          "per_game": 1.42,
+          "n_games": 16.2
+        },
+        "opp_rec": {
+          "value": 0.8681,
+          "per_game": 1.173,
+          "n_games": 16.2
+        },
+        "game_line": {
+          "total": 46.5,
+          "spread": 2.8,
+          "implied_team_runs": 21.88
+        }
+      },
+      "break_even_american": 1337,
+      "odds": null
+    },
+    {
+      "player_id": "00-0040009",
+      "name": "Savion Williams",
+      "position": "WR",
+      "team": "GB",
+      "opponent": "CAR",
+      "home": true,
+      "game_id": "2026_08_CAR_GB",
+      "kickoff_utc": "2026-10-30T00:15:00+00:00",
+      "week": 8,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.06982,
+      "lambda_rush": 0.02776,
+      "lambda_rec": 0.04205,
+      "prob": 0.06744,
+      "expected_tds": 0.0698,
+      "team_expected_off_tds": 2.287,
+      "team_expected_rush_tds": 0.796,
+      "team_expected_rec_tds": 1.491,
+      "shares": {
+        "rush": 0.0279,
+        "rec": 0.0325
+      },
+      "usage": {
+        "carries": 10.6,
+        "goal_line_carries": 0.0,
+        "targets": 13.0,
+        "red_zone_targets": 2.4,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 0.6
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.287,
+          "implied_points": 21.88,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3479,
+          "observed": 0.3255,
+          "n_tds": 42.4
+        },
+        "opp_rush": {
+          "value": 1.25,
+          "per_game": 1.42,
+          "n_games": 16.2
+        },
+        "opp_rec": {
+          "value": 0.8681,
+          "per_game": 1.173,
+          "n_games": 16.2
+        },
+        "game_line": {
+          "total": 46.5,
+          "spread": 2.8,
+          "implied_team_runs": 21.88
+        }
+      },
+      "break_even_american": 1383,
+      "odds": {
+        "best_price_decimal": 5.0,
+        "best_price_american": 400,
+        "best_book": "FanDuel",
+        "implied_prob": 0.2,
+        "fair_prob": 0.2007,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": -0.6628,
+        "edge_vs_fair": -0.1333
+      }
+    },
+    {
+      "player_id": "00-0036264",
+      "name": "Jordan Love",
+      "position": "QB",
+      "team": "GB",
+      "opponent": "CAR",
+      "home": true,
+      "game_id": "2026_08_CAR_GB",
+      "kickoff_utc": "2026-10-30T00:15:00+00:00",
+      "week": 8,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.06833,
+      "lambda_rush": 0.06833,
+      "lambda_rec": 0.0,
+      "prob": 0.06605,
+      "expected_tds": 0.0683,
+      "team_expected_off_tds": 2.287,
+      "team_expected_rush_tds": 0.796,
+      "team_expected_rec_tds": 1.491,
+      "shares": {
+        "rush": 0.0687,
+        "rec": 0.0
+      },
+      "usage": {
+        "carries": 26.4,
+        "goal_line_carries": 2.2,
+        "targets": 0.0,
+        "red_zone_targets": 0.0,
+        "prior_rush_tds": 1.0,
+        "prior_rec_tds": 0.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.287,
+          "implied_points": 21.88,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3479,
+          "observed": 0.3255,
+          "n_tds": 42.4
+        },
+        "opp_rush": {
+          "value": 1.25,
+          "per_game": 1.42,
+          "n_games": 16.2
+        },
+        "opp_rec": {
+          "value": 0.8681,
+          "per_game": 1.173,
+          "n_games": 16.2
+        },
+        "game_line": {
+          "total": 46.5,
+          "spread": 2.8,
+          "implied_team_runs": 21.88
+        }
+      },
+      "break_even_american": 1414,
+      "odds": {
+        "best_price_decimal": 9.0,
+        "best_price_american": 800,
+        "best_book": "BetRivers",
+        "implied_prob": 0.1111,
+        "fair_prob": 0.111,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": -0.4056,
+        "edge_vs_fair": -0.0449
+      }
+    }
+  ]
+}

@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-29T13:53:06+00:00",
+  "generated_at": "2026-10-29T18:55:29+00:00",
   "date": "2026-10-29",
   "season": 2026,
   "week": 8,
   "model_version": "td-0.1.0",
   "n_games": 1,
   "n_games_today": 1,
-  "window": "all",
-  "window_label": "all games",
+  "window": "late",
+  "window_label": "late games (4pm ET and later)",
   "n_players_scored": 33,
   "odds_available": true,
   "game_lines_available": true,
@@ -53,14 +53,14 @@
       "confidence": "high",
       "rookie": false,
       "changed_teams": false,
-      "lambda": 0.47753,
-      "lambda_rush": 0.38552,
-      "lambda_rec": 0.09201,
-      "prob": 0.37968,
-      "expected_tds": 0.4775,
-      "team_expected_off_tds": 2.302,
-      "team_expected_rush_tds": 0.801,
-      "team_expected_rec_tds": 1.501,
+      "lambda": 0.47442,
+      "lambda_rush": 0.38301,
+      "lambda_rec": 0.09141,
+      "prob": 0.37775,
+      "expected_tds": 0.4744,
+      "team_expected_off_tds": 2.287,
+      "team_expected_rush_tds": 0.796,
+      "team_expected_rec_tds": 1.491,
       "shares": {
         "rush": 0.3851,
         "rec": 0.0706
@@ -75,8 +75,8 @@
       },
       "factors": {
         "team_off_tds": {
-          "value": 2.302,
-          "implied_points": 22.0,
+          "value": 2.287,
+          "implied_points": 21.88,
           "source": "game line"
         },
         "team_rush_split": {
@@ -96,21 +96,21 @@
         },
         "game_line": {
           "total": 46.5,
-          "spread": 2.5,
-          "implied_team_runs": 22.0
+          "spread": 2.8,
+          "implied_team_runs": 21.88
         }
       },
-      "break_even_american": 163,
+      "break_even_american": 165,
       "odds": {
-        "best_price_decimal": 1.83,
-        "best_price_american": -120,
+        "best_price_decimal": 1.73,
+        "best_price_american": -137,
         "best_book": "BetRivers",
-        "implied_prob": 0.5464,
-        "fair_prob": 0.5632,
-        "n_books": 6,
+        "implied_prob": 0.578,
+        "fair_prob": 0.5582,
+        "n_books": 5,
         "two_sided": false,
-        "ev_per_dollar": -0.3052,
-        "edge_vs_fair": -0.1835
+        "ev_per_dollar": -0.3465,
+        "edge_vs_fair": -0.1805
       }
     },
     {
@@ -175,15 +175,15 @@
       },
       "break_even_american": 166,
       "odds": {
-        "best_price_decimal": 1.91,
-        "best_price_american": -110,
+        "best_price_decimal": 1.87,
+        "best_price_american": -115,
         "best_book": "DraftKings",
-        "implied_prob": 0.5236,
-        "fair_prob": 0.5072,
-        "n_books": 6,
+        "implied_prob": 0.5348,
+        "fair_prob": 0.5099,
+        "n_books": 5,
         "two_sided": false,
-        "ev_per_dollar": -0.2812,
-        "edge_vs_fair": -0.1309
+        "ev_per_dollar": -0.2963,
+        "edge_vs_fair": -0.1336
       }
     },
     {
@@ -248,14 +248,14 @@
       },
       "break_even_american": 234,
       "odds": {
-        "best_price_decimal": 2.8,
-        "best_price_american": 180,
+        "best_price_decimal": 2.85,
+        "best_price_american": 185,
         "best_book": "FanDuel",
-        "implied_prob": 0.3571,
+        "implied_prob": 0.3509,
         "fair_prob": 0.3494,
-        "n_books": 6,
+        "n_books": 5,
         "two_sided": false,
-        "ev_per_dollar": -0.1607,
+        "ev_per_dollar": -0.1457,
         "edge_vs_fair": -0.0496
       }
     },
@@ -272,14 +272,14 @@
       "confidence": "high",
       "rookie": false,
       "changed_teams": false,
-      "lambda": 0.33451,
-      "lambda_rush": 0.0265,
-      "lambda_rec": 0.30801,
-      "prob": 0.28431,
-      "expected_tds": 0.3345,
-      "team_expected_off_tds": 2.302,
-      "team_expected_rush_tds": 0.801,
-      "team_expected_rec_tds": 1.501,
+      "lambda": 0.33233,
+      "lambda_rush": 0.02633,
+      "lambda_rec": 0.306,
+      "prob": 0.28275,
+      "expected_tds": 0.3323,
+      "team_expected_off_tds": 2.287,
+      "team_expected_rush_tds": 0.796,
+      "team_expected_rec_tds": 1.491,
       "shares": {
         "rush": 0.0265,
         "rec": 0.2364
@@ -294,8 +294,8 @@
       },
       "factors": {
         "team_off_tds": {
-          "value": 2.302,
-          "implied_points": 22.0,
+          "value": 2.287,
+          "implied_points": 21.88,
           "source": "game line"
         },
         "team_rush_split": {
@@ -315,21 +315,21 @@
         },
         "game_line": {
           "total": 46.5,
-          "spread": 2.5,
-          "implied_team_runs": 22.0
+          "spread": 2.8,
+          "implied_team_runs": 21.88
         }
       },
-      "break_even_american": 252,
+      "break_even_american": 254,
       "odds": {
         "best_price_decimal": 2.45,
         "best_price_american": 145,
-        "best_book": "DraftKings",
+        "best_book": "FanDuel",
         "implied_prob": 0.4082,
-        "fair_prob": 0.3891,
-        "n_books": 6,
+        "fair_prob": 0.3931,
+        "n_books": 5,
         "two_sided": false,
-        "ev_per_dollar": -0.3034,
-        "edge_vs_fair": -0.1048
+        "ev_per_dollar": -0.3073,
+        "edge_vs_fair": -0.1103
       }
     },
     {
@@ -345,14 +345,14 @@
       "confidence": "high",
       "rookie": false,
       "changed_teams": false,
-      "lambda": 0.27308,
-      "lambda_rush": 0.02625,
-      "lambda_rec": 0.24683,
-      "prob": 0.23897,
-      "expected_tds": 0.2731,
-      "team_expected_off_tds": 2.302,
-      "team_expected_rush_tds": 0.801,
-      "team_expected_rec_tds": 1.501,
+      "lambda": 0.2713,
+      "lambda_rush": 0.02608,
+      "lambda_rec": 0.24522,
+      "prob": 0.23761,
+      "expected_tds": 0.2713,
+      "team_expected_off_tds": 2.287,
+      "team_expected_rush_tds": 0.796,
+      "team_expected_rec_tds": 1.491,
       "shares": {
         "rush": 0.0262,
         "rec": 0.1894
@@ -367,8 +367,8 @@
       },
       "factors": {
         "team_off_tds": {
-          "value": 2.302,
-          "implied_points": 22.0,
+          "value": 2.287,
+          "implied_points": 21.88,
           "source": "game line"
         },
         "team_rush_split": {
@@ -388,21 +388,21 @@
         },
         "game_line": {
           "total": 46.5,
-          "spread": 2.5,
-          "implied_team_runs": 22.0
+          "spread": 2.8,
+          "implied_team_runs": 21.88
         }
       },
-      "break_even_american": 318,
+      "break_even_american": 321,
       "odds": {
-        "best_price_decimal": 2.75,
-        "best_price_american": 175,
-        "best_book": "BetMGM",
-        "implied_prob": 0.3636,
-        "fair_prob": 0.3541,
-        "n_books": 6,
+        "best_price_decimal": 2.7,
+        "best_price_american": 170,
+        "best_book": "BetRivers",
+        "implied_prob": 0.3704,
+        "fair_prob": 0.356,
+        "n_books": 5,
         "two_sided": false,
-        "ev_per_dollar": -0.3428,
-        "edge_vs_fair": -0.1151
+        "ev_per_dollar": -0.3585,
+        "edge_vs_fair": -0.1184
       }
     },
     {
@@ -418,14 +418,14 @@
       "confidence": "high",
       "rookie": false,
       "changed_teams": false,
-      "lambda": 0.25241,
-      "lambda_rush": 0.02589,
-      "lambda_rec": 0.22652,
-      "prob": 0.22307,
-      "expected_tds": 0.2524,
-      "team_expected_off_tds": 2.302,
-      "team_expected_rush_tds": 0.801,
-      "team_expected_rec_tds": 1.501,
+      "lambda": 0.25076,
+      "lambda_rush": 0.02572,
+      "lambda_rec": 0.22504,
+      "prob": 0.22179,
+      "expected_tds": 0.2508,
+      "team_expected_off_tds": 2.287,
+      "team_expected_rush_tds": 0.796,
+      "team_expected_rec_tds": 1.491,
       "shares": {
         "rush": 0.0259,
         "rec": 0.1738
@@ -440,8 +440,8 @@
       },
       "factors": {
         "team_off_tds": {
-          "value": 2.302,
-          "implied_points": 22.0,
+          "value": 2.287,
+          "implied_points": 21.88,
           "source": "game line"
         },
         "team_rush_split": {
@@ -461,21 +461,21 @@
         },
         "game_line": {
           "total": 46.5,
-          "spread": 2.5,
-          "implied_team_runs": 22.0
+          "spread": 2.8,
+          "implied_team_runs": 21.88
         }
       },
-      "break_even_american": 348,
+      "break_even_american": 351,
       "odds": {
         "best_price_decimal": 2.95,
         "best_price_american": 195,
         "best_book": "BetMGM",
         "implied_prob": 0.339,
-        "fair_prob": 0.3494,
-        "n_books": 6,
+        "fair_prob": 0.3431,
+        "n_books": 5,
         "two_sided": false,
-        "ev_per_dollar": -0.3419,
-        "edge_vs_fair": -0.1263
+        "ev_per_dollar": -0.3457,
+        "edge_vs_fair": -0.1213
       }
     },
     {
@@ -544,11 +544,11 @@
         "best_price_american": 215,
         "best_book": "BetRivers",
         "implied_prob": 0.3175,
-        "fair_prob": 0.3253,
-        "n_books": 6,
+        "fair_prob": 0.3093,
+        "n_books": 5,
         "two_sided": false,
         "ev_per_dollar": -0.4205,
-        "edge_vs_fair": -0.1413
+        "edge_vs_fair": -0.1253
       }
     },
     {
@@ -613,15 +613,15 @@
       },
       "break_even_american": 479,
       "odds": {
-        "best_price_decimal": 5.0,
-        "best_price_american": 400,
+        "best_price_decimal": 4.8,
+        "best_price_american": 380,
         "best_book": "BetMGM",
-        "implied_prob": 0.2,
-        "fair_prob": 0.2097,
-        "n_books": 6,
+        "implied_prob": 0.2083,
+        "fair_prob": 0.2007,
+        "n_books": 5,
         "two_sided": false,
-        "ev_per_dollar": -0.1367,
-        "edge_vs_fair": -0.0371
+        "ev_per_dollar": -0.1712,
+        "edge_vs_fair": -0.0281
       }
     },
     {
@@ -637,14 +637,14 @@
       "confidence": "high",
       "rookie": false,
       "changed_teams": false,
-      "lambda": 0.16864,
-      "lambda_rush": 0.1181,
-      "lambda_rec": 0.05054,
-      "prob": 0.15519,
-      "expected_tds": 0.1686,
-      "team_expected_off_tds": 2.302,
-      "team_expected_rush_tds": 0.801,
-      "team_expected_rec_tds": 1.501,
+      "lambda": 0.16754,
+      "lambda_rush": 0.11733,
+      "lambda_rec": 0.05021,
+      "prob": 0.15426,
+      "expected_tds": 0.1675,
+      "team_expected_off_tds": 2.287,
+      "team_expected_rush_tds": 0.796,
+      "team_expected_rec_tds": 1.491,
       "shares": {
         "rush": 0.118,
         "rec": 0.0388
@@ -659,8 +659,8 @@
       },
       "factors": {
         "team_off_tds": {
-          "value": 2.302,
-          "implied_points": 22.0,
+          "value": 2.287,
+          "implied_points": 21.88,
           "source": "game line"
         },
         "team_rush_split": {
@@ -680,21 +680,21 @@
         },
         "game_line": {
           "total": 46.5,
-          "spread": 2.5,
-          "implied_team_runs": 22.0
+          "spread": 2.8,
+          "implied_team_runs": 21.88
         }
       },
-      "break_even_american": 544,
+      "break_even_american": 548,
       "odds": {
-        "best_price_decimal": 4.8,
-        "best_price_american": 380,
-        "best_book": "DraftKings",
-        "implied_prob": 0.2083,
-        "fair_prob": 0.2074,
-        "n_books": 6,
+        "best_price_decimal": 5.2,
+        "best_price_american": 420,
+        "best_book": "Bovada",
+        "implied_prob": 0.1923,
+        "fair_prob": 0.1965,
+        "n_books": 5,
         "two_sided": false,
-        "ev_per_dollar": -0.2551,
-        "edge_vs_fair": -0.0522
+        "ev_per_dollar": -0.1978,
+        "edge_vs_fair": -0.0423
       }
     },
     {
@@ -759,15 +759,15 @@
       },
       "break_even_american": 626,
       "odds": {
-        "best_price_decimal": 6.25,
-        "best_price_american": 525,
+        "best_price_decimal": 6.0,
+        "best_price_american": 500,
         "best_book": "BetMGM",
-        "implied_prob": 0.16,
-        "fair_prob": 0.1906,
-        "n_books": 6,
+        "implied_prob": 0.1667,
+        "fair_prob": 0.1887,
+        "n_books": 5,
         "two_sided": false,
-        "ev_per_dollar": -0.1396,
-        "edge_vs_fair": -0.0529
+        "ev_per_dollar": -0.174,
+        "edge_vs_fair": -0.051
       }
     },
     {
@@ -832,15 +832,15 @@
       },
       "break_even_american": 655,
       "odds": {
-        "best_price_decimal": 11.5,
-        "best_price_american": 1050,
-        "best_book": "BetRivers",
-        "implied_prob": 0.087,
-        "fair_prob": 0.11,
-        "n_books": 6,
+        "best_price_decimal": 8.5,
+        "best_price_american": 750,
+        "best_book": "DraftKings",
+        "implied_prob": 0.1176,
+        "fair_prob": 0.1144,
+        "n_books": 5,
         "two_sided": false,
-        "ev_per_dollar": 0.5227,
-        "edge_vs_fair": 0.0225
+        "ev_per_dollar": 0.1255,
+        "edge_vs_fair": 0.0181
       }
     },
     {
@@ -856,14 +856,14 @@
       "confidence": "medium",
       "rookie": false,
       "changed_teams": true,
-      "lambda": 0.12861,
-      "lambda_rush": 0.02588,
-      "lambda_rec": 0.10273,
-      "prob": 0.12068,
-      "expected_tds": 0.1286,
-      "team_expected_off_tds": 2.302,
-      "team_expected_rush_tds": 0.801,
-      "team_expected_rec_tds": 1.501,
+      "lambda": 0.12777,
+      "lambda_rush": 0.02571,
+      "lambda_rec": 0.10206,
+      "prob": 0.11994,
+      "expected_tds": 0.1278,
+      "team_expected_off_tds": 2.287,
+      "team_expected_rush_tds": 0.796,
+      "team_expected_rec_tds": 1.491,
       "shares": {
         "rush": 0.0258,
         "rec": 0.0788
@@ -878,8 +878,8 @@
       },
       "factors": {
         "team_off_tds": {
-          "value": 2.302,
-          "implied_points": 22.0,
+          "value": 2.287,
+          "implied_points": 21.88,
           "source": "game line"
         },
         "team_rush_split": {
@@ -899,21 +899,21 @@
         },
         "game_line": {
           "total": 46.5,
-          "spread": 2.5,
-          "implied_team_runs": 22.0
+          "spread": 2.8,
+          "implied_team_runs": 21.88
         }
       },
-      "break_even_american": 729,
+      "break_even_american": 734,
       "odds": {
         "best_price_decimal": 12.0,
         "best_price_american": 1100,
-        "best_book": "FanDuel",
+        "best_book": "DraftKings",
         "implied_prob": 0.0833,
-        "fair_prob": 0.0984,
-        "n_books": 6,
+        "fair_prob": 0.0786,
+        "n_books": 5,
         "two_sided": false,
-        "ev_per_dollar": 0.4482,
-        "edge_vs_fair": 0.0223
+        "ev_per_dollar": 0.4393,
+        "edge_vs_fair": 0.0413
       }
     },
     {
@@ -929,14 +929,14 @@
       "confidence": "high",
       "rookie": false,
       "changed_teams": false,
-      "lambda": 0.12237,
-      "lambda_rush": 0.09206,
-      "lambda_rec": 0.03031,
-      "prob": 0.11518,
-      "expected_tds": 0.1224,
-      "team_expected_off_tds": 2.302,
-      "team_expected_rush_tds": 0.801,
-      "team_expected_rec_tds": 1.501,
+      "lambda": 0.12157,
+      "lambda_rush": 0.09146,
+      "lambda_rec": 0.03011,
+      "prob": 0.11447,
+      "expected_tds": 0.1216,
+      "team_expected_off_tds": 2.287,
+      "team_expected_rush_tds": 0.796,
+      "team_expected_rec_tds": 1.491,
       "shares": {
         "rush": 0.092,
         "rec": 0.0233
@@ -951,8 +951,8 @@
       },
       "factors": {
         "team_off_tds": {
-          "value": 2.302,
-          "implied_points": 22.0,
+          "value": 2.287,
+          "implied_points": 21.88,
           "source": "game line"
         },
         "team_rush_split": {
@@ -972,21 +972,21 @@
         },
         "game_line": {
           "total": 46.5,
-          "spread": 2.5,
-          "implied_team_runs": 22.0
+          "spread": 2.8,
+          "implied_team_runs": 21.88
         }
       },
-      "break_even_american": 768,
+      "break_even_american": 774,
       "odds": {
-        "best_price_decimal": 17.0,
-        "best_price_american": 1600,
+        "best_price_decimal": 19.0,
+        "best_price_american": 1800,
         "best_book": "DraftKings",
-        "implied_prob": 0.0588,
-        "fair_prob": 0.059,
-        "n_books": 5,
+        "implied_prob": 0.0526,
+        "fair_prob": 0.0543,
+        "n_books": 4,
         "two_sided": false,
-        "ev_per_dollar": 0.9581,
-        "edge_vs_fair": 0.0562
+        "ev_per_dollar": 1.1749,
+        "edge_vs_fair": 0.0602
       }
     },
     {
@@ -1051,15 +1051,15 @@
       },
       "break_even_american": 1082,
       "odds": {
-        "best_price_decimal": 10.5,
-        "best_price_american": 950,
-        "best_book": "DraftKings",
-        "implied_prob": 0.0952,
-        "fair_prob": 0.0996,
-        "n_books": 6,
+        "best_price_decimal": 10.0,
+        "best_price_american": 900,
+        "best_book": "FanDuel",
+        "implied_prob": 0.1,
+        "fair_prob": 0.102,
+        "n_books": 5,
         "two_sided": false,
-        "ev_per_dollar": -0.1116,
-        "edge_vs_fair": -0.015
+        "ev_per_dollar": -0.1539,
+        "edge_vs_fair": -0.0174
       }
     },
     {
@@ -1128,11 +1128,11 @@
         "best_price_american": 775,
         "best_book": "BetMGM",
         "implied_prob": 0.1143,
-        "fair_prob": 0.1219,
-        "n_books": 6,
+        "fair_prob": 0.1258,
+        "n_books": 5,
         "two_sided": false,
         "ev_per_dollar": -0.2678,
-        "edge_vs_fair": -0.0382
+        "edge_vs_fair": -0.0421
       }
     },
     {
@@ -1197,15 +1197,15 @@
       },
       "break_even_american": 1251,
       "odds": {
-        "best_price_decimal": 11.0,
-        "best_price_american": 1000,
-        "best_book": "BetRivers",
-        "implied_prob": 0.0909,
-        "fair_prob": 0.1006,
-        "n_books": 4,
+        "best_price_decimal": 14.0,
+        "best_price_american": 1300,
+        "best_book": "DraftKings",
+        "implied_prob": 0.0714,
+        "fair_prob": 0.0674,
+        "n_books": 3,
         "two_sided": false,
-        "ev_per_dollar": -0.186,
-        "edge_vs_fair": -0.0266
+        "ev_per_dollar": 0.036,
+        "edge_vs_fair": 0.0066
       }
     },
     {
@@ -1221,14 +1221,14 @@
       "confidence": "high",
       "rookie": false,
       "changed_teams": false,
-      "lambda": 0.07275,
-      "lambda_rush": 0.02583,
-      "lambda_rec": 0.04692,
-      "prob": 0.07017,
-      "expected_tds": 0.0728,
-      "team_expected_off_tds": 2.302,
-      "team_expected_rush_tds": 0.801,
-      "team_expected_rec_tds": 1.501,
+      "lambda": 0.07228,
+      "lambda_rush": 0.02566,
+      "lambda_rec": 0.04662,
+      "prob": 0.06973,
+      "expected_tds": 0.0723,
+      "team_expected_off_tds": 2.287,
+      "team_expected_rush_tds": 0.796,
+      "team_expected_rec_tds": 1.491,
       "shares": {
         "rush": 0.0258,
         "rec": 0.036
@@ -1243,8 +1243,8 @@
       },
       "factors": {
         "team_off_tds": {
-          "value": 2.302,
-          "implied_points": 22.0,
+          "value": 2.287,
+          "implied_points": 21.88,
           "source": "game line"
         },
         "team_rush_split": {
@@ -1264,21 +1264,21 @@
         },
         "game_line": {
           "total": 46.5,
-          "spread": 2.5,
-          "implied_team_runs": 22.0
+          "spread": 2.8,
+          "implied_team_runs": 21.88
         }
       },
-      "break_even_american": 1325,
+      "break_even_american": 1334,
       "odds": {
         "best_price_decimal": 11.0,
         "best_price_american": 1000,
         "best_book": "BetMGM",
         "implied_prob": 0.0909,
-        "fair_prob": 0.1079,
-        "n_books": 6,
+        "fair_prob": 0.111,
+        "n_books": 5,
         "two_sided": false,
-        "ev_per_dollar": -0.2281,
-        "edge_vs_fair": -0.0377
+        "ev_per_dollar": -0.233,
+        "edge_vs_fair": -0.0413
       }
     },
     {
@@ -1294,14 +1294,14 @@
       "confidence": "high",
       "rookie": false,
       "changed_teams": false,
-      "lambda": 0.07262,
-      "lambda_rush": 0.0397,
-      "lambda_rec": 0.03292,
-      "prob": 0.07004,
-      "expected_tds": 0.0726,
-      "team_expected_off_tds": 2.302,
-      "team_expected_rush_tds": 0.801,
-      "team_expected_rec_tds": 1.501,
+      "lambda": 0.07215,
+      "lambda_rush": 0.03944,
+      "lambda_rec": 0.0327,
+      "prob": 0.0696,
+      "expected_tds": 0.0721,
+      "team_expected_off_tds": 2.287,
+      "team_expected_rush_tds": 0.796,
+      "team_expected_rec_tds": 1.491,
       "shares": {
         "rush": 0.0397,
         "rec": 0.0253
@@ -1316,8 +1316,8 @@
       },
       "factors": {
         "team_off_tds": {
-          "value": 2.302,
-          "implied_points": 22.0,
+          "value": 2.287,
+          "implied_points": 21.88,
           "source": "game line"
         },
         "team_rush_split": {
@@ -1337,11 +1337,11 @@
         },
         "game_line": {
           "total": 46.5,
-          "spread": 2.5,
-          "implied_team_runs": 22.0
+          "spread": 2.8,
+          "implied_team_runs": 21.88
         }
       },
-      "break_even_american": 1328,
+      "break_even_american": 1337,
       "odds": null
     },
     {
@@ -1357,14 +1357,14 @@
       "confidence": "high",
       "rookie": false,
       "changed_teams": false,
-      "lambda": 0.07028,
-      "lambda_rush": 0.02795,
-      "lambda_rec": 0.04233,
-      "prob": 0.06786,
-      "expected_tds": 0.0703,
-      "team_expected_off_tds": 2.302,
-      "team_expected_rush_tds": 0.801,
-      "team_expected_rec_tds": 1.501,
+      "lambda": 0.06982,
+      "lambda_rush": 0.02776,
+      "lambda_rec": 0.04205,
+      "prob": 0.06744,
+      "expected_tds": 0.0698,
+      "team_expected_off_tds": 2.287,
+      "team_expected_rush_tds": 0.796,
+      "team_expected_rec_tds": 1.491,
       "shares": {
         "rush": 0.0279,
         "rec": 0.0325
@@ -1379,8 +1379,8 @@
       },
       "factors": {
         "team_off_tds": {
-          "value": 2.302,
-          "implied_points": 22.0,
+          "value": 2.287,
+          "implied_points": 21.88,
           "source": "game line"
         },
         "team_rush_split": {
@@ -1400,21 +1400,21 @@
         },
         "game_line": {
           "total": 46.5,
-          "spread": 2.5,
-          "implied_team_runs": 22.0
+          "spread": 2.8,
+          "implied_team_runs": 21.88
         }
       },
-      "break_even_american": 1374,
+      "break_even_american": 1383,
       "odds": {
-        "best_price_decimal": 4.9,
-        "best_price_american": 390,
-        "best_book": "DraftKings",
-        "implied_prob": 0.2041,
-        "fair_prob": 0.1988,
-        "n_books": 6,
+        "best_price_decimal": 5.0,
+        "best_price_american": 400,
+        "best_book": "FanDuel",
+        "implied_prob": 0.2,
+        "fair_prob": 0.2007,
+        "n_books": 5,
         "two_sided": false,
-        "ev_per_dollar": -0.6675,
-        "edge_vs_fair": -0.1309
+        "ev_per_dollar": -0.6628,
+        "edge_vs_fair": -0.1333
       }
     },
     {
@@ -1430,14 +1430,14 @@
       "confidence": "high",
       "rookie": false,
       "changed_teams": false,
-      "lambda": 0.06878,
-      "lambda_rush": 0.06878,
+      "lambda": 0.06833,
+      "lambda_rush": 0.06833,
       "lambda_rec": 0.0,
-      "prob": 0.06647,
-      "expected_tds": 0.0688,
-      "team_expected_off_tds": 2.302,
-      "team_expected_rush_tds": 0.801,
-      "team_expected_rec_tds": 1.501,
+      "prob": 0.06605,
+      "expected_tds": 0.0683,
+      "team_expected_off_tds": 2.287,
+      "team_expected_rush_tds": 0.796,
+      "team_expected_rec_tds": 1.491,
       "shares": {
         "rush": 0.0687,
         "rec": 0.0
@@ -1452,8 +1452,8 @@
       },
       "factors": {
         "team_off_tds": {
-          "value": 2.302,
-          "implied_points": 22.0,
+          "value": 2.287,
+          "implied_points": 21.88,
           "source": "game line"
         },
         "team_rush_split": {
@@ -1473,21 +1473,21 @@
         },
         "game_line": {
           "total": 46.5,
-          "spread": 2.5,
-          "implied_team_runs": 22.0
+          "spread": 2.8,
+          "implied_team_runs": 21.88
         }
       },
-      "break_even_american": 1404,
+      "break_even_american": 1414,
       "odds": {
-        "best_price_decimal": 10.0,
-        "best_price_american": 900,
+        "best_price_decimal": 9.0,
+        "best_price_american": 800,
         "best_book": "BetRivers",
-        "implied_prob": 0.1,
-        "fair_prob": 0.1258,
-        "n_books": 6,
+        "implied_prob": 0.1111,
+        "fair_prob": 0.111,
+        "n_books": 5,
         "two_sided": false,
-        "ev_per_dollar": -0.3353,
-        "edge_vs_fair": -0.0593
+        "ev_per_dollar": -0.4056,
+        "edge_vs_fair": -0.0449
       }
     }
   ]
