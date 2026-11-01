@@ -1,0 +1,418 @@
+{
+  "date": "2026-10-29",
+  "window": "all",
+  "season": 2026,
+  "week": 8,
+  "picks": [
+    {
+      "player_id": "00-0035700",
+      "name": "Josh Jacobs",
+      "position": "RB",
+      "team": "GB",
+      "opponent": "CAR",
+      "prob": 0.37968,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 1.83,
+        "best_price_american": -120,
+        "best_book": "BetRivers",
+        "implied_prob": 0.5464,
+        "fair_prob": 0.5632,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.3052,
+        "edge_vs_fair": -0.1835
+      },
+      "scored": true
+    },
+    {
+      "player_id": "00-0036555",
+      "name": "Chuba Hubbard",
+      "position": "RB",
+      "team": "CAR",
+      "opponent": "GB",
+      "prob": 0.37633,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 1.91,
+        "best_price_american": -110,
+        "best_book": "DraftKings",
+        "implied_prob": 0.5236,
+        "fair_prob": 0.5072,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.2812,
+        "edge_vs_fair": -0.1309
+      },
+      "scored": true
+    },
+    {
+      "player_id": "00-0040124",
+      "name": "Tetairoa McMillan",
+      "position": "WR",
+      "team": "CAR",
+      "opponent": "GB",
+      "prob": 0.29976,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 2.8,
+        "best_price_american": 180,
+        "best_book": "FanDuel",
+        "implied_prob": 0.3571,
+        "fair_prob": 0.3494,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.1607,
+        "edge_vs_fair": -0.0496
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0038124",
+      "name": "Christian Watson",
+      "position": "WR",
+      "team": "GB",
+      "opponent": "CAR",
+      "prob": 0.28431,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 2.45,
+        "best_price_american": 145,
+        "best_book": "DraftKings",
+        "implied_prob": 0.4082,
+        "fair_prob": 0.3891,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.3034,
+        "edge_vs_fair": -0.1048
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0040667",
+      "name": "Matthew Golden",
+      "position": "WR",
+      "team": "GB",
+      "opponent": "CAR",
+      "prob": 0.23897,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 2.75,
+        "best_price_american": 175,
+        "best_book": "BetMGM",
+        "implied_prob": 0.3636,
+        "fair_prob": 0.3541,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.3428,
+        "edge_vs_fair": -0.1151
+      },
+      "scored": true
+    },
+    {
+      "player_id": "00-0038996",
+      "name": "Tucker Kraft",
+      "position": "TE",
+      "team": "GB",
+      "opponent": "CAR",
+      "prob": 0.22307,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 2.95,
+        "best_price_american": 195,
+        "best_book": "BetMGM",
+        "implied_prob": 0.339,
+        "fair_prob": 0.3494,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.3419,
+        "edge_vs_fair": -0.1263
+      },
+      "scored": true
+    },
+    {
+      "player_id": "00-0039491",
+      "name": "Jalen Coker",
+      "position": "WR",
+      "team": "CAR",
+      "opponent": "GB",
+      "prob": 0.18397,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 3.15,
+        "best_price_american": 215,
+        "best_book": "BetRivers",
+        "implied_prob": 0.3175,
+        "fair_prob": 0.3253,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.4205,
+        "edge_vs_fair": -0.1413
+      },
+      "scored": true
+    },
+    {
+      "player_id": "00-0031610",
+      "name": "Darren Waller",
+      "position": "TE",
+      "team": "CAR",
+      "opponent": "GB",
+      "prob": 0.17267,
+      "confidence": "medium",
+      "odds": {
+        "best_price_decimal": 5.0,
+        "best_price_american": 400,
+        "best_book": "BetMGM",
+        "implied_prob": 0.2,
+        "fair_prob": 0.2097,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.1367,
+        "edge_vs_fair": -0.0371
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0039811",
+      "name": "MarShawn Lloyd",
+      "position": "RB",
+      "team": "GB",
+      "opponent": "CAR",
+      "prob": 0.15519,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 4.8,
+        "best_price_american": 380,
+        "best_book": "DraftKings",
+        "implied_prob": 0.2083,
+        "fair_prob": 0.2074,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.2551,
+        "edge_vs_fair": -0.0522
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0037005",
+      "name": "Tommy Tremble",
+      "position": "TE",
+      "team": "CAR",
+      "opponent": "GB",
+      "prob": 0.13766,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 6.25,
+        "best_price_american": 525,
+        "best_book": "BetMGM",
+        "implied_prob": 0.16,
+        "fair_prob": 0.1906,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.1396,
+        "edge_vs_fair": -0.0529
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0037614",
+      "name": "John Metchie III",
+      "position": "WR",
+      "team": "CAR",
+      "opponent": "GB",
+      "prob": 0.13241,
+      "confidence": "medium",
+      "odds": {
+        "best_price_decimal": 11.5,
+        "best_price_american": 1050,
+        "best_book": "BetRivers",
+        "implied_prob": 0.087,
+        "fair_prob": 0.11,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.5227,
+        "edge_vs_fair": 0.0225
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0033858",
+      "name": "Jonnu Smith",
+      "position": "TE",
+      "team": "GB",
+      "opponent": "CAR",
+      "prob": 0.12068,
+      "confidence": "medium",
+      "odds": {
+        "best_price_decimal": 12.0,
+        "best_price_american": 1100,
+        "best_book": "FanDuel",
+        "implied_prob": 0.0833,
+        "fair_prob": 0.0984,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.4482,
+        "edge_vs_fair": 0.0223
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0040142",
+      "name": "Kaleb Johnson",
+      "position": "RB",
+      "team": "GB",
+      "opponent": "CAR",
+      "prob": 0.11518,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 17.0,
+        "best_price_american": 1600,
+        "best_book": "DraftKings",
+        "implied_prob": 0.0588,
+        "fair_prob": 0.059,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": 0.9581,
+        "edge_vs_fair": 0.0562
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0040187",
+      "name": "Mitchell Evans",
+      "position": "TE",
+      "team": "CAR",
+      "opponent": "GB",
+      "prob": 0.08461,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 10.5,
+        "best_price_american": 950,
+        "best_book": "DraftKings",
+        "implied_prob": 0.0952,
+        "fair_prob": 0.0996,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.1116,
+        "edge_vs_fair": -0.015
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0039150",
+      "name": "Bryce Young",
+      "position": "QB",
+      "team": "CAR",
+      "opponent": "GB",
+      "prob": 0.08368,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 8.75,
+        "best_price_american": 775,
+        "best_book": "BetMGM",
+        "implied_prob": 0.1143,
+        "fair_prob": 0.1219,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.2678,
+        "edge_vs_fair": -0.0382
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0039356",
+      "name": "Ja'Tavion Sanders",
+      "position": "TE",
+      "team": "CAR",
+      "opponent": "GB",
+      "prob": 0.074,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 11.0,
+        "best_price_american": 1000,
+        "best_book": "BetRivers",
+        "implied_prob": 0.0909,
+        "fair_prob": 0.1006,
+        "n_books": 4,
+        "two_sided": false,
+        "ev_per_dollar": -0.186,
+        "edge_vs_fair": -0.0266
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0037091",
+      "name": "Bo Melton",
+      "position": "WR",
+      "team": "GB",
+      "opponent": "CAR",
+      "prob": 0.07017,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 11.0,
+        "best_price_american": 1000,
+        "best_book": "BetMGM",
+        "implied_prob": 0.0909,
+        "fair_prob": 0.1079,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.2281,
+        "edge_vs_fair": -0.0377
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0038098",
+      "name": "Pierre Strong",
+      "position": "RB",
+      "team": "GB",
+      "opponent": "CAR",
+      "prob": 0.07004,
+      "confidence": "high",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0040009",
+      "name": "Savion Williams",
+      "position": "WR",
+      "team": "GB",
+      "opponent": "CAR",
+      "prob": 0.06786,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 4.9,
+        "best_price_american": 390,
+        "best_book": "DraftKings",
+        "implied_prob": 0.2041,
+        "fair_prob": 0.1988,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.6675,
+        "edge_vs_fair": -0.1309
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0036264",
+      "name": "Jordan Love",
+      "position": "QB",
+      "team": "GB",
+      "opponent": "CAR",
+      "prob": 0.06647,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 10.0,
+        "best_price_american": 900,
+        "best_book": "BetRivers",
+        "implied_prob": 0.1,
+        "fair_prob": 0.1258,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.3353,
+        "edge_vs_fair": -0.0593
+      },
+      "scored": false
+    }
+  ]
+}
