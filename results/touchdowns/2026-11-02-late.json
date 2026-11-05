@@ -1,0 +1,418 @@
+{
+  "date": "2026-11-02",
+  "window": "late",
+  "season": 2026,
+  "week": 8,
+  "picks": [
+    {
+      "player_id": "00-0038543",
+      "name": "Jaxon Smith-Njigba",
+      "position": "WR",
+      "team": "SEA",
+      "opponent": "CHI",
+      "prob": 0.53178,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 1.95,
+        "best_price_american": -105,
+        "best_book": "FanDuel",
+        "implied_prob": 0.5128,
+        "fair_prob": 0.4965,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.037,
+        "edge_vs_fair": 0.0352
+      },
+      "scored": true
+    },
+    {
+      "player_id": "00-0036275",
+      "name": "D'Andre Swift",
+      "position": "RB",
+      "team": "CHI",
+      "opponent": "SEA",
+      "prob": 0.41465,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 1.87,
+        "best_price_american": -115,
+        "best_book": "DraftKings",
+        "implied_prob": 0.5348,
+        "fair_prob": 0.5099,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.2246,
+        "edge_vs_fair": -0.0953
+      },
+      "scored": true
+    },
+    {
+      "player_id": "00-0038797",
+      "name": "Emanuel Wilson",
+      "position": "RB",
+      "team": "SEA",
+      "opponent": "CHI",
+      "prob": 0.34776,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 4.6,
+        "best_price_american": 360,
+        "best_book": "BetMGM",
+        "implied_prob": 0.2174,
+        "fair_prob": 0.2246,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.5997,
+        "edge_vs_fair": 0.1231
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0039165",
+      "name": "Zach Charbonnet",
+      "position": "RB",
+      "team": "SEA",
+      "opponent": "CHI",
+      "prob": 0.27773,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 2.4,
+        "best_price_american": 140,
+        "best_book": "BetMGM",
+        "implied_prob": 0.4167,
+        "fair_prob": 0.4058,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.3334,
+        "edge_vs_fair": -0.1281
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0040236",
+      "name": "Kyle Monangai",
+      "position": "RB",
+      "team": "CHI",
+      "opponent": "SEA",
+      "prob": 0.27686,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 1.8,
+        "best_price_american": -125,
+        "best_book": "BetOnline.ag",
+        "implied_prob": 0.5556,
+        "fair_prob": 0.5241,
+        "n_books": 1,
+        "two_sided": false,
+        "ev_per_dollar": -0.5017,
+        "edge_vs_fair": -0.2472
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0040126",
+      "name": "Colston Loveland",
+      "position": "TE",
+      "team": "CHI",
+      "opponent": "SEA",
+      "prob": 0.27661,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 3.35,
+        "best_price_american": 235,
+        "best_book": "DraftKings",
+        "implied_prob": 0.2985,
+        "fair_prob": 0.2881,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.0734,
+        "edge_vs_fair": -0.0115
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0039793",
+      "name": "AJ Barner",
+      "position": "TE",
+      "team": "SEA",
+      "opponent": "CHI",
+      "prob": 0.26921,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 3.65,
+        "best_price_american": 265,
+        "best_book": "BetRivers",
+        "implied_prob": 0.274,
+        "fair_prob": 0.2657,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.0174,
+        "edge_vs_fair": 0.0035
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0037545",
+      "name": "Rashid Shaheed",
+      "position": "WR",
+      "team": "SEA",
+      "opponent": "CHI",
+      "prob": 0.25526,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 4.5,
+        "best_price_american": 350,
+        "best_book": "BetOnline.ag",
+        "implied_prob": 0.2222,
+        "fair_prob": 0.2096,
+        "n_books": 1,
+        "two_sided": false,
+        "ev_per_dollar": 0.1487,
+        "edge_vs_fair": 0.0456
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0039919",
+      "name": "Rome Odunze",
+      "position": "WR",
+      "team": "CHI",
+      "opponent": "SEA",
+      "prob": 0.24798,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 3.75,
+        "best_price_american": 275,
+        "best_book": "DraftKings",
+        "implied_prob": 0.2667,
+        "fair_prob": 0.2658,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.0701,
+        "edge_vs_fair": -0.0178
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0033908",
+      "name": "Cooper Kupp",
+      "position": "WR",
+      "team": "SEA",
+      "opponent": "CHI",
+      "prob": 0.2378,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 4.2,
+        "best_price_american": 320,
+        "best_book": "FanDuel",
+        "implied_prob": 0.2381,
+        "fair_prob": 0.2358,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.0012,
+        "edge_vs_fair": 0.002
+      },
+      "scored": true
+    },
+    {
+      "player_id": "00-0040735",
+      "name": "Luther Burden III",
+      "position": "WR",
+      "team": "CHI",
+      "opponent": "SEA",
+      "prob": 0.22994,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 3.3,
+        "best_price_american": 230,
+        "best_book": "DraftKings",
+        "implied_prob": 0.303,
+        "fair_prob": 0.2903,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.2412,
+        "edge_vs_fair": -0.0604
+      },
+      "scored": true
+    },
+    {
+      "player_id": "00-0039299",
+      "name": "George Holani",
+      "position": "RB",
+      "team": "SEA",
+      "opponent": "CHI",
+      "prob": 0.15794,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 7.5,
+        "best_price_american": 650,
+        "best_book": "BetRivers",
+        "implied_prob": 0.1333,
+        "fair_prob": 0.1572,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": 0.1845,
+        "edge_vs_fair": 0.0007
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0032464",
+      "name": "Kalif Raymond",
+      "position": "WR",
+      "team": "CHI",
+      "opponent": "SEA",
+      "prob": 0.1422,
+      "confidence": "medium",
+      "odds": {
+        "best_price_decimal": 6.75,
+        "best_price_american": 575,
+        "best_book": "BetMGM",
+        "implied_prob": 0.1481,
+        "fair_prob": 0.148,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.0402,
+        "edge_vs_fair": -0.0058
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0040648",
+      "name": "Tory Horton",
+      "position": "WR",
+      "team": "SEA",
+      "opponent": "CHI",
+      "prob": 0.14013,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 5.1,
+        "best_price_american": 410,
+        "best_book": "FanDuel",
+        "implied_prob": 0.1961,
+        "fair_prob": 0.1926,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.2853,
+        "edge_vs_fair": -0.0525
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0039918",
+      "name": "Caleb Williams",
+      "position": "QB",
+      "team": "CHI",
+      "opponent": "SEA",
+      "prob": 0.08902,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 5.8,
+        "best_price_american": 480,
+        "best_book": "FanDuel",
+        "implied_prob": 0.1724,
+        "fair_prob": 0.17,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.4837,
+        "edge_vs_fair": -0.081
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0033576",
+      "name": "Eric Saubert",
+      "position": "TE",
+      "team": "SEA",
+      "opponent": "CHI",
+      "prob": 0.07998,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 16.0,
+        "best_price_american": 1500,
+        "best_book": "DraftKings",
+        "implied_prob": 0.0625,
+        "fair_prob": 0.0674,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.2797,
+        "edge_vs_fair": 0.0126
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0041178",
+      "name": "Robert Henry Jr.",
+      "position": "RB",
+      "team": "SEA",
+      "opponent": "CHI",
+      "prob": 0.07869,
+      "confidence": "low",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0039021",
+      "name": "Roschon Johnson",
+      "position": "RB",
+      "team": "CHI",
+      "opponent": "SEA",
+      "prob": 0.07623,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 4.8,
+        "best_price_american": 380,
+        "best_book": "DraftKings",
+        "implied_prob": 0.2083,
+        "fair_prob": 0.212,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.6341,
+        "edge_vs_fair": -0.1358
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0040277",
+      "name": "Jahdae Walker",
+      "position": "WR",
+      "team": "CHI",
+      "opponent": "SEA",
+      "prob": 0.06948,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 31.0,
+        "best_price_american": 3000,
+        "best_book": "BetRivers",
+        "implied_prob": 0.0323,
+        "fair_prob": 0.0363,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 1.1539,
+        "edge_vs_fair": 0.0332
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0038440",
+      "name": "Zavier Scott",
+      "position": "RB",
+      "team": "CHI",
+      "opponent": "SEA",
+      "prob": 0.06852,
+      "confidence": "medium",
+      "odds": {
+        "best_price_decimal": 31.0,
+        "best_price_american": 3000,
+        "best_book": "FanDuel",
+        "implied_prob": 0.0323,
+        "fair_prob": 0.0368,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 1.1241,
+        "edge_vs_fair": 0.0317
+      },
+      "scored": false
+    }
+  ]
+}
