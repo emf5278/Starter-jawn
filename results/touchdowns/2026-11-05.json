@@ -1,0 +1,428 @@
+{
+  "date": "2026-11-05",
+  "window": "all",
+  "season": 2026,
+  "week": 9,
+  "picks": [
+    {
+      "player_id": "00-0032764",
+      "name": "Derrick Henry",
+      "position": "RB",
+      "team": "BAL",
+      "opponent": "JAX",
+      "prob": 0.39083,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 2.35,
+        "best_price_american": 135,
+        "best_book": "DraftKings",
+        "implied_prob": 0.4255,
+        "fair_prob": 0.4102,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.0815,
+        "edge_vs_fair": -0.0193
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0040719",
+      "name": "Bhayshul Tuten",
+      "position": "RB",
+      "team": "JAX",
+      "opponent": "BAL",
+      "prob": 0.34596,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 2.0,
+        "best_price_american": 100,
+        "best_book": "BetRivers",
+        "implied_prob": 0.5,
+        "fair_prob": 0.4838,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.3081,
+        "edge_vs_fair": -0.1378
+      },
+      "scored": true
+    },
+    {
+      "player_id": "00-0038606",
+      "name": "Parker Washington",
+      "position": "WR",
+      "team": "JAX",
+      "opponent": "BAL",
+      "prob": 0.32202,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 2.5,
+        "best_price_american": 150,
+        "best_book": "DraftKings",
+        "implied_prob": 0.4,
+        "fair_prob": 0.3891,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.195,
+        "edge_vs_fair": -0.0671
+      },
+      "scored": true
+    },
+    {
+      "player_id": "00-0038611",
+      "name": "Chris Rodriguez Jr.",
+      "position": "RB",
+      "team": "JAX",
+      "opponent": "BAL",
+      "prob": 0.2879,
+      "confidence": "medium",
+      "odds": {
+        "best_price_decimal": 1.95,
+        "best_price_american": -105,
+        "best_book": "FanDuel",
+        "implied_prob": 0.5128,
+        "fair_prob": 0.4952,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.4386,
+        "edge_vs_fair": -0.2073
+      },
+      "scored": true
+    },
+    {
+      "player_id": "00-0034960",
+      "name": "Jakobi Meyers",
+      "position": "WR",
+      "team": "JAX",
+      "opponent": "BAL",
+      "prob": 0.27748,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 4.5,
+        "best_price_american": 350,
+        "best_book": "DraftKings",
+        "implied_prob": 0.2222,
+        "fair_prob": 0.2302,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.2487,
+        "edge_vs_fair": 0.0472
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0039064",
+      "name": "Zay Flowers",
+      "position": "WR",
+      "team": "BAL",
+      "opponent": "JAX",
+      "prob": 0.27609,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 4.7,
+        "best_price_american": 370,
+        "best_book": "FanDuel",
+        "implied_prob": 0.2128,
+        "fair_prob": 0.2074,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.2976,
+        "edge_vs_fair": 0.0687
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0039893",
+      "name": "Brian Thomas Jr.",
+      "position": "WR",
+      "team": "JAX",
+      "opponent": "BAL",
+      "prob": 0.22806,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 7.5,
+        "best_price_american": 650,
+        "best_book": "BetRivers",
+        "implied_prob": 0.1333,
+        "fair_prob": 0.1451,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.7105,
+        "edge_vs_fair": 0.0829
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0038935",
+      "name": "Brenton Strange",
+      "position": "TE",
+      "team": "JAX",
+      "opponent": "BAL",
+      "prob": 0.2144,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 3.7,
+        "best_price_american": 270,
+        "best_book": "BetRivers",
+        "implied_prob": 0.2703,
+        "fair_prob": 0.2735,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.2067,
+        "edge_vs_fair": -0.0591
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0034753",
+      "name": "Mark Andrews",
+      "position": "TE",
+      "team": "BAL",
+      "opponent": "JAX",
+      "prob": 0.20701,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 6.0,
+        "best_price_american": 500,
+        "best_book": "DraftKings",
+        "implied_prob": 0.1667,
+        "fair_prob": 0.1572,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.2421,
+        "edge_vs_fair": 0.0498
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0036971",
+      "name": "Trevor Lawrence",
+      "position": "QB",
+      "team": "JAX",
+      "opponent": "BAL",
+      "prob": 0.19953,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 5.4,
+        "best_price_american": 440,
+        "best_book": "BetRivers",
+        "implied_prob": 0.1852,
+        "fair_prob": 0.1887,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.0775,
+        "edge_vs_fair": 0.0109
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0041106",
+      "name": "C.J. Williams",
+      "position": "WR",
+      "team": "JAX",
+      "opponent": "BAL",
+      "prob": 0.13908,
+      "confidence": "low",
+      "odds": {
+        "best_price_decimal": 20.0,
+        "best_price_american": 1900,
+        "best_book": "DraftKings",
+        "implied_prob": 0.05,
+        "fair_prob": 0.0472,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": 1.7816,
+        "edge_vs_fair": 0.0919
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0036550",
+      "name": "Rashod Bateman",
+      "position": "WR",
+      "team": "BAL",
+      "opponent": "JAX",
+      "prob": 0.13275,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 10.5,
+        "best_price_american": 950,
+        "best_book": "FanDuel",
+        "implied_prob": 0.0952,
+        "fair_prob": 0.102,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.3939,
+        "edge_vs_fair": 0.0308
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0040718",
+      "name": "Travis Hunter",
+      "position": "WR",
+      "team": "JAX",
+      "opponent": "BAL",
+      "prob": 0.12389,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 10.0,
+        "best_price_american": 900,
+        "best_book": "BetRivers",
+        "implied_prob": 0.1,
+        "fair_prob": 0.1219,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.2389,
+        "edge_vs_fair": 0.002
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0034975",
+      "name": "Justice Hill",
+      "position": "RB",
+      "team": "BAL",
+      "opponent": "JAX",
+      "prob": 0.10818,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 6.25,
+        "best_price_american": 525,
+        "best_book": "BetMGM",
+        "implied_prob": 0.16,
+        "fair_prob": 0.1572,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.3239,
+        "edge_vs_fair": -0.0491
+      },
+      "scored": true
+    },
+    {
+      "player_id": "00-0032104",
+      "name": "Ameer Abdullah",
+      "position": "RB",
+      "team": "JAX",
+      "opponent": "BAL",
+      "prob": 0.08554,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 6.5,
+        "best_price_american": 550,
+        "best_book": "DraftKings",
+        "implied_prob": 0.1538,
+        "fair_prob": 0.1451,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.444,
+        "edge_vs_fair": -0.0596
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0041100",
+      "name": "Josh Cameron",
+      "position": "WR",
+      "team": "JAX",
+      "opponent": "BAL",
+      "prob": 0.08408,
+      "confidence": "low",
+      "odds": {
+        "best_price_decimal": 7.5,
+        "best_price_american": 650,
+        "best_book": "DraftKings",
+        "implied_prob": 0.1333,
+        "fair_prob": 0.1376,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.3694,
+        "edge_vs_fair": -0.0536
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0040238",
+      "name": "LeQuint Allen Jr.",
+      "position": "RB",
+      "team": "JAX",
+      "opponent": "BAL",
+      "prob": 0.07572,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 12.0,
+        "best_price_american": 1100,
+        "best_book": "FanDuel",
+        "implied_prob": 0.0833,
+        "fair_prob": 0.0858,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.0914,
+        "edge_vs_fair": -0.01
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0041503",
+      "name": "Nate Boerkircher",
+      "position": "TE",
+      "team": "JAX",
+      "opponent": "BAL",
+      "prob": 0.0752,
+      "confidence": "low",
+      "odds": {
+        "best_price_decimal": 6.75,
+        "best_price_american": 575,
+        "best_book": "BetMGM",
+        "implied_prob": 0.1481,
+        "fair_prob": 0.1641,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.4924,
+        "edge_vs_fair": -0.0889
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0039792",
+      "name": "Devontez Walker",
+      "position": "WR",
+      "team": "BAL",
+      "opponent": "JAX",
+      "prob": 0.06622,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 29.0,
+        "best_price_american": 2800,
+        "best_book": "DraftKings",
+        "implied_prob": 0.0345,
+        "fair_prob": 0.037,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.9204,
+        "edge_vs_fair": 0.0292
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0036590",
+      "name": "Quintin Morris",
+      "position": "TE",
+      "team": "JAX",
+      "opponent": "BAL",
+      "prob": 0.06578,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 23.0,
+        "best_price_american": 2200,
+        "best_book": "BetMGM",
+        "implied_prob": 0.0435,
+        "fair_prob": 0.0473,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.5129,
+        "edge_vs_fair": 0.0185
+      },
+      "scored": false
+    }
+  ]
+}

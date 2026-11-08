@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-05T20:36:18+00:00",
-  "date": "2026-11-05",
+  "generated_at": "2026-11-08T13:35:36+00:00",
+  "date": "2026-11-08",
   "season": 2026,
   "week": 9,
   "model_version": "td-0.1.0",
-  "n_games": 1,
-  "n_games_today": 1,
-  "window": "late",
-  "window_label": "late games (4pm ET and later)",
-  "n_players_scored": 31,
+  "n_games": 8,
+  "n_games_today": 13,
+  "window": "early",
+  "window_label": "early games (before 4pm ET)",
+  "n_players_scored": 242,
   "odds_available": true,
   "game_lines_available": true,
   "seasons_used": [
@@ -26,1478 +26,2727 @@
   "ev_max_ratio": 1.3,
   "games": [
     {
-      "game_id": "2026_09_JAX_BAL",
+      "game_id": "2026_09_CIN_ATL",
       "season": 2026,
       "week": 9,
       "game_type": "REG",
-      "kickoff_utc": "2026-11-06T01:15:00+00:00",
-      "home_team": "BAL",
-      "away_team": "JAX",
+      "kickoff_utc": "2026-11-08T14:30:00+00:00",
+      "home_team": "ATL",
+      "away_team": "CIN",
+      "roof": null,
+      "stadium": "Bernabeu",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "game_id": "2026_09_DEN_CAR",
+      "season": 2026,
+      "week": 9,
+      "game_type": "REG",
+      "kickoff_utc": "2026-11-08T18:00:00+00:00",
+      "home_team": "CAR",
+      "away_team": "DEN",
       "roof": "outdoors",
-      "stadium": "M&T Bank Stadium",
+      "stadium": "Bank of America Stadium",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "game_id": "2026_09_DAL_IND",
+      "season": 2026,
+      "week": 9,
+      "game_type": "REG",
+      "kickoff_utc": "2026-11-08T18:00:00+00:00",
+      "home_team": "IND",
+      "away_team": "DAL",
+      "roof": null,
+      "stadium": "Lucas Oil Stadium",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "game_id": "2026_09_NYJ_KC",
+      "season": 2026,
+      "week": 9,
+      "game_type": "REG",
+      "kickoff_utc": "2026-11-08T18:00:00+00:00",
+      "home_team": "KC",
+      "away_team": "NYJ",
+      "roof": "outdoors",
+      "stadium": "GEHA Field at Arrowhead Stadium",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "game_id": "2026_09_DET_MIA",
+      "season": 2026,
+      "week": 9,
+      "game_type": "REG",
+      "kickoff_utc": "2026-11-08T18:00:00+00:00",
+      "home_team": "MIA",
+      "away_team": "DET",
+      "roof": "outdoors",
+      "stadium": "Hard Rock Stadium",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "game_id": "2026_09_CLE_NO",
+      "season": 2026,
+      "week": 9,
+      "game_type": "REG",
+      "kickoff_utc": "2026-11-08T18:00:00+00:00",
+      "home_team": "NO",
+      "away_team": "CLE",
+      "roof": "dome",
+      "stadium": "Caesars Superdome",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "game_id": "2026_09_NYG_PHI",
+      "season": 2026,
+      "week": 9,
+      "game_type": "REG",
+      "kickoff_utc": "2026-11-08T18:00:00+00:00",
+      "home_team": "PHI",
+      "away_team": "NYG",
+      "roof": "outdoors",
+      "stadium": "Lincoln Financial Field",
+      "home_score": null,
+      "away_score": null
+    },
+    {
+      "game_id": "2026_09_LA_WAS",
+      "season": 2026,
+      "week": 9,
+      "game_type": "REG",
+      "kickoff_utc": "2026-11-08T18:00:00+00:00",
+      "home_team": "WAS",
+      "away_team": "LA",
+      "roof": "outdoors",
+      "stadium": "Northwest Stadium",
       "home_score": null,
       "away_score": null
     }
   ],
   "players": [
     {
-      "player_id": "00-0032764",
-      "name": "Derrick Henry",
+      "player_id": "00-0036223",
+      "name": "Jonathan Taylor",
       "position": "RB",
-      "team": "BAL",
-      "opponent": "JAX",
+      "team": "IND",
+      "opponent": "DAL",
       "home": true,
-      "game_id": "2026_09_JAX_BAL",
-      "kickoff_utc": "2026-11-06T01:15:00+00:00",
+      "game_id": "2026_09_DAL_IND",
+      "kickoff_utc": "2026-11-08T18:00:00+00:00",
       "week": 9,
       "confidence": "high",
       "rookie": false,
       "changed_teams": false,
-      "lambda": 0.49565,
-      "lambda_rush": 0.43663,
-      "lambda_rec": 0.05902,
-      "prob": 0.39083,
-      "expected_tds": 0.4957,
-      "team_expected_off_tds": 2.052,
-      "team_expected_rush_tds": 0.946,
-      "team_expected_rec_tds": 1.107,
+      "lambda": 0.92815,
+      "lambda_rush": 0.78287,
+      "lambda_rec": 0.14528,
+      "prob": 0.60472,
+      "expected_tds": 0.9281,
+      "team_expected_off_tds": 2.333,
+      "team_expected_rush_tds": 1.175,
+      "team_expected_rec_tds": 1.158,
       "shares": {
-        "rush": 0.5563,
-        "rec": 0.057
+        "rush": 0.5331,
+        "rec": 0.1036
       },
       "usage": {
-        "carries": 343.2,
-        "goal_line_carries": 33.2,
-        "targets": 26.6,
-        "red_zone_targets": 2.2,
-        "prior_rush_tds": 17.6,
-        "prior_rec_tds": 1.0
+        "carries": 342.4,
+        "goal_line_carries": 29.4,
+        "targets": 64.6,
+        "red_zone_targets": 5.0,
+        "prior_rush_tds": 18.799999999999997,
+        "prior_rec_tds": 1.2
       },
       "factors": {
         "team_off_tds": {
-          "value": 2.0524,
-          "implied_points": 20.0,
+          "value": 2.3332,
+          "implied_points": 22.25,
           "source": "game line"
         },
         "team_rush_split": {
-          "value": 0.4607,
-          "observed": 0.5,
-          "n_tds": 47.6
+          "value": 0.5035,
+          "observed": 0.5671,
+          "n_tds": 46.2
         },
         "opp_rush": {
-          "value": 0.8301,
-          "per_game": 0.686,
+          "value": 1.25,
+          "per_game": 1.341,
+          "n_games": 18.2
+        },
+        "opp_rec": {
+          "value": 1.2108,
+          "per_game": 1.978,
+          "n_games": 18.2
+        },
+        "game_line": {
+          "total": 43.0,
+          "spread": -1.5,
+          "implied_team_runs": 22.25
+        }
+      },
+      "break_even_american": -153,
+      "odds": {
+        "best_price_decimal": 1.83,
+        "best_price_american": -120,
+        "best_book": "DraftKings",
+        "implied_prob": 0.5464,
+        "fair_prob": 0.544,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.1066,
+        "edge_vs_fair": 0.0608
+      }
+    },
+    {
+      "player_id": "00-0039139",
+      "name": "Jahmyr Gibbs",
+      "position": "RB",
+      "team": "DET",
+      "opponent": "MIA",
+      "home": false,
+      "game_id": "2026_09_DET_MIA",
+      "kickoff_utc": "2026-11-08T18:00:00+00:00",
+      "week": 9,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.90097,
+      "lambda_rush": 0.59371,
+      "lambda_rec": 0.30725,
+      "prob": 0.59382,
+      "expected_tds": 0.901,
+      "team_expected_off_tds": 2.583,
+      "team_expected_rush_tds": 0.977,
+      "team_expected_rec_tds": 1.606,
+      "shares": {
+        "rush": 0.6157,
+        "rec": 0.1606
+      },
+      "usage": {
+        "carries": 303.79999999999995,
+        "goal_line_carries": 21.0,
+        "targets": 100.4,
+        "red_zone_targets": 17.0,
+        "prior_rush_tds": 15.8,
+        "prior_rec_tds": 5.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.5828,
+          "implied_points": 24.25,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3783,
+          "observed": 0.375,
+          "n_tds": 57.6
+        },
+        "opp_rush": {
+          "value": 0.9869,
+          "per_game": 0.919,
           "n_games": 17.2
         },
         "opp_rec": {
-          "value": 0.9348,
-          "per_game": 1.337,
+          "value": 1.1912,
+          "per_game": 1.942,
+          "n_games": 17.2
+        },
+        "game_line": {
+          "total": 49.5,
+          "spread": 1.0,
+          "implied_team_runs": 24.25
+        }
+      },
+      "break_even_american": -146,
+      "odds": {
+        "best_price_decimal": 1.33,
+        "best_price_american": -303,
+        "best_book": "BetMGM",
+        "implied_prob": 0.7519,
+        "fair_prob": 0.7428,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.2102,
+        "edge_vs_fair": -0.149
+      }
+    },
+    {
+      "player_id": "00-0038542",
+      "name": "Bijan Robinson",
+      "position": "RB",
+      "team": "ATL",
+      "opponent": "CIN",
+      "home": true,
+      "game_id": "2026_09_CIN_ATL",
+      "kickoff_utc": "2026-11-08T14:30:00+00:00",
+      "week": 9,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.77344,
+      "lambda_rush": 0.54329,
+      "lambda_rec": 0.23015,
+      "prob": 0.53858,
+      "expected_tds": 0.7734,
+      "team_expected_off_tds": 2.271,
+      "team_expected_rush_tds": 0.979,
+      "team_expected_rec_tds": 1.292,
+      "shares": {
+        "rush": 0.521,
+        "rec": 0.1692
+      },
+      "usage": {
+        "carries": 322.79999999999995,
+        "goal_line_carries": 13.6,
+        "targets": 94.8,
+        "red_zone_targets": 9.8,
+        "prior_rush_tds": 8.2,
+        "prior_rec_tds": 3.4
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.2708,
+          "implied_points": 21.75,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.4311,
+          "observed": 0.4596,
+          "n_tds": 39.6
+        },
+        "opp_rush": {
+          "value": 1.0653,
+          "per_game": 1.035,
+          "n_games": 17.2
+        },
+        "opp_rec": {
+          "value": 1.0531,
+          "per_game": 1.616,
+          "n_games": 17.2
+        },
+        "game_line": {
+          "total": 46.5,
+          "spread": 3.0,
+          "implied_team_runs": 21.75
+        }
+      },
+      "break_even_american": -117,
+      "odds": {
+        "best_price_decimal": 1.47,
+        "best_price_american": -213,
+        "best_book": "BetRivers",
+        "implied_prob": 0.6803,
+        "fair_prob": 0.6962,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.2083,
+        "edge_vs_fair": -0.1577
+      }
+    },
+    {
+      "player_id": "00-0037840",
+      "name": "Kyren Williams",
+      "position": "RB",
+      "team": "LA",
+      "opponent": "WAS",
+      "home": false,
+      "game_id": "2026_09_LA_WAS",
+      "kickoff_utc": "2026-11-08T18:00:00+00:00",
+      "week": 9,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.75377,
+      "lambda_rush": 0.47989,
+      "lambda_rec": 0.27388,
+      "prob": 0.52941,
+      "expected_tds": 0.7538,
+      "team_expected_off_tds": 3.051,
+      "team_expected_rush_tds": 1.037,
+      "team_expected_rec_tds": 2.013,
+      "shares": {
+        "rush": 0.4509,
+        "rec": 0.111
+      },
+      "usage": {
+        "carries": 267.4,
+        "goal_line_carries": 18.799999999999997,
+        "targets": 72.0,
+        "red_zone_targets": 12.0,
+        "prior_rush_tds": 12.0,
+        "prior_rec_tds": 2.8
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 3.0507,
+          "implied_points": 28.0,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.34,
+          "observed": 0.3217,
+          "n_tds": 62.8
+        },
+        "opp_rush": {
+          "value": 1.0261,
+          "per_game": 0.977,
+          "n_games": 17.2
+        },
+        "opp_rec": {
+          "value": 1.2257,
+          "per_game": 2.023,
+          "n_games": 17.2
+        },
+        "game_line": {
+          "total": 47.5,
+          "spread": -8.5,
+          "implied_team_runs": 28.0
+        }
+      },
+      "break_even_american": -112,
+      "odds": {
+        "best_price_decimal": 1.71,
+        "best_price_american": -141,
+        "best_book": "BetRivers",
+        "implied_prob": 0.5848,
+        "fair_prob": 0.5599,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.0947,
+        "edge_vs_fair": -0.0305
+      }
+    },
+    {
+      "player_id": "00-0038134",
+      "name": "Kenneth Walker III",
+      "position": "RB",
+      "team": "KC",
+      "opponent": "NYJ",
+      "home": true,
+      "game_id": "2026_09_NYJ_KC",
+      "kickoff_utc": "2026-11-08T18:00:00+00:00",
+      "week": 9,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.74969,
+      "lambda_rush": 0.52345,
+      "lambda_rec": 0.22624,
+      "prob": 0.52749,
+      "expected_tds": 0.7497,
+      "team_expected_off_tds": 2.645,
+      "team_expected_rush_tds": 1.016,
+      "team_expected_rec_tds": 1.629,
+      "shares": {
+        "rush": 0.4803,
+        "rec": 0.1156
+      },
+      "usage": {
+        "carries": 273.6,
+        "goal_line_carries": 17.8,
+        "targets": 54.599999999999994,
+        "red_zone_targets": 10.8,
+        "prior_rush_tds": 9.0,
+        "prior_rec_tds": 2.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.6452,
+          "implied_points": 24.75,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.384,
+          "observed": 0.3828,
+          "n_tds": 41.8
+        },
+        "opp_rush": {
+          "value": 1.0729,
+          "per_game": 1.044,
+          "n_games": 18.2
+        },
+        "opp_rec": {
+          "value": 1.2013,
+          "per_game": 1.956,
+          "n_games": 18.2
+        },
+        "game_line": {
+          "total": 46.5,
+          "spread": -3.0,
+          "implied_team_runs": 24.75
+        }
+      },
+      "break_even_american": -112,
+      "odds": {
+        "best_price_decimal": 1.45,
+        "best_price_american": -222,
+        "best_book": "BetMGM",
+        "implied_prob": 0.6897,
+        "fair_prob": 0.6597,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.2351,
+        "edge_vs_fair": -0.1322
+      }
+    },
+    {
+      "player_id": "00-0036997",
+      "name": "Javonte Williams",
+      "position": "RB",
+      "team": "DAL",
+      "opponent": "IND",
+      "home": false,
+      "game_id": "2026_09_DAL_IND",
+      "kickoff_utc": "2026-11-08T18:00:00+00:00",
+      "week": 9,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.73993,
+      "lambda_rush": 0.60736,
+      "lambda_rec": 0.13258,
+      "prob": 0.52285,
+      "expected_tds": 0.7399,
+      "team_expected_off_tds": 2.676,
+      "team_expected_rush_tds": 1.039,
+      "team_expected_rec_tds": 1.637,
+      "shares": {
+        "rush": 0.5728,
+        "rec": 0.0786
+      },
+      "usage": {
+        "carries": 285.2,
+        "goal_line_carries": 32.0,
+        "targets": 54.599999999999994,
+        "red_zone_targets": 11.2,
+        "prior_rush_tds": 14.6,
+        "prior_rec_tds": 2.2
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.6763,
+          "implied_points": 25.0,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3884,
+          "observed": 0.3895,
+          "n_tds": 53.4
+        },
+        "opp_rush": {
+          "value": 1.02,
+          "per_game": 0.967,
+          "n_games": 18.2
+        },
+        "opp_rec": {
+          "value": 1.0301,
+          "per_game": 1.56,
+          "n_games": 18.2
+        },
+        "game_line": {
+          "total": 54.5,
+          "spread": 4.5,
+          "implied_team_runs": 25.0
+        }
+      },
+      "break_even_american": -110,
+      "odds": {
+        "best_price_decimal": 1.53,
+        "best_price_american": -189,
+        "best_book": "BetMGM",
+        "implied_prob": 0.6536,
+        "fair_prob": 0.644,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.2,
+        "edge_vs_fair": -0.1211
+      }
+    },
+    {
+      "player_id": "00-0039075",
+      "name": "Puka Nacua",
+      "position": "WR",
+      "team": "LA",
+      "opponent": "WAS",
+      "home": false,
+      "game_id": "2026_09_LA_WAS",
+      "kickoff_utc": "2026-11-08T18:00:00+00:00",
+      "week": 9,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.68513,
+      "lambda_rush": 0.02894,
+      "lambda_rec": 0.65619,
+      "prob": 0.49597,
+      "expected_tds": 0.6851,
+      "team_expected_off_tds": 3.051,
+      "team_expected_rush_tds": 1.037,
+      "team_expected_rec_tds": 2.013,
+      "shares": {
+        "rush": 0.0272,
+        "rec": 0.2659
+      },
+      "usage": {
+        "carries": 11.0,
+        "goal_line_carries": 1.0,
+        "targets": 173.6,
+        "red_zone_targets": 21.2,
+        "prior_rush_tds": 1.6,
+        "prior_rec_tds": 9.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 3.0507,
+          "implied_points": 28.0,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.34,
+          "observed": 0.3217,
+          "n_tds": 62.8
+        },
+        "opp_rush": {
+          "value": 1.0261,
+          "per_game": 0.977,
+          "n_games": 17.2
+        },
+        "opp_rec": {
+          "value": 1.2257,
+          "per_game": 2.023,
+          "n_games": 17.2
+        },
+        "game_line": {
+          "total": 47.5,
+          "spread": -8.5,
+          "implied_team_runs": 28.0
+        }
+      },
+      "break_even_american": 102,
+      "odds": {
+        "best_price_decimal": 1.8,
+        "best_price_american": -125,
+        "best_book": "DraftKings",
+        "implied_prob": 0.5556,
+        "fair_prob": 0.5256,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.1073,
+        "edge_vs_fair": -0.0296
+      }
+    },
+    {
+      "player_id": "00-0038597",
+      "name": "Chase Brown",
+      "position": "RB",
+      "team": "CIN",
+      "opponent": "ATL",
+      "home": false,
+      "game_id": "2026_09_CIN_ATL",
+      "kickoff_utc": "2026-11-08T14:30:00+00:00",
+      "week": 9,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.61728,
+      "lambda_rush": 0.32986,
+      "lambda_rec": 0.28742,
+      "prob": 0.46059,
+      "expected_tds": 0.6173,
+      "team_expected_off_tds": 2.739,
+      "team_expected_rush_tds": 0.718,
+      "team_expected_rec_tds": 2.02,
+      "shares": {
+        "rush": 0.4749,
+        "rec": 0.1421
+      },
+      "usage": {
+        "carries": 233.79999999999998,
+        "goal_line_carries": 11.8,
+        "targets": 95.4,
+        "red_zone_targets": 10.2,
+        "prior_rush_tds": 4.6,
+        "prior_rec_tds": 3.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.7387,
+          "implied_points": 25.5,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.2623,
+          "observed": 0.2031,
+          "n_tds": 52.2
+        },
+        "opp_rush": {
+          "value": 0.967,
+          "per_game": 0.89,
+          "n_games": 18.2
+        },
+        "opp_rec": {
+          "value": 1.0015,
+          "per_game": 1.495,
+          "n_games": 18.2
+        },
+        "game_line": {
+          "total": 47.5,
+          "spread": -3.5,
+          "implied_team_runs": 25.5
+        }
+      },
+      "break_even_american": 117,
+      "odds": {
+        "best_price_decimal": 1.69,
+        "best_price_american": -145,
+        "best_book": "FanDuel",
+        "implied_prob": 0.5917,
+        "fair_prob": 0.5753,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.2216,
+        "edge_vs_fair": -0.1147
+      }
+    },
+    {
+      "player_id": "00-0036963",
+      "name": "Amon-Ra St. Brown",
+      "position": "WR",
+      "team": "DET",
+      "opponent": "MIA",
+      "home": false,
+      "game_id": "2026_09_DET_MIA",
+      "kickoff_utc": "2026-11-08T18:00:00+00:00",
+      "week": 9,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.59919,
+      "lambda_rush": 0.02544,
+      "lambda_rec": 0.57374,
+      "prob": 0.45074,
+      "expected_tds": 0.5992,
+      "team_expected_off_tds": 2.583,
+      "team_expected_rush_tds": 0.977,
+      "team_expected_rec_tds": 1.606,
+      "shares": {
+        "rush": 0.0264,
+        "rec": 0.3
+      },
+      "usage": {
+        "carries": 3.8,
+        "goal_line_carries": 0.0,
+        "targets": 179.2,
+        "red_zone_targets": 37.0,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 11.6
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.5828,
+          "implied_points": 24.25,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3783,
+          "observed": 0.375,
+          "n_tds": 57.6
+        },
+        "opp_rush": {
+          "value": 0.9869,
+          "per_game": 0.919,
+          "n_games": 17.2
+        },
+        "opp_rec": {
+          "value": 1.1912,
+          "per_game": 1.942,
+          "n_games": 17.2
+        },
+        "game_line": {
+          "total": 49.5,
+          "spread": 1.0,
+          "implied_team_runs": 24.25
+        }
+      },
+      "break_even_american": 122,
+      "odds": {
+        "best_price_decimal": 1.91,
+        "best_price_american": -110,
+        "best_book": "DraftKings",
+        "implied_prob": 0.5236,
+        "fair_prob": 0.4978,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.1391,
+        "edge_vs_fair": -0.0471
+      }
+    },
+    {
+      "player_id": "00-0036900",
+      "name": "Ja'Marr Chase",
+      "position": "WR",
+      "team": "CIN",
+      "opponent": "ATL",
+      "home": false,
+      "game_id": "2026_09_CIN_ATL",
+      "kickoff_utc": "2026-11-08T14:30:00+00:00",
+      "week": 9,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.59553,
+      "lambda_rush": 0.01538,
+      "lambda_rec": 0.58015,
+      "prob": 0.44873,
+      "expected_tds": 0.5955,
+      "team_expected_off_tds": 2.739,
+      "team_expected_rush_tds": 0.718,
+      "team_expected_rec_tds": 2.02,
+      "shares": {
+        "rush": 0.0221,
+        "rec": 0.2867
+      },
+      "usage": {
+        "carries": 1.7999999999999998,
+        "goal_line_carries": 0.0,
+        "targets": 172.0,
+        "red_zone_targets": 23.2,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 10.8
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.7387,
+          "implied_points": 25.5,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.2623,
+          "observed": 0.2031,
+          "n_tds": 52.2
+        },
+        "opp_rush": {
+          "value": 0.967,
+          "per_game": 0.89,
+          "n_games": 18.2
+        },
+        "opp_rec": {
+          "value": 1.0015,
+          "per_game": 1.495,
+          "n_games": 18.2
+        },
+        "game_line": {
+          "total": 47.5,
+          "spread": -3.5,
+          "implied_team_runs": 25.5
+        }
+      },
+      "break_even_american": 123,
+      "odds": {
+        "best_price_decimal": 1.91,
+        "best_price_american": -110,
+        "best_book": "DraftKings",
+        "implied_prob": 0.5236,
+        "fair_prob": 0.4992,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.1429,
+        "edge_vs_fair": -0.0504
+      }
+    },
+    {
+      "player_id": "00-0036158",
+      "name": "J.K. Dobbins",
+      "position": "RB",
+      "team": "DEN",
+      "opponent": "CAR",
+      "home": false,
+      "game_id": "2026_09_DEN_CAR",
+      "kickoff_utc": "2026-11-08T18:00:00+00:00",
+      "week": 9,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.54975,
+      "lambda_rush": 0.51399,
+      "lambda_rec": 0.03576,
+      "prob": 0.42291,
+      "expected_tds": 0.5498,
+      "team_expected_off_tds": 2.489,
+      "team_expected_rush_tds": 1.044,
+      "team_expected_rec_tds": 1.445,
+      "shares": {
+        "rush": 0.3937,
+        "rec": 0.0272
+      },
+      "usage": {
+        "carries": 185.8,
+        "goal_line_carries": 12.2,
+        "targets": 17.4,
+        "red_zone_targets": 0.0,
+        "prior_rush_tds": 5.4,
+        "prior_rec_tds": 0.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.4892,
+          "implied_points": 23.5,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.4196,
+          "observed": 0.4393,
+          "n_tds": 42.8
+        },
+        "opp_rush": {
+          "value": 1.25,
+          "per_game": 1.395,
+          "n_games": 17.2
+        },
+        "opp_rec": {
+          "value": 0.9101,
+          "per_game": 1.279,
+          "n_games": 17.2
+        },
+        "game_line": {
+          "total": 44.5,
+          "spread": -2.5,
+          "implied_team_runs": 23.5
+        }
+      },
+      "break_even_american": 136,
+      "odds": {
+        "best_price_decimal": 3.8,
+        "best_price_american": 280,
+        "best_book": "FanDuel",
+        "implied_prob": 0.2632,
+        "fair_prob": 0.2516,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.6071,
+        "edge_vs_fair": 0.1713
+      }
+    },
+    {
+      "player_id": "00-0040715",
+      "name": "Cam Skattebo",
+      "position": "RB",
+      "team": "NYG",
+      "opponent": "PHI",
+      "home": false,
+      "game_id": "2026_09_NYG_PHI",
+      "kickoff_utc": "2026-11-08T18:00:00+00:00",
+      "week": 9,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.51012,
+      "lambda_rush": 0.42814,
+      "lambda_rec": 0.08198,
+      "prob": 0.39957,
+      "expected_tds": 0.5101,
+      "team_expected_off_tds": 2.458,
+      "team_expected_rush_tds": 1.046,
+      "team_expected_rec_tds": 1.412,
+      "shares": {
+        "rush": 0.3451,
+        "rec": 0.0691
+      },
+      "usage": {
+        "carries": 159.2,
+        "goal_line_carries": 9.0,
+        "targets": 32.2,
+        "red_zone_targets": 2.4,
+        "prior_rush_tds": 5.0,
+        "prior_rec_tds": 1.2
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.458,
+          "implied_points": 23.25,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.4255,
+          "observed": 0.4486,
+          "n_tds": 42.8
+        },
+        "opp_rush": {
+          "value": 1.1863,
+          "per_game": 1.209,
+          "n_games": 18.2
+        },
+        "opp_rec": {
+          "value": 0.8398,
+          "per_game": 1.121,
+          "n_games": 18.2
+        },
+        "game_line": {
+          "total": 45.0,
+          "spread": -1.5,
+          "implied_team_runs": 23.25
+        }
+      },
+      "break_even_american": 150,
+      "odds": null
+    },
+    {
+      "player_id": "00-0036555",
+      "name": "Chuba Hubbard",
+      "position": "RB",
+      "team": "CAR",
+      "opponent": "DEN",
+      "home": true,
+      "game_id": "2026_09_DEN_CAR",
+      "kickoff_utc": "2026-11-08T18:00:00+00:00",
+      "week": 9,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.48508,
+      "lambda_rush": 0.33338,
+      "lambda_rec": 0.15169,
+      "prob": 0.38435,
+      "expected_tds": 0.4851,
+      "team_expected_off_tds": 2.583,
+      "team_expected_rush_tds": 0.879,
+      "team_expected_rec_tds": 1.704,
+      "shares": {
+        "rush": 0.4564,
+        "rec": 0.102
+      },
+      "usage": {
+        "carries": 200.0,
+        "goal_line_carries": 7.2,
+        "targets": 49.4,
+        "red_zone_targets": 8.6,
+        "prior_rush_tds": 5.6,
+        "prior_rec_tds": 3.8
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.5828,
+          "implied_points": 24.25,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3403,
+          "observed": 0.3116,
+          "n_tds": 39.8
+        },
+        "opp_rush": {
+          "value": 0.831,
+          "per_game": 0.692,
+          "n_games": 18.2
+        },
+        "opp_rec": {
+          "value": 0.8731,
+          "per_game": 1.198,
+          "n_games": 18.2
+        },
+        "game_line": {
+          "total": 47.0,
+          "spread": -1.5,
+          "implied_team_runs": 24.25
+        }
+      },
+      "break_even_american": 160,
+      "odds": {
+        "best_price_decimal": 1.9,
+        "best_price_american": -111,
+        "best_book": "BetMGM",
+        "implied_prob": 0.5263,
+        "fair_prob": 0.5169,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.2697,
+        "edge_vs_fair": -0.1326
+      }
+    },
+    {
+      "player_id": "00-0034844",
+      "name": "Saquon Barkley",
+      "position": "RB",
+      "team": "PHI",
+      "opponent": "NYG",
+      "home": true,
+      "game_id": "2026_09_NYG_PHI",
+      "kickoff_utc": "2026-11-08T18:00:00+00:00",
+      "week": 9,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.47659,
+      "lambda_rush": 0.39237,
+      "lambda_rec": 0.08423,
+      "prob": 0.37911,
+      "expected_tds": 0.4766,
+      "team_expected_off_tds": 1.772,
+      "team_expected_rush_tds": 0.702,
+      "team_expected_rec_tds": 1.07,
+      "shares": {
+        "rush": 0.51,
+        "rec": 0.0727
+      },
+      "usage": {
+        "carries": 224.6,
+        "goal_line_carries": 13.0,
+        "targets": 40.599999999999994,
+        "red_zone_targets": 4.8,
+        "prior_rush_tds": 6.2,
+        "prior_rec_tds": 1.2
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 1.7716,
+          "implied_points": 17.75,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.396,
+          "observed": 0.4019,
+          "n_tds": 42.8
+        },
+        "opp_rush": {
+          "value": 1.0967,
+          "per_game": 1.081,
+          "n_games": 17.2
+        },
+        "opp_rec": {
+          "value": 1.0827,
+          "per_game": 1.686,
           "n_games": 17.2
         },
         "game_line": {
           "total": 38.5,
-          "spread": -1.5,
-          "implied_team_runs": 20.0
+          "spread": 3.0,
+          "implied_team_runs": 17.75
         }
       },
-      "break_even_american": 156,
+      "break_even_american": 164,
       "odds": {
         "best_price_decimal": 2.3,
         "best_price_american": 130,
-        "best_book": "DraftKings",
+        "best_book": "BetMGM",
         "implied_prob": 0.4348,
-        "fair_prob": 0.4102,
+        "fair_prob": 0.4193,
         "n_books": 6,
         "two_sided": false,
-        "ev_per_dollar": -0.1011,
-        "edge_vs_fair": -0.0193
+        "ev_per_dollar": -0.128,
+        "edge_vs_fair": -0.0402
       }
     },
     {
-      "player_id": "00-0040719",
-      "name": "Bhayshul Tuten",
-      "position": "RB",
-      "team": "JAX",
-      "opponent": "BAL",
-      "home": false,
-      "game_id": "2026_09_JAX_BAL",
-      "kickoff_utc": "2026-11-06T01:15:00+00:00",
+      "player_id": "00-0037239",
+      "name": "Chris Olave",
+      "position": "WR",
+      "team": "NO",
+      "opponent": "CLE",
+      "home": true,
+      "game_id": "2026_09_CLE_NO",
+      "kickoff_utc": "2026-11-08T18:00:00+00:00",
       "week": 9,
       "confidence": "high",
       "rookie": false,
       "changed_teams": false,
-      "lambda": 0.42458,
-      "lambda_rush": 0.31791,
-      "lambda_rec": 0.10667,
-      "prob": 0.34596,
-      "expected_tds": 0.4246,
-      "team_expected_off_tds": 2.926,
-      "team_expected_rush_tds": 1.074,
-      "team_expected_rec_tds": 1.852,
+      "lambda": 0.47565,
+      "lambda_rush": 0.01972,
+      "lambda_rec": 0.45592,
+      "prob": 0.37852,
+      "expected_tds": 0.4756,
+      "team_expected_off_tds": 2.396,
+      "team_expected_rush_tds": 0.829,
+      "team_expected_rec_tds": 1.566,
       "shares": {
-        "rush": 0.2595,
-        "rec": 0.061
+        "rush": 0.0254,
+        "rec": 0.2992
       },
       "usage": {
-        "carries": 160.4,
-        "goal_line_carries": 7.8,
-        "targets": 24.4,
-        "red_zone_targets": 4.2,
-        "prior_rush_tds": 6.0,
-        "prior_rec_tds": 4.2
+        "carries": 0.6,
+        "goal_line_carries": 0.0,
+        "targets": 164.6,
+        "red_zone_targets": 17.0,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 7.3999999999999995
       },
       "factors": {
         "team_off_tds": {
-          "value": 2.9259,
-          "implied_points": 27.0,
+          "value": 2.3956,
+          "implied_points": 22.75,
           "source": "game line"
         },
         "team_rush_split": {
-          "value": 0.367,
-          "observed": 0.3582,
-          "n_tds": 53.6
+          "value": 0.3462,
+          "observed": 0.3184,
+          "n_tds": 35.8
         },
         "opp_rush": {
-          "value": 1.141,
-          "per_game": 1.143,
+          "value": 0.9368,
+          "per_game": 0.846,
           "n_games": 18.2
         },
         "opp_rec": {
-          "value": 0.9444,
-          "per_game": 1.363,
+          "value": 0.973,
+          "per_game": 1.429,
           "n_games": 18.2
         },
         "game_line": {
-          "total": 44.5,
-          "spread": -9.5,
-          "implied_team_runs": 27.0
+          "total": 47.0,
+          "spread": 1.5,
+          "implied_team_runs": 22.75
         }
       },
-      "break_even_american": 189,
+      "break_even_american": 164,
       "odds": {
-        "best_price_decimal": 2.12,
-        "best_price_american": 112,
-        "best_book": "BetRivers",
-        "implied_prob": 0.4717,
-        "fair_prob": 0.4602,
+        "best_price_decimal": 2.95,
+        "best_price_american": 195,
+        "best_book": "DraftKings",
+        "implied_prob": 0.339,
+        "fair_prob": 0.3311,
         "n_books": 6,
         "two_sided": false,
-        "ev_per_dollar": -0.2666,
-        "edge_vs_fair": -0.1142
+        "ev_per_dollar": 0.1166,
+        "edge_vs_fair": 0.0474
       }
     },
     {
-      "player_id": "00-0038606",
-      "name": "Parker Washington",
+      "player_id": "00-0036410",
+      "name": "Tee Higgins",
       "position": "WR",
-      "team": "JAX",
-      "opponent": "BAL",
+      "team": "CIN",
+      "opponent": "ATL",
       "home": false,
-      "game_id": "2026_09_JAX_BAL",
-      "kickoff_utc": "2026-11-06T01:15:00+00:00",
+      "game_id": "2026_09_CIN_ATL",
+      "kickoff_utc": "2026-11-08T14:30:00+00:00",
       "week": 9,
       "confidence": "high",
       "rookie": false,
       "changed_teams": false,
-      "lambda": 0.38864,
-      "lambda_rush": 0.02867,
-      "lambda_rec": 0.35997,
-      "prob": 0.32202,
-      "expected_tds": 0.3886,
-      "team_expected_off_tds": 2.926,
-      "team_expected_rush_tds": 1.074,
-      "team_expected_rec_tds": 1.852,
+      "lambda": 0.46925,
+      "lambda_rush": 0.0158,
+      "lambda_rec": 0.45346,
+      "prob": 0.37453,
+      "expected_tds": 0.4693,
+      "team_expected_off_tds": 2.739,
+      "team_expected_rush_tds": 0.718,
+      "team_expected_rec_tds": 2.02,
       "shares": {
-        "rush": 0.0234,
-        "rec": 0.2058
+        "rush": 0.0227,
+        "rec": 0.2241
       },
       "usage": {
-        "carries": 6.2,
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 121.4,
+        "red_zone_targets": 15.6,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 10.6
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.7387,
+          "implied_points": 25.5,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.2623,
+          "observed": 0.2031,
+          "n_tds": 52.2
+        },
+        "opp_rush": {
+          "value": 0.967,
+          "per_game": 0.89,
+          "n_games": 18.2
+        },
+        "opp_rec": {
+          "value": 1.0015,
+          "per_game": 1.495,
+          "n_games": 18.2
+        },
+        "game_line": {
+          "total": 47.5,
+          "spread": -3.5,
+          "implied_team_runs": 25.5
+        }
+      },
+      "break_even_american": 167,
+      "odds": {
+        "best_price_decimal": 2.05,
+        "best_price_american": 105,
+        "best_book": "FanDuel",
+        "implied_prob": 0.4878,
+        "fair_prob": 0.4717,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.2322,
+        "edge_vs_fair": -0.0972
+      }
+    },
+    {
+      "player_id": "00-0030506",
+      "name": "Travis Kelce",
+      "position": "TE",
+      "team": "KC",
+      "opponent": "NYJ",
+      "home": true,
+      "game_id": "2026_09_NYJ_KC",
+      "kickoff_utc": "2026-11-08T18:00:00+00:00",
+      "week": 9,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.46852,
+      "lambda_rush": 0.02355,
+      "lambda_rec": 0.44497,
+      "prob": 0.37407,
+      "expected_tds": 0.4685,
+      "team_expected_off_tds": 2.645,
+      "team_expected_rush_tds": 1.016,
+      "team_expected_rec_tds": 1.629,
+      "shares": {
+        "rush": 0.0216,
+        "rec": 0.2273
+      },
+      "usage": {
+        "carries": 0.6,
         "goal_line_carries": 0.6,
-        "targets": 106.19999999999999,
-        "red_zone_targets": 17.6,
+        "targets": 107.39999999999999,
+        "red_zone_targets": 10.8,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 5.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.6452,
+          "implied_points": 24.75,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.384,
+          "observed": 0.3828,
+          "n_tds": 41.8
+        },
+        "opp_rush": {
+          "value": 1.0729,
+          "per_game": 1.044,
+          "n_games": 18.2
+        },
+        "opp_rec": {
+          "value": 1.2013,
+          "per_game": 1.956,
+          "n_games": 18.2
+        },
+        "game_line": {
+          "total": 46.5,
+          "spread": -3.0,
+          "implied_team_runs": 24.75
+        }
+      },
+      "break_even_american": 167,
+      "odds": {
+        "best_price_decimal": 2.6,
+        "best_price_american": 160,
+        "best_book": "DraftKings",
+        "implied_prob": 0.3846,
+        "fair_prob": 0.3737,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.0274,
+        "edge_vs_fair": 0.0004
+      }
+    },
+    {
+      "player_id": "00-0040784",
+      "name": "Quinshon Judkins",
+      "position": "RB",
+      "team": "CLE",
+      "opponent": "NO",
+      "home": false,
+      "game_id": "2026_09_CLE_NO",
+      "kickoff_utc": "2026-11-08T18:00:00+00:00",
+      "week": 9,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.46653,
+      "lambda_rush": 0.38886,
+      "lambda_rec": 0.07768,
+      "prob": 0.37283,
+      "expected_tds": 0.4665,
+      "team_expected_off_tds": 1.803,
+      "team_expected_rush_tds": 0.728,
+      "team_expected_rec_tds": 1.075,
+      "shares": {
+        "rush": 0.494,
+        "rec": 0.0717
+      },
+      "usage": {
+        "carries": 239.6,
+        "goal_line_carries": 13.2,
+        "targets": 44.599999999999994,
+        "red_zone_targets": 4.6,
+        "prior_rush_tds": 7.2,
+        "prior_rec_tds": 0.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 1.8028,
+          "implied_points": 18.0,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.4039,
+          "observed": 0.4196,
+          "n_tds": 28.6
+        },
+        "opp_rush": {
+          "value": 1.081,
+          "per_game": 1.058,
+          "n_games": 17.2
+        },
+        "opp_rec": {
+          "value": 1.0087,
+          "per_game": 1.512,
+          "n_games": 17.2
+        },
+        "game_line": {
+          "total": 39.5,
+          "spread": 3.5,
+          "implied_team_runs": 18.0
+        }
+      },
+      "break_even_american": 168,
+      "odds": {
+        "best_price_decimal": 2.2,
+        "best_price_american": 120,
+        "best_book": "DraftKings",
+        "implied_prob": 0.4545,
+        "fair_prob": 0.444,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.1798,
+        "edge_vs_fair": -0.0712
+      }
+    },
+    {
+      "player_id": "00-0036358",
+      "name": "CeeDee Lamb",
+      "position": "WR",
+      "team": "DAL",
+      "opponent": "IND",
+      "home": false,
+      "game_id": "2026_09_DAL_IND",
+      "kickoff_utc": "2026-11-08T18:00:00+00:00",
+      "week": 9,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.42113,
+      "lambda_rush": 0.02577,
+      "lambda_rec": 0.39536,
+      "prob": 0.34369,
+      "expected_tds": 0.4211,
+      "team_expected_off_tds": 2.676,
+      "team_expected_rush_tds": 1.039,
+      "team_expected_rec_tds": 1.637,
+      "shares": {
+        "rush": 0.0243,
+        "rec": 0.2345
+      },
+      "usage": {
+        "carries": 2.6,
+        "goal_line_carries": 0.0,
+        "targets": 164.2,
+        "red_zone_targets": 28.2,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 7.8
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.6763,
+          "implied_points": 25.0,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3884,
+          "observed": 0.3895,
+          "n_tds": 53.4
+        },
+        "opp_rush": {
+          "value": 1.02,
+          "per_game": 0.967,
+          "n_games": 18.2
+        },
+        "opp_rec": {
+          "value": 1.0301,
+          "per_game": 1.56,
+          "n_games": 18.2
+        },
+        "game_line": {
+          "total": 54.5,
+          "spread": 4.5,
+          "implied_team_runs": 25.0
+        }
+      },
+      "break_even_american": 191,
+      "odds": {
+        "best_price_decimal": 1.91,
+        "best_price_american": -110,
+        "best_book": "FanDuel",
+        "implied_prob": 0.5236,
+        "fair_prob": 0.5073,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.3436,
+        "edge_vs_fair": -0.1636
+      }
+    },
+    {
+      "player_id": "00-0039880",
+      "name": "Malik Washington",
+      "position": "WR",
+      "team": "MIA",
+      "opponent": "DET",
+      "home": true,
+      "game_id": "2026_09_DET_MIA",
+      "kickoff_utc": "2026-11-08T18:00:00+00:00",
+      "week": 9,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.41368,
+      "lambda_rush": 0.0283,
+      "lambda_rec": 0.38538,
+      "prob": 0.33879,
+      "expected_tds": 0.4137,
+      "team_expected_off_tds": 2.146,
+      "team_expected_rush_tds": 0.893,
+      "team_expected_rec_tds": 1.253,
+      "shares": {
+        "rush": 0.0324,
+        "rec": 0.246
+      },
+      "usage": {
+        "carries": 18.2,
+        "goal_line_carries": 0.0,
+        "targets": 84.0,
+        "red_zone_targets": 9.6,
+        "prior_rush_tds": 0.6,
+        "prior_rec_tds": 2.8
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.146,
+          "implied_points": 20.75,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.4161,
+          "observed": 0.4375,
+          "n_tds": 35.2
+        },
+        "opp_rush": {
+          "value": 0.9791,
+          "per_game": 0.907,
+          "n_games": 17.2
+        },
+        "opp_rec": {
+          "value": 1.25,
+          "per_game": 2.128,
+          "n_games": 17.2
+        },
+        "game_line": {
+          "total": 43.0,
+          "spread": 1.5,
+          "implied_team_runs": 20.75
+        }
+      },
+      "break_even_american": 195,
+      "odds": {
+        "best_price_decimal": 3.5,
+        "best_price_american": 250,
+        "best_book": "BetMGM",
+        "implied_prob": 0.2857,
+        "fair_prob": 0.2948,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.1858,
+        "edge_vs_fair": 0.044
+      }
+    },
+    {
+      "player_id": "00-0031588",
+      "name": "Stefon Diggs",
+      "position": "WR",
+      "team": "WAS",
+      "opponent": "LA",
+      "home": true,
+      "game_id": "2026_09_LA_WAS",
+      "kickoff_utc": "2026-11-08T18:00:00+00:00",
+      "week": 9,
+      "confidence": "medium",
+      "rookie": false,
+      "changed_teams": true,
+      "lambda": 0.37944,
+      "lambda_rush": 0.02452,
+      "lambda_rec": 0.35491,
+      "prob": 0.31575,
+      "expected_tds": 0.3794,
+      "team_expected_off_tds": 2.271,
+      "team_expected_rush_tds": 0.94,
+      "team_expected_rec_tds": 1.331,
+      "shares": {
+        "rush": 0.0326,
+        "rec": 0.2767
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 105.19999999999999,
+        "red_zone_targets": 13.2,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 7.4
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.2708,
+          "implied_points": 21.75,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.4138,
+          "observed": 0.4315,
+          "n_tds": 39.4
+        },
+        "opp_rush": {
+          "value": 0.8,
+          "per_game": 0.484,
+          "n_games": 18.2
+        },
+        "opp_rec": {
+          "value": 0.9635,
+          "per_game": 1.407,
+          "n_games": 18.2
+        },
+        "game_line": {
+          "total": 45.0,
+          "spread": 1.5,
+          "implied_team_runs": 21.75
+        }
+      },
+      "break_even_american": 217,
+      "odds": {
+        "best_price_decimal": 3.25,
+        "best_price_american": 225,
+        "best_book": "BetMGM",
+        "implied_prob": 0.3077,
+        "fair_prob": 0.3119,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.0262,
+        "edge_vs_fair": 0.0039
+      }
+    },
+    {
+      "player_id": "00-0040663",
+      "name": "Harold Fannin Jr.",
+      "position": "TE",
+      "team": "CLE",
+      "opponent": "NO",
+      "home": false,
+      "game_id": "2026_09_CLE_NO",
+      "kickoff_utc": "2026-11-08T18:00:00+00:00",
+      "week": 9,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.33692,
+      "lambda_rush": 0.02084,
+      "lambda_rec": 0.31608,
+      "prob": 0.28603,
+      "expected_tds": 0.3369,
+      "team_expected_off_tds": 1.803,
+      "team_expected_rush_tds": 0.728,
+      "team_expected_rec_tds": 1.075,
+      "shares": {
+        "rush": 0.0265,
+        "rec": 0.2916
+      },
+      "usage": {
+        "carries": 4.2,
+        "goal_line_carries": 0.6,
+        "targets": 115.8,
+        "red_zone_targets": 10.6,
+        "prior_rush_tds": 0.6,
+        "prior_rec_tds": 6.6
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 1.8028,
+          "implied_points": 18.0,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.4039,
+          "observed": 0.4196,
+          "n_tds": 28.6
+        },
+        "opp_rush": {
+          "value": 1.081,
+          "per_game": 1.058,
+          "n_games": 17.2
+        },
+        "opp_rec": {
+          "value": 1.0087,
+          "per_game": 1.512,
+          "n_games": 17.2
+        },
+        "game_line": {
+          "total": 39.5,
+          "spread": 3.5,
+          "implied_team_runs": 18.0
+        }
+      },
+      "break_even_american": 250,
+      "odds": {
+        "best_price_decimal": 3.5,
+        "best_price_american": 250,
+        "best_book": "FanDuel",
+        "implied_prob": 0.2857,
+        "fair_prob": 0.2755,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.0011,
+        "edge_vs_fair": 0.0106
+      }
+    },
+    {
+      "player_id": "00-0030279",
+      "name": "Keenan Allen",
+      "position": "WR",
+      "team": "IND",
+      "opponent": "DAL",
+      "home": true,
+      "game_id": "2026_09_DAL_IND",
+      "kickoff_utc": "2026-11-08T18:00:00+00:00",
+      "week": 9,
+      "confidence": "medium",
+      "rookie": false,
+      "changed_teams": true,
+      "lambda": 0.33268,
+      "lambda_rush": 0.03212,
+      "lambda_rec": 0.30056,
+      "prob": 0.283,
+      "expected_tds": 0.3327,
+      "team_expected_off_tds": 2.333,
+      "team_expected_rush_tds": 1.175,
+      "team_expected_rec_tds": 1.158,
+      "shares": {
+        "rush": 0.0219,
+        "rec": 0.2143
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 123.2,
+        "red_zone_targets": 13.6,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 3.4
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.3332,
+          "implied_points": 22.25,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.5035,
+          "observed": 0.5671,
+          "n_tds": 46.2
+        },
+        "opp_rush": {
+          "value": 1.25,
+          "per_game": 1.341,
+          "n_games": 18.2
+        },
+        "opp_rec": {
+          "value": 1.2108,
+          "per_game": 1.978,
+          "n_games": 18.2
+        },
+        "game_line": {
+          "total": 43.0,
+          "spread": -1.5,
+          "implied_team_runs": 22.25
+        }
+      },
+      "break_even_american": 253,
+      "odds": {
+        "best_price_decimal": 3.5,
+        "best_price_american": 250,
+        "best_book": "BetMGM",
+        "implied_prob": 0.2857,
+        "fair_prob": 0.2795,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.0095,
+        "edge_vs_fair": 0.0035
+      }
+    },
+    {
+      "player_id": "00-0036970",
+      "name": "Kyle Pitts",
+      "position": "TE",
+      "team": "ATL",
+      "opponent": "CIN",
+      "home": true,
+      "game_id": "2026_09_CIN_ATL",
+      "kickoff_utc": "2026-11-08T14:30:00+00:00",
+      "week": 9,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.33014,
+      "lambda_rush": 0.02518,
+      "lambda_rec": 0.30496,
+      "prob": 0.28118,
+      "expected_tds": 0.3301,
+      "team_expected_off_tds": 2.271,
+      "team_expected_rush_tds": 0.979,
+      "team_expected_rec_tds": 1.292,
+      "shares": {
+        "rush": 0.0241,
+        "rec": 0.2242
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 103.39999999999999,
+        "red_zone_targets": 14.8,
         "prior_rush_tds": 0.0,
         "prior_rec_tds": 7.0
       },
       "factors": {
         "team_off_tds": {
-          "value": 2.9259,
-          "implied_points": 27.0,
+          "value": 2.2708,
+          "implied_points": 21.75,
           "source": "game line"
         },
         "team_rush_split": {
-          "value": 0.367,
-          "observed": 0.3582,
-          "n_tds": 53.6
+          "value": 0.4311,
+          "observed": 0.4596,
+          "n_tds": 39.6
         },
         "opp_rush": {
-          "value": 1.141,
-          "per_game": 1.143,
-          "n_games": 18.2
+          "value": 1.0653,
+          "per_game": 1.035,
+          "n_games": 17.2
         },
         "opp_rec": {
-          "value": 0.9444,
-          "per_game": 1.363,
-          "n_games": 18.2
+          "value": 1.0531,
+          "per_game": 1.616,
+          "n_games": 17.2
         },
         "game_line": {
-          "total": 44.5,
-          "spread": -9.5,
-          "implied_team_runs": 27.0
+          "total": 46.5,
+          "spread": 3.0,
+          "implied_team_runs": 21.75
         }
       },
-      "break_even_american": 211,
+      "break_even_american": 256,
       "odds": {
-        "best_price_decimal": 2.65,
-        "best_price_american": 165,
+        "best_price_decimal": 3.65,
+        "best_price_american": 265,
         "best_book": "BetRivers",
-        "implied_prob": 0.3774,
-        "fair_prob": 0.3852,
+        "implied_prob": 0.274,
+        "fair_prob": 0.2816,
         "n_books": 6,
         "two_sided": false,
-        "ev_per_dollar": -0.1466,
-        "edge_vs_fair": -0.0632
+        "ev_per_dollar": 0.0263,
+        "edge_vs_fair": -0.0004
       }
     },
     {
-      "player_id": "00-0038611",
-      "name": "Chris Rodriguez Jr.",
-      "position": "RB",
-      "team": "JAX",
-      "opponent": "BAL",
+      "player_id": "00-0036040",
+      "name": "Juwan Johnson",
+      "position": "TE",
+      "team": "NO",
+      "opponent": "CLE",
+      "home": true,
+      "game_id": "2026_09_CLE_NO",
+      "kickoff_utc": "2026-11-08T18:00:00+00:00",
+      "week": 9,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.30977,
+      "lambda_rush": 0.01994,
+      "lambda_rec": 0.28983,
+      "prob": 0.26638,
+      "expected_tds": 0.3098,
+      "team_expected_off_tds": 2.396,
+      "team_expected_rush_tds": 0.829,
+      "team_expected_rec_tds": 1.566,
+      "shares": {
+        "rush": 0.0257,
+        "rec": 0.1902
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 98.19999999999999,
+        "red_zone_targets": 12.8,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 4.8
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.3956,
+          "implied_points": 22.75,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3462,
+          "observed": 0.3184,
+          "n_tds": 35.8
+        },
+        "opp_rush": {
+          "value": 0.9368,
+          "per_game": 0.846,
+          "n_games": 18.2
+        },
+        "opp_rec": {
+          "value": 0.973,
+          "per_game": 1.429,
+          "n_games": 18.2
+        },
+        "game_line": {
+          "total": 47.0,
+          "spread": 1.5,
+          "implied_team_runs": 22.75
+        }
+      },
+      "break_even_american": 275,
+      "odds": {
+        "best_price_decimal": 4.1,
+        "best_price_american": 310,
+        "best_book": "FanDuel",
+        "implied_prob": 0.2439,
+        "fair_prob": 0.245,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.0922,
+        "edge_vs_fair": 0.0213
+      }
+    },
+    {
+      "player_id": "00-0038997",
+      "name": "Josh Downs",
+      "position": "WR",
+      "team": "IND",
+      "opponent": "DAL",
+      "home": true,
+      "game_id": "2026_09_DAL_IND",
+      "kickoff_utc": "2026-11-08T18:00:00+00:00",
+      "week": 9,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.30115,
+      "lambda_rush": 0.03108,
+      "lambda_rec": 0.27007,
+      "prob": 0.26004,
+      "expected_tds": 0.3012,
+      "team_expected_off_tds": 2.333,
+      "team_expected_rush_tds": 1.175,
+      "team_expected_rec_tds": 1.158,
+      "shares": {
+        "rush": 0.0212,
+        "rec": 0.1925
+      },
+      "usage": {
+        "carries": 2.2,
+        "goal_line_carries": 0.0,
+        "targets": 103.8,
+        "red_zone_targets": 15.0,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 3.4
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.3332,
+          "implied_points": 22.25,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.5035,
+          "observed": 0.5671,
+          "n_tds": 46.2
+        },
+        "opp_rush": {
+          "value": 1.25,
+          "per_game": 1.341,
+          "n_games": 18.2
+        },
+        "opp_rec": {
+          "value": 1.2108,
+          "per_game": 1.978,
+          "n_games": 18.2
+        },
+        "game_line": {
+          "total": 43.0,
+          "spread": -1.5,
+          "implied_team_runs": 22.25
+        }
+      },
+      "break_even_american": 285,
+      "odds": {
+        "best_price_decimal": 4.2,
+        "best_price_american": 320,
+        "best_book": "FanDuel",
+        "implied_prob": 0.2381,
+        "fair_prob": 0.2358,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.0922,
+        "edge_vs_fair": 0.0242
+      }
+    },
+    {
+      "player_id": "00-0036244",
+      "name": "Colby Parkinson",
+      "position": "TE",
+      "team": "LA",
+      "opponent": "WAS",
       "home": false,
-      "game_id": "2026_09_JAX_BAL",
-      "kickoff_utc": "2026-11-06T01:15:00+00:00",
+      "game_id": "2026_09_LA_WAS",
+      "kickoff_utc": "2026-11-08T18:00:00+00:00",
+      "week": 9,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.29421,
+      "lambda_rush": 0.02393,
+      "lambda_rec": 0.27027,
+      "prob": 0.25488,
+      "expected_tds": 0.2942,
+      "team_expected_off_tds": 3.051,
+      "team_expected_rush_tds": 1.037,
+      "team_expected_rec_tds": 2.013,
+      "shares": {
+        "rush": 0.0225,
+        "rec": 0.1095
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 52.6,
+        "red_zone_targets": 18.2,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 5.8
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 3.0507,
+          "implied_points": 28.0,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.34,
+          "observed": 0.3217,
+          "n_tds": 62.8
+        },
+        "opp_rush": {
+          "value": 1.0261,
+          "per_game": 0.977,
+          "n_games": 17.2
+        },
+        "opp_rec": {
+          "value": 1.2257,
+          "per_game": 2.023,
+          "n_games": 17.2
+        },
+        "game_line": {
+          "total": 47.5,
+          "spread": -8.5,
+          "implied_team_runs": 28.0
+        }
+      },
+      "break_even_american": 292,
+      "odds": {
+        "best_price_decimal": 4.0,
+        "best_price_american": 300,
+        "best_book": "BetRivers",
+        "implied_prob": 0.25,
+        "fair_prob": 0.2678,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.0195,
+        "edge_vs_fair": -0.0129
+      }
+    },
+    {
+      "player_id": "00-0038041",
+      "name": "Jake Ferguson",
+      "position": "TE",
+      "team": "DAL",
+      "opponent": "IND",
+      "home": false,
+      "game_id": "2026_09_DAL_IND",
+      "kickoff_utc": "2026-11-08T18:00:00+00:00",
+      "week": 9,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.28923,
+      "lambda_rush": 0.02642,
+      "lambda_rec": 0.26281,
+      "prob": 0.25116,
+      "expected_tds": 0.2892,
+      "team_expected_off_tds": 2.676,
+      "team_expected_rush_tds": 1.039,
+      "team_expected_rec_tds": 1.637,
+      "shares": {
+        "rush": 0.0249,
+        "rec": 0.1559
+      },
+      "usage": {
+        "carries": 0.6,
+        "goal_line_carries": 0.0,
+        "targets": 86.8,
+        "red_zone_targets": 20.0,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 7.8
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.6763,
+          "implied_points": 25.0,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3884,
+          "observed": 0.3895,
+          "n_tds": 53.4
+        },
+        "opp_rush": {
+          "value": 1.02,
+          "per_game": 0.967,
+          "n_games": 18.2
+        },
+        "opp_rec": {
+          "value": 1.0301,
+          "per_game": 1.56,
+          "n_games": 18.2
+        },
+        "game_line": {
+          "total": 54.5,
+          "spread": 4.5,
+          "implied_team_runs": 25.0
+        }
+      },
+      "break_even_american": 298,
+      "odds": {
+        "best_price_decimal": 4.5,
+        "best_price_american": 350,
+        "best_book": "BetRivers",
+        "implied_prob": 0.2222,
+        "fair_prob": 0.2389,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.1302,
+        "edge_vs_fair": 0.0123
+      }
+    },
+    {
+      "player_id": "00-0039732",
+      "name": "Bo Nix",
+      "position": "QB",
+      "team": "DEN",
+      "opponent": "CAR",
+      "home": false,
+      "game_id": "2026_09_DEN_CAR",
+      "kickoff_utc": "2026-11-08T18:00:00+00:00",
+      "week": 9,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.24421,
+      "lambda_rush": 0.24421,
+      "lambda_rec": 0.0,
+      "prob": 0.21668,
+      "expected_tds": 0.2442,
+      "team_expected_off_tds": 2.489,
+      "team_expected_rush_tds": 1.044,
+      "team_expected_rec_tds": 1.445,
+      "shares": {
+        "rush": 0.1871,
+        "rec": 0.0
+      },
+      "usage": {
+        "carries": 63.6,
+        "goal_line_carries": 4.6,
+        "targets": 0.6,
+        "red_zone_targets": 0.6,
+        "prior_rush_tds": 5.0,
+        "prior_rec_tds": 0.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.4892,
+          "implied_points": 23.5,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.4196,
+          "observed": 0.4393,
+          "n_tds": 42.8
+        },
+        "opp_rush": {
+          "value": 1.25,
+          "per_game": 1.395,
+          "n_games": 17.2
+        },
+        "opp_rec": {
+          "value": 0.9101,
+          "per_game": 1.279,
+          "n_games": 17.2
+        },
+        "game_line": {
+          "total": 44.5,
+          "spread": -2.5,
+          "implied_team_runs": 23.5
+        }
+      },
+      "break_even_american": 362,
+      "odds": {
+        "best_price_decimal": 5.5,
+        "best_price_american": 450,
+        "best_book": "DraftKings",
+        "implied_prob": 0.1818,
+        "fair_prob": 0.1747,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.1917,
+        "edge_vs_fair": 0.042
+      }
+    },
+    {
+      "player_id": "00-0031610",
+      "name": "Darren Waller",
+      "position": "TE",
+      "team": "CAR",
+      "opponent": "DEN",
+      "home": true,
+      "game_id": "2026_09_DEN_CAR",
+      "kickoff_utc": "2026-11-08T18:00:00+00:00",
       "week": 9,
       "confidence": "medium",
       "rookie": false,
       "changed_teams": true,
-      "lambda": 0.33954,
-      "lambda_rush": 0.30344,
-      "lambda_rec": 0.0361,
-      "prob": 0.2879,
-      "expected_tds": 0.3395,
-      "team_expected_off_tds": 2.926,
-      "team_expected_rush_tds": 1.074,
-      "team_expected_rec_tds": 1.852,
+      "lambda": 0.19604,
+      "lambda_rush": 0.01994,
+      "lambda_rec": 0.1761,
+      "prob": 0.17802,
+      "expected_tds": 0.196,
+      "team_expected_off_tds": 2.583,
+      "team_expected_rush_tds": 0.879,
+      "team_expected_rec_tds": 1.704,
       "shares": {
-        "rush": 0.2477,
-        "rec": 0.0206
+        "rush": 0.0273,
+        "rec": 0.1184
       },
       "usage": {
-        "carries": 112.2,
-        "goal_line_carries": 12.4,
-        "targets": 5.4,
-        "red_zone_targets": 0.6,
-        "prior_rush_tds": 6.6,
-        "prior_rec_tds": 0.0
-      },
-      "factors": {
-        "team_off_tds": {
-          "value": 2.9259,
-          "implied_points": 27.0,
-          "source": "game line"
-        },
-        "team_rush_split": {
-          "value": 0.367,
-          "observed": 0.3582,
-          "n_tds": 53.6
-        },
-        "opp_rush": {
-          "value": 1.141,
-          "per_game": 1.143,
-          "n_games": 18.2
-        },
-        "opp_rec": {
-          "value": 0.9444,
-          "per_game": 1.363,
-          "n_games": 18.2
-        },
-        "game_line": {
-          "total": 44.5,
-          "spread": -9.5,
-          "implied_team_runs": 27.0
-        }
-      },
-      "break_even_american": 247,
-      "odds": {
-        "best_price_decimal": 2.07,
-        "best_price_american": 107,
-        "best_book": "BetRivers",
-        "implied_prob": 0.4831,
-        "fair_prob": 0.4602,
-        "n_books": 6,
-        "two_sided": false,
-        "ev_per_dollar": -0.404,
-        "edge_vs_fair": -0.1723
-      }
-    },
-    {
-      "player_id": "00-0034960",
-      "name": "Jakobi Meyers",
-      "position": "WR",
-      "team": "JAX",
-      "opponent": "BAL",
-      "home": false,
-      "game_id": "2026_09_JAX_BAL",
-      "kickoff_utc": "2026-11-06T01:15:00+00:00",
-      "week": 9,
-      "confidence": "high",
-      "rookie": false,
-      "changed_teams": false,
-      "lambda": 0.32501,
-      "lambda_rush": 0.02785,
-      "lambda_rec": 0.29716,
-      "prob": 0.27748,
-      "expected_tds": 0.325,
-      "team_expected_off_tds": 2.926,
-      "team_expected_rush_tds": 1.074,
-      "team_expected_rec_tds": 1.852,
-      "shares": {
-        "rush": 0.0227,
-        "rec": 0.1699
-      },
-      "usage": {
-        "carries": 4.0,
-        "goal_line_carries": 0.6,
-        "targets": 97.0,
-        "red_zone_targets": 15.999999999999998,
-        "prior_rush_tds": 0.0,
-        "prior_rec_tds": 3.8
-      },
-      "factors": {
-        "team_off_tds": {
-          "value": 2.9259,
-          "implied_points": 27.0,
-          "source": "game line"
-        },
-        "team_rush_split": {
-          "value": 0.367,
-          "observed": 0.3582,
-          "n_tds": 53.6
-        },
-        "opp_rush": {
-          "value": 1.141,
-          "per_game": 1.143,
-          "n_games": 18.2
-        },
-        "opp_rec": {
-          "value": 0.9444,
-          "per_game": 1.363,
-          "n_games": 18.2
-        },
-        "game_line": {
-          "total": 44.5,
-          "spread": -9.5,
-          "implied_team_runs": 27.0
-        }
-      },
-      "break_even_american": 260,
-      "odds": {
-        "best_price_decimal": 4.35,
-        "best_price_american": 335,
-        "best_book": "BetRivers",
-        "implied_prob": 0.2299,
-        "fair_prob": 0.2516,
-        "n_books": 6,
-        "two_sided": false,
-        "ev_per_dollar": 0.207,
-        "edge_vs_fair": 0.0259
-      }
-    },
-    {
-      "player_id": "00-0039064",
-      "name": "Zay Flowers",
-      "position": "WR",
-      "team": "BAL",
-      "opponent": "JAX",
-      "home": true,
-      "game_id": "2026_09_JAX_BAL",
-      "kickoff_utc": "2026-11-06T01:15:00+00:00",
-      "week": 9,
-      "confidence": "high",
-      "rookie": false,
-      "changed_teams": false,
-      "lambda": 0.32308,
-      "lambda_rush": 0.01735,
-      "lambda_rec": 0.30574,
-      "prob": 0.27609,
-      "expected_tds": 0.3231,
-      "team_expected_off_tds": 2.052,
-      "team_expected_rush_tds": 0.946,
-      "team_expected_rec_tds": 1.107,
-      "shares": {
-        "rush": 0.0221,
-        "rec": 0.2955
-      },
-      "usage": {
-        "carries": 9.0,
+        "carries": 0.6,
         "goal_line_carries": 0.0,
-        "targets": 129.39999999999998,
-        "red_zone_targets": 14.2,
-        "prior_rush_tds": 0.6,
-        "prior_rec_tds": 6.0
+        "targets": 46.0,
+        "red_zone_targets": 8.8,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 6.6
       },
       "factors": {
         "team_off_tds": {
-          "value": 2.0524,
-          "implied_points": 20.0,
+          "value": 2.5828,
+          "implied_points": 24.25,
           "source": "game line"
         },
         "team_rush_split": {
-          "value": 0.4607,
-          "observed": 0.5,
-          "n_tds": 47.6
+          "value": 0.3403,
+          "observed": 0.3116,
+          "n_tds": 39.8
         },
         "opp_rush": {
-          "value": 0.8301,
-          "per_game": 0.686,
-          "n_games": 17.2
+          "value": 0.831,
+          "per_game": 0.692,
+          "n_games": 18.2
         },
         "opp_rec": {
-          "value": 0.9348,
-          "per_game": 1.337,
-          "n_games": 17.2
+          "value": 0.8731,
+          "per_game": 1.198,
+          "n_games": 18.2
         },
         "game_line": {
-          "total": 38.5,
+          "total": 47.0,
           "spread": -1.5,
-          "implied_team_runs": 20.0
+          "implied_team_runs": 24.25
         }
       },
-      "break_even_american": 262,
+      "break_even_american": 462,
       "odds": {
-        "best_price_decimal": 4.8,
-        "best_price_american": 380,
-        "best_book": "FanDuel",
-        "implied_prob": 0.2083,
-        "fair_prob": 0.2074,
+        "best_price_decimal": 5.5,
+        "best_price_american": 450,
+        "best_book": "BetMGM",
+        "implied_prob": 0.1818,
+        "fair_prob": 0.1925,
         "n_books": 6,
         "two_sided": false,
-        "ev_per_dollar": 0.3252,
-        "edge_vs_fair": 0.0687
+        "ev_per_dollar": -0.0209,
+        "edge_vs_fair": -0.0145
       }
     },
     {
-      "player_id": "00-0039893",
-      "name": "Brian Thomas Jr.",
+      "player_id": "00-0036407",
+      "name": "Jerry Jeudy",
       "position": "WR",
-      "team": "JAX",
-      "opponent": "BAL",
+      "team": "CLE",
+      "opponent": "NO",
       "home": false,
-      "game_id": "2026_09_JAX_BAL",
-      "kickoff_utc": "2026-11-06T01:15:00+00:00",
+      "game_id": "2026_09_CLE_NO",
+      "kickoff_utc": "2026-11-08T18:00:00+00:00",
       "week": 9,
       "confidence": "high",
       "rookie": false,
       "changed_teams": false,
-      "lambda": 0.25885,
-      "lambda_rush": 0.02678,
-      "lambda_rec": 0.23207,
-      "prob": 0.22806,
-      "expected_tds": 0.2589,
-      "team_expected_off_tds": 2.926,
-      "team_expected_rush_tds": 1.074,
-      "team_expected_rec_tds": 1.852,
+      "lambda": 0.1892,
+      "lambda_rush": 0.02005,
+      "lambda_rec": 0.16914,
+      "prob": 0.17238,
+      "expected_tds": 0.1892,
+      "team_expected_off_tds": 1.803,
+      "team_expected_rush_tds": 0.728,
+      "team_expected_rec_tds": 1.075,
       "shares": {
-        "rush": 0.0219,
-        "rec": 0.1327
+        "rush": 0.0255,
+        "rec": 0.156
       },
       "usage": {
-        "carries": 1.7999999999999998,
+        "carries": 0.6,
         "goal_line_carries": 0.0,
-        "targets": 76.6,
-        "red_zone_targets": 9.2,
-        "prior_rush_tds": 0.6,
-        "prior_rec_tds": 3.2
-      },
-      "factors": {
-        "team_off_tds": {
-          "value": 2.9259,
-          "implied_points": 27.0,
-          "source": "game line"
-        },
-        "team_rush_split": {
-          "value": 0.367,
-          "observed": 0.3582,
-          "n_tds": 53.6
-        },
-        "opp_rush": {
-          "value": 1.141,
-          "per_game": 1.143,
-          "n_games": 18.2
-        },
-        "opp_rec": {
-          "value": 0.9444,
-          "per_game": 1.363,
-          "n_games": 18.2
-        },
-        "game_line": {
-          "total": 44.5,
-          "spread": -9.5,
-          "implied_team_runs": 27.0
-        }
-      },
-      "break_even_american": 338,
-      "odds": {
-        "best_price_decimal": 7.5,
-        "best_price_american": 650,
-        "best_book": "BetRivers",
-        "implied_prob": 0.1333,
-        "fair_prob": 0.148,
-        "n_books": 6,
-        "two_sided": false,
-        "ev_per_dollar": 0.7105,
-        "edge_vs_fair": 0.08
-      }
-    },
-    {
-      "player_id": "00-0038935",
-      "name": "Brenton Strange",
-      "position": "TE",
-      "team": "JAX",
-      "opponent": "BAL",
-      "home": false,
-      "game_id": "2026_09_JAX_BAL",
-      "kickoff_utc": "2026-11-06T01:15:00+00:00",
-      "week": 9,
-      "confidence": "high",
-      "rookie": false,
-      "changed_teams": false,
-      "lambda": 0.24131,
-      "lambda_rush": 0.02755,
-      "lambda_rec": 0.21376,
-      "prob": 0.2144,
-      "expected_tds": 0.2413,
-      "team_expected_off_tds": 2.926,
-      "team_expected_rush_tds": 1.074,
-      "team_expected_rec_tds": 1.852,
-      "shares": {
-        "rush": 0.0225,
-        "rec": 0.1222
-      },
-      "usage": {
-        "carries": 0.0,
-        "goal_line_carries": 0.0,
-        "targets": 71.0,
-        "red_zone_targets": 9.0,
+        "targets": 87.6,
+        "red_zone_targets": 6.3999999999999995,
         "prior_rush_tds": 0.0,
-        "prior_rec_tds": 2.8
+        "prior_rec_tds": 1.2
       },
       "factors": {
         "team_off_tds": {
-          "value": 2.9259,
-          "implied_points": 27.0,
+          "value": 1.8028,
+          "implied_points": 18.0,
           "source": "game line"
         },
         "team_rush_split": {
-          "value": 0.367,
-          "observed": 0.3582,
-          "n_tds": 53.6
+          "value": 0.4039,
+          "observed": 0.4196,
+          "n_tds": 28.6
         },
         "opp_rush": {
-          "value": 1.141,
-          "per_game": 1.143,
-          "n_games": 18.2
-        },
-        "opp_rec": {
-          "value": 0.9444,
-          "per_game": 1.363,
-          "n_games": 18.2
-        },
-        "game_line": {
-          "total": 44.5,
-          "spread": -9.5,
-          "implied_team_runs": 27.0
-        }
-      },
-      "break_even_american": 366,
-      "odds": {
-        "best_price_decimal": 3.75,
-        "best_price_american": 275,
-        "best_book": "BetRivers",
-        "implied_prob": 0.2667,
-        "fair_prob": 0.2603,
-        "n_books": 6,
-        "two_sided": false,
-        "ev_per_dollar": -0.196,
-        "edge_vs_fair": -0.0459
-      }
-    },
-    {
-      "player_id": "00-0034753",
-      "name": "Mark Andrews",
-      "position": "TE",
-      "team": "BAL",
-      "opponent": "JAX",
-      "home": true,
-      "game_id": "2026_09_JAX_BAL",
-      "kickoff_utc": "2026-11-06T01:15:00+00:00",
-      "week": 9,
-      "confidence": "high",
-      "rookie": false,
-      "changed_teams": false,
-      "lambda": 0.23195,
-      "lambda_rush": 0.01971,
-      "lambda_rec": 0.21224,
-      "prob": 0.20701,
-      "expected_tds": 0.232,
-      "team_expected_off_tds": 2.052,
-      "team_expected_rush_tds": 0.946,
-      "team_expected_rec_tds": 1.107,
-      "shares": {
-        "rush": 0.0251,
-        "rec": 0.2051
-      },
-      "usage": {
-        "carries": 6.0,
-        "goal_line_carries": 1.7999999999999998,
-        "targets": 84.0,
-        "red_zone_targets": 17.0,
-        "prior_rush_tds": 0.6,
-        "prior_rec_tds": 4.0
-      },
-      "factors": {
-        "team_off_tds": {
-          "value": 2.0524,
-          "implied_points": 20.0,
-          "source": "game line"
-        },
-        "team_rush_split": {
-          "value": 0.4607,
-          "observed": 0.5,
-          "n_tds": 47.6
-        },
-        "opp_rush": {
-          "value": 0.8301,
-          "per_game": 0.686,
+          "value": 1.081,
+          "per_game": 1.058,
           "n_games": 17.2
         },
         "opp_rec": {
-          "value": 0.9348,
-          "per_game": 1.337,
+          "value": 1.0087,
+          "per_game": 1.512,
           "n_games": 17.2
         },
         "game_line": {
-          "total": 38.5,
-          "spread": -1.5,
-          "implied_team_runs": 20.0
+          "total": 39.5,
+          "spread": 3.5,
+          "implied_team_runs": 18.0
         }
       },
-      "break_even_american": 383,
-      "odds": {
-        "best_price_decimal": 6.5,
-        "best_price_american": 550,
-        "best_book": "DraftKings",
-        "implied_prob": 0.1538,
-        "fair_prob": 0.148,
-        "n_books": 6,
-        "two_sided": false,
-        "ev_per_dollar": 0.3456,
-        "edge_vs_fair": 0.059
-      }
-    },
-    {
-      "player_id": "00-0036971",
-      "name": "Trevor Lawrence",
-      "position": "QB",
-      "team": "JAX",
-      "opponent": "BAL",
-      "home": false,
-      "game_id": "2026_09_JAX_BAL",
-      "kickoff_utc": "2026-11-06T01:15:00+00:00",
-      "week": 9,
-      "confidence": "high",
-      "rookie": false,
-      "changed_teams": false,
-      "lambda": 0.22255,
-      "lambda_rush": 0.22255,
-      "lambda_rec": 0.0,
-      "prob": 0.19953,
-      "expected_tds": 0.2226,
-      "team_expected_off_tds": 2.926,
-      "team_expected_rush_tds": 1.074,
-      "team_expected_rec_tds": 1.852,
-      "shares": {
-        "rush": 0.1816,
-        "rec": 0.0
-      },
-      "usage": {
-        "carries": 62.0,
-        "goal_line_carries": 6.6,
-        "targets": 0.0,
-        "red_zone_targets": 0.0,
-        "prior_rush_tds": 5.3999999999999995,
-        "prior_rec_tds": 0.0
-      },
-      "factors": {
-        "team_off_tds": {
-          "value": 2.9259,
-          "implied_points": 27.0,
-          "source": "game line"
-        },
-        "team_rush_split": {
-          "value": 0.367,
-          "observed": 0.3582,
-          "n_tds": 53.6
-        },
-        "opp_rush": {
-          "value": 1.141,
-          "per_game": 1.143,
-          "n_games": 18.2
-        },
-        "opp_rec": {
-          "value": 0.9444,
-          "per_game": 1.363,
-          "n_games": 18.2
-        },
-        "game_line": {
-          "total": 44.5,
-          "spread": -9.5,
-          "implied_team_runs": 27.0
-        }
-      },
-      "break_even_american": 401,
-      "odds": {
-        "best_price_decimal": 5.3,
-        "best_price_american": 430,
-        "best_book": "BetRivers",
-        "implied_prob": 0.1887,
-        "fair_prob": 0.1887,
-        "n_books": 6,
-        "two_sided": false,
-        "ev_per_dollar": 0.0575,
-        "edge_vs_fair": 0.0109
-      }
-    },
-    {
-      "player_id": "00-0041106",
-      "name": "C.J. Williams",
-      "position": "WR",
-      "team": "JAX",
-      "opponent": "BAL",
-      "home": false,
-      "game_id": "2026_09_JAX_BAL",
-      "kickoff_utc": "2026-11-06T01:15:00+00:00",
-      "week": 9,
-      "confidence": "low",
-      "rookie": true,
-      "changed_teams": false,
-      "lambda": 0.14975,
-      "lambda_rush": 0.02755,
-      "lambda_rec": 0.1222,
-      "prob": 0.13908,
-      "expected_tds": 0.1498,
-      "team_expected_off_tds": 2.926,
-      "team_expected_rush_tds": 1.074,
-      "team_expected_rec_tds": 1.852,
-      "shares": {
-        "rush": 0.0225,
-        "rec": 0.0699
-      },
-      "usage": {
-        "carries": 0.0,
-        "goal_line_carries": 0.0,
-        "targets": 0.0,
-        "red_zone_targets": 0.0,
-        "prior_rush_tds": 0.0,
-        "prior_rec_tds": 0.0
-      },
-      "factors": {
-        "team_off_tds": {
-          "value": 2.9259,
-          "implied_points": 27.0,
-          "source": "game line"
-        },
-        "team_rush_split": {
-          "value": 0.367,
-          "observed": 0.3582,
-          "n_tds": 53.6
-        },
-        "opp_rush": {
-          "value": 1.141,
-          "per_game": 1.143,
-          "n_games": 18.2
-        },
-        "opp_rec": {
-          "value": 0.9444,
-          "per_game": 1.363,
-          "n_games": 18.2
-        },
-        "game_line": {
-          "total": 44.5,
-          "spread": -9.5,
-          "implied_team_runs": 27.0
-        }
-      },
-      "break_even_american": 619,
-      "odds": {
-        "best_price_decimal": 26.0,
-        "best_price_american": 2500,
-        "best_book": "DraftKings",
-        "implied_prob": 0.0385,
-        "fair_prob": 0.0449,
-        "n_books": 5,
-        "two_sided": false,
-        "ev_per_dollar": 2.6161,
-        "edge_vs_fair": 0.0942
-      }
-    },
-    {
-      "player_id": "00-0036550",
-      "name": "Rashod Bateman",
-      "position": "WR",
-      "team": "BAL",
-      "opponent": "JAX",
-      "home": true,
-      "game_id": "2026_09_JAX_BAL",
-      "kickoff_utc": "2026-11-06T01:15:00+00:00",
-      "week": 9,
-      "confidence": "high",
-      "rookie": false,
-      "changed_teams": false,
-      "lambda": 0.14242,
-      "lambda_rush": 0.01769,
-      "lambda_rec": 0.12473,
-      "prob": 0.13275,
-      "expected_tds": 0.1424,
-      "team_expected_off_tds": 2.052,
-      "team_expected_rush_tds": 0.946,
-      "team_expected_rec_tds": 1.107,
-      "shares": {
-        "rush": 0.0225,
-        "rec": 0.1205
-      },
-      "usage": {
-        "carries": 0.0,
-        "goal_line_carries": 0.0,
-        "targets": 52.4,
-        "red_zone_targets": 8.399999999999999,
-        "prior_rush_tds": 0.0,
-        "prior_rec_tds": 2.2
-      },
-      "factors": {
-        "team_off_tds": {
-          "value": 2.0524,
-          "implied_points": 20.0,
-          "source": "game line"
-        },
-        "team_rush_split": {
-          "value": 0.4607,
-          "observed": 0.5,
-          "n_tds": 47.6
-        },
-        "opp_rush": {
-          "value": 0.8301,
-          "per_game": 0.686,
-          "n_games": 17.2
-        },
-        "opp_rec": {
-          "value": 0.9348,
-          "per_game": 1.337,
-          "n_games": 17.2
-        },
-        "game_line": {
-          "total": 38.5,
-          "spread": -1.5,
-          "implied_team_runs": 20.0
-        }
-      },
-      "break_even_american": 653,
-      "odds": {
-        "best_price_decimal": 11.0,
-        "best_price_american": 1000,
-        "best_book": "DraftKings",
-        "implied_prob": 0.0909,
-        "fair_prob": 0.0921,
-        "n_books": 6,
-        "two_sided": false,
-        "ev_per_dollar": 0.4603,
-        "edge_vs_fair": 0.0407
-      }
-    },
-    {
-      "player_id": "00-0040718",
-      "name": "Travis Hunter",
-      "position": "WR",
-      "team": "JAX",
-      "opponent": "BAL",
-      "home": false,
-      "game_id": "2026_09_JAX_BAL",
-      "kickoff_utc": "2026-11-06T01:15:00+00:00",
-      "week": 9,
-      "confidence": "high",
-      "rookie": false,
-      "changed_teams": false,
-      "lambda": 0.13227,
-      "lambda_rush": 0.02657,
-      "lambda_rec": 0.1057,
-      "prob": 0.12389,
-      "expected_tds": 0.1323,
-      "team_expected_off_tds": 2.926,
-      "team_expected_rush_tds": 1.074,
-      "team_expected_rec_tds": 1.852,
-      "shares": {
-        "rush": 0.0217,
-        "rec": 0.0604
-      },
-      "usage": {
-        "carries": 2.6,
-        "goal_line_carries": 0.0,
-        "targets": 34.0,
-        "red_zone_targets": 5.0,
-        "prior_rush_tds": 0.0,
-        "prior_rec_tds": 1.6
-      },
-      "factors": {
-        "team_off_tds": {
-          "value": 2.9259,
-          "implied_points": 27.0,
-          "source": "game line"
-        },
-        "team_rush_split": {
-          "value": 0.367,
-          "observed": 0.3582,
-          "n_tds": 53.6
-        },
-        "opp_rush": {
-          "value": 1.141,
-          "per_game": 1.143,
-          "n_games": 18.2
-        },
-        "opp_rec": {
-          "value": 0.9444,
-          "per_game": 1.363,
-          "n_games": 18.2
-        },
-        "game_line": {
-          "total": 44.5,
-          "spread": -9.5,
-          "implied_team_runs": 27.0
-        }
-      },
-      "break_even_american": 707,
-      "odds": {
-        "best_price_decimal": 11.0,
-        "best_price_american": 1000,
-        "best_book": "BetRivers",
-        "implied_prob": 0.0909,
-        "fair_prob": 0.111,
-        "n_books": 6,
-        "two_sided": false,
-        "ev_per_dollar": 0.3628,
-        "edge_vs_fair": 0.0129
-      }
-    },
-    {
-      "player_id": "00-0034975",
-      "name": "Justice Hill",
-      "position": "RB",
-      "team": "BAL",
-      "opponent": "JAX",
-      "home": true,
-      "game_id": "2026_09_JAX_BAL",
-      "kickoff_utc": "2026-11-06T01:15:00+00:00",
-      "week": 9,
-      "confidence": "high",
-      "rookie": false,
-      "changed_teams": false,
-      "lambda": 0.1145,
-      "lambda_rush": 0.03483,
-      "lambda_rec": 0.07966,
-      "prob": 0.10818,
-      "expected_tds": 0.1145,
-      "team_expected_off_tds": 2.052,
-      "team_expected_rush_tds": 0.946,
-      "team_expected_rec_tds": 1.107,
-      "shares": {
-        "rush": 0.0444,
-        "rec": 0.077
-      },
-      "usage": {
-        "carries": 34.8,
-        "goal_line_carries": 0.6,
-        "targets": 41.2,
-        "red_zone_targets": 2.6,
-        "prior_rush_tds": 1.2,
-        "prior_rec_tds": 0.6
-      },
-      "factors": {
-        "team_off_tds": {
-          "value": 2.0524,
-          "implied_points": 20.0,
-          "source": "game line"
-        },
-        "team_rush_split": {
-          "value": 0.4607,
-          "observed": 0.5,
-          "n_tds": 47.6
-        },
-        "opp_rush": {
-          "value": 0.8301,
-          "per_game": 0.686,
-          "n_games": 17.2
-        },
-        "opp_rec": {
-          "value": 0.9348,
-          "per_game": 1.337,
-          "n_games": 17.2
-        },
-        "game_line": {
-          "total": 38.5,
-          "spread": -1.5,
-          "implied_team_runs": 20.0
-        }
-      },
-      "break_even_american": 824,
-      "odds": {
-        "best_price_decimal": 6.5,
-        "best_price_american": 550,
-        "best_book": "DraftKings",
-        "implied_prob": 0.1538,
-        "fair_prob": 0.1541,
-        "n_books": 6,
-        "two_sided": false,
-        "ev_per_dollar": -0.2968,
-        "edge_vs_fair": -0.0459
-      }
-    },
-    {
-      "player_id": "00-0032104",
-      "name": "Ameer Abdullah",
-      "position": "RB",
-      "team": "JAX",
-      "opponent": "BAL",
-      "home": false,
-      "game_id": "2026_09_JAX_BAL",
-      "kickoff_utc": "2026-11-06T01:15:00+00:00",
-      "week": 9,
-      "confidence": "high",
-      "rookie": false,
-      "changed_teams": false,
-      "lambda": 0.08943,
-      "lambda_rush": 0.04542,
-      "lambda_rec": 0.04401,
-      "prob": 0.08554,
-      "expected_tds": 0.0894,
-      "team_expected_off_tds": 2.926,
-      "team_expected_rush_tds": 1.074,
-      "team_expected_rec_tds": 1.852,
-      "shares": {
-        "rush": 0.0371,
-        "rec": 0.0252
-      },
-      "usage": {
-        "carries": 24.4,
-        "goal_line_carries": 0.6,
-        "targets": 13.2,
-        "red_zone_targets": 1.6,
-        "prior_rush_tds": 0.6,
-        "prior_rec_tds": 0.0
-      },
-      "factors": {
-        "team_off_tds": {
-          "value": 2.9259,
-          "implied_points": 27.0,
-          "source": "game line"
-        },
-        "team_rush_split": {
-          "value": 0.367,
-          "observed": 0.3582,
-          "n_tds": 53.6
-        },
-        "opp_rush": {
-          "value": 1.141,
-          "per_game": 1.143,
-          "n_games": 18.2
-        },
-        "opp_rec": {
-          "value": 0.9444,
-          "per_game": 1.363,
-          "n_games": 18.2
-        },
-        "game_line": {
-          "total": 44.5,
-          "spread": -9.5,
-          "implied_team_runs": 27.0
-        }
-      },
-      "break_even_american": 1069,
+      "break_even_american": 480,
       "odds": {
         "best_price_decimal": 8.0,
         "best_price_american": 700,
         "best_book": "BetRivers",
         "implied_prob": 0.125,
-        "fair_prob": 0.1348,
+        "fair_prob": 0.1451,
         "n_books": 6,
         "two_sided": false,
-        "ev_per_dollar": -0.3157,
-        "edge_vs_fair": -0.0492
+        "ev_per_dollar": 0.379,
+        "edge_vs_fair": 0.0272
       }
     },
     {
-      "player_id": "00-0041100",
-      "name": "Josh Cameron",
-      "position": "WR",
-      "team": "JAX",
-      "opponent": "BAL",
+      "player_id": "00-0033881",
+      "name": "Evan Engram",
+      "position": "TE",
+      "team": "DEN",
+      "opponent": "CAR",
       "home": false,
-      "game_id": "2026_09_JAX_BAL",
-      "kickoff_utc": "2026-11-06T01:15:00+00:00",
-      "week": 9,
-      "confidence": "low",
-      "rookie": true,
-      "changed_teams": false,
-      "lambda": 0.08783,
-      "lambda_rush": 0.02755,
-      "lambda_rec": 0.06028,
-      "prob": 0.08408,
-      "expected_tds": 0.0878,
-      "team_expected_off_tds": 2.926,
-      "team_expected_rush_tds": 1.074,
-      "team_expected_rec_tds": 1.852,
-      "shares": {
-        "rush": 0.0225,
-        "rec": 0.0345
-      },
-      "usage": {
-        "carries": 0.0,
-        "goal_line_carries": 0.0,
-        "targets": 13.0,
-        "red_zone_targets": 4.0,
-        "prior_rush_tds": 0.0,
-        "prior_rec_tds": 2.0
-      },
-      "factors": {
-        "team_off_tds": {
-          "value": 2.9259,
-          "implied_points": 27.0,
-          "source": "game line"
-        },
-        "team_rush_split": {
-          "value": 0.367,
-          "observed": 0.3582,
-          "n_tds": 53.6
-        },
-        "opp_rush": {
-          "value": 1.141,
-          "per_game": 1.143,
-          "n_games": 18.2
-        },
-        "opp_rec": {
-          "value": 0.9444,
-          "per_game": 1.363,
-          "n_games": 18.2
-        },
-        "game_line": {
-          "total": 44.5,
-          "spread": -9.5,
-          "implied_team_runs": 27.0
-        }
-      },
-      "break_even_american": 1089,
-      "odds": {
-        "best_price_decimal": 9.0,
-        "best_price_american": 800,
-        "best_book": "BetRivers",
-        "implied_prob": 0.1111,
-        "fair_prob": 0.1201,
-        "n_books": 6,
-        "two_sided": false,
-        "ev_per_dollar": -0.2433,
-        "edge_vs_fair": -0.036
-      }
-    },
-    {
-      "player_id": "00-0040238",
-      "name": "LeQuint Allen Jr.",
-      "position": "RB",
-      "team": "JAX",
-      "opponent": "BAL",
-      "home": false,
-      "game_id": "2026_09_JAX_BAL",
-      "kickoff_utc": "2026-11-06T01:15:00+00:00",
+      "game_id": "2026_09_DEN_CAR",
+      "kickoff_utc": "2026-11-08T18:00:00+00:00",
       "week": 9,
       "confidence": "high",
       "rookie": false,
       "changed_teams": false,
-      "lambda": 0.07874,
-      "lambda_rush": 0.03496,
-      "lambda_rec": 0.04378,
-      "prob": 0.07572,
-      "expected_tds": 0.0787,
-      "team_expected_off_tds": 2.926,
-      "team_expected_rush_tds": 1.074,
-      "team_expected_rec_tds": 1.852,
+      "lambda": 0.18655,
+      "lambda_rush": 0.03569,
+      "lambda_rec": 0.15085,
+      "prob": 0.17018,
+      "expected_tds": 0.1865,
+      "team_expected_off_tds": 2.489,
+      "team_expected_rush_tds": 1.044,
+      "team_expected_rec_tds": 1.445,
       "shares": {
-        "rush": 0.0285,
-        "rec": 0.025
+        "rush": 0.0273,
+        "rec": 0.1147
       },
       "usage": {
-        "carries": 14.799999999999999,
-        "goal_line_carries": 0.6,
-        "targets": 12.6,
-        "red_zone_targets": 2.2,
+        "carries": 0.6,
+        "goal_line_carries": 0.0,
+        "targets": 71.19999999999999,
+        "red_zone_targets": 8.6,
         "prior_rush_tds": 0.0,
+        "prior_rec_tds": 1.6
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.4892,
+          "implied_points": 23.5,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.4196,
+          "observed": 0.4393,
+          "n_tds": 42.8
+        },
+        "opp_rush": {
+          "value": 1.25,
+          "per_game": 1.395,
+          "n_games": 17.2
+        },
+        "opp_rec": {
+          "value": 0.9101,
+          "per_game": 1.279,
+          "n_games": 17.2
+        },
+        "game_line": {
+          "total": 44.5,
+          "spread": -2.5,
+          "implied_team_runs": 23.5
+        }
+      },
+      "break_even_american": 488,
+      "odds": {
+        "best_price_decimal": 6.0,
+        "best_price_american": 500,
+        "best_book": "DraftKings",
+        "implied_prob": 0.1667,
+        "fair_prob": 0.1634,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.0211,
+        "edge_vs_fair": 0.0068
+      }
+    },
+    {
+      "player_id": "00-0039874",
+      "name": "Jaylen Wright",
+      "position": "RB",
+      "team": "MIA",
+      "opponent": "DET",
+      "home": true,
+      "game_id": "2026_09_DET_MIA",
+      "kickoff_utc": "2026-11-08T18:00:00+00:00",
+      "week": 9,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.15406,
+      "lambda_rush": 0.10576,
+      "lambda_rec": 0.0483,
+      "prob": 0.14278,
+      "expected_tds": 0.1541,
+      "team_expected_off_tds": 2.146,
+      "team_expected_rush_tds": 0.893,
+      "team_expected_rec_tds": 1.253,
+      "shares": {
+        "rush": 0.121,
+        "rec": 0.0308
+      },
+      "usage": {
+        "carries": 64.0,
+        "goal_line_carries": 2.4,
+        "targets": 7.3999999999999995,
+        "red_zone_targets": 0.0,
+        "prior_rush_tds": 1.2,
         "prior_rec_tds": 0.0
       },
       "factors": {
         "team_off_tds": {
-          "value": 2.9259,
-          "implied_points": 27.0,
+          "value": 2.146,
+          "implied_points": 20.75,
           "source": "game line"
         },
         "team_rush_split": {
-          "value": 0.367,
-          "observed": 0.3582,
-          "n_tds": 53.6
+          "value": 0.4161,
+          "observed": 0.4375,
+          "n_tds": 35.2
         },
         "opp_rush": {
-          "value": 1.141,
-          "per_game": 1.143,
-          "n_games": 18.2
+          "value": 0.9791,
+          "per_game": 0.907,
+          "n_games": 17.2
         },
         "opp_rec": {
-          "value": 0.9444,
-          "per_game": 1.363,
-          "n_games": 18.2
+          "value": 1.25,
+          "per_game": 2.128,
+          "n_games": 17.2
         },
         "game_line": {
-          "total": 44.5,
-          "spread": -9.5,
-          "implied_team_runs": 27.0
+          "total": 43.0,
+          "spread": 1.5,
+          "implied_team_runs": 20.75
         }
       },
-      "break_even_american": 1221,
-      "odds": {
-        "best_price_decimal": 15.0,
-        "best_price_american": 1400,
-        "best_book": "BetRivers",
-        "implied_prob": 0.0667,
-        "fair_prob": 0.0756,
-        "n_books": 6,
-        "two_sided": false,
-        "ev_per_dollar": 0.1358,
-        "edge_vs_fair": 0.0001
-      }
-    },
-    {
-      "player_id": "00-0041503",
-      "name": "Nate Boerkircher",
-      "position": "TE",
-      "team": "JAX",
-      "opponent": "BAL",
-      "home": false,
-      "game_id": "2026_09_JAX_BAL",
-      "kickoff_utc": "2026-11-06T01:15:00+00:00",
-      "week": 9,
-      "confidence": "low",
-      "rookie": true,
-      "changed_teams": false,
-      "lambda": 0.07817,
-      "lambda_rush": 0.02755,
-      "lambda_rec": 0.05062,
-      "prob": 0.0752,
-      "expected_tds": 0.0782,
-      "team_expected_off_tds": 2.926,
-      "team_expected_rush_tds": 1.074,
-      "team_expected_rec_tds": 1.852,
-      "shares": {
-        "rush": 0.0225,
-        "rec": 0.0289
-      },
-      "usage": {
-        "carries": 0.0,
-        "goal_line_carries": 0.0,
-        "targets": 9.0,
-        "red_zone_targets": 2.0,
-        "prior_rush_tds": 0.0,
-        "prior_rec_tds": 2.0
-      },
-      "factors": {
-        "team_off_tds": {
-          "value": 2.9259,
-          "implied_points": 27.0,
-          "source": "game line"
-        },
-        "team_rush_split": {
-          "value": 0.367,
-          "observed": 0.3582,
-          "n_tds": 53.6
-        },
-        "opp_rush": {
-          "value": 1.141,
-          "per_game": 1.143,
-          "n_games": 18.2
-        },
-        "opp_rec": {
-          "value": 0.9444,
-          "per_game": 1.363,
-          "n_games": 18.2
-        },
-        "game_line": {
-          "total": 44.5,
-          "spread": -9.5,
-          "implied_team_runs": 27.0
-        }
-      },
-      "break_even_american": 1230,
+      "break_even_american": 600,
       "odds": {
         "best_price_decimal": 6.75,
         "best_price_american": 575,
         "best_book": "BetRivers",
         "implied_prob": 0.1481,
-        "fair_prob": 0.1572,
-        "n_books": 6,
+        "fair_prob": 0.1425,
+        "n_books": 2,
         "two_sided": false,
-        "ev_per_dollar": -0.4924,
-        "edge_vs_fair": -0.082
+        "ev_per_dollar": -0.0362,
+        "edge_vs_fair": 0.0003
       }
     },
     {
-      "player_id": "00-0039792",
-      "name": "Devontez Walker",
-      "position": "WR",
-      "team": "BAL",
-      "opponent": "JAX",
+      "player_id": "00-0035710",
+      "name": "Daniel Jones",
+      "position": "QB",
+      "team": "IND",
+      "opponent": "DAL",
       "home": true,
-      "game_id": "2026_09_JAX_BAL",
-      "kickoff_utc": "2026-11-06T01:15:00+00:00",
+      "game_id": "2026_09_DAL_IND",
+      "kickoff_utc": "2026-11-08T18:00:00+00:00",
       "week": 9,
       "confidence": "high",
       "rookie": false,
       "changed_teams": false,
-      "lambda": 0.06852,
-      "lambda_rush": 0.01769,
-      "lambda_rec": 0.05082,
-      "prob": 0.06622,
-      "expected_tds": 0.0685,
-      "team_expected_off_tds": 2.052,
-      "team_expected_rush_tds": 0.946,
-      "team_expected_rec_tds": 1.107,
+      "lambda": 0.15139,
+      "lambda_rush": 0.15139,
+      "lambda_rec": 0.0,
+      "prob": 0.14049,
+      "expected_tds": 0.1514,
+      "team_expected_off_tds": 2.333,
+      "team_expected_rush_tds": 1.175,
+      "team_expected_rec_tds": 1.158,
       "shares": {
-        "rush": 0.0225,
-        "rec": 0.0491
+        "rush": 0.1031,
+        "rec": 0.0
       },
       "usage": {
-        "carries": 0.0,
-        "goal_line_carries": 0.0,
-        "targets": 13.8,
-        "red_zone_targets": 1.6,
-        "prior_rush_tds": 0.0,
-        "prior_rec_tds": 2.8
+        "carries": 44.8,
+        "goal_line_carries": 5.6,
+        "targets": 0.0,
+        "red_zone_targets": 0.0,
+        "prior_rush_tds": 4.0,
+        "prior_rec_tds": 0.0
       },
       "factors": {
         "team_off_tds": {
-          "value": 2.0524,
-          "implied_points": 20.0,
+          "value": 2.3332,
+          "implied_points": 22.25,
           "source": "game line"
         },
         "team_rush_split": {
-          "value": 0.4607,
-          "observed": 0.5,
-          "n_tds": 47.6
+          "value": 0.5035,
+          "observed": 0.5671,
+          "n_tds": 46.2
         },
         "opp_rush": {
-          "value": 0.8301,
-          "per_game": 0.686,
-          "n_games": 17.2
+          "value": 1.25,
+          "per_game": 1.341,
+          "n_games": 18.2
         },
         "opp_rec": {
-          "value": 0.9348,
-          "per_game": 1.337,
-          "n_games": 17.2
+          "value": 1.2108,
+          "per_game": 1.978,
+          "n_games": 18.2
         },
         "game_line": {
-          "total": 38.5,
+          "total": 43.0,
           "spread": -1.5,
-          "implied_team_runs": 20.0
+          "implied_team_runs": 22.25
         }
       },
-      "break_even_american": 1410,
+      "break_even_american": 612,
       "odds": {
-        "best_price_decimal": 30.0,
-        "best_price_american": 2900,
-        "best_book": "BetRivers",
-        "implied_prob": 0.0333,
-        "fair_prob": 0.0363,
+        "best_price_decimal": 7.5,
+        "best_price_american": 650,
+        "best_book": "DraftKings",
+        "implied_prob": 0.1333,
+        "fair_prob": 0.1348,
         "n_books": 6,
         "two_sided": false,
-        "ev_per_dollar": 0.9866,
-        "edge_vs_fair": 0.0299
+        "ev_per_dollar": 0.0537,
+        "edge_vs_fair": 0.0057
       }
     },
     {
-      "player_id": "00-0036590",
-      "name": "Quintin Morris",
-      "position": "TE",
-      "team": "JAX",
-      "opponent": "BAL",
+      "player_id": "00-0038976",
+      "name": "Marvin Mims Jr.",
+      "position": "WR",
+      "team": "DEN",
+      "opponent": "CAR",
       "home": false,
-      "game_id": "2026_09_JAX_BAL",
-      "kickoff_utc": "2026-11-06T01:15:00+00:00",
+      "game_id": "2026_09_DEN_CAR",
+      "kickoff_utc": "2026-11-08T18:00:00+00:00",
       "week": 9,
       "confidence": "high",
       "rookie": false,
       "changed_teams": false,
-      "lambda": 0.06804,
-      "lambda_rush": 0.02755,
-      "lambda_rec": 0.04049,
-      "prob": 0.06578,
-      "expected_tds": 0.068,
-      "team_expected_off_tds": 2.926,
-      "team_expected_rush_tds": 1.074,
-      "team_expected_rec_tds": 1.852,
+      "lambda": 0.12219,
+      "lambda_rush": 0.03759,
+      "lambda_rec": 0.0846,
+      "prob": 0.11502,
+      "expected_tds": 0.1222,
+      "team_expected_off_tds": 2.489,
+      "team_expected_rush_tds": 1.044,
+      "team_expected_rec_tds": 1.445,
       "shares": {
-        "rush": 0.0225,
-        "rec": 0.0231
+        "rush": 0.0288,
+        "rec": 0.0643
       },
       "usage": {
-        "carries": 0.0,
+        "carries": 11.2,
         "goal_line_carries": 0.0,
-        "targets": 7.3999999999999995,
-        "red_zone_targets": 1.2,
-        "prior_rush_tds": 0.0,
+        "targets": 44.599999999999994,
+        "red_zone_targets": 1.7999999999999998,
+        "prior_rush_tds": 0.6,
         "prior_rec_tds": 0.6
       },
       "factors": {
         "team_off_tds": {
-          "value": 2.9259,
-          "implied_points": 27.0,
+          "value": 2.4892,
+          "implied_points": 23.5,
           "source": "game line"
         },
         "team_rush_split": {
-          "value": 0.367,
-          "observed": 0.3582,
-          "n_tds": 53.6
+          "value": 0.4196,
+          "observed": 0.4393,
+          "n_tds": 42.8
         },
         "opp_rush": {
-          "value": 1.141,
-          "per_game": 1.143,
-          "n_games": 18.2
+          "value": 1.25,
+          "per_game": 1.395,
+          "n_games": 17.2
         },
         "opp_rec": {
-          "value": 0.9444,
-          "per_game": 1.363,
-          "n_games": 18.2
+          "value": 0.9101,
+          "per_game": 1.279,
+          "n_games": 17.2
         },
         "game_line": {
           "total": 44.5,
-          "spread": -9.5,
-          "implied_team_runs": 27.0
+          "spread": -2.5,
+          "implied_team_runs": 23.5
         }
       },
-      "break_even_american": 1420,
+      "break_even_american": 769,
       "odds": {
-        "best_price_decimal": 23.0,
-        "best_price_american": 2200,
-        "best_book": "DraftKings",
-        "implied_prob": 0.0435,
-        "fair_prob": 0.043,
+        "best_price_decimal": 10.5,
+        "best_price_american": 950,
+        "best_book": "FanDuel",
+        "implied_prob": 0.0952,
+        "fair_prob": 0.1065,
         "n_books": 6,
         "two_sided": false,
-        "ev_per_dollar": 0.5129,
-        "edge_vs_fair": 0.0228
+        "ev_per_dollar": 0.2077,
+        "edge_vs_fair": 0.0085
+      }
+    },
+    {
+      "player_id": "00-0032392",
+      "name": "Austin Hooper",
+      "position": "TE",
+      "team": "ATL",
+      "opponent": "CIN",
+      "home": true,
+      "game_id": "2026_09_CIN_ATL",
+      "kickoff_utc": "2026-11-08T14:30:00+00:00",
+      "week": 9,
+      "confidence": "medium",
+      "rookie": false,
+      "changed_teams": true,
+      "lambda": 0.10581,
+      "lambda_rush": 0.02518,
+      "lambda_rec": 0.08063,
+      "prob": 0.1004,
+      "expected_tds": 0.1058,
+      "team_expected_off_tds": 2.271,
+      "team_expected_rush_tds": 0.979,
+      "team_expected_rec_tds": 1.292,
+      "shares": {
+        "rush": 0.0241,
+        "rec": 0.0593
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 26.6,
+        "red_zone_targets": 4.0,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 2.2
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.2708,
+          "implied_points": 21.75,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.4311,
+          "observed": 0.4596,
+          "n_tds": 39.6
+        },
+        "opp_rush": {
+          "value": 1.0653,
+          "per_game": 1.035,
+          "n_games": 17.2
+        },
+        "opp_rec": {
+          "value": 1.0531,
+          "per_game": 1.616,
+          "n_games": 17.2
+        },
+        "game_line": {
+          "total": 46.5,
+          "spread": 3.0,
+          "implied_team_runs": 21.75
+        }
+      },
+      "break_even_american": 896,
+      "odds": {
+        "best_price_decimal": 10.5,
+        "best_price_american": 950,
+        "best_book": "FanDuel",
+        "implied_prob": 0.0952,
+        "fair_prob": 0.0943,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.0542,
+        "edge_vs_fair": 0.0061
       }
     }
   ]
