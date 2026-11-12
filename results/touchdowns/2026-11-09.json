@@ -1,0 +1,408 @@
+{
+  "date": "2026-11-09",
+  "window": "all",
+  "season": 2026,
+  "week": 9,
+  "picks": [
+    {
+      "player_id": "00-0037248",
+      "name": "James Cook",
+      "position": "RB",
+      "team": "BUF",
+      "opponent": "MIN",
+      "prob": 0.44935,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 2.0,
+        "best_price_american": 100,
+        "best_book": "BetMGM",
+        "implied_prob": 0.5,
+        "fair_prob": 0.4952,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.1013,
+        "edge_vs_fair": -0.0459
+      },
+      "scored": true
+    },
+    {
+      "player_id": "00-0034857",
+      "name": "Josh Allen",
+      "position": "QB",
+      "team": "BUF",
+      "opponent": "MIN",
+      "prob": 0.32349,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 1.92,
+        "best_price_american": -109,
+        "best_book": "BetRivers",
+        "implied_prob": 0.5208,
+        "fair_prob": 0.5376,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.3789,
+        "edge_vs_fair": -0.2141
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0033293",
+      "name": "Aaron Jones",
+      "position": "RB",
+      "team": "MIN",
+      "opponent": "BUF",
+      "prob": 0.30999,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 3.9,
+        "best_price_american": 290,
+        "best_book": "DraftKings",
+        "implied_prob": 0.2564,
+        "fair_prob": 0.2451,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.209,
+        "edge_vs_fair": 0.0649
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0036322",
+      "name": "Justin Jefferson",
+      "position": "WR",
+      "team": "MIN",
+      "opponent": "BUF",
+      "prob": 0.28592,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 2.65,
+        "best_price_american": 165,
+        "best_book": "DraftKings",
+        "implied_prob": 0.3774,
+        "fair_prob": 0.3594,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.2423,
+        "edge_vs_fair": -0.0735
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0037525",
+      "name": "Jordan Mason",
+      "position": "RB",
+      "team": "MIN",
+      "opponent": "BUF",
+      "prob": 0.25511,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 3.3,
+        "best_price_american": 230,
+        "best_book": "DraftKings",
+        "implied_prob": 0.303,
+        "fair_prob": 0.3043,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.1581,
+        "edge_vs_fair": -0.0492
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0035229",
+      "name": "T.J. Hockenson",
+      "position": "TE",
+      "team": "MIN",
+      "opponent": "BUF",
+      "prob": 0.21425,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 3.5,
+        "best_price_american": 250,
+        "best_book": "BetMGM",
+        "implied_prob": 0.2857,
+        "fair_prob": 0.2948,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.2501,
+        "edge_vs_fair": -0.0806
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0037261",
+      "name": "Khalil Shakir",
+      "position": "WR",
+      "team": "BUF",
+      "opponent": "MIN",
+      "prob": 0.21324,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 4.3,
+        "best_price_american": 330,
+        "best_book": "FanDuel",
+        "implied_prob": 0.2326,
+        "fair_prob": 0.2246,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.0831,
+        "edge_vs_fair": -0.0114
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0036259",
+      "name": "Jauan Jennings",
+      "position": "WR",
+      "team": "MIN",
+      "opponent": "BUF",
+      "prob": 0.20473,
+      "confidence": "high",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0034827",
+      "name": "DJ Moore",
+      "position": "WR",
+      "team": "BUF",
+      "opponent": "MIN",
+      "prob": 0.20249,
+      "confidence": "medium",
+      "odds": {
+        "best_price_decimal": 3.8,
+        "best_price_american": 280,
+        "best_book": "FanDuel",
+        "implied_prob": 0.2632,
+        "fair_prob": 0.2533,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.2305,
+        "edge_vs_fair": -0.0508
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0038994",
+      "name": "Jordan Addison",
+      "position": "WR",
+      "team": "MIN",
+      "opponent": "BUF",
+      "prob": 0.19274,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 3.9,
+        "best_price_american": 290,
+        "best_book": "BetMGM",
+        "implied_prob": 0.2564,
+        "fair_prob": 0.2734,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.2483,
+        "edge_vs_fair": -0.0807
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0039901",
+      "name": "Keon Coleman",
+      "position": "WR",
+      "team": "BUF",
+      "opponent": "MIN",
+      "prob": 0.18287,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 5.5,
+        "best_price_american": 450,
+        "best_book": "DraftKings",
+        "implied_prob": 0.1818,
+        "fair_prob": 0.1833,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.0058,
+        "edge_vs_fair": -0.0005
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0038933",
+      "name": "Dalton Kincaid",
+      "position": "TE",
+      "team": "BUF",
+      "opponent": "MIN",
+      "prob": 0.18111,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 4.1,
+        "best_price_american": 310,
+        "best_book": "FanDuel",
+        "implied_prob": 0.2439,
+        "fair_prob": 0.2435,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.2574,
+        "edge_vs_fair": -0.0624
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0035537",
+      "name": "Ty Johnson",
+      "position": "RB",
+      "team": "BUF",
+      "opponent": "MIN",
+      "prob": 0.13877,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 9.5,
+        "best_price_american": 850,
+        "best_book": "FanDuel",
+        "implied_prob": 0.1053,
+        "fair_prob": 0.111,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.3183,
+        "edge_vs_fair": 0.0278
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0035689",
+      "name": "Dawson Knox",
+      "position": "TE",
+      "team": "BUF",
+      "opponent": "MIN",
+      "prob": 0.13006,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 9.5,
+        "best_price_american": 850,
+        "best_book": "BetMGM",
+        "implied_prob": 0.1053,
+        "fair_prob": 0.111,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.2356,
+        "edge_vs_fair": 0.0191
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0041081",
+      "name": "Max Bredeson",
+      "position": "RB",
+      "team": "MIN",
+      "opponent": "BUF",
+      "prob": 0.12229,
+      "confidence": "low",
+      "odds": {
+        "best_price_decimal": 29.0,
+        "best_price_american": 2800,
+        "best_book": "DraftKings",
+        "implied_prob": 0.0345,
+        "fair_prob": 0.0344,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 2.5464,
+        "edge_vs_fair": 0.0879
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0036988",
+      "name": "Josh Palmer",
+      "position": "WR",
+      "team": "BUF",
+      "opponent": "MIN",
+      "prob": 0.1031,
+      "confidence": "high",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0039875",
+      "name": "Ray Davis",
+      "position": "RB",
+      "team": "BUF",
+      "opponent": "MIN",
+      "prob": 0.09986,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 14.0,
+        "best_price_american": 1300,
+        "best_book": "FanDuel",
+        "implied_prob": 0.0714,
+        "fair_prob": 0.0726,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.398,
+        "edge_vs_fair": 0.0273
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0035500",
+      "name": "Greg Dortch",
+      "position": "WR",
+      "team": "BUF",
+      "opponent": "MIN",
+      "prob": 0.07693,
+      "confidence": "medium",
+      "odds": {
+        "best_price_decimal": 36.0,
+        "best_price_american": 3500,
+        "best_book": "FanDuel",
+        "implied_prob": 0.0278,
+        "fair_prob": 0.0363,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": 1.7695,
+        "edge_vs_fair": 0.0406
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0040194",
+      "name": "Jackson Hawes",
+      "position": "TE",
+      "team": "BUF",
+      "opponent": "MIN",
+      "prob": 0.0696,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 14.5,
+        "best_price_american": 1350,
+        "best_book": "BetMGM",
+        "implied_prob": 0.069,
+        "fair_prob": 0.0858,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.0092,
+        "edge_vs_fair": -0.0162
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0041443",
+      "name": "Skyler Bell",
+      "position": "WR",
+      "team": "BUF",
+      "opponent": "MIN",
+      "prob": 0.04982,
+      "confidence": "low",
+      "odds": {
+        "best_price_decimal": 12.0,
+        "best_price_american": 1100,
+        "best_book": "DraftKings",
+        "implied_prob": 0.0833,
+        "fair_prob": 0.0839,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.4022,
+        "edge_vs_fair": -0.0341
+      },
+      "scored": false
+    }
+  ]
+}
