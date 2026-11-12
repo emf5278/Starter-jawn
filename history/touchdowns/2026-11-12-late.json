@@ -1,0 +1,1504 @@
+{
+  "generated_at": "2026-11-12T20:45:10+00:00",
+  "date": "2026-11-12",
+  "season": 2026,
+  "week": 10,
+  "model_version": "td-0.1.0",
+  "n_games": 1,
+  "n_games_today": 1,
+  "window": "late",
+  "window_label": "late games (4pm ET and later)",
+  "n_players_scored": 30,
+  "odds_available": true,
+  "game_lines_available": true,
+  "seasons_used": [
+    2026,
+    2025
+  ],
+  "current_season_games": 9,
+  "cold_start": false,
+  "league": {
+    "rush_td_per_team_game": 0.938,
+    "rec_td_per_team_game": 1.491
+  },
+  "top_n": 20,
+  "ev_min_prob": 0.1,
+  "ev_max_ratio": 1.3,
+  "games": [
+    {
+      "game_id": "2026_10_WAS_NYG",
+      "season": 2026,
+      "week": 10,
+      "game_type": "REG",
+      "kickoff_utc": "2026-11-13T01:15:00+00:00",
+      "home_team": "NYG",
+      "away_team": "WAS",
+      "roof": "outdoors",
+      "stadium": "MetLife Stadium",
+      "home_score": null,
+      "away_score": null
+    }
+  ],
+  "players": [
+    {
+      "player_id": "00-0037256",
+      "name": "Rachaad White",
+      "position": "RB",
+      "team": "WAS",
+      "opponent": "NYG",
+      "home": false,
+      "game_id": "2026_10_WAS_NYG",
+      "kickoff_utc": "2026-11-13T01:15:00+00:00",
+      "week": 10,
+      "confidence": "medium",
+      "rookie": false,
+      "changed_teams": true,
+      "lambda": 0.5583,
+      "lambda_rush": 0.37649,
+      "lambda_rec": 0.18181,
+      "prob": 0.42782,
+      "expected_tds": 0.5583,
+      "team_expected_off_tds": 2.52,
+      "team_expected_rush_tds": 1.027,
+      "team_expected_rec_tds": 1.493,
+      "shares": {
+        "rush": 0.3346,
+        "rec": 0.1166
+      },
+      "usage": {
+        "carries": 133.8,
+        "goal_line_carries": 8.399999999999999,
+        "targets": 48.0,
+        "red_zone_targets": 10.0,
+        "prior_rush_tds": 3.4,
+        "prior_rec_tds": 2.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.5204,
+          "implied_points": 23.75,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.4075,
+          "observed": 0.4208,
+          "n_tds": 40.4
+        },
+        "opp_rush": {
+          "value": 1.0956,
+          "per_game": 1.077,
+          "n_games": 18.2
+        },
+        "opp_rec": {
+          "value": 1.0443,
+          "per_game": 1.593,
+          "n_games": 18.2
+        },
+        "game_line": {
+          "total": 51.5,
+          "spread": 4.0,
+          "implied_team_runs": 23.75
+        }
+      },
+      "break_even_american": 134,
+      "odds": {
+        "best_price_decimal": 2.8,
+        "best_price_american": 180,
+        "best_book": "DraftKings",
+        "implied_prob": 0.3571,
+        "fair_prob": 0.3431,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.1979,
+        "edge_vs_fair": 0.0848
+      }
+    },
+    {
+      "player_id": "00-0031588",
+      "name": "Stefon Diggs",
+      "position": "WR",
+      "team": "WAS",
+      "opponent": "NYG",
+      "home": false,
+      "game_id": "2026_10_WAS_NYG",
+      "kickoff_utc": "2026-11-13T01:15:00+00:00",
+      "week": 10,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.48593,
+      "lambda_rush": 0.03715,
+      "lambda_rec": 0.44878,
+      "prob": 0.38488,
+      "expected_tds": 0.4859,
+      "team_expected_off_tds": 2.52,
+      "team_expected_rush_tds": 1.027,
+      "team_expected_rec_tds": 1.493,
+      "shares": {
+        "rush": 0.033,
+        "rec": 0.2878
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 110.19999999999999,
+        "red_zone_targets": 13.2,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 7.4
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.5204,
+          "implied_points": 23.75,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.4075,
+          "observed": 0.4208,
+          "n_tds": 40.4
+        },
+        "opp_rush": {
+          "value": 1.0956,
+          "per_game": 1.077,
+          "n_games": 18.2
+        },
+        "opp_rec": {
+          "value": 1.0443,
+          "per_game": 1.593,
+          "n_games": 18.2
+        },
+        "game_line": {
+          "total": 51.5,
+          "spread": 4.0,
+          "implied_team_runs": 23.75
+        }
+      },
+      "break_even_american": 160,
+      "odds": {
+        "best_price_decimal": 3.6,
+        "best_price_american": 260,
+        "best_book": "BetMGM",
+        "implied_prob": 0.2778,
+        "fair_prob": 0.2795,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.3856,
+        "edge_vs_fair": 0.1053
+      }
+    },
+    {
+      "player_id": "00-0040715",
+      "name": "Cam Skattebo",
+      "position": "RB",
+      "team": "NYG",
+      "opponent": "WAS",
+      "home": true,
+      "game_id": "2026_10_WAS_NYG",
+      "kickoff_utc": "2026-11-13T01:15:00+00:00",
+      "week": 10,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.3569,
+      "lambda_rush": 0.2695,
+      "lambda_rec": 0.08739,
+      "prob": 0.30016,
+      "expected_tds": 0.3569,
+      "team_expected_off_tds": 1.959,
+      "team_expected_rush_tds": 0.821,
+      "team_expected_rec_tds": 1.137,
+      "shares": {
+        "rush": 0.3193,
+        "rec": 0.0637
+      },
+      "usage": {
+        "carries": 159.2,
+        "goal_line_carries": 9.0,
+        "targets": 32.2,
+        "red_zone_targets": 2.4,
+        "prior_rush_tds": 5.0,
+        "prior_rec_tds": 1.2
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 1.9588,
+          "implied_points": 19.25,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.4193,
+          "observed": 0.4384,
+          "n_tds": 43.8
+        },
+        "opp_rush": {
+          "value": 1.0275,
+          "per_game": 0.978,
+          "n_games": 18.2
+        },
+        "opp_rec": {
+          "value": 1.2061,
+          "per_game": 1.967,
+          "n_games": 18.2
+        },
+        "game_line": {
+          "total": 44.5,
+          "spread": 6.0,
+          "implied_team_runs": 19.25
+        }
+      },
+      "break_even_american": 233,
+      "odds": {
+        "best_price_decimal": 2.3,
+        "best_price_american": 130,
+        "best_book": "FanDuel",
+        "implied_prob": 0.4348,
+        "fair_prob": 0.4193,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": -0.3096,
+        "edge_vs_fair": -0.1191
+      }
+    },
+    {
+      "player_id": "00-0037838",
+      "name": "Isaiah Likely",
+      "position": "TE",
+      "team": "NYG",
+      "opponent": "WAS",
+      "home": true,
+      "game_id": "2026_10_WAS_NYG",
+      "kickoff_utc": "2026-11-13T01:15:00+00:00",
+      "week": 10,
+      "confidence": "medium",
+      "rookie": false,
+      "changed_teams": true,
+      "lambda": 0.33665,
+      "lambda_rush": 0.02419,
+      "lambda_rec": 0.31246,
+      "prob": 0.28584,
+      "expected_tds": 0.3366,
+      "team_expected_off_tds": 1.959,
+      "team_expected_rush_tds": 0.821,
+      "team_expected_rec_tds": 1.137,
+      "shares": {
+        "rush": 0.0287,
+        "rec": 0.2278
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 91.6,
+        "red_zone_targets": 14.6,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 6.6
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 1.9588,
+          "implied_points": 19.25,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.4193,
+          "observed": 0.4384,
+          "n_tds": 43.8
+        },
+        "opp_rush": {
+          "value": 1.0275,
+          "per_game": 0.978,
+          "n_games": 18.2
+        },
+        "opp_rec": {
+          "value": 1.2061,
+          "per_game": 1.967,
+          "n_games": 18.2
+        },
+        "game_line": {
+          "total": 44.5,
+          "spread": 6.0,
+          "implied_team_runs": 19.25
+        }
+      },
+      "break_even_american": 250,
+      "odds": {
+        "best_price_decimal": 3.1,
+        "best_price_american": 210,
+        "best_book": "BetRivers",
+        "implied_prob": 0.3226,
+        "fair_prob": 0.3145,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.1139,
+        "edge_vs_fair": -0.0286
+      }
+    },
+    {
+      "player_id": "00-0039337",
+      "name": "Malik Nabers",
+      "position": "WR",
+      "team": "NYG",
+      "opponent": "WAS",
+      "home": true,
+      "game_id": "2026_10_WAS_NYG",
+      "kickoff_utc": "2026-11-13T01:15:00+00:00",
+      "week": 10,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.29625,
+      "lambda_rush": 0.02419,
+      "lambda_rec": 0.27206,
+      "prob": 0.2564,
+      "expected_tds": 0.2962,
+      "team_expected_off_tds": 1.959,
+      "team_expected_rush_tds": 0.821,
+      "team_expected_rec_tds": 1.137,
+      "shares": {
+        "rush": 0.0287,
+        "rec": 0.1983
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 100.0,
+        "red_zone_targets": 12.4,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 3.2
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 1.9588,
+          "implied_points": 19.25,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.4193,
+          "observed": 0.4384,
+          "n_tds": 43.8
+        },
+        "opp_rush": {
+          "value": 1.0275,
+          "per_game": 0.978,
+          "n_games": 18.2
+        },
+        "opp_rec": {
+          "value": 1.2061,
+          "per_game": 1.967,
+          "n_games": 18.2
+        },
+        "game_line": {
+          "total": 44.5,
+          "spread": 6.0,
+          "implied_team_runs": 19.25
+        }
+      },
+      "break_even_american": 290,
+      "odds": {
+        "best_price_decimal": 2.75,
+        "best_price_american": 175,
+        "best_book": "DraftKings",
+        "implied_prob": 0.3636,
+        "fair_prob": 0.3462,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.2949,
+        "edge_vs_fair": -0.0898
+      }
+    },
+    {
+      "player_id": "00-0037809",
+      "name": "Chig Okonkwo",
+      "position": "TE",
+      "team": "WAS",
+      "opponent": "NYG",
+      "home": false,
+      "game_id": "2026_10_WAS_NYG",
+      "kickoff_utc": "2026-11-13T01:15:00+00:00",
+      "week": 10,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.26602,
+      "lambda_rush": 0.03715,
+      "lambda_rec": 0.22887,
+      "prob": 0.23358,
+      "expected_tds": 0.266,
+      "team_expected_off_tds": 2.52,
+      "team_expected_rush_tds": 1.027,
+      "team_expected_rec_tds": 1.493,
+      "shares": {
+        "rush": 0.033,
+        "rec": 0.1468
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 78.4,
+        "red_zone_targets": 4.0,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 1.2
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.5204,
+          "implied_points": 23.75,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.4075,
+          "observed": 0.4208,
+          "n_tds": 40.4
+        },
+        "opp_rush": {
+          "value": 1.0956,
+          "per_game": 1.077,
+          "n_games": 18.2
+        },
+        "opp_rec": {
+          "value": 1.0443,
+          "per_game": 1.593,
+          "n_games": 18.2
+        },
+        "game_line": {
+          "total": 51.5,
+          "spread": 4.0,
+          "implied_team_runs": 23.75
+        }
+      },
+      "break_even_american": 328,
+      "odds": {
+        "best_price_decimal": 4.8,
+        "best_price_american": 380,
+        "best_book": "FanDuel",
+        "implied_prob": 0.2083,
+        "fair_prob": 0.2096,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.1212,
+        "edge_vs_fair": 0.0239
+      }
+    },
+    {
+      "player_id": "00-0035250",
+      "name": "Devin Singletary",
+      "position": "RB",
+      "team": "NYG",
+      "opponent": "WAS",
+      "home": true,
+      "game_id": "2026_10_WAS_NYG",
+      "kickoff_utc": "2026-11-13T01:15:00+00:00",
+      "week": 10,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.26554,
+      "lambda_rush": 0.19668,
+      "lambda_rec": 0.06886,
+      "prob": 0.23321,
+      "expected_tds": 0.2655,
+      "team_expected_off_tds": 1.959,
+      "team_expected_rush_tds": 0.821,
+      "team_expected_rec_tds": 1.137,
+      "shares": {
+        "rush": 0.2331,
+        "rec": 0.0502
+      },
+      "usage": {
+        "carries": 110.39999999999999,
+        "goal_line_carries": 7.0,
+        "targets": 23.4,
+        "red_zone_targets": 3.2,
+        "prior_rush_tds": 4.0,
+        "prior_rec_tds": 1.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 1.9588,
+          "implied_points": 19.25,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.4193,
+          "observed": 0.4384,
+          "n_tds": 43.8
+        },
+        "opp_rush": {
+          "value": 1.0275,
+          "per_game": 0.978,
+          "n_games": 18.2
+        },
+        "opp_rec": {
+          "value": 1.2061,
+          "per_game": 1.967,
+          "n_games": 18.2
+        },
+        "game_line": {
+          "total": 44.5,
+          "spread": 6.0,
+          "implied_team_runs": 19.25
+        }
+      },
+      "break_even_american": 329,
+      "odds": {
+        "best_price_decimal": 3.75,
+        "best_price_american": 275,
+        "best_book": "DraftKings",
+        "implied_prob": 0.2667,
+        "fair_prob": 0.255,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": -0.1255,
+        "edge_vs_fair": -0.0218
+      }
+    },
+    {
+      "player_id": "00-0039847",
+      "name": "Theo Johnson",
+      "position": "TE",
+      "team": "NYG",
+      "opponent": "WAS",
+      "home": true,
+      "game_id": "2026_10_WAS_NYG",
+      "kickoff_utc": "2026-11-13T01:15:00+00:00",
+      "week": 10,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.20816,
+      "lambda_rush": 0.02419,
+      "lambda_rec": 0.18396,
+      "prob": 0.18792,
+      "expected_tds": 0.2082,
+      "team_expected_off_tds": 1.959,
+      "team_expected_rush_tds": 0.821,
+      "team_expected_rec_tds": 1.137,
+      "shares": {
+        "rush": 0.0287,
+        "rec": 0.1341
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 53.4,
+        "red_zone_targets": 9.4,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 4.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 1.9588,
+          "implied_points": 19.25,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.4193,
+          "observed": 0.4384,
+          "n_tds": 43.8
+        },
+        "opp_rush": {
+          "value": 1.0275,
+          "per_game": 0.978,
+          "n_games": 18.2
+        },
+        "opp_rec": {
+          "value": 1.2061,
+          "per_game": 1.967,
+          "n_games": 18.2
+        },
+        "game_line": {
+          "total": 44.5,
+          "spread": 6.0,
+          "implied_team_runs": 19.25
+        }
+      },
+      "break_even_american": 432,
+      "odds": {
+        "best_price_decimal": 10.5,
+        "best_price_american": 950,
+        "best_book": "BetMGM",
+        "implied_prob": 0.0952,
+        "fair_prob": 0.0943,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.9732,
+        "edge_vs_fair": 0.0936
+      }
+    },
+    {
+      "player_id": "00-0037742",
+      "name": "Treylon Burks",
+      "position": "WR",
+      "team": "WAS",
+      "opponent": "NYG",
+      "home": false,
+      "game_id": "2026_10_WAS_NYG",
+      "kickoff_utc": "2026-11-13T01:15:00+00:00",
+      "week": 10,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.18318,
+      "lambda_rush": 0.03715,
+      "lambda_rec": 0.14603,
+      "prob": 0.16738,
+      "expected_tds": 0.1832,
+      "team_expected_off_tds": 2.52,
+      "team_expected_rush_tds": 1.027,
+      "team_expected_rec_tds": 1.493,
+      "shares": {
+        "rush": 0.033,
+        "rec": 0.0936
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 35.2,
+        "red_zone_targets": 5.4,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 2.6
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.5204,
+          "implied_points": 23.75,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.4075,
+          "observed": 0.4208,
+          "n_tds": 40.4
+        },
+        "opp_rush": {
+          "value": 1.0956,
+          "per_game": 1.077,
+          "n_games": 18.2
+        },
+        "opp_rec": {
+          "value": 1.0443,
+          "per_game": 1.593,
+          "n_games": 18.2
+        },
+        "game_line": {
+          "total": 51.5,
+          "spread": 4.0,
+          "implied_team_runs": 23.75
+        }
+      },
+      "break_even_american": 497,
+      "odds": {
+        "best_price_decimal": 4.9,
+        "best_price_american": 390,
+        "best_book": "BetMGM",
+        "implied_prob": 0.2041,
+        "fair_prob": 0.2055,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.1798,
+        "edge_vs_fair": -0.0381
+      }
+    },
+    {
+      "player_id": "00-0036309",
+      "name": "Darnell Mooney",
+      "position": "WR",
+      "team": "NYG",
+      "opponent": "WAS",
+      "home": true,
+      "game_id": "2026_10_WAS_NYG",
+      "kickoff_utc": "2026-11-13T01:15:00+00:00",
+      "week": 10,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.17878,
+      "lambda_rush": 0.02309,
+      "lambda_rec": 0.15569,
+      "prob": 0.16371,
+      "expected_tds": 0.1788,
+      "team_expected_off_tds": 1.959,
+      "team_expected_rush_tds": 0.821,
+      "team_expected_rec_tds": 1.137,
+      "shares": {
+        "rush": 0.0274,
+        "rec": 0.1135
+      },
+      "usage": {
+        "carries": 4.0,
+        "goal_line_carries": 0.0,
+        "targets": 69.19999999999999,
+        "red_zone_targets": 4.8,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 0.6
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 1.9588,
+          "implied_points": 19.25,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.4193,
+          "observed": 0.4384,
+          "n_tds": 43.8
+        },
+        "opp_rush": {
+          "value": 1.0275,
+          "per_game": 0.978,
+          "n_games": 18.2
+        },
+        "opp_rec": {
+          "value": 1.2061,
+          "per_game": 1.967,
+          "n_games": 18.2
+        },
+        "game_line": {
+          "total": 44.5,
+          "spread": 6.0,
+          "implied_team_runs": 19.25
+        }
+      },
+      "break_even_american": 511,
+      "odds": {
+        "best_price_decimal": 9.0,
+        "best_price_american": 800,
+        "best_book": "DraftKings",
+        "implied_prob": 0.1111,
+        "fair_prob": 0.1048,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.4734,
+        "edge_vs_fair": 0.0589
+      }
+    },
+    {
+      "player_id": "00-0036415",
+      "name": "Van Jefferson",
+      "position": "WR",
+      "team": "WAS",
+      "opponent": "NYG",
+      "home": false,
+      "game_id": "2026_10_WAS_NYG",
+      "kickoff_utc": "2026-11-13T01:15:00+00:00",
+      "week": 10,
+      "confidence": "medium",
+      "rookie": false,
+      "changed_teams": true,
+      "lambda": 0.17129,
+      "lambda_rush": 0.03715,
+      "lambda_rec": 0.13414,
+      "prob": 0.15743,
+      "expected_tds": 0.1713,
+      "team_expected_off_tds": 2.52,
+      "team_expected_rush_tds": 1.027,
+      "team_expected_rec_tds": 1.493,
+      "shares": {
+        "rush": 0.033,
+        "rec": 0.086
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 39.2,
+        "red_zone_targets": 2.8,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 1.6
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.5204,
+          "implied_points": 23.75,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.4075,
+          "observed": 0.4208,
+          "n_tds": 40.4
+        },
+        "opp_rush": {
+          "value": 1.0956,
+          "per_game": 1.077,
+          "n_games": 18.2
+        },
+        "opp_rec": {
+          "value": 1.0443,
+          "per_game": 1.593,
+          "n_games": 18.2
+        },
+        "game_line": {
+          "total": 51.5,
+          "spread": 4.0,
+          "implied_team_runs": 23.75
+        }
+      },
+      "break_even_american": 535,
+      "odds": {
+        "best_price_decimal": 10.5,
+        "best_price_american": 950,
+        "best_book": "BetMGM",
+        "implied_prob": 0.0952,
+        "fair_prob": 0.1006,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.653,
+        "edge_vs_fair": 0.0568
+      }
+    },
+    {
+      "player_id": "00-0039910",
+      "name": "Jayden Daniels",
+      "position": "QB",
+      "team": "WAS",
+      "opponent": "NYG",
+      "home": false,
+      "game_id": "2026_10_WAS_NYG",
+      "kickoff_utc": "2026-11-13T01:15:00+00:00",
+      "week": 10,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.17014,
+      "lambda_rush": 0.17014,
+      "lambda_rec": 0.0,
+      "prob": 0.15645,
+      "expected_tds": 0.1701,
+      "team_expected_off_tds": 2.52,
+      "team_expected_rush_tds": 1.027,
+      "team_expected_rec_tds": 1.493,
+      "shares": {
+        "rush": 0.1512,
+        "rec": 0.0
+      },
+      "usage": {
+        "carries": 61.4,
+        "goal_line_carries": 1.7999999999999998,
+        "targets": 0.0,
+        "red_zone_targets": 0.0,
+        "prior_rush_tds": 3.2,
+        "prior_rec_tds": 0.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.5204,
+          "implied_points": 23.75,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.4075,
+          "observed": 0.4208,
+          "n_tds": 40.4
+        },
+        "opp_rush": {
+          "value": 1.0956,
+          "per_game": 1.077,
+          "n_games": 18.2
+        },
+        "opp_rec": {
+          "value": 1.0443,
+          "per_game": 1.593,
+          "n_games": 18.2
+        },
+        "game_line": {
+          "total": 51.5,
+          "spread": 4.0,
+          "implied_team_runs": 23.75
+        }
+      },
+      "break_even_american": 539,
+      "odds": {
+        "best_price_decimal": 3.8,
+        "best_price_american": 280,
+        "best_book": "FanDuel",
+        "implied_prob": 0.2632,
+        "fair_prob": 0.2533,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.4055,
+        "edge_vs_fair": -0.0968
+      }
+    },
+    {
+      "player_id": "00-0041040",
+      "name": "Antonio Williams",
+      "position": "WR",
+      "team": "WAS",
+      "opponent": "NYG",
+      "home": false,
+      "game_id": "2026_10_WAS_NYG",
+      "kickoff_utc": "2026-11-13T01:15:00+00:00",
+      "week": 10,
+      "confidence": "low",
+      "rookie": true,
+      "changed_teams": false,
+      "lambda": 0.15835,
+      "lambda_rush": 0.03715,
+      "lambda_rec": 0.1212,
+      "prob": 0.14645,
+      "expected_tds": 0.1583,
+      "team_expected_off_tds": 2.52,
+      "team_expected_rush_tds": 1.027,
+      "team_expected_rec_tds": 1.493,
+      "shares": {
+        "rush": 0.033,
+        "rec": 0.0777
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 39.0,
+        "red_zone_targets": 2.0,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 1.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.5204,
+          "implied_points": 23.75,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.4075,
+          "observed": 0.4208,
+          "n_tds": 40.4
+        },
+        "opp_rush": {
+          "value": 1.0956,
+          "per_game": 1.077,
+          "n_games": 18.2
+        },
+        "opp_rec": {
+          "value": 1.0443,
+          "per_game": 1.593,
+          "n_games": 18.2
+        },
+        "game_line": {
+          "total": 51.5,
+          "spread": 4.0,
+          "implied_team_runs": 23.75
+        }
+      },
+      "break_even_american": 583,
+      "odds": {
+        "best_price_decimal": 5.25,
+        "best_price_american": 425,
+        "best_book": "DraftKings",
+        "implied_prob": 0.1905,
+        "fair_prob": 0.1888,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.2311,
+        "edge_vs_fair": -0.0423
+      }
+    },
+    {
+      "player_id": "00-0033699",
+      "name": "Austin Ekeler",
+      "position": "RB",
+      "team": "WAS",
+      "opponent": "NYG",
+      "home": false,
+      "game_id": "2026_10_WAS_NYG",
+      "kickoff_utc": "2026-11-13T01:15:00+00:00",
+      "week": 10,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.12538,
+      "lambda_rush": 0.08001,
+      "lambda_rec": 0.04537,
+      "prob": 0.11784,
+      "expected_tds": 0.1254,
+      "team_expected_off_tds": 2.52,
+      "team_expected_rush_tds": 1.027,
+      "team_expected_rec_tds": 1.493,
+      "shares": {
+        "rush": 0.0711,
+        "rec": 0.0291
+      },
+      "usage": {
+        "carries": 33.4,
+        "goal_line_carries": 1.0,
+        "targets": 12.2,
+        "red_zone_targets": 1.0,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 0.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.5204,
+          "implied_points": 23.75,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.4075,
+          "observed": 0.4208,
+          "n_tds": 40.4
+        },
+        "opp_rush": {
+          "value": 1.0956,
+          "per_game": 1.077,
+          "n_games": 18.2
+        },
+        "opp_rec": {
+          "value": 1.0443,
+          "per_game": 1.593,
+          "n_games": 18.2
+        },
+        "game_line": {
+          "total": 51.5,
+          "spread": 4.0,
+          "implied_team_runs": 23.75
+        }
+      },
+      "break_even_american": 749,
+      "odds": {
+        "best_price_decimal": 4.3,
+        "best_price_american": 330,
+        "best_book": "FanDuel",
+        "implied_prob": 0.2326,
+        "fair_prob": 0.2274,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.4933,
+        "edge_vs_fair": -0.1095
+      }
+    },
+    {
+      "player_id": "00-0041042",
+      "name": "Malachi Fields",
+      "position": "WR",
+      "team": "NYG",
+      "opponent": "WAS",
+      "home": true,
+      "game_id": "2026_10_WAS_NYG",
+      "kickoff_utc": "2026-11-13T01:15:00+00:00",
+      "week": 10,
+      "confidence": "low",
+      "rookie": true,
+      "changed_teams": false,
+      "lambda": 0.11695,
+      "lambda_rush": 0.02419,
+      "lambda_rec": 0.09275,
+      "prob": 0.11037,
+      "expected_tds": 0.1169,
+      "team_expected_off_tds": 1.959,
+      "team_expected_rush_tds": 0.821,
+      "team_expected_rec_tds": 1.137,
+      "shares": {
+        "rush": 0.0287,
+        "rec": 0.0676
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 35.0,
+        "red_zone_targets": 4.0,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 1.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 1.9588,
+          "implied_points": 19.25,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.4193,
+          "observed": 0.4384,
+          "n_tds": 43.8
+        },
+        "opp_rush": {
+          "value": 1.0275,
+          "per_game": 0.978,
+          "n_games": 18.2
+        },
+        "opp_rec": {
+          "value": 1.2061,
+          "per_game": 1.967,
+          "n_games": 18.2
+        },
+        "game_line": {
+          "total": 44.5,
+          "spread": 6.0,
+          "implied_team_runs": 19.25
+        }
+      },
+      "break_even_american": 806,
+      "odds": {
+        "best_price_decimal": 5.75,
+        "best_price_american": 475,
+        "best_book": "BetMGM",
+        "implied_prob": 0.1739,
+        "fair_prob": 0.1756,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.3654,
+        "edge_vs_fair": -0.0652
+      }
+    },
+    {
+      "player_id": "00-0039355",
+      "name": "Luke McCaffrey",
+      "position": "WR",
+      "team": "WAS",
+      "opponent": "NYG",
+      "home": false,
+      "game_id": "2026_10_WAS_NYG",
+      "kickoff_utc": "2026-11-13T01:15:00+00:00",
+      "week": 10,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.10126,
+      "lambda_rush": 0.03715,
+      "lambda_rec": 0.06411,
+      "prob": 0.0963,
+      "expected_tds": 0.1013,
+      "team_expected_off_tds": 2.52,
+      "team_expected_rush_tds": 1.027,
+      "team_expected_rec_tds": 1.493,
+      "shares": {
+        "rush": 0.033,
+        "rec": 0.0411
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 11.6,
+        "red_zone_targets": 1.7999999999999998,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 1.7999999999999998
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.5204,
+          "implied_points": 23.75,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.4075,
+          "observed": 0.4208,
+          "n_tds": 40.4
+        },
+        "opp_rush": {
+          "value": 1.0956,
+          "per_game": 1.077,
+          "n_games": 18.2
+        },
+        "opp_rec": {
+          "value": 1.0443,
+          "per_game": 1.593,
+          "n_games": 18.2
+        },
+        "game_line": {
+          "total": 51.5,
+          "spread": 4.0,
+          "implied_team_runs": 23.75
+        }
+      },
+      "break_even_american": 938,
+      "odds": {
+        "best_price_decimal": 19.0,
+        "best_price_american": 1800,
+        "best_book": "DraftKings",
+        "implied_prob": 0.0526,
+        "fair_prob": 0.0629,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": 0.8297,
+        "edge_vs_fair": 0.0334
+      }
+    },
+    {
+      "player_id": "00-0036628",
+      "name": "John Bates",
+      "position": "TE",
+      "team": "WAS",
+      "opponent": "NYG",
+      "home": false,
+      "game_id": "2026_10_WAS_NYG",
+      "kickoff_utc": "2026-11-13T01:15:00+00:00",
+      "week": 10,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.10119,
+      "lambda_rush": 0.03715,
+      "lambda_rec": 0.06404,
+      "prob": 0.09624,
+      "expected_tds": 0.1012,
+      "team_expected_off_tds": 2.52,
+      "team_expected_rush_tds": 1.027,
+      "team_expected_rec_tds": 1.493,
+      "shares": {
+        "rush": 0.033,
+        "rec": 0.0411
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 16.6,
+        "red_zone_targets": 3.2,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 0.6
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.5204,
+          "implied_points": 23.75,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.4075,
+          "observed": 0.4208,
+          "n_tds": 40.4
+        },
+        "opp_rush": {
+          "value": 1.0956,
+          "per_game": 1.077,
+          "n_games": 18.2
+        },
+        "opp_rec": {
+          "value": 1.0443,
+          "per_game": 1.593,
+          "n_games": 18.2
+        },
+        "game_line": {
+          "total": 51.5,
+          "spread": 4.0,
+          "implied_team_runs": 23.75
+        }
+      },
+      "break_even_american": 939,
+      "odds": {
+        "best_price_decimal": 20.0,
+        "best_price_american": 1900,
+        "best_book": "BetMGM",
+        "implied_prob": 0.05,
+        "fair_prob": 0.0572,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.9248,
+        "edge_vs_fair": 0.039
+      }
+    },
+    {
+      "player_id": "00-0041178",
+      "name": "Robert Henry Jr.",
+      "position": "RB",
+      "team": "WAS",
+      "opponent": "NYG",
+      "home": false,
+      "game_id": "2026_10_WAS_NYG",
+      "kickoff_utc": "2026-11-13T01:15:00+00:00",
+      "week": 10,
+      "confidence": "low",
+      "rookie": true,
+      "changed_teams": false,
+      "lambda": 0.09504,
+      "lambda_rush": 0.05591,
+      "lambda_rec": 0.03913,
+      "prob": 0.09066,
+      "expected_tds": 0.095,
+      "team_expected_off_tds": 2.52,
+      "team_expected_rush_tds": 1.027,
+      "team_expected_rec_tds": 1.493,
+      "shares": {
+        "rush": 0.0497,
+        "rec": 0.0251
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 0.0,
+        "red_zone_targets": 0.0,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 0.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.5204,
+          "implied_points": 23.75,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.4075,
+          "observed": 0.4208,
+          "n_tds": 40.4
+        },
+        "opp_rush": {
+          "value": 1.0956,
+          "per_game": 1.077,
+          "n_games": 18.2
+        },
+        "opp_rec": {
+          "value": 1.0443,
+          "per_game": 1.593,
+          "n_games": 18.2
+        },
+        "game_line": {
+          "total": 51.5,
+          "spread": 4.0,
+          "implied_team_runs": 23.75
+        }
+      },
+      "break_even_american": 1003,
+      "odds": {
+        "best_price_decimal": 29.0,
+        "best_price_american": 2800,
+        "best_book": "DraftKings",
+        "implied_prob": 0.0345,
+        "fair_prob": 0.0393,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 1.6291,
+        "edge_vs_fair": 0.0514
+      }
+    },
+    {
+      "player_id": "00-0039912",
+      "name": "Ben Sinnott",
+      "position": "TE",
+      "team": "WAS",
+      "opponent": "NYG",
+      "home": false,
+      "game_id": "2026_10_WAS_NYG",
+      "kickoff_utc": "2026-11-13T01:15:00+00:00",
+      "week": 10,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.08463,
+      "lambda_rush": 0.03715,
+      "lambda_rec": 0.04747,
+      "prob": 0.08114,
+      "expected_tds": 0.0846,
+      "team_expected_off_tds": 2.52,
+      "team_expected_rush_tds": 1.027,
+      "team_expected_rec_tds": 1.493,
+      "shares": {
+        "rush": 0.033,
+        "rec": 0.0304
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 9.8,
+        "red_zone_targets": 0.6,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 0.6
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.5204,
+          "implied_points": 23.75,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.4075,
+          "observed": 0.4208,
+          "n_tds": 40.4
+        },
+        "opp_rush": {
+          "value": 1.0956,
+          "per_game": 1.077,
+          "n_games": 18.2
+        },
+        "opp_rec": {
+          "value": 1.0443,
+          "per_game": 1.593,
+          "n_games": 18.2
+        },
+        "game_line": {
+          "total": 51.5,
+          "spread": 4.0,
+          "implied_team_runs": 23.75
+        }
+      },
+      "break_even_american": 1132,
+      "odds": {
+        "best_price_decimal": 23.0,
+        "best_price_american": 2200,
+        "best_book": "BetRivers",
+        "implied_prob": 0.0435,
+        "fair_prob": 0.0449,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.8662,
+        "edge_vs_fair": 0.0362
+      }
+    },
+    {
+      "player_id": "00-0039686",
+      "name": "Colson Yankoff",
+      "position": "TE",
+      "team": "WAS",
+      "opponent": "NYG",
+      "home": false,
+      "game_id": "2026_10_WAS_NYG",
+      "kickoff_utc": "2026-11-13T01:15:00+00:00",
+      "week": 10,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.0757,
+      "lambda_rush": 0.03715,
+      "lambda_rec": 0.03855,
+      "prob": 0.07291,
+      "expected_tds": 0.0757,
+      "team_expected_off_tds": 2.52,
+      "team_expected_rush_tds": 1.027,
+      "team_expected_rec_tds": 1.493,
+      "shares": {
+        "rush": 0.033,
+        "rec": 0.0247
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 6.8,
+        "red_zone_targets": 0.0,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 0.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.5204,
+          "implied_points": 23.75,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.4075,
+          "observed": 0.4208,
+          "n_tds": 40.4
+        },
+        "opp_rush": {
+          "value": 1.0956,
+          "per_game": 1.077,
+          "n_games": 18.2
+        },
+        "opp_rec": {
+          "value": 1.0443,
+          "per_game": 1.593,
+          "n_games": 18.2
+        },
+        "game_line": {
+          "total": 51.5,
+          "spread": 4.0,
+          "implied_team_runs": 23.75
+        }
+      },
+      "break_even_american": 1272,
+      "odds": {
+        "best_price_decimal": 20.0,
+        "best_price_american": 1900,
+        "best_book": "BetOnline.ag",
+        "implied_prob": 0.05,
+        "fair_prob": 0.0472,
+        "n_books": 1,
+        "two_sided": false,
+        "ev_per_dollar": 0.4582,
+        "edge_vs_fair": 0.0257
+      }
+    }
+  ]
+}
