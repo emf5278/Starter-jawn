@@ -1,0 +1,428 @@
+{
+  "date": "2026-11-12",
+  "window": "all",
+  "season": 2026,
+  "week": 10,
+  "picks": [
+    {
+      "player_id": "00-0037256",
+      "name": "Rachaad White",
+      "position": "RB",
+      "team": "WAS",
+      "opponent": "NYG",
+      "prob": 0.42782,
+      "confidence": "medium",
+      "odds": {
+        "best_price_decimal": 2.85,
+        "best_price_american": 185,
+        "best_book": "BetRivers",
+        "implied_prob": 0.3509,
+        "fair_prob": 0.3431,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.2193,
+        "edge_vs_fair": 0.0848
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0031588",
+      "name": "Stefon Diggs",
+      "position": "WR",
+      "team": "WAS",
+      "opponent": "NYG",
+      "prob": 0.38488,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 3.5,
+        "best_price_american": 250,
+        "best_book": "BetMGM",
+        "implied_prob": 0.2857,
+        "fair_prob": 0.2775,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.3471,
+        "edge_vs_fair": 0.1074
+      },
+      "scored": true
+    },
+    {
+      "player_id": "00-0040715",
+      "name": "Cam Skattebo",
+      "position": "RB",
+      "team": "NYG",
+      "opponent": "WAS",
+      "prob": 0.30016,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 2.25,
+        "best_price_american": 125,
+        "best_book": "DraftKings",
+        "implied_prob": 0.4444,
+        "fair_prob": 0.428,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.3246,
+        "edge_vs_fair": -0.1279
+      },
+      "scored": true
+    },
+    {
+      "player_id": "00-0037838",
+      "name": "Isaiah Likely",
+      "position": "TE",
+      "team": "NYG",
+      "opponent": "WAS",
+      "prob": 0.28584,
+      "confidence": "medium",
+      "odds": {
+        "best_price_decimal": 3.1,
+        "best_price_american": 210,
+        "best_book": "BetRivers",
+        "implied_prob": 0.3226,
+        "fair_prob": 0.3253,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.1139,
+        "edge_vs_fair": -0.0395
+      },
+      "scored": true
+    },
+    {
+      "player_id": "00-0039337",
+      "name": "Malik Nabers",
+      "position": "WR",
+      "team": "NYG",
+      "opponent": "WAS",
+      "prob": 0.2564,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 2.75,
+        "best_price_american": 175,
+        "best_book": "BetMGM",
+        "implied_prob": 0.3636,
+        "fair_prob": 0.356,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.2949,
+        "edge_vs_fair": -0.0996
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0037809",
+      "name": "Chig Okonkwo",
+      "position": "TE",
+      "team": "WAS",
+      "opponent": "NYG",
+      "prob": 0.23358,
+      "confidence": "medium",
+      "odds": {
+        "best_price_decimal": 4.8,
+        "best_price_american": 380,
+        "best_book": "DraftKings",
+        "implied_prob": 0.2083,
+        "fair_prob": 0.2031,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.1212,
+        "edge_vs_fair": 0.0305
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0035250",
+      "name": "Devin Singletary",
+      "position": "RB",
+      "team": "NYG",
+      "opponent": "WAS",
+      "prob": 0.23321,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 3.7,
+        "best_price_american": 270,
+        "best_book": "BetMGM",
+        "implied_prob": 0.2703,
+        "fair_prob": 0.2621,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.1371,
+        "edge_vs_fair": -0.0288
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0039847",
+      "name": "Theo Johnson",
+      "position": "TE",
+      "team": "NYG",
+      "opponent": "WAS",
+      "prob": 0.18792,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 10.0,
+        "best_price_american": 900,
+        "best_book": "BetRivers",
+        "implied_prob": 0.1,
+        "fair_prob": 0.1021,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.8792,
+        "edge_vs_fair": 0.0859
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0037742",
+      "name": "Treylon Burks",
+      "position": "WR",
+      "team": "WAS",
+      "opponent": "NYG",
+      "prob": 0.16738,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 4.9,
+        "best_price_american": 390,
+        "best_book": "BetMGM",
+        "implied_prob": 0.2041,
+        "fair_prob": 0.2074,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.1798,
+        "edge_vs_fair": -0.04
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0036309",
+      "name": "Darnell Mooney",
+      "position": "WR",
+      "team": "NYG",
+      "opponent": "WAS",
+      "prob": 0.16371,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 9.0,
+        "best_price_american": 800,
+        "best_book": "DraftKings",
+        "implied_prob": 0.1111,
+        "fair_prob": 0.1048,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.4734,
+        "edge_vs_fair": 0.0589
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0036415",
+      "name": "Van Jefferson",
+      "position": "WR",
+      "team": "WAS",
+      "opponent": "NYG",
+      "prob": 0.15743,
+      "confidence": "medium",
+      "odds": {
+        "best_price_decimal": 10.5,
+        "best_price_american": 950,
+        "best_book": "BetMGM",
+        "implied_prob": 0.0952,
+        "fair_prob": 0.1006,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.653,
+        "edge_vs_fair": 0.0568
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0039910",
+      "name": "Jayden Daniels",
+      "position": "QB",
+      "team": "WAS",
+      "opponent": "NYG",
+      "prob": 0.15645,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 3.7,
+        "best_price_american": 270,
+        "best_book": "DraftKings",
+        "implied_prob": 0.2703,
+        "fair_prob": 0.2585,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.4211,
+        "edge_vs_fair": -0.1021
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0041040",
+      "name": "Antonio Williams",
+      "position": "WR",
+      "team": "WAS",
+      "opponent": "NYG",
+      "prob": 0.14645,
+      "confidence": "low",
+      "odds": {
+        "best_price_decimal": 5.1,
+        "best_price_american": 410,
+        "best_book": "FanDuel",
+        "implied_prob": 0.1961,
+        "fair_prob": 0.1992,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.2531,
+        "edge_vs_fair": -0.0527
+      },
+      "scored": true
+    },
+    {
+      "player_id": "00-0033699",
+      "name": "Austin Ekeler",
+      "position": "RB",
+      "team": "WAS",
+      "opponent": "NYG",
+      "prob": 0.11784,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 4.5,
+        "best_price_american": 350,
+        "best_book": "BetRivers",
+        "implied_prob": 0.2222,
+        "fair_prob": 0.2169,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.4697,
+        "edge_vs_fair": -0.0991
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0041042",
+      "name": "Malachi Fields",
+      "position": "WR",
+      "team": "NYG",
+      "opponent": "WAS",
+      "prob": 0.11037,
+      "confidence": "low",
+      "odds": {
+        "best_price_decimal": 5.5,
+        "best_price_american": 450,
+        "best_book": "DraftKings",
+        "implied_prob": 0.1818,
+        "fair_prob": 0.1731,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.393,
+        "edge_vs_fair": -0.0627
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0039355",
+      "name": "Luke McCaffrey",
+      "position": "WR",
+      "team": "WAS",
+      "opponent": "NYG",
+      "prob": 0.0963,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 14.0,
+        "best_price_american": 1300,
+        "best_book": "DraftKings",
+        "implied_prob": 0.0714,
+        "fair_prob": 0.0674,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": 0.3482,
+        "edge_vs_fair": 0.0289
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0036628",
+      "name": "John Bates",
+      "position": "TE",
+      "team": "WAS",
+      "opponent": "NYG",
+      "prob": 0.09624,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 21.0,
+        "best_price_american": 2000,
+        "best_book": "BetMGM",
+        "implied_prob": 0.0476,
+        "fair_prob": 0.0497,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 1.021,
+        "edge_vs_fair": 0.0466
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0041178",
+      "name": "Robert Henry Jr.",
+      "position": "RB",
+      "team": "WAS",
+      "opponent": "NYG",
+      "prob": 0.09066,
+      "confidence": "low",
+      "odds": {
+        "best_price_decimal": 29.0,
+        "best_price_american": 2800,
+        "best_book": "DraftKings",
+        "implied_prob": 0.0345,
+        "fair_prob": 0.0406,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 1.6291,
+        "edge_vs_fair": 0.0501
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0039912",
+      "name": "Ben Sinnott",
+      "position": "TE",
+      "team": "WAS",
+      "opponent": "NYG",
+      "prob": 0.08114,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 26.0,
+        "best_price_american": 2500,
+        "best_book": "BetRivers",
+        "implied_prob": 0.0385,
+        "fair_prob": 0.041,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 1.1096,
+        "edge_vs_fair": 0.0401
+      },
+      "scored": true
+    },
+    {
+      "player_id": "00-0039686",
+      "name": "Colson Yankoff",
+      "position": "TE",
+      "team": "WAS",
+      "opponent": "NYG",
+      "prob": 0.07291,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 26.0,
+        "best_price_american": 2500,
+        "best_book": "DraftKings",
+        "implied_prob": 0.0385,
+        "fair_prob": 0.037,
+        "n_books": 4,
+        "two_sided": false,
+        "ev_per_dollar": 0.8957,
+        "edge_vs_fair": 0.0359
+      },
+      "scored": false
+    }
+  ]
+}
