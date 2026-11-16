@@ -1,0 +1,1494 @@
+{
+  "generated_at": "2026-11-16T13:35:31+00:00",
+  "date": "2026-11-16",
+  "season": 2026,
+  "week": 10,
+  "model_version": "td-0.1.0",
+  "n_games": 1,
+  "n_games_today": 1,
+  "window": "all",
+  "window_label": "all games",
+  "n_players_scored": 30,
+  "odds_available": true,
+  "game_lines_available": true,
+  "seasons_used": [
+    2026,
+    2025
+  ],
+  "current_season_games": 9,
+  "cold_start": false,
+  "league": {
+    "rush_td_per_team_game": 0.938,
+    "rec_td_per_team_game": 1.491
+  },
+  "top_n": 20,
+  "ev_min_prob": 0.1,
+  "ev_max_ratio": 1.3,
+  "games": [
+    {
+      "game_id": "2026_10_LAC_BAL",
+      "season": 2026,
+      "week": 10,
+      "game_type": "REG",
+      "kickoff_utc": "2026-11-17T01:15:00+00:00",
+      "home_team": "BAL",
+      "away_team": "LAC",
+      "roof": "outdoors",
+      "stadium": "M&T Bank Stadium",
+      "home_score": null,
+      "away_score": null
+    }
+  ],
+  "players": [
+    {
+      "player_id": "00-0032764",
+      "name": "Derrick Henry",
+      "position": "RB",
+      "team": "BAL",
+      "opponent": "LAC",
+      "home": true,
+      "game_id": "2026_10_LAC_BAL",
+      "kickoff_utc": "2026-11-17T01:15:00+00:00",
+      "week": 10,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.72916,
+      "lambda_rush": 0.6702,
+      "lambda_rec": 0.05896,
+      "prob": 0.51769,
+      "expected_tds": 0.7292,
+      "team_expected_off_tds": 2.177,
+      "team_expected_rush_tds": 1.019,
+      "team_expected_rec_tds": 1.158,
+      "shares": {
+        "rush": 0.5802,
+        "rec": 0.0571
+      },
+      "usage": {
+        "carries": 360.2,
+        "goal_line_carries": 33.2,
+        "targets": 26.6,
+        "red_zone_targets": 2.2,
+        "prior_rush_tds": 17.6,
+        "prior_rec_tds": 1.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.1772,
+          "implied_points": 21.0,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.4681,
+          "observed": 0.5103,
+          "n_tds": 48.6
+        },
+        "opp_rush": {
+          "value": 1.1334,
+          "per_game": 1.132,
+          "n_games": 18.2
+        },
+        "opp_rec": {
+          "value": 0.8921,
+          "per_game": 1.242,
+          "n_games": 18.2
+        },
+        "game_line": {
+          "total": 44.5,
+          "spread": 2.5,
+          "implied_team_runs": 21.0
+        }
+      },
+      "break_even_american": -107,
+      "odds": {
+        "best_price_decimal": 1.71,
+        "best_price_american": -141,
+        "best_book": "FanDuel",
+        "implied_prob": 0.5848,
+        "fair_prob": 0.5666,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.1148,
+        "edge_vs_fair": -0.0489
+      }
+    },
+    {
+      "player_id": "00-0040666",
+      "name": "Omarion Hampton",
+      "position": "RB",
+      "team": "LAC",
+      "opponent": "BAL",
+      "home": false,
+      "game_id": "2026_10_LAC_BAL",
+      "kickoff_utc": "2026-11-17T01:15:00+00:00",
+      "week": 10,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.37193,
+      "lambda_rush": 0.29275,
+      "lambda_rec": 0.07917,
+      "prob": 0.3106,
+      "expected_tds": 0.3719,
+      "team_expected_off_tds": 2.302,
+      "team_expected_rush_tds": 0.785,
+      "team_expected_rec_tds": 1.517,
+      "shares": {
+        "rush": 0.3173,
+        "rec": 0.0558
+      },
+      "usage": {
+        "carries": 176.39999999999998,
+        "goal_line_carries": 8.8,
+        "targets": 34.0,
+        "red_zone_targets": 1.2,
+        "prior_rush_tds": 5.4,
+        "prior_rec_tds": 0.6
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.302,
+          "implied_points": 22.0,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3411,
+          "observed": 0.3067,
+          "n_tds": 32.6
+        },
+        "opp_rush": {
+          "value": 1.1749,
+          "per_game": 1.188,
+          "n_games": 19.2
+        },
+        "opp_rec": {
+          "value": 0.9351,
+          "per_game": 1.344,
+          "n_games": 19.2
+        },
+        "game_line": {
+          "total": 40.5,
+          "spread": -3.5,
+          "implied_team_runs": 22.0
+        }
+      },
+      "break_even_american": 222,
+      "odds": {
+        "best_price_decimal": 4.2,
+        "best_price_american": 320,
+        "best_book": "DraftKings",
+        "implied_prob": 0.2381,
+        "fair_prob": 0.233,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.3045,
+        "edge_vs_fair": 0.0776
+      }
+    },
+    {
+      "player_id": "00-0039064",
+      "name": "Zay Flowers",
+      "position": "WR",
+      "team": "BAL",
+      "opponent": "LAC",
+      "home": true,
+      "game_id": "2026_10_LAC_BAL",
+      "kickoff_utc": "2026-11-17T01:15:00+00:00",
+      "week": 10,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.34167,
+      "lambda_rush": 0.02766,
+      "lambda_rec": 0.31401,
+      "prob": 0.28941,
+      "expected_tds": 0.3417,
+      "team_expected_off_tds": 2.177,
+      "team_expected_rush_tds": 1.019,
+      "team_expected_rec_tds": 1.158,
+      "shares": {
+        "rush": 0.0239,
+        "rec": 0.304
+      },
+      "usage": {
+        "carries": 12.0,
+        "goal_line_carries": 0.0,
+        "targets": 135.39999999999998,
+        "red_zone_targets": 14.2,
+        "prior_rush_tds": 0.6,
+        "prior_rec_tds": 6.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.1772,
+          "implied_points": 21.0,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.4681,
+          "observed": 0.5103,
+          "n_tds": 48.6
+        },
+        "opp_rush": {
+          "value": 1.1334,
+          "per_game": 1.132,
+          "n_games": 18.2
+        },
+        "opp_rec": {
+          "value": 0.8921,
+          "per_game": 1.242,
+          "n_games": 18.2
+        },
+        "game_line": {
+          "total": 44.5,
+          "spread": 2.5,
+          "implied_team_runs": 21.0
+        }
+      },
+      "break_even_american": 246,
+      "odds": {
+        "best_price_decimal": 2.65,
+        "best_price_american": 165,
+        "best_book": "BetRivers",
+        "implied_prob": 0.3774,
+        "fair_prob": 0.37,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.2331,
+        "edge_vs_fair": -0.0805
+      }
+    },
+    {
+      "player_id": "00-0038544",
+      "name": "Quentin Johnston",
+      "position": "WR",
+      "team": "LAC",
+      "opponent": "BAL",
+      "home": false,
+      "game_id": "2026_10_LAC_BAL",
+      "kickoff_utc": "2026-11-17T01:15:00+00:00",
+      "week": 10,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.28744,
+      "lambda_rush": 0.01974,
+      "lambda_rec": 0.2677,
+      "prob": 0.24982,
+      "expected_tds": 0.2874,
+      "team_expected_off_tds": 2.302,
+      "team_expected_rush_tds": 0.785,
+      "team_expected_rec_tds": 1.517,
+      "shares": {
+        "rush": 0.0214,
+        "rec": 0.1887
+      },
+      "usage": {
+        "carries": 4.2,
+        "goal_line_carries": 0.0,
+        "targets": 80.4,
+        "red_zone_targets": 9.0,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 5.8
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.302,
+          "implied_points": 22.0,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3411,
+          "observed": 0.3067,
+          "n_tds": 32.6
+        },
+        "opp_rush": {
+          "value": 1.1749,
+          "per_game": 1.188,
+          "n_games": 19.2
+        },
+        "opp_rec": {
+          "value": 0.9351,
+          "per_game": 1.344,
+          "n_games": 19.2
+        },
+        "game_line": {
+          "total": 40.5,
+          "spread": -3.5,
+          "implied_team_runs": 22.0
+        }
+      },
+      "break_even_american": 300,
+      "odds": {
+        "best_price_decimal": 6.0,
+        "best_price_american": 500,
+        "best_book": "FanDuel",
+        "implied_prob": 0.1667,
+        "fair_prob": 0.17,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.4989,
+        "edge_vs_fair": 0.0798
+      }
+    },
+    {
+      "player_id": "00-0039915",
+      "name": "Ladd McConkey",
+      "position": "WR",
+      "team": "LAC",
+      "opponent": "BAL",
+      "home": false,
+      "game_id": "2026_10_LAC_BAL",
+      "kickoff_utc": "2026-11-17T01:15:00+00:00",
+      "week": 10,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.28662,
+      "lambda_rush": 0.02065,
+      "lambda_rec": 0.26597,
+      "prob": 0.2492,
+      "expected_tds": 0.2866,
+      "team_expected_off_tds": 2.302,
+      "team_expected_rush_tds": 0.785,
+      "team_expected_rec_tds": 1.517,
+      "shares": {
+        "rush": 0.0224,
+        "rec": 0.1875
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 87.6,
+        "red_zone_targets": 11.0,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 4.6
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.302,
+          "implied_points": 22.0,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3411,
+          "observed": 0.3067,
+          "n_tds": 32.6
+        },
+        "opp_rush": {
+          "value": 1.1749,
+          "per_game": 1.188,
+          "n_games": 19.2
+        },
+        "opp_rec": {
+          "value": 0.9351,
+          "per_game": 1.344,
+          "n_games": 19.2
+        },
+        "game_line": {
+          "total": 40.5,
+          "spread": -3.5,
+          "implied_team_runs": 22.0
+        }
+      },
+      "break_even_american": 301,
+      "odds": null
+    },
+    {
+      "player_id": "00-0039391",
+      "name": "Kimani Vidal",
+      "position": "RB",
+      "team": "LAC",
+      "opponent": "BAL",
+      "home": false,
+      "game_id": "2026_10_LAC_BAL",
+      "kickoff_utc": "2026-11-17T01:15:00+00:00",
+      "week": 10,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.2814,
+      "lambda_rush": 0.18872,
+      "lambda_rec": 0.09268,
+      "prob": 0.24527,
+      "expected_tds": 0.2814,
+      "team_expected_off_tds": 2.302,
+      "team_expected_rush_tds": 0.785,
+      "team_expected_rec_tds": 1.517,
+      "shares": {
+        "rush": 0.2046,
+        "rec": 0.0653
+      },
+      "usage": {
+        "carries": 129.0,
+        "goal_line_carries": 4.2,
+        "targets": 30.2,
+        "red_zone_targets": 5.6,
+        "prior_rush_tds": 2.8,
+        "prior_rec_tds": 1.6
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.302,
+          "implied_points": 22.0,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3411,
+          "observed": 0.3067,
+          "n_tds": 32.6
+        },
+        "opp_rush": {
+          "value": 1.1749,
+          "per_game": 1.188,
+          "n_games": 19.2
+        },
+        "opp_rec": {
+          "value": 0.9351,
+          "per_game": 1.344,
+          "n_games": 19.2
+        },
+        "game_line": {
+          "total": 40.5,
+          "spread": -3.5,
+          "implied_team_runs": 22.0
+        }
+      },
+      "break_even_american": 308,
+      "odds": {
+        "best_price_decimal": 6.5,
+        "best_price_american": 550,
+        "best_book": "DraftKings",
+        "implied_prob": 0.1538,
+        "fair_prob": 0.1541,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.5943,
+        "edge_vs_fair": 0.0912
+      }
+    },
+    {
+      "player_id": "00-0034753",
+      "name": "Mark Andrews",
+      "position": "TE",
+      "team": "BAL",
+      "opponent": "LAC",
+      "home": true,
+      "game_id": "2026_10_LAC_BAL",
+      "kickoff_utc": "2026-11-17T01:15:00+00:00",
+      "week": 10,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.24694,
+      "lambda_rush": 0.03169,
+      "lambda_rec": 0.21525,
+      "prob": 0.21881,
+      "expected_tds": 0.2469,
+      "team_expected_off_tds": 2.177,
+      "team_expected_rush_tds": 1.019,
+      "team_expected_rec_tds": 1.158,
+      "shares": {
+        "rush": 0.0274,
+        "rec": 0.2083
+      },
+      "usage": {
+        "carries": 8.0,
+        "goal_line_carries": 1.7999999999999998,
+        "targets": 86.0,
+        "red_zone_targets": 17.0,
+        "prior_rush_tds": 0.6,
+        "prior_rec_tds": 4.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.1772,
+          "implied_points": 21.0,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.4681,
+          "observed": 0.5103,
+          "n_tds": 48.6
+        },
+        "opp_rush": {
+          "value": 1.1334,
+          "per_game": 1.132,
+          "n_games": 18.2
+        },
+        "opp_rec": {
+          "value": 0.8921,
+          "per_game": 1.242,
+          "n_games": 18.2
+        },
+        "game_line": {
+          "total": 44.5,
+          "spread": 2.5,
+          "implied_team_runs": 21.0
+        }
+      },
+      "break_even_american": 357,
+      "odds": {
+        "best_price_decimal": 4.6,
+        "best_price_american": 360,
+        "best_book": "DraftKings",
+        "implied_prob": 0.2174,
+        "fair_prob": 0.212,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.0065,
+        "edge_vs_fair": 0.0068
+      }
+    },
+    {
+      "player_id": "00-0040189",
+      "name": "Oronde Gadsden II",
+      "position": "TE",
+      "team": "LAC",
+      "opponent": "BAL",
+      "home": false,
+      "game_id": "2026_10_LAC_BAL",
+      "kickoff_utc": "2026-11-17T01:15:00+00:00",
+      "week": 10,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.23303,
+      "lambda_rush": 0.02029,
+      "lambda_rec": 0.21274,
+      "prob": 0.20787,
+      "expected_tds": 0.233,
+      "team_expected_off_tds": 2.302,
+      "team_expected_rush_tds": 0.785,
+      "team_expected_rec_tds": 1.517,
+      "shares": {
+        "rush": 0.022,
+        "rec": 0.15
+      },
+      "usage": {
+        "carries": 1.0,
+        "goal_line_carries": 0.0,
+        "targets": 71.4,
+        "red_zone_targets": 16.0,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 2.8
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.302,
+          "implied_points": 22.0,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3411,
+          "observed": 0.3067,
+          "n_tds": 32.6
+        },
+        "opp_rush": {
+          "value": 1.1749,
+          "per_game": 1.188,
+          "n_games": 19.2
+        },
+        "opp_rec": {
+          "value": 0.9351,
+          "per_game": 1.344,
+          "n_games": 19.2
+        },
+        "game_line": {
+          "total": 40.5,
+          "spread": -3.5,
+          "implied_team_runs": 22.0
+        }
+      },
+      "break_even_american": 381,
+      "odds": {
+        "best_price_decimal": 6.75,
+        "best_price_american": 575,
+        "best_book": "BetRivers",
+        "implied_prob": 0.1481,
+        "fair_prob": 0.1715,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.4031,
+        "edge_vs_fair": 0.0363
+      }
+    },
+    {
+      "player_id": "00-0038454",
+      "name": "Keaton Mitchell",
+      "position": "RB",
+      "team": "LAC",
+      "opponent": "BAL",
+      "home": false,
+      "game_id": "2026_10_LAC_BAL",
+      "kickoff_utc": "2026-11-17T01:15:00+00:00",
+      "week": 10,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.16175,
+      "lambda_rush": 0.08451,
+      "lambda_rec": 0.07724,
+      "prob": 0.14934,
+      "expected_tds": 0.1617,
+      "team_expected_off_tds": 2.302,
+      "team_expected_rush_tds": 0.785,
+      "team_expected_rec_tds": 1.517,
+      "shares": {
+        "rush": 0.0916,
+        "rec": 0.0545
+      },
+      "usage": {
+        "carries": 81.4,
+        "goal_line_carries": 0.0,
+        "targets": 29.2,
+        "red_zone_targets": 2.0,
+        "prior_rush_tds": 0.6,
+        "prior_rec_tds": 1.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.302,
+          "implied_points": 22.0,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3411,
+          "observed": 0.3067,
+          "n_tds": 32.6
+        },
+        "opp_rush": {
+          "value": 1.1749,
+          "per_game": 1.188,
+          "n_games": 19.2
+        },
+        "opp_rec": {
+          "value": 0.9351,
+          "per_game": 1.344,
+          "n_games": 19.2
+        },
+        "game_line": {
+          "total": 40.5,
+          "spread": -3.5,
+          "implied_team_runs": 22.0
+        }
+      },
+      "break_even_american": 570,
+      "odds": {
+        "best_price_decimal": 7.0,
+        "best_price_american": 600,
+        "best_book": "BetRivers",
+        "implied_prob": 0.1429,
+        "fair_prob": 0.1451,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.0454,
+        "edge_vs_fair": 0.0042
+      }
+    },
+    {
+      "player_id": "00-0040727",
+      "name": "Tre Harris",
+      "position": "WR",
+      "team": "LAC",
+      "opponent": "BAL",
+      "home": false,
+      "game_id": "2026_10_LAC_BAL",
+      "kickoff_utc": "2026-11-17T01:15:00+00:00",
+      "week": 10,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.16045,
+      "lambda_rush": 0.02023,
+      "lambda_rec": 0.14023,
+      "prob": 0.14824,
+      "expected_tds": 0.1605,
+      "team_expected_off_tds": 2.302,
+      "team_expected_rush_tds": 0.785,
+      "team_expected_rec_tds": 1.517,
+      "shares": {
+        "rush": 0.0219,
+        "rec": 0.0989
+      },
+      "usage": {
+        "carries": 1.2,
+        "goal_line_carries": 0.0,
+        "targets": 60.8,
+        "red_zone_targets": 7.0,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 0.6
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.302,
+          "implied_points": 22.0,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3411,
+          "observed": 0.3067,
+          "n_tds": 32.6
+        },
+        "opp_rush": {
+          "value": 1.1749,
+          "per_game": 1.188,
+          "n_games": 19.2
+        },
+        "opp_rec": {
+          "value": 0.9351,
+          "per_game": 1.344,
+          "n_games": 19.2
+        },
+        "game_line": {
+          "total": 40.5,
+          "spread": -3.5,
+          "implied_team_runs": 22.0
+        }
+      },
+      "break_even_american": 575,
+      "odds": {
+        "best_price_decimal": 4.4,
+        "best_price_american": 340,
+        "best_book": "BetMGM",
+        "implied_prob": 0.2273,
+        "fair_prob": 0.2194,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.3477,
+        "edge_vs_fair": -0.0712
+      }
+    },
+    {
+      "player_id": "00-0036550",
+      "name": "Rashod Bateman",
+      "position": "WR",
+      "team": "BAL",
+      "opponent": "LAC",
+      "home": true,
+      "game_id": "2026_10_LAC_BAL",
+      "kickoff_utc": "2026-11-17T01:15:00+00:00",
+      "week": 10,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.15521,
+      "lambda_rush": 0.02723,
+      "lambda_rec": 0.12798,
+      "prob": 0.14376,
+      "expected_tds": 0.1552,
+      "team_expected_off_tds": 2.177,
+      "team_expected_rush_tds": 1.019,
+      "team_expected_rec_tds": 1.158,
+      "shares": {
+        "rush": 0.0236,
+        "rec": 0.1239
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 54.4,
+        "red_zone_targets": 8.399999999999999,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 2.2
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.1772,
+          "implied_points": 21.0,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.4681,
+          "observed": 0.5103,
+          "n_tds": 48.6
+        },
+        "opp_rush": {
+          "value": 1.1334,
+          "per_game": 1.132,
+          "n_games": 18.2
+        },
+        "opp_rec": {
+          "value": 0.8921,
+          "per_game": 1.242,
+          "n_games": 18.2
+        },
+        "game_line": {
+          "total": 44.5,
+          "spread": 2.5,
+          "implied_team_runs": 21.0
+        }
+      },
+      "break_even_american": 596,
+      "odds": {
+        "best_price_decimal": 6.5,
+        "best_price_american": 550,
+        "best_book": "DraftKings",
+        "implied_prob": 0.1538,
+        "fair_prob": 0.1599,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.0656,
+        "edge_vs_fair": -0.0162
+      }
+    },
+    {
+      "player_id": "00-0034975",
+      "name": "Justice Hill",
+      "position": "RB",
+      "team": "BAL",
+      "opponent": "LAC",
+      "home": true,
+      "game_id": "2026_10_LAC_BAL",
+      "kickoff_utc": "2026-11-17T01:15:00+00:00",
+      "week": 10,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.14646,
+      "lambda_rush": 0.0623,
+      "lambda_rec": 0.08416,
+      "prob": 0.13624,
+      "expected_tds": 0.1465,
+      "team_expected_off_tds": 2.177,
+      "team_expected_rush_tds": 1.019,
+      "team_expected_rec_tds": 1.158,
+      "shares": {
+        "rush": 0.0539,
+        "rec": 0.0815
+      },
+      "usage": {
+        "carries": 43.8,
+        "goal_line_carries": 0.6,
+        "targets": 44.2,
+        "red_zone_targets": 2.6,
+        "prior_rush_tds": 2.2,
+        "prior_rec_tds": 0.6
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.1772,
+          "implied_points": 21.0,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.4681,
+          "observed": 0.5103,
+          "n_tds": 48.6
+        },
+        "opp_rush": {
+          "value": 1.1334,
+          "per_game": 1.132,
+          "n_games": 18.2
+        },
+        "opp_rec": {
+          "value": 0.8921,
+          "per_game": 1.242,
+          "n_games": 18.2
+        },
+        "game_line": {
+          "total": 44.5,
+          "spread": 2.5,
+          "implied_team_runs": 21.0
+        }
+      },
+      "break_even_american": 634,
+      "odds": {
+        "best_price_decimal": 5.5,
+        "best_price_american": 450,
+        "best_book": "BetMGM",
+        "implied_prob": 0.1818,
+        "fair_prob": 0.1887,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.2507,
+        "edge_vs_fair": -0.0524
+      }
+    },
+    {
+      "player_id": "00-0036355",
+      "name": "Justin Herbert",
+      "position": "QB",
+      "team": "LAC",
+      "opponent": "BAL",
+      "home": false,
+      "game_id": "2026_10_LAC_BAL",
+      "kickoff_utc": "2026-11-17T01:15:00+00:00",
+      "week": 10,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.13213,
+      "lambda_rush": 0.13213,
+      "lambda_rec": 0.0,
+      "prob": 0.12377,
+      "expected_tds": 0.1321,
+      "team_expected_off_tds": 2.302,
+      "team_expected_rush_tds": 0.785,
+      "team_expected_rec_tds": 1.517,
+      "shares": {
+        "rush": 0.1432,
+        "rec": 0.0
+      },
+      "usage": {
+        "carries": 78.4,
+        "goal_line_carries": 4.4,
+        "targets": 1.0,
+        "red_zone_targets": 1.0,
+        "prior_rush_tds": 1.2,
+        "prior_rec_tds": 0.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.302,
+          "implied_points": 22.0,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3411,
+          "observed": 0.3067,
+          "n_tds": 32.6
+        },
+        "opp_rush": {
+          "value": 1.1749,
+          "per_game": 1.188,
+          "n_games": 19.2
+        },
+        "opp_rec": {
+          "value": 0.9351,
+          "per_game": 1.344,
+          "n_games": 19.2
+        },
+        "game_line": {
+          "total": 40.5,
+          "spread": -3.5,
+          "implied_team_runs": 22.0
+        }
+      },
+      "break_even_american": 708,
+      "odds": {
+        "best_price_decimal": 7.0,
+        "best_price_american": 600,
+        "best_book": "DraftKings",
+        "implied_prob": 0.1429,
+        "fair_prob": 0.1463,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.1336,
+        "edge_vs_fair": -0.0225
+      }
+    },
+    {
+      "player_id": "00-0038046",
+      "name": "Charlie Kolar",
+      "position": "TE",
+      "team": "LAC",
+      "opponent": "BAL",
+      "home": false,
+      "game_id": "2026_10_LAC_BAL",
+      "kickoff_utc": "2026-11-17T01:15:00+00:00",
+      "week": 10,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.1025,
+      "lambda_rush": 0.02029,
+      "lambda_rec": 0.08221,
+      "prob": 0.09742,
+      "expected_tds": 0.1025,
+      "team_expected_off_tds": 2.302,
+      "team_expected_rush_tds": 0.785,
+      "team_expected_rec_tds": 1.517,
+      "shares": {
+        "rush": 0.022,
+        "rec": 0.058
+      },
+      "usage": {
+        "carries": 1.0,
+        "goal_line_carries": 0.0,
+        "targets": 29.0,
+        "red_zone_targets": 3.8,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 1.2
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.302,
+          "implied_points": 22.0,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3411,
+          "observed": 0.3067,
+          "n_tds": 32.6
+        },
+        "opp_rush": {
+          "value": 1.1749,
+          "per_game": 1.188,
+          "n_games": 19.2
+        },
+        "opp_rec": {
+          "value": 0.9351,
+          "per_game": 1.344,
+          "n_games": 19.2
+        },
+        "game_line": {
+          "total": 40.5,
+          "spread": -3.5,
+          "implied_team_runs": 22.0
+        }
+      },
+      "break_even_american": 926,
+      "odds": {
+        "best_price_decimal": 7.0,
+        "best_price_american": 600,
+        "best_book": "BetRivers",
+        "implied_prob": 0.1429,
+        "fair_prob": 0.1644,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.3181,
+        "edge_vs_fair": -0.067
+      }
+    },
+    {
+      "player_id": "00-0033119",
+      "name": "Jacoby Brissett",
+      "position": "QB",
+      "team": "BAL",
+      "opponent": "LAC",
+      "home": true,
+      "game_id": "2026_10_LAC_BAL",
+      "kickoff_utc": "2026-11-17T01:15:00+00:00",
+      "week": 10,
+      "confidence": "medium",
+      "rookie": false,
+      "changed_teams": true,
+      "lambda": 0.09375,
+      "lambda_rush": 0.09375,
+      "lambda_rec": 0.0,
+      "prob": 0.08949,
+      "expected_tds": 0.0937,
+      "team_expected_off_tds": 2.177,
+      "team_expected_rush_tds": 1.019,
+      "team_expected_rec_tds": 1.158,
+      "shares": {
+        "rush": 0.0812,
+        "rec": 0.0
+      },
+      "usage": {
+        "carries": 47.599999999999994,
+        "goal_line_carries": 4.8,
+        "targets": 1.0,
+        "red_zone_targets": 1.0,
+        "prior_rush_tds": 1.6,
+        "prior_rec_tds": 0.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.1772,
+          "implied_points": 21.0,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.4681,
+          "observed": 0.5103,
+          "n_tds": 48.6
+        },
+        "opp_rush": {
+          "value": 1.1334,
+          "per_game": 1.132,
+          "n_games": 18.2
+        },
+        "opp_rec": {
+          "value": 0.8921,
+          "per_game": 1.242,
+          "n_games": 18.2
+        },
+        "game_line": {
+          "total": 44.5,
+          "spread": 2.5,
+          "implied_team_runs": 21.0
+        }
+      },
+      "break_even_american": 1017,
+      "odds": {
+        "best_price_decimal": 8.75,
+        "best_price_american": 775,
+        "best_book": "BetMGM",
+        "implied_prob": 0.1143,
+        "fair_prob": 0.1348,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": -0.217,
+        "edge_vs_fair": -0.0453
+      }
+    },
+    {
+      "player_id": "00-0039792",
+      "name": "Devontez Walker",
+      "position": "WR",
+      "team": "BAL",
+      "opponent": "LAC",
+      "home": true,
+      "game_id": "2026_10_LAC_BAL",
+      "kickoff_utc": "2026-11-17T01:15:00+00:00",
+      "week": 10,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.07844,
+      "lambda_rush": 0.02723,
+      "lambda_rec": 0.05121,
+      "prob": 0.07544,
+      "expected_tds": 0.0784,
+      "team_expected_off_tds": 2.177,
+      "team_expected_rush_tds": 1.019,
+      "team_expected_rec_tds": 1.158,
+      "shares": {
+        "rush": 0.0236,
+        "rec": 0.0496
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 13.8,
+        "red_zone_targets": 1.6,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 2.8
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.1772,
+          "implied_points": 21.0,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.4681,
+          "observed": 0.5103,
+          "n_tds": 48.6
+        },
+        "opp_rush": {
+          "value": 1.1334,
+          "per_game": 1.132,
+          "n_games": 18.2
+        },
+        "opp_rec": {
+          "value": 0.8921,
+          "per_game": 1.242,
+          "n_games": 18.2
+        },
+        "game_line": {
+          "total": 44.5,
+          "spread": 2.5,
+          "implied_team_runs": 21.0
+        }
+      },
+      "break_even_american": 1226,
+      "odds": {
+        "best_price_decimal": 18.0,
+        "best_price_american": 1700,
+        "best_book": "DraftKings",
+        "implied_prob": 0.0556,
+        "fair_prob": 0.0577,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.3579,
+        "edge_vs_fair": 0.0178
+      }
+    },
+    {
+      "player_id": "00-0040184",
+      "name": "KeAndre Lambert-Smith",
+      "position": "WR",
+      "team": "LAC",
+      "opponent": "BAL",
+      "home": false,
+      "game_id": "2026_10_LAC_BAL",
+      "kickoff_utc": "2026-11-17T01:15:00+00:00",
+      "week": 10,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.07781,
+      "lambda_rush": 0.02065,
+      "lambda_rec": 0.05716,
+      "prob": 0.07486,
+      "expected_tds": 0.0778,
+      "team_expected_off_tds": 2.302,
+      "team_expected_rush_tds": 0.785,
+      "team_expected_rec_tds": 1.517,
+      "shares": {
+        "rush": 0.0224,
+        "rec": 0.0403
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 20.2,
+        "red_zone_targets": 3.2,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 0.6
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.302,
+          "implied_points": 22.0,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3411,
+          "observed": 0.3067,
+          "n_tds": 32.6
+        },
+        "opp_rush": {
+          "value": 1.1749,
+          "per_game": 1.188,
+          "n_games": 19.2
+        },
+        "opp_rec": {
+          "value": 0.9351,
+          "per_game": 1.344,
+          "n_games": 19.2
+        },
+        "game_line": {
+          "total": 40.5,
+          "spread": -3.5,
+          "implied_team_runs": 22.0
+        }
+      },
+      "break_even_american": 1236,
+      "odds": {
+        "best_price_decimal": 8.0,
+        "best_price_american": 700,
+        "best_book": "FanDuel",
+        "implied_prob": 0.125,
+        "fair_prob": 0.1258,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.4011,
+        "edge_vs_fair": -0.0509
+      }
+    },
+    {
+      "player_id": "00-0040887",
+      "name": "Josh Cuevas",
+      "position": "TE",
+      "team": "BAL",
+      "opponent": "LAC",
+      "home": true,
+      "game_id": "2026_10_LAC_BAL",
+      "kickoff_utc": "2026-11-17T01:15:00+00:00",
+      "week": 10,
+      "confidence": "low",
+      "rookie": true,
+      "changed_teams": false,
+      "lambda": 0.06529,
+      "lambda_rush": 0.02723,
+      "lambda_rec": 0.03806,
+      "prob": 0.0632,
+      "expected_tds": 0.0653,
+      "team_expected_off_tds": 2.177,
+      "team_expected_rush_tds": 1.019,
+      "team_expected_rec_tds": 1.158,
+      "shares": {
+        "rush": 0.0236,
+        "rec": 0.0368
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 13.0,
+        "red_zone_targets": 2.0,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 1.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.1772,
+          "implied_points": 21.0,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.4681,
+          "observed": 0.5103,
+          "n_tds": 48.6
+        },
+        "opp_rush": {
+          "value": 1.1334,
+          "per_game": 1.132,
+          "n_games": 18.2
+        },
+        "opp_rec": {
+          "value": 0.8921,
+          "per_game": 1.242,
+          "n_games": 18.2
+        },
+        "game_line": {
+          "total": 44.5,
+          "spread": 2.5,
+          "implied_team_runs": 21.0
+        }
+      },
+      "break_even_american": 1482,
+      "odds": {
+        "best_price_decimal": 11.0,
+        "best_price_american": 1000,
+        "best_book": "DraftKings",
+        "implied_prob": 0.0909,
+        "fair_prob": 0.0878,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.3048,
+        "edge_vs_fair": -0.0246
+      }
+    },
+    {
+      "player_id": "00-0040870",
+      "name": "Ja'Kobi Lane",
+      "position": "WR",
+      "team": "BAL",
+      "opponent": "LAC",
+      "home": true,
+      "game_id": "2026_10_LAC_BAL",
+      "kickoff_utc": "2026-11-17T01:15:00+00:00",
+      "week": 10,
+      "confidence": "low",
+      "rookie": true,
+      "changed_teams": false,
+      "lambda": 0.06286,
+      "lambda_rush": 0.02723,
+      "lambda_rec": 0.03563,
+      "prob": 0.06093,
+      "expected_tds": 0.0629,
+      "team_expected_off_tds": 2.177,
+      "team_expected_rush_tds": 1.019,
+      "team_expected_rec_tds": 1.158,
+      "shares": {
+        "rush": 0.0236,
+        "rec": 0.0345
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 14.0,
+        "red_zone_targets": 6.0,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 0.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.1772,
+          "implied_points": 21.0,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.4681,
+          "observed": 0.5103,
+          "n_tds": 48.6
+        },
+        "opp_rush": {
+          "value": 1.1334,
+          "per_game": 1.132,
+          "n_games": 18.2
+        },
+        "opp_rec": {
+          "value": 0.8921,
+          "per_game": 1.242,
+          "n_games": 18.2
+        },
+        "game_line": {
+          "total": 44.5,
+          "spread": 2.5,
+          "implied_team_runs": 21.0
+        }
+      },
+      "break_even_american": 1541,
+      "odds": {
+        "best_price_decimal": 5.75,
+        "best_price_american": 475,
+        "best_book": "BetMGM",
+        "implied_prob": 0.1739,
+        "fair_prob": 0.1965,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.6497,
+        "edge_vs_fair": -0.1356
+      }
+    },
+    {
+      "player_id": "00-0040311",
+      "name": "Theo Wease Jr.",
+      "position": "WR",
+      "team": "LAC",
+      "opponent": "BAL",
+      "home": false,
+      "game_id": "2026_10_LAC_BAL",
+      "kickoff_utc": "2026-11-17T01:15:00+00:00",
+      "week": 10,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.06077,
+      "lambda_rush": 0.02065,
+      "lambda_rec": 0.04011,
+      "prob": 0.05896,
+      "expected_tds": 0.0608,
+      "team_expected_off_tds": 2.302,
+      "team_expected_rush_tds": 0.785,
+      "team_expected_rec_tds": 1.517,
+      "shares": {
+        "rush": 0.0224,
+        "rec": 0.0283
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 10.0,
+        "red_zone_targets": 1.6,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 0.6
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.302,
+          "implied_points": 22.0,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3411,
+          "observed": 0.3067,
+          "n_tds": 32.6
+        },
+        "opp_rush": {
+          "value": 1.1749,
+          "per_game": 1.188,
+          "n_games": 19.2
+        },
+        "opp_rec": {
+          "value": 0.9351,
+          "per_game": 1.344,
+          "n_games": 19.2
+        },
+        "game_line": {
+          "total": 40.5,
+          "spread": -3.5,
+          "implied_team_runs": 22.0
+        }
+      },
+      "break_even_american": 1596,
+      "odds": {
+        "best_price_decimal": 26.0,
+        "best_price_american": 2500,
+        "best_book": "BetRivers",
+        "implied_prob": 0.0385,
+        "fair_prob": 0.041,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": 0.533,
+        "edge_vs_fair": 0.0179
+      }
+    }
+  ]
+}
