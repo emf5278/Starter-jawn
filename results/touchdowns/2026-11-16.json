@@ -1,0 +1,418 @@
+{
+  "date": "2026-11-16",
+  "window": "all",
+  "season": 2026,
+  "week": 10,
+  "picks": [
+    {
+      "player_id": "00-0032764",
+      "name": "Derrick Henry",
+      "position": "RB",
+      "team": "BAL",
+      "opponent": "LAC",
+      "prob": 0.51769,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 1.71,
+        "best_price_american": -141,
+        "best_book": "FanDuel",
+        "implied_prob": 0.5848,
+        "fair_prob": 0.5666,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.1148,
+        "edge_vs_fair": -0.0489
+      },
+      "scored": true
+    },
+    {
+      "player_id": "00-0040666",
+      "name": "Omarion Hampton",
+      "position": "RB",
+      "team": "LAC",
+      "opponent": "BAL",
+      "prob": 0.3106,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 4.2,
+        "best_price_american": 320,
+        "best_book": "DraftKings",
+        "implied_prob": 0.2381,
+        "fair_prob": 0.233,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.3045,
+        "edge_vs_fair": 0.0776
+      },
+      "scored": true
+    },
+    {
+      "player_id": "00-0039064",
+      "name": "Zay Flowers",
+      "position": "WR",
+      "team": "BAL",
+      "opponent": "LAC",
+      "prob": 0.28941,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 2.65,
+        "best_price_american": 165,
+        "best_book": "BetRivers",
+        "implied_prob": 0.3774,
+        "fair_prob": 0.37,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.2331,
+        "edge_vs_fair": -0.0805
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0038544",
+      "name": "Quentin Johnston",
+      "position": "WR",
+      "team": "LAC",
+      "opponent": "BAL",
+      "prob": 0.24982,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 6.0,
+        "best_price_american": 500,
+        "best_book": "FanDuel",
+        "implied_prob": 0.1667,
+        "fair_prob": 0.17,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.4989,
+        "edge_vs_fair": 0.0798
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0039915",
+      "name": "Ladd McConkey",
+      "position": "WR",
+      "team": "LAC",
+      "opponent": "BAL",
+      "prob": 0.2492,
+      "confidence": "high",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0039391",
+      "name": "Kimani Vidal",
+      "position": "RB",
+      "team": "LAC",
+      "opponent": "BAL",
+      "prob": 0.24527,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 6.5,
+        "best_price_american": 550,
+        "best_book": "DraftKings",
+        "implied_prob": 0.1538,
+        "fair_prob": 0.1541,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.5943,
+        "edge_vs_fair": 0.0912
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0034753",
+      "name": "Mark Andrews",
+      "position": "TE",
+      "team": "BAL",
+      "opponent": "LAC",
+      "prob": 0.21881,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 4.6,
+        "best_price_american": 360,
+        "best_book": "DraftKings",
+        "implied_prob": 0.2174,
+        "fair_prob": 0.212,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.0065,
+        "edge_vs_fair": 0.0068
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0040189",
+      "name": "Oronde Gadsden II",
+      "position": "TE",
+      "team": "LAC",
+      "opponent": "BAL",
+      "prob": 0.20787,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 6.75,
+        "best_price_american": 575,
+        "best_book": "BetRivers",
+        "implied_prob": 0.1481,
+        "fair_prob": 0.1715,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.4031,
+        "edge_vs_fair": 0.0363
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0038454",
+      "name": "Keaton Mitchell",
+      "position": "RB",
+      "team": "LAC",
+      "opponent": "BAL",
+      "prob": 0.14934,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 7.0,
+        "best_price_american": 600,
+        "best_book": "BetRivers",
+        "implied_prob": 0.1429,
+        "fair_prob": 0.1451,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.0454,
+        "edge_vs_fair": 0.0042
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0040727",
+      "name": "Tre Harris",
+      "position": "WR",
+      "team": "LAC",
+      "opponent": "BAL",
+      "prob": 0.14824,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 4.4,
+        "best_price_american": 340,
+        "best_book": "BetMGM",
+        "implied_prob": 0.2273,
+        "fair_prob": 0.2194,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.3477,
+        "edge_vs_fair": -0.0712
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0036550",
+      "name": "Rashod Bateman",
+      "position": "WR",
+      "team": "BAL",
+      "opponent": "LAC",
+      "prob": 0.14376,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 6.5,
+        "best_price_american": 550,
+        "best_book": "DraftKings",
+        "implied_prob": 0.1538,
+        "fair_prob": 0.1599,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.0656,
+        "edge_vs_fair": -0.0162
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0034975",
+      "name": "Justice Hill",
+      "position": "RB",
+      "team": "BAL",
+      "opponent": "LAC",
+      "prob": 0.13624,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 5.5,
+        "best_price_american": 450,
+        "best_book": "BetMGM",
+        "implied_prob": 0.1818,
+        "fair_prob": 0.1887,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.2507,
+        "edge_vs_fair": -0.0524
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0036355",
+      "name": "Justin Herbert",
+      "position": "QB",
+      "team": "LAC",
+      "opponent": "BAL",
+      "prob": 0.12377,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 7.0,
+        "best_price_american": 600,
+        "best_book": "DraftKings",
+        "implied_prob": 0.1429,
+        "fair_prob": 0.1463,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.1336,
+        "edge_vs_fair": -0.0225
+      },
+      "scored": true
+    },
+    {
+      "player_id": "00-0038046",
+      "name": "Charlie Kolar",
+      "position": "TE",
+      "team": "LAC",
+      "opponent": "BAL",
+      "prob": 0.09742,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 7.0,
+        "best_price_american": 600,
+        "best_book": "BetRivers",
+        "implied_prob": 0.1429,
+        "fair_prob": 0.1644,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.3181,
+        "edge_vs_fair": -0.067
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0033119",
+      "name": "Jacoby Brissett",
+      "position": "QB",
+      "team": "BAL",
+      "opponent": "LAC",
+      "prob": 0.08949,
+      "confidence": "medium",
+      "odds": {
+        "best_price_decimal": 8.75,
+        "best_price_american": 775,
+        "best_book": "BetMGM",
+        "implied_prob": 0.1143,
+        "fair_prob": 0.1348,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": -0.217,
+        "edge_vs_fair": -0.0453
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0039792",
+      "name": "Devontez Walker",
+      "position": "WR",
+      "team": "BAL",
+      "opponent": "LAC",
+      "prob": 0.07544,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 18.0,
+        "best_price_american": 1700,
+        "best_book": "DraftKings",
+        "implied_prob": 0.0556,
+        "fair_prob": 0.0577,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.3579,
+        "edge_vs_fair": 0.0178
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0040184",
+      "name": "KeAndre Lambert-Smith",
+      "position": "WR",
+      "team": "LAC",
+      "opponent": "BAL",
+      "prob": 0.07486,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 8.0,
+        "best_price_american": 700,
+        "best_book": "FanDuel",
+        "implied_prob": 0.125,
+        "fair_prob": 0.1258,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.4011,
+        "edge_vs_fair": -0.0509
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0040887",
+      "name": "Josh Cuevas",
+      "position": "TE",
+      "team": "BAL",
+      "opponent": "LAC",
+      "prob": 0.0632,
+      "confidence": "low",
+      "odds": {
+        "best_price_decimal": 11.0,
+        "best_price_american": 1000,
+        "best_book": "DraftKings",
+        "implied_prob": 0.0909,
+        "fair_prob": 0.0878,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.3048,
+        "edge_vs_fair": -0.0246
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0040870",
+      "name": "Ja'Kobi Lane",
+      "position": "WR",
+      "team": "BAL",
+      "opponent": "LAC",
+      "prob": 0.06093,
+      "confidence": "low",
+      "odds": {
+        "best_price_decimal": 5.75,
+        "best_price_american": 475,
+        "best_book": "BetMGM",
+        "implied_prob": 0.1739,
+        "fair_prob": 0.1965,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.6497,
+        "edge_vs_fair": -0.1356
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0040311",
+      "name": "Theo Wease Jr.",
+      "position": "WR",
+      "team": "LAC",
+      "opponent": "BAL",
+      "prob": 0.05896,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 26.0,
+        "best_price_american": 2500,
+        "best_book": "BetRivers",
+        "implied_prob": 0.0385,
+        "fair_prob": 0.041,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": 0.533,
+        "edge_vs_fair": 0.0179
+      },
+      "scored": false
+    }
+  ]
+}
