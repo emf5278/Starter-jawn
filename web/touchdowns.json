@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-19T13:35:20+00:00",
+  "generated_at": "2026-11-19T21:23:41+00:00",
   "date": "2026-11-19",
   "season": 2026,
   "week": 11,
   "model_version": "td-0.1.0",
   "n_games": 1,
   "n_games_today": 1,
-  "window": "all",
-  "window_label": "all games",
+  "window": "late",
+  "window_label": "late games (4pm ET and later)",
   "n_players_scored": 32,
   "odds_available": true,
   "game_lines_available": true,
@@ -102,15 +102,15 @@
       },
       "break_even_american": -110,
       "odds": {
-        "best_price_decimal": 2.3,
-        "best_price_american": 130,
-        "best_book": "DraftKings",
-        "implied_prob": 0.4348,
-        "fair_prob": 0.4147,
+        "best_price_decimal": 2.25,
+        "best_price_american": 125,
+        "best_book": "BetMGM",
+        "implied_prob": 0.4444,
+        "fair_prob": 0.4288,
         "n_books": 6,
         "two_sided": false,
-        "ev_per_dollar": 0.2067,
-        "edge_vs_fair": 0.1099
+        "ev_per_dollar": 0.1805,
+        "edge_vs_fair": 0.0958
       }
     },
     {
@@ -177,13 +177,13 @@
       "odds": {
         "best_price_decimal": 2.05,
         "best_price_american": 105,
-        "best_book": "DraftKings",
+        "best_book": "FanDuel",
         "implied_prob": 0.4878,
-        "fair_prob": 0.4659,
+        "fair_prob": 0.4717,
         "n_books": 6,
         "two_sided": false,
         "ev_per_dollar": -0.2873,
-        "edge_vs_fair": -0.1183
+        "edge_vs_fair": -0.124
       }
     },
     {
@@ -311,15 +311,15 @@
       },
       "break_even_american": 235,
       "odds": {
-        "best_price_decimal": 4.8,
-        "best_price_american": 380,
-        "best_book": "BetRivers",
-        "implied_prob": 0.2083,
-        "fair_prob": 0.2169,
+        "best_price_decimal": 4.2,
+        "best_price_american": 320,
+        "best_book": "FanDuel",
+        "implied_prob": 0.2381,
+        "fair_prob": 0.2274,
         "n_books": 6,
         "two_sided": false,
-        "ev_per_dollar": 0.4338,
-        "edge_vs_fair": 0.0818
+        "ev_per_dollar": 0.2546,
+        "edge_vs_fair": 0.0714
       }
     },
     {
@@ -384,15 +384,15 @@
       },
       "break_even_american": 269,
       "odds": {
-        "best_price_decimal": 1.85,
-        "best_price_american": -118,
+        "best_price_decimal": 1.8,
+        "best_price_american": -125,
         "best_book": "BetMGM",
-        "implied_prob": 0.5405,
-        "fair_prob": 0.5271,
+        "implied_prob": 0.5556,
+        "fair_prob": 0.5391,
         "n_books": 6,
         "two_sided": false,
-        "ev_per_dollar": -0.4988,
-        "edge_vs_fair": -0.2561
+        "ev_per_dollar": -0.5123,
+        "edge_vs_fair": -0.2682
       }
     },
     {
@@ -461,11 +461,11 @@
         "best_price_american": 205,
         "best_book": "BetRivers",
         "implied_prob": 0.3279,
-        "fair_prob": 0.3226,
+        "fair_prob": 0.3171,
         "n_books": 6,
         "two_sided": false,
         "ev_per_dollar": -0.1838,
-        "edge_vs_fair": -0.055
+        "edge_vs_fair": -0.0495
       }
     },
     {
@@ -530,15 +530,15 @@
       },
       "break_even_american": 304,
       "odds": {
-        "best_price_decimal": 3.65,
-        "best_price_american": 265,
+        "best_price_decimal": 3.55,
+        "best_price_american": 255,
         "best_book": "BetRivers",
-        "implied_prob": 0.274,
-        "fair_prob": 0.2735,
+        "implied_prob": 0.2817,
+        "fair_prob": 0.2756,
         "n_books": 6,
         "two_sided": false,
-        "ev_per_dollar": -0.0963,
-        "edge_vs_fair": -0.0259
+        "ev_per_dollar": -0.1211,
+        "edge_vs_fair": -0.028
       }
     },
     {
@@ -551,9 +551,9 @@
       "game_id": "2026_11_IND_HOU",
       "kickoff_utc": "2026-11-20T01:15:00+00:00",
       "week": 11,
-      "confidence": "medium",
+      "confidence": "high",
       "rookie": false,
-      "changed_teams": true,
+      "changed_teams": false,
       "lambda": 0.23816,
       "lambda_rush": 0.0175,
       "lambda_rec": 0.22066,
@@ -666,15 +666,15 @@
       },
       "break_even_american": 405,
       "odds": {
-        "best_price_decimal": 4.4,
-        "best_price_american": 340,
+        "best_price_decimal": 4.6,
+        "best_price_american": 360,
         "best_book": "FanDuel",
-        "implied_prob": 0.2273,
-        "fair_prob": 0.2246,
+        "implied_prob": 0.2174,
+        "fair_prob": 0.2096,
         "n_books": 6,
         "two_sided": false,
-        "ev_per_dollar": -0.1284,
-        "edge_vs_fair": -0.0265
+        "ev_per_dollar": -0.0888,
+        "edge_vs_fair": -0.0116
       }
     },
     {
@@ -739,14 +739,14 @@
       },
       "break_even_american": 833,
       "odds": {
-        "best_price_decimal": 9.0,
-        "best_price_american": 800,
+        "best_price_decimal": 9.5,
+        "best_price_american": 850,
         "best_book": "DraftKings",
-        "implied_prob": 0.1111,
+        "implied_prob": 0.1053,
         "fair_prob": 0.1048,
         "n_books": 6,
         "two_sided": false,
-        "ev_per_dollar": -0.0349,
+        "ev_per_dollar": 0.0187,
         "edge_vs_fair": 0.0024
       }
     },
@@ -814,13 +814,13 @@
       "odds": {
         "best_price_decimal": 4.9,
         "best_price_american": 390,
-        "best_book": "FanDuel",
+        "best_book": "DraftKings",
         "implied_prob": 0.2041,
-        "fair_prob": 0.2008,
+        "fair_prob": 0.2011,
         "n_books": 6,
         "two_sided": false,
         "ev_per_dollar": -0.4919,
-        "edge_vs_fair": -0.0971
+        "edge_vs_fair": -0.0974
       }
     },
     {
@@ -885,15 +885,15 @@
       },
       "break_even_american": 900,
       "odds": {
-        "best_price_decimal": 6.75,
-        "best_price_american": 575,
-        "best_book": "BetMGM",
-        "implied_prob": 0.1481,
-        "fair_prob": 0.1648,
+        "best_price_decimal": 6.5,
+        "best_price_american": 550,
+        "best_book": "BetRivers",
+        "implied_prob": 0.1538,
+        "fair_prob": 0.1572,
         "n_books": 6,
         "two_sided": false,
-        "ev_per_dollar": -0.325,
-        "edge_vs_fair": -0.0648
+        "ev_per_dollar": -0.35,
+        "edge_vs_fair": -0.0572
       }
     },
     {
@@ -958,15 +958,15 @@
       },
       "break_even_american": 924,
       "odds": {
-        "best_price_decimal": 6.0,
-        "best_price_american": 500,
-        "best_book": "DraftKings",
-        "implied_prob": 0.1667,
-        "fair_prob": 0.1599,
+        "best_price_decimal": 7.0,
+        "best_price_american": 600,
+        "best_book": "BetRivers",
+        "implied_prob": 0.1429,
+        "fair_prob": 0.148,
         "n_books": 6,
         "two_sided": false,
-        "ev_per_dollar": -0.4141,
-        "edge_vs_fair": -0.0623
+        "ev_per_dollar": -0.3165,
+        "edge_vs_fair": -0.0504
       }
     },
     {
@@ -1031,15 +1031,15 @@
       },
       "break_even_american": 1020,
       "odds": {
-        "best_price_decimal": 4.5,
-        "best_price_american": 350,
-        "best_book": "BetMGM",
-        "implied_prob": 0.2222,
-        "fair_prob": 0.2301,
+        "best_price_decimal": 4.9,
+        "best_price_american": 390,
+        "best_book": "DraftKings",
+        "implied_prob": 0.2041,
+        "fair_prob": 0.2093,
         "n_books": 6,
         "two_sided": false,
-        "ev_per_dollar": -0.5982,
-        "edge_vs_fair": -0.1408
+        "ev_per_dollar": -0.5625,
+        "edge_vs_fair": -0.12
       }
     },
     {
@@ -1106,13 +1106,13 @@
       "odds": {
         "best_price_decimal": 12.0,
         "best_price_american": 1100,
-        "best_book": "FanDuel",
+        "best_book": "DraftKings",
         "implied_prob": 0.0833,
-        "fair_prob": 0.0858,
+        "fair_prob": 0.0865,
         "n_books": 6,
         "two_sided": false,
         "ev_per_dollar": -0.1352,
-        "edge_vs_fair": -0.0137
+        "edge_vs_fair": -0.0144
       }
     },
     {
@@ -1179,13 +1179,13 @@
       "odds": {
         "best_price_decimal": 5.75,
         "best_price_american": 475,
-        "best_book": "BetMGM",
+        "best_book": "DraftKings",
         "implied_prob": 0.1739,
-        "fair_prob": 0.1814,
+        "fair_prob": 0.178,
         "n_books": 6,
         "two_sided": false,
         "ev_per_dollar": -0.6134,
-        "edge_vs_fair": -0.1142
+        "edge_vs_fair": -0.1108
       }
     },
     {
@@ -1250,15 +1250,15 @@
       },
       "break_even_american": 1400,
       "odds": {
-        "best_price_decimal": 4.0,
-        "best_price_american": 300,
-        "best_book": "FanDuel",
-        "implied_prob": 0.25,
-        "fair_prob": 0.2483,
+        "best_price_decimal": 3.55,
+        "best_price_american": 255,
+        "best_book": "BetRivers",
+        "implied_prob": 0.2817,
+        "fair_prob": 0.2734,
         "n_books": 6,
         "two_sided": false,
-        "ev_per_dollar": -0.7334,
-        "edge_vs_fair": -0.1816
+        "ev_per_dollar": -0.7634,
+        "edge_vs_fair": -0.2068
       }
     },
     {
@@ -1325,13 +1325,13 @@
       "odds": {
         "best_price_decimal": 36.0,
         "best_price_american": 3500,
-        "best_book": "FanDuel",
+        "best_book": "DraftKings",
         "implied_prob": 0.0278,
-        "fair_prob": 0.0309,
+        "fair_prob": 0.027,
         "n_books": 6,
         "two_sided": false,
         "ev_per_dollar": 1.295,
-        "edge_vs_fair": 0.0328
+        "edge_vs_fair": 0.0368
       }
     },
     {
@@ -1459,15 +1459,15 @@
       },
       "break_even_american": 1541,
       "odds": {
-        "best_price_decimal": 13.0,
-        "best_price_american": 1200,
-        "best_book": "DraftKings",
-        "implied_prob": 0.0769,
-        "fair_prob": 0.0756,
+        "best_price_decimal": 14.0,
+        "best_price_american": 1300,
+        "best_book": "FanDuel",
+        "implied_prob": 0.0714,
+        "fair_prob": 0.0858,
         "n_books": 6,
         "two_sided": false,
-        "ev_per_dollar": -0.2077,
-        "edge_vs_fair": -0.0146
+        "ev_per_dollar": -0.1467,
+        "edge_vs_fair": -0.0248
       }
     }
   ]
