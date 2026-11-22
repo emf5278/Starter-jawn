@@ -1,0 +1,398 @@
+{
+  "date": "2026-11-19",
+  "window": "late",
+  "season": 2026,
+  "week": 11,
+  "picks": [
+    {
+      "player_id": "00-0036223",
+      "name": "Jonathan Taylor",
+      "position": "RB",
+      "team": "IND",
+      "opponent": "HOU",
+      "prob": 0.52465,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 2.25,
+        "best_price_american": 125,
+        "best_book": "BetMGM",
+        "implied_prob": 0.4444,
+        "fair_prob": 0.4288,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.1805,
+        "edge_vs_fair": 0.0958
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0036554",
+      "name": "Nico Collins",
+      "position": "WR",
+      "team": "HOU",
+      "opponent": "IND",
+      "prob": 0.34767,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 2.05,
+        "best_price_american": 105,
+        "best_book": "FanDuel",
+        "implied_prob": 0.4878,
+        "fair_prob": 0.4717,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.2873,
+        "edge_vs_fair": -0.124
+      },
+      "scored": true
+    },
+    {
+      "player_id": "00-0040583",
+      "name": "Woody Marks",
+      "position": "RB",
+      "team": "HOU",
+      "opponent": "IND",
+      "prob": 0.32632,
+      "confidence": "high",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0040128",
+      "name": "Tyler Warren",
+      "position": "TE",
+      "team": "IND",
+      "opponent": "HOU",
+      "prob": 0.29871,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 4.2,
+        "best_price_american": 320,
+        "best_book": "FanDuel",
+        "implied_prob": 0.2381,
+        "fair_prob": 0.2274,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.2546,
+        "edge_vs_fair": 0.0714
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0035685",
+      "name": "David Montgomery",
+      "position": "RB",
+      "team": "HOU",
+      "opponent": "IND",
+      "prob": 0.27094,
+      "confidence": "medium",
+      "odds": {
+        "best_price_decimal": 1.8,
+        "best_price_american": -125,
+        "best_book": "BetMGM",
+        "implied_prob": 0.5556,
+        "fair_prob": 0.5391,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.5123,
+        "edge_vs_fair": -0.2682
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0034383",
+      "name": "Dalton Schultz",
+      "position": "TE",
+      "team": "HOU",
+      "opponent": "IND",
+      "prob": 0.2676,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 3.05,
+        "best_price_american": 205,
+        "best_book": "BetRivers",
+        "implied_prob": 0.3279,
+        "fair_prob": 0.3171,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.1838,
+        "edge_vs_fair": -0.0495
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0038618",
+      "name": "Xavier Hutchinson",
+      "position": "WR",
+      "team": "HOU",
+      "opponent": "IND",
+      "prob": 0.24759,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 3.55,
+        "best_price_american": 255,
+        "best_book": "BetRivers",
+        "implied_prob": 0.2817,
+        "fair_prob": 0.2756,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.1211,
+        "edge_vs_fair": -0.028
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0039849",
+      "name": "Marvin Harrison Jr.",
+      "position": "WR",
+      "team": "HOU",
+      "opponent": "IND",
+      "prob": 0.21192,
+      "confidence": "high",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0038608",
+      "name": "Kayshon Boutte",
+      "position": "WR",
+      "team": "HOU",
+      "opponent": "IND",
+      "prob": 0.19808,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 4.6,
+        "best_price_american": 360,
+        "best_book": "FanDuel",
+        "implied_prob": 0.2174,
+        "fair_prob": 0.2096,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.0888,
+        "edge_vs_fair": -0.0116
+      },
+      "scored": true
+    },
+    {
+      "player_id": "00-0035710",
+      "name": "Daniel Jones",
+      "position": "QB",
+      "team": "IND",
+      "opponent": "HOU",
+      "prob": 0.10723,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 9.5,
+        "best_price_american": 850,
+        "best_book": "DraftKings",
+        "implied_prob": 0.1053,
+        "fair_prob": 0.1048,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.0187,
+        "edge_vs_fair": 0.0024
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0041125",
+      "name": "Seth McGowan",
+      "position": "RB",
+      "team": "IND",
+      "opponent": "HOU",
+      "prob": 0.10369,
+      "confidence": "low",
+      "odds": {
+        "best_price_decimal": 4.9,
+        "best_price_american": 390,
+        "best_book": "DraftKings",
+        "implied_prob": 0.2041,
+        "fair_prob": 0.2011,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.4919,
+        "edge_vs_fair": -0.0974
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0032951",
+      "name": "Laquon Treadwell",
+      "position": "WR",
+      "team": "IND",
+      "opponent": "HOU",
+      "prob": 0.1,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 6.5,
+        "best_price_american": 550,
+        "best_book": "BetRivers",
+        "implied_prob": 0.1538,
+        "fair_prob": 0.1572,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.35,
+        "edge_vs_fair": -0.0572
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0034981",
+      "name": "Foster Moreau",
+      "position": "TE",
+      "team": "HOU",
+      "opponent": "IND",
+      "prob": 0.09765,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 7.0,
+        "best_price_american": 600,
+        "best_book": "BetRivers",
+        "implied_prob": 0.1429,
+        "fair_prob": 0.148,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.3165,
+        "edge_vs_fair": -0.0504
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0038705",
+      "name": "Emari Demercado",
+      "position": "RB",
+      "team": "HOU",
+      "opponent": "IND",
+      "prob": 0.08929,
+      "confidence": "medium",
+      "odds": {
+        "best_price_decimal": 4.9,
+        "best_price_american": 390,
+        "best_book": "DraftKings",
+        "implied_prob": 0.2041,
+        "fair_prob": 0.2093,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.5625,
+        "edge_vs_fair": -0.12
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0035021",
+      "name": "Ashton Dulin",
+      "position": "WR",
+      "team": "IND",
+      "opponent": "HOU",
+      "prob": 0.07207,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 12.0,
+        "best_price_american": 1100,
+        "best_book": "DraftKings",
+        "implied_prob": 0.0833,
+        "fair_prob": 0.0865,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.1352,
+        "edge_vs_fair": -0.0144
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0039163",
+      "name": "C.J. Stroud",
+      "position": "QB",
+      "team": "HOU",
+      "opponent": "IND",
+      "prob": 0.06724,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 5.75,
+        "best_price_american": 475,
+        "best_book": "DraftKings",
+        "implied_prob": 0.1739,
+        "fair_prob": 0.178,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.6134,
+        "edge_vs_fair": -0.1108
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0038977",
+      "name": "Tank Dell",
+      "position": "WR",
+      "team": "HOU",
+      "opponent": "IND",
+      "prob": 0.06665,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 3.55,
+        "best_price_american": 255,
+        "best_book": "BetRivers",
+        "implied_prob": 0.2817,
+        "fair_prob": 0.2734,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.7634,
+        "edge_vs_fair": -0.2068
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0040179",
+      "name": "DJ Giddens",
+      "position": "RB",
+      "team": "IND",
+      "opponent": "HOU",
+      "prob": 0.06375,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 36.0,
+        "best_price_american": 3500,
+        "best_book": "DraftKings",
+        "implied_prob": 0.0278,
+        "fair_prob": 0.027,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 1.295,
+        "edge_vs_fair": 0.0368
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0037292",
+      "name": "Andrew Ogletree",
+      "position": "TE",
+      "team": "IND",
+      "opponent": "HOU",
+      "prob": 0.06267,
+      "confidence": "high",
+      "odds": null,
+      "scored": false
+    },
+    {
+      "player_id": "00-0039359",
+      "name": "Cade Stover",
+      "position": "TE",
+      "team": "HOU",
+      "opponent": "IND",
+      "prob": 0.06095,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 14.0,
+        "best_price_american": 1300,
+        "best_book": "FanDuel",
+        "implied_prob": 0.0714,
+        "fair_prob": 0.0858,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.1467,
+        "edge_vs_fair": -0.0248
+      },
+      "scored": false
+    }
+  ]
+}
