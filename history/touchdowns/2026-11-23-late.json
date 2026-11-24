@@ -1,0 +1,1504 @@
+{
+  "generated_at": "2026-11-24T00:44:29+00:00",
+  "date": "2026-11-23",
+  "season": 2026,
+  "week": 11,
+  "model_version": "td-0.1.0",
+  "n_games": 1,
+  "n_games_today": 1,
+  "window": "late",
+  "window_label": "late games (4pm ET and later)",
+  "n_players_scored": 29,
+  "odds_available": true,
+  "game_lines_available": true,
+  "seasons_used": [
+    2026,
+    2025
+  ],
+  "current_season_games": 10,
+  "cold_start": false,
+  "league": {
+    "rush_td_per_team_game": 0.938,
+    "rec_td_per_team_game": 1.491
+  },
+  "top_n": 20,
+  "ev_min_prob": 0.1,
+  "ev_max_ratio": 1.3,
+  "games": [
+    {
+      "game_id": "2026_11_CIN_WAS",
+      "season": 2026,
+      "week": 11,
+      "game_type": "REG",
+      "kickoff_utc": "2026-11-24T01:15:00+00:00",
+      "home_team": "WAS",
+      "away_team": "CIN",
+      "roof": "outdoors",
+      "stadium": "Northwest Stadium",
+      "home_score": null,
+      "away_score": null
+    }
+  ],
+  "players": [
+    {
+      "player_id": "00-0036900",
+      "name": "Ja'Marr Chase",
+      "position": "WR",
+      "team": "CIN",
+      "opponent": "WAS",
+      "home": false,
+      "game_id": "2026_11_CIN_WAS",
+      "kickoff_utc": "2026-11-24T01:15:00+00:00",
+      "week": 11,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.85247,
+      "lambda_rush": 0.01974,
+      "lambda_rec": 0.83274,
+      "prob": 0.57364,
+      "expected_tds": 0.8525,
+      "team_expected_off_tds": 3.332,
+      "team_expected_rush_tds": 0.86,
+      "team_expected_rec_tds": 2.472,
+      "shares": {
+        "rush": 0.0215,
+        "rec": 0.2837
+      },
+      "usage": {
+        "carries": 1.7999999999999998,
+        "goal_line_carries": 0.0,
+        "targets": 198.0,
+        "red_zone_targets": 27.2,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 11.8
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 3.3315,
+          "implied_points": 30.25,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.2581,
+          "observed": 0.2059,
+          "n_tds": 61.2
+        },
+        "opp_rush": {
+          "value": 1.0654,
+          "per_game": 1.031,
+          "n_games": 19.2
+        },
+        "opp_rec": {
+          "value": 1.1877,
+          "per_game": 1.917,
+          "n_games": 19.2
+        },
+        "game_line": {
+          "total": 50.5,
+          "spread": -10.0,
+          "implied_team_runs": 30.25
+        }
+      },
+      "break_even_american": -135,
+      "odds": {
+        "best_price_decimal": 1.67,
+        "best_price_american": -149,
+        "best_book": "BetMGM",
+        "implied_prob": 0.5988,
+        "fair_prob": 0.5823,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.042,
+        "edge_vs_fair": -0.0087
+      }
+    },
+    {
+      "player_id": "00-0038597",
+      "name": "Chase Brown",
+      "position": "RB",
+      "team": "CIN",
+      "opponent": "WAS",
+      "home": false,
+      "game_id": "2026_11_CIN_WAS",
+      "kickoff_utc": "2026-11-24T01:15:00+00:00",
+      "week": 11,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.8518,
+      "lambda_rush": 0.41088,
+      "lambda_rec": 0.44092,
+      "prob": 0.57335,
+      "expected_tds": 0.8518,
+      "team_expected_off_tds": 3.332,
+      "team_expected_rush_tds": 0.86,
+      "team_expected_rec_tds": 2.472,
+      "shares": {
+        "rush": 0.4485,
+        "rec": 0.1502
+      },
+      "usage": {
+        "carries": 252.79999999999998,
+        "goal_line_carries": 13.8,
+        "targets": 107.4,
+        "red_zone_targets": 12.2,
+        "prior_rush_tds": 4.6,
+        "prior_rec_tds": 5.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 3.3315,
+          "implied_points": 30.25,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.2581,
+          "observed": 0.2059,
+          "n_tds": 61.2
+        },
+        "opp_rush": {
+          "value": 1.0654,
+          "per_game": 1.031,
+          "n_games": 19.2
+        },
+        "opp_rec": {
+          "value": 1.1877,
+          "per_game": 1.917,
+          "n_games": 19.2
+        },
+        "game_line": {
+          "total": 50.5,
+          "spread": -10.0,
+          "implied_team_runs": 30.25
+        }
+      },
+      "break_even_american": -134,
+      "odds": {
+        "best_price_decimal": 1.83,
+        "best_price_american": -120,
+        "best_book": "DraftKings",
+        "implied_prob": 0.5464,
+        "fair_prob": 0.5286,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.0492,
+        "edge_vs_fair": 0.0448
+      }
+    },
+    {
+      "player_id": "00-0036410",
+      "name": "Tee Higgins",
+      "position": "WR",
+      "team": "CIN",
+      "opponent": "WAS",
+      "home": false,
+      "game_id": "2026_11_CIN_WAS",
+      "kickoff_utc": "2026-11-24T01:15:00+00:00",
+      "week": 11,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.6691,
+      "lambda_rush": 0.02029,
+      "lambda_rec": 0.64882,
+      "prob": 0.48783,
+      "expected_tds": 0.6691,
+      "team_expected_off_tds": 3.332,
+      "team_expected_rush_tds": 0.86,
+      "team_expected_rec_tds": 2.472,
+      "shares": {
+        "rush": 0.0221,
+        "rec": 0.221
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 133.4,
+        "red_zone_targets": 18.6,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 12.6
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 3.3315,
+          "implied_points": 30.25,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.2581,
+          "observed": 0.2059,
+          "n_tds": 61.2
+        },
+        "opp_rush": {
+          "value": 1.0654,
+          "per_game": 1.031,
+          "n_games": 19.2
+        },
+        "opp_rec": {
+          "value": 1.1877,
+          "per_game": 1.917,
+          "n_games": 19.2
+        },
+        "game_line": {
+          "total": 50.5,
+          "spread": -10.0,
+          "implied_team_runs": 30.25
+        }
+      },
+      "break_even_american": 105,
+      "odds": {
+        "best_price_decimal": 2.0,
+        "best_price_american": 100,
+        "best_book": "DraftKings",
+        "implied_prob": 0.5,
+        "fair_prob": 0.4717,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.0243,
+        "edge_vs_fair": 0.0161
+      }
+    },
+    {
+      "player_id": "00-0037256",
+      "name": "Rachaad White",
+      "position": "RB",
+      "team": "WAS",
+      "opponent": "CIN",
+      "home": true,
+      "game_id": "2026_11_CIN_WAS",
+      "kickoff_utc": "2026-11-24T01:15:00+00:00",
+      "week": 11,
+      "confidence": "medium",
+      "rookie": false,
+      "changed_teams": true,
+      "lambda": 0.51573,
+      "lambda_rush": 0.33656,
+      "lambda_rec": 0.17916,
+      "prob": 0.40293,
+      "expected_tds": 0.5157,
+      "team_expected_off_tds": 2.52,
+      "team_expected_rush_tds": 0.982,
+      "team_expected_rec_tds": 1.538,
+      "shares": {
+        "rush": 0.3331,
+        "rec": 0.1109
+      },
+      "usage": {
+        "carries": 144.8,
+        "goal_line_carries": 8.399999999999999,
+        "targets": 50.0,
+        "red_zone_targets": 10.0,
+        "prior_rush_tds": 3.4,
+        "prior_rec_tds": 2.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.5204,
+          "implied_points": 23.75,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3896,
+          "observed": 0.3917,
+          "n_tds": 43.4
+        },
+        "opp_rush": {
+          "value": 1.0289,
+          "per_game": 0.979,
+          "n_games": 19.2
+        },
+        "opp_rec": {
+          "value": 1.0499,
+          "per_game": 1.604,
+          "n_games": 19.2
+        },
+        "game_line": {
+          "total": 40.5,
+          "spread": -7.0,
+          "implied_team_runs": 23.75
+        }
+      },
+      "break_even_american": 148,
+      "odds": {
+        "best_price_decimal": 3.3,
+        "best_price_american": 230,
+        "best_book": "FanDuel",
+        "implied_prob": 0.303,
+        "fair_prob": 0.3043,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.3297,
+        "edge_vs_fair": 0.0986
+      }
+    },
+    {
+      "player_id": "00-0031588",
+      "name": "Stefon Diggs",
+      "position": "WR",
+      "team": "WAS",
+      "opponent": "CIN",
+      "home": true,
+      "game_id": "2026_11_CIN_WAS",
+      "kickoff_utc": "2026-11-24T01:15:00+00:00",
+      "week": 11,
+      "confidence": "medium",
+      "rookie": false,
+      "changed_teams": true,
+      "lambda": 0.50014,
+      "lambda_rush": 0.03282,
+      "lambda_rec": 0.46732,
+      "prob": 0.39356,
+      "expected_tds": 0.5001,
+      "team_expected_off_tds": 2.52,
+      "team_expected_rush_tds": 0.982,
+      "team_expected_rec_tds": 1.538,
+      "shares": {
+        "rush": 0.0325,
+        "rec": 0.2893
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 120.19999999999999,
+        "red_zone_targets": 14.2,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 8.4
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.5204,
+          "implied_points": 23.75,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3896,
+          "observed": 0.3917,
+          "n_tds": 43.4
+        },
+        "opp_rush": {
+          "value": 1.0289,
+          "per_game": 0.979,
+          "n_games": 19.2
+        },
+        "opp_rec": {
+          "value": 1.0499,
+          "per_game": 1.604,
+          "n_games": 19.2
+        },
+        "game_line": {
+          "total": 40.5,
+          "spread": -7.0,
+          "implied_team_runs": 23.75
+        }
+      },
+      "break_even_american": 154,
+      "odds": {
+        "best_price_decimal": 2.8,
+        "best_price_american": 180,
+        "best_book": "BetRivers",
+        "implied_prob": 0.3571,
+        "fair_prob": 0.3462,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.102,
+        "edge_vs_fair": 0.0473
+      }
+    },
+    {
+      "player_id": "00-0034829",
+      "name": "Mike Gesicki",
+      "position": "TE",
+      "team": "CIN",
+      "opponent": "WAS",
+      "home": false,
+      "game_id": "2026_11_CIN_WAS",
+      "kickoff_utc": "2026-11-24T01:15:00+00:00",
+      "week": 11,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.32242,
+      "lambda_rush": 0.02029,
+      "lambda_rec": 0.30214,
+      "prob": 0.27561,
+      "expected_tds": 0.3224,
+      "team_expected_off_tds": 3.332,
+      "team_expected_rush_tds": 0.86,
+      "team_expected_rec_tds": 2.472,
+      "shares": {
+        "rush": 0.0221,
+        "rec": 0.1029
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 53.8,
+        "red_zone_targets": 10.8,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 7.2
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 3.3315,
+          "implied_points": 30.25,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.2581,
+          "observed": 0.2059,
+          "n_tds": 61.2
+        },
+        "opp_rush": {
+          "value": 1.0654,
+          "per_game": 1.031,
+          "n_games": 19.2
+        },
+        "opp_rec": {
+          "value": 1.1877,
+          "per_game": 1.917,
+          "n_games": 19.2
+        },
+        "game_line": {
+          "total": 50.5,
+          "spread": -10.0,
+          "implied_team_runs": 30.25
+        }
+      },
+      "break_even_american": 263,
+      "odds": {
+        "best_price_decimal": 2.85,
+        "best_price_american": 185,
+        "best_book": "BetMGM",
+        "implied_prob": 0.3509,
+        "fair_prob": 0.3494,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.2145,
+        "edge_vs_fair": -0.0738
+      }
+    },
+    {
+      "player_id": "00-0033526",
+      "name": "Samaje Perine",
+      "position": "RB",
+      "team": "CIN",
+      "opponent": "WAS",
+      "home": false,
+      "game_id": "2026_11_CIN_WAS",
+      "kickoff_utc": "2026-11-24T01:15:00+00:00",
+      "week": 11,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.28734,
+      "lambda_rush": 0.1727,
+      "lambda_rec": 0.11464,
+      "prob": 0.24974,
+      "expected_tds": 0.2873,
+      "team_expected_off_tds": 3.332,
+      "team_expected_rush_tds": 0.86,
+      "team_expected_rec_tds": 2.472,
+      "shares": {
+        "rush": 0.1885,
+        "rec": 0.0391
+      },
+      "usage": {
+        "carries": 102.4,
+        "goal_line_carries": 5.4,
+        "targets": 27.6,
+        "red_zone_targets": 2.6,
+        "prior_rush_tds": 3.8,
+        "prior_rec_tds": 1.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 3.3315,
+          "implied_points": 30.25,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.2581,
+          "observed": 0.2059,
+          "n_tds": 61.2
+        },
+        "opp_rush": {
+          "value": 1.0654,
+          "per_game": 1.031,
+          "n_games": 19.2
+        },
+        "opp_rec": {
+          "value": 1.1877,
+          "per_game": 1.917,
+          "n_games": 19.2
+        },
+        "game_line": {
+          "total": 50.5,
+          "spread": -10.0,
+          "implied_team_runs": 30.25
+        }
+      },
+      "break_even_american": 300,
+      "odds": {
+        "best_price_decimal": 3.5,
+        "best_price_american": 250,
+        "best_book": "DraftKings",
+        "implied_prob": 0.2857,
+        "fair_prob": 0.2775,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.1259,
+        "edge_vs_fair": -0.0277
+      }
+    },
+    {
+      "player_id": "00-0037809",
+      "name": "Chig Okonkwo",
+      "position": "TE",
+      "team": "WAS",
+      "opponent": "CIN",
+      "home": true,
+      "game_id": "2026_11_CIN_WAS",
+      "kickoff_utc": "2026-11-24T01:15:00+00:00",
+      "week": 11,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.27088,
+      "lambda_rush": 0.03282,
+      "lambda_rec": 0.23805,
+      "prob": 0.23729,
+      "expected_tds": 0.2709,
+      "team_expected_off_tds": 2.52,
+      "team_expected_rush_tds": 0.982,
+      "team_expected_rec_tds": 1.538,
+      "shares": {
+        "rush": 0.0325,
+        "rec": 0.1474
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 86.4,
+        "red_zone_targets": 4.0,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 1.2
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.5204,
+          "implied_points": 23.75,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3896,
+          "observed": 0.3917,
+          "n_tds": 43.4
+        },
+        "opp_rush": {
+          "value": 1.0289,
+          "per_game": 0.979,
+          "n_games": 19.2
+        },
+        "opp_rec": {
+          "value": 1.0499,
+          "per_game": 1.604,
+          "n_games": 19.2
+        },
+        "game_line": {
+          "total": 40.5,
+          "spread": -7.0,
+          "implied_team_runs": 23.75
+        }
+      },
+      "break_even_american": 321,
+      "odds": {
+        "best_price_decimal": 3.65,
+        "best_price_american": 265,
+        "best_book": "BetRivers",
+        "implied_prob": 0.274,
+        "fair_prob": 0.2676,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.1339,
+        "edge_vs_fair": -0.0304
+      }
+    },
+    {
+      "player_id": "00-0037742",
+      "name": "Treylon Burks",
+      "position": "WR",
+      "team": "WAS",
+      "opponent": "CIN",
+      "home": true,
+      "game_id": "2026_11_CIN_WAS",
+      "kickoff_utc": "2026-11-24T01:15:00+00:00",
+      "week": 11,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.17987,
+      "lambda_rush": 0.03282,
+      "lambda_rec": 0.14704,
+      "prob": 0.16462,
+      "expected_tds": 0.1799,
+      "team_expected_off_tds": 2.52,
+      "team_expected_rush_tds": 0.982,
+      "team_expected_rec_tds": 1.538,
+      "shares": {
+        "rush": 0.0325,
+        "rec": 0.091
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 38.2,
+        "red_zone_targets": 5.4,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 2.6
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.5204,
+          "implied_points": 23.75,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3896,
+          "observed": 0.3917,
+          "n_tds": 43.4
+        },
+        "opp_rush": {
+          "value": 1.0289,
+          "per_game": 0.979,
+          "n_games": 19.2
+        },
+        "opp_rec": {
+          "value": 1.0499,
+          "per_game": 1.604,
+          "n_games": 19.2
+        },
+        "game_line": {
+          "total": 40.5,
+          "spread": -7.0,
+          "implied_team_runs": 23.75
+        }
+      },
+      "break_even_american": 507,
+      "odds": {
+        "best_price_decimal": 4.33,
+        "best_price_american": 333,
+        "best_book": "BetMGM",
+        "implied_prob": 0.2309,
+        "fair_prob": 0.2274,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.2872,
+        "edge_vs_fair": -0.0627
+      }
+    },
+    {
+      "player_id": "00-0041040",
+      "name": "Antonio Williams",
+      "position": "WR",
+      "team": "WAS",
+      "opponent": "CIN",
+      "home": true,
+      "game_id": "2026_11_CIN_WAS",
+      "kickoff_utc": "2026-11-24T01:15:00+00:00",
+      "week": 11,
+      "confidence": "low",
+      "rookie": true,
+      "changed_teams": false,
+      "lambda": 0.16997,
+      "lambda_rush": 0.03282,
+      "lambda_rec": 0.13715,
+      "prob": 0.15631,
+      "expected_tds": 0.17,
+      "team_expected_off_tds": 2.52,
+      "team_expected_rush_tds": 0.982,
+      "team_expected_rec_tds": 1.538,
+      "shares": {
+        "rush": 0.0325,
+        "rec": 0.0849
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 41.0,
+        "red_zone_targets": 2.0,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 2.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.5204,
+          "implied_points": 23.75,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3896,
+          "observed": 0.3917,
+          "n_tds": 43.4
+        },
+        "opp_rush": {
+          "value": 1.0289,
+          "per_game": 0.979,
+          "n_games": 19.2
+        },
+        "opp_rec": {
+          "value": 1.0499,
+          "per_game": 1.604,
+          "n_games": 19.2
+        },
+        "game_line": {
+          "total": 40.5,
+          "spread": -7.0,
+          "implied_team_runs": 23.75
+        }
+      },
+      "break_even_american": 540,
+      "odds": {
+        "best_price_decimal": 4.2,
+        "best_price_american": 320,
+        "best_book": "DraftKings",
+        "implied_prob": 0.2381,
+        "fair_prob": 0.236,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.3435,
+        "edge_vs_fair": -0.0797
+      }
+    },
+    {
+      "player_id": "00-0039910",
+      "name": "Jayden Daniels",
+      "position": "QB",
+      "team": "WAS",
+      "opponent": "CIN",
+      "home": true,
+      "game_id": "2026_11_CIN_WAS",
+      "kickoff_utc": "2026-11-24T01:15:00+00:00",
+      "week": 11,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.16963,
+      "lambda_rush": 0.16963,
+      "lambda_rec": 0.0,
+      "prob": 0.15602,
+      "expected_tds": 0.1696,
+      "team_expected_off_tds": 2.52,
+      "team_expected_rush_tds": 0.982,
+      "team_expected_rec_tds": 1.538,
+      "shares": {
+        "rush": 0.1679,
+        "rec": 0.0
+      },
+      "usage": {
+        "carries": 69.4,
+        "goal_line_carries": 2.8,
+        "targets": 0.0,
+        "red_zone_targets": 0.0,
+        "prior_rush_tds": 3.2,
+        "prior_rec_tds": 0.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.5204,
+          "implied_points": 23.75,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3896,
+          "observed": 0.3917,
+          "n_tds": 43.4
+        },
+        "opp_rush": {
+          "value": 1.0289,
+          "per_game": 0.979,
+          "n_games": 19.2
+        },
+        "opp_rec": {
+          "value": 1.0499,
+          "per_game": 1.604,
+          "n_games": 19.2
+        },
+        "game_line": {
+          "total": 40.5,
+          "spread": -7.0,
+          "implied_team_runs": 23.75
+        }
+      },
+      "break_even_american": 541,
+      "odds": {
+        "best_price_decimal": 3.45,
+        "best_price_american": 245,
+        "best_book": "DraftKings",
+        "implied_prob": 0.2899,
+        "fair_prob": 0.2817,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.4617,
+        "edge_vs_fair": -0.1257
+      }
+    },
+    {
+      "player_id": "00-0036415",
+      "name": "Van Jefferson",
+      "position": "WR",
+      "team": "WAS",
+      "opponent": "CIN",
+      "home": true,
+      "game_id": "2026_11_CIN_WAS",
+      "kickoff_utc": "2026-11-24T01:15:00+00:00",
+      "week": 11,
+      "confidence": "medium",
+      "rookie": false,
+      "changed_teams": true,
+      "lambda": 0.16108,
+      "lambda_rush": 0.03282,
+      "lambda_rec": 0.12826,
+      "prob": 0.14878,
+      "expected_tds": 0.1611,
+      "team_expected_off_tds": 2.52,
+      "team_expected_rush_tds": 0.982,
+      "team_expected_rec_tds": 1.538,
+      "shares": {
+        "rush": 0.0325,
+        "rec": 0.0794
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 39.2,
+        "red_zone_targets": 2.8,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 1.6
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.5204,
+          "implied_points": 23.75,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3896,
+          "observed": 0.3917,
+          "n_tds": 43.4
+        },
+        "opp_rush": {
+          "value": 1.0289,
+          "per_game": 0.979,
+          "n_games": 19.2
+        },
+        "opp_rec": {
+          "value": 1.0499,
+          "per_game": 1.604,
+          "n_games": 19.2
+        },
+        "game_line": {
+          "total": 40.5,
+          "spread": -7.0,
+          "implied_team_runs": 23.75
+        }
+      },
+      "break_even_american": 572,
+      "odds": {
+        "best_price_decimal": 10.5,
+        "best_price_american": 950,
+        "best_book": "BetRivers",
+        "implied_prob": 0.0952,
+        "fair_prob": 0.1006,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.5622,
+        "edge_vs_fair": 0.0481
+      }
+    },
+    {
+      "player_id": "00-0035631",
+      "name": "Drew Sample",
+      "position": "TE",
+      "team": "CIN",
+      "opponent": "WAS",
+      "home": false,
+      "game_id": "2026_11_CIN_WAS",
+      "kickoff_utc": "2026-11-24T01:15:00+00:00",
+      "week": 11,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.14271,
+      "lambda_rush": 0.02006,
+      "lambda_rec": 0.12264,
+      "prob": 0.13299,
+      "expected_tds": 0.1427,
+      "team_expected_off_tds": 3.332,
+      "team_expected_rush_tds": 0.86,
+      "team_expected_rec_tds": 2.472,
+      "shares": {
+        "rush": 0.0219,
+        "rec": 0.0418
+      },
+      "usage": {
+        "carries": 0.6,
+        "goal_line_carries": 0.0,
+        "targets": 23.0,
+        "red_zone_targets": 3.6,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 2.6
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 3.3315,
+          "implied_points": 30.25,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.2581,
+          "observed": 0.2059,
+          "n_tds": 61.2
+        },
+        "opp_rush": {
+          "value": 1.0654,
+          "per_game": 1.031,
+          "n_games": 19.2
+        },
+        "opp_rec": {
+          "value": 1.1877,
+          "per_game": 1.917,
+          "n_games": 19.2
+        },
+        "game_line": {
+          "total": 50.5,
+          "spread": -10.0,
+          "implied_team_runs": 30.25
+        }
+      },
+      "break_even_american": 652,
+      "odds": {
+        "best_price_decimal": 6.75,
+        "best_price_american": 575,
+        "best_book": "BetMGM",
+        "implied_prob": 0.1481,
+        "fair_prob": 0.148,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.1023,
+        "edge_vs_fair": -0.0151
+      }
+    },
+    {
+      "player_id": "00-0040785",
+      "name": "Dohnte Meyers",
+      "position": "WR",
+      "team": "CIN",
+      "opponent": "WAS",
+      "home": false,
+      "game_id": "2026_11_CIN_WAS",
+      "kickoff_utc": "2026-11-24T01:15:00+00:00",
+      "week": 11,
+      "confidence": "low",
+      "rookie": true,
+      "changed_teams": false,
+      "lambda": 0.13629,
+      "lambda_rush": 0.0197,
+      "lambda_rec": 0.11659,
+      "prob": 0.12741,
+      "expected_tds": 0.1363,
+      "team_expected_off_tds": 3.332,
+      "team_expected_rush_tds": 0.86,
+      "team_expected_rec_tds": 2.472,
+      "shares": {
+        "rush": 0.0215,
+        "rec": 0.0397
+      },
+      "usage": {
+        "carries": 2.0,
+        "goal_line_carries": 0.0,
+        "targets": 28.0,
+        "red_zone_targets": 3.0,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 1.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 3.3315,
+          "implied_points": 30.25,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.2581,
+          "observed": 0.2059,
+          "n_tds": 61.2
+        },
+        "opp_rush": {
+          "value": 1.0654,
+          "per_game": 1.031,
+          "n_games": 19.2
+        },
+        "opp_rec": {
+          "value": 1.1877,
+          "per_game": 1.917,
+          "n_games": 19.2
+        },
+        "game_line": {
+          "total": 50.5,
+          "spread": -10.0,
+          "implied_team_runs": 30.25
+        }
+      },
+      "break_even_american": 685,
+      "odds": {
+        "best_price_decimal": 4.6,
+        "best_price_american": 360,
+        "best_book": "DraftKings",
+        "implied_prob": 0.2174,
+        "fair_prob": 0.2051,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": -0.4139,
+        "edge_vs_fair": -0.0777
+      }
+    },
+    {
+      "player_id": "00-0033699",
+      "name": "Austin Ekeler",
+      "position": "RB",
+      "team": "WAS",
+      "opponent": "CIN",
+      "home": true,
+      "game_id": "2026_11_CIN_WAS",
+      "kickoff_utc": "2026-11-24T01:15:00+00:00",
+      "week": 11,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.13293,
+      "lambda_rush": 0.08205,
+      "lambda_rec": 0.05088,
+      "prob": 0.12448,
+      "expected_tds": 0.1329,
+      "team_expected_off_tds": 2.52,
+      "team_expected_rush_tds": 0.982,
+      "team_expected_rec_tds": 1.538,
+      "shares": {
+        "rush": 0.0812,
+        "rec": 0.0315
+      },
+      "usage": {
+        "carries": 42.4,
+        "goal_line_carries": 1.0,
+        "targets": 16.2,
+        "red_zone_targets": 1.0,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 0.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.5204,
+          "implied_points": 23.75,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3896,
+          "observed": 0.3917,
+          "n_tds": 43.4
+        },
+        "opp_rush": {
+          "value": 1.0289,
+          "per_game": 0.979,
+          "n_games": 19.2
+        },
+        "opp_rec": {
+          "value": 1.0499,
+          "per_game": 1.604,
+          "n_games": 19.2
+        },
+        "game_line": {
+          "total": 40.5,
+          "spread": -7.0,
+          "implied_team_runs": 23.75
+        }
+      },
+      "break_even_american": 703,
+      "odds": {
+        "best_price_decimal": 5.5,
+        "best_price_american": 450,
+        "best_book": "FanDuel",
+        "implied_prob": 0.1818,
+        "fair_prob": 0.1887,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.3154,
+        "edge_vs_fair": -0.0642
+      }
+    },
+    {
+      "player_id": "00-0038839",
+      "name": "Mitchell Tinsley",
+      "position": "WR",
+      "team": "CIN",
+      "opponent": "WAS",
+      "home": false,
+      "game_id": "2026_11_CIN_WAS",
+      "kickoff_utc": "2026-11-24T01:15:00+00:00",
+      "week": 11,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.13232,
+      "lambda_rush": 0.02029,
+      "lambda_rec": 0.11204,
+      "prob": 0.12394,
+      "expected_tds": 0.1323,
+      "team_expected_off_tds": 3.332,
+      "team_expected_rush_tds": 0.86,
+      "team_expected_rec_tds": 2.472,
+      "shares": {
+        "rush": 0.0221,
+        "rec": 0.0382
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 23.4,
+        "red_zone_targets": 6.0,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 1.2
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 3.3315,
+          "implied_points": 30.25,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.2581,
+          "observed": 0.2059,
+          "n_tds": 61.2
+        },
+        "opp_rush": {
+          "value": 1.0654,
+          "per_game": 1.031,
+          "n_games": 19.2
+        },
+        "opp_rec": {
+          "value": 1.1877,
+          "per_game": 1.917,
+          "n_games": 19.2
+        },
+        "game_line": {
+          "total": 50.5,
+          "spread": -10.0,
+          "implied_team_runs": 30.25
+        }
+      },
+      "break_even_american": 707,
+      "odds": {
+        "best_price_decimal": 16.5,
+        "best_price_american": 1550,
+        "best_book": "BetMGM",
+        "implied_prob": 0.0606,
+        "fair_prob": 0.0629,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 1.045,
+        "edge_vs_fair": 0.061
+      }
+    },
+    {
+      "player_id": "00-0039912",
+      "name": "Ben Sinnott",
+      "position": "TE",
+      "team": "WAS",
+      "opponent": "CIN",
+      "home": true,
+      "game_id": "2026_11_CIN_WAS",
+      "kickoff_utc": "2026-11-24T01:15:00+00:00",
+      "week": 11,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.09754,
+      "lambda_rush": 0.03282,
+      "lambda_rec": 0.06472,
+      "prob": 0.09294,
+      "expected_tds": 0.0975,
+      "team_expected_off_tds": 2.52,
+      "team_expected_rush_tds": 0.982,
+      "team_expected_rec_tds": 1.538,
+      "shares": {
+        "rush": 0.0325,
+        "rec": 0.0401
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 13.8,
+        "red_zone_targets": 1.6,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 1.6
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.5204,
+          "implied_points": 23.75,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3896,
+          "observed": 0.3917,
+          "n_tds": 43.4
+        },
+        "opp_rush": {
+          "value": 1.0289,
+          "per_game": 0.979,
+          "n_games": 19.2
+        },
+        "opp_rec": {
+          "value": 1.0499,
+          "per_game": 1.604,
+          "n_games": 19.2
+        },
+        "game_line": {
+          "total": 40.5,
+          "spread": -7.0,
+          "implied_team_runs": 23.75
+        }
+      },
+      "break_even_american": 976,
+      "odds": {
+        "best_price_decimal": 12.0,
+        "best_price_american": 1100,
+        "best_book": "DraftKings",
+        "implied_prob": 0.0833,
+        "fair_prob": 0.0822,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.1153,
+        "edge_vs_fair": 0.0108
+      }
+    },
+    {
+      "player_id": "00-0036442",
+      "name": "Joe Burrow",
+      "position": "QB",
+      "team": "CIN",
+      "opponent": "WAS",
+      "home": false,
+      "game_id": "2026_11_CIN_WAS",
+      "kickoff_utc": "2026-11-24T01:15:00+00:00",
+      "week": 11,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.09717,
+      "lambda_rush": 0.09717,
+      "lambda_rec": 0.0,
+      "prob": 0.0926,
+      "expected_tds": 0.0972,
+      "team_expected_off_tds": 3.332,
+      "team_expected_rush_tds": 0.86,
+      "team_expected_rec_tds": 2.472,
+      "shares": {
+        "rush": 0.1061,
+        "rec": 0.0
+      },
+      "usage": {
+        "carries": 26.8,
+        "goal_line_carries": 3.6,
+        "targets": 0.0,
+        "red_zone_targets": 0.0,
+        "prior_rush_tds": 3.0,
+        "prior_rec_tds": 0.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 3.3315,
+          "implied_points": 30.25,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.2581,
+          "observed": 0.2059,
+          "n_tds": 61.2
+        },
+        "opp_rush": {
+          "value": 1.0654,
+          "per_game": 1.031,
+          "n_games": 19.2
+        },
+        "opp_rec": {
+          "value": 1.1877,
+          "per_game": 1.917,
+          "n_games": 19.2
+        },
+        "game_line": {
+          "total": 50.5,
+          "spread": -10.0,
+          "implied_team_runs": 30.25
+        }
+      },
+      "break_even_american": 980,
+      "odds": {
+        "best_price_decimal": 5.5,
+        "best_price_american": 450,
+        "best_book": "BetMGM",
+        "implied_prob": 0.1818,
+        "fair_prob": 0.1788,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.4907,
+        "edge_vs_fair": -0.0862
+      }
+    },
+    {
+      "player_id": "00-0036628",
+      "name": "John Bates",
+      "position": "TE",
+      "team": "WAS",
+      "opponent": "CIN",
+      "home": true,
+      "game_id": "2026_11_CIN_WAS",
+      "kickoff_utc": "2026-11-24T01:15:00+00:00",
+      "week": 11,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.09527,
+      "lambda_rush": 0.03282,
+      "lambda_rec": 0.06244,
+      "prob": 0.09087,
+      "expected_tds": 0.0953,
+      "team_expected_off_tds": 2.52,
+      "team_expected_rush_tds": 0.982,
+      "team_expected_rec_tds": 1.538,
+      "shares": {
+        "rush": 0.0325,
+        "rec": 0.0387
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 16.6,
+        "red_zone_targets": 3.2,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 0.6
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.5204,
+          "implied_points": 23.75,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3896,
+          "observed": 0.3917,
+          "n_tds": 43.4
+        },
+        "opp_rush": {
+          "value": 1.0289,
+          "per_game": 0.979,
+          "n_games": 19.2
+        },
+        "opp_rec": {
+          "value": 1.0499,
+          "per_game": 1.604,
+          "n_games": 19.2
+        },
+        "game_line": {
+          "total": 40.5,
+          "spread": -7.0,
+          "implied_team_runs": 23.75
+        }
+      },
+      "break_even_american": 1000,
+      "odds": {
+        "best_price_decimal": 19.5,
+        "best_price_american": 1850,
+        "best_book": "BetMGM",
+        "implied_prob": 0.0513,
+        "fair_prob": 0.054,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.772,
+        "edge_vs_fair": 0.0369
+      }
+    },
+    {
+      "player_id": "00-0039355",
+      "name": "Luke McCaffrey",
+      "position": "WR",
+      "team": "WAS",
+      "opponent": "CIN",
+      "home": true,
+      "game_id": "2026_11_CIN_WAS",
+      "kickoff_utc": "2026-11-24T01:15:00+00:00",
+      "week": 11,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.09482,
+      "lambda_rush": 0.03282,
+      "lambda_rec": 0.062,
+      "prob": 0.09047,
+      "expected_tds": 0.0948,
+      "team_expected_off_tds": 2.52,
+      "team_expected_rush_tds": 0.982,
+      "team_expected_rec_tds": 1.538,
+      "shares": {
+        "rush": 0.0325,
+        "rec": 0.0384
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 11.6,
+        "red_zone_targets": 1.7999999999999998,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 1.7999999999999998
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 2.5204,
+          "implied_points": 23.75,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3896,
+          "observed": 0.3917,
+          "n_tds": 43.4
+        },
+        "opp_rush": {
+          "value": 1.0289,
+          "per_game": 0.979,
+          "n_games": 19.2
+        },
+        "opp_rec": {
+          "value": 1.0499,
+          "per_game": 1.604,
+          "n_games": 19.2
+        },
+        "game_line": {
+          "total": 40.5,
+          "spread": -7.0,
+          "implied_team_runs": 23.75
+        }
+      },
+      "break_even_american": 1005,
+      "odds": {
+        "best_price_decimal": 19.0,
+        "best_price_american": 1800,
+        "best_book": "FanDuel",
+        "implied_prob": 0.0526,
+        "fair_prob": 0.0524,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": 0.7189,
+        "edge_vs_fair": 0.0381
+      }
+    }
+  ]
+}
