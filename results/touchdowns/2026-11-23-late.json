@@ -1,0 +1,428 @@
+{
+  "date": "2026-11-23",
+  "window": "late",
+  "season": 2026,
+  "week": 11,
+  "picks": [
+    {
+      "player_id": "00-0036900",
+      "name": "Ja'Marr Chase",
+      "position": "WR",
+      "team": "CIN",
+      "opponent": "WAS",
+      "prob": 0.57364,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 1.67,
+        "best_price_american": -149,
+        "best_book": "BetMGM",
+        "implied_prob": 0.5988,
+        "fair_prob": 0.5823,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.042,
+        "edge_vs_fair": -0.0087
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0038597",
+      "name": "Chase Brown",
+      "position": "RB",
+      "team": "CIN",
+      "opponent": "WAS",
+      "prob": 0.57335,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 1.83,
+        "best_price_american": -120,
+        "best_book": "DraftKings",
+        "implied_prob": 0.5464,
+        "fair_prob": 0.5286,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.0492,
+        "edge_vs_fair": 0.0448
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0036410",
+      "name": "Tee Higgins",
+      "position": "WR",
+      "team": "CIN",
+      "opponent": "WAS",
+      "prob": 0.48783,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 2.0,
+        "best_price_american": 100,
+        "best_book": "DraftKings",
+        "implied_prob": 0.5,
+        "fair_prob": 0.4717,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.0243,
+        "edge_vs_fair": 0.0161
+      },
+      "scored": true
+    },
+    {
+      "player_id": "00-0037256",
+      "name": "Rachaad White",
+      "position": "RB",
+      "team": "WAS",
+      "opponent": "CIN",
+      "prob": 0.40293,
+      "confidence": "medium",
+      "odds": {
+        "best_price_decimal": 3.3,
+        "best_price_american": 230,
+        "best_book": "FanDuel",
+        "implied_prob": 0.303,
+        "fair_prob": 0.3043,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.3297,
+        "edge_vs_fair": 0.0986
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0031588",
+      "name": "Stefon Diggs",
+      "position": "WR",
+      "team": "WAS",
+      "opponent": "CIN",
+      "prob": 0.39356,
+      "confidence": "medium",
+      "odds": {
+        "best_price_decimal": 2.8,
+        "best_price_american": 180,
+        "best_book": "BetRivers",
+        "implied_prob": 0.3571,
+        "fair_prob": 0.3462,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.102,
+        "edge_vs_fair": 0.0473
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0034829",
+      "name": "Mike Gesicki",
+      "position": "TE",
+      "team": "CIN",
+      "opponent": "WAS",
+      "prob": 0.27561,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 2.85,
+        "best_price_american": 185,
+        "best_book": "BetMGM",
+        "implied_prob": 0.3509,
+        "fair_prob": 0.3494,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.2145,
+        "edge_vs_fair": -0.0738
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0033526",
+      "name": "Samaje Perine",
+      "position": "RB",
+      "team": "CIN",
+      "opponent": "WAS",
+      "prob": 0.24974,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 3.5,
+        "best_price_american": 250,
+        "best_book": "DraftKings",
+        "implied_prob": 0.2857,
+        "fair_prob": 0.2775,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.1259,
+        "edge_vs_fair": -0.0277
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0037809",
+      "name": "Chig Okonkwo",
+      "position": "TE",
+      "team": "WAS",
+      "opponent": "CIN",
+      "prob": 0.23729,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 3.65,
+        "best_price_american": 265,
+        "best_book": "BetRivers",
+        "implied_prob": 0.274,
+        "fair_prob": 0.2676,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.1339,
+        "edge_vs_fair": -0.0304
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0037742",
+      "name": "Treylon Burks",
+      "position": "WR",
+      "team": "WAS",
+      "opponent": "CIN",
+      "prob": 0.16462,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 4.33,
+        "best_price_american": 333,
+        "best_book": "BetMGM",
+        "implied_prob": 0.2309,
+        "fair_prob": 0.2274,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.2872,
+        "edge_vs_fair": -0.0627
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0041040",
+      "name": "Antonio Williams",
+      "position": "WR",
+      "team": "WAS",
+      "opponent": "CIN",
+      "prob": 0.15631,
+      "confidence": "low",
+      "odds": {
+        "best_price_decimal": 4.2,
+        "best_price_american": 320,
+        "best_book": "DraftKings",
+        "implied_prob": 0.2381,
+        "fair_prob": 0.236,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.3435,
+        "edge_vs_fair": -0.0797
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0039910",
+      "name": "Jayden Daniels",
+      "position": "QB",
+      "team": "WAS",
+      "opponent": "CIN",
+      "prob": 0.15602,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 3.45,
+        "best_price_american": 245,
+        "best_book": "DraftKings",
+        "implied_prob": 0.2899,
+        "fair_prob": 0.2817,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.4617,
+        "edge_vs_fair": -0.1257
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0036415",
+      "name": "Van Jefferson",
+      "position": "WR",
+      "team": "WAS",
+      "opponent": "CIN",
+      "prob": 0.14878,
+      "confidence": "medium",
+      "odds": {
+        "best_price_decimal": 10.5,
+        "best_price_american": 950,
+        "best_book": "BetRivers",
+        "implied_prob": 0.0952,
+        "fair_prob": 0.1006,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.5622,
+        "edge_vs_fair": 0.0481
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0035631",
+      "name": "Drew Sample",
+      "position": "TE",
+      "team": "CIN",
+      "opponent": "WAS",
+      "prob": 0.13299,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 6.75,
+        "best_price_american": 575,
+        "best_book": "BetMGM",
+        "implied_prob": 0.1481,
+        "fair_prob": 0.148,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.1023,
+        "edge_vs_fair": -0.0151
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0040785",
+      "name": "Dohnte Meyers",
+      "position": "WR",
+      "team": "CIN",
+      "opponent": "WAS",
+      "prob": 0.12741,
+      "confidence": "low",
+      "odds": {
+        "best_price_decimal": 4.6,
+        "best_price_american": 360,
+        "best_book": "DraftKings",
+        "implied_prob": 0.2174,
+        "fair_prob": 0.2051,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": -0.4139,
+        "edge_vs_fair": -0.0777
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0033699",
+      "name": "Austin Ekeler",
+      "position": "RB",
+      "team": "WAS",
+      "opponent": "CIN",
+      "prob": 0.12448,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 5.5,
+        "best_price_american": 450,
+        "best_book": "FanDuel",
+        "implied_prob": 0.1818,
+        "fair_prob": 0.1887,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.3154,
+        "edge_vs_fair": -0.0642
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0038839",
+      "name": "Mitchell Tinsley",
+      "position": "WR",
+      "team": "CIN",
+      "opponent": "WAS",
+      "prob": 0.12394,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 16.5,
+        "best_price_american": 1550,
+        "best_book": "BetMGM",
+        "implied_prob": 0.0606,
+        "fair_prob": 0.0629,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 1.045,
+        "edge_vs_fair": 0.061
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0039912",
+      "name": "Ben Sinnott",
+      "position": "TE",
+      "team": "WAS",
+      "opponent": "CIN",
+      "prob": 0.09294,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 12.0,
+        "best_price_american": 1100,
+        "best_book": "DraftKings",
+        "implied_prob": 0.0833,
+        "fair_prob": 0.0822,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.1153,
+        "edge_vs_fair": 0.0108
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0036442",
+      "name": "Joe Burrow",
+      "position": "QB",
+      "team": "CIN",
+      "opponent": "WAS",
+      "prob": 0.0926,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 5.5,
+        "best_price_american": 450,
+        "best_book": "BetMGM",
+        "implied_prob": 0.1818,
+        "fair_prob": 0.1788,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.4907,
+        "edge_vs_fair": -0.0862
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0036628",
+      "name": "John Bates",
+      "position": "TE",
+      "team": "WAS",
+      "opponent": "CIN",
+      "prob": 0.09087,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 19.5,
+        "best_price_american": 1850,
+        "best_book": "BetMGM",
+        "implied_prob": 0.0513,
+        "fair_prob": 0.054,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.772,
+        "edge_vs_fair": 0.0369
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0039355",
+      "name": "Luke McCaffrey",
+      "position": "WR",
+      "team": "WAS",
+      "opponent": "CIN",
+      "prob": 0.09047,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 19.0,
+        "best_price_american": 1800,
+        "best_book": "FanDuel",
+        "implied_prob": 0.0526,
+        "fair_prob": 0.0524,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": 0.7189,
+        "edge_vs_fair": 0.0381
+      },
+      "scored": false
+    }
+  ]
+}
