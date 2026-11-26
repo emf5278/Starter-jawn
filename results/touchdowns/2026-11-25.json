@@ -1,0 +1,428 @@
+{
+  "date": "2026-11-25",
+  "window": "all",
+  "season": 2026,
+  "week": 12,
+  "picks": [
+    {
+      "player_id": "00-0037840",
+      "name": "Kyren Williams",
+      "position": "RB",
+      "team": "LA",
+      "opponent": "GB",
+      "prob": 0.4583,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 2.15,
+        "best_price_american": 115,
+        "best_book": "FanDuel",
+        "implied_prob": 0.4651,
+        "fair_prob": 0.4659,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.0147,
+        "edge_vs_fair": -0.0076
+      },
+      "scored": true
+    },
+    {
+      "player_id": "00-0035700",
+      "name": "Josh Jacobs",
+      "position": "RB",
+      "team": "GB",
+      "opponent": "LA",
+      "prob": 0.33758,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 1.8,
+        "best_price_american": -125,
+        "best_book": "BetOnline.ag",
+        "implied_prob": 0.5556,
+        "fair_prob": 0.5241,
+        "n_books": 1,
+        "two_sided": false,
+        "ev_per_dollar": -0.3924,
+        "edge_vs_fair": -0.1865
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0038124",
+      "name": "Christian Watson",
+      "position": "WR",
+      "team": "GB",
+      "opponent": "LA",
+      "prob": 0.33337,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 2.75,
+        "best_price_american": 175,
+        "best_book": "BetRivers",
+        "implied_prob": 0.3636,
+        "fair_prob": 0.3494,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.0832,
+        "edge_vs_fair": -0.016
+      },
+      "scored": true
+    },
+    {
+      "player_id": "00-0040667",
+      "name": "Matthew Golden",
+      "position": "WR",
+      "team": "GB",
+      "opponent": "LA",
+      "prob": 0.31488,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 2.85,
+        "best_price_american": 185,
+        "best_book": "FanDuel",
+        "implied_prob": 0.3509,
+        "fair_prob": 0.3494,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.1026,
+        "edge_vs_fair": -0.0345
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0039738",
+      "name": "Blake Corum",
+      "position": "RB",
+      "team": "LA",
+      "opponent": "GB",
+      "prob": 0.29228,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 2.35,
+        "best_price_american": 135,
+        "best_book": "DraftKings",
+        "implied_prob": 0.4255,
+        "fair_prob": 0.4151,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.3131,
+        "edge_vs_fair": -0.1229
+      },
+      "scored": true
+    },
+    {
+      "player_id": "00-0038996",
+      "name": "Tucker Kraft",
+      "position": "TE",
+      "team": "GB",
+      "opponent": "LA",
+      "prob": 0.26231,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 3.7,
+        "best_price_american": 270,
+        "best_book": "BetMGM",
+        "implied_prob": 0.2703,
+        "fair_prob": 0.2735,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.0295,
+        "edge_vs_fair": -0.0112
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0041510",
+      "name": "Max Klare",
+      "position": "TE",
+      "team": "LA",
+      "opponent": "GB",
+      "prob": 0.25936,
+      "confidence": "low",
+      "odds": {
+        "best_price_decimal": 35.0,
+        "best_price_american": 3400,
+        "best_book": "BetRivers",
+        "implied_prob": 0.0286,
+        "fair_prob": 0.041,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 8.0776,
+        "edge_vs_fair": 0.2183
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0036244",
+      "name": "Colby Parkinson",
+      "position": "TE",
+      "team": "LA",
+      "opponent": "GB",
+      "prob": 0.22455,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 4.0,
+        "best_price_american": 300,
+        "best_book": "BetRivers",
+        "implied_prob": 0.25,
+        "fair_prob": 0.2516,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.1018,
+        "edge_vs_fair": -0.027
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0033110",
+      "name": "Tyler Higbee",
+      "position": "TE",
+      "team": "LA",
+      "opponent": "GB",
+      "prob": 0.20473,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 4.5,
+        "best_price_american": 350,
+        "best_book": "BetRivers",
+        "implied_prob": 0.2222,
+        "fair_prob": 0.2388,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.0787,
+        "edge_vs_fair": -0.0341
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0039074",
+      "name": "Davis Allen",
+      "position": "TE",
+      "team": "LA",
+      "opponent": "GB",
+      "prob": 0.15764,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 9.0,
+        "best_price_american": 800,
+        "best_book": "BetRivers",
+        "implied_prob": 0.1111,
+        "fair_prob": 0.1179,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.4188,
+        "edge_vs_fair": 0.0397
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0039811",
+      "name": "MarShawn Lloyd",
+      "position": "RB",
+      "team": "GB",
+      "opponent": "LA",
+      "prob": 0.1366,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 5.6,
+        "best_price_american": 460,
+        "best_book": "FanDuel",
+        "implied_prob": 0.1786,
+        "fair_prob": 0.1817,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.235,
+        "edge_vs_fair": -0.0451
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0040590",
+      "name": "Konata Mumpfield",
+      "position": "WR",
+      "team": "LA",
+      "opponent": "GB",
+      "prob": 0.13277,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 5.0,
+        "best_price_american": 400,
+        "best_book": "BetRivers",
+        "implied_prob": 0.2,
+        "fair_prob": 0.2194,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.3361,
+        "edge_vs_fair": -0.0866
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0033858",
+      "name": "Jonnu Smith",
+      "position": "TE",
+      "team": "GB",
+      "opponent": "LA",
+      "prob": 0.1222,
+      "confidence": "medium",
+      "odds": {
+        "best_price_decimal": 20.0,
+        "best_price_american": 1900,
+        "best_book": "BetRivers",
+        "implied_prob": 0.05,
+        "fair_prob": 0.0674,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 1.444,
+        "edge_vs_fair": 0.0548
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0040142",
+      "name": "Kaleb Johnson",
+      "position": "RB",
+      "team": "GB",
+      "opponent": "LA",
+      "prob": 0.11985,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 3.4,
+        "best_price_american": 240,
+        "best_book": "BetRivers",
+        "implied_prob": 0.2941,
+        "fair_prob": 0.2903,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.5925,
+        "edge_vs_fair": -0.1705
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0040009",
+      "name": "Savion Williams",
+      "position": "WR",
+      "team": "GB",
+      "opponent": "LA",
+      "prob": 0.08896,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 6.0,
+        "best_price_american": 500,
+        "best_book": "FanDuel",
+        "implied_prob": 0.1667,
+        "fair_prob": 0.1663,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.4662,
+        "edge_vs_fair": -0.0773
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0036849",
+      "name": "Tutu Atwell",
+      "position": "WR",
+      "team": "LA",
+      "opponent": "GB",
+      "prob": 0.08623,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 5.75,
+        "best_price_american": 475,
+        "best_book": "BetRivers",
+        "implied_prob": 0.1739,
+        "fair_prob": 0.1788,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.5042,
+        "edge_vs_fair": -0.0926
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0038685",
+      "name": "Chris Brooks",
+      "position": "RB",
+      "team": "GB",
+      "opponent": "LA",
+      "prob": 0.08493,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 6.0,
+        "best_price_american": 500,
+        "best_book": "FanDuel",
+        "implied_prob": 0.1667,
+        "fair_prob": 0.1634,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.4904,
+        "edge_vs_fair": -0.0784
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0038359",
+      "name": "Xavier Smith",
+      "position": "WR",
+      "team": "LA",
+      "opponent": "GB",
+      "prob": 0.08094,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 10.0,
+        "best_price_american": 900,
+        "best_book": "BetRivers",
+        "implied_prob": 0.1,
+        "fair_prob": 0.1006,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": -0.1906,
+        "edge_vs_fair": -0.0197
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0038090",
+      "name": "Skyy Moore",
+      "position": "WR",
+      "team": "GB",
+      "opponent": "LA",
+      "prob": 0.07042,
+      "confidence": "medium",
+      "odds": {
+        "best_price_decimal": 18.0,
+        "best_price_american": 1700,
+        "best_book": "BetMGM",
+        "implied_prob": 0.0556,
+        "fair_prob": 0.0858,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.2676,
+        "edge_vs_fair": -0.0153
+      },
+      "scored": false
+    },
+    {
+      "player_id": "00-0037557",
+      "name": "Ronnie Rivers",
+      "position": "RB",
+      "team": "LA",
+      "opponent": "GB",
+      "prob": 0.06987,
+      "confidence": "high",
+      "odds": {
+        "best_price_decimal": 21.0,
+        "best_price_american": 2000,
+        "best_book": "DraftKings",
+        "implied_prob": 0.0476,
+        "fair_prob": 0.046,
+        "n_books": 6,
+        "two_sided": false,
+        "ev_per_dollar": 0.4673,
+        "edge_vs_fair": 0.0238
+      },
+      "scored": false
+    }
+  ]
+}
