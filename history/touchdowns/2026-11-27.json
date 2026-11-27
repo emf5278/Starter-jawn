@@ -1,0 +1,1464 @@
+{
+  "generated_at": "2026-11-27T21:54:56+00:00",
+  "date": "2026-11-27",
+  "season": 2026,
+  "week": 12,
+  "model_version": "td-0.1.0",
+  "n_games": 1,
+  "n_games_today": 1,
+  "window": "all",
+  "window_label": "all games",
+  "n_players_scored": 30,
+  "odds_available": true,
+  "game_lines_available": true,
+  "seasons_used": [
+    2026,
+    2025
+  ],
+  "current_season_games": 11,
+  "cold_start": false,
+  "league": {
+    "rush_td_per_team_game": 0.938,
+    "rec_td_per_team_game": 1.491
+  },
+  "top_n": 20,
+  "ev_min_prob": 0.1,
+  "ev_max_ratio": 1.3,
+  "games": [
+    {
+      "game_id": "2026_12_DEN_PIT",
+      "season": 2026,
+      "week": 12,
+      "game_type": "REG",
+      "kickoff_utc": "2026-11-27T20:00:00+00:00",
+      "home_team": "PIT",
+      "away_team": "DEN",
+      "roof": "outdoors",
+      "stadium": "Acrisure Stadium",
+      "home_score": null,
+      "away_score": null
+    }
+  ],
+  "players": [
+    {
+      "player_id": "00-0037228",
+      "name": "Jaylen Warren",
+      "position": "RB",
+      "team": "PIT",
+      "opponent": "DEN",
+      "home": true,
+      "game_id": "2026_12_DEN_PIT",
+      "kickoff_utc": "2026-11-27T20:00:00+00:00",
+      "week": 12,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.48302,
+      "lambda_rush": 0.29439,
+      "lambda_rec": 0.18862,
+      "prob": 0.38308,
+      "expected_tds": 0.483,
+      "team_expected_off_tds": 3.238,
+      "team_expected_rush_tds": 1.072,
+      "team_expected_rec_tds": 2.166,
+      "shares": {
+        "rush": 0.3431,
+        "rec": 0.0918
+      },
+      "usage": {
+        "carries": 261.6,
+        "goal_line_carries": 11.4,
+        "targets": 73.0,
+        "red_zone_targets": 9.0,
+        "prior_rush_tds": 5.6,
+        "prior_rec_tds": 2.2
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 3.2379,
+          "implied_points": 29.5,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3312,
+          "observed": 0.3009,
+          "n_tds": 45.2
+        },
+        "opp_rush": {
+          "value": 0.8,
+          "per_game": 0.624,
+          "n_games": 20.2
+        },
+        "opp_rec": {
+          "value": 0.9485,
+          "per_game": 1.376,
+          "n_games": 20.2
+        },
+        "game_line": {
+          "total": 44.5,
+          "spread": -14.5,
+          "implied_team_runs": 29.5
+        }
+      },
+      "break_even_american": 161,
+      "odds": {
+        "best_price_decimal": 9.0,
+        "best_price_american": 800,
+        "best_book": "FanDuel",
+        "implied_prob": 0.1111,
+        "fair_prob": 0.111,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": 2.4477,
+        "edge_vs_fair": 0.2721
+      }
+    },
+    {
+      "player_id": "00-0035640",
+      "name": "DK Metcalf",
+      "position": "WR",
+      "team": "PIT",
+      "opponent": "DEN",
+      "home": true,
+      "game_id": "2026_12_DEN_PIT",
+      "kickoff_utc": "2026-11-27T20:00:00+00:00",
+      "week": 12,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.37388,
+      "lambda_rush": 0.01529,
+      "lambda_rec": 0.35858,
+      "prob": 0.31194,
+      "expected_tds": 0.3739,
+      "team_expected_off_tds": 3.238,
+      "team_expected_rush_tds": 1.072,
+      "team_expected_rec_tds": 2.166,
+      "shares": {
+        "rush": 0.0178,
+        "rec": 0.1746
+      },
+      "usage": {
+        "carries": 2.2,
+        "goal_line_carries": 0.0,
+        "targets": 134.4,
+        "red_zone_targets": 13.8,
+        "prior_rush_tds": 0.6,
+        "prior_rec_tds": 5.6
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 3.2379,
+          "implied_points": 29.5,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3312,
+          "observed": 0.3009,
+          "n_tds": 45.2
+        },
+        "opp_rush": {
+          "value": 0.8,
+          "per_game": 0.624,
+          "n_games": 20.2
+        },
+        "opp_rec": {
+          "value": 0.9485,
+          "per_game": 1.376,
+          "n_games": 20.2
+        },
+        "game_line": {
+          "total": 44.5,
+          "spread": -14.5,
+          "implied_team_runs": 29.5
+        }
+      },
+      "break_even_american": 221,
+      "odds": null
+    },
+    {
+      "player_id": "00-0036139",
+      "name": "Rico Dowdle",
+      "position": "RB",
+      "team": "PIT",
+      "opponent": "DEN",
+      "home": true,
+      "game_id": "2026_12_DEN_PIT",
+      "kickoff_utc": "2026-11-27T20:00:00+00:00",
+      "week": 12,
+      "confidence": "medium",
+      "rookie": false,
+      "changed_teams": true,
+      "lambda": 0.3341,
+      "lambda_rush": 0.21118,
+      "lambda_rec": 0.12292,
+      "prob": 0.28402,
+      "expected_tds": 0.3341,
+      "team_expected_off_tds": 3.238,
+      "team_expected_rush_tds": 1.072,
+      "team_expected_rec_tds": 2.166,
+      "shares": {
+        "rush": 0.2462,
+        "rec": 0.0598
+      },
+      "usage": {
+        "carries": 198.2,
+        "goal_line_carries": 6.3999999999999995,
+        "targets": 54.0,
+        "red_zone_targets": 5.0,
+        "prior_rush_tds": 4.6,
+        "prior_rec_tds": 0.6
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 3.2379,
+          "implied_points": 29.5,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3312,
+          "observed": 0.3009,
+          "n_tds": 45.2
+        },
+        "opp_rush": {
+          "value": 0.8,
+          "per_game": 0.624,
+          "n_games": 20.2
+        },
+        "opp_rec": {
+          "value": 0.9485,
+          "per_game": 1.376,
+          "n_games": 20.2
+        },
+        "game_line": {
+          "total": 44.5,
+          "spread": -14.5,
+          "implied_team_runs": 29.5
+        }
+      },
+      "break_even_american": 252,
+      "odds": {
+        "best_price_decimal": 16.0,
+        "best_price_american": 1500,
+        "best_book": "FanDuel",
+        "implied_prob": 0.0625,
+        "fair_prob": 0.0726,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": 3.5443,
+        "edge_vs_fair": 0.2115
+      }
+    },
+    {
+      "player_id": "00-0036894",
+      "name": "Pat Freiermuth",
+      "position": "TE",
+      "team": "PIT",
+      "opponent": "DEN",
+      "home": true,
+      "game_id": "2026_12_DEN_PIT",
+      "kickoff_utc": "2026-11-27T20:00:00+00:00",
+      "week": 12,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.28612,
+      "lambda_rush": 0.01714,
+      "lambda_rec": 0.26898,
+      "prob": 0.24882,
+      "expected_tds": 0.2861,
+      "team_expected_off_tds": 3.238,
+      "team_expected_rush_tds": 1.072,
+      "team_expected_rec_tds": 2.166,
+      "shares": {
+        "rush": 0.02,
+        "rec": 0.131
+      },
+      "usage": {
+        "carries": 5.0,
+        "goal_line_carries": 1.0,
+        "targets": 75.4,
+        "red_zone_targets": 12.399999999999999,
+        "prior_rush_tds": 1.0,
+        "prior_rec_tds": 7.4
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 3.2379,
+          "implied_points": 29.5,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3312,
+          "observed": 0.3009,
+          "n_tds": 45.2
+        },
+        "opp_rush": {
+          "value": 0.8,
+          "per_game": 0.624,
+          "n_games": 20.2
+        },
+        "opp_rec": {
+          "value": 0.9485,
+          "per_game": 1.376,
+          "n_games": 20.2
+        },
+        "game_line": {
+          "total": 44.5,
+          "spread": -14.5,
+          "implied_team_runs": 29.5
+        }
+      },
+      "break_even_american": 302,
+      "odds": {
+        "best_price_decimal": 26.0,
+        "best_price_american": 2500,
+        "best_book": "DraftKings",
+        "implied_prob": 0.0385,
+        "fair_prob": 0.0497,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": 5.4693,
+        "edge_vs_fair": 0.1992
+      }
+    },
+    {
+      "player_id": "00-0036252",
+      "name": "Michael Pittman",
+      "position": "WR",
+      "team": "PIT",
+      "opponent": "DEN",
+      "home": true,
+      "game_id": "2026_12_DEN_PIT",
+      "kickoff_utc": "2026-11-27T20:00:00+00:00",
+      "week": 12,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.24957,
+      "lambda_rush": 0.0158,
+      "lambda_rec": 0.23377,
+      "prob": 0.22086,
+      "expected_tds": 0.2496,
+      "team_expected_off_tds": 3.238,
+      "team_expected_rush_tds": 1.072,
+      "team_expected_rec_tds": 2.166,
+      "shares": {
+        "rush": 0.0184,
+        "rec": 0.1138
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 80.39999999999999,
+        "red_zone_targets": 10.799999999999999,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 4.2
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 3.2379,
+          "implied_points": 29.5,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3312,
+          "observed": 0.3009,
+          "n_tds": 45.2
+        },
+        "opp_rush": {
+          "value": 0.8,
+          "per_game": 0.624,
+          "n_games": 20.2
+        },
+        "opp_rec": {
+          "value": 0.9485,
+          "per_game": 1.376,
+          "n_games": 20.2
+        },
+        "game_line": {
+          "total": 44.5,
+          "spread": -14.5,
+          "implied_team_runs": 29.5
+        }
+      },
+      "break_even_american": 353,
+      "odds": null
+    },
+    {
+      "player_id": "00-0041397",
+      "name": "Kaden Wetjen",
+      "position": "WR",
+      "team": "PIT",
+      "opponent": "DEN",
+      "home": true,
+      "game_id": "2026_12_DEN_PIT",
+      "kickoff_utc": "2026-11-27T20:00:00+00:00",
+      "week": 12,
+      "confidence": "low",
+      "rookie": true,
+      "changed_teams": false,
+      "lambda": 0.21094,
+      "lambda_rush": 0.0158,
+      "lambda_rec": 0.19514,
+      "prob": 0.19018,
+      "expected_tds": 0.2109,
+      "team_expected_off_tds": 3.238,
+      "team_expected_rush_tds": 1.072,
+      "team_expected_rec_tds": 2.166,
+      "shares": {
+        "rush": 0.0184,
+        "rec": 0.095
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 0.0,
+        "red_zone_targets": 0.0,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 0.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 3.2379,
+          "implied_points": 29.5,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3312,
+          "observed": 0.3009,
+          "n_tds": 45.2
+        },
+        "opp_rush": {
+          "value": 0.8,
+          "per_game": 0.624,
+          "n_games": 20.2
+        },
+        "opp_rec": {
+          "value": 0.9485,
+          "per_game": 1.376,
+          "n_games": 20.2
+        },
+        "game_line": {
+          "total": 44.5,
+          "spread": -14.5,
+          "implied_team_runs": 29.5
+        }
+      },
+      "break_even_american": 426,
+      "odds": null
+    },
+    {
+      "player_id": "00-0038558",
+      "name": "Darnell Washington",
+      "position": "TE",
+      "team": "PIT",
+      "opponent": "DEN",
+      "home": true,
+      "game_id": "2026_12_DEN_PIT",
+      "kickoff_utc": "2026-11-27T20:00:00+00:00",
+      "week": 12,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.20363,
+      "lambda_rush": 0.0158,
+      "lambda_rec": 0.18784,
+      "prob": 0.18424,
+      "expected_tds": 0.2036,
+      "team_expected_off_tds": 3.238,
+      "team_expected_rush_tds": 1.072,
+      "team_expected_rec_tds": 2.166,
+      "shares": {
+        "rush": 0.0184,
+        "rec": 0.0915
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 60.4,
+        "red_zone_targets": 12.399999999999999,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 3.6
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 3.2379,
+          "implied_points": 29.5,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3312,
+          "observed": 0.3009,
+          "n_tds": 45.2
+        },
+        "opp_rush": {
+          "value": 0.8,
+          "per_game": 0.624,
+          "n_games": 20.2
+        },
+        "opp_rec": {
+          "value": 0.9485,
+          "per_game": 1.376,
+          "n_games": 20.2
+        },
+        "game_line": {
+          "total": 44.5,
+          "spread": -14.5,
+          "implied_team_runs": 29.5
+        }
+      },
+      "break_even_american": 443,
+      "odds": {
+        "best_price_decimal": 36.0,
+        "best_price_american": 3500,
+        "best_book": "DraftKings",
+        "implied_prob": 0.0278,
+        "fair_prob": 0.0304,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": 5.6326,
+        "edge_vs_fair": 0.1538
+      }
+    },
+    {
+      "player_id": "00-0034348",
+      "name": "Courtland Sutton",
+      "position": "WR",
+      "team": "DEN",
+      "opponent": "PIT",
+      "home": false,
+      "game_id": "2026_12_DEN_PIT",
+      "kickoff_utc": "2026-11-27T20:00:00+00:00",
+      "week": 12,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.17049,
+      "lambda_rush": 0.01778,
+      "lambda_rec": 0.1527,
+      "prob": 0.15674,
+      "expected_tds": 0.1705,
+      "team_expected_off_tds": 1.428,
+      "team_expected_rush_tds": 0.62,
+      "team_expected_rec_tds": 0.809,
+      "shares": {
+        "rush": 0.0359,
+        "rec": 0.1936
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 124.0,
+        "red_zone_targets": 22.0,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 6.2
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 1.4284,
+          "implied_points": 15.0,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.4338,
+          "observed": 0.4578,
+          "n_tds": 49.8
+        },
+        "opp_rush": {
+          "value": 0.8,
+          "per_game": 0.594,
+          "n_games": 20.2
+        },
+        "opp_rec": {
+          "value": 0.9752,
+          "per_game": 1.436,
+          "n_games": 20.2
+        },
+        "game_line": {
+          "total": 44.5,
+          "spread": 14.5,
+          "implied_team_runs": 15.0
+        }
+      },
+      "break_even_american": 538,
+      "odds": {
+        "best_price_decimal": 5.7,
+        "best_price_american": 470,
+        "best_book": "FanDuel",
+        "implied_prob": 0.1754,
+        "fair_prob": 0.1715,
+        "n_books": 4,
+        "two_sided": false,
+        "ev_per_dollar": -0.1066,
+        "edge_vs_fair": -0.0148
+      }
+    },
+    {
+      "player_id": "00-0036613",
+      "name": "Jaylen Waddle",
+      "position": "WR",
+      "team": "DEN",
+      "opponent": "PIT",
+      "home": false,
+      "game_id": "2026_12_DEN_PIT",
+      "kickoff_utc": "2026-11-27T20:00:00+00:00",
+      "week": 12,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.15834,
+      "lambda_rush": 0.01706,
+      "lambda_rec": 0.14128,
+      "prob": 0.14644,
+      "expected_tds": 0.1583,
+      "team_expected_off_tds": 1.428,
+      "team_expected_rush_tds": 0.62,
+      "team_expected_rec_tds": 0.809,
+      "shares": {
+        "rush": 0.0344,
+        "rec": 0.1791
+      },
+      "usage": {
+        "carries": 3.2,
+        "goal_line_carries": 0.0,
+        "targets": 120.0,
+        "red_zone_targets": 14.6,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 5.6
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 1.4284,
+          "implied_points": 15.0,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.4338,
+          "observed": 0.4578,
+          "n_tds": 49.8
+        },
+        "opp_rush": {
+          "value": 0.8,
+          "per_game": 0.594,
+          "n_games": 20.2
+        },
+        "opp_rec": {
+          "value": 0.9752,
+          "per_game": 1.436,
+          "n_games": 20.2
+        },
+        "game_line": {
+          "total": 44.5,
+          "spread": 14.5,
+          "implied_team_runs": 15.0
+        }
+      },
+      "break_even_american": 583,
+      "odds": {
+        "best_price_decimal": 5.7,
+        "best_price_american": 470,
+        "best_book": "FanDuel",
+        "implied_prob": 0.1754,
+        "fair_prob": 0.1756,
+        "n_books": 4,
+        "two_sided": false,
+        "ev_per_dollar": -0.1653,
+        "edge_vs_fair": -0.0292
+      }
+    },
+    {
+      "player_id": "00-0041489",
+      "name": "Germie Bernard",
+      "position": "WR",
+      "team": "PIT",
+      "opponent": "DEN",
+      "home": true,
+      "game_id": "2026_12_DEN_PIT",
+      "kickoff_utc": "2026-11-27T20:00:00+00:00",
+      "week": 12,
+      "confidence": "low",
+      "rookie": true,
+      "changed_teams": false,
+      "lambda": 0.15358,
+      "lambda_rush": 0.01532,
+      "lambda_rec": 0.13826,
+      "prob": 0.14237,
+      "expected_tds": 0.1536,
+      "team_expected_off_tds": 3.238,
+      "team_expected_rush_tds": 1.072,
+      "team_expected_rec_tds": 2.166,
+      "shares": {
+        "rush": 0.0179,
+        "rec": 0.0673
+      },
+      "usage": {
+        "carries": 2.0,
+        "goal_line_carries": 0.0,
+        "targets": 55.0,
+        "red_zone_targets": 10.0,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 1.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 3.2379,
+          "implied_points": 29.5,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3312,
+          "observed": 0.3009,
+          "n_tds": 45.2
+        },
+        "opp_rush": {
+          "value": 0.8,
+          "per_game": 0.624,
+          "n_games": 20.2
+        },
+        "opp_rec": {
+          "value": 0.9485,
+          "per_game": 1.376,
+          "n_games": 20.2
+        },
+        "game_line": {
+          "total": 44.5,
+          "spread": -14.5,
+          "implied_team_runs": 29.5
+        }
+      },
+      "break_even_american": 602,
+      "odds": {
+        "best_price_decimal": 46.0,
+        "best_price_american": 4500,
+        "best_book": "DraftKings",
+        "implied_prob": 0.0217,
+        "fair_prob": 0.0262,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": 5.549,
+        "edge_vs_fair": 0.1162
+      }
+    },
+    {
+      "player_id": "00-0039739",
+      "name": "Roman Wilson",
+      "position": "WR",
+      "team": "PIT",
+      "opponent": "DEN",
+      "home": true,
+      "game_id": "2026_12_DEN_PIT",
+      "kickoff_utc": "2026-11-27T20:00:00+00:00",
+      "week": 12,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.15061,
+      "lambda_rush": 0.0158,
+      "lambda_rec": 0.13481,
+      "prob": 0.13982,
+      "expected_tds": 0.1506,
+      "team_expected_off_tds": 3.238,
+      "team_expected_rush_tds": 1.072,
+      "team_expected_rec_tds": 2.166,
+      "shares": {
+        "rush": 0.0184,
+        "rec": 0.0656
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 43.6,
+        "red_zone_targets": 3.6,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 3.2
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 3.2379,
+          "implied_points": 29.5,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3312,
+          "observed": 0.3009,
+          "n_tds": 45.2
+        },
+        "opp_rush": {
+          "value": 0.8,
+          "per_game": 0.624,
+          "n_games": 20.2
+        },
+        "opp_rec": {
+          "value": 0.9485,
+          "per_game": 1.376,
+          "n_games": 20.2
+        },
+        "game_line": {
+          "total": 44.5,
+          "spread": -14.5,
+          "implied_team_runs": 29.5
+        }
+      },
+      "break_even_american": 615,
+      "odds": {
+        "best_price_decimal": 101.0,
+        "best_price_american": 10000,
+        "best_book": "DraftKings",
+        "implied_prob": 0.0099,
+        "fair_prob": 0.0143,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": 13.1218,
+        "edge_vs_fair": 0.1255
+      }
+    },
+    {
+      "player_id": "00-0041496",
+      "name": "Jonah Coleman",
+      "position": "RB",
+      "team": "DEN",
+      "opponent": "PIT",
+      "home": false,
+      "game_id": "2026_12_DEN_PIT",
+      "kickoff_utc": "2026-11-27T20:00:00+00:00",
+      "week": 12,
+      "confidence": "low",
+      "rookie": true,
+      "changed_teams": false,
+      "lambda": 0.12803,
+      "lambda_rush": 0.1086,
+      "lambda_rec": 0.01943,
+      "prob": 0.12017,
+      "expected_tds": 0.128,
+      "team_expected_off_tds": 1.428,
+      "team_expected_rush_tds": 0.62,
+      "team_expected_rec_tds": 0.809,
+      "shares": {
+        "rush": 0.2191,
+        "rec": 0.0246
+      },
+      "usage": {
+        "carries": 71.0,
+        "goal_line_carries": 8.0,
+        "targets": 19.0,
+        "red_zone_targets": 1.0,
+        "prior_rush_tds": 6.0,
+        "prior_rec_tds": 0.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 1.4284,
+          "implied_points": 15.0,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.4338,
+          "observed": 0.4578,
+          "n_tds": 49.8
+        },
+        "opp_rush": {
+          "value": 0.8,
+          "per_game": 0.594,
+          "n_games": 20.2
+        },
+        "opp_rec": {
+          "value": 0.9752,
+          "per_game": 1.436,
+          "n_games": 20.2
+        },
+        "game_line": {
+          "total": 44.5,
+          "spread": 14.5,
+          "implied_team_runs": 15.0
+        }
+      },
+      "break_even_american": 732,
+      "odds": {
+        "best_price_decimal": 3.1,
+        "best_price_american": 210,
+        "best_book": "FanDuel",
+        "implied_prob": 0.3226,
+        "fair_prob": 0.3336,
+        "n_books": 4,
+        "two_sided": false,
+        "ev_per_dollar": -0.6275,
+        "edge_vs_fair": -0.2134
+      }
+    },
+    {
+      "player_id": "00-0039732",
+      "name": "Bo Nix",
+      "position": "QB",
+      "team": "DEN",
+      "opponent": "PIT",
+      "home": false,
+      "game_id": "2026_12_DEN_PIT",
+      "kickoff_utc": "2026-11-27T20:00:00+00:00",
+      "week": 12,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.11601,
+      "lambda_rush": 0.11601,
+      "lambda_rec": 0.0,
+      "prob": 0.10953,
+      "expected_tds": 0.116,
+      "team_expected_off_tds": 1.428,
+      "team_expected_rush_tds": 0.62,
+      "team_expected_rec_tds": 0.809,
+      "shares": {
+        "rush": 0.234,
+        "rec": 0.0
+      },
+      "usage": {
+        "carries": 71.6,
+        "goal_line_carries": 5.6,
+        "targets": 0.6,
+        "red_zone_targets": 0.6,
+        "prior_rush_tds": 5.0,
+        "prior_rec_tds": 0.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 1.4284,
+          "implied_points": 15.0,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.4338,
+          "observed": 0.4578,
+          "n_tds": 49.8
+        },
+        "opp_rush": {
+          "value": 0.8,
+          "per_game": 0.594,
+          "n_games": 20.2
+        },
+        "opp_rec": {
+          "value": 0.9752,
+          "per_game": 1.436,
+          "n_games": 20.2
+        },
+        "game_line": {
+          "total": 44.5,
+          "spread": 14.5,
+          "implied_team_runs": 15.0
+        }
+      },
+      "break_even_american": 813,
+      "odds": {
+        "best_price_decimal": 9.5,
+        "best_price_american": 850,
+        "best_book": "FanDuel",
+        "implied_prob": 0.1053,
+        "fair_prob": 0.1048,
+        "n_books": 4,
+        "two_sided": false,
+        "ev_per_dollar": 0.0405,
+        "edge_vs_fair": 0.0047
+      }
+    },
+    {
+      "player_id": "00-0039868",
+      "name": "Troy Franklin",
+      "position": "WR",
+      "team": "DEN",
+      "opponent": "PIT",
+      "home": false,
+      "game_id": "2026_12_DEN_PIT",
+      "kickoff_utc": "2026-11-27T20:00:00+00:00",
+      "week": 12,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.11571,
+      "lambda_rush": 0.01699,
+      "lambda_rec": 0.09872,
+      "prob": 0.10926,
+      "expected_tds": 0.1157,
+      "team_expected_off_tds": 1.428,
+      "team_expected_rush_tds": 0.62,
+      "team_expected_rec_tds": 0.809,
+      "shares": {
+        "rush": 0.0343,
+        "rec": 0.1252
+      },
+      "usage": {
+        "carries": 4.0,
+        "goal_line_carries": 0.0,
+        "targets": 81.2,
+        "red_zone_targets": 15.6,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 3.5999999999999996
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 1.4284,
+          "implied_points": 15.0,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.4338,
+          "observed": 0.4578,
+          "n_tds": 49.8
+        },
+        "opp_rush": {
+          "value": 0.8,
+          "per_game": 0.594,
+          "n_games": 20.2
+        },
+        "opp_rec": {
+          "value": 0.9752,
+          "per_game": 1.436,
+          "n_games": 20.2
+        },
+        "game_line": {
+          "total": 44.5,
+          "spread": 14.5,
+          "implied_team_runs": 15.0
+        }
+      },
+      "break_even_american": 815,
+      "odds": {
+        "best_price_decimal": 18.0,
+        "best_price_american": 1700,
+        "best_book": "DraftKings",
+        "implied_prob": 0.0556,
+        "fair_prob": 0.0629,
+        "n_books": 4,
+        "two_sided": false,
+        "ev_per_dollar": 0.9667,
+        "edge_vs_fair": 0.0464
+      }
+    },
+    {
+      "player_id": "00-0041398",
+      "name": "Riley Nowakowski",
+      "position": "RB",
+      "team": "PIT",
+      "opponent": "DEN",
+      "home": true,
+      "game_id": "2026_12_DEN_PIT",
+      "kickoff_utc": "2026-11-27T20:00:00+00:00",
+      "week": 12,
+      "confidence": "low",
+      "rookie": true,
+      "changed_teams": false,
+      "lambda": 0.11189,
+      "lambda_rush": 0.0755,
+      "lambda_rec": 0.03639,
+      "prob": 0.10586,
+      "expected_tds": 0.1119,
+      "team_expected_off_tds": 3.238,
+      "team_expected_rush_tds": 1.072,
+      "team_expected_rec_tds": 2.166,
+      "shares": {
+        "rush": 0.088,
+        "rec": 0.0177
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 1.0,
+        "red_zone_targets": 0.0,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 0.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 3.2379,
+          "implied_points": 29.5,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3312,
+          "observed": 0.3009,
+          "n_tds": 45.2
+        },
+        "opp_rush": {
+          "value": 0.8,
+          "per_game": 0.624,
+          "n_games": 20.2
+        },
+        "opp_rec": {
+          "value": 0.9485,
+          "per_game": 1.376,
+          "n_games": 20.2
+        },
+        "game_line": {
+          "total": 44.5,
+          "spread": -14.5,
+          "implied_team_runs": 29.5
+        }
+      },
+      "break_even_american": 845,
+      "odds": {
+        "best_price_decimal": 131.0,
+        "best_price_american": 13000,
+        "best_book": "DraftKings",
+        "implied_prob": 0.0076,
+        "fair_prob": 0.018,
+        "n_books": 4,
+        "two_sided": false,
+        "ev_per_dollar": 12.8677,
+        "edge_vs_fair": 0.0879
+      }
+    },
+    {
+      "player_id": "00-0033881",
+      "name": "Evan Engram",
+      "position": "TE",
+      "team": "DEN",
+      "opponent": "PIT",
+      "home": false,
+      "game_id": "2026_12_DEN_PIT",
+      "kickoff_utc": "2026-11-27T20:00:00+00:00",
+      "week": 12,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.10227,
+      "lambda_rush": 0.01758,
+      "lambda_rec": 0.08469,
+      "prob": 0.09722,
+      "expected_tds": 0.1023,
+      "team_expected_off_tds": 1.428,
+      "team_expected_rush_tds": 0.62,
+      "team_expected_rec_tds": 0.809,
+      "shares": {
+        "rush": 0.0355,
+        "rec": 0.1074
+      },
+      "usage": {
+        "carries": 0.6,
+        "goal_line_carries": 0.0,
+        "targets": 84.19999999999999,
+        "red_zone_targets": 10.6,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 1.6
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 1.4284,
+          "implied_points": 15.0,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.4338,
+          "observed": 0.4578,
+          "n_tds": 49.8
+        },
+        "opp_rush": {
+          "value": 0.8,
+          "per_game": 0.594,
+          "n_games": 20.2
+        },
+        "opp_rec": {
+          "value": 0.9752,
+          "per_game": 1.436,
+          "n_games": 20.2
+        },
+        "game_line": {
+          "total": 44.5,
+          "spread": 14.5,
+          "implied_team_runs": 15.0
+        }
+      },
+      "break_even_american": 929,
+      "odds": {
+        "best_price_decimal": 10.0,
+        "best_price_american": 900,
+        "best_book": "DraftKings",
+        "implied_prob": 0.1,
+        "fair_prob": 0.1145,
+        "n_books": 4,
+        "two_sided": false,
+        "ev_per_dollar": -0.0278,
+        "edge_vs_fair": -0.0172
+      }
+    },
+    {
+      "player_id": "00-0041490",
+      "name": "Eli Heidenreich",
+      "position": "RB",
+      "team": "PIT",
+      "opponent": "DEN",
+      "home": true,
+      "game_id": "2026_12_DEN_PIT",
+      "kickoff_utc": "2026-11-27T20:00:00+00:00",
+      "week": 12,
+      "confidence": "low",
+      "rookie": true,
+      "changed_teams": false,
+      "lambda": 0.09438,
+      "lambda_rush": 0.05724,
+      "lambda_rec": 0.03714,
+      "prob": 0.09007,
+      "expected_tds": 0.0944,
+      "team_expected_off_tds": 3.238,
+      "team_expected_rush_tds": 1.072,
+      "team_expected_rec_tds": 2.166,
+      "shares": {
+        "rush": 0.0667,
+        "rec": 0.0181
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 0.0,
+        "red_zone_targets": 0.0,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 0.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 3.2379,
+          "implied_points": 29.5,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3312,
+          "observed": 0.3009,
+          "n_tds": 45.2
+        },
+        "opp_rush": {
+          "value": 0.8,
+          "per_game": 0.624,
+          "n_games": 20.2
+        },
+        "opp_rec": {
+          "value": 0.9485,
+          "per_game": 1.376,
+          "n_games": 20.2
+        },
+        "game_line": {
+          "total": 44.5,
+          "spread": -14.5,
+          "implied_team_runs": 29.5
+        }
+      },
+      "break_even_american": 1010,
+      "odds": null
+    },
+    {
+      "player_id": "00-0040134",
+      "name": "Pat Bryant",
+      "position": "WR",
+      "team": "DEN",
+      "opponent": "PIT",
+      "home": false,
+      "game_id": "2026_12_DEN_PIT",
+      "kickoff_utc": "2026-11-27T20:00:00+00:00",
+      "week": 12,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.08051,
+      "lambda_rush": 0.01747,
+      "lambda_rec": 0.06305,
+      "prob": 0.07736,
+      "expected_tds": 0.0805,
+      "team_expected_off_tds": 1.428,
+      "team_expected_rush_tds": 0.62,
+      "team_expected_rec_tds": 0.809,
+      "shares": {
+        "rush": 0.0352,
+        "rec": 0.0799
+      },
+      "usage": {
+        "carries": 1.0,
+        "goal_line_carries": 0.0,
+        "targets": 51.4,
+        "red_zone_targets": 7.8,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 2.6
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 1.4284,
+          "implied_points": 15.0,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.4338,
+          "observed": 0.4578,
+          "n_tds": 49.8
+        },
+        "opp_rush": {
+          "value": 0.8,
+          "per_game": 0.594,
+          "n_games": 20.2
+        },
+        "opp_rec": {
+          "value": 0.9752,
+          "per_game": 1.436,
+          "n_games": 20.2
+        },
+        "game_line": {
+          "total": 44.5,
+          "spread": 14.5,
+          "implied_team_runs": 15.0
+        }
+      },
+      "break_even_american": 1193,
+      "odds": {
+        "best_price_decimal": 7.5,
+        "best_price_american": 650,
+        "best_book": "FanDuel",
+        "implied_prob": 0.1333,
+        "fair_prob": 0.1348,
+        "n_books": 4,
+        "two_sided": false,
+        "ev_per_dollar": -0.4198,
+        "edge_vs_fair": -0.0574
+      }
+    },
+    {
+      "player_id": "00-0038976",
+      "name": "Marvin Mims Jr.",
+      "position": "WR",
+      "team": "DEN",
+      "opponent": "PIT",
+      "home": false,
+      "game_id": "2026_12_DEN_PIT",
+      "kickoff_utc": "2026-11-27T20:00:00+00:00",
+      "week": 12,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.06328,
+      "lambda_rush": 0.01881,
+      "lambda_rec": 0.04447,
+      "prob": 0.06132,
+      "expected_tds": 0.0633,
+      "team_expected_off_tds": 1.428,
+      "team_expected_rush_tds": 0.62,
+      "team_expected_rec_tds": 0.809,
+      "shares": {
+        "rush": 0.0379,
+        "rec": 0.0564
+      },
+      "usage": {
+        "carries": 13.2,
+        "goal_line_carries": 0.0,
+        "targets": 48.599999999999994,
+        "red_zone_targets": 1.7999999999999998,
+        "prior_rush_tds": 0.6,
+        "prior_rec_tds": 0.6
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 1.4284,
+          "implied_points": 15.0,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.4338,
+          "observed": 0.4578,
+          "n_tds": 49.8
+        },
+        "opp_rush": {
+          "value": 0.8,
+          "per_game": 0.594,
+          "n_games": 20.2
+        },
+        "opp_rec": {
+          "value": 0.9752,
+          "per_game": 1.436,
+          "n_games": 20.2
+        },
+        "game_line": {
+          "total": 44.5,
+          "spread": 14.5,
+          "implied_team_runs": 15.0
+        }
+      },
+      "break_even_american": 1531,
+      "odds": {
+        "best_price_decimal": 18.0,
+        "best_price_american": 1700,
+        "best_book": "Bovada",
+        "implied_prob": 0.0556,
+        "fair_prob": 0.0592,
+        "n_books": 4,
+        "two_sided": false,
+        "ev_per_dollar": 0.1038,
+        "edge_vs_fair": 0.0021
+      }
+    },
+    {
+      "player_id": "00-0040618",
+      "name": "Max Hurleman",
+      "position": "WR",
+      "team": "PIT",
+      "opponent": "DEN",
+      "home": true,
+      "game_id": "2026_12_DEN_PIT",
+      "kickoff_utc": "2026-11-27T20:00:00+00:00",
+      "week": 12,
+      "confidence": "high",
+      "rookie": false,
+      "changed_teams": false,
+      "lambda": 0.05782,
+      "lambda_rush": 0.0158,
+      "lambda_rec": 0.04203,
+      "prob": 0.05618,
+      "expected_tds": 0.0578,
+      "team_expected_off_tds": 3.238,
+      "team_expected_rush_tds": 1.072,
+      "team_expected_rec_tds": 2.166,
+      "shares": {
+        "rush": 0.0184,
+        "rec": 0.0205
+      },
+      "usage": {
+        "carries": 0.0,
+        "goal_line_carries": 0.0,
+        "targets": 7.0,
+        "red_zone_targets": 2.0,
+        "prior_rush_tds": 0.0,
+        "prior_rec_tds": 1.0
+      },
+      "factors": {
+        "team_off_tds": {
+          "value": 3.2379,
+          "implied_points": 29.5,
+          "source": "game line"
+        },
+        "team_rush_split": {
+          "value": 0.3312,
+          "observed": 0.3009,
+          "n_tds": 45.2
+        },
+        "opp_rush": {
+          "value": 0.8,
+          "per_game": 0.624,
+          "n_games": 20.2
+        },
+        "opp_rec": {
+          "value": 0.9485,
+          "per_game": 1.376,
+          "n_games": 20.2
+        },
+        "game_line": {
+          "total": 44.5,
+          "spread": -14.5,
+          "implied_team_runs": 29.5
+        }
+      },
+      "break_even_american": 1680,
+      "odds": {
+        "best_price_decimal": 51.0,
+        "best_price_american": 5000,
+        "best_book": "DraftKings",
+        "implied_prob": 0.0196,
+        "fair_prob": 0.0304,
+        "n_books": 5,
+        "two_sided": false,
+        "ev_per_dollar": 1.8652,
+        "edge_vs_fair": 0.0257
+      }
+    }
+  ]
+}
